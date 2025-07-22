@@ -1,0 +1,282 @@
+.document-edit-container {
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  background-color: var(--mat-toolbar-container-background-color);
+  color: var(--mat-toolbar-container-text-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.error-container {
+  color: var(--mat-sys-error);
+}
+
+.content-container {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.form-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+
+  h3 {
+    margin: 0 0 1rem 0;
+    color: var(--mat-sys-primary);
+    font-weight: 500;
+  }
+
+  mat-divider {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  .half-width {
+    grid-column: span 1;
+  }
+}
+
+.file-upload-area {
+  padding: 1.5rem;
+  border: 2px dashed var(--mat-sys-outline-variant);
+  border-radius: 8px;
+  text-align: center;
+  background-color: var(--mat-sys-surface-variant);
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: var(--mat-sys-primary);
+  }
+}
+
+.upload-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upload-hint {
+  margin: 0;
+  color: var(--mat-sys-on-surface-variant);
+  font-size: 0.875rem;
+}
+
+.selected-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--mat-sys-surface);
+  border-radius: 4px;
+  border: 1px solid var(--mat-sys-outline-variant);
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.file-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.file-name {
+  font-weight: 500;
+  color: var(--mat-sys-on-surface);
+}
+
+.file-size {
+  font-size: 0.75rem;
+  color: var(--mat-sys-on-surface-variant);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--mat-sys-outline-variant);
+}
+
+// Material form field customizations
+mat-form-field {
+  width: 100%;
+
+  &.full-width {
+    grid-column: 1 / -1;
+  }
+
+  &.half-width {
+    grid-column: span 1;
+  }
+}
+
+// Textarea specific styles
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+// Error states
+.mat-mdc-form-field.mat-form-field-invalid {
+  .mat-mdc-text-field-wrapper {
+    .mat-mdc-form-field-flex {
+      .mat-mdc-form-field-infix {
+        border-color: var(--mat-sys-error);
+      }
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .content-container {
+    padding: 0.5rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    .half-width {
+      grid-column: 1;
+    }
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .selected-file {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-card {
+    margin: 0;
+  }
+
+  .form-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .file-upload-area {
+    padding: 1rem;
+  }
+
+  .upload-prompt {
+    gap: 0.5rem;
+  }
+}
+
+// Quill Editor Styling
+.quill-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--mat-form-field-label-text-color);
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+::ng-deep {
+  .ql-container {
+    border-bottom: 1px solid var(--mat-form-field-outline-color);
+    border-radius: 0 0 4px 4px;
+    font-family: inherit;
+    min-height: 200px;
+  }
+
+  .ql-toolbar {
+    border-top: 1px solid var(--mat-form-field-outline-color);
+    border-left: 1px solid var(--mat-form-field-outline-color);
+    border-right: 1px solid var(--mat-form-field-outline-color);
+    border-radius: 4px 4px 0 0;
+    background-color: var(--mat-form-field-container-background-color);
+  }
+
+  .ql-editor {
+    font-family: inherit;
+    line-height: 1.6;
+    color: var(--mat-form-field-input-text-color);
+
+    &.ql-blank::before {
+      color: var(--mat-form-field-placeholder-text-color);
+      font-style: normal;
+      opacity: 0.6;
+    }
+  }
+
+  .ql-snow .ql-picker-label {
+    color: var(--mat-form-field-input-text-color);
+  }
+
+  .ql-snow .ql-fill {
+    fill: var(--mat-form-field-input-text-color);
+  }
+
+  // Focus styles
+  .ql-container.ql-snow:focus-within .ql-editor {
+    outline: none;
+  }
+
+  .ql-toolbar.ql-snow:focus-within,
+  .ql-container.ql-snow:focus-within {
+    border-color: var(--mat-primary-color);
+  }
+}
+
+// Error state styling
+mat-error + ::ng-deep .ql-toolbar,
+mat-error + ::ng-deep .ql-container {
+  border-color: var(--mat-sys-error);
+}

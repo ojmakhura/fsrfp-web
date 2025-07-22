@@ -1,0 +1,65 @@
+<div class="document-type-list-container">
+  <!-- Header -->
+  <mat-toolbar class="page-header">
+    <span translate>document.type.list.title</span>
+    <span class="spacer"></span>
+
+    <!-- Action buttons -->
+    <button mat-raised-button color="primary" (click)="createDocumentType()">
+      <mat-icon>add</mat-icon>
+      <span translate>action.create</span>
+    </button>
+
+    <button mat-icon-button (click)="refresh()" matTooltip="{{ 'action.refresh' | translate }}">
+      <mat-icon>refresh</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <!-- Main content -->
+  <mat-card class="content-card">
+    <mat-card-content>
+      <!-- Loading indicator -->
+      <div *ngIf="loading()" class="loading-container">
+        <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+        <p translate>loading.message</p>
+      </div>
+
+      <!-- Error message -->
+      <div *ngIf="error()" class="error-container">
+        <mat-icon color="warn">error</mat-icon>
+        <span translate>{{ error() }}</span>
+        <button mat-button color="primary" (click)="refresh()">
+          <span translate>action.retry</span>
+        </button>
+      </div>
+
+      <!-- Data table -->
+      <div *ngIf="!loading() && !error()">
+        <!-- Empty state -->
+        <div *ngIf="!hasData()" class="empty-state">
+          <mat-icon class="empty-icon">description</mat-icon>
+          <h3 translate>document.type.list.empty.title</h3>
+          <p translate>document.type.list.empty.message</p>
+          <button mat-raised-button color="primary" (click)="createDocumentType()">
+            <mat-icon>add</mat-icon>
+            <span translate>document.type.create.first</span>
+          </button>
+        </div>
+
+        <!-- Document types table -->
+        <div *ngIf="hasData()">
+          <app-table
+            [dataColumns]="columns"
+            [actions]="actions"
+            [dataSignal]="documentTypes"
+            [showActions]="true"
+            [paged]="false"
+            (actionClicked)="onActionClicked($event)"
+            (tableLoadEmitter)="onTableLoad($event)"
+          >
+          </app-table>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

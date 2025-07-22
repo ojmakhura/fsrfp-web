@@ -1,0 +1,128 @@
+<div class="process-container">
+  <!-- Header -->
+  <mat-toolbar class="page-header">
+    <button mat-icon-button (click)="cancel()" matTooltip="{{ 'action.back' | translate }}">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span translate>{{ pageTitle() }}</span>
+    <span class="spacer"></span>
+
+    <!-- Action buttons -->
+    <div class="header-actions" *ngIf="!loading()">
+      <!-- View mode actions -->
+      <ng-container *ngIf="isViewMode()">
+        <button mat-raised-button color="primary" (click)="edit()">
+          <mat-icon>edit</mat-icon>
+          <span translate>action.edit</span>
+        </button>
+      </ng-container>
+
+      <!-- Edit/Create mode actions -->
+      <ng-container *ngIf="!isViewMode()">
+        <button mat-button type="button" (click)="cancel()">
+          <span translate>action.cancel</span>
+        </button>
+        <button mat-raised-button color="primary" type="submit" (click)="save()">
+          <mat-icon>save</mat-icon>
+          <span translate>{{ saveButtonLabel() }}</span>
+        </button>
+      </ng-container>
+    </div>
+  </mat-toolbar>
+
+  <!-- Main content -->
+  <mat-card class="content-card">
+    <mat-card-content>
+      <!-- Loading indicator -->
+      <div *ngIf="loading()" class="loading-container">
+        <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+        <p translate>loading.message</p>
+      </div>
+
+      <!-- Error message -->
+      <div *ngIf="error()" class="error-container">
+        <mat-icon color="warn">error</mat-icon>
+        <span translate>{{ error() }}</span>
+        <button mat-button color="primary" (click)="cancel()">
+          <span translate>action.back</span>
+        </button>
+      </div>
+
+      <!-- Form -->
+      <form [formGroup]="processForm" *ngIf="!loading() && !error()" class="process-form">
+        <!-- Regulator field -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label translate>process.regulator</mat-label>
+          <mat-select formControlName="regulatorId" [disabled]="isViewMode() || regulatorsLoading()">
+            <mat-option value="">
+              <span translate>select.value.text</span>
+            </mat-option>
+            <mat-option *ngFor="let regulator of regulators()" [value]="regulator.id">
+              {{ regulator.name }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="hasFormControlError('regulatorId', 'required')">
+            {{ getFormControlErrorMessage('regulatorId') | translate }}
+          </mat-error>
+        </mat-form-field>
+        <!-- Name field -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label translate>process.name</mat-label>
+          <input
+            matInput
+            formControlName="name"
+            [readonly]="isViewMode()"
+            placeholder="{{ 'process.name.placeholder' | translate }}"
+          />
+          <mat-error *ngIf="hasFormControlError('name', 'required')">
+            {{ getFormControlErrorMessage('name') | translate }}
+          </mat-error>
+          <mat-error *ngIf="hasFormControlError('name', 'maxlength')">
+            {{ getFormControlErrorMessage('name') | translate }}
+          </mat-error>
+        </mat-form-field>
+
+        <!-- Description field -->
+        <div appearance="outline" class="full-width">
+          <mat-label translate>regulator.description</mat-label>
+          <quill-editor
+            matInput
+            formControlName="description"
+            [style]="{ height: '200px' }"
+            theme="snow"
+          ></quill-editor>
+          <mat-error *ngIf="hasFormControlError('description', 'maxlength')">
+            {{ getFormControlErrorMessage('description') | translate }}
+          </mat-error>
+        </div>
+
+        <!-- Audit fields (view mode only) -->
+        <div *ngIf="isViewMode() && process()?.createdAt" class="audit-section">
+          <h3 translate>audit.information</h3>
+
+          <div class="audit-fields">
+            <mat-form-field appearance="outline">
+              <mat-label translate>audit.created.date</mat-label>
+              <input matInput [value]="process()?.createdAt | date: 'medium'" readonly />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" *ngIf="process()?.createdBy">
+              <mat-label translate>audit.created.by</mat-label>
+              <input matInput [value]="process()?.createdBy" readonly />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" *ngIf="process()?.modifiedAt">
+              <mat-label translate>audit.last.modified.date</mat-label>
+              <input matInput [value]="process()?.modifiedAt | date: 'medium'" readonly />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" *ngIf="process()?.modifiedBy">
+              <mat-label translate>audit.last.modified.by</mat-label>
+              <input matInput [value]="process()?.modifiedBy" readonly />
+            </mat-form-field>
+          </div>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

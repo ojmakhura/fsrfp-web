@@ -1,0 +1,148 @@
+<div class="regulated-operation-process-edit-container">
+  <!-- Header -->
+  <mat-toolbar class="page-header">
+    <button mat-icon-button (click)="back()" matTooltip="{{ 'action.back' | translate }}">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span translate>{{ pageTitle() }}</span>
+    <span class="spacer"></span>
+
+    <!-- Action buttons -->
+    <div class="header-actions" *ngIf="!loading()">
+      <button mat-raised-button color="primary" (click)="save()" [disabled]="!canSave() || loading()">
+        <mat-icon>save</mat-icon>
+        <span translate>action.save</span>
+      </button>
+    </div>
+  </mat-toolbar>
+
+  <!-- Loading indicator -->
+  <div *ngIf="loading()" class="loading-container">
+    <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+    <p translate>loading.message</p>
+  </div>
+
+  <!-- Error message -->
+  <div *ngIf="error()" class="error-container">
+    <mat-icon color="warn">error</mat-icon>
+    <span>{{ error() }}</span>
+    <button mat-button color="primary" (click)="back()">
+      <span translate>action.back</span>
+    </button>
+  </div>
+
+  <!-- Main content -->
+  <div *ngIf="!loading() && !error()" class="content-container">
+    <mat-card class="form-card">
+      <mat-card-content>
+        <form [formGroup]="processForm" (ngSubmit)="save()">
+          <!-- Basic Information Section -->
+          <div class="form-section">
+            <h3 translate>regulated.operation.process.basic.information</h3>
+            <mat-divider></mat-divider>
+
+            <div class="form-grid">
+              <!-- Regulated Operation -->
+              <mat-form-field appearance="outline" class="full-width">
+                <mat-label translate>regulated.operation.process.operation</mat-label>
+                <mat-select formControlName="operationId">
+                  <mat-option value="">
+                    <span translate>regulated.operation.process.operation.placeholder</span>
+                  </mat-option>
+                  <mat-option *ngFor="let operation of regulatedOperations()" [value]="operation.id">
+                    {{ operation.name }}
+                  </mat-option>
+                </mat-select>
+                <mat-error *ngIf="hasError('operationId', 'required')" translate>
+                  regulated.operation.process.operation.error.required
+                </mat-error>
+              </mat-form-field>
+
+              <!-- Process -->
+              <mat-form-field appearance="outline" class="full-width">
+                <mat-label translate>regulated.operation.process.process</mat-label>
+                <mat-select formControlName="processId">
+                  <mat-option value="">
+                    <span translate>regulated.operation.process.process.placeholder</span>
+                  </mat-option>
+                  <mat-option *ngFor="let process of availableProcesses()" [value]="process.id">
+                    {{ process.name }}
+                  </mat-option>
+                </mat-select>
+                <mat-error *ngIf="hasError('processId', 'required')" translate>
+                  regulated.operation.process.process.error.required
+                </mat-error>
+                <mat-error *ngIf="isDuplicateProcessSelection()" translate>
+                  regulated.operation.process.process.error.duplicate
+                </mat-error>
+                <mat-hint *ngIf="getProcessSelectionHelpText()" translate>
+                  {{ getProcessSelectionHelpText() }}
+                </mat-hint>
+              </mat-form-field>
+
+              <!-- Previous Process -->
+              <mat-form-field appearance="outline" class="full-width">
+                <mat-label translate>regulated.operation.process.previousProcess</mat-label>
+                <mat-select formControlName="previousId" [compareWith]="compareRegulatedOperationProcesses">
+                  <mat-option value="">
+                    <span translate>regulated.operation.process.previousProcess.placeholder</span>
+                  </mat-option>
+                  <mat-option *ngFor="let regOpProcess of availablePreviousProcesses()" [value]="regOpProcess">
+                    {{ regOpProcess.process || 'Unnamed Process' }}
+                    <span *ngIf="regOpProcess.operation" class="operation-info"> - {{ regOpProcess.operation }}</span>
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+              <!-- Next Process -->
+              <mat-form-field appearance="outline" class="full-width">
+                <mat-label translate>regulated.operation.process.nextProcess</mat-label>
+                <mat-select formControlName="nextId" [compareWith]="compareRegulatedOperationProcesses">
+                  <mat-option value="">
+                    <span translate>regulated.operation.process.nextProcess.placeholder</span>
+                  </mat-option>
+                  <mat-option *ngFor="let regOpProcess of availableNextProcesses()" [value]="regOpProcess">
+                    {{ regOpProcess.process || 'Unnamed Process' }}
+                    <span *ngIf="regOpProcess.operation" class="operation-info"> - {{ regOpProcess.operation }}</span>
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+              <!-- Initial Process -->
+              <div class="checkbox-field full-width">
+                <mat-checkbox formControlName="initialProcess">
+                  <span translate>regulated.operation.process.initialProcess</span>
+                </mat-checkbox>
+                <mat-hint translate>regulated.operation.process.initialProcess.hint</mat-hint>
+              </div>
+
+              <!-- Description -->
+              <div class="full-width">
+                <label class="quill-label" translate>regulated.operation.process.description</label>
+                <quill-editor
+                  formControlName="description"
+                  [modules]="quillModules"
+                  [styles]="quillStyles"
+                  theme="snow"
+                  format="html"
+                ></quill-editor>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Actions -->
+          <div class="form-actions">
+            <button type="button" mat-button (click)="cancel()">
+              <span translate>action.cancel</span>
+            </button>
+
+            <button type="submit" mat-raised-button color="primary" [disabled]="!canSave() || loading()">
+              <mat-icon>save</mat-icon>
+              <span translate>action.save</span>
+            </button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

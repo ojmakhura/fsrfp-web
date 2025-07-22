@@ -1,0 +1,172 @@
+.regulator-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .page-header {
+    background: var(--mdc-theme-primary);
+    color: var(--mdc-theme-on-primary);
+    min-height: 64px;
+    padding: 0 16px;
+
+    .spacer {
+      flex: 1 1 auto;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      button {
+        min-width: auto;
+
+        mat-icon {
+          margin-right: 4px;
+        }
+
+        &.mat-raised-button {
+          background: var(--mdc-theme-secondary);
+          color: var(--mdc-theme-on-secondary);
+        }
+      }
+    }
+  }
+
+  .content-card {
+    flex: 1;
+    margin: 16px;
+    overflow: auto;
+
+    .loading-container,
+    .error-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 16px;
+      text-align: center;
+      min-height: 200px;
+
+      mat-icon {
+        font-size: 48px;
+        width: 48px;
+        height: 48px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        margin: 16px 0;
+        color: var(--mdc-theme-text-secondary);
+      }
+    }
+
+    .regulator-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 16px;
+
+      .full-width {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+
+      .audit-section {
+        margin-top: 32px;
+        padding-top: 24px;
+        border-top: 1px solid var(--mdc-theme-divider);
+
+        h3 {
+          margin: 0 0 16px 0;
+          color: var(--mdc-theme-text-primary);
+          font-weight: 500;
+        }
+
+        .audit-fields {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 16px;
+
+          mat-form-field {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .regulator-container {
+    .page-header {
+      padding: 0 8px;
+      min-height: 56px;
+
+      .header-actions {
+        gap: 4px;
+
+        button {
+          min-width: 36px;
+          padding: 0 8px;
+
+          mat-icon {
+            margin-right: 0;
+          }
+
+          span {
+            display: none;
+          }
+
+          // Show text on primary action button
+          &.mat-raised-button span {
+            display: inline;
+          }
+        }
+      }
+    }
+
+    .content-card {
+      margin: 8px;
+
+      .regulator-form {
+        padding: 8px;
+
+        .audit-section .audit-fields {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .regulator-container {
+    .page-header .header-actions button.mat-raised-button {
+      mat-icon {
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+// Print styles
+@media print {
+  .regulator-container {
+    .page-header {
+      display: none;
+    }
+
+    .content-card {
+      margin: 0;
+      box-shadow: none;
+      border: none;
+
+      .regulator-form {
+        .full-width {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

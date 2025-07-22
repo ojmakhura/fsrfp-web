@@ -1,0 +1,129 @@
+<mat-drawer-container fxFlex color="primary">
+  <mat-drawer
+    *ngIf="isAuthenticated"
+    mode="side"
+    #sidenav
+    [mode]="isMobile ? 'over' : 'side'"
+    [opened]="!isMobile"
+    [disableClose]="!isMobile"
+    ngClass.gt-sm="has-border"
+  >
+    <mat-toolbar>
+      <span translate class="app-name">application.name</span>
+    </mat-toolbar>
+    <mat-action-list>
+      <mat-nav-list>
+        <mat-divider></mat-divider>
+        <div>
+          <a mat-list-item routerLink="/regulator" routerLinkActive="active" (click)="closeSidenavOnMobile()">
+            <mat-icon>gavel</mat-icon>
+            <span translate>regulator.title</span>
+          </a>
+          <mat-divider></mat-divider>
+        </div>
+        <div>
+          <a
+            mat-list-item
+            routerLink="/regulated-operations"
+            routerLinkActive="active"
+            (click)="closeSidenavOnMobile()"
+          >
+            <mat-icon>business</mat-icon>
+            <span translate>regulated.operation.title</span>
+          </a>
+          <mat-divider></mat-divider>
+        </div>
+        <div>
+          <a
+            mat-list-item
+            routerLink="/regulated-operation-processes"
+            routerLinkActive="active"
+            (click)="closeSidenavOnMobile()"
+          >
+            <mat-icon>account_tree</mat-icon>
+            <span translate>regulated.operation.processes.title</span>
+          </a>
+          <mat-divider></mat-divider>
+        </div>
+        <div>
+          <a mat-list-item routerLink="/process" routerLinkActive="active" (click)="closeSidenavOnMobile()">
+            <mat-icon>settings</mat-icon>
+            <span translate>process.title</span>
+          </a>
+          <mat-divider></mat-divider>
+        </div>
+        <div>
+          <a mat-list-item routerLink="/document" routerLinkActive="active" (click)="closeSidenavOnMobile()">
+            <mat-icon>description</mat-icon>
+            <span translate>document.title</span>
+          </a>
+          <mat-divider></mat-divider>
+        </div>
+        <div>
+          <a
+            mat-list-item
+            routerLink="/admin/document-types"
+            routerLinkActive="active"
+            (click)="closeSidenavOnMobile()"
+          >
+            <mat-icon>category</mat-icon>
+            <span translate>document.type.title</span>
+          </a>
+          <mat-divider></mat-divider>
+        </div>
+      </mat-nav-list>
+    </mat-action-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar color="primary" class="mat-elevation-z6">
+      <button *ngIf="isAuthenticated" class="menu-button" mat-icon-button (click)="toggleSidenav()" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>{{ title }}</span>
+      <div fxFlex></div>
+
+      <!-- Top right navigation -->
+      <div class="top-nav">
+        <button mat-button routerLink="/" routerLinkActive="active-top-nav">
+          <mat-icon>home</mat-icon>
+          <span translate>home</span>
+        </button>
+        <button mat-button routerLink="/about" routerLinkActive="active-top-nav">
+          <mat-icon>info</mat-icon>
+          <span translate>about</span>
+        </button>
+
+        <!-- User menu - only show when authenticated -->
+        <button *ngIf="isAuthenticated" mat-button [matMenuTriggerFor]="userMenu" class="user-button">
+          <mat-icon>person</mat-icon>
+          <span>{{ username }}</span>
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+
+        <!-- Login button - only show when not authenticated -->
+        <button *ngIf="!isAuthenticated" mat-button (click)="login()" class="login-button">
+          <mat-icon>login</mat-icon>
+          <span translate>Login</span>
+        </button>
+
+        <mat-menu #userMenu="matMenu">
+          <div class="user-info-header">
+            <mat-icon>person</mat-icon>
+            <div>
+              <div class="user-name">{{ username }}</div>
+              <div class="user-status">Logged in</div>
+            </div>
+          </div>
+          <mat-divider></mat-divider>
+          <button mat-menu-item (click)="logout()">
+            <mat-icon>logout</mat-icon>
+            <span translate>Logout</span>
+          </button>
+        </mat-menu>
+
+        <app-language-selector [icon]="true"></app-language-selector>
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

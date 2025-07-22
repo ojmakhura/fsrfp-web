@@ -1,0 +1,163 @@
+<div class="regulator-container">
+  <!-- Header -->
+  <mat-toolbar class="page-header">
+    <button mat-icon-button (click)="cancel()" matTooltip="{{ 'action.back' | translate }}">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span translate>{{ pageTitle() }}</span>
+    <span class="spacer"></span>
+
+    <!-- Action buttons -->
+    <div class="header-actions" *ngIf="!loading()">
+      <!-- View mode actions -->
+      <ng-container *ngIf="isViewMode()">
+        <button mat-raised-button color="primary" (click)="edit()">
+          <mat-icon>edit</mat-icon>
+          <span translate>action.edit</span>
+        </button>
+      </ng-container>
+
+      <!-- Edit/Create mode actions -->
+      <ng-container *ngIf="!isViewMode()">
+        <button mat-button type="button" (click)="cancel()">
+          <span translate>action.cancel</span>
+        </button>
+        <button mat-raised-button color="primary" type="submit" (click)="save()">
+          <mat-icon>save</mat-icon>
+          <span translate>{{ saveButtonLabel() }}</span>
+        </button>
+      </ng-container>
+    </div>
+  </mat-toolbar>
+
+  <!-- Main content -->
+  <mat-card class="content-card">
+    <mat-card-content>
+      <!-- Loading indicator -->
+      <div *ngIf="loading()" class="loading-container">
+        <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+        <p translate>loading.message</p>
+      </div>
+
+      <!-- Error message -->
+      <div *ngIf="error()" class="error-container">
+        <mat-icon color="warn">error</mat-icon>
+        <span translate>{{ error() }}</span>
+        <button mat-button color="primary" (click)="cancel()">
+          <span translate>action.back</span>
+        </button>
+      </div>
+
+      <!-- Form -->
+      <form [formGroup]="regulatorForm" *ngIf="!loading() && !error()" class="regulator-form">
+        <!-- Abbreviation field -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label translate>regulator.abbreviation</mat-label>
+          <input
+            matInput
+            formControlName="abbreviation"
+            [readonly]="isViewMode()"
+            placeholder="{{ 'regulator.abbreviation.placeholder' | translate }}"
+          />
+          <mat-error *ngIf="hasFormControlError('abbreviation', 'required')">
+            {{ getFormControlErrorMessage('abbreviation') | translate }}
+          </mat-error>
+          <mat-error *ngIf="hasFormControlError('abbreviation', 'maxlength')">
+            {{ getFormControlErrorMessage('abbreviation') | translate }}
+          </mat-error>
+        </mat-form-field>
+
+        <!-- Name field -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label translate>regulator.name</mat-label>
+          <input
+            matInput
+            formControlName="name"
+            [readonly]="isViewMode()"
+            placeholder="{{ 'regulator.name.placeholder' | translate }}"
+          />
+          <mat-error *ngIf="hasFormControlError('name', 'required')">
+            {{ getFormControlErrorMessage('name') | translate }}
+          </mat-error>
+          <mat-error *ngIf="hasFormControlError('name', 'maxlength')">
+            {{ getFormControlErrorMessage('name') | translate }}
+          </mat-error>
+        </mat-form-field>
+
+        <!-- Website field -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label translate>regulator.website</mat-label>
+          <input
+            matInput
+            formControlName="website"
+            [readonly]="isViewMode()"
+            type="url"
+            placeholder="{{ 'regulator.website.placeholder' | translate }}"
+          />
+          <mat-error *ngIf="hasFormControlError('website', 'maxlength')">
+            {{ getFormControlErrorMessage('website') | translate }}
+          </mat-error>
+        </mat-form-field>
+
+        <!-- Contact Email field -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label translate>regulator.contactEmail</mat-label>
+          <input
+            matInput
+            formControlName="contactEmail"
+            [readonly]="isViewMode()"
+            type="email"
+            placeholder="{{ 'regulator.contactEmail.placeholder' | translate }}"
+          />
+          <mat-error *ngIf="hasFormControlError('contactEmail', 'email')">
+            {{ getFormControlErrorMessage('contactEmail') | translate }}
+          </mat-error>
+          <mat-error *ngIf="hasFormControlError('contactEmail', 'maxlength')">
+            {{ getFormControlErrorMessage('contactEmail') | translate }}
+          </mat-error>
+        </mat-form-field>
+
+        <!-- Description field -->
+        <div appearance="outline" class="full-width">
+          <mat-label translate>regulator.description</mat-label>
+          <quill-editor
+            matInput
+            formControlName="description"
+            [style]="{ height: '200px' }"
+            theme="snow"
+          ></quill-editor>
+          <mat-error *ngIf="hasFormControlError('description', 'maxlength')">
+            {{ getFormControlErrorMessage('description') | translate }}
+          </mat-error>
+        </div>
+
+        <!-- Audit fields (view mode only) -->
+        <div *ngIf="isViewMode() && regulator()?.createdAt" class="audit-section">
+          <h3 translate>audit.information</h3>
+
+          <div class="audit-fields">
+            <mat-form-field appearance="outline">
+              <mat-label translate>audit.created.date</mat-label>
+              <input matInput [value]="regulator()?.createdAt | date: 'medium'" readonly />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" *ngIf="regulator()?.createdBy">
+              <mat-label translate>audit.created.by</mat-label>
+              <input matInput [value]="regulator()?.createdBy" readonly />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" *ngIf="regulator()?.modifiedAt">
+              <mat-label translate>audit.last.modified.date</mat-label>
+              <input matInput [value]="regulator()?.modifiedAt | date: 'medium'" readonly />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" *ngIf="regulator()?.modifiedBy">
+              <mat-label translate>audit.last.modified.by</mat-label>
+              <input matInput [value]="regulator()?.modifiedBy" readonly />
+            </mat-form-field>
+          </div>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

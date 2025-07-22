@@ -1,0 +1,121 @@
+<mat-card class="documents-card">
+  <mat-card-header>
+    <mat-card-title class="documents-header">
+      <mat-icon>description</mat-icon>
+      {{ title() | translate }}
+      <button
+        *ngIf="collapsible()"
+        mat-icon-button
+        (click)="toggleDocumentsSection()"
+        [matTooltip]="(showDocuments() ? 'common.collapse' : 'common.expand') | translate"
+      >
+        <mat-icon>{{ showDocuments() ? 'expand_less' : 'expand_more' }}</mat-icon>
+      </button>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content *ngIf="showDocuments()">
+    <!-- Document upload form -->
+    <form *ngIf="allowUpload() && uploadForm() as form" [formGroup]="form" class="upload-form">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>{{ 'document.type' | translate }}</mat-label>
+        <mat-select formControlName="documentTypeId">
+          <mat-option *ngFor="let type of availableDocumentTypes()" [value]="type.id">
+            {{ type.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <input #fileInput type="file" (change)="onFileSelected($event)" style="display: none" />
+
+      <div class="file-upload-section">
+        <button type="button" mat-stroked-button (click)="fileInput.click()">
+          <mat-icon>attach_file</mat-icon>
+          {{ 'document.selectFile' | translate }}
+        </button>
+
+        <span *ngIf="selectedFile()" class="selected-file">{{ selectedFile()!.name }}</span>
+      </div>
+
+      <button
+        type="button"
+        mat-raised-button
+        color="primary"
+        (click)="uploadDocument()"
+        [disabled]="!form.valid || !selectedFile() || documentsLoading()"
+        class="upload-button"
+      >
+        <mat-spinner *ngIf="documentsLoading()" diameter="20"></mat-spinner>
+        <mat-icon *ngIf="!documentsLoading()">cloud_upload</mat-icon>
+        {{ 'document.upload.title' | translate }}
+      </button>
+    </form>
+
+    <mat-divider *ngIf="allowUpload()" class="upload-divider"></mat-divider>
+
+    <!-- Documents list -->
+    <div *ngIf="documentsLoading()" class="documents-loading">
+      <mat-spinner diameter="30"></mat-spinner>
+      <p>{{ 'document.loading' | translate }}</p>
+    </div>
+
+
+    <div *ngIf="!documentsLoading()">
+      <div *ngIf="documentsGroupedByType() as grouped">
+        <mat-expansion-panel *ngFor="let group of grouped | keyvalue" class="document-type-panel">
+          <mat-expansion-panel-header *ngIf="group.value.documents.length > 0">
+            <mat-panel-title>
+              {{ group.value.type.name }}
+              <span class="document-count">({{ group.value.documents.length }})</span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <mat-list class="documents-list">
+            <mat-list-item *ngFor="let document of group.value.documents" class="document-item">
+              <mat-icon matListItemIcon>description</mat-icon>
+              <div matListItemTitle>{{ document.summary || document.filename || 'Untitled Document' }}</div>
+              <div matListItemLine class="document-meta">
+                <span class="document-type">{{ group.value.type.name }}</span>
+                <!-- <span *ngIf="document.createdDate" class="document-date">
+                  {{ document.createdDate | date:'shortDate' }}
+                </span> -->
+              </div>
+
+              <div matListItemMeta class="document-actions">
+                <button
+                  *ngIf="allowDownload()"
+                  mat-icon-button
+                  (click)="downloadDocument(document)"
+                  matTooltip="{{ 'action.download' | translate }}"
+                >
+                  <mat-icon>download</mat-icon>
+                </button>
+                <button
+                  *ngIf="allowDelete()"
+                  mat-icon-button
+                  color="warn"
+                  (click)="deleteDocument(document)"
+                  matTooltip="{{ 'action.delete' | translate }}"
+                >
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+          </mat-list>
+        </mat-expansion-panel>
+      </div>
+
+      <div
+        *ngIf="!documentsGroupedByType() || (documentsGroupedByType() | keyvalue)?.length === 0"
+        class="no-documents"
+      >
+        <mat-icon>folder_open</mat-icon>
+        <p>{{ 'document.noDocuments' | translate }}</p>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+@if(documentsLoading()) {
+<app-loader></app-loader>
+}

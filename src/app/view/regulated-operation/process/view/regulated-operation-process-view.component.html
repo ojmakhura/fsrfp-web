@@ -1,0 +1,128 @@
+<div class="regulated-operation-process-view-container">
+  <!-- Header -->
+  <mat-toolbar class="page-header">
+    <button mat-icon-button (click)="onBack()" matTooltip="{{ 'action.back' | translate }}">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span>{{ pageTitle() | translate }}</span>
+    <span class="spacer"></span>
+
+    <!-- Action buttons -->
+    <button mat-raised-button color="accent" (click)="onEdit()" [disabled]="loading()">
+      <mat-icon>edit</mat-icon>
+      <span translate>action.edit</span>
+    </button>
+
+    <button mat-raised-button color="warn" (click)="onDelete()" [disabled]="loading()">
+      <mat-icon>delete</mat-icon>
+      <span translate>action.delete</span>
+    </button>
+  </mat-toolbar>
+
+  <!-- Main content -->
+  <div class="content-container">
+    <!-- Loading indicator -->
+    <div *ngIf="loading()" class="loading-container">
+      <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+      <p translate>loading.message</p>
+    </div>
+
+    <!-- Error message -->
+    <div *ngIf="error()" class="error-container">
+      <mat-icon color="warn">error</mat-icon>
+      <span translate>{{ error() }}</span>
+      <button mat-button color="primary" (click)="onBack()">
+        <span translate>action.back</span>
+      </button>
+    </div>
+
+    <!-- Regulated Operation Process Details -->
+    <div *ngIf="!loading() && !error() && regulatedOperationProcess()" class="details-container">
+      <!-- Basic Information Card -->
+      <mat-card class="details-card">
+        <mat-card-header>
+          <mat-card-title translate>regulatedOperationProcess.basic.information</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="details-grid">
+            <!-- Regulated Operation -->
+            <div class="detail-item">
+              <span class="detail-label" translate>regulatedOperationProcess.operation</span>
+              <span class="detail-value">{{ regulatedOperationProcess()?.operation || '-' }}</span>
+            </div>
+
+            <!-- Process -->
+            <div class="detail-item">
+              <span class="detail-label" translate>regulatedOperationProcess.process</span>
+              <span class="detail-value">{{ regulatedOperationProcess()?.process || '-' }}</span>
+            </div>
+
+            <!-- Initial Process -->
+            <!-- <div class="detail-item">
+              <span class="detail-label" translate>regulatedOperationProcess.initialProcess</span>
+              <mat-chip-set>
+                <mat-chip
+                  [color]="regulatedOperationProcess()?.initialProcess ? 'primary' : 'basic'"
+                  [selected]="regulatedOperationProcess()?.initialProcess">
+                  {{ regulatedOperationProcess()?.initialProcess ? ('yes' | translate) : ('no' | translate) }}
+                </mat-chip>
+              </mat-chip-set>
+            </div> -->
+
+            <!-- Next Process -->
+            <div class="detail-item">
+              <span class="detail-label" translate>regulatedOperationProcess.nextProcess</span>
+              <span class="detail-value">{{ regulatedOperationProcess()?.next || '-' }}</span>
+            </div>
+
+            <!-- Previous Process -->
+            <div class="detail-item" *ngIf="regulatedOperationProcess()?.previous">
+              <span class="detail-label" translate>regulatedOperationProcess.previousProcess</span>
+              <span class="detail-value">{{ regulatedOperationProcess()?.previous }}</span>
+            </div>
+
+            <!-- Description -->
+            <div class="detail-item full-width" *ngIf="regulatedOperationProcess()?.description">
+              <span class="detail-label" translate>regulatedOperationProcess.description</span>
+              <p class="detail-description">{{ regulatedOperationProcess()?.description }}</p>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Audit Information Card -->
+      <mat-card class="details-card" *ngIf="regulatedOperationProcess()?.createdDate">
+        <mat-card-header>
+          <mat-card-title translate>audit.information</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="details-grid">
+            <!-- Created Date -->
+            <div class="detail-item" *ngIf="regulatedOperationProcess()?.createdDate">
+              <span class="detail-label" translate>audit.created.date</span>
+              <span class="detail-value">{{ regulatedOperationProcess()?.createdDate | date: 'medium' }}</span>
+            </div>
+
+            <!-- Created By -->
+            <div class="detail-item" *ngIf="regulatedOperationProcess()?.createdBy">
+              <span class="detail-label" translate>audit.created.by</span>
+              <span class="detail-value">{{ regulatedOperationProcess()?.createdBy }}</span>
+            </div>
+
+            <!-- Modified Date -->
+            <div class="detail-item" *ngIf="regulatedOperationProcess()?.modifiedDate">
+              <span class="detail-label" translate>audit.modified.date</span>
+              <span class="detail-value">{{ regulatedOperationProcess()?.modifiedDate | date: 'medium' }}</span>
+            </div>
+
+            <!-- Modified By -->
+            <div class="detail-item" *ngIf="regulatedOperationProcess()?.modifiedBy">
+              <span class="detail-label" translate>audit.modified.by</span>
+              <span class="detail-value">{{ regulatedOperationProcess()?.modifiedBy }}</span>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

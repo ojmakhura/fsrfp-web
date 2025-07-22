@@ -1,0 +1,92 @@
+<div class="document-view-container">
+  <!-- Header -->
+  <mat-toolbar class="page-header">
+    <button mat-icon-button (click)="back()" matTooltip="{{ 'action.back' | translate }}">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span translate>{{ pageTitle() }}</span>
+    <span class="spacer"></span>
+
+    <!-- Action buttons -->
+    <div class="header-actions" *ngIf="!loading() && document()">
+      <button mat-raised-button color="primary" (click)="edit()">
+        <mat-icon>edit</mat-icon>
+        <span translate>action.edit</span>
+      </button>
+
+      <button mat-button color="accent" (click)="downloadDocument()" [disabled]="!document()?.url">
+        <mat-icon>download</mat-icon>
+        <span translate>action.download</span>
+      </button>
+
+      <button mat-button color="warn" (click)="deleteDocument()">
+        <mat-icon>delete</mat-icon>
+        <span translate>action.delete</span>
+      </button>
+    </div>
+  </mat-toolbar>
+
+  <!-- Loading indicator -->
+  <div *ngIf="loading()" class="loading-container">
+    <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+    <p translate>loading.message</p>
+  </div>
+
+  <!-- Error message -->
+  <div *ngIf="error()" class="error-container">
+    <mat-icon color="warn">error</mat-icon>
+    <span>{{ error() }}</span>
+    <button mat-button color="primary" (click)="back()">
+      <span translate>action.back</span>
+    </button>
+  </div>
+
+  <!-- Main content -->
+  <div *ngIf="!loading() && !error() && document()" class="content-container">
+    <mat-card class="document-card">
+      <mat-card-content>
+        <!-- Document Information Section -->
+        <div class="info-section">
+          <h3 translate>{{ document().filename }}</h3>
+          <mat-divider></mat-divider>
+
+          <!-- <div class="info-grid"> -->
+
+          <!-- Document Type -->
+          <div class="info-item">
+            <label translate>document.type</label>
+            <span class="type-badge">{{ getDocumentTypeName(document().documentTypeId) }}</span>
+          </div>
+          <!-- Summary -->
+          <div class="info-item">
+            <label translate>document.summary</label>
+            <span class="summary-text">{{ document().summary || 'No summary provided' }}</span>
+          </div>
+
+          <!-- Target Type -->
+          <!-- <div class="info-item">
+              <label translate>Target Type</label>
+              <span class="target-badge">{{ getTargetDisplay(document().target) }}</span>
+            </div> -->
+          <!-- </div> -->
+        </div>
+
+        <!-- Document Actions -->
+        <div class="actions-section">
+          <mat-divider></mat-divider>
+          <div class="action-buttons">
+            <button mat-button (click)="back()">
+              <mat-icon>arrow_back</mat-icon>
+              <span translate>action.back</span>
+            </button>
+
+            <button mat-raised-button color="primary" (click)="edit()">
+              <mat-icon>edit</mat-icon>
+              <span translate>action.edit</span>
+            </button>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

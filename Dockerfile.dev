@@ -1,0 +1,24 @@
+# Development Dockerfile for Angular with live reloading
+
+FROM node:18-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Install Angular CLI globally
+RUN npm install -g @angular/cli
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install all dependencies (including dev dependencies)
+RUN npm install
+
+# Copy source code
+COPY . .
+
+# Expose ports for development server and live reload
+EXPOSE 4200 49153
+
+# Start development server with live reload
+CMD ["ng", "serve", "--host", "0.0.0.0", "--port", "4200", "--live-reload", "--live-reload-port", "49153"]

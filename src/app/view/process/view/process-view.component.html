@@ -1,0 +1,97 @@
+<div class="process-view-container">
+  <!-- Header -->
+  <mat-toolbar class="page-header">
+    <button mat-icon-button (click)="back()" matTooltip="{{ 'action.back' | translate }}">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span translate>process.view.title</span>
+    <span class="spacer"></span>
+
+    <!-- Action buttons -->
+    <div class="header-actions" *ngIf="!loading() && process()">
+      <button mat-raised-button color="primary" (click)="edit()">
+        <mat-icon>edit</mat-icon>
+        <span translate>action.edit</span>
+      </button>
+    </div>
+  </mat-toolbar>
+
+  <!-- Loading indicator -->
+  <div *ngIf="loading()" class="loading-container">
+    <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+    <p translate>loading.message</p>
+  </div>
+
+  <!-- Error message -->
+  <div *ngIf="error()" class="error-container">
+    <mat-icon color="warn">error</mat-icon>
+    <span translate>{{ error() }}</span>
+    <button mat-button color="primary" (click)="back()">
+      <span translate>action.back</span>
+    </button>
+  </div>
+
+  <!-- Main content with sidebar layout -->
+  <div *ngIf="!loading() && !error() && process()" class="content-layout">
+    <!-- Main content area -->
+    <div class="main-content">
+      <mat-card class="content-card">
+        <mat-card-content>
+          <!-- Process Information -->
+          <div class="process-info">
+            <!-- Basic Information Section -->
+            <div class="info-section">
+              <h3 translate>process.basic.information</h3>
+              <mat-divider></mat-divider>
+
+              <div class="info-grid">
+                <!-- Name -->
+                <div class="info-item">
+                  <label translate>process.name</label>
+                  <div class="info-value">{{ process()?.name || '-' }}</div>
+                </div>
+
+                <!-- Regulator -->
+                <div class="info-item">
+                  <label translate>process.regulator</label>
+                  <div class="info-value">
+                    <button
+                      *ngIf="process()?.regulator?.name"
+                      mat-button
+                      color="primary"
+                      (click)="viewRegulator()"
+                      class="regulator-link"
+                    >
+                      <mat-icon>account_balance</mat-icon>
+                      {{ process()?.regulator?.name }}
+                    </button>
+                    <span *ngIf="!process()?.regulator?.name">-</span>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <div class="info-item full-width" *ngIf="hasDescription()">
+                  <label translate>process.description</label>
+                  <div class="info-value description" [innerHTML]="process()?.description"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- Right sidebar for documents -->
+    <div class="sidebar">
+      <app-document-attachment
+        [entityType]="EntityType.PROCESS"
+        [entityId]="processId() || 0"
+        title="document.title"
+        [allowUpload]="true"
+        [allowDownload]="true"
+        [allowDelete]="true"
+        [collapsible]="true">
+      </app-document-attachment>
+    </div>
+  </div>
+</div>

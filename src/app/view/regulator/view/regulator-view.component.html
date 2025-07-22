@@ -1,0 +1,163 @@
+<div class="regulator-view-container">
+  <!-- Header -->
+  <mat-toolbar class="page-header">
+    <button mat-icon-button (click)="back()" matTooltip="{{ 'action.back' | translate }}">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span translate>{{ pageTitle() }}</span>
+    <span class="spacer"></span>
+
+    <!-- Action buttons -->
+    <div class="header-actions" *ngIf="!loading() && regulator()">
+      <button mat-raised-button color="primary" (click)="edit()">
+        <mat-icon>edit</mat-icon>
+        <span translate>action.edit</span>
+      </button>
+    </div>
+  </mat-toolbar>
+
+  <!-- Loading indicator -->
+  <div *ngIf="loading()" class="loading-container">
+    <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+    <p translate>loading.message</p>
+  </div>
+
+  <!-- Error message -->
+  <div *ngIf="error()" class="error-container">
+    <mat-icon color="warn">error</mat-icon>
+    <span translate>{{ error() }}</span>
+    <button mat-button color="primary" (click)="back()">
+      <span translate>action.back</span>
+    </button>
+  </div>
+
+  <!-- Main content with sidebar layout -->
+  <div *ngIf="!loading() && !error() && regulator()" class="content-layout">
+    <!-- Main content area -->
+    <div class="main-content">
+      <mat-card class="content-card">
+        <mat-card-content>
+          <!-- Regulator Information -->
+          <div class="regulator-info">
+            <!-- Basic Information Section -->
+            <div class="info-section">
+              <h3 translate>regulator.basic.information</h3>
+              <mat-divider></mat-divider>
+
+              <div class="info-grid">
+                <!-- Abbreviation -->
+                <div class="info-item">
+                  <label translate>regulator.abbreviation</label>
+                  <div class="info-value">{{ regulator()?.abbreviation || '-' }}</div>
+                </div>
+
+                <!-- Name -->
+                <div class="info-item">
+                  <label translate>regulator.name</label>
+                  <div class="info-value">{{ regulator()?.name || '-' }}</div>
+                </div>
+
+                <!-- Website -->
+                <div class="info-item">
+                  <label translate>regulator.website</label>
+                  <div class="info-value">
+                    <a
+                      *ngIf="regulator()?.website"
+                      [href]="regulator()?.website"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {{ regulator()?.website }}
+                    </a>
+                    <span *ngIf="!regulator()?.website">-</span>
+                  </div>
+                </div>
+
+                <!-- Contact Email -->
+                <div class="info-item">
+                  <label translate>regulator.contactEmail</label>
+                  <div class="info-value">
+                    <a *ngIf="regulator()?.contactEmail" [href]="'mailto:' + regulator()?.contactEmail">
+                      {{ regulator()?.contactEmail }}
+                    </a>
+                    <span *ngIf="!regulator()?.contactEmail">-</span>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <div class="info-item full-width">
+                  <label translate>regulator.description</label>
+                  <div class="info-value description" [innerHTML]="regulator()?.description || '-'"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Processes Section -->
+            <div class="info-section processes-section">
+              <div class="section-header">
+                <h3 translate>regulator.processes.title</h3>
+                <button
+                  mat-icon-button
+                  (click)="toggleProcessesSection()"
+                  [matTooltip]="(showProcesses() ? 'action.collapse' : 'action.expand') | translate"
+                >
+                  <mat-icon>{{ showProcesses() ? 'expand_less' : 'expand_more' }}</mat-icon>
+                </button>
+              </div>
+              <mat-divider></mat-divider>
+
+              <div *ngIf="showProcesses()">
+                <!-- Loading indicator for processes -->
+                <div *ngIf="processesLoading()" class="processes-loading">
+                  <mat-progress-spinner mode="indeterminate" diameter="30"></mat-progress-spinner>
+                  <p translate>regulator.processes.loading</p>
+                </div>
+
+                <!-- Processes list -->
+                <div *ngIf="!processesLoading() && processes()?.length" class="processes-list">
+                  <mat-list>
+                    <mat-list-item *ngFor="let process of processes()" class="process-item">
+                      <mat-icon matListItemIcon>settings</mat-icon>
+                      <div matListItemTitle>{{ process.name }}</div>
+                      <div matListItemLine>
+                        {{ process.description || 'regulator.processes.noDescription' | translate }}
+                      </div>
+                      <div matListItemMeta>
+                        <button
+                          mat-icon-button
+                          (click)="viewProcess(process)"
+                          matTooltip="{{ 'action.view' | translate }}"
+                        >
+                          <mat-icon>visibility</mat-icon>
+                        </button>
+                      </div>
+                    </mat-list-item>
+                  </mat-list>
+                </div>
+
+                <!-- No processes message -->
+                <div *ngIf="!processesLoading() && !processes()?.length" class="no-processes">
+                  <mat-icon>folder_open</mat-icon>
+                  <p translate>regulator.processes.empty</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- Right sidebar for documents -->
+    <div class="sidebar">
+      <app-document-attachment
+        [entityType]="EntityType.REGULATOR"
+        [entityId]="regulator().id"
+        title="document.title"
+        [allowUpload]="true"
+        [allowDownload]="true"
+        [allowDelete]="true"
+        [collapsible]="true">
+      </app-document-attachment>
+    </div>
+  </div>
+</div>

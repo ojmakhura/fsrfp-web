@@ -1,0 +1,63 @@
+<div class="regulated-operation-list-container">
+  <!-- Header -->
+  <mat-toolbar class="page-header">
+    <span translate>regulated.operation.list.title</span>
+    <span class="spacer"></span>
+
+    <!-- Action buttons -->
+    <button mat-raised-button color="primary" (click)="onCreate()">
+      <mat-icon>add</mat-icon>
+      <span translate>action.create</span>
+    </button>
+
+    <button mat-icon-button (click)="onRefresh()" matTooltip="{{ 'action.refresh' | translate }}">
+      <mat-icon>refresh</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <!-- Main content -->
+  <mat-card class="content-card">
+    <mat-card-content>
+      <!-- Loading indicator -->
+      <div *ngIf="loading()" class="loading-container">
+        <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+        <p translate>loading.message</p>
+      </div>
+
+      <!-- Error message -->
+      <div *ngIf="error()" class="error-container">
+        <mat-icon color="warn">error</mat-icon>
+        <span translate>{{ error() }}</span>
+        <button mat-button color="primary" (click)="onRefresh()">
+          <span translate>action.retry</span>
+        </button>
+      </div>
+
+      <!-- Data table -->
+      <div *ngIf="!loading() && !error()">
+        <!-- Empty state -->
+        <div *ngIf="!hasData()" class="empty-state">
+          <mat-icon class="empty-icon">business</mat-icon>
+          <h3 translate>regulated.operation.list.empty.title</h3>
+          <p translate>regulated.operation.list.empty.message</p>
+          <button mat-raised-button color="primary" (click)="onCreate()">
+            <mat-icon>add</mat-icon>
+            <span translate>regulated.operation.create.first</span>
+          </button>
+        </div>
+
+        <!-- Regulated Operations table -->
+        <div *ngIf="hasData()">
+          <app-table
+            [dataSignal]="regulatedOperations"
+            [dataColumns]="columns"
+            [actions]="actions"
+            [showActions]="true"
+            [paged]="true"
+            (actionClicked)="onActionClicked($event)"
+          ></app-table>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

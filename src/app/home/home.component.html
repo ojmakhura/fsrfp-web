@@ -1,0 +1,137 @@
+<div class="home-container">
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1 class="page-title">{{ 'home.title' | translate }}</h1>
+    <p class="page-subtitle">{{ 'home.subtitle' | translate }}</p>
+  </div>
+
+  <!-- Statistics Cards -->
+  <div class="stats-section">
+    <h2 class="section-title">{{ 'home.overview' | translate }}</h2>
+    <div class="stats-grid">
+      <!-- Regulators Stats -->
+      <mat-card class="stat-card regulators-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>gavel</mat-icon>
+          <mat-card-title>{{ 'home.regulators' | translate }}</mat-card-title>
+          <mat-card-subtitle>{{ 'home.total' | translate }}: {{ dashboardStats().totalRegulators }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="stat-summary">
+            <span class="large-number">{{ dashboardStats().totalRegulators }}</span>
+            <span class="stat-label">{{ 'home.totalRegulators' | translate }}</span>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="viewAllRegulators()" color="primary">
+            {{ 'home.viewAll' | translate }}
+          </button>
+          @if(keycloak.authenticated) {
+          <button mat-button (click)="createRegulator()" color="accent">
+            {{ 'home.create' | translate }}
+          </button>
+          }
+        </mat-card-actions>
+      </mat-card>
+
+      <!-- Operations Stats -->
+      <mat-card class="stat-card operations-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>business</mat-icon>
+          <mat-card-title>{{ 'home.operations' | translate }}</mat-card-title>
+          <mat-card-subtitle>{{ 'home.total' | translate }}: {{ dashboardStats().totalOperations }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="stat-summary">
+            <span class="large-number">{{ dashboardStats().totalOperations }}</span>
+            <span class="stat-label">{{ 'home.totalOperations' | translate }}</span>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="viewAllOperations()" color="primary">
+            {{ 'home.viewAll' | translate }}
+          </button>
+          @if(keycloak.authenticated) {
+          <button mat-button (click)="createOperation()" color="accent">
+            {{ 'home.create' | translate }}
+          </button>
+          }
+        </mat-card-actions>
+      </mat-card>
+
+      <!-- Processes Stats -->
+      <mat-card class="stat-card processes-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>account_tree</mat-icon>
+          <mat-card-title>{{ 'home.processes' | translate }}</mat-card-title>
+          <mat-card-subtitle>{{ 'home.total' | translate }}: {{ dashboardStats().totalProcesses }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="stat-summary">
+            <span class="large-number">{{ dashboardStats().totalProcesses }}</span>
+            <span class="stat-label">{{ 'home.totalProcesses' | translate }}</span>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="viewAllProcesses()" color="primary">
+            {{ 'home.viewAll' | translate }}
+          </button>
+          @if(keycloak.authenticated) {
+          <button mat-button (click)="createProcess()" color="accent">
+            {{ 'home.create' | translate }}
+          </button>
+          }
+        </mat-card-actions>
+      </mat-card>
+
+      <!-- Documents Stats -->
+      <mat-card class="stat-card documents-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>description</mat-icon>
+          <mat-card-title>{{ 'home.documents' | translate }}</mat-card-title>
+          <mat-card-subtitle>{{ 'home.total' | translate }}: {{ dashboardStats().totalDocuments }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="stat-summary">
+            <span class="large-number">{{ dashboardStats().totalDocuments }}</span>
+            <span class="stat-label">{{ 'home.totalDocuments' | translate }}</span>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="viewAllDocuments()" color="primary">
+            {{ 'home.viewAll' | translate }}
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+  <!-- Quick Actions -->
+  @if(keycloak.authenticated) {
+  <div class="actions-section">
+    <h2 class="section-title">{{ 'home.quickActions' | translate }}</h2>
+    <div class="action-buttons">
+      <button mat-raised-button color="primary" (click)="createOperation()">
+        <mat-icon>add</mat-icon>
+        {{ 'home.newOperation' | translate }}
+      </button>
+      <button mat-raised-button color="accent" (click)="createProcess()">
+        <mat-icon>add</mat-icon>
+        {{ 'home.newProcess' | translate }}
+      </button>
+      <button mat-raised-button color="warn" (click)="createRegulator()">
+        <mat-icon>add</mat-icon>
+        {{ 'home.newRegulator' | translate }}
+      </button>
+    </div>
+  </div>
+  }
+</div>
+
+<!-- Loading Template -->
+<ng-template #loadingTemplate>
+  <div class="loading-indicator">
+    <mat-spinner diameter="40"></mat-spinner>
+    <span>{{ 'common.loading' | translate }}</span>
+  </div>
+</ng-template>

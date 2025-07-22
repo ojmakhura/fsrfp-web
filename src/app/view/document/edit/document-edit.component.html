@@ -1,0 +1,150 @@
+<div class="document-edit-container">
+  <!-- Header -->
+  <mat-toolbar class="page-header">
+    <button mat-icon-button (click)="back()" matTooltip="{{ 'action.back' | translate }}">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span translate>{{ pageTitle() }}</span>
+    <span class="spacer"></span>
+
+    <!-- Action buttons -->
+    <div class="header-actions" *ngIf="!loading()">
+      <button mat-raised-button color="primary" (click)="save()" [disabled]="!canSave() || loading()">
+        <mat-icon>save</mat-icon>
+        <span translate>action.save</span>
+      </button>
+    </div>
+  </mat-toolbar>
+
+  <!-- Loading indicator -->
+  <div *ngIf="loading()" class="loading-container">
+    <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+    <p translate>loading.message</p>
+  </div>
+
+  <!-- Error message -->
+  <div *ngIf="error()" class="error-container">
+    <mat-icon color="warn">error</mat-icon>
+    <span>{{ error() }}</span>
+    <button mat-button color="primary" (click)="back()">
+      <span translate>action.back</span>
+    </button>
+  </div>
+
+  <!-- Main content -->
+  <div *ngIf="!loading() && !error()" class="content-container">
+    <mat-card class="form-card">
+      <mat-card-content>
+        <form [formGroup]="documentForm" (ngSubmit)="save()">
+          <!-- Basic Information Section -->
+          <div class="form-section">
+            <h3 translate>document.basic.information</h3>
+            <mat-divider></mat-divider>
+
+            <div class="form-grid">
+              <!-- Document Type -->
+              <mat-form-field appearance="outline" class="half-width">
+                <mat-label translate>document.type</mat-label>
+                <mat-select formControlName="documentTypeId">
+                  <mat-option value="">
+                    <span translate>document.type.placeholder</span>
+                  </mat-option>
+                  <mat-option *ngFor="let type of documentTypes()" [value]="type.id">
+                    {{ type.name }}
+                  </mat-option>
+                </mat-select>
+                <mat-error *ngIf="hasError('documentTypeId', 'required')" translate>
+                  document.type.error.required
+                </mat-error>
+              </mat-form-field>
+
+              <!-- Target Type -->
+              <mat-form-field appearance="outline" class="half-width">
+                <mat-label translate>Target Type</mat-label>
+                <mat-select formControlName="target">
+                  <mat-option value="">
+                    <span translate>Select target type</span>
+                  </mat-option>
+                  <mat-option *ngFor="let type of entityTypes" [value]="type">
+                    {{ type }}
+                  </mat-option>
+                </mat-select>
+                <mat-error *ngIf="hasError('target', 'required')" translate> target.error.required </mat-error>
+              </mat-form-field>
+
+              <!-- Summary -->
+              <div class="full-width">
+                <label class="quill-label" translate>document.summary</label>
+                <quill-editor
+                  matInput
+                  formControlName="summary"
+                  [style]="{ height: '200px' }"
+                  theme="snow"
+                ></quill-editor>
+                <mat-error *ngIf="hasError('summary', 'required')" translate>
+                  document.summary.error.required
+                </mat-error>
+                <mat-error *ngIf="hasError('summary', 'maxlength')" translate>
+                  document.summary.error.maxlength
+                </mat-error>
+              </div>
+            </div>
+          </div>
+
+          <!-- File Upload Section -->
+          <div class="form-section">
+            <h3 translate>document.file.section</h3>
+            <mat-divider></mat-divider>
+
+            <div class="file-upload-area">
+              <!-- File Input -->
+              <input type="file" id="fileInput" (change)="onFileSelected($event)" accept="*/*" hidden />
+
+              <!-- Upload Button or Selected File Display -->
+              <div *ngIf="!selectedFile(); else fileSelected" class="upload-prompt">
+                <button type="button" mat-raised-button color="primary">
+                  <mat-icon>upload_file</mat-icon>
+                  <span translate>document.selectFile</span>
+                </button>
+                <p class="upload-hint" translate>document.upload.hint</p>
+              </div>
+
+              <ng-template #fileSelected>
+                <div class="selected-file">
+                  <div class="file-info">
+                    <mat-icon>description</mat-icon>
+                    <div class="file-details">
+                      <span class="file-name">{{ selectedFile()?.name }}</span>
+                      <span class="file-size">{{ selectedFile()?.size || 0 | number }} bytes</span>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    mat-icon-button
+                    color="warn"
+                    (click)="removeFile()"
+                    matTooltip="{{ 'action.remove' | translate }}"
+                  >
+                    <mat-icon>close</mat-icon>
+                  </button>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+
+          <!-- Form Actions -->
+          <div class="form-actions">
+            <button type="button" mat-button (click)="cancel()">
+              <span translate>action.cancel</span>
+            </button>
+
+            <button type="submit" mat-raised-button color="primary" [disabled]="!canSave() || loading()">
+              <mat-icon>save</mat-icon>
+              <span translate>action.save</span>
+            </button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

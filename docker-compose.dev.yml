@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  # Frontend - Angular Development Server
+  frontend-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "4200:4200"
+      - "49153:49153"  # Live reload port
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm start
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  # Backend - Java Application (development)
+  backend-dev:
+    image: openjdk:17-jdk-alpine
+    ports:
+      - "8080:8080"
+      - "5005:5005"  # Debug port
+    environment:
+      - SPRING_PROFILES_ACTIVE=development
+      - DATABASE_URL=jdbc:postgresql://db:5432/fsrfp_dev
+      - DATABASE_USERNAME=fsrfp_user
+      - DATABASE_PASSWORD=fsrfp_password
+    depends_on:
+      - db
+    networks:
+      - app-network
+    restart: unless-stopped
+    # Uncomment when backend is available
+    # volumes:
+    #   - ./backend:/app
+    # command: ["java", "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005", "-jar", "/app/target/fsrfp-backend.jar"]
+
+  # Database - PostgreSQL (same as production)
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=fsrfp_dev
+      - POSTGRES_USER=fsrfp_user
+      - POSTGRES_PASSWORD=fsrfp_password
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    ports:
+      - "5433:5432"  # Different port to avoid conflicts
+    networks:
+      - app-network
+    restart: unless-stopped
+
+volumes:
+  postgres_dev_data:
+
+networks:
+  app-network:
+    driver: bridge
