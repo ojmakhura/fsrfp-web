@@ -504,12 +504,12 @@ import {
   ɵɵtwoWayProperty,
   ɵɵvalidateIframeAttribute,
   ɵɵviewQuery,
-  ɵɵviewQuerySignal
-} from "./chunk-LB7E77GG.js";
-import "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import "./chunk-4S3KYZTJ.js";
-import "./chunk-4MWRP73S.js";
+  ɵɵviewQuerySignal,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import './chunk-WPM5VTLQ.js';
+import './chunk-4S3KYZTJ.js';
+import './chunk-4MWRP73S.js';
 export {
   ANIMATION_MODULE_TYPE,
   APP_BOOTSTRAP_LISTENER,
@@ -1018,5 +1018,5 @@ export {
   ɵɵtwoWayProperty,
   ɵɵvalidateIframeAttribute,
   ɵɵviewQuery,
-  ɵɵviewQuerySignal
+  ɵɵviewQuerySignal,
 };

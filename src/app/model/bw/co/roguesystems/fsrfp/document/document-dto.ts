@@ -6,23 +6,23 @@ import { EntityType } from '@app/model/bw/co/roguesystems/fsrfp/entity-type';
 export class DocumentDTO extends AuditableDTO {
   target?: EntityType;
 
-    owner?: string;
+  owner?: string;
 
-    documentTypeId?: string;
+  documentTypeId?: string;
 
-    documentType?: string;
+  documentType?: string;
 
-    url?: string;
+  url?: string;
 
-    summary?: string;
+  summary?: string;
 
-    solrId?: string;
+  solrId?: string;
 
-    filename?: string;
+  filename?: string;
 
-    ownerId?: string;
+  ownerId?: string;
 
-    documentTypeCode?: string;
+  documentTypeCode?: string;
 
   constructor() {
     super();

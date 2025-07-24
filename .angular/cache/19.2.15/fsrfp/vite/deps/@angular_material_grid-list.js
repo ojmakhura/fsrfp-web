@@ -1,23 +1,13 @@
-import {
-  MatLine,
-  MatLineModule,
-  setLines
-} from "./chunk-PDRZCS2E.js";
-import "./chunk-JXBCBRYI.js";
-import {
-  MatCommonModule
-} from "./chunk-PQSRNTO7.js";
-import "./chunk-5RHDU2BP.js";
-import "./chunk-RG7RHNTG.js";
-import {
-  Directionality
-} from "./chunk-HNGPX6GY.js";
-import {
-  coerceNumberProperty
-} from "./chunk-GWH5ZIVQ.js";
-import "./chunk-FSIK44TS.js";
-import "./chunk-LJRMVWU3.js";
-import "./chunk-SOO5Y25R.js";
+import { MatLine, MatLineModule, setLines } from './chunk-PDRZCS2E.js';
+import './chunk-JXBCBRYI.js';
+import { MatCommonModule } from './chunk-PQSRNTO7.js';
+import './chunk-5RHDU2BP.js';
+import './chunk-RG7RHNTG.js';
+import { Directionality } from './chunk-HNGPX6GY.js';
+import { coerceNumberProperty } from './chunk-GWH5ZIVQ.js';
+import './chunk-FSIK44TS.js';
+import './chunk-LJRMVWU3.js';
+import './chunk-SOO5Y25R.js';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -42,12 +32,12 @@ import {
   ɵɵloadQuery,
   ɵɵprojection,
   ɵɵprojectionDef,
-  ɵɵqueryRefresh
-} from "./chunk-LB7E77GG.js";
-import "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import "./chunk-4S3KYZTJ.js";
-import "./chunk-4MWRP73S.js";
+  ɵɵqueryRefresh,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import './chunk-WPM5VTLQ.js';
+import './chunk-4S3KYZTJ.js';
+import './chunk-4MWRP73S.js';
 
 // node_modules/@angular/material/fesm2022/public-api-BoO5eSq-.mjs
 var TileCoordinator = class {
@@ -92,8 +82,10 @@ var TileCoordinator = class {
   }
   /** Finds the next available space large enough to fit the tile. */
   _findMatchingGap(tileCols) {
-    if (tileCols > this.tracker.length && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      throw Error(`mat-grid-list: tile with colspan ${tileCols} is wider than grid with cols="${this.tracker.length}".`);
+    if (tileCols > this.tracker.length && (typeof ngDevMode === 'undefined' || ngDevMode)) {
+      throw Error(
+        `mat-grid-list: tile with colspan ${tileCols} is wider than grid with cols="${this.tracker.length}".`,
+      );
     }
     let gapStartIndex = -1;
     let gapEndIndex = -1;
@@ -154,20 +146,30 @@ var TilePosition = class {
 var ɵTileCoordinator = TileCoordinator;
 
 // node_modules/@angular/material/fesm2022/grid-list.mjs
-var _c0 = ["*"];
-var _c1 = [[["", "mat-grid-avatar", ""], ["", "matGridAvatar", ""]], [["", "mat-line", ""], ["", "matLine", ""]], "*"];
-var _c2 = ["[mat-grid-avatar], [matGridAvatar]", "[mat-line], [matLine]", "*"];
-var _c3 = ".mat-grid-list{display:block;position:relative}.mat-grid-tile{display:block;position:absolute;overflow:hidden}.mat-grid-tile .mat-grid-tile-header,.mat-grid-tile .mat-grid-tile-footer{display:flex;align-items:center;height:48px;color:#fff;background:rgba(0,0,0,.38);overflow:hidden;padding:0 16px;position:absolute;left:0;right:0}.mat-grid-tile .mat-grid-tile-header>*,.mat-grid-tile .mat-grid-tile-footer>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-tile-header.mat-2-line,.mat-grid-tile .mat-grid-tile-footer.mat-2-line{height:68px}.mat-grid-tile .mat-grid-list-text{display:flex;flex-direction:column;flex:auto;box-sizing:border-box;overflow:hidden}.mat-grid-tile .mat-grid-list-text>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-list-text:empty{display:none}.mat-grid-tile .mat-grid-tile-header{top:0}.mat-grid-tile .mat-grid-tile-footer{bottom:0}.mat-grid-tile .mat-grid-avatar{padding-right:16px}[dir=rtl] .mat-grid-tile .mat-grid-avatar{padding-right:0;padding-left:16px}.mat-grid-tile .mat-grid-avatar:empty{display:none}.mat-grid-tile-header{font-size:var(--mat-grid-list-tile-header-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-header .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-header .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-header-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-footer{font-size:var(--mat-grid-list-tile-footer-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-footer .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-footer .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-footer-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-content{top:0;left:0;right:0;bottom:0;position:absolute;display:flex;align-items:center;justify-content:center;height:100%;padding:0;margin:0}\n";
-var MAT_GRID_LIST = new InjectionToken("MAT_GRID_LIST");
+var _c0 = ['*'];
+var _c1 = [
+  [
+    ['', 'mat-grid-avatar', ''],
+    ['', 'matGridAvatar', ''],
+  ],
+  [
+    ['', 'mat-line', ''],
+    ['', 'matLine', ''],
+  ],
+  '*',
+];
+var _c2 = ['[mat-grid-avatar], [matGridAvatar]', '[mat-line], [matLine]', '*'];
+var _c3 =
+  '.mat-grid-list{display:block;position:relative}.mat-grid-tile{display:block;position:absolute;overflow:hidden}.mat-grid-tile .mat-grid-tile-header,.mat-grid-tile .mat-grid-tile-footer{display:flex;align-items:center;height:48px;color:#fff;background:rgba(0,0,0,.38);overflow:hidden;padding:0 16px;position:absolute;left:0;right:0}.mat-grid-tile .mat-grid-tile-header>*,.mat-grid-tile .mat-grid-tile-footer>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-tile-header.mat-2-line,.mat-grid-tile .mat-grid-tile-footer.mat-2-line{height:68px}.mat-grid-tile .mat-grid-list-text{display:flex;flex-direction:column;flex:auto;box-sizing:border-box;overflow:hidden}.mat-grid-tile .mat-grid-list-text>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-list-text:empty{display:none}.mat-grid-tile .mat-grid-tile-header{top:0}.mat-grid-tile .mat-grid-tile-footer{bottom:0}.mat-grid-tile .mat-grid-avatar{padding-right:16px}[dir=rtl] .mat-grid-tile .mat-grid-avatar{padding-right:0;padding-left:16px}.mat-grid-tile .mat-grid-avatar:empty{display:none}.mat-grid-tile-header{font-size:var(--mat-grid-list-tile-header-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-header .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-header .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-header-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-footer{font-size:var(--mat-grid-list-tile-footer-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-footer .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-footer .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-footer-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-content{top:0;left:0;right:0;bottom:0;position:absolute;display:flex;align-items:center;justify-content:center;height:100%;padding:0;margin:0}\n';
+var MAT_GRID_LIST = new InjectionToken('MAT_GRID_LIST');
 var MatGridTile = class _MatGridTile {
   _element = inject(ElementRef);
   _gridList = inject(MAT_GRID_LIST, {
-    optional: true
+    optional: true,
   });
   _rowspan = 1;
   _colspan = 1;
-  constructor() {
-  }
+  constructor() {}
   /** Amount of rows that the grid tile takes up. */
   get rowspan() {
     return this._rowspan;
@@ -194,68 +196,85 @@ var MatGridTile = class _MatGridTile {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatGridTile,
-    selectors: [["mat-grid-tile"]],
-    hostAttrs: [1, "mat-grid-tile"],
+    selectors: [['mat-grid-tile']],
+    hostAttrs: [1, 'mat-grid-tile'],
     hostVars: 2,
     hostBindings: function MatGridTile_HostBindings(rf, ctx) {
       if (rf & 2) {
-        ɵɵattribute("rowspan", ctx.rowspan)("colspan", ctx.colspan);
+        ɵɵattribute('rowspan', ctx.rowspan)('colspan', ctx.colspan);
       }
     },
     inputs: {
-      rowspan: "rowspan",
-      colspan: "colspan"
+      rowspan: 'rowspan',
+      colspan: 'colspan',
     },
-    exportAs: ["matGridTile"],
+    exportAs: ['matGridTile'],
     ngContentSelectors: _c0,
     decls: 2,
     vars: 0,
-    consts: [[1, "mat-grid-tile-content"]],
+    consts: [[1, 'mat-grid-tile-content']],
     template: function MatGridTile_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 0);
+        ɵɵelementStart(0, 'div', 0);
         ɵɵprojection(1);
         ɵɵelementEnd();
       }
     },
-    styles: [".mat-grid-list{display:block;position:relative}.mat-grid-tile{display:block;position:absolute;overflow:hidden}.mat-grid-tile .mat-grid-tile-header,.mat-grid-tile .mat-grid-tile-footer{display:flex;align-items:center;height:48px;color:#fff;background:rgba(0,0,0,.38);overflow:hidden;padding:0 16px;position:absolute;left:0;right:0}.mat-grid-tile .mat-grid-tile-header>*,.mat-grid-tile .mat-grid-tile-footer>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-tile-header.mat-2-line,.mat-grid-tile .mat-grid-tile-footer.mat-2-line{height:68px}.mat-grid-tile .mat-grid-list-text{display:flex;flex-direction:column;flex:auto;box-sizing:border-box;overflow:hidden}.mat-grid-tile .mat-grid-list-text>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-list-text:empty{display:none}.mat-grid-tile .mat-grid-tile-header{top:0}.mat-grid-tile .mat-grid-tile-footer{bottom:0}.mat-grid-tile .mat-grid-avatar{padding-right:16px}[dir=rtl] .mat-grid-tile .mat-grid-avatar{padding-right:0;padding-left:16px}.mat-grid-tile .mat-grid-avatar:empty{display:none}.mat-grid-tile-header{font-size:var(--mat-grid-list-tile-header-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-header .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-header .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-header-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-footer{font-size:var(--mat-grid-list-tile-footer-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-footer .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-footer .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-footer-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-content{top:0;left:0;right:0;bottom:0;position:absolute;display:flex;align-items:center;justify-content:center;height:100%;padding:0;margin:0}\n"],
+    styles: [
+      '.mat-grid-list{display:block;position:relative}.mat-grid-tile{display:block;position:absolute;overflow:hidden}.mat-grid-tile .mat-grid-tile-header,.mat-grid-tile .mat-grid-tile-footer{display:flex;align-items:center;height:48px;color:#fff;background:rgba(0,0,0,.38);overflow:hidden;padding:0 16px;position:absolute;left:0;right:0}.mat-grid-tile .mat-grid-tile-header>*,.mat-grid-tile .mat-grid-tile-footer>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-tile-header.mat-2-line,.mat-grid-tile .mat-grid-tile-footer.mat-2-line{height:68px}.mat-grid-tile .mat-grid-list-text{display:flex;flex-direction:column;flex:auto;box-sizing:border-box;overflow:hidden}.mat-grid-tile .mat-grid-list-text>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-list-text:empty{display:none}.mat-grid-tile .mat-grid-tile-header{top:0}.mat-grid-tile .mat-grid-tile-footer{bottom:0}.mat-grid-tile .mat-grid-avatar{padding-right:16px}[dir=rtl] .mat-grid-tile .mat-grid-avatar{padding-right:0;padding-left:16px}.mat-grid-tile .mat-grid-avatar:empty{display:none}.mat-grid-tile-header{font-size:var(--mat-grid-list-tile-header-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-header .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-header .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-header-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-footer{font-size:var(--mat-grid-list-tile-footer-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-footer .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-footer .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-footer-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-content{top:0;left:0;right:0;bottom:0;position:absolute;display:flex;align-items:center;justify-content:center;height:100%;padding:0;margin:0}\n',
+    ],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatGridTile, [{
-    type: Component,
-    args: [{
-      selector: "mat-grid-tile",
-      exportAs: "matGridTile",
-      host: {
-        "class": "mat-grid-tile",
-        // Ensures that the "rowspan" and "colspan" input value is reflected in
-        // the DOM. This is needed for the grid-tile harness.
-        "[attr.rowspan]": "rowspan",
-        "[attr.colspan]": "colspan"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatGridTile,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-grid-tile',
+              exportAs: 'matGridTile',
+              host: {
+                class: 'mat-grid-tile',
+                // Ensures that the "rowspan" and "colspan" input value is reflected in
+                // the DOM. This is needed for the grid-tile harness.
+                '[attr.rowspan]': 'rowspan',
+                '[attr.colspan]': 'colspan',
+              },
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              template: '<div class="mat-grid-tile-content">\n  <ng-content></ng-content>\n</div>\n',
+              styles: [
+                '.mat-grid-list{display:block;position:relative}.mat-grid-tile{display:block;position:absolute;overflow:hidden}.mat-grid-tile .mat-grid-tile-header,.mat-grid-tile .mat-grid-tile-footer{display:flex;align-items:center;height:48px;color:#fff;background:rgba(0,0,0,.38);overflow:hidden;padding:0 16px;position:absolute;left:0;right:0}.mat-grid-tile .mat-grid-tile-header>*,.mat-grid-tile .mat-grid-tile-footer>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-tile-header.mat-2-line,.mat-grid-tile .mat-grid-tile-footer.mat-2-line{height:68px}.mat-grid-tile .mat-grid-list-text{display:flex;flex-direction:column;flex:auto;box-sizing:border-box;overflow:hidden}.mat-grid-tile .mat-grid-list-text>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-list-text:empty{display:none}.mat-grid-tile .mat-grid-tile-header{top:0}.mat-grid-tile .mat-grid-tile-footer{bottom:0}.mat-grid-tile .mat-grid-avatar{padding-right:16px}[dir=rtl] .mat-grid-tile .mat-grid-avatar{padding-right:0;padding-left:16px}.mat-grid-tile .mat-grid-avatar:empty{display:none}.mat-grid-tile-header{font-size:var(--mat-grid-list-tile-header-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-header .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-header .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-header-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-footer{font-size:var(--mat-grid-list-tile-footer-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-footer .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-footer .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-footer-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-content{top:0;left:0;right:0;bottom:0;position:absolute;display:flex;align-items:center;justify-content:center;height:100%;padding:0;margin:0}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        rowspan: [
+          {
+            type: Input,
+          },
+        ],
+        colspan: [
+          {
+            type: Input,
+          },
+        ],
       },
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      template: '<div class="mat-grid-tile-content">\n  <ng-content></ng-content>\n</div>\n',
-      styles: [".mat-grid-list{display:block;position:relative}.mat-grid-tile{display:block;position:absolute;overflow:hidden}.mat-grid-tile .mat-grid-tile-header,.mat-grid-tile .mat-grid-tile-footer{display:flex;align-items:center;height:48px;color:#fff;background:rgba(0,0,0,.38);overflow:hidden;padding:0 16px;position:absolute;left:0;right:0}.mat-grid-tile .mat-grid-tile-header>*,.mat-grid-tile .mat-grid-tile-footer>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-tile-header.mat-2-line,.mat-grid-tile .mat-grid-tile-footer.mat-2-line{height:68px}.mat-grid-tile .mat-grid-list-text{display:flex;flex-direction:column;flex:auto;box-sizing:border-box;overflow:hidden}.mat-grid-tile .mat-grid-list-text>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-list-text:empty{display:none}.mat-grid-tile .mat-grid-tile-header{top:0}.mat-grid-tile .mat-grid-tile-footer{bottom:0}.mat-grid-tile .mat-grid-avatar{padding-right:16px}[dir=rtl] .mat-grid-tile .mat-grid-avatar{padding-right:0;padding-left:16px}.mat-grid-tile .mat-grid-avatar:empty{display:none}.mat-grid-tile-header{font-size:var(--mat-grid-list-tile-header-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-header .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-header .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-header-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-footer{font-size:var(--mat-grid-list-tile-footer-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-footer .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-footer .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-footer-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-content{top:0;left:0;right:0;bottom:0;position:absolute;display:flex;align-items:center;justify-content:center;height:100%;padding:0;margin:0}\n"]
-    }]
-  }], () => [], {
-    rowspan: [{
-      type: Input
-    }],
-    colspan: [{
-      type: Input
-    }]
-  });
+    );
 })();
 var MatGridTileText = class _MatGridTileText {
   _element = inject(ElementRef);
   _lines;
-  constructor() {
-  }
+  constructor() {}
   ngAfterContentInit() {
     setLines(this._lines, this._element);
   }
@@ -264,51 +283,67 @@ var MatGridTileText = class _MatGridTileText {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatGridTileText,
-    selectors: [["mat-grid-tile-header"], ["mat-grid-tile-footer"]],
+    selectors: [['mat-grid-tile-header'], ['mat-grid-tile-footer']],
     contentQueries: function MatGridTileText_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MatLine, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._lines = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._lines = _t);
       }
     },
     ngContentSelectors: _c2,
     decls: 4,
     vars: 0,
-    consts: [[1, "mat-grid-list-text"]],
+    consts: [[1, 'mat-grid-list-text']],
     template: function MatGridTileText_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef(_c1);
         ɵɵprojection(0);
-        ɵɵelementStart(1, "div", 0);
+        ɵɵelementStart(1, 'div', 0);
         ɵɵprojection(2, 1);
         ɵɵelementEnd();
         ɵɵprojection(3, 2);
       }
     },
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatGridTileText, [{
-    type: Component,
-    args: [{
-      selector: "mat-grid-tile-header, mat-grid-tile-footer",
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation.None,
-      template: '<ng-content select="[mat-grid-avatar], [matGridAvatar]"></ng-content>\n<div class="mat-grid-list-text"><ng-content select="[mat-line], [matLine]"></ng-content></div>\n<ng-content></ng-content>\n'
-    }]
-  }], () => [], {
-    _lines: [{
-      type: ContentChildren,
-      args: [MatLine, {
-        descendants: true
-      }]
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatGridTileText,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-grid-tile-header, mat-grid-tile-footer',
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation.None,
+              template:
+                '<ng-content select="[mat-grid-avatar], [matGridAvatar]"></ng-content>\n<div class="mat-grid-list-text"><ng-content select="[mat-line], [matLine]"></ng-content></div>\n<ng-content></ng-content>\n',
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        _lines: [
+          {
+            type: ContentChildren,
+            args: [
+              MatLine,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
 var MatGridAvatarCssMatStyler = class _MatGridAvatarCssMatStyler {
   static ɵfac = function MatGridAvatarCssMatStyler_Factory(__ngFactoryType__) {
@@ -316,20 +351,33 @@ var MatGridAvatarCssMatStyler = class _MatGridAvatarCssMatStyler {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatGridAvatarCssMatStyler,
-    selectors: [["", "mat-grid-avatar", ""], ["", "matGridAvatar", ""]],
-    hostAttrs: [1, "mat-grid-avatar"]
+    selectors: [
+      ['', 'mat-grid-avatar', ''],
+      ['', 'matGridAvatar', ''],
+    ],
+    hostAttrs: [1, 'mat-grid-avatar'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatGridAvatarCssMatStyler, [{
-    type: Directive,
-    args: [{
-      selector: "[mat-grid-avatar], [matGridAvatar]",
-      host: {
-        "class": "mat-grid-avatar"
-      }
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatGridAvatarCssMatStyler,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[mat-grid-avatar], [matGridAvatar]',
+              host: {
+                class: 'mat-grid-avatar',
+              },
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatGridTileHeaderCssMatStyler = class _MatGridTileHeaderCssMatStyler {
   static ɵfac = function MatGridTileHeaderCssMatStyler_Factory(__ngFactoryType__) {
@@ -337,20 +385,30 @@ var MatGridTileHeaderCssMatStyler = class _MatGridTileHeaderCssMatStyler {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatGridTileHeaderCssMatStyler,
-    selectors: [["mat-grid-tile-header"]],
-    hostAttrs: [1, "mat-grid-tile-header"]
+    selectors: [['mat-grid-tile-header']],
+    hostAttrs: [1, 'mat-grid-tile-header'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatGridTileHeaderCssMatStyler, [{
-    type: Directive,
-    args: [{
-      selector: "mat-grid-tile-header",
-      host: {
-        "class": "mat-grid-tile-header"
-      }
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatGridTileHeaderCssMatStyler,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'mat-grid-tile-header',
+              host: {
+                class: 'mat-grid-tile-header',
+              },
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatGridTileFooterCssMatStyler = class _MatGridTileFooterCssMatStyler {
   static ɵfac = function MatGridTileFooterCssMatStyler_Factory(__ngFactoryType__) {
@@ -358,20 +416,30 @@ var MatGridTileFooterCssMatStyler = class _MatGridTileFooterCssMatStyler {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatGridTileFooterCssMatStyler,
-    selectors: [["mat-grid-tile-footer"]],
-    hostAttrs: [1, "mat-grid-tile-footer"]
+    selectors: [['mat-grid-tile-footer']],
+    hostAttrs: [1, 'mat-grid-tile-footer'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatGridTileFooterCssMatStyler, [{
-    type: Directive,
-    args: [{
-      selector: "mat-grid-tile-footer",
-      host: {
-        "class": "mat-grid-tile-footer"
-      }
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatGridTileFooterCssMatStyler,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'mat-grid-tile-footer',
+              host: {
+                class: 'mat-grid-tile-footer',
+              },
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var cssCalcAllowedValue = /^-?\d+((\.\d+)?[A-Za-z%$]?)+$/;
 var TileStyler = class {
@@ -413,7 +481,7 @@ var TileStyler = class {
    * @return Position of the tile as a CSS calc() expression.
    */
   getTilePosition(baseSize, offset) {
-    return offset === 0 ? "0" : calc(`(${baseSize} + ${this._gutterSize}) * ${offset}`);
+    return offset === 0 ? '0' : calc(`(${baseSize} + ${this._gutterSize}) * ${offset}`);
   }
   /**
    * Gets the actual size of a tile, e.g., width or height, taking rowspan or colspan into account.
@@ -439,9 +507,9 @@ var TileStyler = class {
   /** Sets the horizontal placement of the tile in the list. */
   setColStyles(tile, colIndex, percentWidth, gutterWidth) {
     let baseTileWidth = this.getBaseTileSize(percentWidth, gutterWidth);
-    let side = this._direction === "rtl" ? "right" : "left";
+    let side = this._direction === 'rtl' ? 'right' : 'left';
     tile._setStyle(side, this.getTilePosition(baseTileWidth, colIndex));
-    tile._setStyle("width", calc(this.getTileSize(baseTileWidth, tile.colspan)));
+    tile._setStyle('width', calc(this.getTileSize(baseTileWidth, tile.colspan)));
   }
   /**
    * Calculates the total size taken up by gutters across one axis of a list.
@@ -474,23 +542,23 @@ var FixedTileStyler = class extends TileStyler {
   init(gutterSize, tracker, cols, direction) {
     super.init(gutterSize, tracker, cols, direction);
     this.fixedRowHeight = normalizeUnits(this.fixedRowHeight);
-    if (!cssCalcAllowedValue.test(this.fixedRowHeight) && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (!cssCalcAllowedValue.test(this.fixedRowHeight) && (typeof ngDevMode === 'undefined' || ngDevMode)) {
       throw Error(`Invalid value "${this.fixedRowHeight}" set as rowHeight.`);
     }
   }
   setRowStyles(tile, rowIndex) {
-    tile._setStyle("top", this.getTilePosition(this.fixedRowHeight, rowIndex));
-    tile._setStyle("height", calc(this.getTileSize(this.fixedRowHeight, tile.rowspan)));
+    tile._setStyle('top', this.getTilePosition(this.fixedRowHeight, rowIndex));
+    tile._setStyle('height', calc(this.getTileSize(this.fixedRowHeight, tile.rowspan)));
   }
   getComputedHeight() {
-    return ["height", calc(`${this.getTileSpan(this.fixedRowHeight)} + ${this.getGutterSpan()}`)];
+    return ['height', calc(`${this.getTileSpan(this.fixedRowHeight)} + ${this.getGutterSpan()}`)];
   }
   reset(list) {
-    list._setListStyle(["height", null]);
+    list._setListStyle(['height', null]);
     if (list._tiles) {
       list._tiles.forEach((tile) => {
-        tile._setStyle("top", null);
-        tile._setStyle("height", null);
+        tile._setStyle('top', null);
+        tile._setStyle('height', null);
       });
     }
   }
@@ -506,22 +574,22 @@ var RatioTileStyler = class extends TileStyler {
   setRowStyles(tile, rowIndex, percentWidth, gutterWidth) {
     let percentHeightPerTile = percentWidth / this.rowHeightRatio;
     this.baseTileHeight = this.getBaseTileSize(percentHeightPerTile, gutterWidth);
-    tile._setStyle("marginTop", this.getTilePosition(this.baseTileHeight, rowIndex));
-    tile._setStyle("paddingTop", calc(this.getTileSize(this.baseTileHeight, tile.rowspan)));
+    tile._setStyle('marginTop', this.getTilePosition(this.baseTileHeight, rowIndex));
+    tile._setStyle('paddingTop', calc(this.getTileSize(this.baseTileHeight, tile.rowspan)));
   }
   getComputedHeight() {
-    return ["paddingBottom", calc(`${this.getTileSpan(this.baseTileHeight)} + ${this.getGutterSpan()}`)];
+    return ['paddingBottom', calc(`${this.getTileSpan(this.baseTileHeight)} + ${this.getGutterSpan()}`)];
   }
   reset(list) {
-    list._setListStyle(["paddingBottom", null]);
+    list._setListStyle(['paddingBottom', null]);
     list._tiles.forEach((tile) => {
-      tile._setStyle("marginTop", null);
-      tile._setStyle("paddingTop", null);
+      tile._setStyle('marginTop', null);
+      tile._setStyle('paddingTop', null);
     });
   }
   _parseRatio(value) {
-    const ratioParts = value.split(":");
-    if (ratioParts.length !== 2 && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    const ratioParts = value.split(':');
+    if (ratioParts.length !== 2 && (typeof ngDevMode === 'undefined' || ngDevMode)) {
       throw Error(`mat-grid-list: invalid ratio given for row-height: "${value}"`);
     }
     this.rowHeightRatio = parseFloat(ratioParts[0]) / parseFloat(ratioParts[1]);
@@ -532,14 +600,14 @@ var FitTileStyler = class extends TileStyler {
     let percentHeightPerTile = 100 / this._rowspan;
     let gutterHeightPerTile = (this._rows - 1) / this._rows;
     let baseTileHeight = this.getBaseTileSize(percentHeightPerTile, gutterHeightPerTile);
-    tile._setStyle("top", this.getTilePosition(baseTileHeight, rowIndex));
-    tile._setStyle("height", calc(this.getTileSize(baseTileHeight, tile.rowspan)));
+    tile._setStyle('top', this.getTilePosition(baseTileHeight, rowIndex));
+    tile._setStyle('height', calc(this.getTileSize(baseTileHeight, tile.rowspan)));
   }
   reset(list) {
     if (list._tiles) {
       list._tiles.forEach((tile) => {
-        tile._setStyle("top", null);
-        tile._setStyle("height", null);
+        tile._setStyle('top', null);
+        tile._setStyle('height', null);
       });
     }
   }
@@ -550,11 +618,11 @@ function calc(exp) {
 function normalizeUnits(value) {
   return value.match(/([A-Za-z%]+)$/) ? value : `${value}px`;
 }
-var MAT_FIT_MODE = "fit";
+var MAT_FIT_MODE = 'fit';
 var MatGridList = class _MatGridList {
   _element = inject(ElementRef);
   _dir = inject(Directionality, {
-    optional: true
+    optional: true,
   });
   /** Number of columns being rendered. */
   _cols;
@@ -568,13 +636,12 @@ var MatGridList = class _MatGridList {
    */
   _rowHeight;
   /** The amount of space between tiles. This will be something like '5px' or '2em'. */
-  _gutter = "1px";
+  _gutter = '1px';
   /** Sets position and size styles for a tile */
   _tileStyler;
   /** Query list of tiles that are being rendered. */
   _tiles;
-  constructor() {
-  }
+  constructor() {}
   /** Amount of columns in the grid list. */
   get cols() {
     return this._cols;
@@ -587,14 +654,14 @@ var MatGridList = class _MatGridList {
     return this._gutter;
   }
   set gutterSize(value) {
-    this._gutter = `${value == null ? "" : value}`;
+    this._gutter = `${value == null ? '' : value}`;
   }
   /** Set internal representation of row height from the user-provided value. */
   get rowHeight() {
     return this._rowHeight;
   }
   set rowHeight(value) {
-    const newValue = `${value == null ? "" : value}`;
+    const newValue = `${value == null ? '' : value}`;
     if (newValue !== this._rowHeight) {
       this._rowHeight = newValue;
       this._setTileStyler(this._rowHeight);
@@ -613,14 +680,14 @@ var MatGridList = class _MatGridList {
   }
   /** Throw a friendly error if cols property is missing */
   _checkCols() {
-    if (!this.cols && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (!this.cols && (typeof ngDevMode === 'undefined' || ngDevMode)) {
       throw Error(`mat-grid-list: must pass in number of columns. Example: <mat-grid-list cols="3">`);
     }
   }
   /** Default to equal width:height if rowHeight property is missing */
   _checkRowHeight() {
     if (!this._rowHeight) {
-      this._setTileStyler("1:1");
+      this._setTileStyler('1:1');
     }
   }
   /** Creates correct Tile Styler subtype based on rowHeight passed in by user */
@@ -630,7 +697,7 @@ var MatGridList = class _MatGridList {
     }
     if (rowHeight === MAT_FIT_MODE) {
       this._tileStyler = new FitTileStyler();
-    } else if (rowHeight && rowHeight.indexOf(":") > -1) {
+    } else if (rowHeight && rowHeight.indexOf(':') > -1) {
       this._tileStyler = new RatioTileStyler(rowHeight);
     } else {
       this._tileStyler = new FixedTileStyler(rowHeight);
@@ -643,7 +710,7 @@ var MatGridList = class _MatGridList {
     }
     const tracker = this._tileCoordinator;
     const tiles = this._tiles.filter((tile) => !tile._gridList || tile._gridList === this);
-    const direction = this._dir ? this._dir.value : "ltr";
+    const direction = this._dir ? this._dir.value : 'ltr';
     this._tileCoordinator.update(this.cols, tiles);
     this._tileStyler.init(this.gutterSize, tracker, this.cols, direction);
     tiles.forEach((tile, index) => {
@@ -663,87 +730,116 @@ var MatGridList = class _MatGridList {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatGridList,
-    selectors: [["mat-grid-list"]],
+    selectors: [['mat-grid-list']],
     contentQueries: function MatGridList_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MatGridTile, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._tiles = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._tiles = _t);
       }
     },
-    hostAttrs: [1, "mat-grid-list"],
+    hostAttrs: [1, 'mat-grid-list'],
     hostVars: 1,
     hostBindings: function MatGridList_HostBindings(rf, ctx) {
       if (rf & 2) {
-        ɵɵattribute("cols", ctx.cols);
+        ɵɵattribute('cols', ctx.cols);
       }
     },
     inputs: {
-      cols: "cols",
-      gutterSize: "gutterSize",
-      rowHeight: "rowHeight"
+      cols: 'cols',
+      gutterSize: 'gutterSize',
+      rowHeight: 'rowHeight',
     },
-    exportAs: ["matGridList"],
-    features: [ɵɵProvidersFeature([{
-      provide: MAT_GRID_LIST,
-      useExisting: _MatGridList
-    }])],
+    exportAs: ['matGridList'],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MAT_GRID_LIST,
+          useExisting: _MatGridList,
+        },
+      ]),
+    ],
     ngContentSelectors: _c0,
     decls: 2,
     vars: 0,
     template: function MatGridList_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef();
-        ɵɵelementStart(0, "div");
+        ɵɵelementStart(0, 'div');
         ɵɵprojection(1);
         ɵɵelementEnd();
       }
     },
     styles: [_c3],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatGridList, [{
-    type: Component,
-    args: [{
-      selector: "mat-grid-list",
-      exportAs: "matGridList",
-      host: {
-        "class": "mat-grid-list",
-        // Ensures that the "cols" input value is reflected in the DOM. This is
-        // needed for the grid-list harness.
-        "[attr.cols]": "cols"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatGridList,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-grid-list',
+              exportAs: 'matGridList',
+              host: {
+                class: 'mat-grid-list',
+                // Ensures that the "cols" input value is reflected in the DOM. This is
+                // needed for the grid-list harness.
+                '[attr.cols]': 'cols',
+              },
+              providers: [
+                {
+                  provide: MAT_GRID_LIST,
+                  useExisting: MatGridList,
+                },
+              ],
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation.None,
+              template: '<div>\n  <ng-content></ng-content>\n</div>',
+              styles: [
+                '.mat-grid-list{display:block;position:relative}.mat-grid-tile{display:block;position:absolute;overflow:hidden}.mat-grid-tile .mat-grid-tile-header,.mat-grid-tile .mat-grid-tile-footer{display:flex;align-items:center;height:48px;color:#fff;background:rgba(0,0,0,.38);overflow:hidden;padding:0 16px;position:absolute;left:0;right:0}.mat-grid-tile .mat-grid-tile-header>*,.mat-grid-tile .mat-grid-tile-footer>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-tile-header.mat-2-line,.mat-grid-tile .mat-grid-tile-footer.mat-2-line{height:68px}.mat-grid-tile .mat-grid-list-text{display:flex;flex-direction:column;flex:auto;box-sizing:border-box;overflow:hidden}.mat-grid-tile .mat-grid-list-text>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-list-text:empty{display:none}.mat-grid-tile .mat-grid-tile-header{top:0}.mat-grid-tile .mat-grid-tile-footer{bottom:0}.mat-grid-tile .mat-grid-avatar{padding-right:16px}[dir=rtl] .mat-grid-tile .mat-grid-avatar{padding-right:0;padding-left:16px}.mat-grid-tile .mat-grid-avatar:empty{display:none}.mat-grid-tile-header{font-size:var(--mat-grid-list-tile-header-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-header .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-header .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-header-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-footer{font-size:var(--mat-grid-list-tile-footer-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-footer .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-footer .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-footer-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-content{top:0;left:0;right:0;bottom:0;position:absolute;display:flex;align-items:center;justify-content:center;height:100%;padding:0;margin:0}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        _tiles: [
+          {
+            type: ContentChildren,
+            args: [
+              MatGridTile,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        cols: [
+          {
+            type: Input,
+          },
+        ],
+        gutterSize: [
+          {
+            type: Input,
+          },
+        ],
+        rowHeight: [
+          {
+            type: Input,
+          },
+        ],
       },
-      providers: [{
-        provide: MAT_GRID_LIST,
-        useExisting: MatGridList
-      }],
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation.None,
-      template: "<div>\n  <ng-content></ng-content>\n</div>",
-      styles: [".mat-grid-list{display:block;position:relative}.mat-grid-tile{display:block;position:absolute;overflow:hidden}.mat-grid-tile .mat-grid-tile-header,.mat-grid-tile .mat-grid-tile-footer{display:flex;align-items:center;height:48px;color:#fff;background:rgba(0,0,0,.38);overflow:hidden;padding:0 16px;position:absolute;left:0;right:0}.mat-grid-tile .mat-grid-tile-header>*,.mat-grid-tile .mat-grid-tile-footer>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-tile-header.mat-2-line,.mat-grid-tile .mat-grid-tile-footer.mat-2-line{height:68px}.mat-grid-tile .mat-grid-list-text{display:flex;flex-direction:column;flex:auto;box-sizing:border-box;overflow:hidden}.mat-grid-tile .mat-grid-list-text>*{margin:0;padding:0;font-weight:normal;font-size:inherit}.mat-grid-tile .mat-grid-list-text:empty{display:none}.mat-grid-tile .mat-grid-tile-header{top:0}.mat-grid-tile .mat-grid-tile-footer{bottom:0}.mat-grid-tile .mat-grid-avatar{padding-right:16px}[dir=rtl] .mat-grid-tile .mat-grid-avatar{padding-right:0;padding-left:16px}.mat-grid-tile .mat-grid-avatar:empty{display:none}.mat-grid-tile-header{font-size:var(--mat-grid-list-tile-header-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-header .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-header .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-header-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-footer{font-size:var(--mat-grid-list-tile-footer-primary-text-size, var(--mat-sys-body-large))}.mat-grid-tile-footer .mat-line{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box}.mat-grid-tile-footer .mat-line:nth-child(n+2){font-size:var(--mat-grid-list-tile-footer-secondary-text-size, var(--mat-sys-body-medium))}.mat-grid-tile-content{top:0;left:0;right:0;bottom:0;position:absolute;display:flex;align-items:center;justify-content:center;height:100%;padding:0;margin:0}\n"]
-    }]
-  }], () => [], {
-    _tiles: [{
-      type: ContentChildren,
-      args: [MatGridTile, {
-        descendants: true
-      }]
-    }],
-    cols: [{
-      type: Input
-    }],
-    gutterSize: [{
-      type: Input
-    }],
-    rowHeight: [{
-      type: Input
-    }]
-  });
+    );
 })();
 var MatGridListModule = class _MatGridListModule {
   static ɵfac = function MatGridListModule_Factory(__ngFactoryType__) {
@@ -751,21 +847,67 @@ var MatGridListModule = class _MatGridListModule {
   };
   static ɵmod = ɵɵdefineNgModule({
     type: _MatGridListModule,
-    imports: [MatLineModule, MatCommonModule, MatGridList, MatGridTile, MatGridTileText, MatGridTileHeaderCssMatStyler, MatGridTileFooterCssMatStyler, MatGridAvatarCssMatStyler],
-    exports: [MatGridList, MatGridTile, MatGridTileText, MatLineModule, MatCommonModule, MatGridTileHeaderCssMatStyler, MatGridTileFooterCssMatStyler, MatGridAvatarCssMatStyler]
+    imports: [
+      MatLineModule,
+      MatCommonModule,
+      MatGridList,
+      MatGridTile,
+      MatGridTileText,
+      MatGridTileHeaderCssMatStyler,
+      MatGridTileFooterCssMatStyler,
+      MatGridAvatarCssMatStyler,
+    ],
+    exports: [
+      MatGridList,
+      MatGridTile,
+      MatGridTileText,
+      MatLineModule,
+      MatCommonModule,
+      MatGridTileHeaderCssMatStyler,
+      MatGridTileFooterCssMatStyler,
+      MatGridAvatarCssMatStyler,
+    ],
   });
   static ɵinj = ɵɵdefineInjector({
-    imports: [MatLineModule, MatCommonModule, MatLineModule, MatCommonModule]
+    imports: [MatLineModule, MatCommonModule, MatLineModule, MatCommonModule],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatGridListModule, [{
-    type: NgModule,
-    args: [{
-      imports: [MatLineModule, MatCommonModule, MatGridList, MatGridTile, MatGridTileText, MatGridTileHeaderCssMatStyler, MatGridTileFooterCssMatStyler, MatGridAvatarCssMatStyler],
-      exports: [MatGridList, MatGridTile, MatGridTileText, MatLineModule, MatCommonModule, MatGridTileHeaderCssMatStyler, MatGridTileFooterCssMatStyler, MatGridAvatarCssMatStyler]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatGridListModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [
+                MatLineModule,
+                MatCommonModule,
+                MatGridList,
+                MatGridTile,
+                MatGridTileText,
+                MatGridTileHeaderCssMatStyler,
+                MatGridTileFooterCssMatStyler,
+                MatGridAvatarCssMatStyler,
+              ],
+              exports: [
+                MatGridList,
+                MatGridTile,
+                MatGridTileText,
+                MatLineModule,
+                MatCommonModule,
+                MatGridTileHeaderCssMatStyler,
+                MatGridTileFooterCssMatStyler,
+                MatGridAvatarCssMatStyler,
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 export {
   MatGridAvatarCssMatStyler,
@@ -776,6 +918,6 @@ export {
   MatGridTileHeaderCssMatStyler,
   MatGridTileText,
   MatLine,
-  ɵTileCoordinator
+  ɵTileCoordinator,
 };
 //# sourceMappingURL=@angular_material_grid-list.js.map

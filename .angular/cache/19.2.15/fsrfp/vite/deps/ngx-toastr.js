@@ -1,22 +1,9 @@
-import {
-  animate,
-  sequence,
-  state,
-  style,
-  transition,
-  trigger
-} from "./chunk-4AETYW7Y.js";
-import {
-  DomSanitizer
-} from "./chunk-DTDSM6HR.js";
-import "./chunk-O5IRBPO4.js";
-import "./chunk-NKM73PB6.js";
-import {
-  NgIf
-} from "./chunk-LJRMVWU3.js";
-import {
-  DOCUMENT
-} from "./chunk-SOO5Y25R.js";
+import { animate, sequence, state, style, transition, trigger } from './chunk-4AETYW7Y.js';
+import { DomSanitizer } from './chunk-DTDSM6HR.js';
+import './chunk-O5IRBPO4.js';
+import './chunk-NKM73PB6.js';
+import { NgIf } from './chunk-LJRMVWU3.js';
+import { DOCUMENT } from './chunk-SOO5Y25R.js';
 import {
   ANIMATION_MODULE_TYPE,
   ApplicationRef,
@@ -67,17 +54,12 @@ import {
   ɵɵsyntheticHostProperty,
   ɵɵtemplate,
   ɵɵtext,
-  ɵɵtextInterpolate1
-} from "./chunk-LB7E77GG.js";
-import "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import {
-  Subject
-} from "./chunk-4S3KYZTJ.js";
-import {
-  __spreadProps,
-  __spreadValues
-} from "./chunk-4MWRP73S.js";
+  ɵɵtextInterpolate1,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import './chunk-WPM5VTLQ.js';
+import { Subject } from './chunk-4S3KYZTJ.js';
+import { __spreadProps, __spreadValues } from './chunk-4MWRP73S.js';
 
 // node_modules/@angular/animations/fesm2022/animations.mjs
 var AnimationBuilder = class _AnimationBuilder {
@@ -87,46 +69,59 @@ var AnimationBuilder = class _AnimationBuilder {
   static ɵprov = ɵɵdefineInjectable({
     token: _AnimationBuilder,
     factory: () => (() => inject(BrowserAnimationBuilder))(),
-    providedIn: "root"
+    providedIn: 'root',
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AnimationBuilder, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root",
-      useFactory: () => inject(BrowserAnimationBuilder)
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      AnimationBuilder,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: 'root',
+              useFactory: () => inject(BrowserAnimationBuilder),
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var AnimationFactory = class {
-};
+var AnimationFactory = class {};
 var BrowserAnimationBuilder = class _BrowserAnimationBuilder extends AnimationBuilder {
   animationModuleType = inject(ANIMATION_MODULE_TYPE, {
-    optional: true
+    optional: true,
   });
   _nextAnimationId = 0;
   _renderer;
   constructor(rootRenderer, doc) {
     super();
     const typeData = {
-      id: "0",
+      id: '0',
       encapsulation: ViewEncapsulation.None,
       styles: [],
       data: {
-        animation: []
-      }
+        animation: [],
+      },
     };
     this._renderer = rootRenderer.createRenderer(doc.body, typeData);
     if (this.animationModuleType === null && !isAnimationRenderer(this._renderer)) {
-      throw new RuntimeError(3600, (typeof ngDevMode === "undefined" || ngDevMode) && "Angular detected that the `AnimationBuilder` was injected, but animation support was not enabled. Please make sure that you enable animations in your application by calling `provideAnimations()` or `provideAnimationsAsync()` function.");
+      throw new RuntimeError(
+        3600,
+        (typeof ngDevMode === 'undefined' || ngDevMode) &&
+          'Angular detected that the `AnimationBuilder` was injected, but animation support was not enabled. Please make sure that you enable animations in your application by calling `provideAnimations()` or `provideAnimationsAsync()` function.',
+      );
     }
   }
   build(animation2) {
     const id = this._nextAnimationId;
     this._nextAnimationId++;
     const entry = Array.isArray(animation2) ? sequence(animation2) : animation2;
-    issueAnimationCommand(this._renderer, null, id, "register", [entry]);
+    issueAnimationCommand(this._renderer, null, id, 'register', [entry]);
     return new BrowserAnimationFactory(id, this._renderer);
   }
   static ɵfac = function BrowserAnimationBuilder_Factory(__ngFactoryType__) {
@@ -135,24 +130,39 @@ var BrowserAnimationBuilder = class _BrowserAnimationBuilder extends AnimationBu
   static ɵprov = ɵɵdefineInjectable({
     token: _BrowserAnimationBuilder,
     factory: _BrowserAnimationBuilder.ɵfac,
-    providedIn: "root"
+    providedIn: 'root',
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(BrowserAnimationBuilder, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], () => [{
-    type: RendererFactory2
-  }, {
-    type: Document,
-    decorators: [{
-      type: Inject,
-      args: [DOCUMENT]
-    }]
-  }], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      BrowserAnimationBuilder,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: 'root',
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: RendererFactory2,
+        },
+        {
+          type: Document,
+          decorators: [
+            {
+              type: Inject,
+              args: [DOCUMENT],
+            },
+          ],
+        },
+      ],
+      null,
+    );
 })();
 var BrowserAnimationFactory = class extends AnimationFactory {
   _id;
@@ -176,7 +186,7 @@ var RendererAnimationPlayer = class {
     this.id = id;
     this.element = element;
     this._renderer = _renderer;
-    this._command("create", options);
+    this._command('create', options);
   }
   _listen(eventName, callback) {
     return this._renderer.listen(this.element, `@@${this.id}:${eventName}`, callback);
@@ -185,42 +195,42 @@ var RendererAnimationPlayer = class {
     issueAnimationCommand(this._renderer, this.element, this.id, command, args);
   }
   onDone(fn) {
-    this._listen("done", fn);
+    this._listen('done', fn);
   }
   onStart(fn) {
-    this._listen("start", fn);
+    this._listen('start', fn);
   }
   onDestroy(fn) {
-    this._listen("destroy", fn);
+    this._listen('destroy', fn);
   }
   init() {
-    this._command("init");
+    this._command('init');
   }
   hasStarted() {
     return this._started;
   }
   play() {
-    this._command("play");
+    this._command('play');
     this._started = true;
   }
   pause() {
-    this._command("pause");
+    this._command('pause');
   }
   restart() {
-    this._command("restart");
+    this._command('restart');
   }
   finish() {
-    this._command("finish");
+    this._command('finish');
   }
   destroy() {
-    this._command("destroy");
+    this._command('destroy');
   }
   reset() {
-    this._command("reset");
+    this._command('reset');
     this._started = false;
   }
   setPosition(p) {
-    this._command("setPosition", p);
+    this._command('setPosition', p);
   }
   getPosition() {
     return unwrapAnimationRenderer(this._renderer)?.engine?.players[this.id]?.getPosition() ?? 0;
@@ -245,18 +255,18 @@ function isAnimationRenderer(renderer) {
 }
 
 // node_modules/ngx-toastr/fesm2022/ngx-toastr.mjs
-var _c0 = ["toast-component", ""];
+var _c0 = ['toast-component', ''];
 function Toast_button_0_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 5);
-    ɵɵlistener("click", function Toast_button_0_Template_button_click_0_listener() {
+    ɵɵelementStart(0, 'button', 5);
+    ɵɵlistener('click', function Toast_button_0_Template_button_click_0_listener() {
       ɵɵrestoreView(_r1);
       const ctx_r1 = ɵɵnextContext();
       return ɵɵresetView(ctx_r1.remove());
     });
-    ɵɵelementStart(1, "span", 6);
-    ɵɵtext(2, "×");
+    ɵɵelementStart(1, 'span', 6);
+    ɵɵtext(2, '×');
     ɵɵelementEnd()();
   }
 }
@@ -269,73 +279,73 @@ function Toast_div_1_ng_container_2_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵtextInterpolate1("[", ctx_r1.duplicatesCount + 1, "]");
+    ɵɵtextInterpolate1('[', ctx_r1.duplicatesCount + 1, ']');
   }
 }
 function Toast_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div");
+    ɵɵelementStart(0, 'div');
     ɵɵtext(1);
-    ɵɵtemplate(2, Toast_div_1_ng_container_2_Template, 2, 1, "ng-container", 4);
+    ɵɵtemplate(2, Toast_div_1_ng_container_2_Template, 2, 1, 'ng-container', 4);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵclassMap(ctx_r1.options.titleClass);
-    ɵɵattribute("aria-label", ctx_r1.title);
+    ɵɵattribute('aria-label', ctx_r1.title);
     ɵɵadvance();
-    ɵɵtextInterpolate1(" ", ctx_r1.title, " ");
+    ɵɵtextInterpolate1(' ', ctx_r1.title, ' ');
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.duplicatesCount);
+    ɵɵproperty('ngIf', ctx_r1.duplicatesCount);
   }
 }
 function Toast_div_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "div", 7);
+    ɵɵelement(0, 'div', 7);
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵclassMap(ctx_r1.options.messageClass);
-    ɵɵproperty("innerHTML", ctx_r1.message, ɵɵsanitizeHtml);
+    ɵɵproperty('innerHTML', ctx_r1.message, ɵɵsanitizeHtml);
   }
 }
 function Toast_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 8);
+    ɵɵelementStart(0, 'div', 8);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵclassMap(ctx_r1.options.messageClass);
-    ɵɵattribute("aria-label", ctx_r1.message);
+    ɵɵattribute('aria-label', ctx_r1.message);
     ɵɵadvance();
-    ɵɵtextInterpolate1(" ", ctx_r1.message, " ");
+    ɵɵtextInterpolate1(' ', ctx_r1.message, ' ');
   }
 }
 function Toast_div_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div");
-    ɵɵelement(1, "div", 9);
+    ɵɵelementStart(0, 'div');
+    ɵɵelement(1, 'div', 9);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵstyleProp("width", ctx_r1.width() + "%");
+    ɵɵstyleProp('width', ctx_r1.width() + '%');
   }
 }
 function ToastNoAnimation_button_0_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 5);
-    ɵɵlistener("click", function ToastNoAnimation_button_0_Template_button_click_0_listener() {
+    ɵɵelementStart(0, 'button', 5);
+    ɵɵlistener('click', function ToastNoAnimation_button_0_Template_button_click_0_listener() {
       ɵɵrestoreView(_r1);
       const ctx_r1 = ɵɵnextContext();
       return ɵɵresetView(ctx_r1.remove());
     });
-    ɵɵelementStart(1, "span", 6);
-    ɵɵtext(2, "×");
+    ɵɵelementStart(1, 'span', 6);
+    ɵɵtext(2, '×');
     ɵɵelementEnd()();
   }
 }
@@ -348,60 +358,60 @@ function ToastNoAnimation_div_1_ng_container_2_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵtextInterpolate1("[", ctx_r1.duplicatesCount + 1, "]");
+    ɵɵtextInterpolate1('[', ctx_r1.duplicatesCount + 1, ']');
   }
 }
 function ToastNoAnimation_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div");
+    ɵɵelementStart(0, 'div');
     ɵɵtext(1);
-    ɵɵtemplate(2, ToastNoAnimation_div_1_ng_container_2_Template, 2, 1, "ng-container", 4);
+    ɵɵtemplate(2, ToastNoAnimation_div_1_ng_container_2_Template, 2, 1, 'ng-container', 4);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵclassMap(ctx_r1.options.titleClass);
-    ɵɵattribute("aria-label", ctx_r1.title);
+    ɵɵattribute('aria-label', ctx_r1.title);
     ɵɵadvance();
-    ɵɵtextInterpolate1(" ", ctx_r1.title, " ");
+    ɵɵtextInterpolate1(' ', ctx_r1.title, ' ');
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.duplicatesCount);
+    ɵɵproperty('ngIf', ctx_r1.duplicatesCount);
   }
 }
 function ToastNoAnimation_div_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "div", 7);
+    ɵɵelement(0, 'div', 7);
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵclassMap(ctx_r1.options.messageClass);
-    ɵɵproperty("innerHTML", ctx_r1.message, ɵɵsanitizeHtml);
+    ɵɵproperty('innerHTML', ctx_r1.message, ɵɵsanitizeHtml);
   }
 }
 function ToastNoAnimation_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 8);
+    ɵɵelementStart(0, 'div', 8);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵclassMap(ctx_r1.options.messageClass);
-    ɵɵattribute("aria-label", ctx_r1.message);
+    ɵɵattribute('aria-label', ctx_r1.message);
     ɵɵadvance();
-    ɵɵtextInterpolate1(" ", ctx_r1.message, " ");
+    ɵɵtextInterpolate1(' ', ctx_r1.message, ' ');
   }
 }
 function ToastNoAnimation_div_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div");
-    ɵɵelement(1, "div", 9);
+    ɵɵelementStart(0, 'div');
+    ɵɵelement(1, 'div', 9);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵstyleProp("width", ctx_r1.width() + "%");
+    ɵɵstyleProp('width', ctx_r1.width() + '%');
   }
 }
 var ToastContainerDirective = class _ToastContainerDirective {
@@ -417,21 +427,33 @@ var ToastContainerDirective = class _ToastContainerDirective {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _ToastContainerDirective,
-    selectors: [["", "toastContainer", ""]],
-    exportAs: ["toastContainer"]
+    selectors: [['', 'toastContainer', '']],
+    exportAs: ['toastContainer'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ToastContainerDirective, [{
-    type: Directive,
-    args: [{
-      selector: "[toastContainer]",
-      exportAs: "toastContainer",
-      standalone: true
-    }]
-  }], () => [{
-    type: ElementRef
-  }], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      ToastContainerDirective,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[toastContainer]',
+              exportAs: 'toastContainer',
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ElementRef,
+        },
+      ],
+      null,
+    );
 })();
 var ComponentPortal = class {
   _attachedHost;
@@ -615,10 +637,10 @@ var DefaultNoComponentGlobalConfig = {
   resetTimeoutOnDuplicate: false,
   includeTitleDuplicates: false,
   iconClasses: {
-    error: "toast-error",
-    info: "toast-info",
-    success: "toast-success",
-    warning: "toast-warning"
+    error: 'toast-error',
+    info: 'toast-info',
+    success: 'toast-success',
+    warning: 'toast-warning',
   },
   // Individual
   closeButton: false,
@@ -627,17 +649,17 @@ var DefaultNoComponentGlobalConfig = {
   extendedTimeOut: 1e3,
   enableHtml: false,
   progressBar: false,
-  toastClass: "ngx-toastr",
-  positionClass: "toast-top-right",
-  titleClass: "toast-title",
-  messageClass: "toast-message",
-  easing: "ease-in",
+  toastClass: 'ngx-toastr',
+  positionClass: 'toast-top-right',
+  titleClass: 'toast-title',
+  messageClass: 'toast-message',
+  easing: 'ease-in',
   easeTime: 300,
   tapToDismiss: true,
   onActivateTick: false,
-  progressAnimation: "decreasing"
+  progressAnimation: 'decreasing',
 };
-var TOAST_CONFIG = new InjectionToken("ToastConfig");
+var TOAST_CONFIG = new InjectionToken('ToastConfig');
 var DomPortalHost = class extends BasePortalHost {
   _hostDomElement;
   _componentFactoryResolver;
@@ -699,9 +721,9 @@ var OverlayContainer = class _OverlayContainer {
    * and 'aria-live="polite"'
    */
   _createContainer() {
-    const container = this._document.createElement("div");
-    container.classList.add("overlay-container");
-    container.setAttribute("aria-live", "polite");
+    const container = this._document.createElement('div');
+    container.classList.add('overlay-container');
+    container.setAttribute('aria-live', 'polite');
     this._document.body.appendChild(container);
     this._containerElement = container;
   }
@@ -711,16 +733,26 @@ var OverlayContainer = class _OverlayContainer {
   static ɵprov = ɵɵdefineInjectable({
     token: _OverlayContainer,
     factory: _OverlayContainer.ɵfac,
-    providedIn: "root"
+    providedIn: 'root',
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(OverlayContainer, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      OverlayContainer,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: 'root',
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var OverlayRef = class {
   _portalHost;
@@ -752,12 +784,15 @@ var Overlay = class _Overlay {
   create(positionClass, overlayContainer) {
     return this._createOverlayRef(this.getPaneElement(positionClass, overlayContainer));
   }
-  getPaneElement(positionClass = "", overlayContainer) {
+  getPaneElement(positionClass = '', overlayContainer) {
     if (!this._paneElements.get(overlayContainer)) {
       this._paneElements.set(overlayContainer, {});
     }
     if (!this._paneElements.get(overlayContainer)[positionClass]) {
-      this._paneElements.get(overlayContainer)[positionClass] = this._createPaneElement(positionClass, overlayContainer);
+      this._paneElements.get(overlayContainer)[positionClass] = this._createPaneElement(
+        positionClass,
+        overlayContainer,
+      );
     }
     return this._paneElements.get(overlayContainer)[positionClass];
   }
@@ -766,10 +801,10 @@ var Overlay = class _Overlay {
    * @returns Newly-created pane element
    */
   _createPaneElement(positionClass, overlayContainer) {
-    const pane = this._document.createElement("div");
-    pane.id = "toast-container";
+    const pane = this._document.createElement('div');
+    pane.id = 'toast-container';
     pane.classList.add(positionClass);
-    pane.classList.add("toast-container");
+    pane.classList.add('toast-container');
     if (!overlayContainer) {
       this._overlayContainer.getContainerElement().appendChild(pane);
     } else {
@@ -798,16 +833,26 @@ var Overlay = class _Overlay {
   static ɵprov = ɵɵdefineInjectable({
     token: _Overlay,
     factory: _Overlay.ɵfac,
-    providedIn: "root"
+    providedIn: 'root',
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Overlay, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      Overlay,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: 'root',
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var ToastrService = class _ToastrService {
   overlay;
@@ -827,31 +872,34 @@ var ToastrService = class _ToastrService {
     this.ngZone = ngZone;
     this.toastrConfig = __spreadValues(__spreadValues({}, token.default), token.config);
     if (token.config.iconClasses) {
-      this.toastrConfig.iconClasses = __spreadValues(__spreadValues({}, token.default.iconClasses), token.config.iconClasses);
+      this.toastrConfig.iconClasses = __spreadValues(
+        __spreadValues({}, token.default.iconClasses),
+        token.config.iconClasses,
+      );
     }
   }
   /** show toast */
-  show(message, title, override = {}, type = "") {
+  show(message, title, override = {}, type = '') {
     return this._preBuildNotification(type, message, title, this.applyConfig(override));
   }
   /** show successful toast */
   success(message, title, override = {}) {
-    const type = this.toastrConfig.iconClasses.success || "";
+    const type = this.toastrConfig.iconClasses.success || '';
     return this._preBuildNotification(type, message, title, this.applyConfig(override));
   }
   /** show error toast */
   error(message, title, override = {}) {
-    const type = this.toastrConfig.iconClasses.error || "";
+    const type = this.toastrConfig.iconClasses.error || '';
     return this._preBuildNotification(type, message, title, this.applyConfig(override));
   }
   /** show info toast */
   info(message, title, override = {}) {
-    const type = this.toastrConfig.iconClasses.info || "";
+    const type = this.toastrConfig.iconClasses.info || '';
     return this._preBuildNotification(type, message, title, this.applyConfig(override));
   }
   /** show warning toast */
   warning(message, title, override = {}) {
-    const type = this.toastrConfig.iconClasses.warning || "";
+    const type = this.toastrConfig.iconClasses.warning || '';
     return this._preBuildNotification(type, message, title, this.applyConfig(override));
   }
   /**
@@ -895,10 +943,8 @@ var ToastrService = class _ToastrService {
   /**
    * Determines if toast message is already shown
    */
-  findDuplicate(title = "", message = "", resetOnDuplicate, countDuplicates) {
-    const {
-      includeTitleDuplicates
-    } = this.toastrConfig;
+  findDuplicate(title = '', message = '', resetOnDuplicate, countDuplicates) {
+    const { includeTitleDuplicates } = this.toastrConfig;
     for (const toast of this.toasts) {
       const hasDuplicateTitle = includeTitleDuplicates && toast.title === title;
       if ((!includeTitleDuplicates || hasDuplicateTitle) && toast.message === message) {
@@ -920,7 +966,7 @@ var ToastrService = class _ToastrService {
       if (this.toasts[i].toastId === toastId) {
         return {
           index: i,
-          activeToast: this.toasts[i]
+          activeToast: this.toasts[i],
         };
       }
     }
@@ -941,10 +987,19 @@ var ToastrService = class _ToastrService {
    */
   _buildNotification(toastType, message, title, config) {
     if (!config.toastComponent) {
-      throw new Error("toastComponent required");
+      throw new Error('toastComponent required');
     }
-    const duplicate = this.findDuplicate(title, message, this.toastrConfig.resetTimeoutOnDuplicate && config.timeOut > 0, this.toastrConfig.countDuplicates);
-    if ((this.toastrConfig.includeTitleDuplicates && title || message) && this.toastrConfig.preventDuplicates && duplicate !== null) {
+    const duplicate = this.findDuplicate(
+      title,
+      message,
+      this.toastrConfig.resetTimeoutOnDuplicate && config.timeOut > 0,
+      this.toastrConfig.countDuplicates,
+    );
+    if (
+      ((this.toastrConfig.includeTitleDuplicates && title) || message) &&
+      this.toastrConfig.preventDuplicates &&
+      duplicate !== null
+    ) {
       return duplicate;
     }
     this.previousToastMessage = message;
@@ -963,27 +1018,29 @@ var ToastrService = class _ToastrService {
     }
     const toastRef = new ToastRef(overlayRef);
     const toastPackage = new ToastPackage(this.index, config, sanitizedMessage, title, toastType, toastRef);
-    const providers = [{
-      provide: ToastPackage,
-      useValue: toastPackage
-    }];
+    const providers = [
+      {
+        provide: ToastPackage,
+        useValue: toastPackage,
+      },
+    ];
     const toastInjector = Injector.create({
       providers,
-      parent: this._injector
+      parent: this._injector,
     });
     const component = new ComponentPortal(config.toastComponent, toastInjector);
     const portal = overlayRef.attach(component, config.newestOnTop);
     toastRef.componentInstance = portal.instance;
     const ins = {
       toastId: this.index,
-      title: title || "",
-      message: message || "",
+      title: title || '',
+      message: message || '',
       toastRef,
       onShown: toastRef.afterActivate(),
       onHidden: toastRef.afterClosed(),
       onTap: toastPackage.onTap(),
       onAction: toastPackage.onAction(),
-      portal
+      portal,
     };
     if (!keepInactive) {
       this.currentlyActive = this.currentlyActive + 1;
@@ -995,35 +1052,59 @@ var ToastrService = class _ToastrService {
     return ins;
   }
   static ɵfac = function ToastrService_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ToastrService)(ɵɵinject(TOAST_CONFIG), ɵɵinject(Overlay), ɵɵinject(Injector), ɵɵinject(DomSanitizer), ɵɵinject(NgZone));
+    return new (__ngFactoryType__ || _ToastrService)(
+      ɵɵinject(TOAST_CONFIG),
+      ɵɵinject(Overlay),
+      ɵɵinject(Injector),
+      ɵɵinject(DomSanitizer),
+      ɵɵinject(NgZone),
+    );
   };
   static ɵprov = ɵɵdefineInjectable({
     token: _ToastrService,
     factory: _ToastrService.ɵfac,
-    providedIn: "root"
+    providedIn: 'root',
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ToastrService, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], () => [{
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [TOAST_CONFIG]
-    }]
-  }, {
-    type: Overlay
-  }, {
-    type: Injector
-  }, {
-    type: DomSanitizer
-  }, {
-    type: NgZone
-  }], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      ToastrService,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: 'root',
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [TOAST_CONFIG],
+            },
+          ],
+        },
+        {
+          type: Overlay,
+        },
+        {
+          type: Injector,
+        },
+        {
+          type: DomSanitizer,
+        },
+        {
+          type: NgZone,
+        },
+      ],
+      null,
+    );
 })();
 var Toast = class _Toast {
   toastrService;
@@ -1037,7 +1118,7 @@ var Toast = class _Toast {
   /** width of progress bar */
   width = signal(-1);
   /** a combination of toast type and options.toastClass */
-  toastClasses = "";
+  toastClasses = '';
   state;
   /** controls animation */
   get _state() {
@@ -1045,8 +1126,8 @@ var Toast = class _Toast {
   }
   /** hides component when waiting to be displayed */
   get displayStyle() {
-    if (this.state().value === "inactive") {
-      return "none";
+    if (this.state().value === 'inactive') {
+      return 'none';
     }
     return;
   }
@@ -1079,11 +1160,11 @@ var Toast = class _Toast {
       this.duplicatesCount = count;
     });
     this.state = signal({
-      value: "inactive",
+      value: 'inactive',
       params: {
         easeTime: this.toastPackage.config.easeTime,
-        easing: "ease-in"
-      }
+        easing: 'ease-in',
+      },
     });
   }
   ngOnDestroy() {
@@ -1098,12 +1179,14 @@ var Toast = class _Toast {
    * activates toast and sets timeout
    */
   activateToast() {
-    this.state.update((state2) => __spreadProps(__spreadValues({}, state2), {
-      value: "active"
-    }));
-    if (!(this.options.disableTimeOut === true || this.options.disableTimeOut === "timeOut") && this.options.timeOut) {
+    this.state.update((state2) =>
+      __spreadProps(__spreadValues({}, state2), {
+        value: 'active',
+      }),
+    );
+    if (!(this.options.disableTimeOut === true || this.options.disableTimeOut === 'timeOut') && this.options.timeOut) {
       this.outsideTimeout(() => this.remove(), this.options.timeOut);
-      this.hideTime = (/* @__PURE__ */ new Date()).getTime() + this.options.timeOut;
+      this.hideTime = /* @__PURE__ */ new Date().getTime() + this.options.timeOut;
       if (this.options.progressBar) {
         this.outsideInterval(() => this.updateProgress(), 10);
       }
@@ -1116,10 +1199,10 @@ var Toast = class _Toast {
     if (this.width() === 0 || this.width() === 100 || !this.options.timeOut) {
       return;
     }
-    const now = (/* @__PURE__ */ new Date()).getTime();
+    const now = /* @__PURE__ */ new Date().getTime();
     const remaining = this.hideTime - now;
-    this.width.set(remaining / this.options.timeOut * 100);
-    if (this.options.progressAnimation === "increasing") {
+    this.width.set((remaining / this.options.timeOut) * 100);
+    if (this.options.progressAnimation === 'increasing') {
       this.width.update((width) => 100 - width);
     }
     if (this.width() <= 0) {
@@ -1132,12 +1215,14 @@ var Toast = class _Toast {
   resetTimeout() {
     clearTimeout(this.timeout);
     clearInterval(this.intervalId);
-    this.state.update((state2) => __spreadProps(__spreadValues({}, state2), {
-      value: "active"
-    }));
+    this.state.update((state2) =>
+      __spreadProps(__spreadValues({}, state2), {
+        value: 'active',
+      }),
+    );
     this.outsideTimeout(() => this.remove(), this.originalTimeout);
     this.options.timeOut = this.originalTimeout;
-    this.hideTime = (/* @__PURE__ */ new Date()).getTime() + (this.options.timeOut || 0);
+    this.hideTime = /* @__PURE__ */ new Date().getTime() + (this.options.timeOut || 0);
     this.width.set(-1);
     if (this.options.progressBar) {
       this.outsideInterval(() => this.updateProgress(), 10);
@@ -1147,17 +1232,19 @@ var Toast = class _Toast {
    * tells toastrService to remove this toast after animation time
    */
   remove() {
-    if (this.state().value === "removed") {
+    if (this.state().value === 'removed') {
       return;
     }
     clearTimeout(this.timeout);
-    this.state.update((state2) => __spreadProps(__spreadValues({}, state2), {
-      value: "removed"
-    }));
+    this.state.update((state2) =>
+      __spreadProps(__spreadValues({}, state2), {
+        value: 'removed',
+      }),
+    );
     this.outsideTimeout(() => this.toastrService.remove(this.toastPackage.toastId), +this.toastPackage.config.easeTime);
   }
   tapToast() {
-    if (this.state().value === "removed") {
+    if (this.state().value === 'removed') {
       return;
     }
     this.toastPackage.triggerTap();
@@ -1166,10 +1253,10 @@ var Toast = class _Toast {
     }
   }
   stickAround() {
-    if (this.state().value === "removed") {
+    if (this.state().value === 'removed') {
       return;
     }
-    if (this.options.disableTimeOut !== "extendedTimeOut") {
+    if (this.options.disableTimeOut !== 'extendedTimeOut') {
       clearTimeout(this.timeout);
       this.options.timeOut = 0;
       this.hideTime = 0;
@@ -1178,12 +1265,17 @@ var Toast = class _Toast {
     }
   }
   delayedHideToast() {
-    if (this.options.disableTimeOut === true || this.options.disableTimeOut === "extendedTimeOut" || this.options.extendedTimeOut === 0 || this.state().value === "removed") {
+    if (
+      this.options.disableTimeOut === true ||
+      this.options.disableTimeOut === 'extendedTimeOut' ||
+      this.options.extendedTimeOut === 0 ||
+      this.state().value === 'removed'
+    ) {
       return;
     }
     this.outsideTimeout(() => this.remove(), this.options.extendedTimeOut);
     this.options.timeOut = this.options.extendedTimeOut;
-    this.hideTime = (/* @__PURE__ */ new Date()).getTime() + (this.options.timeOut || 0);
+    this.hideTime = /* @__PURE__ */ new Date().getTime() + (this.options.timeOut || 0);
     this.width.set(-1);
     if (this.options.progressBar) {
       this.outsideInterval(() => this.updateProgress(), 10);
@@ -1191,14 +1283,14 @@ var Toast = class _Toast {
   }
   outsideTimeout(func, timeout) {
     if (this.ngZone) {
-      this.ngZone.runOutsideAngular(() => this.timeout = setTimeout(() => this.runInsideAngular(func), timeout));
+      this.ngZone.runOutsideAngular(() => (this.timeout = setTimeout(() => this.runInsideAngular(func), timeout)));
     } else {
       this.timeout = setTimeout(() => func(), timeout);
     }
   }
   outsideInterval(func, timeout) {
     if (this.ngZone) {
-      this.ngZone.runOutsideAngular(() => this.intervalId = setInterval(() => this.runInsideAngular(func), timeout));
+      this.ngZone.runOutsideAngular(() => (this.intervalId = setInterval(() => this.runInsideAngular(func), timeout)));
     } else {
       this.intervalId = setInterval(() => func(), timeout);
     }
@@ -1211,68 +1303,112 @@ var Toast = class _Toast {
     }
   }
   static ɵfac = function Toast_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Toast)(ɵɵdirectiveInject(ToastrService), ɵɵdirectiveInject(ToastPackage), ɵɵdirectiveInject(NgZone));
+    return new (__ngFactoryType__ || _Toast)(
+      ɵɵdirectiveInject(ToastrService),
+      ɵɵdirectiveInject(ToastPackage),
+      ɵɵdirectiveInject(NgZone),
+    );
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _Toast,
-    selectors: [["", "toast-component", ""]],
+    selectors: [['', 'toast-component', '']],
     hostVars: 5,
     hostBindings: function Toast_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("click", function Toast_click_HostBindingHandler() {
+        ɵɵlistener('click', function Toast_click_HostBindingHandler() {
           return ctx.tapToast();
-        })("mouseenter", function Toast_mouseenter_HostBindingHandler() {
+        })('mouseenter', function Toast_mouseenter_HostBindingHandler() {
           return ctx.stickAround();
-        })("mouseleave", function Toast_mouseleave_HostBindingHandler() {
+        })('mouseleave', function Toast_mouseleave_HostBindingHandler() {
           return ctx.delayedHideToast();
         });
       }
       if (rf & 2) {
-        ɵɵsyntheticHostProperty("@flyInOut", ctx._state);
+        ɵɵsyntheticHostProperty('@flyInOut', ctx._state);
         ɵɵclassMap(ctx.toastClasses);
-        ɵɵstyleProp("display", ctx.displayStyle);
+        ɵɵstyleProp('display', ctx.displayStyle);
       }
     },
     attrs: _c0,
     decls: 5,
     vars: 5,
-    consts: [["type", "button", "class", "toast-close-button", "aria-label", "Close", 3, "click", 4, "ngIf"], [3, "class", 4, "ngIf"], ["role", "alert", 3, "class", "innerHTML", 4, "ngIf"], ["role", "alert", 3, "class", 4, "ngIf"], [4, "ngIf"], ["type", "button", "aria-label", "Close", 1, "toast-close-button", 3, "click"], ["aria-hidden", "true"], ["role", "alert", 3, "innerHTML"], ["role", "alert"], [1, "toast-progress"]],
+    consts: [
+      ['type', 'button', 'class', 'toast-close-button', 'aria-label', 'Close', 3, 'click', 4, 'ngIf'],
+      [3, 'class', 4, 'ngIf'],
+      ['role', 'alert', 3, 'class', 'innerHTML', 4, 'ngIf'],
+      ['role', 'alert', 3, 'class', 4, 'ngIf'],
+      [4, 'ngIf'],
+      ['type', 'button', 'aria-label', 'Close', 1, 'toast-close-button', 3, 'click'],
+      ['aria-hidden', 'true'],
+      ['role', 'alert', 3, 'innerHTML'],
+      ['role', 'alert'],
+      [1, 'toast-progress'],
+    ],
     template: function Toast_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵtemplate(0, Toast_button_0_Template, 3, 0, "button", 0)(1, Toast_div_1_Template, 3, 5, "div", 1)(2, Toast_div_2_Template, 1, 3, "div", 2)(3, Toast_div_3_Template, 2, 4, "div", 3)(4, Toast_div_4_Template, 2, 2, "div", 4);
+        ɵɵtemplate(0, Toast_button_0_Template, 3, 0, 'button', 0)(1, Toast_div_1_Template, 3, 5, 'div', 1)(
+          2,
+          Toast_div_2_Template,
+          1,
+          3,
+          'div',
+          2,
+        )(3, Toast_div_3_Template, 2, 4, 'div', 3)(4, Toast_div_4_Template, 2, 2, 'div', 4);
       }
       if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.options.closeButton);
+        ɵɵproperty('ngIf', ctx.options.closeButton);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.title);
+        ɵɵproperty('ngIf', ctx.title);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.message && ctx.options.enableHtml);
+        ɵɵproperty('ngIf', ctx.message && ctx.options.enableHtml);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.message && !ctx.options.enableHtml);
+        ɵɵproperty('ngIf', ctx.message && !ctx.options.enableHtml);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.options.progressBar);
+        ɵɵproperty('ngIf', ctx.options.progressBar);
       }
     },
     dependencies: [NgIf],
     encapsulation: 2,
     data: {
-      animation: [trigger("flyInOut", [state("inactive", style({
-        opacity: 0
-      })), state("active", style({
-        opacity: 1
-      })), state("removed", style({
-        opacity: 0
-      })), transition("inactive => active", animate("{{ easeTime }}ms {{ easing }}")), transition("active => removed", animate("{{ easeTime }}ms {{ easing }}"))])]
+      animation: [
+        trigger('flyInOut', [
+          state(
+            'inactive',
+            style({
+              opacity: 0,
+            }),
+          ),
+          state(
+            'active',
+            style({
+              opacity: 1,
+            }),
+          ),
+          state(
+            'removed',
+            style({
+              opacity: 0,
+            }),
+          ),
+          transition('inactive => active', animate('{{ easeTime }}ms {{ easing }}')),
+          transition('active => removed', animate('{{ easeTime }}ms {{ easing }}')),
+        ]),
+      ],
     },
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Toast, [{
-    type: Component,
-    args: [{
-      selector: "[toast-component]",
-      template: `
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      Toast,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: '[toast-component]',
+              template: `
   <button *ngIf="options.closeButton" (click)="remove()" type="button" class="toast-close-button" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -1290,69 +1426,109 @@ var Toast = class _Toast {
     <div class="toast-progress" [style.width]="width() + '%'"></div>
   </div>
   `,
-      animations: [trigger("flyInOut", [state("inactive", style({
-        opacity: 0
-      })), state("active", style({
-        opacity: 1
-      })), state("removed", style({
-        opacity: 0
-      })), transition("inactive => active", animate("{{ easeTime }}ms {{ easing }}")), transition("active => removed", animate("{{ easeTime }}ms {{ easing }}"))])],
-      preserveWhitespaces: false,
-      standalone: true,
-      imports: [NgIf],
-      changeDetection: ChangeDetectionStrategy.OnPush
-    }]
-  }], () => [{
-    type: ToastrService
-  }, {
-    type: ToastPackage
-  }, {
-    type: NgZone
-  }], {
-    toastClasses: [{
-      type: HostBinding,
-      args: ["class"]
-    }],
-    _state: [{
-      type: HostBinding,
-      args: ["@flyInOut"]
-    }],
-    displayStyle: [{
-      type: HostBinding,
-      args: ["style.display"]
-    }],
-    tapToast: [{
-      type: HostListener,
-      args: ["click"]
-    }],
-    stickAround: [{
-      type: HostListener,
-      args: ["mouseenter"]
-    }],
-    delayedHideToast: [{
-      type: HostListener,
-      args: ["mouseleave"]
-    }]
-  });
+              animations: [
+                trigger('flyInOut', [
+                  state(
+                    'inactive',
+                    style({
+                      opacity: 0,
+                    }),
+                  ),
+                  state(
+                    'active',
+                    style({
+                      opacity: 1,
+                    }),
+                  ),
+                  state(
+                    'removed',
+                    style({
+                      opacity: 0,
+                    }),
+                  ),
+                  transition('inactive => active', animate('{{ easeTime }}ms {{ easing }}')),
+                  transition('active => removed', animate('{{ easeTime }}ms {{ easing }}')),
+                ]),
+              ],
+              preserveWhitespaces: false,
+              standalone: true,
+              imports: [NgIf],
+              changeDetection: ChangeDetectionStrategy.OnPush,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ToastrService,
+        },
+        {
+          type: ToastPackage,
+        },
+        {
+          type: NgZone,
+        },
+      ],
+      {
+        toastClasses: [
+          {
+            type: HostBinding,
+            args: ['class'],
+          },
+        ],
+        _state: [
+          {
+            type: HostBinding,
+            args: ['@flyInOut'],
+          },
+        ],
+        displayStyle: [
+          {
+            type: HostBinding,
+            args: ['style.display'],
+          },
+        ],
+        tapToast: [
+          {
+            type: HostListener,
+            args: ['click'],
+          },
+        ],
+        stickAround: [
+          {
+            type: HostListener,
+            args: ['mouseenter'],
+          },
+        ],
+        delayedHideToast: [
+          {
+            type: HostListener,
+            args: ['mouseleave'],
+          },
+        ],
+      },
+    );
 })();
 var DefaultGlobalConfig = __spreadProps(__spreadValues({}, DefaultNoComponentGlobalConfig), {
-  toastComponent: Toast
+  toastComponent: Toast,
 });
 var provideToastr = (config = {}) => {
-  const providers = [{
-    provide: TOAST_CONFIG,
-    useValue: {
-      default: DefaultGlobalConfig,
-      config
-    }
-  }];
+  const providers = [
+    {
+      provide: TOAST_CONFIG,
+      useValue: {
+        default: DefaultGlobalConfig,
+        config,
+      },
+    },
+  ];
   return makeEnvironmentProviders(providers);
 };
 var ToastrModule = class _ToastrModule {
   static forRoot(config = {}) {
     return {
       ngModule: _ToastrModule,
-      providers: [provideToastr(config)]
+      providers: [provideToastr(config)],
     };
   }
   static ɵfac = function ToastrModule_Factory(__ngFactoryType__) {
@@ -1361,45 +1537,65 @@ var ToastrModule = class _ToastrModule {
   static ɵmod = ɵɵdefineNgModule({
     type: _ToastrModule,
     imports: [Toast],
-    exports: [Toast]
+    exports: [Toast],
   });
   static ɵinj = ɵɵdefineInjector({});
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ToastrModule, [{
-    type: NgModule,
-    args: [{
-      imports: [Toast],
-      exports: [Toast]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      ToastrModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [Toast],
+              exports: [Toast],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var ToastrComponentlessModule = class _ToastrComponentlessModule {
   static forRoot(config = {}) {
     return {
       ngModule: ToastrModule,
-      providers: [{
-        provide: TOAST_CONFIG,
-        useValue: {
-          default: DefaultNoComponentGlobalConfig,
-          config
-        }
-      }]
+      providers: [
+        {
+          provide: TOAST_CONFIG,
+          useValue: {
+            default: DefaultNoComponentGlobalConfig,
+            config,
+          },
+        },
+      ],
     };
   }
   static ɵfac = function ToastrComponentlessModule_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ToastrComponentlessModule)();
   };
   static ɵmod = ɵɵdefineNgModule({
-    type: _ToastrComponentlessModule
+    type: _ToastrComponentlessModule,
   });
   static ɵinj = ɵɵdefineInjector({});
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ToastrComponentlessModule, [{
-    type: NgModule,
-    args: [{}]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      ToastrComponentlessModule,
+      [
+        {
+          type: NgModule,
+          args: [{}],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var ToastNoAnimation = class _ToastNoAnimation {
   toastrService;
@@ -1413,16 +1609,16 @@ var ToastNoAnimation = class _ToastNoAnimation {
   /** width of progress bar */
   width = signal(-1);
   /** a combination of toast type and options.toastClass */
-  toastClasses = "";
+  toastClasses = '';
   /** hides component when waiting to be displayed */
   get displayStyle() {
-    if (this.state() === "inactive") {
-      return "none";
+    if (this.state() === 'inactive') {
+      return 'none';
     }
     return null;
   }
   /** controls animation */
-  state = signal("inactive");
+  state = signal('inactive');
   timeout;
   intervalId;
   hideTime;
@@ -1464,12 +1660,12 @@ var ToastNoAnimation = class _ToastNoAnimation {
    * activates toast and sets timeout
    */
   activateToast() {
-    this.state.set("active");
-    if (!(this.options.disableTimeOut === true || this.options.disableTimeOut === "timeOut") && this.options.timeOut) {
+    this.state.set('active');
+    if (!(this.options.disableTimeOut === true || this.options.disableTimeOut === 'timeOut') && this.options.timeOut) {
       this.timeout = setTimeout(() => {
         this.remove();
       }, this.options.timeOut);
-      this.hideTime = (/* @__PURE__ */ new Date()).getTime() + this.options.timeOut;
+      this.hideTime = /* @__PURE__ */ new Date().getTime() + this.options.timeOut;
       if (this.options.progressBar) {
         this.intervalId = setInterval(() => this.updateProgress(), 10);
       }
@@ -1485,10 +1681,10 @@ var ToastNoAnimation = class _ToastNoAnimation {
     if (this.width() === 0 || this.width() === 100 || !this.options.timeOut) {
       return;
     }
-    const now = (/* @__PURE__ */ new Date()).getTime();
+    const now = /* @__PURE__ */ new Date().getTime();
     const remaining = this.hideTime - now;
-    this.width.set(remaining / this.options.timeOut * 100);
-    if (this.options.progressAnimation === "increasing") {
+    this.width.set((remaining / this.options.timeOut) * 100);
+    if (this.options.progressAnimation === 'increasing') {
       this.width.update((width) => 100 - width);
     }
     if (this.width() <= 0) {
@@ -1501,10 +1697,10 @@ var ToastNoAnimation = class _ToastNoAnimation {
   resetTimeout() {
     clearTimeout(this.timeout);
     clearInterval(this.intervalId);
-    this.state.set("active");
+    this.state.set('active');
     this.options.timeOut = this.originalTimeout;
     this.timeout = setTimeout(() => this.remove(), this.originalTimeout);
-    this.hideTime = (/* @__PURE__ */ new Date()).getTime() + (this.originalTimeout || 0);
+    this.hideTime = /* @__PURE__ */ new Date().getTime() + (this.originalTimeout || 0);
     this.width.set(-1);
     if (this.options.progressBar) {
       this.intervalId = setInterval(() => this.updateProgress(), 10);
@@ -1514,15 +1710,15 @@ var ToastNoAnimation = class _ToastNoAnimation {
    * tells toastrService to remove this toast after animation time
    */
   remove() {
-    if (this.state() === "removed") {
+    if (this.state() === 'removed') {
       return;
     }
     clearTimeout(this.timeout);
-    this.state.set("removed");
+    this.state.set('removed');
     this.timeout = setTimeout(() => this.toastrService.remove(this.toastPackage.toastId));
   }
   tapToast() {
-    if (this.state() === "removed") {
+    if (this.state() === 'removed') {
       return;
     }
     this.toastPackage.triggerTap();
@@ -1531,7 +1727,7 @@ var ToastNoAnimation = class _ToastNoAnimation {
     }
   }
   stickAround() {
-    if (this.state() === "removed") {
+    if (this.state() === 'removed') {
       return;
     }
     clearTimeout(this.timeout);
@@ -1541,70 +1737,109 @@ var ToastNoAnimation = class _ToastNoAnimation {
     this.width.set(0);
   }
   delayedHideToast() {
-    if (this.options.disableTimeOut === true || this.options.disableTimeOut === "extendedTimeOut" || this.options.extendedTimeOut === 0 || this.state() === "removed") {
+    if (
+      this.options.disableTimeOut === true ||
+      this.options.disableTimeOut === 'extendedTimeOut' ||
+      this.options.extendedTimeOut === 0 ||
+      this.state() === 'removed'
+    ) {
       return;
     }
     this.timeout = setTimeout(() => this.remove(), this.options.extendedTimeOut);
     this.options.timeOut = this.options.extendedTimeOut;
-    this.hideTime = (/* @__PURE__ */ new Date()).getTime() + (this.options.timeOut || 0);
+    this.hideTime = /* @__PURE__ */ new Date().getTime() + (this.options.timeOut || 0);
     this.width.set(-1);
     if (this.options.progressBar) {
       this.intervalId = setInterval(() => this.updateProgress(), 10);
     }
   }
   static ɵfac = function ToastNoAnimation_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ToastNoAnimation)(ɵɵdirectiveInject(ToastrService), ɵɵdirectiveInject(ToastPackage), ɵɵdirectiveInject(ApplicationRef));
+    return new (__ngFactoryType__ || _ToastNoAnimation)(
+      ɵɵdirectiveInject(ToastrService),
+      ɵɵdirectiveInject(ToastPackage),
+      ɵɵdirectiveInject(ApplicationRef),
+    );
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _ToastNoAnimation,
-    selectors: [["", "toast-component", ""]],
+    selectors: [['', 'toast-component', '']],
     hostVars: 4,
     hostBindings: function ToastNoAnimation_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("click", function ToastNoAnimation_click_HostBindingHandler() {
+        ɵɵlistener('click', function ToastNoAnimation_click_HostBindingHandler() {
           return ctx.tapToast();
-        })("mouseenter", function ToastNoAnimation_mouseenter_HostBindingHandler() {
+        })('mouseenter', function ToastNoAnimation_mouseenter_HostBindingHandler() {
           return ctx.stickAround();
-        })("mouseleave", function ToastNoAnimation_mouseleave_HostBindingHandler() {
+        })('mouseleave', function ToastNoAnimation_mouseleave_HostBindingHandler() {
           return ctx.delayedHideToast();
         });
       }
       if (rf & 2) {
         ɵɵclassMap(ctx.toastClasses);
-        ɵɵstyleProp("display", ctx.displayStyle);
+        ɵɵstyleProp('display', ctx.displayStyle);
       }
     },
     attrs: _c0,
     decls: 5,
     vars: 5,
-    consts: [["type", "button", "class", "toast-close-button", "aria-label", "Close", 3, "click", 4, "ngIf"], [3, "class", 4, "ngIf"], ["role", "alert", 3, "class", "innerHTML", 4, "ngIf"], ["role", "alert", 3, "class", 4, "ngIf"], [4, "ngIf"], ["type", "button", "aria-label", "Close", 1, "toast-close-button", 3, "click"], ["aria-hidden", "true"], ["role", "alert", 3, "innerHTML"], ["role", "alert"], [1, "toast-progress"]],
+    consts: [
+      ['type', 'button', 'class', 'toast-close-button', 'aria-label', 'Close', 3, 'click', 4, 'ngIf'],
+      [3, 'class', 4, 'ngIf'],
+      ['role', 'alert', 3, 'class', 'innerHTML', 4, 'ngIf'],
+      ['role', 'alert', 3, 'class', 4, 'ngIf'],
+      [4, 'ngIf'],
+      ['type', 'button', 'aria-label', 'Close', 1, 'toast-close-button', 3, 'click'],
+      ['aria-hidden', 'true'],
+      ['role', 'alert', 3, 'innerHTML'],
+      ['role', 'alert'],
+      [1, 'toast-progress'],
+    ],
     template: function ToastNoAnimation_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵtemplate(0, ToastNoAnimation_button_0_Template, 3, 0, "button", 0)(1, ToastNoAnimation_div_1_Template, 3, 5, "div", 1)(2, ToastNoAnimation_div_2_Template, 1, 3, "div", 2)(3, ToastNoAnimation_div_3_Template, 2, 4, "div", 3)(4, ToastNoAnimation_div_4_Template, 2, 2, "div", 4);
+        ɵɵtemplate(0, ToastNoAnimation_button_0_Template, 3, 0, 'button', 0)(
+          1,
+          ToastNoAnimation_div_1_Template,
+          3,
+          5,
+          'div',
+          1,
+        )(2, ToastNoAnimation_div_2_Template, 1, 3, 'div', 2)(3, ToastNoAnimation_div_3_Template, 2, 4, 'div', 3)(
+          4,
+          ToastNoAnimation_div_4_Template,
+          2,
+          2,
+          'div',
+          4,
+        );
       }
       if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.options.closeButton);
+        ɵɵproperty('ngIf', ctx.options.closeButton);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.title);
+        ɵɵproperty('ngIf', ctx.title);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.message && ctx.options.enableHtml);
+        ɵɵproperty('ngIf', ctx.message && ctx.options.enableHtml);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.message && !ctx.options.enableHtml);
+        ɵɵproperty('ngIf', ctx.message && !ctx.options.enableHtml);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.options.progressBar);
+        ɵɵproperty('ngIf', ctx.options.progressBar);
       }
     },
     dependencies: [NgIf],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ToastNoAnimation, [{
-    type: Component,
-    args: [{
-      selector: "[toast-component]",
-      template: `
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      ToastNoAnimation,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: '[toast-component]',
+              template: `
   <button *ngIf="options.closeButton" (click)="remove()" type="button" class="toast-close-button" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -1622,53 +1857,74 @@ var ToastNoAnimation = class _ToastNoAnimation {
     <div class="toast-progress" [style.width]="width() + '%'"></div>
   </div>
   `,
-      standalone: true,
-      imports: [NgIf],
-      changeDetection: ChangeDetectionStrategy.OnPush
-    }]
-  }], () => [{
-    type: ToastrService
-  }, {
-    type: ToastPackage
-  }, {
-    type: ApplicationRef
-  }], {
-    toastClasses: [{
-      type: HostBinding,
-      args: ["class"]
-    }],
-    displayStyle: [{
-      type: HostBinding,
-      args: ["style.display"]
-    }],
-    tapToast: [{
-      type: HostListener,
-      args: ["click"]
-    }],
-    stickAround: [{
-      type: HostListener,
-      args: ["mouseenter"]
-    }],
-    delayedHideToast: [{
-      type: HostListener,
-      args: ["mouseleave"]
-    }]
-  });
+              standalone: true,
+              imports: [NgIf],
+              changeDetection: ChangeDetectionStrategy.OnPush,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ToastrService,
+        },
+        {
+          type: ToastPackage,
+        },
+        {
+          type: ApplicationRef,
+        },
+      ],
+      {
+        toastClasses: [
+          {
+            type: HostBinding,
+            args: ['class'],
+          },
+        ],
+        displayStyle: [
+          {
+            type: HostBinding,
+            args: ['style.display'],
+          },
+        ],
+        tapToast: [
+          {
+            type: HostListener,
+            args: ['click'],
+          },
+        ],
+        stickAround: [
+          {
+            type: HostListener,
+            args: ['mouseenter'],
+          },
+        ],
+        delayedHideToast: [
+          {
+            type: HostListener,
+            args: ['mouseleave'],
+          },
+        ],
+      },
+    );
 })();
 var DefaultNoAnimationsGlobalConfig = __spreadProps(__spreadValues({}, DefaultNoComponentGlobalConfig), {
-  toastComponent: ToastNoAnimation
+  toastComponent: ToastNoAnimation,
 });
 var ToastNoAnimationModule = class _ToastNoAnimationModule {
   static forRoot(config = {}) {
     return {
       ngModule: _ToastNoAnimationModule,
-      providers: [{
-        provide: TOAST_CONFIG,
-        useValue: {
-          default: DefaultNoAnimationsGlobalConfig,
-          config
-        }
-      }]
+      providers: [
+        {
+          provide: TOAST_CONFIG,
+          useValue: {
+            default: DefaultNoAnimationsGlobalConfig,
+            config,
+          },
+        },
+      ],
     };
   }
   static ɵfac = function ToastNoAnimationModule_Factory(__ngFactoryType__) {
@@ -1677,18 +1933,28 @@ var ToastNoAnimationModule = class _ToastNoAnimationModule {
   static ɵmod = ɵɵdefineNgModule({
     type: _ToastNoAnimationModule,
     imports: [ToastNoAnimation],
-    exports: [ToastNoAnimation]
+    exports: [ToastNoAnimation],
   });
   static ɵinj = ɵɵdefineInjector({});
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ToastNoAnimationModule, [{
-    type: NgModule,
-    args: [{
-      imports: [ToastNoAnimation],
-      exports: [ToastNoAnimation]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      ToastNoAnimationModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [ToastNoAnimation],
+              exports: [ToastNoAnimation],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 export {
   BasePortalHost,
@@ -1709,7 +1975,7 @@ export {
   ToastrComponentlessModule,
   ToastrModule,
   ToastrService,
-  provideToastr
+  provideToastr,
 };
 /*! Bundled license information:
 

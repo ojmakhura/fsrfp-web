@@ -1,51 +1,26 @@
-import {
-  MatButton,
-  MatButtonModule
-} from "./chunk-LJIQOS5I.js";
-import "./chunk-PFE4DTPH.js";
-import "./chunk-WNGU3QLI.js";
-import "./chunk-6K32XFRM.js";
-import "./chunk-IBJRQVUD.js";
-import "./chunk-BS4LDW6B.js";
-import {
-  Overlay,
-  OverlayConfig,
-  OverlayModule
-} from "./chunk-WZRATIYN.js";
-import "./chunk-OIBNGD5S.js";
-import {
-  BasePortalOutlet,
-  CdkPortalOutlet,
-  ComponentPortal,
-  PortalModule,
-  TemplatePortal
-} from "./chunk-3HDMKNHX.js";
-import "./chunk-42FJBLFI.js";
-import "./chunk-JXBCBRYI.js";
-import {
-  Breakpoints
-} from "./chunk-4OQNYWSW.js";
-import "./chunk-2N4M46HE.js";
-import "./chunk-HYIG2K5W.js";
-import "./chunk-2O4WY5GE.js";
-import {
-  LiveAnnouncer,
-  MatCommonModule,
-  _IdGenerator
-} from "./chunk-PQSRNTO7.js";
-import {
-  BreakpointObserver
-} from "./chunk-5RHDU2BP.js";
-import "./chunk-RG7RHNTG.js";
-import "./chunk-HNGPX6GY.js";
-import "./chunk-GWH5ZIVQ.js";
-import {
-  Platform
-} from "./chunk-FSIK44TS.js";
-import "./chunk-LJRMVWU3.js";
-import {
-  DOCUMENT
-} from "./chunk-SOO5Y25R.js";
+import { MatButton, MatButtonModule } from './chunk-LJIQOS5I.js';
+import './chunk-PFE4DTPH.js';
+import { Overlay, OverlayConfig, OverlayModule } from './chunk-WZRATIYN.js';
+import './chunk-OIBNGD5S.js';
+import { BasePortalOutlet, CdkPortalOutlet, ComponentPortal, PortalModule, TemplatePortal } from './chunk-3HDMKNHX.js';
+import './chunk-WNGU3QLI.js';
+import './chunk-6K32XFRM.js';
+import './chunk-IBJRQVUD.js';
+import './chunk-BS4LDW6B.js';
+import './chunk-42FJBLFI.js';
+import './chunk-JXBCBRYI.js';
+import { Breakpoints } from './chunk-4OQNYWSW.js';
+import './chunk-2N4M46HE.js';
+import './chunk-HYIG2K5W.js';
+import './chunk-2O4WY5GE.js';
+import { LiveAnnouncer, MatCommonModule, _IdGenerator } from './chunk-PQSRNTO7.js';
+import { BreakpointObserver } from './chunk-5RHDU2BP.js';
+import './chunk-RG7RHNTG.js';
+import './chunk-HNGPX6GY.js';
+import './chunk-GWH5ZIVQ.js';
+import { Platform } from './chunk-FSIK44TS.js';
+import './chunk-LJRMVWU3.js';
+import { DOCUMENT } from './chunk-SOO5Y25R.js';
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionStrategy,
@@ -87,26 +62,19 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate1,
-  ɵɵviewQuery
-} from "./chunk-LB7E77GG.js";
-import "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import {
-  Subject,
-  of,
-  take,
-  takeUntil
-} from "./chunk-4S3KYZTJ.js";
-import {
-  __spreadValues
-} from "./chunk-4MWRP73S.js";
+  ɵɵviewQuery,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import './chunk-WPM5VTLQ.js';
+import { Subject, of, take, takeUntil } from './chunk-4S3KYZTJ.js';
+import { __spreadValues } from './chunk-4MWRP73S.js';
 
 // node_modules/@angular/material/fesm2022/snack-bar.mjs
 function SimpleSnackBar_Conditional_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 1)(1, "button", 2);
-    ɵɵlistener("click", function SimpleSnackBar_Conditional_2_Template_button_click_1_listener() {
+    ɵɵelementStart(0, 'div', 1)(1, 'button', 2);
+    ɵɵlistener('click', function SimpleSnackBar_Conditional_2_Template_button_click_1_listener() {
       ɵɵrestoreView(_r1);
       const ctx_r1 = ɵɵnextContext();
       return ɵɵresetView(ctx_r1.action());
@@ -117,12 +85,11 @@ function SimpleSnackBar_Conditional_2_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ctx_r1.data.action, " ");
+    ɵɵtextInterpolate1(' ', ctx_r1.data.action, ' ');
   }
 }
-var _c0 = ["label"];
-function MatSnackBarContainer_ng_template_4_Template(rf, ctx) {
-}
+var _c0 = ['label'];
+function MatSnackBarContainer_ng_template_4_Template(rf, ctx) {}
 var MAX_TIMEOUT = Math.pow(2, 31) - 1;
 var MatSnackBarRef = class {
   _overlayRef;
@@ -194,7 +161,7 @@ var MatSnackBarRef = class {
       this._onAction.complete();
     }
     this._afterDismissed.next({
-      dismissedByAction: this._dismissedByAction
+      dismissedByAction: this._dismissedByAction,
     });
     this._afterDismissed.complete();
     this._dismissedByAction = false;
@@ -212,15 +179,15 @@ var MatSnackBarRef = class {
     return this._onAction;
   }
 };
-var MAT_SNACK_BAR_DATA = new InjectionToken("MatSnackBarData");
+var MAT_SNACK_BAR_DATA = new InjectionToken('MatSnackBarData');
 var MatSnackBarConfig = class {
   /** The politeness level for the MatAriaLiveAnnouncer announcement. */
-  politeness = "assertive";
+  politeness = 'assertive';
   /**
    * Message to be announced by the LiveAnnouncer. When opening a snackbar without a custom
    * component or template, the announcement message will default to the specified message.
    */
-  announcementMessage = "";
+  announcementMessage = '';
   /**
    * The view container that serves as the parent for the snackbar for the purposes of dependency
    * injection. Note: this does not affect where the snackbar is inserted in the DOM.
@@ -235,9 +202,9 @@ var MatSnackBarConfig = class {
   /** Data being injected into the child component. */
   data = null;
   /** The horizontal position to place the snack bar. */
-  horizontalPosition = "center";
+  horizontalPosition = 'center';
   /** The vertical position to place the snack bar. */
-  verticalPosition = "bottom";
+  verticalPosition = 'bottom';
 };
 var MatSnackBarLabel = class _MatSnackBarLabel {
   static ɵfac = function MatSnackBarLabel_Factory(__ngFactoryType__) {
@@ -245,20 +212,30 @@ var MatSnackBarLabel = class _MatSnackBarLabel {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatSnackBarLabel,
-    selectors: [["", "matSnackBarLabel", ""]],
-    hostAttrs: [1, "mat-mdc-snack-bar-label", "mdc-snackbar__label"]
+    selectors: [['', 'matSnackBarLabel', '']],
+    hostAttrs: [1, 'mat-mdc-snack-bar-label', 'mdc-snackbar__label'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSnackBarLabel, [{
-    type: Directive,
-    args: [{
-      selector: `[matSnackBarLabel]`,
-      host: {
-        "class": "mat-mdc-snack-bar-label mdc-snackbar__label"
-      }
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSnackBarLabel,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: `[matSnackBarLabel]`,
+              host: {
+                class: 'mat-mdc-snack-bar-label mdc-snackbar__label',
+              },
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatSnackBarActions = class _MatSnackBarActions {
   static ɵfac = function MatSnackBarActions_Factory(__ngFactoryType__) {
@@ -266,20 +243,30 @@ var MatSnackBarActions = class _MatSnackBarActions {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatSnackBarActions,
-    selectors: [["", "matSnackBarActions", ""]],
-    hostAttrs: [1, "mat-mdc-snack-bar-actions", "mdc-snackbar__actions"]
+    selectors: [['', 'matSnackBarActions', '']],
+    hostAttrs: [1, 'mat-mdc-snack-bar-actions', 'mdc-snackbar__actions'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSnackBarActions, [{
-    type: Directive,
-    args: [{
-      selector: `[matSnackBarActions]`,
-      host: {
-        "class": "mat-mdc-snack-bar-actions mdc-snackbar__actions"
-      }
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSnackBarActions,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: `[matSnackBarActions]`,
+              host: {
+                class: 'mat-mdc-snack-bar-actions mdc-snackbar__actions',
+              },
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatSnackBarAction = class _MatSnackBarAction {
   static ɵfac = function MatSnackBarAction_Factory(__ngFactoryType__) {
@@ -287,26 +274,35 @@ var MatSnackBarAction = class _MatSnackBarAction {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatSnackBarAction,
-    selectors: [["", "matSnackBarAction", ""]],
-    hostAttrs: [1, "mat-mdc-snack-bar-action", "mdc-snackbar__action"]
+    selectors: [['', 'matSnackBarAction', '']],
+    hostAttrs: [1, 'mat-mdc-snack-bar-action', 'mdc-snackbar__action'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSnackBarAction, [{
-    type: Directive,
-    args: [{
-      selector: `[matSnackBarAction]`,
-      host: {
-        "class": "mat-mdc-snack-bar-action mdc-snackbar__action"
-      }
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSnackBarAction,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: `[matSnackBarAction]`,
+              host: {
+                class: 'mat-mdc-snack-bar-action mdc-snackbar__action',
+              },
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var SimpleSnackBar = class _SimpleSnackBar {
   snackBarRef = inject(MatSnackBarRef);
   data = inject(MAT_SNACK_BAR_DATA);
-  constructor() {
-  }
+  constructor() {}
   /** Performs the action on the snack bar. */
   action() {
     this.snackBarRef.dismissWithAction();
@@ -320,60 +316,76 @@ var SimpleSnackBar = class _SimpleSnackBar {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _SimpleSnackBar,
-    selectors: [["simple-snack-bar"]],
-    hostAttrs: [1, "mat-mdc-simple-snack-bar"],
-    exportAs: ["matSnackBar"],
+    selectors: [['simple-snack-bar']],
+    hostAttrs: [1, 'mat-mdc-simple-snack-bar'],
+    exportAs: ['matSnackBar'],
     decls: 3,
     vars: 2,
-    consts: [["matSnackBarLabel", ""], ["matSnackBarActions", ""], ["mat-button", "", "matSnackBarAction", "", 3, "click"]],
+    consts: [
+      ['matSnackBarLabel', ''],
+      ['matSnackBarActions', ''],
+      ['mat-button', '', 'matSnackBarAction', '', 3, 'click'],
+    ],
     template: function SimpleSnackBar_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelementStart(0, "div", 0);
+        ɵɵelementStart(0, 'div', 0);
         ɵɵtext(1);
         ɵɵelementEnd();
-        ɵɵtemplate(2, SimpleSnackBar_Conditional_2_Template, 3, 1, "div", 1);
+        ɵɵtemplate(2, SimpleSnackBar_Conditional_2_Template, 3, 1, 'div', 1);
       }
       if (rf & 2) {
         ɵɵadvance();
-        ɵɵtextInterpolate1(" ", ctx.data.message, "\n");
+        ɵɵtextInterpolate1(' ', ctx.data.message, '\n');
         ɵɵadvance();
         ɵɵconditional(ctx.hasAction ? 2 : -1);
       }
     },
     dependencies: [MatButton, MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction],
-    styles: [".mat-mdc-simple-snack-bar{display:flex}\n"],
+    styles: ['.mat-mdc-simple-snack-bar{display:flex}\n'],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SimpleSnackBar, [{
-    type: Component,
-    args: [{
-      selector: "simple-snack-bar",
-      exportAs: "matSnackBar",
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      imports: [MatButton, MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction],
-      host: {
-        "class": "mat-mdc-simple-snack-bar"
-      },
-      template: '<div matSnackBarLabel>\n  {{data.message}}\n</div>\n\n@if (hasAction) {\n  <div matSnackBarActions>\n    <button mat-button matSnackBarAction (click)="action()">\n      {{data.action}}\n    </button>\n  </div>\n}\n',
-      styles: [".mat-mdc-simple-snack-bar{display:flex}\n"]
-    }]
-  }], () => [], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      SimpleSnackBar,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'simple-snack-bar',
+              exportAs: 'matSnackBar',
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              imports: [MatButton, MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction],
+              host: {
+                class: 'mat-mdc-simple-snack-bar',
+              },
+              template:
+                '<div matSnackBarLabel>\n  {{data.message}}\n</div>\n\n@if (hasAction) {\n  <div matSnackBarActions>\n    <button mat-button matSnackBarAction (click)="action()">\n      {{data.action}}\n    </button>\n  </div>\n}\n',
+              styles: ['.mat-mdc-simple-snack-bar{display:flex}\n'],
+            },
+          ],
+        },
+      ],
+      () => [],
+      null,
+    );
 })();
-var ENTER_ANIMATION = "_mat-snack-bar-enter";
-var EXIT_ANIMATION = "_mat-snack-bar-exit";
+var ENTER_ANIMATION = '_mat-snack-bar-enter';
+var EXIT_ANIMATION = '_mat-snack-bar-exit';
 var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet {
   _ngZone = inject(NgZone);
   _elementRef = inject(ElementRef);
   _changeDetectorRef = inject(ChangeDetectorRef);
   _platform = inject(Platform);
   _rendersRef;
-  _animationsDisabled = inject(ANIMATION_MODULE_TYPE, {
-    optional: true
-  }) === "NoopAnimations";
+  _animationsDisabled =
+    inject(ANIMATION_MODULE_TYPE, {
+      optional: true,
+    }) === 'NoopAnimations';
   snackBarConfig = inject(MatSnackBarConfig);
   _document = inject(DOCUMENT);
   _trackedModals = /* @__PURE__ */ new Set();
@@ -395,7 +407,7 @@ var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet 
   /** Subject for notifying that the snack bar has finished entering the view. */
   _onEnter = new Subject();
   /** The state of the snack bar animations. */
-  _animationState = "void";
+  _animationState = 'void';
   /** aria-live value for the live region. */
   _live;
   /**
@@ -410,27 +422,27 @@ var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet 
    */
   _role;
   /** Unique ID of the aria-live element. */
-  _liveElementId = inject(_IdGenerator).getId("mat-snack-bar-container-live-");
+  _liveElementId = inject(_IdGenerator).getId('mat-snack-bar-container-live-');
   constructor() {
     super();
     const config = this.snackBarConfig;
-    if (config.politeness === "assertive" && !config.announcementMessage) {
-      this._live = "assertive";
-    } else if (config.politeness === "off") {
-      this._live = "off";
+    if (config.politeness === 'assertive' && !config.announcementMessage) {
+      this._live = 'assertive';
+    } else if (config.politeness === 'off') {
+      this._live = 'off';
     } else {
-      this._live = "polite";
+      this._live = 'polite';
     }
     if (this._platform.FIREFOX) {
-      if (this._live === "polite") {
-        this._role = "status";
+      if (this._live === 'polite') {
+        this._role = 'status';
       }
-      if (this._live === "assertive") {
-        this._role = "alert";
+      if (this._live === 'assertive') {
+        this._role = 'alert';
       }
     }
     this._rendersRef = afterRender(() => this._renders.next(), {
-      manualCleanup: true
+      manualCleanup: true,
     });
   }
   /** Attach a component portal as content to this snack bar container. */
@@ -473,7 +485,7 @@ var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet 
   /** Begin animation of snack bar entrance into view. */
   enter() {
     if (!this._destroyed) {
-      this._animationState = "visible";
+      this._animationState = 'visible';
       this._changeDetectorRef.markForCheck();
       this._changeDetectorRef.detectChanges();
       this._screenReaderAnnounce();
@@ -484,7 +496,7 @@ var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet 
       } else {
         clearTimeout(this._enterFallback);
         this._enterFallback = setTimeout(() => {
-          this._elementRef.nativeElement.classList.add("mat-snack-bar-fallback-visible");
+          this._elementRef.nativeElement.classList.add('mat-snack-bar-fallback-visible');
           this.onAnimationEnd(ENTER_ANIMATION);
         }, 200);
       }
@@ -496,9 +508,9 @@ var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet 
       return of(void 0);
     }
     this._ngZone.run(() => {
-      this._animationState = "hidden";
+      this._animationState = 'hidden';
       this._changeDetectorRef.markForCheck();
-      this._elementRef.nativeElement.setAttribute("mat-exit", "");
+      this._elementRef.nativeElement.setAttribute('mat-exit', '');
       clearTimeout(this._announceTimeoutId);
       if (this._animationsDisabled) {
         this._renders.pipe(take(1)).subscribe(() => {
@@ -542,7 +554,7 @@ var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet 
     }
     this._exposeToModals();
     const label = this._label.nativeElement;
-    const labelClass = "mdc-snackbar__label";
+    const labelClass = 'mdc-snackbar__label';
     label.classList.toggle(labelClass, !label.querySelector(`.${labelClass}`));
   }
   /**
@@ -555,25 +567,25 @@ var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet 
     const modals = this._document.querySelectorAll('body > .cdk-overlay-container [aria-modal="true"]');
     for (let i = 0; i < modals.length; i++) {
       const modal = modals[i];
-      const ariaOwns = modal.getAttribute("aria-owns");
+      const ariaOwns = modal.getAttribute('aria-owns');
       this._trackedModals.add(modal);
       if (!ariaOwns) {
-        modal.setAttribute("aria-owns", id);
+        modal.setAttribute('aria-owns', id);
       } else if (ariaOwns.indexOf(id) === -1) {
-        modal.setAttribute("aria-owns", ariaOwns + " " + id);
+        modal.setAttribute('aria-owns', ariaOwns + ' ' + id);
       }
     }
   }
   /** Clears the references to the live element from any modals it was added to. */
   _clearFromModals() {
     this._trackedModals.forEach((modal) => {
-      const ariaOwns = modal.getAttribute("aria-owns");
+      const ariaOwns = modal.getAttribute('aria-owns');
       if (ariaOwns) {
-        const newValue = ariaOwns.replace(this._liveElementId, "").trim();
+        const newValue = ariaOwns.replace(this._liveElementId, '').trim();
         if (newValue.length > 0) {
-          modal.setAttribute("aria-owns", newValue);
+          modal.setAttribute('aria-owns', newValue);
         } else {
-          modal.removeAttribute("aria-owns");
+          modal.removeAttribute('aria-owns');
         }
       }
     });
@@ -581,8 +593,8 @@ var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet 
   }
   /** Asserts that no content is already attached to the container. */
   _assertNotAttached() {
-    if (this._portalOutlet.hasAttached() && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      throw Error("Attempting to attach snack bar content after content is already attached");
+    if (this._portalOutlet.hasAttached() && (typeof ngDevMode === 'undefined' || ngDevMode)) {
+      throw Error('Attempting to attach snack bar content after content is already attached');
     }
   }
   /**
@@ -599,14 +611,18 @@ var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet 
           return;
         }
         const element = this._elementRef.nativeElement;
-        const inertElement = element.querySelector("[aria-hidden]");
-        const liveElement = element.querySelector("[aria-live]");
+        const inertElement = element.querySelector('[aria-hidden]');
+        const liveElement = element.querySelector('[aria-live]');
         if (inertElement && liveElement) {
           let focusedElement = null;
-          if (this._platform.isBrowser && document.activeElement instanceof HTMLElement && inertElement.contains(document.activeElement)) {
+          if (
+            this._platform.isBrowser &&
+            document.activeElement instanceof HTMLElement &&
+            inertElement.contains(document.activeElement)
+          ) {
             focusedElement = document.activeElement;
           }
-          inertElement.removeAttribute("aria-hidden");
+          inertElement.removeAttribute('aria-hidden');
           liveElement.appendChild(inertElement);
           focusedElement?.focus();
           this._onAnnounce.next();
@@ -620,7 +636,7 @@ var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet 
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatSnackBarContainer,
-    selectors: [["mat-snack-bar-container"]],
+    selectors: [['mat-snack-bar-container']],
     viewQuery: function MatSnackBarContainer_Query(rf, ctx) {
       if (rf & 1) {
         ɵɵviewQuery(CdkPortalOutlet, 7);
@@ -628,86 +644,120 @@ var MatSnackBarContainer = class _MatSnackBarContainer extends BasePortalOutlet 
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._portalOutlet = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._label = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._portalOutlet = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._label = _t.first);
       }
     },
-    hostAttrs: [1, "mdc-snackbar", "mat-mdc-snack-bar-container"],
+    hostAttrs: [1, 'mdc-snackbar', 'mat-mdc-snack-bar-container'],
     hostVars: 6,
     hostBindings: function MatSnackBarContainer_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("animationend", function MatSnackBarContainer_animationend_HostBindingHandler($event) {
+        ɵɵlistener('animationend', function MatSnackBarContainer_animationend_HostBindingHandler($event) {
           return ctx.onAnimationEnd($event.animationName);
-        })("animationcancel", function MatSnackBarContainer_animationcancel_HostBindingHandler($event) {
+        })('animationcancel', function MatSnackBarContainer_animationcancel_HostBindingHandler($event) {
           return ctx.onAnimationEnd($event.animationName);
         });
       }
       if (rf & 2) {
-        ɵɵclassProp("mat-snack-bar-container-enter", ctx._animationState === "visible")("mat-snack-bar-container-exit", ctx._animationState === "hidden")("mat-snack-bar-container-animations-enabled", !ctx._animationsDisabled);
+        ɵɵclassProp('mat-snack-bar-container-enter', ctx._animationState === 'visible')(
+          'mat-snack-bar-container-exit',
+          ctx._animationState === 'hidden',
+        )('mat-snack-bar-container-animations-enabled', !ctx._animationsDisabled);
       }
     },
     features: [ɵɵInheritDefinitionFeature],
     decls: 6,
     vars: 3,
-    consts: [["label", ""], [1, "mdc-snackbar__surface", "mat-mdc-snackbar-surface"], [1, "mat-mdc-snack-bar-label"], ["aria-hidden", "true"], ["cdkPortalOutlet", ""]],
+    consts: [
+      ['label', ''],
+      [1, 'mdc-snackbar__surface', 'mat-mdc-snackbar-surface'],
+      [1, 'mat-mdc-snack-bar-label'],
+      ['aria-hidden', 'true'],
+      ['cdkPortalOutlet', ''],
+    ],
     template: function MatSnackBarContainer_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelementStart(0, "div", 1)(1, "div", 2, 0)(3, "div", 3);
-        ɵɵtemplate(4, MatSnackBarContainer_ng_template_4_Template, 0, 0, "ng-template", 4);
+        ɵɵelementStart(0, 'div', 1)(1, 'div', 2, 0)(3, 'div', 3);
+        ɵɵtemplate(4, MatSnackBarContainer_ng_template_4_Template, 0, 0, 'ng-template', 4);
         ɵɵelementEnd();
-        ɵɵelement(5, "div");
+        ɵɵelement(5, 'div');
         ɵɵelementEnd()();
       }
       if (rf & 2) {
         ɵɵadvance(5);
-        ɵɵattribute("aria-live", ctx._live)("role", ctx._role)("id", ctx._liveElementId);
+        ɵɵattribute('aria-live', ctx._live)('role', ctx._role)('id', ctx._liveElementId);
       }
     },
     dependencies: [CdkPortalOutlet],
-    styles: ["@keyframes _mat-snack-bar-enter{from{transform:scale(0.8);opacity:0}to{transform:scale(1);opacity:1}}@keyframes _mat-snack-bar-exit{from{opacity:1}to{opacity:0}}.mat-mdc-snack-bar-container{display:flex;align-items:center;justify-content:center;box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0);margin:8px}.mat-mdc-snack-bar-handset .mat-mdc-snack-bar-container{width:100vw}.mat-snack-bar-container-animations-enabled{opacity:0}.mat-snack-bar-container-animations-enabled.mat-snack-bar-fallback-visible{opacity:1}.mat-snack-bar-container-animations-enabled.mat-snack-bar-container-enter{animation:_mat-snack-bar-enter 150ms cubic-bezier(0, 0, 0.2, 1) forwards}.mat-snack-bar-container-animations-enabled.mat-snack-bar-container-exit{animation:_mat-snack-bar-exit 75ms cubic-bezier(0.4, 0, 1, 1) forwards}.mat-mdc-snackbar-surface{box-shadow:0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);display:flex;align-items:center;justify-content:flex-start;box-sizing:border-box;padding-left:0;padding-right:8px}[dir=rtl] .mat-mdc-snackbar-surface{padding-right:0;padding-left:8px}.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface{min-width:344px;max-width:672px}.mat-mdc-snack-bar-handset .mat-mdc-snackbar-surface{width:100%;min-width:0}@media(forced-colors: active){.mat-mdc-snackbar-surface{outline:solid 1px}}.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface{color:var(--mdc-snackbar-supporting-text-color, var(--mat-sys-inverse-on-surface));border-radius:var(--mdc-snackbar-container-shape, var(--mat-sys-corner-extra-small));background-color:var(--mdc-snackbar-container-color, var(--mat-sys-inverse-surface))}.mdc-snackbar__label{width:100%;flex-grow:1;box-sizing:border-box;margin:0;padding:14px 8px 14px 16px}[dir=rtl] .mdc-snackbar__label{padding-left:8px;padding-right:16px}.mat-mdc-snack-bar-container .mdc-snackbar__label{font-family:var(--mdc-snackbar-supporting-text-font, var(--mat-sys-body-medium-font));font-size:var(--mdc-snackbar-supporting-text-size, var(--mat-sys-body-medium-size));font-weight:var(--mdc-snackbar-supporting-text-weight, var(--mat-sys-body-medium-weight));line-height:var(--mdc-snackbar-supporting-text-line-height, var(--mat-sys-body-medium-line-height))}.mat-mdc-snack-bar-actions{display:flex;flex-shrink:0;align-items:center;box-sizing:border-box}.mat-mdc-snack-bar-handset,.mat-mdc-snack-bar-container,.mat-mdc-snack-bar-label{flex:1 1 auto}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled).mat-unthemed{color:var(--mat-snack-bar-button-color, var(--mat-sys-inverse-primary))}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled){--mat-text-button-state-layer-color:currentColor;--mat-text-button-ripple-color:currentColor}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled) .mat-ripple-element{opacity:.1}\n"],
-    encapsulation: 2
+    styles: [
+      '@keyframes _mat-snack-bar-enter{from{transform:scale(0.8);opacity:0}to{transform:scale(1);opacity:1}}@keyframes _mat-snack-bar-exit{from{opacity:1}to{opacity:0}}.mat-mdc-snack-bar-container{display:flex;align-items:center;justify-content:center;box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0);margin:8px}.mat-mdc-snack-bar-handset .mat-mdc-snack-bar-container{width:100vw}.mat-snack-bar-container-animations-enabled{opacity:0}.mat-snack-bar-container-animations-enabled.mat-snack-bar-fallback-visible{opacity:1}.mat-snack-bar-container-animations-enabled.mat-snack-bar-container-enter{animation:_mat-snack-bar-enter 150ms cubic-bezier(0, 0, 0.2, 1) forwards}.mat-snack-bar-container-animations-enabled.mat-snack-bar-container-exit{animation:_mat-snack-bar-exit 75ms cubic-bezier(0.4, 0, 1, 1) forwards}.mat-mdc-snackbar-surface{box-shadow:0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);display:flex;align-items:center;justify-content:flex-start;box-sizing:border-box;padding-left:0;padding-right:8px}[dir=rtl] .mat-mdc-snackbar-surface{padding-right:0;padding-left:8px}.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface{min-width:344px;max-width:672px}.mat-mdc-snack-bar-handset .mat-mdc-snackbar-surface{width:100%;min-width:0}@media(forced-colors: active){.mat-mdc-snackbar-surface{outline:solid 1px}}.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface{color:var(--mdc-snackbar-supporting-text-color, var(--mat-sys-inverse-on-surface));border-radius:var(--mdc-snackbar-container-shape, var(--mat-sys-corner-extra-small));background-color:var(--mdc-snackbar-container-color, var(--mat-sys-inverse-surface))}.mdc-snackbar__label{width:100%;flex-grow:1;box-sizing:border-box;margin:0;padding:14px 8px 14px 16px}[dir=rtl] .mdc-snackbar__label{padding-left:8px;padding-right:16px}.mat-mdc-snack-bar-container .mdc-snackbar__label{font-family:var(--mdc-snackbar-supporting-text-font, var(--mat-sys-body-medium-font));font-size:var(--mdc-snackbar-supporting-text-size, var(--mat-sys-body-medium-size));font-weight:var(--mdc-snackbar-supporting-text-weight, var(--mat-sys-body-medium-weight));line-height:var(--mdc-snackbar-supporting-text-line-height, var(--mat-sys-body-medium-line-height))}.mat-mdc-snack-bar-actions{display:flex;flex-shrink:0;align-items:center;box-sizing:border-box}.mat-mdc-snack-bar-handset,.mat-mdc-snack-bar-container,.mat-mdc-snack-bar-label{flex:1 1 auto}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled).mat-unthemed{color:var(--mat-snack-bar-button-color, var(--mat-sys-inverse-primary))}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled){--mat-text-button-state-layer-color:currentColor;--mat-text-button-ripple-color:currentColor}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled) .mat-ripple-element{opacity:.1}\n',
+    ],
+    encapsulation: 2,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSnackBarContainer, [{
-    type: Component,
-    args: [{
-      selector: "mat-snack-bar-container",
-      changeDetection: ChangeDetectionStrategy.Default,
-      encapsulation: ViewEncapsulation.None,
-      imports: [CdkPortalOutlet],
-      host: {
-        "class": "mdc-snackbar mat-mdc-snack-bar-container",
-        "[class.mat-snack-bar-container-enter]": '_animationState === "visible"',
-        "[class.mat-snack-bar-container-exit]": '_animationState === "hidden"',
-        "[class.mat-snack-bar-container-animations-enabled]": "!_animationsDisabled",
-        "(animationend)": "onAnimationEnd($event.animationName)",
-        "(animationcancel)": "onAnimationEnd($event.animationName)"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSnackBarContainer,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-snack-bar-container',
+              changeDetection: ChangeDetectionStrategy.Default,
+              encapsulation: ViewEncapsulation.None,
+              imports: [CdkPortalOutlet],
+              host: {
+                class: 'mdc-snackbar mat-mdc-snack-bar-container',
+                '[class.mat-snack-bar-container-enter]': '_animationState === "visible"',
+                '[class.mat-snack-bar-container-exit]': '_animationState === "hidden"',
+                '[class.mat-snack-bar-container-animations-enabled]': '!_animationsDisabled',
+                '(animationend)': 'onAnimationEnd($event.animationName)',
+                '(animationcancel)': 'onAnimationEnd($event.animationName)',
+              },
+              template:
+                '<div class="mdc-snackbar__surface mat-mdc-snackbar-surface">\n  <!--\n    This outer label wrapper will have the class `mdc-snackbar__label` applied if\n    the attached template/component does not contain it.\n  -->\n  <div class="mat-mdc-snack-bar-label" #label>\n    <!-- Initialy holds the snack bar content, will be empty after announcing to screen readers. -->\n    <div aria-hidden="true">\n      <ng-template cdkPortalOutlet />\n    </div>\n\n    <!-- Will receive the snack bar content from the non-live div, move will happen a short delay after opening -->\n    <div [attr.aria-live]="_live" [attr.role]="_role" [attr.id]="_liveElementId"></div>\n  </div>\n</div>\n',
+              styles: [
+                '@keyframes _mat-snack-bar-enter{from{transform:scale(0.8);opacity:0}to{transform:scale(1);opacity:1}}@keyframes _mat-snack-bar-exit{from{opacity:1}to{opacity:0}}.mat-mdc-snack-bar-container{display:flex;align-items:center;justify-content:center;box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0);margin:8px}.mat-mdc-snack-bar-handset .mat-mdc-snack-bar-container{width:100vw}.mat-snack-bar-container-animations-enabled{opacity:0}.mat-snack-bar-container-animations-enabled.mat-snack-bar-fallback-visible{opacity:1}.mat-snack-bar-container-animations-enabled.mat-snack-bar-container-enter{animation:_mat-snack-bar-enter 150ms cubic-bezier(0, 0, 0.2, 1) forwards}.mat-snack-bar-container-animations-enabled.mat-snack-bar-container-exit{animation:_mat-snack-bar-exit 75ms cubic-bezier(0.4, 0, 1, 1) forwards}.mat-mdc-snackbar-surface{box-shadow:0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);display:flex;align-items:center;justify-content:flex-start;box-sizing:border-box;padding-left:0;padding-right:8px}[dir=rtl] .mat-mdc-snackbar-surface{padding-right:0;padding-left:8px}.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface{min-width:344px;max-width:672px}.mat-mdc-snack-bar-handset .mat-mdc-snackbar-surface{width:100%;min-width:0}@media(forced-colors: active){.mat-mdc-snackbar-surface{outline:solid 1px}}.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface{color:var(--mdc-snackbar-supporting-text-color, var(--mat-sys-inverse-on-surface));border-radius:var(--mdc-snackbar-container-shape, var(--mat-sys-corner-extra-small));background-color:var(--mdc-snackbar-container-color, var(--mat-sys-inverse-surface))}.mdc-snackbar__label{width:100%;flex-grow:1;box-sizing:border-box;margin:0;padding:14px 8px 14px 16px}[dir=rtl] .mdc-snackbar__label{padding-left:8px;padding-right:16px}.mat-mdc-snack-bar-container .mdc-snackbar__label{font-family:var(--mdc-snackbar-supporting-text-font, var(--mat-sys-body-medium-font));font-size:var(--mdc-snackbar-supporting-text-size, var(--mat-sys-body-medium-size));font-weight:var(--mdc-snackbar-supporting-text-weight, var(--mat-sys-body-medium-weight));line-height:var(--mdc-snackbar-supporting-text-line-height, var(--mat-sys-body-medium-line-height))}.mat-mdc-snack-bar-actions{display:flex;flex-shrink:0;align-items:center;box-sizing:border-box}.mat-mdc-snack-bar-handset,.mat-mdc-snack-bar-container,.mat-mdc-snack-bar-label{flex:1 1 auto}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled).mat-unthemed{color:var(--mat-snack-bar-button-color, var(--mat-sys-inverse-primary))}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled){--mat-text-button-state-layer-color:currentColor;--mat-text-button-ripple-color:currentColor}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled) .mat-ripple-element{opacity:.1}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        _portalOutlet: [
+          {
+            type: ViewChild,
+            args: [
+              CdkPortalOutlet,
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        _label: [
+          {
+            type: ViewChild,
+            args: [
+              'label',
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
       },
-      template: '<div class="mdc-snackbar__surface mat-mdc-snackbar-surface">\n  <!--\n    This outer label wrapper will have the class `mdc-snackbar__label` applied if\n    the attached template/component does not contain it.\n  -->\n  <div class="mat-mdc-snack-bar-label" #label>\n    <!-- Initialy holds the snack bar content, will be empty after announcing to screen readers. -->\n    <div aria-hidden="true">\n      <ng-template cdkPortalOutlet />\n    </div>\n\n    <!-- Will receive the snack bar content from the non-live div, move will happen a short delay after opening -->\n    <div [attr.aria-live]="_live" [attr.role]="_role" [attr.id]="_liveElementId"></div>\n  </div>\n</div>\n',
-      styles: ["@keyframes _mat-snack-bar-enter{from{transform:scale(0.8);opacity:0}to{transform:scale(1);opacity:1}}@keyframes _mat-snack-bar-exit{from{opacity:1}to{opacity:0}}.mat-mdc-snack-bar-container{display:flex;align-items:center;justify-content:center;box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0);margin:8px}.mat-mdc-snack-bar-handset .mat-mdc-snack-bar-container{width:100vw}.mat-snack-bar-container-animations-enabled{opacity:0}.mat-snack-bar-container-animations-enabled.mat-snack-bar-fallback-visible{opacity:1}.mat-snack-bar-container-animations-enabled.mat-snack-bar-container-enter{animation:_mat-snack-bar-enter 150ms cubic-bezier(0, 0, 0.2, 1) forwards}.mat-snack-bar-container-animations-enabled.mat-snack-bar-container-exit{animation:_mat-snack-bar-exit 75ms cubic-bezier(0.4, 0, 1, 1) forwards}.mat-mdc-snackbar-surface{box-shadow:0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);display:flex;align-items:center;justify-content:flex-start;box-sizing:border-box;padding-left:0;padding-right:8px}[dir=rtl] .mat-mdc-snackbar-surface{padding-right:0;padding-left:8px}.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface{min-width:344px;max-width:672px}.mat-mdc-snack-bar-handset .mat-mdc-snackbar-surface{width:100%;min-width:0}@media(forced-colors: active){.mat-mdc-snackbar-surface{outline:solid 1px}}.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface{color:var(--mdc-snackbar-supporting-text-color, var(--mat-sys-inverse-on-surface));border-radius:var(--mdc-snackbar-container-shape, var(--mat-sys-corner-extra-small));background-color:var(--mdc-snackbar-container-color, var(--mat-sys-inverse-surface))}.mdc-snackbar__label{width:100%;flex-grow:1;box-sizing:border-box;margin:0;padding:14px 8px 14px 16px}[dir=rtl] .mdc-snackbar__label{padding-left:8px;padding-right:16px}.mat-mdc-snack-bar-container .mdc-snackbar__label{font-family:var(--mdc-snackbar-supporting-text-font, var(--mat-sys-body-medium-font));font-size:var(--mdc-snackbar-supporting-text-size, var(--mat-sys-body-medium-size));font-weight:var(--mdc-snackbar-supporting-text-weight, var(--mat-sys-body-medium-weight));line-height:var(--mdc-snackbar-supporting-text-line-height, var(--mat-sys-body-medium-line-height))}.mat-mdc-snack-bar-actions{display:flex;flex-shrink:0;align-items:center;box-sizing:border-box}.mat-mdc-snack-bar-handset,.mat-mdc-snack-bar-container,.mat-mdc-snack-bar-label{flex:1 1 auto}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled).mat-unthemed{color:var(--mat-snack-bar-button-color, var(--mat-sys-inverse-primary))}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled){--mat-text-button-state-layer-color:currentColor;--mat-text-button-ripple-color:currentColor}.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled) .mat-ripple-element{opacity:.1}\n"]
-    }]
-  }], () => [], {
-    _portalOutlet: [{
-      type: ViewChild,
-      args: [CdkPortalOutlet, {
-        static: true
-      }]
-    }],
-    _label: [{
-      type: ViewChild,
-      args: ["label", {
-        static: true
-      }]
-    }]
-  });
+    );
 })();
 function MAT_SNACK_BAR_DEFAULT_OPTIONS_FACTORY() {
   return new MatSnackBarConfig();
 }
-var MAT_SNACK_BAR_DEFAULT_OPTIONS = new InjectionToken("mat-snack-bar-default-options", {
-  providedIn: "root",
-  factory: MAT_SNACK_BAR_DEFAULT_OPTIONS_FACTORY
+var MAT_SNACK_BAR_DEFAULT_OPTIONS = new InjectionToken('mat-snack-bar-default-options', {
+  providedIn: 'root',
+  factory: MAT_SNACK_BAR_DEFAULT_OPTIONS_FACTORY,
 });
 var MatSnackBar = class _MatSnackBar {
   _overlay = inject(Overlay);
@@ -716,7 +766,7 @@ var MatSnackBar = class _MatSnackBar {
   _breakpointObserver = inject(BreakpointObserver);
   _parentSnackBar = inject(_MatSnackBar, {
     optional: true,
-    skipSelf: true
+    skipSelf: true,
   });
   _defaultConfig = inject(MAT_SNACK_BAR_DEFAULT_OPTIONS);
   /**
@@ -730,7 +780,7 @@ var MatSnackBar = class _MatSnackBar {
   /** The container component that attaches the provided template or component. */
   snackBarContainerComponent = MatSnackBarContainer;
   /** The CSS class to apply for handset mode. */
-  handsetCssClass = "mat-mdc-snack-bar-handset";
+  handsetCssClass = 'mat-mdc-snack-bar-handset';
   /** Reference to the currently opened snackbar at *any* level. */
   get _openedSnackBarRef() {
     const parent = this._parentSnackBar;
@@ -743,8 +793,7 @@ var MatSnackBar = class _MatSnackBar {
       this._snackBarRefAtThisLevel = value;
     }
   }
-  constructor() {
-  }
+  constructor() {}
   /**
    * Creates and dispatches a snack bar with a custom component for the content, removing any
    * currently opened snack bars.
@@ -771,11 +820,11 @@ var MatSnackBar = class _MatSnackBar {
    * @param action The label for the snackbar action.
    * @param config Additional configuration options for the snackbar.
    */
-  open(message, action = "", config) {
+  open(message, action = '', config) {
     const _config = __spreadValues(__spreadValues({}, this._defaultConfig), config);
     _config.data = {
       message,
-      action
+      action,
     };
     if (_config.announcementMessage === message) {
       _config.announcementMessage = void 0;
@@ -802,10 +851,12 @@ var MatSnackBar = class _MatSnackBar {
     const userInjector = config && config.viewContainerRef && config.viewContainerRef.injector;
     const injector = Injector.create({
       parent: userInjector || this._injector,
-      providers: [{
-        provide: MatSnackBarConfig,
-        useValue: config
-      }]
+      providers: [
+        {
+          provide: MatSnackBarConfig,
+          useValue: config,
+        },
+      ],
     });
     const containerPortal = new ComponentPortal(this.snackBarContainerComponent, config.viewContainerRef, injector);
     const containerRef = overlayRef.attach(containerPortal);
@@ -816,14 +867,17 @@ var MatSnackBar = class _MatSnackBar {
    * Places a new component or a template as the content of the snack bar container.
    */
   _attach(content, userConfig) {
-    const config = __spreadValues(__spreadValues(__spreadValues({}, new MatSnackBarConfig()), this._defaultConfig), userConfig);
+    const config = __spreadValues(
+      __spreadValues(__spreadValues({}, new MatSnackBarConfig()), this._defaultConfig),
+      userConfig,
+    );
     const overlayRef = this._createOverlay(config);
     const container = this._attachSnackBarContainer(overlayRef, config);
     const snackBarRef = new MatSnackBarRef(container, overlayRef);
     if (content instanceof TemplateRef) {
       const portal = new TemplatePortal(content, null, {
         $implicit: config.data,
-        snackBarRef
+        snackBarRef,
       });
       snackBarRef.instance = container.attachTemplatePortal(portal);
     } else {
@@ -832,9 +886,12 @@ var MatSnackBar = class _MatSnackBar {
       const contentRef = container.attachComponentPortal(portal);
       snackBarRef.instance = contentRef.instance;
     }
-    this._breakpointObserver.observe(Breakpoints.HandsetPortrait).pipe(takeUntil(overlayRef.detachments())).subscribe((state) => {
-      overlayRef.overlayElement.classList.toggle(this.handsetCssClass, state.matches);
-    });
+    this._breakpointObserver
+      .observe(Breakpoints.HandsetPortrait)
+      .pipe(takeUntil(overlayRef.detachments()))
+      .subscribe((state) => {
+        overlayRef.overlayElement.classList.toggle(this.handsetCssClass, state.matches);
+      });
     if (config.announcementMessage) {
       container._onAnnounce.subscribe(() => {
         this._live.announce(config.announcementMessage, config.politeness);
@@ -874,20 +931,23 @@ var MatSnackBar = class _MatSnackBar {
     const overlayConfig = new OverlayConfig();
     overlayConfig.direction = config.direction;
     let positionStrategy = this._overlay.position().global();
-    const isRtl = config.direction === "rtl";
-    const isLeft = config.horizontalPosition === "left" || config.horizontalPosition === "start" && !isRtl || config.horizontalPosition === "end" && isRtl;
-    const isRight = !isLeft && config.horizontalPosition !== "center";
+    const isRtl = config.direction === 'rtl';
+    const isLeft =
+      config.horizontalPosition === 'left' ||
+      (config.horizontalPosition === 'start' && !isRtl) ||
+      (config.horizontalPosition === 'end' && isRtl);
+    const isRight = !isLeft && config.horizontalPosition !== 'center';
     if (isLeft) {
-      positionStrategy.left("0");
+      positionStrategy.left('0');
     } else if (isRight) {
-      positionStrategy.right("0");
+      positionStrategy.right('0');
     } else {
       positionStrategy.centerHorizontally();
     }
-    if (config.verticalPosition === "top") {
-      positionStrategy.top("0");
+    if (config.verticalPosition === 'top') {
+      positionStrategy.top('0');
     } else {
-      positionStrategy.bottom("0");
+      positionStrategy.bottom('0');
     }
     overlayConfig.positionStrategy = positionStrategy;
     return this._overlay.create(overlayConfig);
@@ -901,13 +961,16 @@ var MatSnackBar = class _MatSnackBar {
     const userInjector = config && config.viewContainerRef && config.viewContainerRef.injector;
     return Injector.create({
       parent: userInjector || this._injector,
-      providers: [{
-        provide: MatSnackBarRef,
-        useValue: snackBarRef
-      }, {
-        provide: MAT_SNACK_BAR_DATA,
-        useValue: config.data
-      }]
+      providers: [
+        {
+          provide: MatSnackBarRef,
+          useValue: snackBarRef,
+        },
+        {
+          provide: MAT_SNACK_BAR_DATA,
+          useValue: config.data,
+        },
+      ],
     });
   }
   static ɵfac = function MatSnackBar_Factory(__ngFactoryType__) {
@@ -916,16 +979,26 @@ var MatSnackBar = class _MatSnackBar {
   static ɵprov = ɵɵdefineInjectable({
     token: _MatSnackBar,
     factory: _MatSnackBar.ɵfac,
-    providedIn: "root"
+    providedIn: 'root',
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSnackBar, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], () => [], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSnackBar,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: 'root',
+            },
+          ],
+        },
+      ],
+      () => [],
+      null,
+    );
 })();
 var DIRECTIVES = [MatSnackBarContainer, MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction];
 var MatSnackBarModule = class _MatSnackBarModule {
@@ -934,23 +1007,43 @@ var MatSnackBarModule = class _MatSnackBarModule {
   };
   static ɵmod = ɵɵdefineNgModule({
     type: _MatSnackBarModule,
-    imports: [OverlayModule, PortalModule, MatButtonModule, MatCommonModule, SimpleSnackBar, MatSnackBarContainer, MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction],
-    exports: [MatCommonModule, MatSnackBarContainer, MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction]
+    imports: [
+      OverlayModule,
+      PortalModule,
+      MatButtonModule,
+      MatCommonModule,
+      SimpleSnackBar,
+      MatSnackBarContainer,
+      MatSnackBarLabel,
+      MatSnackBarActions,
+      MatSnackBarAction,
+    ],
+    exports: [MatCommonModule, MatSnackBarContainer, MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction],
   });
   static ɵinj = ɵɵdefineInjector({
     providers: [MatSnackBar],
-    imports: [OverlayModule, PortalModule, MatButtonModule, MatCommonModule, SimpleSnackBar, MatCommonModule]
+    imports: [OverlayModule, PortalModule, MatButtonModule, MatCommonModule, SimpleSnackBar, MatCommonModule],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSnackBarModule, [{
-    type: NgModule,
-    args: [{
-      imports: [OverlayModule, PortalModule, MatButtonModule, MatCommonModule, SimpleSnackBar, ...DIRECTIVES],
-      exports: [MatCommonModule, ...DIRECTIVES],
-      providers: [MatSnackBar]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSnackBarModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [OverlayModule, PortalModule, MatButtonModule, MatCommonModule, SimpleSnackBar, ...DIRECTIVES],
+              exports: [MatCommonModule, ...DIRECTIVES],
+              providers: [MatSnackBar],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var matSnackBarAnimations = {
   // Represents
@@ -983,56 +1076,61 @@ var matSnackBarAnimations = {
   /** Animation that shows and hides a snack bar. */
   snackBarState: {
     type: 7,
-    name: "state",
-    "definitions": [{
-      type: 0,
-      name: "void, hidden",
-      styles: {
-        type: 6,
-        styles: {
-          transform: "scale(0.8)",
-          opacity: 0
-        },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "visible",
-      styles: {
-        type: 6,
-        styles: {
-          transform: "scale(1)",
-          opacity: 1
-        },
-        offset: null
-      }
-    }, {
-      type: 1,
-      expr: "* => visible",
-      animation: {
-        type: 4,
-        styles: null,
-        timings: "150ms cubic-bezier(0, 0, 0.2, 1)"
-      },
-      options: null
-    }, {
-      type: 1,
-      expr: "* => void, * => hidden",
-      animation: {
-        type: 4,
+    name: 'state',
+    definitions: [
+      {
+        type: 0,
+        name: 'void, hidden',
         styles: {
           type: 6,
           styles: {
-            opacity: 0
+            transform: 'scale(0.8)',
+            opacity: 0,
           },
-          offset: null
+          offset: null,
         },
-        timings: "75ms cubic-bezier(0.4, 0.0, 1, 1)"
       },
-      options: null
-    }],
-    options: {}
-  }
+      {
+        type: 0,
+        name: 'visible',
+        styles: {
+          type: 6,
+          styles: {
+            transform: 'scale(1)',
+            opacity: 1,
+          },
+          offset: null,
+        },
+      },
+      {
+        type: 1,
+        expr: '* => visible',
+        animation: {
+          type: 4,
+          styles: null,
+          timings: '150ms cubic-bezier(0, 0, 0.2, 1)',
+        },
+        options: null,
+      },
+      {
+        type: 1,
+        expr: '* => void, * => hidden',
+        animation: {
+          type: 4,
+          styles: {
+            type: 6,
+            styles: {
+              opacity: 0,
+            },
+            offset: null,
+          },
+          timings: '75ms cubic-bezier(0.4, 0.0, 1, 1)',
+        },
+        options: null,
+      },
+    ],
+    options: {},
+  },
 };
 export {
   MAT_SNACK_BAR_DATA,
@@ -1047,6 +1145,6 @@ export {
   MatSnackBarModule,
   MatSnackBarRef,
   SimpleSnackBar,
-  matSnackBarAnimations
+  matSnackBarAnimations,
 };
 //# sourceMappingURL=@angular_material_snack-bar.js.map

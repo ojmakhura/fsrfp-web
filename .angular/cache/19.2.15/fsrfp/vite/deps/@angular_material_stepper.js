@@ -1,35 +1,18 @@
-import {
-  MatIcon,
-  MatIconModule
-} from "./chunk-QZ7ZRSUV.js";
-import "./chunk-DTDSM6HR.js";
-import "./chunk-O5IRBPO4.js";
-import {
-  ErrorStateMatcher
-} from "./chunk-CQCKY7W7.js";
-import "./chunk-NKM73PB6.js";
-import {
-  MatRippleModule
-} from "./chunk-WNGU3QLI.js";
-import {
-  ControlContainer
-} from "./chunk-WXKJKQEY.js";
-import {
-  MatRipple
-} from "./chunk-6K32XFRM.js";
-import {
-  _StructuralStylesLoader
-} from "./chunk-IBJRQVUD.js";
-import "./chunk-BS4LDW6B.js";
-import "./chunk-OIBNGD5S.js";
-import {
-  CdkPortalOutlet,
-  PortalModule,
-  TemplatePortal
-} from "./chunk-3HDMKNHX.js";
-import "./chunk-42FJBLFI.js";
-import "./chunk-JXBCBRYI.js";
-import "./chunk-2O4WY5GE.js";
+import { MatIcon, MatIconModule } from './chunk-QZ7ZRSUV.js';
+import './chunk-DTDSM6HR.js';
+import './chunk-O5IRBPO4.js';
+import { ErrorStateMatcher } from './chunk-CQCKY7W7.js';
+import './chunk-NKM73PB6.js';
+import { ControlContainer } from './chunk-WXKJKQEY.js';
+import './chunk-OIBNGD5S.js';
+import { CdkPortalOutlet, PortalModule, TemplatePortal } from './chunk-3HDMKNHX.js';
+import { MatRippleModule } from './chunk-WNGU3QLI.js';
+import { MatRipple } from './chunk-6K32XFRM.js';
+import { _StructuralStylesLoader } from './chunk-IBJRQVUD.js';
+import './chunk-BS4LDW6B.js';
+import './chunk-42FJBLFI.js';
+import './chunk-JXBCBRYI.js';
+import './chunk-2O4WY5GE.js';
 import {
   ENTER,
   FocusKeyManager,
@@ -39,24 +22,15 @@ import {
   _IdGenerator,
   _VisuallyHiddenLoader,
   _getFocusedElementPierceShadowDom,
-  hasModifierKey
-} from "./chunk-PQSRNTO7.js";
-import "./chunk-5RHDU2BP.js";
-import {
-  _CdkPrivateStyleLoader
-} from "./chunk-RG7RHNTG.js";
-import {
-  BidiModule,
-  Directionality
-} from "./chunk-HNGPX6GY.js";
-import "./chunk-GWH5ZIVQ.js";
-import {
-  Platform
-} from "./chunk-FSIK44TS.js";
-import {
-  NgTemplateOutlet
-} from "./chunk-LJRMVWU3.js";
-import "./chunk-SOO5Y25R.js";
+  hasModifierKey,
+} from './chunk-PQSRNTO7.js';
+import './chunk-5RHDU2BP.js';
+import { _CdkPrivateStyleLoader } from './chunk-RG7RHNTG.js';
+import { BidiModule, Directionality } from './chunk-HNGPX6GY.js';
+import './chunk-GWH5ZIVQ.js';
+import { Platform } from './chunk-FSIK44TS.js';
+import { NgTemplateOutlet } from './chunk-LJRMVWU3.js';
+import './chunk-SOO5Y25R.js';
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionStrategy,
@@ -128,23 +102,15 @@ import {
   ɵɵtemplateRefExtractor,
   ɵɵtext,
   ɵɵtextInterpolate,
-  ɵɵviewQuery
-} from "./chunk-LB7E77GG.js";
-import "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import {
-  Subject,
-  Subscription,
-  map,
-  of,
-  startWith,
-  switchMap,
-  takeUntil
-} from "./chunk-4S3KYZTJ.js";
-import "./chunk-4MWRP73S.js";
+  ɵɵviewQuery,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import './chunk-WPM5VTLQ.js';
+import { Subject, Subscription, map, of, startWith, switchMap, takeUntil } from './chunk-4S3KYZTJ.js';
+import './chunk-4MWRP73S.js';
 
 // node_modules/@angular/cdk/fesm2022/stepper.mjs
-var _c0 = ["*"];
+var _c0 = ['*'];
 function CdkStep_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵprojection(0);
@@ -152,8 +118,7 @@ function CdkStep_ng_template_0_Template(rf, ctx) {
 }
 var CdkStepHeader = class _CdkStepHeader {
   _elementRef = inject(ElementRef);
-  constructor() {
-  }
+  constructor() {}
   /** Focuses the step header. */
   focus() {
     this._elementRef.nativeElement.focus();
@@ -163,48 +128,67 @@ var CdkStepHeader = class _CdkStepHeader {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _CdkStepHeader,
-    selectors: [["", "cdkStepHeader", ""]],
-    hostAttrs: ["role", "tab"]
+    selectors: [['', 'cdkStepHeader', '']],
+    hostAttrs: ['role', 'tab'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkStepHeader, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkStepHeader]",
-      host: {
-        "role": "tab"
-      }
-    }]
-  }], () => [], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkStepHeader,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[cdkStepHeader]',
+              host: {
+                role: 'tab',
+              },
+            },
+          ],
+        },
+      ],
+      () => [],
+      null,
+    );
 })();
 var CdkStepLabel = class _CdkStepLabel {
   template = inject(TemplateRef);
-  constructor() {
-  }
+  constructor() {}
   static ɵfac = function CdkStepLabel_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _CdkStepLabel)();
   };
   static ɵdir = ɵɵdefineDirective({
     type: _CdkStepLabel,
-    selectors: [["", "cdkStepLabel", ""]]
+    selectors: [['', 'cdkStepLabel', '']],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkStepLabel, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkStepLabel]"
-    }]
-  }], () => [], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkStepLabel,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[cdkStepLabel]',
+            },
+          ],
+        },
+      ],
+      () => [],
+      null,
+    );
 })();
 var STEP_STATE = {
-  NUMBER: "number",
-  EDIT: "edit",
-  DONE: "done",
-  ERROR: "error"
+  NUMBER: 'number',
+  EDIT: 'edit',
+  DONE: 'done',
+  ERROR: 'error',
 };
-var STEPPER_GLOBAL_OPTIONS = new InjectionToken("STEPPER_GLOBAL_OPTIONS");
+var STEPPER_GLOBAL_OPTIONS = new InjectionToken('STEPPER_GLOBAL_OPTIONS');
 var CdkStep = class _CdkStep {
   _stepperOptions;
   _stepper = inject(CdkStepper);
@@ -262,7 +246,7 @@ var CdkStep = class _CdkStep {
   }
   constructor() {
     const stepperOptions = inject(STEPPER_GLOBAL_OPTIONS, {
-      optional: true
+      optional: true,
     });
     this._stepperOptions = stepperOptions ? stepperOptions : {};
     this._displayDefaultIndicatorType = this._stepperOptions.displayDefaultIndicatorType !== false;
@@ -303,7 +287,7 @@ var CdkStep = class _CdkStep {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _CdkStep,
-    selectors: [["cdk-step"]],
+    selectors: [['cdk-step']],
     contentQueries: function CdkStep_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, CdkStepLabel, 5);
@@ -314,13 +298,13 @@ var CdkStep = class _CdkStep {
           // the directives. The type is marked as `Partial` in case we run into a class that provides
           // itself as `ControlContainer` but doesn't have the same interface as the directives.
           ControlContainer,
-          5
+          5,
         );
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.stepLabel = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._childForms = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.stepLabel = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._childForms = _t);
       }
     },
     viewQuery: function CdkStep_Query(rf, ctx) {
@@ -329,25 +313,25 @@ var CdkStep = class _CdkStep {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.content = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.content = _t.first);
       }
     },
     inputs: {
-      stepControl: "stepControl",
-      label: "label",
-      errorMessage: "errorMessage",
-      ariaLabel: [0, "aria-label", "ariaLabel"],
-      ariaLabelledby: [0, "aria-labelledby", "ariaLabelledby"],
-      state: "state",
-      editable: [2, "editable", "editable", booleanAttribute],
-      optional: [2, "optional", "optional", booleanAttribute],
-      completed: [2, "completed", "completed", booleanAttribute],
-      hasError: [2, "hasError", "hasError", booleanAttribute]
+      stepControl: 'stepControl',
+      label: 'label',
+      errorMessage: 'errorMessage',
+      ariaLabel: [0, 'aria-label', 'ariaLabel'],
+      ariaLabelledby: [0, 'aria-labelledby', 'ariaLabelledby'],
+      state: 'state',
+      editable: [2, 'editable', 'editable', booleanAttribute],
+      optional: [2, 'optional', 'optional', booleanAttribute],
+      completed: [2, 'completed', 'completed', booleanAttribute],
+      hasError: [2, 'hasError', 'hasError', booleanAttribute],
     },
     outputs: {
-      interactedStream: "interacted"
+      interactedStream: 'interacted',
     },
-    exportAs: ["cdkStep"],
+    exportAs: ['cdkStep'],
     features: [ɵɵNgOnChangesFeature],
     ngContentSelectors: _c0,
     decls: 1,
@@ -355,100 +339,149 @@ var CdkStep = class _CdkStep {
     template: function CdkStep_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef();
-        ɵɵtemplate(0, CdkStep_ng_template_0_Template, 1, 0, "ng-template");
+        ɵɵtemplate(0, CdkStep_ng_template_0_Template, 1, 0, 'ng-template');
       }
     },
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkStep, [{
-    type: Component,
-    args: [{
-      selector: "cdk-step",
-      exportAs: "cdkStep",
-      template: "<ng-template><ng-content/></ng-template>",
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush
-    }]
-  }], () => [], {
-    stepLabel: [{
-      type: ContentChild,
-      args: [CdkStepLabel]
-    }],
-    _childForms: [{
-      type: ContentChildren,
-      args: [
-        // Note: we look for `ControlContainer` here, because both `NgForm` and `FormGroupDirective`
-        // provides themselves as such, but we don't want to have a concrete reference to both of
-        // the directives. The type is marked as `Partial` in case we run into a class that provides
-        // itself as `ControlContainer` but doesn't have the same interface as the directives.
-        ControlContainer,
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkStep,
+      [
         {
-          descendants: true
-        }
-      ]
-    }],
-    content: [{
-      type: ViewChild,
-      args: [TemplateRef, {
-        static: true
-      }]
-    }],
-    stepControl: [{
-      type: Input
-    }],
-    interactedStream: [{
-      type: Output,
-      args: ["interacted"]
-    }],
-    label: [{
-      type: Input
-    }],
-    errorMessage: [{
-      type: Input
-    }],
-    ariaLabel: [{
-      type: Input,
-      args: ["aria-label"]
-    }],
-    ariaLabelledby: [{
-      type: Input,
-      args: ["aria-labelledby"]
-    }],
-    state: [{
-      type: Input
-    }],
-    editable: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    optional: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    completed: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    hasError: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }]
-  });
+          type: Component,
+          args: [
+            {
+              selector: 'cdk-step',
+              exportAs: 'cdkStep',
+              template: '<ng-template><ng-content/></ng-template>',
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        stepLabel: [
+          {
+            type: ContentChild,
+            args: [CdkStepLabel],
+          },
+        ],
+        _childForms: [
+          {
+            type: ContentChildren,
+            args: [
+              // Note: we look for `ControlContainer` here, because both `NgForm` and `FormGroupDirective`
+              // provides themselves as such, but we don't want to have a concrete reference to both of
+              // the directives. The type is marked as `Partial` in case we run into a class that provides
+              // itself as `ControlContainer` but doesn't have the same interface as the directives.
+              ControlContainer,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        content: [
+          {
+            type: ViewChild,
+            args: [
+              TemplateRef,
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        stepControl: [
+          {
+            type: Input,
+          },
+        ],
+        interactedStream: [
+          {
+            type: Output,
+            args: ['interacted'],
+          },
+        ],
+        label: [
+          {
+            type: Input,
+          },
+        ],
+        errorMessage: [
+          {
+            type: Input,
+          },
+        ],
+        ariaLabel: [
+          {
+            type: Input,
+            args: ['aria-label'],
+          },
+        ],
+        ariaLabelledby: [
+          {
+            type: Input,
+            args: ['aria-labelledby'],
+          },
+        ],
+        state: [
+          {
+            type: Input,
+          },
+        ],
+        editable: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        optional: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        completed: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        hasError: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
 var CdkStepper = class _CdkStepper {
   _dir = inject(Directionality, {
-    optional: true
+    optional: true,
   });
   _changeDetectorRef = inject(ChangeDetectorRef);
   _elementRef = inject(ElementRef);
@@ -472,12 +505,15 @@ var CdkStepper = class _CdkStepper {
   }
   set selectedIndex(index) {
     if (this._steps) {
-      if (!this._isValidIndex(index) && (typeof ngDevMode === "undefined" || ngDevMode)) {
-        throw Error("cdkStepper: Cannot assign out-of-bounds value to `selectedIndex`.");
+      if (!this._isValidIndex(index) && (typeof ngDevMode === 'undefined' || ngDevMode)) {
+        throw Error('cdkStepper: Cannot assign out-of-bounds value to `selectedIndex`.');
       }
       if (this._selectedIndex !== index) {
         this.selected?._markAsInteracted();
-        if (!this._anyControlsInvalidOrPending(index) && (index >= this._selectedIndex || this.steps.toArray()[index].editable)) {
+        if (
+          !this._anyControlsInvalidOrPending(index) &&
+          (index >= this._selectedIndex || this.steps.toArray()[index].editable)
+        ) {
           this._updateSelectedItemIndex(index);
         }
       }
@@ -498,7 +534,7 @@ var CdkStepper = class _CdkStepper {
   /** Output to support two-way binding on `[(selectedIndex)]` */
   selectedIndexChange = new EventEmitter();
   /** Used to track unique ID for each stepper component. */
-  _groupId = inject(_IdGenerator).getId("cdk-stepper-");
+  _groupId = inject(_IdGenerator).getId('cdk-stepper-');
   /** Orientation of the stepper. */
   get orientation() {
     return this._orientation;
@@ -506,12 +542,11 @@ var CdkStepper = class _CdkStepper {
   set orientation(value) {
     this._orientation = value;
     if (this._keyManager) {
-      this._keyManager.withVerticalOrientation(value === "vertical");
+      this._keyManager.withVerticalOrientation(value === 'vertical');
     }
   }
-  _orientation = "horizontal";
-  constructor() {
-  }
+  _orientation = 'horizontal';
+  constructor() {}
   ngAfterContentInit() {
     this._steps.changes.pipe(startWith(this._steps), takeUntil(this._destroyed)).subscribe((steps) => {
       this.steps.reset(steps.filter((step) => step._stepper === this));
@@ -520,15 +555,22 @@ var CdkStepper = class _CdkStepper {
   }
   ngAfterViewInit() {
     this._stepHeader.changes.pipe(startWith(this._stepHeader), takeUntil(this._destroyed)).subscribe((headers) => {
-      this._sortedHeaders.reset(headers.toArray().sort((a, b) => {
-        const documentPosition = a._elementRef.nativeElement.compareDocumentPosition(b._elementRef.nativeElement);
-        return documentPosition & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1;
-      }));
+      this._sortedHeaders.reset(
+        headers.toArray().sort((a, b) => {
+          const documentPosition = a._elementRef.nativeElement.compareDocumentPosition(b._elementRef.nativeElement);
+          return documentPosition & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1;
+        }),
+      );
       this._sortedHeaders.notifyOnChanges();
     });
-    this._keyManager = new FocusKeyManager(this._sortedHeaders).withWrap().withHomeAndEnd().withVerticalOrientation(this._orientation === "vertical");
+    this._keyManager = new FocusKeyManager(this._sortedHeaders)
+      .withWrap()
+      .withHomeAndEnd()
+      .withVerticalOrientation(this._orientation === 'vertical');
     this._keyManager.updateActiveItem(this.selectedIndex);
-    (this._dir ? this._dir.change : of()).pipe(startWith(this._layoutDirection()), takeUntil(this._destroyed)).subscribe((direction) => this._keyManager?.withHorizontalOrientation(direction));
+    (this._dir ? this._dir.change : of())
+      .pipe(startWith(this._layoutDirection()), takeUntil(this._destroyed))
+      .subscribe((direction) => this._keyManager?.withHorizontalOrientation(direction));
     this._keyManager.updateActiveItem(this._selectedIndex);
     this.steps.changes.subscribe(() => {
       if (!this.selected) {
@@ -582,17 +624,19 @@ var CdkStepper = class _CdkStepper {
   _getAnimationDirection(index) {
     const position = index - this._selectedIndex;
     if (position < 0) {
-      return this._layoutDirection() === "rtl" ? "next" : "previous";
+      return this._layoutDirection() === 'rtl' ? 'next' : 'previous';
     } else if (position > 0) {
-      return this._layoutDirection() === "rtl" ? "previous" : "next";
+      return this._layoutDirection() === 'rtl' ? 'previous' : 'next';
     }
-    return "current";
+    return 'current';
   }
   /** Returns the type of icon to be displayed. */
   _getIndicatorType(index, state = STEP_STATE.NUMBER) {
     const step = this.steps.toArray()[index];
     const isCurrentStep = this._isCurrentStep(index);
-    return step._displayDefaultIndicatorType ? this._getDefaultIndicatorLogic(step, isCurrentStep) : this._getGuidelineLogic(step, isCurrentStep, state);
+    return step._displayDefaultIndicatorType
+      ? this._getDefaultIndicatorLogic(step, isCurrentStep)
+      : this._getGuidelineLogic(step, isCurrentStep, state);
   }
   _getDefaultIndicatorLogic(step, isCurrentStep) {
     if (step._showError() && step.hasError && !isCurrentStep) {
@@ -629,7 +673,7 @@ var CdkStepper = class _CdkStepper {
       selectedIndex: newIndex,
       previouslySelectedIndex: this._selectedIndex,
       selectedStep: stepsArray[newIndex],
-      previouslySelectedStep: stepsArray[this._selectedIndex]
+      previouslySelectedStep: stepsArray[this._selectedIndex],
     });
     if (this._keyManager) {
       this._containsFocus() ? this._keyManager.setActiveItem(newIndex) : this._keyManager.updateActiveItem(newIndex);
@@ -646,21 +690,24 @@ var CdkStepper = class _CdkStepper {
       this.selectedIndex = manager.activeItemIndex;
       event.preventDefault();
     } else {
-      manager?.setFocusOrigin("keyboard").onKeydown(event);
+      manager?.setFocusOrigin('keyboard').onKeydown(event);
     }
   }
   _anyControlsInvalidOrPending(index) {
     if (this.linear && index >= 0) {
-      return this.steps.toArray().slice(0, index).some((step) => {
-        const control = step.stepControl;
-        const isIncomplete = control ? control.invalid || control.pending || !step.interacted : !step.completed;
-        return isIncomplete && !step.optional && !step._completedOverride;
-      });
+      return this.steps
+        .toArray()
+        .slice(0, index)
+        .some((step) => {
+          const control = step.stepControl;
+          const isIncomplete = control ? control.invalid || control.pending || !step.interacted : !step.completed;
+          return isIncomplete && !step.optional && !step._completedOverride;
+        });
     }
     return false;
   }
   _layoutDirection() {
-    return this._dir && this._dir.value === "rtl" ? "rtl" : "ltr";
+    return this._dir && this._dir.value === 'rtl' ? 'rtl' : 'ltr';
   }
   /** Checks whether the stepper contains the focused element. */
   _containsFocus() {
@@ -677,7 +724,7 @@ var CdkStepper = class _CdkStepper {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _CdkStepper,
-    selectors: [["", "cdkStepper", ""]],
+    selectors: [['', 'cdkStepper', '']],
     contentQueries: function CdkStepper_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, CdkStep, 5);
@@ -685,156 +732,214 @@ var CdkStepper = class _CdkStepper {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._steps = _t);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._stepHeader = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._steps = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._stepHeader = _t);
       }
     },
     inputs: {
-      linear: [2, "linear", "linear", booleanAttribute],
-      selectedIndex: [2, "selectedIndex", "selectedIndex", numberAttribute],
-      selected: "selected",
-      orientation: "orientation"
+      linear: [2, 'linear', 'linear', booleanAttribute],
+      selectedIndex: [2, 'selectedIndex', 'selectedIndex', numberAttribute],
+      selected: 'selected',
+      orientation: 'orientation',
     },
     outputs: {
-      selectionChange: "selectionChange",
-      selectedIndexChange: "selectedIndexChange"
+      selectionChange: 'selectionChange',
+      selectedIndexChange: 'selectedIndexChange',
     },
-    exportAs: ["cdkStepper"]
+    exportAs: ['cdkStepper'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkStepper, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkStepper]",
-      exportAs: "cdkStepper"
-    }]
-  }], () => [], {
-    _steps: [{
-      type: ContentChildren,
-      args: [CdkStep, {
-        descendants: true
-      }]
-    }],
-    _stepHeader: [{
-      type: ContentChildren,
-      args: [CdkStepHeader, {
-        descendants: true
-      }]
-    }],
-    linear: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    selectedIndex: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    selected: [{
-      type: Input
-    }],
-    selectionChange: [{
-      type: Output
-    }],
-    selectedIndexChange: [{
-      type: Output
-    }],
-    orientation: [{
-      type: Input
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkStepper,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[cdkStepper]',
+              exportAs: 'cdkStepper',
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        _steps: [
+          {
+            type: ContentChildren,
+            args: [
+              CdkStep,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        _stepHeader: [
+          {
+            type: ContentChildren,
+            args: [
+              CdkStepHeader,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        linear: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        selectedIndex: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        selected: [
+          {
+            type: Input,
+          },
+        ],
+        selectionChange: [
+          {
+            type: Output,
+          },
+        ],
+        selectedIndexChange: [
+          {
+            type: Output,
+          },
+        ],
+        orientation: [
+          {
+            type: Input,
+          },
+        ],
+      },
+    );
 })();
 var CdkStepperNext = class _CdkStepperNext {
   _stepper = inject(CdkStepper);
   /** Type of the next button. Defaults to "submit" if not specified. */
-  type = "submit";
-  constructor() {
-  }
+  type = 'submit';
+  constructor() {}
   static ɵfac = function CdkStepperNext_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _CdkStepperNext)();
   };
   static ɵdir = ɵɵdefineDirective({
     type: _CdkStepperNext,
-    selectors: [["button", "cdkStepperNext", ""]],
+    selectors: [['button', 'cdkStepperNext', '']],
     hostVars: 1,
     hostBindings: function CdkStepperNext_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("click", function CdkStepperNext_click_HostBindingHandler() {
+        ɵɵlistener('click', function CdkStepperNext_click_HostBindingHandler() {
           return ctx._stepper.next();
         });
       }
       if (rf & 2) {
-        ɵɵhostProperty("type", ctx.type);
+        ɵɵhostProperty('type', ctx.type);
       }
     },
     inputs: {
-      type: "type"
-    }
+      type: 'type',
+    },
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkStepperNext, [{
-    type: Directive,
-    args: [{
-      selector: "button[cdkStepperNext]",
-      host: {
-        "[type]": "type",
-        "(click)": "_stepper.next()"
-      }
-    }]
-  }], () => [], {
-    type: [{
-      type: Input
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkStepperNext,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'button[cdkStepperNext]',
+              host: {
+                '[type]': 'type',
+                '(click)': '_stepper.next()',
+              },
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        type: [
+          {
+            type: Input,
+          },
+        ],
+      },
+    );
 })();
 var CdkStepperPrevious = class _CdkStepperPrevious {
   _stepper = inject(CdkStepper);
   /** Type of the previous button. Defaults to "button" if not specified. */
-  type = "button";
-  constructor() {
-  }
+  type = 'button';
+  constructor() {}
   static ɵfac = function CdkStepperPrevious_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _CdkStepperPrevious)();
   };
   static ɵdir = ɵɵdefineDirective({
     type: _CdkStepperPrevious,
-    selectors: [["button", "cdkStepperPrevious", ""]],
+    selectors: [['button', 'cdkStepperPrevious', '']],
     hostVars: 1,
     hostBindings: function CdkStepperPrevious_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("click", function CdkStepperPrevious_click_HostBindingHandler() {
+        ɵɵlistener('click', function CdkStepperPrevious_click_HostBindingHandler() {
           return ctx._stepper.previous();
         });
       }
       if (rf & 2) {
-        ɵɵhostProperty("type", ctx.type);
+        ɵɵhostProperty('type', ctx.type);
       }
     },
     inputs: {
-      type: "type"
-    }
+      type: 'type',
+    },
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkStepperPrevious, [{
-    type: Directive,
-    args: [{
-      selector: "button[cdkStepperPrevious]",
-      host: {
-        "[type]": "type",
-        "(click)": "_stepper.previous()"
-      }
-    }]
-  }], () => [], {
-    type: [{
-      type: Input
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkStepperPrevious,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'button[cdkStepperPrevious]',
+              host: {
+                '[type]': 'type',
+                '(click)': '_stepper.previous()',
+              },
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        type: [
+          {
+            type: Input,
+          },
+        ],
+      },
+    );
 })();
 var CdkStepperModule = class _CdkStepperModule {
   static ɵfac = function CdkStepperModule_Factory(__ngFactoryType__) {
@@ -843,20 +948,38 @@ var CdkStepperModule = class _CdkStepperModule {
   static ɵmod = ɵɵdefineNgModule({
     type: _CdkStepperModule,
     imports: [BidiModule, CdkStep, CdkStepper, CdkStepHeader, CdkStepLabel, CdkStepperNext, CdkStepperPrevious],
-    exports: [CdkStep, CdkStepper, CdkStepHeader, CdkStepLabel, CdkStepperNext, CdkStepperPrevious]
+    exports: [CdkStep, CdkStepper, CdkStepHeader, CdkStepLabel, CdkStepperNext, CdkStepperPrevious],
   });
   static ɵinj = ɵɵdefineInjector({
-    imports: [BidiModule]
+    imports: [BidiModule],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkStepperModule, [{
-    type: NgModule,
-    args: [{
-      imports: [BidiModule, CdkStep, CdkStepper, CdkStepHeader, CdkStepLabel, CdkStepperNext, CdkStepperPrevious],
-      exports: [CdkStep, CdkStepper, CdkStepHeader, CdkStepLabel, CdkStepperNext, CdkStepperPrevious]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkStepperModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [
+                BidiModule,
+                CdkStep,
+                CdkStepper,
+                CdkStepHeader,
+                CdkStepLabel,
+                CdkStepperNext,
+                CdkStepperPrevious,
+              ],
+              exports: [CdkStep, CdkStepper, CdkStepHeader, CdkStepLabel, CdkStepperNext, CdkStepperPrevious],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 
 // node_modules/@angular/material/fesm2022/stepper.mjs
@@ -866,12 +989,15 @@ function MatStepHeader_Conditional_3_Template(rf, ctx) {
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.iconOverrides[ctx_r0.state])("ngTemplateOutletContext", ctx_r0._getIconContext());
+    ɵɵproperty('ngTemplateOutlet', ctx_r0.iconOverrides[ctx_r0.state])(
+      'ngTemplateOutletContext',
+      ctx_r0._getIconContext(),
+    );
   }
 }
 function MatStepHeader_Conditional_4_Case_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 7);
+    ɵɵelementStart(0, 'span', 7);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
@@ -883,7 +1009,7 @@ function MatStepHeader_Conditional_4_Case_0_Template(rf, ctx) {
 }
 function MatStepHeader_Conditional_4_Case_1_Conditional_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 8);
+    ɵɵelementStart(0, 'span', 8);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
@@ -895,7 +1021,7 @@ function MatStepHeader_Conditional_4_Case_1_Conditional_0_Template(rf, ctx) {
 }
 function MatStepHeader_Conditional_4_Case_1_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 8);
+    ɵɵelementStart(0, 'span', 8);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
@@ -907,42 +1033,56 @@ function MatStepHeader_Conditional_4_Case_1_Conditional_1_Template(rf, ctx) {
 }
 function MatStepHeader_Conditional_4_Case_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, MatStepHeader_Conditional_4_Case_1_Conditional_0_Template, 2, 1, "span", 8)(1, MatStepHeader_Conditional_4_Case_1_Conditional_1_Template, 2, 1, "span", 8);
-    ɵɵelementStart(2, "mat-icon", 7);
+    ɵɵtemplate(0, MatStepHeader_Conditional_4_Case_1_Conditional_0_Template, 2, 1, 'span', 8)(
+      1,
+      MatStepHeader_Conditional_4_Case_1_Conditional_1_Template,
+      2,
+      1,
+      'span',
+      8,
+    );
+    ɵɵelementStart(2, 'mat-icon', 7);
     ɵɵtext(3);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(2);
-    ɵɵconditional(ctx_r0.state === "done" ? 0 : ctx_r0.state === "edit" ? 1 : -1);
+    ɵɵconditional(ctx_r0.state === 'done' ? 0 : ctx_r0.state === 'edit' ? 1 : -1);
     ɵɵadvance(3);
     ɵɵtextInterpolate(ctx_r0._getDefaultTextForState(ctx_r0.state));
   }
 }
 function MatStepHeader_Conditional_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, MatStepHeader_Conditional_4_Case_0_Template, 2, 1, "span", 7)(1, MatStepHeader_Conditional_4_Case_1_Template, 4, 2);
+    ɵɵtemplate(
+      0,
+      MatStepHeader_Conditional_4_Case_0_Template,
+      2,
+      1,
+      'span',
+      7,
+    )(1, MatStepHeader_Conditional_4_Case_1_Template, 4, 2);
   }
   if (rf & 2) {
     let tmp_1_0;
     const ctx_r0 = ɵɵnextContext();
-    ɵɵconditional((tmp_1_0 = ctx_r0.state) === "number" ? 0 : 1);
+    ɵɵconditional((tmp_1_0 = ctx_r0.state) === 'number' ? 0 : 1);
   }
 }
 function MatStepHeader_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 4);
+    ɵɵelementStart(0, 'div', 4);
     ɵɵelementContainer(1, 9);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx.template);
+    ɵɵproperty('ngTemplateOutlet', ctx.template);
   }
 }
 function MatStepHeader_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 4);
+    ɵɵelementStart(0, 'div', 4);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
@@ -954,7 +1094,7 @@ function MatStepHeader_Conditional_7_Template(rf, ctx) {
 }
 function MatStepHeader_Conditional_8_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 5);
+    ɵɵelementStart(0, 'div', 5);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
@@ -966,7 +1106,7 @@ function MatStepHeader_Conditional_8_Template(rf, ctx) {
 }
 function MatStepHeader_Conditional_9_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 6);
+    ɵɵelementStart(0, 'div', 6);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
@@ -976,24 +1116,23 @@ function MatStepHeader_Conditional_9_Template(rf, ctx) {
     ɵɵtextInterpolate(ctx_r0.errorMessage);
   }
 }
-var _c02 = ["*"];
-function MatStep_ng_template_0_ng_template_1_Template(rf, ctx) {
-}
+var _c02 = ['*'];
+function MatStep_ng_template_0_ng_template_1_Template(rf, ctx) {}
 function MatStep_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵprojection(0);
-    ɵɵtemplate(1, MatStep_ng_template_0_ng_template_1_Template, 0, 0, "ng-template", 0);
+    ɵɵtemplate(1, MatStep_ng_template_0_ng_template_1_Template, 0, 0, 'ng-template', 0);
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵproperty("cdkPortalOutlet", ctx_r0._portal);
+    ɵɵproperty('cdkPortalOutlet', ctx_r0._portal);
   }
 }
-var _c1 = ["animatedContainer"];
+var _c1 = ['animatedContainer'];
 var _c2 = (a0, a1) => ({
   step: a0,
-  i: a1
+  i: a1,
 });
 function MatStepper_Conditional_0_Template(rf, ctx) {
   if (rf & 1) {
@@ -1002,13 +1141,13 @@ function MatStepper_Conditional_0_Template(rf, ctx) {
 }
 function MatStepper_Case_1_For_3_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "div", 7);
+    ɵɵelement(0, 'div', 7);
   }
 }
 function MatStepper_Case_1_For_3_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainer(0, 6);
-    ɵɵtemplate(1, MatStepper_Case_1_For_3_Conditional_1_Template, 1, 0, "div", 7);
+    ɵɵtemplate(1, MatStepper_Case_1_For_3_Conditional_1_Template, 1, 0, 'div', 7);
   }
   if (rf & 2) {
     const step_r1 = ctx.$implicit;
@@ -1017,14 +1156,17 @@ function MatStepper_Case_1_For_3_Template(rf, ctx) {
     const ɵ$count_8_r4 = ctx.$count;
     ɵɵnextContext(2);
     const stepTemplate_r5 = ɵɵreference(4);
-    ɵɵproperty("ngTemplateOutlet", stepTemplate_r5)("ngTemplateOutletContext", ɵɵpureFunction2(3, _c2, step_r1, $index_r2));
+    ɵɵproperty('ngTemplateOutlet', stepTemplate_r5)(
+      'ngTemplateOutletContext',
+      ɵɵpureFunction2(3, _c2, step_r1, $index_r2),
+    );
     ɵɵadvance();
     ɵɵconditional(!(ɵ$index_8_r3 === ɵ$count_8_r4 - 1) ? 1 : -1);
   }
 }
 function MatStepper_Case_1_For_6_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 8, 1);
+    ɵɵelementStart(0, 'div', 8, 1);
     ɵɵelementContainer(2, 9);
     ɵɵelementEnd();
   }
@@ -1032,20 +1174,23 @@ function MatStepper_Case_1_For_6_Template(rf, ctx) {
     const step_r6 = ctx.$implicit;
     const $index_r7 = ctx.$index;
     const ctx_r7 = ɵɵnextContext(2);
-    ɵɵclassMap("mat-horizontal-stepper-content-" + ctx_r7._getAnimationDirection($index_r7));
-    ɵɵproperty("id", ctx_r7._getStepContentId($index_r7));
-    ɵɵattribute("aria-labelledby", ctx_r7._getStepLabelId($index_r7))("inert", ctx_r7.selectedIndex === $index_r7 ? null : "");
+    ɵɵclassMap('mat-horizontal-stepper-content-' + ctx_r7._getAnimationDirection($index_r7));
+    ɵɵproperty('id', ctx_r7._getStepContentId($index_r7));
+    ɵɵattribute('aria-labelledby', ctx_r7._getStepLabelId($index_r7))(
+      'inert',
+      ctx_r7.selectedIndex === $index_r7 ? null : '',
+    );
     ɵɵadvance(2);
-    ɵɵproperty("ngTemplateOutlet", step_r6.content);
+    ɵɵproperty('ngTemplateOutlet', step_r6.content);
   }
 }
 function MatStepper_Case_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 2)(1, "div", 3);
+    ɵɵelementStart(0, 'div', 2)(1, 'div', 3);
     ɵɵrepeaterCreate(2, MatStepper_Case_1_For_3_Template, 2, 6, null, null, ɵɵrepeaterTrackByIdentity);
     ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 4);
-    ɵɵrepeaterCreate(5, MatStepper_Case_1_For_6_Template, 3, 6, "div", 5, ɵɵrepeaterTrackByIdentity);
+    ɵɵelementStart(4, 'div', 4);
+    ɵɵrepeaterCreate(5, MatStepper_Case_1_For_6_Template, 3, 6, 'div', 5, ɵɵrepeaterTrackByIdentity);
     ɵɵelementEnd()();
   }
   if (rf & 2) {
@@ -1058,9 +1203,9 @@ function MatStepper_Case_1_Template(rf, ctx) {
 }
 function MatStepper_Case_2_For_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 10);
+    ɵɵelementStart(0, 'div', 10);
     ɵɵelementContainer(1, 6);
-    ɵɵelementStart(2, "div", 11, 1)(4, "div", 12)(5, "div", 13);
+    ɵɵelementStart(2, 'div', 11, 1)(4, 'div', 12)(5, 'div', 13);
     ɵɵelementContainer(6, 9);
     ɵɵelementEnd()()()();
   }
@@ -1072,20 +1217,26 @@ function MatStepper_Case_2_For_1_Template(rf, ctx) {
     const ctx_r7 = ɵɵnextContext(2);
     const stepTemplate_r5 = ɵɵreference(4);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", stepTemplate_r5)("ngTemplateOutletContext", ɵɵpureFunction2(10, _c2, step_r9, $index_r10));
+    ɵɵproperty('ngTemplateOutlet', stepTemplate_r5)(
+      'ngTemplateOutletContext',
+      ɵɵpureFunction2(10, _c2, step_r9, $index_r10),
+    );
     ɵɵadvance();
-    ɵɵclassProp("mat-stepper-vertical-line", !(ɵ$index_22_r11 === ɵ$count_22_r12 - 1))("mat-vertical-content-container-active", ctx_r7.selectedIndex === $index_r10);
-    ɵɵattribute("inert", ctx_r7.selectedIndex === $index_r10 ? null : "");
+    ɵɵclassProp('mat-stepper-vertical-line', !(ɵ$index_22_r11 === ɵ$count_22_r12 - 1))(
+      'mat-vertical-content-container-active',
+      ctx_r7.selectedIndex === $index_r10,
+    );
+    ɵɵattribute('inert', ctx_r7.selectedIndex === $index_r10 ? null : '');
     ɵɵadvance(2);
-    ɵɵproperty("id", ctx_r7._getStepContentId($index_r10));
-    ɵɵattribute("aria-labelledby", ctx_r7._getStepLabelId($index_r10));
+    ɵɵproperty('id', ctx_r7._getStepContentId($index_r10));
+    ɵɵattribute('aria-labelledby', ctx_r7._getStepLabelId($index_r10));
     ɵɵadvance(2);
-    ɵɵproperty("ngTemplateOutlet", step_r9.content);
+    ɵɵproperty('ngTemplateOutlet', step_r9.content);
   }
 }
 function MatStepper_Case_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵrepeaterCreate(0, MatStepper_Case_2_For_1_Template, 7, 13, "div", 10, ɵɵrepeaterTrackByIdentity);
+    ɵɵrepeaterCreate(0, MatStepper_Case_2_For_1_Template, 7, 13, 'div', 10, ɵɵrepeaterTrackByIdentity);
   }
   if (rf & 2) {
     const ctx_r7 = ɵɵnextContext();
@@ -1095,11 +1246,11 @@ function MatStepper_Case_2_Template(rf, ctx) {
 function MatStepper_ng_template_3_Template(rf, ctx) {
   if (rf & 1) {
     const _r13 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "mat-step-header", 14);
-    ɵɵlistener("click", function MatStepper_ng_template_3_Template_mat_step_header_click_0_listener() {
+    ɵɵelementStart(0, 'mat-step-header', 14);
+    ɵɵlistener('click', function MatStepper_ng_template_3_Template_mat_step_header_click_0_listener() {
       const step_r14 = ɵɵrestoreView(_r13).step;
       return ɵɵresetView(step_r14.select());
-    })("keydown", function MatStepper_ng_template_3_Template_mat_step_header_keydown_0_listener($event) {
+    })('keydown', function MatStepper_ng_template_3_Template_mat_step_header_keydown_0_listener($event) {
       ɵɵrestoreView(_r13);
       const ctx_r7 = ɵɵnextContext();
       return ɵɵresetView(ctx_r7._onKeydown($event));
@@ -1110,31 +1261,64 @@ function MatStepper_ng_template_3_Template(rf, ctx) {
     const step_r14 = ctx.step;
     const i_r15 = ctx.i;
     const ctx_r7 = ɵɵnextContext();
-    ɵɵclassProp("mat-horizontal-stepper-header", ctx_r7.orientation === "horizontal")("mat-vertical-stepper-header", ctx_r7.orientation === "vertical");
-    ɵɵproperty("tabIndex", ctx_r7._getFocusIndex() === i_r15 ? 0 : -1)("id", ctx_r7._getStepLabelId(i_r15))("index", i_r15)("state", ctx_r7._getIndicatorType(i_r15, step_r14.state))("label", step_r14.stepLabel || step_r14.label)("selected", ctx_r7.selectedIndex === i_r15)("active", ctx_r7._stepIsNavigable(i_r15, step_r14))("optional", step_r14.optional)("errorMessage", step_r14.errorMessage)("iconOverrides", ctx_r7._iconOverrides)("disableRipple", ctx_r7.disableRipple || !ctx_r7._stepIsNavigable(i_r15, step_r14))("color", step_r14.color || ctx_r7.color);
-    ɵɵattribute("aria-posinset", i_r15 + 1)("aria-setsize", ctx_r7.steps.length)("aria-controls", ctx_r7._getStepContentId(i_r15))("aria-selected", ctx_r7.selectedIndex == i_r15)("aria-label", step_r14.ariaLabel || null)("aria-labelledby", !step_r14.ariaLabel && step_r14.ariaLabelledby ? step_r14.ariaLabelledby : null)("aria-disabled", ctx_r7._stepIsNavigable(i_r15, step_r14) ? null : true);
+    ɵɵclassProp('mat-horizontal-stepper-header', ctx_r7.orientation === 'horizontal')(
+      'mat-vertical-stepper-header',
+      ctx_r7.orientation === 'vertical',
+    );
+    ɵɵproperty('tabIndex', ctx_r7._getFocusIndex() === i_r15 ? 0 : -1)('id', ctx_r7._getStepLabelId(i_r15))(
+      'index',
+      i_r15,
+    )('state', ctx_r7._getIndicatorType(i_r15, step_r14.state))('label', step_r14.stepLabel || step_r14.label)(
+      'selected',
+      ctx_r7.selectedIndex === i_r15,
+    )('active', ctx_r7._stepIsNavigable(i_r15, step_r14))('optional', step_r14.optional)(
+      'errorMessage',
+      step_r14.errorMessage,
+    )('iconOverrides', ctx_r7._iconOverrides)(
+      'disableRipple',
+      ctx_r7.disableRipple || !ctx_r7._stepIsNavigable(i_r15, step_r14),
+    )('color', step_r14.color || ctx_r7.color);
+    ɵɵattribute('aria-posinset', i_r15 + 1)('aria-setsize', ctx_r7.steps.length)(
+      'aria-controls',
+      ctx_r7._getStepContentId(i_r15),
+    )('aria-selected', ctx_r7.selectedIndex == i_r15)('aria-label', step_r14.ariaLabel || null)(
+      'aria-labelledby',
+      !step_r14.ariaLabel && step_r14.ariaLabelledby ? step_r14.ariaLabelledby : null,
+    )('aria-disabled', ctx_r7._stepIsNavigable(i_r15, step_r14) ? null : true);
   }
 }
 var MatStepLabel = class _MatStepLabel extends CdkStepLabel {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatStepLabel_BaseFactory;
     return function MatStepLabel_Factory(__ngFactoryType__) {
-      return (ɵMatStepLabel_BaseFactory || (ɵMatStepLabel_BaseFactory = ɵɵgetInheritedFactory(_MatStepLabel)))(__ngFactoryType__ || _MatStepLabel);
+      return (ɵMatStepLabel_BaseFactory || (ɵMatStepLabel_BaseFactory = ɵɵgetInheritedFactory(_MatStepLabel)))(
+        __ngFactoryType__ || _MatStepLabel,
+      );
     };
   })();
   static ɵdir = ɵɵdefineDirective({
     type: _MatStepLabel,
-    selectors: [["", "matStepLabel", ""]],
-    features: [ɵɵInheritDefinitionFeature]
+    selectors: [['', 'matStepLabel', '']],
+    features: [ɵɵInheritDefinitionFeature],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStepLabel, [{
-    type: Directive,
-    args: [{
-      selector: "[matStepLabel]"
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatStepLabel,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[matStepLabel]',
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatStepperIntl = class _MatStepperIntl {
   /**
@@ -1143,27 +1327,37 @@ var MatStepperIntl = class _MatStepperIntl {
    */
   changes = new Subject();
   /** Label that is rendered below optional steps. */
-  optionalLabel = "Optional";
+  optionalLabel = 'Optional';
   /** Label that is used to indicate step as completed to screen readers. */
-  completedLabel = "Completed";
+  completedLabel = 'Completed';
   /** Label that is used to indicate step as editable to screen readers. */
-  editableLabel = "Editable";
+  editableLabel = 'Editable';
   static ɵfac = function MatStepperIntl_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _MatStepperIntl)();
   };
   static ɵprov = ɵɵdefineInjectable({
     token: _MatStepperIntl,
     factory: _MatStepperIntl.ɵfac,
-    providedIn: "root"
+    providedIn: 'root',
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStepperIntl, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatStepperIntl,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: 'root',
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 function MAT_STEPPER_INTL_PROVIDER_FACTORY(parentIntl) {
   return parentIntl || new MatStepperIntl();
@@ -1171,7 +1365,7 @@ function MAT_STEPPER_INTL_PROVIDER_FACTORY(parentIntl) {
 var MAT_STEPPER_INTL_PROVIDER = {
   provide: MatStepperIntl,
   deps: [[new Optional(), new SkipSelf(), MatStepperIntl]],
-  useFactory: MAT_STEPPER_INTL_PROVIDER_FACTORY
+  useFactory: MAT_STEPPER_INTL_PROVIDER_FACTORY,
 };
 var MatStepHeader = class _MatStepHeader extends CdkStepHeader {
   _intl = inject(MatStepperIntl);
@@ -1243,18 +1437,18 @@ var MatStepHeader = class _MatStepHeader extends CdkStepHeader {
     return {
       index: this.index,
       active: this.active,
-      optional: this.optional
+      optional: this.optional,
     };
   }
   _getDefaultTextForState(state) {
-    if (state == "number") {
+    if (state == 'number') {
       return `${this.index + 1}`;
     }
-    if (state == "edit") {
-      return "create";
+    if (state == 'edit') {
+      return 'create';
     }
-    if (state == "error") {
-      return "warning";
+    if (state == 'error') {
+      return 'warning';
     }
     return state;
   }
@@ -1263,78 +1457,120 @@ var MatStepHeader = class _MatStepHeader extends CdkStepHeader {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatStepHeader,
-    selectors: [["mat-step-header"]],
-    hostAttrs: ["role", "tab", 1, "mat-step-header"],
+    selectors: [['mat-step-header']],
+    hostAttrs: ['role', 'tab', 1, 'mat-step-header'],
     hostVars: 2,
     hostBindings: function MatStepHeader_HostBindings(rf, ctx) {
       if (rf & 2) {
-        ɵɵclassMap("mat-" + (ctx.color || "primary"));
+        ɵɵclassMap('mat-' + (ctx.color || 'primary'));
       }
     },
     inputs: {
-      state: "state",
-      label: "label",
-      errorMessage: "errorMessage",
-      iconOverrides: "iconOverrides",
-      index: "index",
-      selected: "selected",
-      active: "active",
-      optional: "optional",
-      disableRipple: "disableRipple",
-      color: "color"
+      state: 'state',
+      label: 'label',
+      errorMessage: 'errorMessage',
+      iconOverrides: 'iconOverrides',
+      index: 'index',
+      selected: 'selected',
+      active: 'active',
+      optional: 'optional',
+      disableRipple: 'disableRipple',
+      color: 'color',
     },
     features: [ɵɵInheritDefinitionFeature],
     decls: 10,
     vars: 17,
-    consts: [["matRipple", "", 1, "mat-step-header-ripple", "mat-focus-indicator", 3, "matRippleTrigger", "matRippleDisabled"], [1, "mat-step-icon-content"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "mat-step-label"], [1, "mat-step-text-label"], [1, "mat-step-optional"], [1, "mat-step-sub-label-error"], ["aria-hidden", "true"], [1, "cdk-visually-hidden"], [3, "ngTemplateOutlet"]],
+    consts: [
+      ['matRipple', '', 1, 'mat-step-header-ripple', 'mat-focus-indicator', 3, 'matRippleTrigger', 'matRippleDisabled'],
+      [1, 'mat-step-icon-content'],
+      [3, 'ngTemplateOutlet', 'ngTemplateOutletContext'],
+      [1, 'mat-step-label'],
+      [1, 'mat-step-text-label'],
+      [1, 'mat-step-optional'],
+      [1, 'mat-step-sub-label-error'],
+      ['aria-hidden', 'true'],
+      [1, 'cdk-visually-hidden'],
+      [3, 'ngTemplateOutlet'],
+    ],
     template: function MatStepHeader_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelement(0, "div", 0);
-        ɵɵelementStart(1, "div")(2, "div", 1);
-        ɵɵtemplate(3, MatStepHeader_Conditional_3_Template, 1, 2, "ng-container", 2)(4, MatStepHeader_Conditional_4_Template, 2, 1);
+        ɵɵelement(0, 'div', 0);
+        ɵɵelementStart(1, 'div')(2, 'div', 1);
+        ɵɵtemplate(
+          3,
+          MatStepHeader_Conditional_3_Template,
+          1,
+          2,
+          'ng-container',
+          2,
+        )(4, MatStepHeader_Conditional_4_Template, 2, 1);
         ɵɵelementEnd()();
-        ɵɵelementStart(5, "div", 3);
-        ɵɵtemplate(6, MatStepHeader_Conditional_6_Template, 2, 1, "div", 4)(7, MatStepHeader_Conditional_7_Template, 2, 1, "div", 4)(8, MatStepHeader_Conditional_8_Template, 2, 1, "div", 5)(9, MatStepHeader_Conditional_9_Template, 2, 1, "div", 6);
+        ɵɵelementStart(5, 'div', 3);
+        ɵɵtemplate(6, MatStepHeader_Conditional_6_Template, 2, 1, 'div', 4)(
+          7,
+          MatStepHeader_Conditional_7_Template,
+          2,
+          1,
+          'div',
+          4,
+        )(8, MatStepHeader_Conditional_8_Template, 2, 1, 'div', 5)(
+          9,
+          MatStepHeader_Conditional_9_Template,
+          2,
+          1,
+          'div',
+          6,
+        );
         ɵɵelementEnd();
       }
       if (rf & 2) {
         let tmp_8_0;
-        ɵɵproperty("matRippleTrigger", ctx._getHostElement())("matRippleDisabled", ctx.disableRipple);
+        ɵɵproperty('matRippleTrigger', ctx._getHostElement())('matRippleDisabled', ctx.disableRipple);
         ɵɵadvance();
-        ɵɵclassMapInterpolate1("mat-step-icon-state-", ctx.state, " mat-step-icon");
-        ɵɵclassProp("mat-step-icon-selected", ctx.selected);
+        ɵɵclassMapInterpolate1('mat-step-icon-state-', ctx.state, ' mat-step-icon');
+        ɵɵclassProp('mat-step-icon-selected', ctx.selected);
         ɵɵadvance(2);
         ɵɵconditional(ctx.iconOverrides && ctx.iconOverrides[ctx.state] ? 3 : 4);
         ɵɵadvance(2);
-        ɵɵclassProp("mat-step-label-active", ctx.active)("mat-step-label-selected", ctx.selected)("mat-step-label-error", ctx.state == "error");
+        ɵɵclassProp('mat-step-label-active', ctx.active)('mat-step-label-selected', ctx.selected)(
+          'mat-step-label-error',
+          ctx.state == 'error',
+        );
         ɵɵadvance();
         ɵɵconditional((tmp_8_0 = ctx._templateLabel()) ? 6 : ctx._stringLabel() ? 7 : -1, tmp_8_0);
         ɵɵadvance(2);
-        ɵɵconditional(ctx.optional && ctx.state != "error" ? 8 : -1);
+        ɵɵconditional(ctx.optional && ctx.state != 'error' ? 8 : -1);
         ɵɵadvance();
-        ɵɵconditional(ctx.state === "error" ? 9 : -1);
+        ɵɵconditional(ctx.state === 'error' ? 9 : -1);
       }
     },
     dependencies: [MatRipple, NgTemplateOutlet, MatIcon],
-    styles: ['.mat-step-header{overflow:hidden;outline:none;cursor:pointer;position:relative;box-sizing:content-box;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-step-header:focus .mat-focus-indicator::before{content:""}.mat-step-header:hover[aria-disabled=true]{cursor:default}.mat-step-header:hover:not([aria-disabled]),.mat-step-header:hover[aria-disabled=false]{background-color:var(--mat-stepper-header-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-inverse-surface) calc(var(--mat-sys-hover-state-layer-opacity) * 100%), transparent));border-radius:var(--mat-stepper-header-hover-state-layer-shape, var(--mat-sys-corner-medium))}.mat-step-header.cdk-keyboard-focused,.mat-step-header.cdk-program-focused{background-color:var(--mat-stepper-header-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-inverse-surface) calc(var(--mat-sys-focus-state-layer-opacity) * 100%), transparent));border-radius:var(--mat-stepper-header-focus-state-layer-shape, var(--mat-sys-corner-medium))}@media(hover: none){.mat-step-header:hover{background:none}}@media(forced-colors: active){.mat-step-header{outline:solid 1px}.mat-step-header[aria-selected=true] .mat-step-label{text-decoration:underline}.mat-step-header[aria-disabled=true]{outline-color:GrayText}.mat-step-header[aria-disabled=true] .mat-step-label,.mat-step-header[aria-disabled=true] .mat-step-icon,.mat-step-header[aria-disabled=true] .mat-step-optional{color:GrayText}}.mat-step-optional{font-size:12px;color:var(--mat-stepper-header-optional-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-sub-label-error{font-size:12px;font-weight:normal}.mat-step-icon{border-radius:50%;height:24px;width:24px;flex-shrink:0;position:relative;color:var(--mat-stepper-header-icon-foreground-color, var(--mat-sys-surface));background-color:var(--mat-stepper-header-icon-background-color, var(--mat-sys-on-surface-variant))}.mat-step-icon-content{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);display:flex}.mat-step-icon .mat-icon{font-size:16px;height:16px;width:16px}.mat-step-icon-state-error{background-color:var(--mat-stepper-header-error-state-icon-background-color, transparent);color:var(--mat-stepper-header-error-state-icon-foreground-color, var(--mat-sys-error))}.mat-step-icon-state-error .mat-icon{font-size:24px;height:24px;width:24px}.mat-step-label{display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:50px;vertical-align:middle;font-family:var(--mat-stepper-header-label-text-font, var(--mat-sys-title-small-font));font-size:var(--mat-stepper-header-label-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-stepper-header-label-text-weight, var(--mat-sys-title-small-weight));color:var(--mat-stepper-header-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-label.mat-step-label-active{color:var(--mat-stepper-header-selected-state-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-label.mat-step-label-error{color:var(--mat-stepper-header-error-state-label-text-color, var(--mat-sys-error));font-size:var(--mat-stepper-header-error-state-label-text-size, var(--mat-sys-title-small-size))}.mat-step-label.mat-step-label-selected{font-size:var(--mat-stepper-header-selected-state-label-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-stepper-header-selected-state-label-text-weight, var(--mat-sys-title-small-weight))}.mat-step-text-label{text-overflow:ellipsis;overflow:hidden}.mat-step-header .mat-step-header-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}.mat-step-icon-selected{background-color:var(--mat-stepper-header-selected-state-icon-background-color, var(--mat-sys-primary));color:var(--mat-stepper-header-selected-state-icon-foreground-color, var(--mat-sys-on-primary))}.mat-step-icon-state-done{background-color:var(--mat-stepper-header-done-state-icon-background-color);color:var(--mat-stepper-header-done-state-icon-foreground-color)}.mat-step-icon-state-edit{background-color:var(--mat-stepper-header-edit-state-icon-background-color, var(--mat-sys-primary));color:var(--mat-stepper-header-edit-state-icon-foreground-color, var(--mat-sys-on-primary))}\n'],
+    styles: [
+      '.mat-step-header{overflow:hidden;outline:none;cursor:pointer;position:relative;box-sizing:content-box;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-step-header:focus .mat-focus-indicator::before{content:""}.mat-step-header:hover[aria-disabled=true]{cursor:default}.mat-step-header:hover:not([aria-disabled]),.mat-step-header:hover[aria-disabled=false]{background-color:var(--mat-stepper-header-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-inverse-surface) calc(var(--mat-sys-hover-state-layer-opacity) * 100%), transparent));border-radius:var(--mat-stepper-header-hover-state-layer-shape, var(--mat-sys-corner-medium))}.mat-step-header.cdk-keyboard-focused,.mat-step-header.cdk-program-focused{background-color:var(--mat-stepper-header-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-inverse-surface) calc(var(--mat-sys-focus-state-layer-opacity) * 100%), transparent));border-radius:var(--mat-stepper-header-focus-state-layer-shape, var(--mat-sys-corner-medium))}@media(hover: none){.mat-step-header:hover{background:none}}@media(forced-colors: active){.mat-step-header{outline:solid 1px}.mat-step-header[aria-selected=true] .mat-step-label{text-decoration:underline}.mat-step-header[aria-disabled=true]{outline-color:GrayText}.mat-step-header[aria-disabled=true] .mat-step-label,.mat-step-header[aria-disabled=true] .mat-step-icon,.mat-step-header[aria-disabled=true] .mat-step-optional{color:GrayText}}.mat-step-optional{font-size:12px;color:var(--mat-stepper-header-optional-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-sub-label-error{font-size:12px;font-weight:normal}.mat-step-icon{border-radius:50%;height:24px;width:24px;flex-shrink:0;position:relative;color:var(--mat-stepper-header-icon-foreground-color, var(--mat-sys-surface));background-color:var(--mat-stepper-header-icon-background-color, var(--mat-sys-on-surface-variant))}.mat-step-icon-content{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);display:flex}.mat-step-icon .mat-icon{font-size:16px;height:16px;width:16px}.mat-step-icon-state-error{background-color:var(--mat-stepper-header-error-state-icon-background-color, transparent);color:var(--mat-stepper-header-error-state-icon-foreground-color, var(--mat-sys-error))}.mat-step-icon-state-error .mat-icon{font-size:24px;height:24px;width:24px}.mat-step-label{display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:50px;vertical-align:middle;font-family:var(--mat-stepper-header-label-text-font, var(--mat-sys-title-small-font));font-size:var(--mat-stepper-header-label-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-stepper-header-label-text-weight, var(--mat-sys-title-small-weight));color:var(--mat-stepper-header-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-label.mat-step-label-active{color:var(--mat-stepper-header-selected-state-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-label.mat-step-label-error{color:var(--mat-stepper-header-error-state-label-text-color, var(--mat-sys-error));font-size:var(--mat-stepper-header-error-state-label-text-size, var(--mat-sys-title-small-size))}.mat-step-label.mat-step-label-selected{font-size:var(--mat-stepper-header-selected-state-label-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-stepper-header-selected-state-label-text-weight, var(--mat-sys-title-small-weight))}.mat-step-text-label{text-overflow:ellipsis;overflow:hidden}.mat-step-header .mat-step-header-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}.mat-step-icon-selected{background-color:var(--mat-stepper-header-selected-state-icon-background-color, var(--mat-sys-primary));color:var(--mat-stepper-header-selected-state-icon-foreground-color, var(--mat-sys-on-primary))}.mat-step-icon-state-done{background-color:var(--mat-stepper-header-done-state-icon-background-color);color:var(--mat-stepper-header-done-state-icon-foreground-color)}.mat-step-icon-state-edit{background-color:var(--mat-stepper-header-edit-state-icon-background-color, var(--mat-sys-primary));color:var(--mat-stepper-header-edit-state-icon-foreground-color, var(--mat-sys-on-primary))}\n',
+    ],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStepHeader, [{
-    type: Component,
-    args: [{
-      selector: "mat-step-header",
-      host: {
-        "class": "mat-step-header",
-        "[class]": '"mat-" + (color || "primary")',
-        "role": "tab"
-      },
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      imports: [MatRipple, NgTemplateOutlet, MatIcon],
-      template: `<div class="mat-step-header-ripple mat-focus-indicator" matRipple
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatStepHeader,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-step-header',
+              host: {
+                class: 'mat-step-header',
+                '[class]': '"mat-" + (color || "primary")',
+                role: 'tab',
+              },
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              imports: [MatRipple, NgTemplateOutlet, MatIcon],
+              template: `<div class="mat-step-header-ripple mat-focus-indicator" matRipple
      [matRippleTrigger]="_getHostElement()"
      [matRippleDisabled]="disableRipple"></div>
 
@@ -1387,94 +1623,141 @@ var MatStepHeader = class _MatStepHeader extends CdkStepHeader {
 </div>
 
 `,
-      styles: ['.mat-step-header{overflow:hidden;outline:none;cursor:pointer;position:relative;box-sizing:content-box;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-step-header:focus .mat-focus-indicator::before{content:""}.mat-step-header:hover[aria-disabled=true]{cursor:default}.mat-step-header:hover:not([aria-disabled]),.mat-step-header:hover[aria-disabled=false]{background-color:var(--mat-stepper-header-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-inverse-surface) calc(var(--mat-sys-hover-state-layer-opacity) * 100%), transparent));border-radius:var(--mat-stepper-header-hover-state-layer-shape, var(--mat-sys-corner-medium))}.mat-step-header.cdk-keyboard-focused,.mat-step-header.cdk-program-focused{background-color:var(--mat-stepper-header-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-inverse-surface) calc(var(--mat-sys-focus-state-layer-opacity) * 100%), transparent));border-radius:var(--mat-stepper-header-focus-state-layer-shape, var(--mat-sys-corner-medium))}@media(hover: none){.mat-step-header:hover{background:none}}@media(forced-colors: active){.mat-step-header{outline:solid 1px}.mat-step-header[aria-selected=true] .mat-step-label{text-decoration:underline}.mat-step-header[aria-disabled=true]{outline-color:GrayText}.mat-step-header[aria-disabled=true] .mat-step-label,.mat-step-header[aria-disabled=true] .mat-step-icon,.mat-step-header[aria-disabled=true] .mat-step-optional{color:GrayText}}.mat-step-optional{font-size:12px;color:var(--mat-stepper-header-optional-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-sub-label-error{font-size:12px;font-weight:normal}.mat-step-icon{border-radius:50%;height:24px;width:24px;flex-shrink:0;position:relative;color:var(--mat-stepper-header-icon-foreground-color, var(--mat-sys-surface));background-color:var(--mat-stepper-header-icon-background-color, var(--mat-sys-on-surface-variant))}.mat-step-icon-content{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);display:flex}.mat-step-icon .mat-icon{font-size:16px;height:16px;width:16px}.mat-step-icon-state-error{background-color:var(--mat-stepper-header-error-state-icon-background-color, transparent);color:var(--mat-stepper-header-error-state-icon-foreground-color, var(--mat-sys-error))}.mat-step-icon-state-error .mat-icon{font-size:24px;height:24px;width:24px}.mat-step-label{display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:50px;vertical-align:middle;font-family:var(--mat-stepper-header-label-text-font, var(--mat-sys-title-small-font));font-size:var(--mat-stepper-header-label-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-stepper-header-label-text-weight, var(--mat-sys-title-small-weight));color:var(--mat-stepper-header-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-label.mat-step-label-active{color:var(--mat-stepper-header-selected-state-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-label.mat-step-label-error{color:var(--mat-stepper-header-error-state-label-text-color, var(--mat-sys-error));font-size:var(--mat-stepper-header-error-state-label-text-size, var(--mat-sys-title-small-size))}.mat-step-label.mat-step-label-selected{font-size:var(--mat-stepper-header-selected-state-label-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-stepper-header-selected-state-label-text-weight, var(--mat-sys-title-small-weight))}.mat-step-text-label{text-overflow:ellipsis;overflow:hidden}.mat-step-header .mat-step-header-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}.mat-step-icon-selected{background-color:var(--mat-stepper-header-selected-state-icon-background-color, var(--mat-sys-primary));color:var(--mat-stepper-header-selected-state-icon-foreground-color, var(--mat-sys-on-primary))}.mat-step-icon-state-done{background-color:var(--mat-stepper-header-done-state-icon-background-color);color:var(--mat-stepper-header-done-state-icon-foreground-color)}.mat-step-icon-state-edit{background-color:var(--mat-stepper-header-edit-state-icon-background-color, var(--mat-sys-primary));color:var(--mat-stepper-header-edit-state-icon-foreground-color, var(--mat-sys-on-primary))}\n']
-    }]
-  }], () => [], {
-    state: [{
-      type: Input
-    }],
-    label: [{
-      type: Input
-    }],
-    errorMessage: [{
-      type: Input
-    }],
-    iconOverrides: [{
-      type: Input
-    }],
-    index: [{
-      type: Input
-    }],
-    selected: [{
-      type: Input
-    }],
-    active: [{
-      type: Input
-    }],
-    optional: [{
-      type: Input
-    }],
-    disableRipple: [{
-      type: Input
-    }],
-    color: [{
-      type: Input
-    }]
-  });
+              styles: [
+                '.mat-step-header{overflow:hidden;outline:none;cursor:pointer;position:relative;box-sizing:content-box;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-step-header:focus .mat-focus-indicator::before{content:""}.mat-step-header:hover[aria-disabled=true]{cursor:default}.mat-step-header:hover:not([aria-disabled]),.mat-step-header:hover[aria-disabled=false]{background-color:var(--mat-stepper-header-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-inverse-surface) calc(var(--mat-sys-hover-state-layer-opacity) * 100%), transparent));border-radius:var(--mat-stepper-header-hover-state-layer-shape, var(--mat-sys-corner-medium))}.mat-step-header.cdk-keyboard-focused,.mat-step-header.cdk-program-focused{background-color:var(--mat-stepper-header-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-inverse-surface) calc(var(--mat-sys-focus-state-layer-opacity) * 100%), transparent));border-radius:var(--mat-stepper-header-focus-state-layer-shape, var(--mat-sys-corner-medium))}@media(hover: none){.mat-step-header:hover{background:none}}@media(forced-colors: active){.mat-step-header{outline:solid 1px}.mat-step-header[aria-selected=true] .mat-step-label{text-decoration:underline}.mat-step-header[aria-disabled=true]{outline-color:GrayText}.mat-step-header[aria-disabled=true] .mat-step-label,.mat-step-header[aria-disabled=true] .mat-step-icon,.mat-step-header[aria-disabled=true] .mat-step-optional{color:GrayText}}.mat-step-optional{font-size:12px;color:var(--mat-stepper-header-optional-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-sub-label-error{font-size:12px;font-weight:normal}.mat-step-icon{border-radius:50%;height:24px;width:24px;flex-shrink:0;position:relative;color:var(--mat-stepper-header-icon-foreground-color, var(--mat-sys-surface));background-color:var(--mat-stepper-header-icon-background-color, var(--mat-sys-on-surface-variant))}.mat-step-icon-content{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);display:flex}.mat-step-icon .mat-icon{font-size:16px;height:16px;width:16px}.mat-step-icon-state-error{background-color:var(--mat-stepper-header-error-state-icon-background-color, transparent);color:var(--mat-stepper-header-error-state-icon-foreground-color, var(--mat-sys-error))}.mat-step-icon-state-error .mat-icon{font-size:24px;height:24px;width:24px}.mat-step-label{display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:50px;vertical-align:middle;font-family:var(--mat-stepper-header-label-text-font, var(--mat-sys-title-small-font));font-size:var(--mat-stepper-header-label-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-stepper-header-label-text-weight, var(--mat-sys-title-small-weight));color:var(--mat-stepper-header-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-label.mat-step-label-active{color:var(--mat-stepper-header-selected-state-label-text-color, var(--mat-sys-on-surface-variant))}.mat-step-label.mat-step-label-error{color:var(--mat-stepper-header-error-state-label-text-color, var(--mat-sys-error));font-size:var(--mat-stepper-header-error-state-label-text-size, var(--mat-sys-title-small-size))}.mat-step-label.mat-step-label-selected{font-size:var(--mat-stepper-header-selected-state-label-text-size, var(--mat-sys-title-small-size));font-weight:var(--mat-stepper-header-selected-state-label-text-weight, var(--mat-sys-title-small-weight))}.mat-step-text-label{text-overflow:ellipsis;overflow:hidden}.mat-step-header .mat-step-header-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}.mat-step-icon-selected{background-color:var(--mat-stepper-header-selected-state-icon-background-color, var(--mat-sys-primary));color:var(--mat-stepper-header-selected-state-icon-foreground-color, var(--mat-sys-on-primary))}.mat-step-icon-state-done{background-color:var(--mat-stepper-header-done-state-icon-background-color);color:var(--mat-stepper-header-done-state-icon-foreground-color)}.mat-step-icon-state-edit{background-color:var(--mat-stepper-header-edit-state-icon-background-color, var(--mat-sys-primary));color:var(--mat-stepper-header-edit-state-icon-foreground-color, var(--mat-sys-on-primary))}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        state: [
+          {
+            type: Input,
+          },
+        ],
+        label: [
+          {
+            type: Input,
+          },
+        ],
+        errorMessage: [
+          {
+            type: Input,
+          },
+        ],
+        iconOverrides: [
+          {
+            type: Input,
+          },
+        ],
+        index: [
+          {
+            type: Input,
+          },
+        ],
+        selected: [
+          {
+            type: Input,
+          },
+        ],
+        active: [
+          {
+            type: Input,
+          },
+        ],
+        optional: [
+          {
+            type: Input,
+          },
+        ],
+        disableRipple: [
+          {
+            type: Input,
+          },
+        ],
+        color: [
+          {
+            type: Input,
+          },
+        ],
+      },
+    );
 })();
 var MatStepperIcon = class _MatStepperIcon {
   templateRef = inject(TemplateRef);
   /** Name of the icon to be overridden. */
   name;
-  constructor() {
-  }
+  constructor() {}
   static ɵfac = function MatStepperIcon_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _MatStepperIcon)();
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatStepperIcon,
-    selectors: [["ng-template", "matStepperIcon", ""]],
+    selectors: [['ng-template', 'matStepperIcon', '']],
     inputs: {
-      name: [0, "matStepperIcon", "name"]
-    }
+      name: [0, 'matStepperIcon', 'name'],
+    },
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStepperIcon, [{
-    type: Directive,
-    args: [{
-      selector: "ng-template[matStepperIcon]"
-    }]
-  }], () => [], {
-    name: [{
-      type: Input,
-      args: ["matStepperIcon"]
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatStepperIcon,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'ng-template[matStepperIcon]',
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        name: [
+          {
+            type: Input,
+            args: ['matStepperIcon'],
+          },
+        ],
+      },
+    );
 })();
 var MatStepContent = class _MatStepContent {
   _template = inject(TemplateRef);
-  constructor() {
-  }
+  constructor() {}
   static ɵfac = function MatStepContent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _MatStepContent)();
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatStepContent,
-    selectors: [["ng-template", "matStepContent", ""]]
+    selectors: [['ng-template', 'matStepContent', '']],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStepContent, [{
-    type: Directive,
-    args: [{
-      selector: "ng-template[matStepContent]"
-    }]
-  }], () => [], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatStepContent,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'ng-template[matStepContent]',
+            },
+          ],
+        },
+      ],
+      () => [],
+      null,
+    );
 })();
 var MatStep = class _MatStep extends CdkStep {
   _errorStateMatcher = inject(ErrorStateMatcher, {
-    skipSelf: true
+    skipSelf: true,
   });
   _viewContainerRef = inject(ViewContainerRef);
   _isSelected = Subscription.EMPTY;
@@ -1494,13 +1777,20 @@ var MatStep = class _MatStep extends CdkStep {
   /** Currently-attached portal containing the lazy content. */
   _portal;
   ngAfterContentInit() {
-    this._isSelected = this._stepper.steps.changes.pipe(switchMap(() => {
-      return this._stepper.selectionChange.pipe(map((event) => event.selectedStep === this), startWith(this._stepper.selected === this));
-    })).subscribe((isSelected) => {
-      if (isSelected && this._lazyContent && !this._portal) {
-        this._portal = new TemplatePortal(this._lazyContent._template, this._viewContainerRef);
-      }
-    });
+    this._isSelected = this._stepper.steps.changes
+      .pipe(
+        switchMap(() => {
+          return this._stepper.selectionChange.pipe(
+            map((event) => event.selectedStep === this),
+            startWith(this._stepper.selected === this),
+          );
+        }),
+      )
+      .subscribe((isSelected) => {
+        if (isSelected && this._lazyContent && !this._portal) {
+          this._portal = new TemplatePortal(this._lazyContent._template, this._viewContainerRef);
+        }
+      });
   }
   ngOnDestroy() {
     this._isSelected.unsubscribe();
@@ -1514,12 +1804,14 @@ var MatStep = class _MatStep extends CdkStep {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatStep_BaseFactory;
     return function MatStep_Factory(__ngFactoryType__) {
-      return (ɵMatStep_BaseFactory || (ɵMatStep_BaseFactory = ɵɵgetInheritedFactory(_MatStep)))(__ngFactoryType__ || _MatStep);
+      return (ɵMatStep_BaseFactory || (ɵMatStep_BaseFactory = ɵɵgetInheritedFactory(_MatStep)))(
+        __ngFactoryType__ || _MatStep,
+      );
     };
   })();
   static ɵcmp = ɵɵdefineComponent({
     type: _MatStep,
-    selectors: [["mat-step"]],
+    selectors: [['mat-step']],
     contentQueries: function MatStep_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MatStepLabel, 5);
@@ -1527,80 +1819,109 @@ var MatStep = class _MatStep extends CdkStep {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.stepLabel = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._lazyContent = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.stepLabel = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._lazyContent = _t.first);
       }
     },
-    hostAttrs: ["hidden", ""],
+    hostAttrs: ['hidden', ''],
     inputs: {
-      color: "color"
+      color: 'color',
     },
-    exportAs: ["matStep"],
-    features: [ɵɵProvidersFeature([{
-      provide: ErrorStateMatcher,
-      useExisting: _MatStep
-    }, {
-      provide: CdkStep,
-      useExisting: _MatStep
-    }]), ɵɵInheritDefinitionFeature],
+    exportAs: ['matStep'],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: ErrorStateMatcher,
+          useExisting: _MatStep,
+        },
+        {
+          provide: CdkStep,
+          useExisting: _MatStep,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
     ngContentSelectors: _c02,
     decls: 1,
     vars: 0,
-    consts: [[3, "cdkPortalOutlet"]],
+    consts: [[3, 'cdkPortalOutlet']],
     template: function MatStep_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef();
-        ɵɵtemplate(0, MatStep_ng_template_0_Template, 2, 1, "ng-template");
+        ɵɵtemplate(0, MatStep_ng_template_0_Template, 2, 1, 'ng-template');
       }
     },
     dependencies: [CdkPortalOutlet],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStep, [{
-    type: Component,
-    args: [{
-      selector: "mat-step",
-      providers: [{
-        provide: ErrorStateMatcher,
-        useExisting: MatStep
-      }, {
-        provide: CdkStep,
-        useExisting: MatStep
-      }],
-      encapsulation: ViewEncapsulation.None,
-      exportAs: "matStep",
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      imports: [CdkPortalOutlet],
-      host: {
-        "hidden": ""
-        // Hide the steps so they don't affect the layout.
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatStep,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-step',
+              providers: [
+                {
+                  provide: ErrorStateMatcher,
+                  useExisting: MatStep,
+                },
+                {
+                  provide: CdkStep,
+                  useExisting: MatStep,
+                },
+              ],
+              encapsulation: ViewEncapsulation.None,
+              exportAs: 'matStep',
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              imports: [CdkPortalOutlet],
+              host: {
+                hidden: '',
+                // Hide the steps so they don't affect the layout.
+              },
+              template:
+                '<ng-template>\n  <ng-content></ng-content>\n  <ng-template [cdkPortalOutlet]="_portal"></ng-template>\n</ng-template>\n',
+            },
+          ],
+        },
+      ],
+      null,
+      {
+        stepLabel: [
+          {
+            type: ContentChild,
+            args: [MatStepLabel],
+          },
+        ],
+        color: [
+          {
+            type: Input,
+          },
+        ],
+        _lazyContent: [
+          {
+            type: ContentChild,
+            args: [
+              MatStepContent,
+              {
+                static: false,
+              },
+            ],
+          },
+        ],
       },
-      template: '<ng-template>\n  <ng-content></ng-content>\n  <ng-template [cdkPortalOutlet]="_portal"></ng-template>\n</ng-template>\n'
-    }]
-  }], null, {
-    stepLabel: [{
-      type: ContentChild,
-      args: [MatStepLabel]
-    }],
-    color: [{
-      type: Input
-    }],
-    _lazyContent: [{
-      type: ContentChild,
-      args: [MatStepContent, {
-        static: false
-      }]
-    }]
-  });
+    );
 })();
 var MatStepper = class _MatStepper extends CdkStepper {
   _ngZone = inject(NgZone);
   _renderer = inject(Renderer2);
   _animationsModule = inject(ANIMATION_MODULE_TYPE, {
-    optional: true
+    optional: true,
   });
   _cleanupTransition;
   _isAnimating = signal(false);
@@ -1630,12 +1951,12 @@ var MatStepper = class _MatStepper extends CdkStepper {
    * Whether the label should display in bottom or end position.
    * Only applies in the `horizontal` orientation.
    */
-  labelPosition = "end";
+  labelPosition = 'end';
   /**
    * Position of the stepper's header.
    * Only applies in the `horizontal` orientation.
    */
-  headerPosition = "top";
+  headerPosition = 'top';
   /** Consumer-specified template-refs to be used to override the header icons. */
   _iconOverrides = {};
   /** Duration for the animation. Will be normalized to milliseconds if no units are set. */
@@ -1643,52 +1964,55 @@ var MatStepper = class _MatStepper extends CdkStepper {
     return this._animationDuration;
   }
   set animationDuration(value) {
-    this._animationDuration = /^\d+$/.test(value) ? value + "ms" : value;
+    this._animationDuration = /^\d+$/.test(value) ? value + 'ms' : value;
   }
-  _animationDuration = "";
+  _animationDuration = '';
   /** Whether the stepper is rendering on the server. */
   _isServer = !inject(Platform).isBrowser;
   constructor() {
     super();
     const elementRef = inject(ElementRef);
     const nodeName = elementRef.nativeElement.nodeName.toLowerCase();
-    this.orientation = nodeName === "mat-vertical-stepper" ? "vertical" : "horizontal";
+    this.orientation = nodeName === 'mat-vertical-stepper' ? 'vertical' : 'horizontal';
   }
   ngAfterContentInit() {
     super.ngAfterContentInit();
-    this._icons.forEach(({
-      name,
-      templateRef
-    }) => this._iconOverrides[name] = templateRef);
+    this._icons.forEach(({ name, templateRef }) => (this._iconOverrides[name] = templateRef));
     this.steps.changes.pipe(takeUntil(this._destroyed)).subscribe(() => this._stateChanged());
     this.selectedIndexChange.pipe(takeUntil(this._destroyed)).subscribe(() => {
       const duration = this._getAnimationDuration();
-      if (duration === "0ms" || duration === "0s") {
+      if (duration === '0ms' || duration === '0s') {
         this._onAnimationDone();
       } else {
         this._isAnimating.set(true);
       }
     });
     this._ngZone.runOutsideAngular(() => {
-      if (this._animationsModule !== "NoopAnimations") {
+      if (this._animationsModule !== 'NoopAnimations') {
         setTimeout(() => {
-          this._elementRef.nativeElement.classList.add("mat-stepper-animations-enabled");
-          this._cleanupTransition = this._renderer.listen(this._elementRef.nativeElement, "transitionend", this._handleTransitionend);
+          this._elementRef.nativeElement.classList.add('mat-stepper-animations-enabled');
+          this._cleanupTransition = this._renderer.listen(
+            this._elementRef.nativeElement,
+            'transitionend',
+            this._handleTransitionend,
+          );
         }, 200);
       }
     });
   }
   ngAfterViewInit() {
     super.ngAfterViewInit();
-    if (typeof queueMicrotask === "function") {
+    if (typeof queueMicrotask === 'function') {
       let hasEmittedInitial = false;
-      this._animatedContainers.changes.pipe(startWith(null), takeUntil(this._destroyed)).subscribe(() => queueMicrotask(() => {
-        if (!hasEmittedInitial) {
-          hasEmittedInitial = true;
-          this.animationDone.emit();
-        }
-        this._stateChanged();
-      }));
+      this._animatedContainers.changes.pipe(startWith(null), takeUntil(this._destroyed)).subscribe(() =>
+        queueMicrotask(() => {
+          if (!hasEmittedInitial) {
+            hasEmittedInitial = true;
+            this.animationDone.emit();
+          }
+          this._stateChanged();
+        }),
+      );
     }
   }
   ngOnDestroy() {
@@ -1699,22 +2023,30 @@ var MatStepper = class _MatStepper extends CdkStepper {
     return step.completed || this.selectedIndex === index || !this.linear;
   }
   _getAnimationDuration() {
-    if (this._animationsModule === "NoopAnimations") {
-      return "0ms";
+    if (this._animationsModule === 'NoopAnimations') {
+      return '0ms';
     }
     if (this.animationDuration) {
       return this.animationDuration;
     }
-    return this.orientation === "horizontal" ? "500ms" : "225ms";
+    return this.orientation === 'horizontal' ? '500ms' : '225ms';
   }
   _handleTransitionend = (event) => {
     const target = event.target;
     if (!target) {
       return;
     }
-    const isHorizontalActiveElement = this.orientation === "horizontal" && event.propertyName === "transform" && target.classList.contains("mat-horizontal-stepper-content-current");
-    const isVerticalActiveElement = this.orientation === "vertical" && event.propertyName === "grid-template-rows" && target.classList.contains("mat-vertical-content-container-active");
-    const shouldEmit = (isHorizontalActiveElement || isVerticalActiveElement) && this._animatedContainers.find((ref) => ref.nativeElement === target);
+    const isHorizontalActiveElement =
+      this.orientation === 'horizontal' &&
+      event.propertyName === 'transform' &&
+      target.classList.contains('mat-horizontal-stepper-content-current');
+    const isVerticalActiveElement =
+      this.orientation === 'vertical' &&
+      event.propertyName === 'grid-template-rows' &&
+      target.classList.contains('mat-vertical-content-container-active');
+    const shouldEmit =
+      (isHorizontalActiveElement || isVerticalActiveElement) &&
+      this._animatedContainers.find((ref) => ref.nativeElement === target);
     if (shouldEmit) {
       this._onAnimationDone();
     }
@@ -1728,7 +2060,7 @@ var MatStepper = class _MatStepper extends CdkStepper {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatStepper,
-    selectors: [["mat-stepper"], ["mat-vertical-stepper"], ["mat-horizontal-stepper"], ["", "matStepper", ""]],
+    selectors: [['mat-stepper'], ['mat-vertical-stepper'], ['mat-horizontal-stepper'], ['', 'matStepper', '']],
     contentQueries: function MatStepper_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MatStep, 5);
@@ -1736,8 +2068,8 @@ var MatStepper = class _MatStepper extends CdkStepper {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._steps = _t);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._icons = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._steps = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._icons = _t);
       }
     },
     viewQuery: function MatStepper_Query(rf, ctx) {
@@ -1747,81 +2079,142 @@ var MatStepper = class _MatStepper extends CdkStepper {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._stepHeader = _t);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._animatedContainers = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._stepHeader = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._animatedContainers = _t);
       }
     },
-    hostAttrs: ["role", "tablist"],
+    hostAttrs: ['role', 'tablist'],
     hostVars: 15,
     hostBindings: function MatStepper_HostBindings(rf, ctx) {
       if (rf & 2) {
-        ɵɵattribute("aria-orientation", ctx.orientation);
-        ɵɵstyleProp("--mat-stepper-animation-duration", ctx._getAnimationDuration());
-        ɵɵclassProp("mat-stepper-horizontal", ctx.orientation === "horizontal")("mat-stepper-vertical", ctx.orientation === "vertical")("mat-stepper-label-position-end", ctx.orientation === "horizontal" && ctx.labelPosition == "end")("mat-stepper-label-position-bottom", ctx.orientation === "horizontal" && ctx.labelPosition == "bottom")("mat-stepper-header-position-bottom", ctx.headerPosition === "bottom")("mat-stepper-animating", ctx._isAnimating());
+        ɵɵattribute('aria-orientation', ctx.orientation);
+        ɵɵstyleProp('--mat-stepper-animation-duration', ctx._getAnimationDuration());
+        ɵɵclassProp('mat-stepper-horizontal', ctx.orientation === 'horizontal')(
+          'mat-stepper-vertical',
+          ctx.orientation === 'vertical',
+        )('mat-stepper-label-position-end', ctx.orientation === 'horizontal' && ctx.labelPosition == 'end')(
+          'mat-stepper-label-position-bottom',
+          ctx.orientation === 'horizontal' && ctx.labelPosition == 'bottom',
+        )('mat-stepper-header-position-bottom', ctx.headerPosition === 'bottom')(
+          'mat-stepper-animating',
+          ctx._isAnimating(),
+        );
       }
     },
     inputs: {
-      disableRipple: "disableRipple",
-      color: "color",
-      labelPosition: "labelPosition",
-      headerPosition: "headerPosition",
-      animationDuration: "animationDuration"
+      disableRipple: 'disableRipple',
+      color: 'color',
+      labelPosition: 'labelPosition',
+      headerPosition: 'headerPosition',
+      animationDuration: 'animationDuration',
     },
     outputs: {
-      animationDone: "animationDone"
+      animationDone: 'animationDone',
     },
-    exportAs: ["matStepper", "matVerticalStepper", "matHorizontalStepper"],
-    features: [ɵɵProvidersFeature([{
-      provide: CdkStepper,
-      useExisting: _MatStepper
-    }]), ɵɵInheritDefinitionFeature],
+    exportAs: ['matStepper', 'matVerticalStepper', 'matHorizontalStepper'],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: CdkStepper,
+          useExisting: _MatStepper,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
     ngContentSelectors: _c02,
     decls: 5,
     vars: 2,
-    consts: [["stepTemplate", ""], ["animatedContainer", ""], [1, "mat-horizontal-stepper-wrapper"], [1, "mat-horizontal-stepper-header-container"], [1, "mat-horizontal-content-container"], ["role", "tabpanel", 1, "mat-horizontal-stepper-content", 3, "id", "class"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "mat-stepper-horizontal-line"], ["role", "tabpanel", 1, "mat-horizontal-stepper-content", 3, "id"], [3, "ngTemplateOutlet"], [1, "mat-step"], [1, "mat-vertical-content-container"], ["role", "tabpanel", 1, "mat-vertical-stepper-content", 3, "id"], [1, "mat-vertical-content"], [3, "click", "keydown", "tabIndex", "id", "index", "state", "label", "selected", "active", "optional", "errorMessage", "iconOverrides", "disableRipple", "color"]],
+    consts: [
+      ['stepTemplate', ''],
+      ['animatedContainer', ''],
+      [1, 'mat-horizontal-stepper-wrapper'],
+      [1, 'mat-horizontal-stepper-header-container'],
+      [1, 'mat-horizontal-content-container'],
+      ['role', 'tabpanel', 1, 'mat-horizontal-stepper-content', 3, 'id', 'class'],
+      [3, 'ngTemplateOutlet', 'ngTemplateOutletContext'],
+      [1, 'mat-stepper-horizontal-line'],
+      ['role', 'tabpanel', 1, 'mat-horizontal-stepper-content', 3, 'id'],
+      [3, 'ngTemplateOutlet'],
+      [1, 'mat-step'],
+      [1, 'mat-vertical-content-container'],
+      ['role', 'tabpanel', 1, 'mat-vertical-stepper-content', 3, 'id'],
+      [1, 'mat-vertical-content'],
+      [
+        3,
+        'click',
+        'keydown',
+        'tabIndex',
+        'id',
+        'index',
+        'state',
+        'label',
+        'selected',
+        'active',
+        'optional',
+        'errorMessage',
+        'iconOverrides',
+        'disableRipple',
+        'color',
+      ],
+    ],
     template: function MatStepper_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef();
-        ɵɵtemplate(0, MatStepper_Conditional_0_Template, 1, 0)(1, MatStepper_Case_1_Template, 7, 0, "div", 2)(2, MatStepper_Case_2_Template, 2, 0)(3, MatStepper_ng_template_3_Template, 1, 23, "ng-template", null, 0, ɵɵtemplateRefExtractor);
+        ɵɵtemplate(0, MatStepper_Conditional_0_Template, 1, 0)(1, MatStepper_Case_1_Template, 7, 0, 'div', 2)(
+          2,
+          MatStepper_Case_2_Template,
+          2,
+          0,
+        )(3, MatStepper_ng_template_3_Template, 1, 23, 'ng-template', null, 0, ɵɵtemplateRefExtractor);
       }
       if (rf & 2) {
         let tmp_2_0;
         ɵɵconditional(ctx._isServer ? 0 : -1);
         ɵɵadvance();
-        ɵɵconditional((tmp_2_0 = ctx.orientation) === "horizontal" ? 1 : tmp_2_0 === "vertical" ? 2 : -1);
+        ɵɵconditional((tmp_2_0 = ctx.orientation) === 'horizontal' ? 1 : tmp_2_0 === 'vertical' ? 2 : -1);
       }
     },
     dependencies: [NgTemplateOutlet, MatStepHeader],
-    styles: ['.mat-stepper-vertical,.mat-stepper-horizontal{display:block;font-family:var(--mat-stepper-container-text-font, var(--mat-sys-body-medium-font));background:var(--mat-stepper-container-color, var(--mat-sys-surface))}.mat-horizontal-stepper-header-container{white-space:nowrap;display:flex;align-items:center}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header-container{align-items:flex-start}.mat-stepper-header-position-bottom .mat-horizontal-stepper-header-container{order:1}.mat-stepper-horizontal-line{border-top-width:1px;border-top-style:solid;flex:auto;height:0;margin:0 -16px;min-width:32px;border-top-color:var(--mat-stepper-line-color, var(--mat-sys-outline))}.mat-stepper-label-position-bottom .mat-stepper-horizontal-line{margin:0;min-width:0;position:relative;top:calc(calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) + 12px)}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::before,.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::after{border-top-width:1px;border-top-style:solid;content:"";display:inline-block;height:0;position:absolute;width:calc(50% - 20px)}.mat-horizontal-stepper-header{display:flex;height:72px;overflow:hidden;align-items:center;padding:0 24px;height:var(--mat-stepper-header-height, 72px)}.mat-horizontal-stepper-header .mat-step-icon{margin-right:8px;flex:none}[dir=rtl] .mat-horizontal-stepper-header .mat-step-icon{margin-right:0;margin-left:8px}.mat-horizontal-stepper-header::before,.mat-horizontal-stepper-header::after{border-top-color:var(--mat-stepper-line-color, var(--mat-sys-outline))}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header{padding:calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) 24px}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header::before,.mat-stepper-label-position-bottom .mat-horizontal-stepper-header::after{top:calc(calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) + 12px)}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header{box-sizing:border-box;flex-direction:column;height:auto}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::after{right:0}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::before{left:0}[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:last-child::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:first-child::after{display:none}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-icon{margin-right:0;margin-left:0}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-label{padding:16px 0 0 0;text-align:center;width:100%}.mat-vertical-stepper-header{display:flex;align-items:center;height:24px;padding:calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) 24px}.mat-vertical-stepper-header .mat-step-icon{margin-right:12px}[dir=rtl] .mat-vertical-stepper-header .mat-step-icon{margin-right:0;margin-left:12px}.mat-horizontal-stepper-wrapper{display:flex;flex-direction:column}.mat-horizontal-stepper-content{visibility:hidden;overflow:hidden;outline:0;height:0}.mat-stepper-animations-enabled .mat-horizontal-stepper-content{transition:transform var(--mat-stepper-animation-duration, 0) cubic-bezier(0.35, 0, 0.25, 1)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-previous{transform:translate3d(-100%, 0, 0)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-next{transform:translate3d(100%, 0, 0)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-current{visibility:visible;transform:none;height:auto}.mat-stepper-horizontal:not(.mat-stepper-animating) .mat-horizontal-stepper-content.mat-horizontal-stepper-content-current{overflow:visible}.mat-horizontal-content-container{overflow:hidden;padding:0 24px 24px 24px}@media(forced-colors: active){.mat-horizontal-content-container{outline:solid 1px}}.mat-stepper-header-position-bottom .mat-horizontal-content-container{padding:24px 24px 0 24px}.mat-vertical-content-container{display:grid;grid-template-rows:0fr;grid-template-columns:100%;margin-left:36px;border:0;position:relative}.mat-stepper-animations-enabled .mat-vertical-content-container{transition:grid-template-rows var(--mat-stepper-animation-duration, 0) cubic-bezier(0.4, 0, 0.2, 1)}.mat-vertical-content-container.mat-vertical-content-container-active{grid-template-rows:1fr}.mat-step:last-child .mat-vertical-content-container{border:none}@media(forced-colors: active){.mat-vertical-content-container{outline:solid 1px}}[dir=rtl] .mat-vertical-content-container{margin-left:0;margin-right:36px}@supports not (grid-template-rows: 0fr){.mat-vertical-content-container{height:0}.mat-vertical-content-container.mat-vertical-content-container-active{height:auto}}.mat-stepper-vertical-line::before{content:"";position:absolute;left:0;border-left-width:1px;border-left-style:solid;border-left-color:var(--mat-stepper-line-color, var(--mat-sys-outline));top:calc(8px - calc((var(--mat-stepper-header-height, 72px) - 24px) / 2));bottom:calc(8px - calc((var(--mat-stepper-header-height, 72px) - 24px) / 2))}[dir=rtl] .mat-stepper-vertical-line::before{left:auto;right:0}.mat-vertical-stepper-content{overflow:hidden;outline:0;visibility:hidden}.mat-stepper-animations-enabled .mat-vertical-stepper-content{transition:visibility var(--mat-stepper-animation-duration, 0) linear}.mat-vertical-content-container-active>.mat-vertical-stepper-content{visibility:visible}.mat-vertical-content{padding:0 24px 24px 24px}\n'],
+    styles: [
+      '.mat-stepper-vertical,.mat-stepper-horizontal{display:block;font-family:var(--mat-stepper-container-text-font, var(--mat-sys-body-medium-font));background:var(--mat-stepper-container-color, var(--mat-sys-surface))}.mat-horizontal-stepper-header-container{white-space:nowrap;display:flex;align-items:center}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header-container{align-items:flex-start}.mat-stepper-header-position-bottom .mat-horizontal-stepper-header-container{order:1}.mat-stepper-horizontal-line{border-top-width:1px;border-top-style:solid;flex:auto;height:0;margin:0 -16px;min-width:32px;border-top-color:var(--mat-stepper-line-color, var(--mat-sys-outline))}.mat-stepper-label-position-bottom .mat-stepper-horizontal-line{margin:0;min-width:0;position:relative;top:calc(calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) + 12px)}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::before,.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::after{border-top-width:1px;border-top-style:solid;content:"";display:inline-block;height:0;position:absolute;width:calc(50% - 20px)}.mat-horizontal-stepper-header{display:flex;height:72px;overflow:hidden;align-items:center;padding:0 24px;height:var(--mat-stepper-header-height, 72px)}.mat-horizontal-stepper-header .mat-step-icon{margin-right:8px;flex:none}[dir=rtl] .mat-horizontal-stepper-header .mat-step-icon{margin-right:0;margin-left:8px}.mat-horizontal-stepper-header::before,.mat-horizontal-stepper-header::after{border-top-color:var(--mat-stepper-line-color, var(--mat-sys-outline))}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header{padding:calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) 24px}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header::before,.mat-stepper-label-position-bottom .mat-horizontal-stepper-header::after{top:calc(calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) + 12px)}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header{box-sizing:border-box;flex-direction:column;height:auto}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::after{right:0}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::before{left:0}[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:last-child::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:first-child::after{display:none}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-icon{margin-right:0;margin-left:0}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-label{padding:16px 0 0 0;text-align:center;width:100%}.mat-vertical-stepper-header{display:flex;align-items:center;height:24px;padding:calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) 24px}.mat-vertical-stepper-header .mat-step-icon{margin-right:12px}[dir=rtl] .mat-vertical-stepper-header .mat-step-icon{margin-right:0;margin-left:12px}.mat-horizontal-stepper-wrapper{display:flex;flex-direction:column}.mat-horizontal-stepper-content{visibility:hidden;overflow:hidden;outline:0;height:0}.mat-stepper-animations-enabled .mat-horizontal-stepper-content{transition:transform var(--mat-stepper-animation-duration, 0) cubic-bezier(0.35, 0, 0.25, 1)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-previous{transform:translate3d(-100%, 0, 0)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-next{transform:translate3d(100%, 0, 0)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-current{visibility:visible;transform:none;height:auto}.mat-stepper-horizontal:not(.mat-stepper-animating) .mat-horizontal-stepper-content.mat-horizontal-stepper-content-current{overflow:visible}.mat-horizontal-content-container{overflow:hidden;padding:0 24px 24px 24px}@media(forced-colors: active){.mat-horizontal-content-container{outline:solid 1px}}.mat-stepper-header-position-bottom .mat-horizontal-content-container{padding:24px 24px 0 24px}.mat-vertical-content-container{display:grid;grid-template-rows:0fr;grid-template-columns:100%;margin-left:36px;border:0;position:relative}.mat-stepper-animations-enabled .mat-vertical-content-container{transition:grid-template-rows var(--mat-stepper-animation-duration, 0) cubic-bezier(0.4, 0, 0.2, 1)}.mat-vertical-content-container.mat-vertical-content-container-active{grid-template-rows:1fr}.mat-step:last-child .mat-vertical-content-container{border:none}@media(forced-colors: active){.mat-vertical-content-container{outline:solid 1px}}[dir=rtl] .mat-vertical-content-container{margin-left:0;margin-right:36px}@supports not (grid-template-rows: 0fr){.mat-vertical-content-container{height:0}.mat-vertical-content-container.mat-vertical-content-container-active{height:auto}}.mat-stepper-vertical-line::before{content:"";position:absolute;left:0;border-left-width:1px;border-left-style:solid;border-left-color:var(--mat-stepper-line-color, var(--mat-sys-outline));top:calc(8px - calc((var(--mat-stepper-header-height, 72px) - 24px) / 2));bottom:calc(8px - calc((var(--mat-stepper-header-height, 72px) - 24px) / 2))}[dir=rtl] .mat-stepper-vertical-line::before{left:auto;right:0}.mat-vertical-stepper-content{overflow:hidden;outline:0;visibility:hidden}.mat-stepper-animations-enabled .mat-vertical-stepper-content{transition:visibility var(--mat-stepper-animation-duration, 0) linear}.mat-vertical-content-container-active>.mat-vertical-stepper-content{visibility:visible}.mat-vertical-content{padding:0 24px 24px 24px}\n',
+    ],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStepper, [{
-    type: Component,
-    args: [{
-      selector: "mat-stepper, mat-vertical-stepper, mat-horizontal-stepper, [matStepper]",
-      exportAs: "matStepper, matVerticalStepper, matHorizontalStepper",
-      host: {
-        "[class.mat-stepper-horizontal]": 'orientation === "horizontal"',
-        "[class.mat-stepper-vertical]": 'orientation === "vertical"',
-        "[class.mat-stepper-label-position-end]": 'orientation === "horizontal" && labelPosition == "end"',
-        "[class.mat-stepper-label-position-bottom]": 'orientation === "horizontal" && labelPosition == "bottom"',
-        "[class.mat-stepper-header-position-bottom]": 'headerPosition === "bottom"',
-        "[class.mat-stepper-animating]": "_isAnimating()",
-        "[style.--mat-stepper-animation-duration]": "_getAnimationDuration()",
-        "[attr.aria-orientation]": "orientation",
-        "role": "tablist"
-      },
-      providers: [{
-        provide: CdkStepper,
-        useExisting: MatStepper
-      }],
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      imports: [NgTemplateOutlet, MatStepHeader],
-      template: `<!--
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatStepper,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-stepper, mat-vertical-stepper, mat-horizontal-stepper, [matStepper]',
+              exportAs: 'matStepper, matVerticalStepper, matHorizontalStepper',
+              host: {
+                '[class.mat-stepper-horizontal]': 'orientation === "horizontal"',
+                '[class.mat-stepper-vertical]': 'orientation === "vertical"',
+                '[class.mat-stepper-label-position-end]': 'orientation === "horizontal" && labelPosition == "end"',
+                '[class.mat-stepper-label-position-bottom]':
+                  'orientation === "horizontal" && labelPosition == "bottom"',
+                '[class.mat-stepper-header-position-bottom]': 'headerPosition === "bottom"',
+                '[class.mat-stepper-animating]': '_isAnimating()',
+                '[style.--mat-stepper-animation-duration]': '_getAnimationDuration()',
+                '[attr.aria-orientation]': 'orientation',
+                role: 'tablist',
+              },
+              providers: [
+                {
+                  provide: CdkStepper,
+                  useExisting: MatStepper,
+                },
+              ],
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              imports: [NgTemplateOutlet, MatStepHeader],
+              template: `<!--
   We need to project the content somewhere to avoid hydration errors. Some observations:
   1. This is only necessary on the server.
   2. We get a hydration error if there aren't any nodes after the \`ng-content\`.
@@ -1916,112 +2309,170 @@ var MatStepper = class _MatStepper extends CdkStepper {
     [color]="step.color || color"/>
 </ng-template>
 `,
-      styles: ['.mat-stepper-vertical,.mat-stepper-horizontal{display:block;font-family:var(--mat-stepper-container-text-font, var(--mat-sys-body-medium-font));background:var(--mat-stepper-container-color, var(--mat-sys-surface))}.mat-horizontal-stepper-header-container{white-space:nowrap;display:flex;align-items:center}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header-container{align-items:flex-start}.mat-stepper-header-position-bottom .mat-horizontal-stepper-header-container{order:1}.mat-stepper-horizontal-line{border-top-width:1px;border-top-style:solid;flex:auto;height:0;margin:0 -16px;min-width:32px;border-top-color:var(--mat-stepper-line-color, var(--mat-sys-outline))}.mat-stepper-label-position-bottom .mat-stepper-horizontal-line{margin:0;min-width:0;position:relative;top:calc(calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) + 12px)}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::before,.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::after{border-top-width:1px;border-top-style:solid;content:"";display:inline-block;height:0;position:absolute;width:calc(50% - 20px)}.mat-horizontal-stepper-header{display:flex;height:72px;overflow:hidden;align-items:center;padding:0 24px;height:var(--mat-stepper-header-height, 72px)}.mat-horizontal-stepper-header .mat-step-icon{margin-right:8px;flex:none}[dir=rtl] .mat-horizontal-stepper-header .mat-step-icon{margin-right:0;margin-left:8px}.mat-horizontal-stepper-header::before,.mat-horizontal-stepper-header::after{border-top-color:var(--mat-stepper-line-color, var(--mat-sys-outline))}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header{padding:calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) 24px}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header::before,.mat-stepper-label-position-bottom .mat-horizontal-stepper-header::after{top:calc(calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) + 12px)}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header{box-sizing:border-box;flex-direction:column;height:auto}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::after{right:0}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::before{left:0}[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:last-child::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:first-child::after{display:none}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-icon{margin-right:0;margin-left:0}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-label{padding:16px 0 0 0;text-align:center;width:100%}.mat-vertical-stepper-header{display:flex;align-items:center;height:24px;padding:calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) 24px}.mat-vertical-stepper-header .mat-step-icon{margin-right:12px}[dir=rtl] .mat-vertical-stepper-header .mat-step-icon{margin-right:0;margin-left:12px}.mat-horizontal-stepper-wrapper{display:flex;flex-direction:column}.mat-horizontal-stepper-content{visibility:hidden;overflow:hidden;outline:0;height:0}.mat-stepper-animations-enabled .mat-horizontal-stepper-content{transition:transform var(--mat-stepper-animation-duration, 0) cubic-bezier(0.35, 0, 0.25, 1)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-previous{transform:translate3d(-100%, 0, 0)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-next{transform:translate3d(100%, 0, 0)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-current{visibility:visible;transform:none;height:auto}.mat-stepper-horizontal:not(.mat-stepper-animating) .mat-horizontal-stepper-content.mat-horizontal-stepper-content-current{overflow:visible}.mat-horizontal-content-container{overflow:hidden;padding:0 24px 24px 24px}@media(forced-colors: active){.mat-horizontal-content-container{outline:solid 1px}}.mat-stepper-header-position-bottom .mat-horizontal-content-container{padding:24px 24px 0 24px}.mat-vertical-content-container{display:grid;grid-template-rows:0fr;grid-template-columns:100%;margin-left:36px;border:0;position:relative}.mat-stepper-animations-enabled .mat-vertical-content-container{transition:grid-template-rows var(--mat-stepper-animation-duration, 0) cubic-bezier(0.4, 0, 0.2, 1)}.mat-vertical-content-container.mat-vertical-content-container-active{grid-template-rows:1fr}.mat-step:last-child .mat-vertical-content-container{border:none}@media(forced-colors: active){.mat-vertical-content-container{outline:solid 1px}}[dir=rtl] .mat-vertical-content-container{margin-left:0;margin-right:36px}@supports not (grid-template-rows: 0fr){.mat-vertical-content-container{height:0}.mat-vertical-content-container.mat-vertical-content-container-active{height:auto}}.mat-stepper-vertical-line::before{content:"";position:absolute;left:0;border-left-width:1px;border-left-style:solid;border-left-color:var(--mat-stepper-line-color, var(--mat-sys-outline));top:calc(8px - calc((var(--mat-stepper-header-height, 72px) - 24px) / 2));bottom:calc(8px - calc((var(--mat-stepper-header-height, 72px) - 24px) / 2))}[dir=rtl] .mat-stepper-vertical-line::before{left:auto;right:0}.mat-vertical-stepper-content{overflow:hidden;outline:0;visibility:hidden}.mat-stepper-animations-enabled .mat-vertical-stepper-content{transition:visibility var(--mat-stepper-animation-duration, 0) linear}.mat-vertical-content-container-active>.mat-vertical-stepper-content{visibility:visible}.mat-vertical-content{padding:0 24px 24px 24px}\n']
-    }]
-  }], () => [], {
-    _stepHeader: [{
-      type: ViewChildren,
-      args: [MatStepHeader]
-    }],
-    _animatedContainers: [{
-      type: ViewChildren,
-      args: ["animatedContainer"]
-    }],
-    _steps: [{
-      type: ContentChildren,
-      args: [MatStep, {
-        descendants: true
-      }]
-    }],
-    _icons: [{
-      type: ContentChildren,
-      args: [MatStepperIcon, {
-        descendants: true
-      }]
-    }],
-    animationDone: [{
-      type: Output
-    }],
-    disableRipple: [{
-      type: Input
-    }],
-    color: [{
-      type: Input
-    }],
-    labelPosition: [{
-      type: Input
-    }],
-    headerPosition: [{
-      type: Input
-    }],
-    animationDuration: [{
-      type: Input
-    }]
-  });
+              styles: [
+                '.mat-stepper-vertical,.mat-stepper-horizontal{display:block;font-family:var(--mat-stepper-container-text-font, var(--mat-sys-body-medium-font));background:var(--mat-stepper-container-color, var(--mat-sys-surface))}.mat-horizontal-stepper-header-container{white-space:nowrap;display:flex;align-items:center}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header-container{align-items:flex-start}.mat-stepper-header-position-bottom .mat-horizontal-stepper-header-container{order:1}.mat-stepper-horizontal-line{border-top-width:1px;border-top-style:solid;flex:auto;height:0;margin:0 -16px;min-width:32px;border-top-color:var(--mat-stepper-line-color, var(--mat-sys-outline))}.mat-stepper-label-position-bottom .mat-stepper-horizontal-line{margin:0;min-width:0;position:relative;top:calc(calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) + 12px)}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::before,.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::after{border-top-width:1px;border-top-style:solid;content:"";display:inline-block;height:0;position:absolute;width:calc(50% - 20px)}.mat-horizontal-stepper-header{display:flex;height:72px;overflow:hidden;align-items:center;padding:0 24px;height:var(--mat-stepper-header-height, 72px)}.mat-horizontal-stepper-header .mat-step-icon{margin-right:8px;flex:none}[dir=rtl] .mat-horizontal-stepper-header .mat-step-icon{margin-right:0;margin-left:8px}.mat-horizontal-stepper-header::before,.mat-horizontal-stepper-header::after{border-top-color:var(--mat-stepper-line-color, var(--mat-sys-outline))}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header{padding:calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) 24px}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header::before,.mat-stepper-label-position-bottom .mat-horizontal-stepper-header::after{top:calc(calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) + 12px)}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header{box-sizing:border-box;flex-direction:column;height:auto}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::after{right:0}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::before{left:0}[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:last-child::before,[dir=rtl] .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:first-child::after{display:none}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-icon{margin-right:0;margin-left:0}.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-label{padding:16px 0 0 0;text-align:center;width:100%}.mat-vertical-stepper-header{display:flex;align-items:center;height:24px;padding:calc((var(--mat-stepper-header-height, 72px) - 24px) / 2) 24px}.mat-vertical-stepper-header .mat-step-icon{margin-right:12px}[dir=rtl] .mat-vertical-stepper-header .mat-step-icon{margin-right:0;margin-left:12px}.mat-horizontal-stepper-wrapper{display:flex;flex-direction:column}.mat-horizontal-stepper-content{visibility:hidden;overflow:hidden;outline:0;height:0}.mat-stepper-animations-enabled .mat-horizontal-stepper-content{transition:transform var(--mat-stepper-animation-duration, 0) cubic-bezier(0.35, 0, 0.25, 1)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-previous{transform:translate3d(-100%, 0, 0)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-next{transform:translate3d(100%, 0, 0)}.mat-horizontal-stepper-content.mat-horizontal-stepper-content-current{visibility:visible;transform:none;height:auto}.mat-stepper-horizontal:not(.mat-stepper-animating) .mat-horizontal-stepper-content.mat-horizontal-stepper-content-current{overflow:visible}.mat-horizontal-content-container{overflow:hidden;padding:0 24px 24px 24px}@media(forced-colors: active){.mat-horizontal-content-container{outline:solid 1px}}.mat-stepper-header-position-bottom .mat-horizontal-content-container{padding:24px 24px 0 24px}.mat-vertical-content-container{display:grid;grid-template-rows:0fr;grid-template-columns:100%;margin-left:36px;border:0;position:relative}.mat-stepper-animations-enabled .mat-vertical-content-container{transition:grid-template-rows var(--mat-stepper-animation-duration, 0) cubic-bezier(0.4, 0, 0.2, 1)}.mat-vertical-content-container.mat-vertical-content-container-active{grid-template-rows:1fr}.mat-step:last-child .mat-vertical-content-container{border:none}@media(forced-colors: active){.mat-vertical-content-container{outline:solid 1px}}[dir=rtl] .mat-vertical-content-container{margin-left:0;margin-right:36px}@supports not (grid-template-rows: 0fr){.mat-vertical-content-container{height:0}.mat-vertical-content-container.mat-vertical-content-container-active{height:auto}}.mat-stepper-vertical-line::before{content:"";position:absolute;left:0;border-left-width:1px;border-left-style:solid;border-left-color:var(--mat-stepper-line-color, var(--mat-sys-outline));top:calc(8px - calc((var(--mat-stepper-header-height, 72px) - 24px) / 2));bottom:calc(8px - calc((var(--mat-stepper-header-height, 72px) - 24px) / 2))}[dir=rtl] .mat-stepper-vertical-line::before{left:auto;right:0}.mat-vertical-stepper-content{overflow:hidden;outline:0;visibility:hidden}.mat-stepper-animations-enabled .mat-vertical-stepper-content{transition:visibility var(--mat-stepper-animation-duration, 0) linear}.mat-vertical-content-container-active>.mat-vertical-stepper-content{visibility:visible}.mat-vertical-content{padding:0 24px 24px 24px}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        _stepHeader: [
+          {
+            type: ViewChildren,
+            args: [MatStepHeader],
+          },
+        ],
+        _animatedContainers: [
+          {
+            type: ViewChildren,
+            args: ['animatedContainer'],
+          },
+        ],
+        _steps: [
+          {
+            type: ContentChildren,
+            args: [
+              MatStep,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        _icons: [
+          {
+            type: ContentChildren,
+            args: [
+              MatStepperIcon,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        animationDone: [
+          {
+            type: Output,
+          },
+        ],
+        disableRipple: [
+          {
+            type: Input,
+          },
+        ],
+        color: [
+          {
+            type: Input,
+          },
+        ],
+        labelPosition: [
+          {
+            type: Input,
+          },
+        ],
+        headerPosition: [
+          {
+            type: Input,
+          },
+        ],
+        animationDuration: [
+          {
+            type: Input,
+          },
+        ],
+      },
+    );
 })();
 var MatStepperNext = class _MatStepperNext extends CdkStepperNext {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatStepperNext_BaseFactory;
     return function MatStepperNext_Factory(__ngFactoryType__) {
-      return (ɵMatStepperNext_BaseFactory || (ɵMatStepperNext_BaseFactory = ɵɵgetInheritedFactory(_MatStepperNext)))(__ngFactoryType__ || _MatStepperNext);
+      return (ɵMatStepperNext_BaseFactory || (ɵMatStepperNext_BaseFactory = ɵɵgetInheritedFactory(_MatStepperNext)))(
+        __ngFactoryType__ || _MatStepperNext,
+      );
     };
   })();
   static ɵdir = ɵɵdefineDirective({
     type: _MatStepperNext,
-    selectors: [["button", "matStepperNext", ""]],
-    hostAttrs: [1, "mat-stepper-next"],
+    selectors: [['button', 'matStepperNext', '']],
+    hostAttrs: [1, 'mat-stepper-next'],
     hostVars: 1,
     hostBindings: function MatStepperNext_HostBindings(rf, ctx) {
       if (rf & 2) {
-        ɵɵhostProperty("type", ctx.type);
+        ɵɵhostProperty('type', ctx.type);
       }
     },
-    features: [ɵɵInheritDefinitionFeature]
+    features: [ɵɵInheritDefinitionFeature],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStepperNext, [{
-    type: Directive,
-    args: [{
-      selector: "button[matStepperNext]",
-      host: {
-        "class": "mat-stepper-next",
-        "[type]": "type"
-      }
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatStepperNext,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'button[matStepperNext]',
+              host: {
+                class: 'mat-stepper-next',
+                '[type]': 'type',
+              },
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatStepperPrevious = class _MatStepperPrevious extends CdkStepperPrevious {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatStepperPrevious_BaseFactory;
     return function MatStepperPrevious_Factory(__ngFactoryType__) {
-      return (ɵMatStepperPrevious_BaseFactory || (ɵMatStepperPrevious_BaseFactory = ɵɵgetInheritedFactory(_MatStepperPrevious)))(__ngFactoryType__ || _MatStepperPrevious);
+      return (
+        ɵMatStepperPrevious_BaseFactory ||
+        (ɵMatStepperPrevious_BaseFactory = ɵɵgetInheritedFactory(_MatStepperPrevious))
+      )(__ngFactoryType__ || _MatStepperPrevious);
     };
   })();
   static ɵdir = ɵɵdefineDirective({
     type: _MatStepperPrevious,
-    selectors: [["button", "matStepperPrevious", ""]],
-    hostAttrs: [1, "mat-stepper-previous"],
+    selectors: [['button', 'matStepperPrevious', '']],
+    hostAttrs: [1, 'mat-stepper-previous'],
     hostVars: 1,
     hostBindings: function MatStepperPrevious_HostBindings(rf, ctx) {
       if (rf & 2) {
-        ɵɵhostProperty("type", ctx.type);
+        ɵɵhostProperty('type', ctx.type);
       }
     },
-    features: [ɵɵInheritDefinitionFeature]
+    features: [ɵɵInheritDefinitionFeature],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStepperPrevious, [{
-    type: Directive,
-    args: [{
-      selector: "button[matStepperPrevious]",
-      host: {
-        "class": "mat-stepper-previous",
-        "[type]": "type"
-      }
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatStepperPrevious,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'button[matStepperPrevious]',
+              host: {
+                class: 'mat-stepper-previous',
+                '[type]': 'type',
+              },
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatStepperModule = class _MatStepperModule {
   static ɵfac = function MatStepperModule_Factory(__ngFactoryType__) {
@@ -2029,23 +2480,90 @@ var MatStepperModule = class _MatStepperModule {
   };
   static ɵmod = ɵɵdefineNgModule({
     type: _MatStepperModule,
-    imports: [MatCommonModule, PortalModule, CdkStepperModule, MatIconModule, MatRippleModule, MatStep, MatStepLabel, MatStepper, MatStepperNext, MatStepperPrevious, MatStepHeader, MatStepperIcon, MatStepContent],
-    exports: [MatCommonModule, MatStep, MatStepLabel, MatStepper, MatStepperNext, MatStepperPrevious, MatStepHeader, MatStepperIcon, MatStepContent]
+    imports: [
+      MatCommonModule,
+      PortalModule,
+      CdkStepperModule,
+      MatIconModule,
+      MatRippleModule,
+      MatStep,
+      MatStepLabel,
+      MatStepper,
+      MatStepperNext,
+      MatStepperPrevious,
+      MatStepHeader,
+      MatStepperIcon,
+      MatStepContent,
+    ],
+    exports: [
+      MatCommonModule,
+      MatStep,
+      MatStepLabel,
+      MatStepper,
+      MatStepperNext,
+      MatStepperPrevious,
+      MatStepHeader,
+      MatStepperIcon,
+      MatStepContent,
+    ],
   });
   static ɵinj = ɵɵdefineInjector({
     providers: [MAT_STEPPER_INTL_PROVIDER, ErrorStateMatcher],
-    imports: [MatCommonModule, PortalModule, CdkStepperModule, MatIconModule, MatRippleModule, MatStepper, MatStepHeader, MatCommonModule]
+    imports: [
+      MatCommonModule,
+      PortalModule,
+      CdkStepperModule,
+      MatIconModule,
+      MatRippleModule,
+      MatStepper,
+      MatStepHeader,
+      MatCommonModule,
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatStepperModule, [{
-    type: NgModule,
-    args: [{
-      imports: [MatCommonModule, PortalModule, CdkStepperModule, MatIconModule, MatRippleModule, MatStep, MatStepLabel, MatStepper, MatStepperNext, MatStepperPrevious, MatStepHeader, MatStepperIcon, MatStepContent],
-      exports: [MatCommonModule, MatStep, MatStepLabel, MatStepper, MatStepperNext, MatStepperPrevious, MatStepHeader, MatStepperIcon, MatStepContent],
-      providers: [MAT_STEPPER_INTL_PROVIDER, ErrorStateMatcher]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatStepperModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [
+                MatCommonModule,
+                PortalModule,
+                CdkStepperModule,
+                MatIconModule,
+                MatRippleModule,
+                MatStep,
+                MatStepLabel,
+                MatStepper,
+                MatStepperNext,
+                MatStepperPrevious,
+                MatStepHeader,
+                MatStepperIcon,
+                MatStepContent,
+              ],
+              exports: [
+                MatCommonModule,
+                MatStep,
+                MatStepLabel,
+                MatStepper,
+                MatStepperNext,
+                MatStepperPrevious,
+                MatStepHeader,
+                MatStepperIcon,
+                MatStepContent,
+              ],
+              providers: [MAT_STEPPER_INTL_PROVIDER, ErrorStateMatcher],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var matStepperAnimations = {
   // Represents:
@@ -2070,69 +2588,77 @@ var matStepperAnimations = {
   /** Animation that transitions the step along the X axis in a horizontal stepper. */
   horizontalStepTransition: {
     type: 7,
-    name: "horizontalStepTransition",
-    definitions: [{
-      type: 0,
-      name: "previous",
-      styles: {
-        type: 6,
+    name: 'horizontalStepTransition',
+    definitions: [
+      {
+        type: 0,
+        name: 'previous',
         styles: {
-          transform: "translate3d(-100%, 0, 0)",
-          visibility: "hidden"
-        },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "current",
-      styles: {
-        type: 6,
-        styles: {
-          transform: "none",
-          visibility: "inherit"
-        },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "next",
-      styles: {
-        type: 6,
-        styles: {
-          transform: "translate3d(100%, 0, 0)",
-          visibility: "hidden"
-        },
-        offset: null
-      }
-    }, {
-      type: 1,
-      expr: "* => *",
-      animation: {
-        type: 3,
-        steps: [{
-          type: 4,
-          styles: null,
-          timings: "{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)"
-        }, {
-          type: 11,
-          selector: "@*",
-          animation: {
-            type: 9,
-            options: null
+          type: 6,
+          styles: {
+            transform: 'translate3d(-100%, 0, 0)',
+            visibility: 'hidden',
           },
-          options: {
-            optional: true
-          }
-        }],
-        options: null
+          offset: null,
+        },
       },
-      options: {
-        params: {
-          animationDuration: "500ms"
-        }
-      }
-    }],
-    options: {}
+      {
+        type: 0,
+        name: 'current',
+        styles: {
+          type: 6,
+          styles: {
+            transform: 'none',
+            visibility: 'inherit',
+          },
+          offset: null,
+        },
+      },
+      {
+        type: 0,
+        name: 'next',
+        styles: {
+          type: 6,
+          styles: {
+            transform: 'translate3d(100%, 0, 0)',
+            visibility: 'hidden',
+          },
+          offset: null,
+        },
+      },
+      {
+        type: 1,
+        expr: '* => *',
+        animation: {
+          type: 3,
+          steps: [
+            {
+              type: 4,
+              styles: null,
+              timings: '{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)',
+            },
+            {
+              type: 11,
+              selector: '@*',
+              animation: {
+                type: 9,
+                options: null,
+              },
+              options: {
+                optional: true,
+              },
+            },
+          ],
+          options: null,
+        },
+        options: {
+          params: {
+            animationDuration: '500ms',
+          },
+        },
+      },
+    ],
+    options: {},
   },
   // Represents:
   // trigger('verticalStepTransition', [
@@ -2156,70 +2682,78 @@ var matStepperAnimations = {
   /** Animation that transitions the step along the Y axis in a vertical stepper. */
   verticalStepTransition: {
     type: 7,
-    name: "verticalStepTransition",
-    definitions: [{
-      type: 0,
-      name: "previous",
-      styles: {
-        type: 6,
+    name: 'verticalStepTransition',
+    definitions: [
+      {
+        type: 0,
+        name: 'previous',
         styles: {
-          "height": "0px",
-          visibility: "hidden"
-        },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "next",
-      styles: {
-        type: 6,
-        styles: {
-          "height": "0px",
-          visibility: "hidden"
-        },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "current",
-      styles: {
-        type: 6,
-        styles: {
-          "height": "*",
-          visibility: "inherit"
-        },
-        offset: null
-      }
-    }, {
-      type: 1,
-      expr: "* <=> current",
-      animation: {
-        type: 3,
-        steps: [{
-          type: 4,
-          styles: null,
-          timings: "{{animationDuration}} cubic-bezier(0.4, 0.0, 0.2, 1)"
-        }, {
-          type: 11,
-          selector: "@*",
-          animation: {
-            type: 9,
-            options: null
+          type: 6,
+          styles: {
+            height: '0px',
+            visibility: 'hidden',
           },
-          options: {
-            optional: true
-          }
-        }],
-        options: null
+          offset: null,
+        },
       },
-      options: {
-        params: {
-          animationDuration: "225ms"
-        }
-      }
-    }],
-    options: {}
-  }
+      {
+        type: 0,
+        name: 'next',
+        styles: {
+          type: 6,
+          styles: {
+            height: '0px',
+            visibility: 'hidden',
+          },
+          offset: null,
+        },
+      },
+      {
+        type: 0,
+        name: 'current',
+        styles: {
+          type: 6,
+          styles: {
+            height: '*',
+            visibility: 'inherit',
+          },
+          offset: null,
+        },
+      },
+      {
+        type: 1,
+        expr: '* <=> current',
+        animation: {
+          type: 3,
+          steps: [
+            {
+              type: 4,
+              styles: null,
+              timings: '{{animationDuration}} cubic-bezier(0.4, 0.0, 0.2, 1)',
+            },
+            {
+              type: 11,
+              selector: '@*',
+              animation: {
+                type: 9,
+                options: null,
+              },
+              options: {
+                optional: true,
+              },
+            },
+          ],
+          options: null,
+        },
+        options: {
+          params: {
+            animationDuration: '225ms',
+          },
+        },
+      },
+    ],
+    options: {},
+  },
 };
 export {
   MAT_STEPPER_INTL_PROVIDER,
@@ -2234,6 +2768,6 @@ export {
   MatStepperModule,
   MatStepperNext,
   MatStepperPrevious,
-  matStepperAnimations
+  matStepperAnimations,
 };
 //# sourceMappingURL=@angular_material_stepper.js.map

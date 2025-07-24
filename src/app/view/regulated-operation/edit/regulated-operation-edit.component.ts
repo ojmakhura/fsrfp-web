@@ -146,7 +146,7 @@ export class RegulatedOperationEditComponent implements OnInit {
 
   private populateForm(operation: RegulatedOperationDTO): void {
     this.regulatedOperationForm.patchValue(operation);
-    console.log(this.regulatedOperationForm)
+    console.log(this.regulatedOperationForm);
   }
 
   private loadRegulatedOperation(id: string): void {

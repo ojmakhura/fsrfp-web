@@ -59,7 +59,6 @@
       <p>{{ 'document.loading' | translate }}</p>
     </div>
 
-
     <div *ngIf="!documentsLoading()">
       <div *ngIf="documentsGroupedByType() as grouped">
         <mat-expansion-panel *ngFor="let group of grouped | keyvalue" class="document-type-panel">
@@ -116,6 +115,6 @@
     </div>
   </mat-card-content>
 </mat-card>
-@if(documentsLoading()) {
-<app-loader></app-loader>
+@if (documentsLoading()) {
+  <app-loader></app-loader>
 }

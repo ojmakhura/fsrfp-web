@@ -86,8 +86,8 @@ import {
   provideImgixLoader,
   provideNetlifyLoader,
   registerLocaleData,
-  setRootDomAdapter
-} from "./chunk-LJRMVWU3.js";
+  setRootDomAdapter,
+} from './chunk-LJRMVWU3.js';
 import {
   DOCUMENT,
   PLATFORM_BROWSER_ID,
@@ -95,15 +95,13 @@ import {
   XhrFactory,
   isPlatformBrowser,
   isPlatformServer,
-  parseCookieValue
-} from "./chunk-SOO5Y25R.js";
-import {
-  IMAGE_CONFIG
-} from "./chunk-LB7E77GG.js";
-import "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import "./chunk-4S3KYZTJ.js";
-import "./chunk-4MWRP73S.js";
+  parseCookieValue,
+} from './chunk-SOO5Y25R.js';
+import { IMAGE_CONFIG } from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import './chunk-WPM5VTLQ.js';
+import './chunk-4S3KYZTJ.js';
+import './chunk-4MWRP73S.js';
 export {
   APP_BASE_HREF,
   AsyncPipe,
@@ -201,5 +199,5 @@ export {
   getDOM as ɵgetDOM,
   normalizeQueryParams as ɵnormalizeQueryParams,
   parseCookieValue as ɵparseCookieValue,
-  setRootDomAdapter as ɵsetRootDomAdapter
+  setRootDomAdapter as ɵsetRootDomAdapter,
 };

@@ -1,15 +1,7 @@
 {
-  "serverUrl": "/api",
-  "redirectUri": "<redirectUri>",
-  "keycloak": {
-    "issuer": "<keycloakIssuer>",
-    "clientId": "<clientId>",
-    "scope": "openid profile email offline_access",
-    "responseType": "code",
-    "realm": "<realmId>",
-    "disableAtHashCheck": true,
-    "showDebugInformation": true,
-    "requireHttps": false,
-    "checkLoginIframe": false
-  }
+  "apiUrl": "/api",
+  "redirectUri": "http://localhost:4200",
+  "authDomain": "https://keycloak.roguedev.local",
+  "realm": "devel",
+  "clientId": "angular-web"
 }

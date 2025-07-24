@@ -69,6 +69,8 @@ export class DocumentTypeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.documentTypeApiStore.reset();
+
     this.route.params.subscribe((params) => {
       this.documentTypeId = params['id'];
 

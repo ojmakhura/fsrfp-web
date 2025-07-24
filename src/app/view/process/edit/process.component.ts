@@ -137,8 +137,8 @@ export class ProcessComponent {
       const url = this.router.url;
 
       if (id) {
-        this.processId.set(Number(id));
-        this.processStore.findById({ id: Number(id) });
+        this.processId.set(id);
+        this.processStore.findById({ id: id });
 
         if (url.includes('/view')) {
           this.mode.set('view');

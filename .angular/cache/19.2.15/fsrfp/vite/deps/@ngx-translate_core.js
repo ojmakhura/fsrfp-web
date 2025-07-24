@@ -18,30 +18,15 @@ import {
   ɵɵdefinePipe,
   ɵɵdirectiveInject,
   ɵɵgetInheritedFactory,
-  ɵɵinject
-} from "./chunk-LB7E77GG.js";
-import {
-  defer,
-  forkJoin,
-  isObservable
-} from "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import {
-  concat,
-  concatMap,
-  map,
-  of,
-  shareReplay,
-  switchMap,
-  take
-} from "./chunk-4S3KYZTJ.js";
-import {
-  __spreadValues
-} from "./chunk-4MWRP73S.js";
+  ɵɵinject,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import { defer, forkJoin, isObservable } from './chunk-WPM5VTLQ.js';
+import { concat, concatMap, map, of, shareReplay, switchMap, take } from './chunk-4S3KYZTJ.js';
+import { __spreadValues } from './chunk-4MWRP73S.js';
 
 // node_modules/@ngx-translate/core/fesm2022/ngx-translate-core.mjs
-var TranslateLoader = class {
-};
+var TranslateLoader = class {};
 var TranslateFakeLoader = class _TranslateFakeLoader extends TranslateLoader {
   getTranslation(lang) {
     void lang;
@@ -50,21 +35,31 @@ var TranslateFakeLoader = class _TranslateFakeLoader extends TranslateLoader {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵTranslateFakeLoader_BaseFactory;
     return function TranslateFakeLoader_Factory(__ngFactoryType__) {
-      return (ɵTranslateFakeLoader_BaseFactory || (ɵTranslateFakeLoader_BaseFactory = ɵɵgetInheritedFactory(_TranslateFakeLoader)))(__ngFactoryType__ || _TranslateFakeLoader);
+      return (
+        ɵTranslateFakeLoader_BaseFactory ||
+        (ɵTranslateFakeLoader_BaseFactory = ɵɵgetInheritedFactory(_TranslateFakeLoader))
+      )(__ngFactoryType__ || _TranslateFakeLoader);
     };
   })();
   static ɵprov = ɵɵdefineInjectable({
     token: _TranslateFakeLoader,
-    factory: _TranslateFakeLoader.ɵfac
+    factory: _TranslateFakeLoader.ɵfac,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TranslateFakeLoader, [{
-    type: Injectable
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      TranslateFakeLoader,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var MissingTranslationHandler = class {
-};
+var MissingTranslationHandler = class {};
 var FakeMissingTranslationHandler = class _FakeMissingTranslationHandler {
   handle(params) {
     return params.key;
@@ -74,21 +69,30 @@ var FakeMissingTranslationHandler = class _FakeMissingTranslationHandler {
   };
   static ɵprov = ɵɵdefineInjectable({
     token: _FakeMissingTranslationHandler,
-    factory: _FakeMissingTranslationHandler.ɵfac
+    factory: _FakeMissingTranslationHandler.ɵfac,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FakeMissingTranslationHandler, [{
-    type: Injectable
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      FakeMissingTranslationHandler,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      null,
+      null,
+    );
 })();
 function equals(o1, o2) {
   if (o1 === o2) return true;
   if (o1 === null || o2 === null) return false;
   if (o1 !== o1 && o2 !== o2) return true;
-  const t1 = typeof o1, t2 = typeof o2;
+  const t1 = typeof o1,
+    t2 = typeof o2;
   let length, key, keySet;
-  if (t1 == t2 && t1 == "object") {
+  if (t1 == t2 && t1 == 'object') {
     if (Array.isArray(o1)) {
       if (!Array.isArray(o2)) return false;
       if ((length = o1.length) == o2.length) {
@@ -109,7 +113,7 @@ function equals(o1, o2) {
         keySet[key] = true;
       }
       for (key in o2) {
-        if (!(key in keySet) && typeof o2[key] !== "undefined") {
+        if (!(key in keySet) && typeof o2[key] !== 'undefined') {
           return false;
         }
       }
@@ -119,22 +123,22 @@ function equals(o1, o2) {
   return false;
 }
 function isDefined(value) {
-  return typeof value !== "undefined" && value !== null;
+  return typeof value !== 'undefined' && value !== null;
 }
 function isDict(value) {
   return isObject(value) && !isArray(value) && value !== null;
 }
 function isObject(value) {
-  return typeof value === "object";
+  return typeof value === 'object';
 }
 function isArray(value) {
   return Array.isArray(value);
 }
 function isString(value) {
-  return typeof value === "string";
+  return typeof value === 'string';
 }
 function isFunction(value) {
-  return typeof value === "function";
+  return typeof value === 'function';
 }
 function mergeDeep(target, source) {
   const output = Object.assign({}, target);
@@ -148,12 +152,12 @@ function mergeDeep(target, source) {
           output[key] = mergeDeep(target[key], source[key]);
         } else {
           Object.assign(output, {
-            [key]: source[key]
+            [key]: source[key],
           });
         }
       } else {
         Object.assign(output, {
-          [key]: source[key]
+          [key]: source[key],
         });
       }
     });
@@ -161,23 +165,23 @@ function mergeDeep(target, source) {
   return output;
 }
 function getValue(target, key) {
-  const keys = key.split(".");
-  key = "";
+  const keys = key.split('.');
+  key = '';
   do {
     key += keys.shift();
     if (isDefined(target) && isDefined(target[key]) && (isDict(target[key]) || isArray(target[key]) || !keys.length)) {
       target = target[key];
-      key = "";
+      key = '';
     } else if (!keys.length) {
       target = void 0;
     } else {
-      key += ".";
+      key += '.';
     }
   } while (keys.length);
   return target;
 }
 function setValue(target, key, value) {
-  const keys = key.split(".");
+  const keys = key.split('.');
   let current = target;
   for (let i = 0; i < keys.length; i++) {
     const key2 = keys[i];
@@ -191,8 +195,7 @@ function setValue(target, key, value) {
     }
   }
 }
-var TranslateParser = class {
-};
+var TranslateParser = class {};
 var TranslateDefaultParser = class _TranslateDefaultParser extends TranslateParser {
   templateMatcher = /{{\s?([^{}\s]*)\s?}}/g;
   interpolate(expr, params) {
@@ -218,21 +221,31 @@ var TranslateDefaultParser = class _TranslateDefaultParser extends TranslatePars
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵTranslateDefaultParser_BaseFactory;
     return function TranslateDefaultParser_Factory(__ngFactoryType__) {
-      return (ɵTranslateDefaultParser_BaseFactory || (ɵTranslateDefaultParser_BaseFactory = ɵɵgetInheritedFactory(_TranslateDefaultParser)))(__ngFactoryType__ || _TranslateDefaultParser);
+      return (
+        ɵTranslateDefaultParser_BaseFactory ||
+        (ɵTranslateDefaultParser_BaseFactory = ɵɵgetInheritedFactory(_TranslateDefaultParser))
+      )(__ngFactoryType__ || _TranslateDefaultParser);
     };
   })();
   static ɵprov = ɵɵdefineInjectable({
     token: _TranslateDefaultParser,
-    factory: _TranslateDefaultParser.ɵfac
+    factory: _TranslateDefaultParser.ɵfac,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TranslateDefaultParser, [{
-    type: Injectable
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      TranslateDefaultParser,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var TranslateCompiler = class {
-};
+var TranslateCompiler = class {};
 var TranslateFakeCompiler = class _TranslateFakeCompiler extends TranslateCompiler {
   compile(value, lang) {
     void lang;
@@ -245,18 +258,29 @@ var TranslateFakeCompiler = class _TranslateFakeCompiler extends TranslateCompil
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵTranslateFakeCompiler_BaseFactory;
     return function TranslateFakeCompiler_Factory(__ngFactoryType__) {
-      return (ɵTranslateFakeCompiler_BaseFactory || (ɵTranslateFakeCompiler_BaseFactory = ɵɵgetInheritedFactory(_TranslateFakeCompiler)))(__ngFactoryType__ || _TranslateFakeCompiler);
+      return (
+        ɵTranslateFakeCompiler_BaseFactory ||
+        (ɵTranslateFakeCompiler_BaseFactory = ɵɵgetInheritedFactory(_TranslateFakeCompiler))
+      )(__ngFactoryType__ || _TranslateFakeCompiler);
     };
   })();
   static ɵprov = ɵɵdefineInjectable({
     token: _TranslateFakeCompiler,
-    factory: _TranslateFakeCompiler.ɵfac
+    factory: _TranslateFakeCompiler.ɵfac,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TranslateFakeCompiler, [{
-    type: Injectable
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      TranslateFakeCompiler,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var TranslateStore = class {
   /**
@@ -278,29 +302,29 @@ var TranslateStore = class {
   /**
    * An EventEmitter to listen to translation change events
    * onTranslationChange.subscribe((params: TranslationChangeEvent) => {
-     *     // do something
-     * });
+   *     // do something
+   * });
    */
   onTranslationChange = new EventEmitter();
   /**
    * An EventEmitter to listen to lang change events
    * onLangChange.subscribe((params: LangChangeEvent) => {
-     *     // do something
-     * });
+   *     // do something
+   * });
    */
   onLangChange = new EventEmitter();
   /**
    * An EventEmitter to listen to default lang change events
    * onDefaultLangChange.subscribe((params: DefaultLangChangeEvent) => {
-     *     // do something
-     * });
+   *     // do something
+   * });
    */
   onDefaultLangChange = new EventEmitter();
 };
-var ISOLATE_TRANSLATE_SERVICE = new InjectionToken("ISOLATE_TRANSLATE_SERVICE");
-var USE_DEFAULT_LANG = new InjectionToken("USE_DEFAULT_LANG");
-var DEFAULT_LANGUAGE = new InjectionToken("DEFAULT_LANGUAGE");
-var USE_EXTEND = new InjectionToken("USE_EXTEND");
+var ISOLATE_TRANSLATE_SERVICE = new InjectionToken('ISOLATE_TRANSLATE_SERVICE');
+var USE_DEFAULT_LANG = new InjectionToken('USE_DEFAULT_LANG');
+var DEFAULT_LANGUAGE = new InjectionToken('DEFAULT_LANGUAGE');
+var USE_EXTEND = new InjectionToken('USE_EXTEND');
 var makeObservable = (value) => {
   return isObservable(value) ? value : of(value);
 };
@@ -319,8 +343,8 @@ var TranslateService = class _TranslateService {
   /**
    * An EventEmitter to listen to translation change events
    * onTranslationChange.subscribe((params: TranslationChangeEvent) => {
-     *     // do something
-     * });
+   *     // do something
+   * });
    */
   get onTranslationChange() {
     return this.store.onTranslationChange;
@@ -328,8 +352,8 @@ var TranslateService = class _TranslateService {
   /**
    * An EventEmitter to listen to lang change events
    * onLangChange.subscribe((params: LangChangeEvent) => {
-     *     // do something
-     * });
+   *     // do something
+   * });
    */
   get onLangChange() {
     return this.store.onLangChange;
@@ -337,8 +361,8 @@ var TranslateService = class _TranslateService {
   /**
    * An EventEmitter to listen to default lang change events
    * onDefaultLangChange.subscribe((params: DefaultLangChangeEvent) => {
-     *     // do something
-     * });
+   *     // do something
+   * });
    */
   get onDefaultLangChange() {
     return this.store.onDefaultLangChange;
@@ -391,7 +415,17 @@ var TranslateService = class _TranslateService {
    * @param extend To make a child module extend (and use) translations from parent modules.
    * @param defaultLanguage Set the default language using configuration
    */
-  constructor(store, currentLoader, compiler, parser, missingTranslationHandler, useDefaultLang = true, isolate = false, extend = false, defaultLanguage) {
+  constructor(
+    store,
+    currentLoader,
+    compiler,
+    parser,
+    missingTranslationHandler,
+    useDefaultLang = true,
+    isolate = false,
+    extend = false,
+    defaultLanguage,
+  ) {
     this.store = store;
     this.currentLoader = currentLoader;
     this.compiler = compiler;
@@ -414,7 +448,7 @@ var TranslateService = class _TranslateService {
       return;
     }
     const pending = this.retrieveTranslations(lang);
-    if (typeof pending !== "undefined") {
+    if (typeof pending !== 'undefined') {
       if (this.defaultLang == null) {
         this.defaultLang = lang;
       }
@@ -463,7 +497,7 @@ var TranslateService = class _TranslateService {
     this.currentLang = lang;
     this.onLangChange.emit({
       lang,
-      translations: this.translations[lang]
+      translations: this.translations[lang],
     });
     if (this.defaultLang == null) {
       this.changeDefaultLang(lang);
@@ -473,7 +507,7 @@ var TranslateService = class _TranslateService {
    * Retrieves the given translations
    */
   retrieveTranslations(lang) {
-    if (typeof this.translations[lang] === "undefined" || this.extend) {
+    if (typeof this.translations[lang] === 'undefined' || this.extend) {
       this._translationRequests[lang] = this._translationRequests[lang] || this.loadAndCompileTranslations(lang);
       return this._translationRequests[lang];
     }
@@ -494,17 +528,24 @@ var TranslateService = class _TranslateService {
   loadAndCompileTranslations(lang) {
     this.pending = true;
     const loadingTranslations = this.currentLoader.getTranslation(lang).pipe(shareReplay(1), take(1));
-    this.loadingTranslations = loadingTranslations.pipe(map((res) => this.compiler.compileTranslations(res, lang)), shareReplay(1), take(1));
+    this.loadingTranslations = loadingTranslations.pipe(
+      map((res) => this.compiler.compileTranslations(res, lang)),
+      shareReplay(1),
+      take(1),
+    );
     this.loadingTranslations.subscribe({
       next: (res) => {
-        this.translations[lang] = this.extend && this.translations[lang] ? __spreadValues(__spreadValues({}, res), this.translations[lang]) : res;
+        this.translations[lang] =
+          this.extend && this.translations[lang]
+            ? __spreadValues(__spreadValues({}, res), this.translations[lang])
+            : res;
         this.updateLangs();
         this.pending = false;
       },
       error: (err) => {
         void err;
         this.pending = false;
-      }
+      },
     });
     return loadingTranslations;
   }
@@ -522,7 +563,7 @@ var TranslateService = class _TranslateService {
     this.updateLangs();
     this.onTranslationChange.emit({
       lang,
-      translations: this.translations[lang]
+      translations: this.translations[lang],
     });
   }
   /**
@@ -557,9 +598,9 @@ var TranslateService = class _TranslateService {
     if (res === void 0) {
       const params = {
         key,
-        translateService: this
+        translateService: this,
       };
-      if (typeof interpolateParams !== "undefined") {
+      if (typeof interpolateParams !== 'undefined') {
         params.interpolateParams = interpolateParams;
       }
       res = this.missingTranslationHandler.handle(params);
@@ -597,13 +638,15 @@ var TranslateService = class _TranslateService {
         return result;
       }
       const sources = key.map((k) => makeObservable(result[k]));
-      return forkJoin(sources).pipe(map((arr) => {
-        const obj = {};
-        arr.forEach((value, index) => {
-          obj[key[index]] = value;
-        });
-        return obj;
-      }));
+      return forkJoin(sources).pipe(
+        map((arr) => {
+          const obj = {};
+          arr.forEach((value, index) => {
+            obj[key[index]] = value;
+          });
+          return obj;
+        }),
+      );
     }
     return this.getParsedResultForKey(translations, key, interpolateParams);
   }
@@ -616,9 +659,11 @@ var TranslateService = class _TranslateService {
       throw new Error(`Parameter "key" is required and cannot be empty`);
     }
     if (this.pending) {
-      return this.loadingTranslations.pipe(concatMap((res) => {
-        return makeObservable(this.getParsedResult(res, key, interpolateParams));
-      }));
+      return this.loadingTranslations.pipe(
+        concatMap((res) => {
+          return makeObservable(this.getParsedResult(res, key, interpolateParams));
+        }),
+      );
     }
     return makeObservable(this.getParsedResult(this.translations[this.currentLang], key, interpolateParams));
   }
@@ -631,10 +676,15 @@ var TranslateService = class _TranslateService {
     if (!isDefined(key) || !key.length) {
       throw new Error(`Parameter "key" is required and cannot be empty`);
     }
-    return concat(defer(() => this.get(key, interpolateParams)), this.onTranslationChange.pipe(switchMap((event) => {
-      const res = this.getParsedResult(event.translations, key, interpolateParams);
-      return makeObservable(res);
-    })));
+    return concat(
+      defer(() => this.get(key, interpolateParams)),
+      this.onTranslationChange.pipe(
+        switchMap((event) => {
+          const res = this.getParsedResult(event.translations, key, interpolateParams);
+          return makeObservable(res);
+        }),
+      ),
+    );
   }
   /**
    * Returns a stream of translated values of a key (or an array of keys) which updates
@@ -645,10 +695,15 @@ var TranslateService = class _TranslateService {
     if (!isDefined(key) || !key.length) {
       throw new Error(`Parameter "key" required`);
     }
-    return concat(defer(() => this.get(key, interpolateParams)), this.onLangChange.pipe(switchMap((event) => {
-      const res = this.getParsedResult(event.translations, key, interpolateParams);
-      return makeObservable(res);
-    })));
+    return concat(
+      defer(() => this.get(key, interpolateParams)),
+      this.onLangChange.pipe(
+        switchMap((event) => {
+          const res = this.getParsedResult(event.translations, key, interpolateParams);
+          return makeObservable(res);
+        }),
+      ),
+    );
   }
   /**
    * Returns a translation instantly from the internal state of loaded translation.
@@ -675,11 +730,17 @@ var TranslateService = class _TranslateService {
    * Sets the translated value of a key, after compiling it
    */
   set(key, translation, lang = this.currentLang) {
-    setValue(this.translations[lang], key, isString(translation) ? this.compiler.compile(translation, lang) : this.compiler.compileTranslations(translation, lang));
+    setValue(
+      this.translations[lang],
+      key,
+      isString(translation)
+        ? this.compiler.compile(translation, lang)
+        : this.compiler.compileTranslations(translation, lang),
+    );
     this.updateLangs();
     this.onTranslationChange.emit({
       lang,
-      translations: this.translations[lang]
+      translations: this.translations[lang],
     });
   }
   /**
@@ -689,7 +750,7 @@ var TranslateService = class _TranslateService {
     this.defaultLang = lang;
     this.onDefaultLangChange.emit({
       lang,
-      translations: this.translations[lang]
+      translations: this.translations[lang],
     });
   }
   /**
@@ -710,7 +771,7 @@ var TranslateService = class _TranslateService {
    * Returns the language code name from the browser, e.g. "de"
    */
   getBrowserLang() {
-    if (typeof window === "undefined" || !window.navigator) {
+    if (typeof window === 'undefined' || !window.navigator) {
       return void 0;
     }
     const browserLang = this.getBrowserCultureLang();
@@ -720,61 +781,101 @@ var TranslateService = class _TranslateService {
    * Returns the culture language code name from the browser, e.g. "de-DE"
    */
   getBrowserCultureLang() {
-    if (typeof window === "undefined" || typeof window.navigator === "undefined") {
+    if (typeof window === 'undefined' || typeof window.navigator === 'undefined') {
       return void 0;
     }
-    return window.navigator.languages ? window.navigator.languages[0] : window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
+    return window.navigator.languages
+      ? window.navigator.languages[0]
+      : window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
   }
   static ɵfac = function TranslateService_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TranslateService)(ɵɵinject(TranslateStore), ɵɵinject(TranslateLoader), ɵɵinject(TranslateCompiler), ɵɵinject(TranslateParser), ɵɵinject(MissingTranslationHandler), ɵɵinject(USE_DEFAULT_LANG), ɵɵinject(ISOLATE_TRANSLATE_SERVICE), ɵɵinject(USE_EXTEND), ɵɵinject(DEFAULT_LANGUAGE));
+    return new (__ngFactoryType__ || _TranslateService)(
+      ɵɵinject(TranslateStore),
+      ɵɵinject(TranslateLoader),
+      ɵɵinject(TranslateCompiler),
+      ɵɵinject(TranslateParser),
+      ɵɵinject(MissingTranslationHandler),
+      ɵɵinject(USE_DEFAULT_LANG),
+      ɵɵinject(ISOLATE_TRANSLATE_SERVICE),
+      ɵɵinject(USE_EXTEND),
+      ɵɵinject(DEFAULT_LANGUAGE),
+    );
   };
   static ɵprov = ɵɵdefineInjectable({
     token: _TranslateService,
     factory: _TranslateService.ɵfac,
-    providedIn: "root"
+    providedIn: 'root',
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TranslateService, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], () => [{
-    type: TranslateStore
-  }, {
-    type: TranslateLoader
-  }, {
-    type: TranslateCompiler
-  }, {
-    type: TranslateParser
-  }, {
-    type: MissingTranslationHandler
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [USE_DEFAULT_LANG]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [ISOLATE_TRANSLATE_SERVICE]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [USE_EXTEND]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [DEFAULT_LANGUAGE]
-    }]
-  }], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      TranslateService,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: 'root',
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TranslateStore,
+        },
+        {
+          type: TranslateLoader,
+        },
+        {
+          type: TranslateCompiler,
+        },
+        {
+          type: TranslateParser,
+        },
+        {
+          type: MissingTranslationHandler,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [USE_DEFAULT_LANG],
+            },
+          ],
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [ISOLATE_TRANSLATE_SERVICE],
+            },
+          ],
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [USE_EXTEND],
+            },
+          ],
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [DEFAULT_LANGUAGE],
+            },
+          ],
+        },
+      ],
+      null,
+    );
 })();
 var TranslateDirective = class _TranslateDirective {
   translateService;
@@ -879,7 +980,7 @@ var TranslateDirective = class _TranslateDirective {
         const res = this.translateService.getParsedResult(translations, key, this.currentParams);
         if (isObservable(res)) {
           res.subscribe({
-            next: onTranslation
+            next: onTranslation,
           });
         } else {
           onTranslation(res);
@@ -911,44 +1012,69 @@ var TranslateDirective = class _TranslateDirective {
     }
   }
   static ɵfac = function TranslateDirective_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TranslateDirective)(ɵɵdirectiveInject(TranslateService), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef));
+    return new (__ngFactoryType__ || _TranslateDirective)(
+      ɵɵdirectiveInject(TranslateService),
+      ɵɵdirectiveInject(ElementRef),
+      ɵɵdirectiveInject(ChangeDetectorRef),
+    );
   };
   static ɵdir = ɵɵdefineDirective({
     type: _TranslateDirective,
-    selectors: [["", "translate", ""], ["", "ngx-translate", ""]],
+    selectors: [
+      ['', 'translate', ''],
+      ['', 'ngx-translate', ''],
+    ],
     inputs: {
-      translate: "translate",
-      translateParams: "translateParams"
-    }
+      translate: 'translate',
+      translateParams: 'translateParams',
+    },
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TranslateDirective, [{
-    type: Directive,
-    args: [{
-      // eslint-disable-next-line @angular-eslint/directive-selector
-      selector: "[translate],[ngx-translate]",
-      standalone: true
-    }]
-  }], () => [{
-    type: TranslateService
-  }, {
-    type: ElementRef
-  }, {
-    type: ChangeDetectorRef
-  }], {
-    translate: [{
-      type: Input
-    }],
-    translateParams: [{
-      type: Input
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      TranslateDirective,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              // eslint-disable-next-line @angular-eslint/directive-selector
+              selector: '[translate],[ngx-translate]',
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TranslateService,
+        },
+        {
+          type: ElementRef,
+        },
+        {
+          type: ChangeDetectorRef,
+        },
+      ],
+      {
+        translate: [
+          {
+            type: Input,
+          },
+        ],
+        translateParams: [
+          {
+            type: Input,
+          },
+        ],
+      },
+    );
 })();
 var TranslatePipe = class _TranslatePipe {
   translate;
   _ref;
-  value = "";
+  value = '';
   lastKey = null;
   lastParams = [];
   onTranslationChange;
@@ -985,7 +1111,9 @@ var TranslatePipe = class _TranslatePipe {
     let interpolateParams = void 0;
     if (isDefined(args[0]) && args.length) {
       if (isString(args[0]) && args[0].length) {
-        const validArgs = args[0].replace(/(')?([a-zA-Z0-9_]+)(')?(\s)?:/g, '"$2":').replace(/:(\s)?(')(.*?)(')/g, ':"$3"');
+        const validArgs = args[0]
+          .replace(/(')?([a-zA-Z0-9_]+)(')?(\s)?:/g, '"$2":')
+          .replace(/:(\s)?(')(.*?)(')/g, ':"$3"');
         try {
           interpolateParams = JSON.parse(validArgs);
         } catch (e) {
@@ -1030,15 +1158,15 @@ var TranslatePipe = class _TranslatePipe {
    * Clean any existing subscription to change events
    */
   _dispose() {
-    if (typeof this.onTranslationChange !== "undefined") {
+    if (typeof this.onTranslationChange !== 'undefined') {
       this.onTranslationChange.unsubscribe();
       this.onTranslationChange = void 0;
     }
-    if (typeof this.onLangChange !== "undefined") {
+    if (typeof this.onLangChange !== 'undefined') {
       this.onLangChange.unsubscribe();
       this.onLangChange = void 0;
     }
-    if (typeof this.onDefaultLangChange !== "undefined") {
+    if (typeof this.onDefaultLangChange !== 'undefined') {
       this.onDefaultLangChange.unsubscribe();
       this.onDefaultLangChange = void 0;
     }
@@ -1047,64 +1175,92 @@ var TranslatePipe = class _TranslatePipe {
     this._dispose();
   }
   static ɵfac = function TranslatePipe_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _TranslatePipe)(ɵɵdirectiveInject(TranslateService, 16), ɵɵdirectiveInject(ChangeDetectorRef, 16));
+    return new (__ngFactoryType__ || _TranslatePipe)(
+      ɵɵdirectiveInject(TranslateService, 16),
+      ɵɵdirectiveInject(ChangeDetectorRef, 16),
+    );
   };
   static ɵpipe = ɵɵdefinePipe({
-    name: "translate",
+    name: 'translate',
     type: _TranslatePipe,
-    pure: false
+    pure: false,
   });
   static ɵprov = ɵɵdefineInjectable({
     token: _TranslatePipe,
-    factory: _TranslatePipe.ɵfac
+    factory: _TranslatePipe.ɵfac,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TranslatePipe, [{
-    type: Injectable
-  }, {
-    type: Pipe,
-    args: [{
-      name: "translate",
-      standalone: true,
-      pure: false
-      // required to update the value when the promise is resolved
-    }]
-  }], () => [{
-    type: TranslateService
-  }, {
-    type: ChangeDetectorRef
-  }], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      TranslatePipe,
+      [
+        {
+          type: Injectable,
+        },
+        {
+          type: Pipe,
+          args: [
+            {
+              name: 'translate',
+              standalone: true,
+              pure: false,
+              // required to update the value when the promise is resolved
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TranslateService,
+        },
+        {
+          type: ChangeDetectorRef,
+        },
+      ],
+      null,
+    );
 })();
 function _(key) {
   return key;
 }
 var provideTranslateService = (config = {}) => {
-  return makeEnvironmentProviders([config.loader || {
-    provide: TranslateLoader,
-    useClass: TranslateFakeLoader
-  }, config.compiler || {
-    provide: TranslateCompiler,
-    useClass: TranslateFakeCompiler
-  }, config.parser || {
-    provide: TranslateParser,
-    useClass: TranslateDefaultParser
-  }, config.missingTranslationHandler || {
-    provide: MissingTranslationHandler,
-    useClass: FakeMissingTranslationHandler
-  }, TranslateStore, {
-    provide: ISOLATE_TRANSLATE_SERVICE,
-    useValue: config.isolate
-  }, {
-    provide: USE_DEFAULT_LANG,
-    useValue: config.useDefaultLang
-  }, {
-    provide: USE_EXTEND,
-    useValue: config.extend
-  }, {
-    provide: DEFAULT_LANGUAGE,
-    useValue: config.defaultLanguage
-  }, TranslateService]);
+  return makeEnvironmentProviders([
+    config.loader || {
+      provide: TranslateLoader,
+      useClass: TranslateFakeLoader,
+    },
+    config.compiler || {
+      provide: TranslateCompiler,
+      useClass: TranslateFakeCompiler,
+    },
+    config.parser || {
+      provide: TranslateParser,
+      useClass: TranslateDefaultParser,
+    },
+    config.missingTranslationHandler || {
+      provide: MissingTranslationHandler,
+      useClass: FakeMissingTranslationHandler,
+    },
+    TranslateStore,
+    {
+      provide: ISOLATE_TRANSLATE_SERVICE,
+      useValue: config.isolate,
+    },
+    {
+      provide: USE_DEFAULT_LANG,
+      useValue: config.useDefaultLang,
+    },
+    {
+      provide: USE_EXTEND,
+      useValue: config.extend,
+    },
+    {
+      provide: DEFAULT_LANGUAGE,
+      useValue: config.defaultLanguage,
+    },
+    TranslateService,
+  ]);
 };
 var TranslateModule = class _TranslateModule {
   /**
@@ -1113,31 +1269,42 @@ var TranslateModule = class _TranslateModule {
   static forRoot(config = {}) {
     return {
       ngModule: _TranslateModule,
-      providers: [config.loader || {
-        provide: TranslateLoader,
-        useClass: TranslateFakeLoader
-      }, config.compiler || {
-        provide: TranslateCompiler,
-        useClass: TranslateFakeCompiler
-      }, config.parser || {
-        provide: TranslateParser,
-        useClass: TranslateDefaultParser
-      }, config.missingTranslationHandler || {
-        provide: MissingTranslationHandler,
-        useClass: FakeMissingTranslationHandler
-      }, TranslateStore, {
-        provide: ISOLATE_TRANSLATE_SERVICE,
-        useValue: config.isolate
-      }, {
-        provide: USE_DEFAULT_LANG,
-        useValue: config.useDefaultLang
-      }, {
-        provide: USE_EXTEND,
-        useValue: config.extend
-      }, {
-        provide: DEFAULT_LANGUAGE,
-        useValue: config.defaultLanguage
-      }, TranslateService]
+      providers: [
+        config.loader || {
+          provide: TranslateLoader,
+          useClass: TranslateFakeLoader,
+        },
+        config.compiler || {
+          provide: TranslateCompiler,
+          useClass: TranslateFakeCompiler,
+        },
+        config.parser || {
+          provide: TranslateParser,
+          useClass: TranslateDefaultParser,
+        },
+        config.missingTranslationHandler || {
+          provide: MissingTranslationHandler,
+          useClass: FakeMissingTranslationHandler,
+        },
+        TranslateStore,
+        {
+          provide: ISOLATE_TRANSLATE_SERVICE,
+          useValue: config.isolate,
+        },
+        {
+          provide: USE_DEFAULT_LANG,
+          useValue: config.useDefaultLang,
+        },
+        {
+          provide: USE_EXTEND,
+          useValue: config.extend,
+        },
+        {
+          provide: DEFAULT_LANGUAGE,
+          useValue: config.defaultLanguage,
+        },
+        TranslateService,
+      ],
     };
   }
   /**
@@ -1146,31 +1313,41 @@ var TranslateModule = class _TranslateModule {
   static forChild(config = {}) {
     return {
       ngModule: _TranslateModule,
-      providers: [config.loader || {
-        provide: TranslateLoader,
-        useClass: TranslateFakeLoader
-      }, config.compiler || {
-        provide: TranslateCompiler,
-        useClass: TranslateFakeCompiler
-      }, config.parser || {
-        provide: TranslateParser,
-        useClass: TranslateDefaultParser
-      }, config.missingTranslationHandler || {
-        provide: MissingTranslationHandler,
-        useClass: FakeMissingTranslationHandler
-      }, {
-        provide: ISOLATE_TRANSLATE_SERVICE,
-        useValue: config.isolate
-      }, {
-        provide: USE_DEFAULT_LANG,
-        useValue: config.useDefaultLang
-      }, {
-        provide: USE_EXTEND,
-        useValue: config.extend
-      }, {
-        provide: DEFAULT_LANGUAGE,
-        useValue: config.defaultLanguage
-      }, TranslateService]
+      providers: [
+        config.loader || {
+          provide: TranslateLoader,
+          useClass: TranslateFakeLoader,
+        },
+        config.compiler || {
+          provide: TranslateCompiler,
+          useClass: TranslateFakeCompiler,
+        },
+        config.parser || {
+          provide: TranslateParser,
+          useClass: TranslateDefaultParser,
+        },
+        config.missingTranslationHandler || {
+          provide: MissingTranslationHandler,
+          useClass: FakeMissingTranslationHandler,
+        },
+        {
+          provide: ISOLATE_TRANSLATE_SERVICE,
+          useValue: config.isolate,
+        },
+        {
+          provide: USE_DEFAULT_LANG,
+          useValue: config.useDefaultLang,
+        },
+        {
+          provide: USE_EXTEND,
+          useValue: config.extend,
+        },
+        {
+          provide: DEFAULT_LANGUAGE,
+          useValue: config.defaultLanguage,
+        },
+        TranslateService,
+      ],
     };
   }
   static ɵfac = function TranslateModule_Factory(__ngFactoryType__) {
@@ -1179,18 +1356,28 @@ var TranslateModule = class _TranslateModule {
   static ɵmod = ɵɵdefineNgModule({
     type: _TranslateModule,
     imports: [TranslatePipe, TranslateDirective],
-    exports: [TranslatePipe, TranslateDirective]
+    exports: [TranslatePipe, TranslateDirective],
   });
   static ɵinj = ɵɵdefineInjector({});
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TranslateModule, [{
-    type: NgModule,
-    args: [{
-      imports: [TranslatePipe, TranslateDirective],
-      exports: [TranslatePipe, TranslateDirective]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      TranslateModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [TranslatePipe, TranslateDirective],
+              exports: [TranslatePipe, TranslateDirective],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 export {
   DEFAULT_LANGUAGE,
@@ -1221,6 +1408,6 @@ export {
   isString,
   mergeDeep,
   provideTranslateService,
-  setValue
+  setValue,
 };
 //# sourceMappingURL=@ngx-translate_core.js.map

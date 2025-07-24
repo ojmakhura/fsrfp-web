@@ -31,21 +31,25 @@ export class ShellComponent implements OnInit {
     this.menus = nav.menuItems;
 
     console.log(this.keycloak.profile);
-    this.keycloak.loadUserInfo().then(userInfo => {
+    this.keycloak.loadUserInfo().then((userInfo) => {
       console.log('User Info:', userInfo);
     });
   }
 
   logout() {
-    this.keycloak.logout({
-      redirectUri: window.location.origin
-    }).then(() => {});
+    this.keycloak
+      .logout({
+        redirectUri: window.location.origin,
+      })
+      .then(() => {});
   }
 
   login() {
-    this.keycloak.login({
-      redirectUri: window.location.origin
-    }).then(() => {});
+    this.keycloak
+      .login({
+        redirectUri: window.location.origin,
+      })
+      .then(() => {});
   }
 
   toggleSidenav() {

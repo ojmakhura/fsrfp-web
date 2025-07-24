@@ -45,10 +45,7 @@ export class ProcessListComponent implements OnInit {
   hasData = computed(() => (this.processes().content || []).length > 0);
 
   // Table configuration
-  columns: ColumnModel[] = [
-    new ColumnModel('name', 'name', false),
-    new ColumnModel('regulator', 'regulator', false),
-  ];
+  columns: ColumnModel[] = [new ColumnModel('name', 'name', false), new ColumnModel('regulator', 'regulator', false)];
 
   actions: ActionTemplate[] = [
     new ActionTemplate('view', 'action.view', 'visibility', 'tooltip.view'),

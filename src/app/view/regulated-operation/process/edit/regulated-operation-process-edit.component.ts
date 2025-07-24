@@ -98,15 +98,14 @@ export class RegulatedOperationProcessEditComponent implements OnInit, OnDestroy
     // Get all process IDs already assigned to this operation (excluding current process being edited)
     const assignedProcessIds = new Set(
       allRegulatedOperationProcesses
-        ?.filter(rop =>
-          rop.operationId === currentOperationId &&
-          (!currentProcessId || rop.id !== currentProcessId) // Exclude current process when editing
+        ?.filter(
+          (rop) => rop.operationId === currentOperationId && (!currentProcessId || rop.id !== currentProcessId), // Exclude current process when editing
         )
-        ?.map(rop => rop.processId) || []
+        ?.map((rop) => rop.processId) || [],
     );
 
     // Filter out already assigned processes
-    return allProcesses.filter(process => !assignedProcessIds.has(process.id));
+    return allProcesses.filter((process) => !assignedProcessIds.has(process.id));
   });
 
   // Available previous processes (excludes current process and selected next process)
@@ -117,7 +116,7 @@ export class RegulatedOperationProcessEditComponent implements OnInit, OnDestroy
 
     if (!allProcesses) return [];
 
-    return allProcesses.filter(p => {
+    return allProcesses.filter((p) => {
       // Filter out the current process if editing
       if (currentProcessId && p.id === currentProcessId) {
         return false;
@@ -138,7 +137,7 @@ export class RegulatedOperationProcessEditComponent implements OnInit, OnDestroy
 
     if (!allProcesses) return [];
 
-    return allProcesses.filter(p => {
+    return allProcesses.filter((p) => {
       // Filter out the current process if editing
       if (currentProcessId && p.id === currentProcessId) {
         return false;
@@ -179,19 +178,28 @@ export class RegulatedOperationProcessEditComponent implements OnInit, OnDestroy
     this.processForm = this.createForm();
 
     // Watch for form value changes to update reactive filters
-    this.processForm.get('operationId')?.valueChanges.pipe(takeUntil(this.destroy$)).subscribe(value => {
-      this.selectedOperationId.set(value || null);
-    });
+    this.processForm
+      .get('operationId')
+      ?.valueChanges.pipe(takeUntil(this.destroy$))
+      .subscribe((value) => {
+        this.selectedOperationId.set(value || null);
+      });
 
-    this.processForm.get('previousId')?.valueChanges.pipe(takeUntil(this.destroy$)).subscribe(value => {
-      // Value is now a RegulatedOperationProcessDTO object or null
-      this.selectedPreviousId.set(value?.id || null);
-    });
+    this.processForm
+      .get('previousId')
+      ?.valueChanges.pipe(takeUntil(this.destroy$))
+      .subscribe((value) => {
+        // Value is now a RegulatedOperationProcessDTO object or null
+        this.selectedPreviousId.set(value?.id || null);
+      });
 
-    this.processForm.get('nextId')?.valueChanges.pipe(takeUntil(this.destroy$)).subscribe(value => {
-      // Value is now a RegulatedOperationProcessDTO object or null
-      this.selectedNextId.set(value?.id || null);
-    });
+    this.processForm
+      .get('nextId')
+      ?.valueChanges.pipe(takeUntil(this.destroy$))
+      .subscribe((value) => {
+        // Value is now a RegulatedOperationProcessDTO object or null
+        this.selectedNextId.set(value?.id || null);
+      });
 
     // Watch for process data changes to populate form
     effect(() => {
@@ -258,8 +266,8 @@ export class RegulatedOperationProcessEditComponent implements OnInit, OnDestroy
   private populateForm(processData: RegulatedOperationProcessDTO): void {
     // Convert IDs to objects for the form if needed
     const allProcesses = this.regulatedOperationProcesses();
-    const previousProcess = allProcesses?.find(p => p.id === processData.previousId);
-    const nextProcess = allProcesses?.find(p => p.id === processData.nextId);
+    const previousProcess = allProcesses?.find((p) => p.id === processData.previousId);
+    const nextProcess = allProcesses?.find((p) => p.id === processData.nextId);
 
     this.processForm.patchValue({
       ...processData,
@@ -300,10 +308,11 @@ export class RegulatedOperationProcessEditComponent implements OnInit, OnDestroy
     const allRegulatedOperationProcesses = this.regulatedOperationProcesses();
     const currentProcessId = this.processId();
 
-    const existingAssignment = allRegulatedOperationProcesses?.find(rop =>
-      rop.operationId === selectedOperationId &&
-      rop.processId === selectedProcessId &&
-      (!currentProcessId || rop.id !== currentProcessId) // Exclude current process when editing
+    const existingAssignment = allRegulatedOperationProcesses?.find(
+      (rop) =>
+        rop.operationId === selectedOperationId &&
+        rop.processId === selectedProcessId &&
+        (!currentProcessId || rop.id !== currentProcessId), // Exclude current process when editing
     );
 
     return !existingAssignment;

@@ -28,7 +28,7 @@ import { DocumentTypeDTO } from '@app/model/bw/co/roguesystems/fsrfp/document/ty
 import { ProcessDTO } from '@app/model/bw/co/roguesystems/fsrfp/process/process-dto';
 import { DocumentApi } from '@app/service/bw/co/roguesystems/fsrfp/document/document-api';
 import { EntityType } from '@app/model/bw/co/roguesystems/fsrfp/entity-type';
-import { DocumentAttachmentComponent } from "../../document/attachment/document-attachment.component";
+import { DocumentAttachmentComponent } from '../../document/attachment/document-attachment.component';
 
 @Component({
   selector: 'app-regulator-view',
@@ -50,8 +50,8 @@ import { DocumentAttachmentComponent } from "../../document/attachment/document-
     MatFormFieldModule,
     MatSelectModule,
     TranslateModule,
-    DocumentAttachmentComponent
-],
+    DocumentAttachmentComponent,
+  ],
   templateUrl: './regulator-view.component.html',
   styleUrls: ['./regulator-view.component.scss'],
 })

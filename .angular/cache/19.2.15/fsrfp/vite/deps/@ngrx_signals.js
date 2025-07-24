@@ -10,15 +10,12 @@ import {
   setClassMetadata,
   signal,
   untracked,
-  ɵɵdefineInjectable
-} from "./chunk-LB7E77GG.js";
-import "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import "./chunk-4S3KYZTJ.js";
-import {
-  __spreadProps,
-  __spreadValues
-} from "./chunk-4MWRP73S.js";
+  ɵɵdefineInjectable,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import './chunk-WPM5VTLQ.js';
+import './chunk-4S3KYZTJ.js';
+import { __spreadProps, __spreadValues } from './chunk-4MWRP73S.js';
 
 // node_modules/@ngrx/signals/fesm2022/ngrx-signals.mjs
 function toDeepSignal(signal2) {
@@ -34,16 +31,16 @@ function toDeepSignal(signal2) {
       if (!isSignal(target[prop])) {
         Object.defineProperty(target, prop, {
           value: computed(() => target()[prop]),
-          configurable: true
+          configurable: true,
         });
       }
       return toDeepSignal(target[prop]);
-    }
+    },
   });
 }
 var nonRecords = [WeakSet, WeakMap, Promise, Date, Error, RegExp, ArrayBuffer, DataView, Function];
 function isRecord(value) {
-  if (value === null || typeof value !== "object" || isIterable(value)) {
+  if (value === null || typeof value !== 'object' || isIterable(value)) {
     return false;
   }
   let proto = Object.getPrototypeOf(value);
@@ -59,7 +56,7 @@ function isRecord(value) {
   return proto === Object.prototype;
 }
 function isIterable(value) {
-  return typeof value?.[Symbol.iterator] === "function";
+  return typeof value?.[Symbol.iterator] === 'function';
 }
 function deepComputed(computation) {
   return toDeepSignal(computed(computation));
@@ -73,16 +70,26 @@ function signalMethod(processingFn, config) {
   const signalMethodFn = (input, config2) => {
     if (isSignal(input)) {
       const callerInjector = getCallerInjector();
-      if (typeof ngDevMode !== "undefined" && ngDevMode && config2?.injector === void 0 && callerInjector === void 0) {
-        console.warn("@ngrx/signals: The function returned by signalMethod was called", "outside the injection context with a signal. This may lead to", "a memory leak. Make sure to call it within the injection context", "(e.g. in a constructor or field initializer) or pass an injector", "explicitly via the config parameter.\n\nFor more information, see:", "https://ngrx.io/guide/signals/signal-method#automatic-cleanup");
+      if (typeof ngDevMode !== 'undefined' && ngDevMode && config2?.injector === void 0 && callerInjector === void 0) {
+        console.warn(
+          '@ngrx/signals: The function returned by signalMethod was called',
+          'outside the injection context with a signal. This may lead to',
+          'a memory leak. Make sure to call it within the injection context',
+          '(e.g. in a constructor or field initializer) or pass an injector',
+          'explicitly via the config parameter.\n\nFor more information, see:',
+          'https://ngrx.io/guide/signals/signal-method#automatic-cleanup',
+        );
       }
       const instanceInjector = config2?.injector ?? callerInjector ?? sourceInjector;
-      const watcher = effect(() => {
-        const value = input();
-        untracked(() => processingFn(value));
-      }, {
-        injector: instanceInjector
-      });
+      const watcher = effect(
+        () => {
+          const value = input();
+          untracked(() => processingFn(value));
+        },
+        {
+          injector: instanceInjector,
+        },
+      );
       watchers.push(watcher);
       instanceInjector.get(DestroyRef).onDestroy(() => {
         const ix = watchers.indexOf(watcher);
@@ -94,7 +101,7 @@ function signalMethod(processingFn, config) {
     } else {
       processingFn(input);
       return {
-        destroy: () => void 0
+        destroy: () => void 0,
       };
     }
   };
@@ -109,12 +116,23 @@ function getCallerInjector() {
   }
 }
 var STATE_WATCHERS = /* @__PURE__ */ new WeakMap();
-var STATE_SOURCE = Symbol("STATE_SOURCE");
+var STATE_SOURCE = Symbol('STATE_SOURCE');
 function isWritableStateSource(stateSource) {
-  return "set" in stateSource[STATE_SOURCE] && "update" in stateSource[STATE_SOURCE] && typeof stateSource[STATE_SOURCE].set === "function" && typeof stateSource[STATE_SOURCE].update === "function";
+  return (
+    'set' in stateSource[STATE_SOURCE] &&
+    'update' in stateSource[STATE_SOURCE] &&
+    typeof stateSource[STATE_SOURCE].set === 'function' &&
+    typeof stateSource[STATE_SOURCE].update === 'function'
+  );
 }
 function patchState(stateSource, ...updaters) {
-  stateSource[STATE_SOURCE].update((currentState) => updaters.reduce((nextState, updater) => __spreadValues(__spreadValues({}, nextState), typeof updater === "function" ? updater(nextState) : updater), currentState));
+  stateSource[STATE_SOURCE].update((currentState) =>
+    updaters.reduce(
+      (nextState, updater) =>
+        __spreadValues(__spreadValues({}, nextState), typeof updater === 'function' ? updater(nextState) : updater),
+      currentState,
+    ),
+  );
   notifyWatchers(stateSource);
 }
 function getState(stateSource) {
@@ -131,7 +149,7 @@ function watchState(stateSource, watcher, config) {
   const destroy = () => removeWatcher(stateSource, watcher);
   destroyRef.onDestroy(destroy);
   return {
-    destroy
+    destroy,
   };
 }
 function getWatchers(stateSource) {
@@ -150,38 +168,33 @@ function addWatcher(stateSource, watcher) {
 }
 function removeWatcher(stateSource, watcher) {
   const watchers = getWatchers(stateSource);
-  STATE_WATCHERS.set(stateSource[STATE_SOURCE], watchers.filter((w) => w !== watcher));
+  STATE_WATCHERS.set(
+    stateSource[STATE_SOURCE],
+    watchers.filter((w) => w !== watcher),
+  );
 }
 function signalState(initialState) {
   const stateSource = signal(initialState);
   const signalState2 = toDeepSignal(stateSource.asReadonly());
   Object.defineProperty(signalState2, STATE_SOURCE, {
-    value: stateSource
+    value: stateSource,
   });
   return signalState2;
 }
 function signalStore(...args) {
   const signalStoreArgs = [...args];
-  const config = typeof signalStoreArgs[0] === "function" ? {} : signalStoreArgs.shift();
+  const config = typeof signalStoreArgs[0] === 'function' ? {} : signalStoreArgs.shift();
   const features = signalStoreArgs;
   class SignalStore {
     constructor() {
       const innerStore = features.reduce((store, feature) => feature(store), getInitialInnerStore());
-      const {
-        stateSignals,
-        props,
-        methods,
-        hooks
-      } = innerStore;
+      const { stateSignals, props, methods, hooks } = innerStore;
       const storeMembers = __spreadValues(__spreadValues(__spreadValues({}, stateSignals), props), methods);
       this[STATE_SOURCE] = innerStore[STATE_SOURCE];
       for (const key of Reflect.ownKeys(storeMembers)) {
         this[key] = storeMembers[key];
       }
-      const {
-        onInit,
-        onDestroy
-      } = hooks;
+      const { onInit, onDestroy } = hooks;
       if (onInit) {
         onInit();
       }
@@ -197,16 +210,26 @@ function signalStore(...args) {
     static ɵprov = ɵɵdefineInjectable({
       token: SignalStore,
       factory: SignalStore.ɵfac,
-      providedIn: config.providedIn || null
+      providedIn: config.providedIn || null,
     });
   }
   (() => {
-    (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SignalStore, [{
-      type: Injectable,
-      args: [{
-        providedIn: config.providedIn || null
-      }]
-    }], () => [], null);
+    (typeof ngDevMode === 'undefined' || ngDevMode) &&
+      setClassMetadata(
+        SignalStore,
+        [
+          {
+            type: Injectable,
+            args: [
+              {
+                providedIn: config.providedIn || null,
+              },
+            ],
+          },
+        ],
+        () => [],
+        null,
+      );
   })();
   return SignalStore;
 }
@@ -216,34 +239,52 @@ function getInitialInnerStore() {
     stateSignals: {},
     props: {},
     methods: {},
-    hooks: {}
+    hooks: {},
   };
 }
 function signalStoreFeature(featureOrInput, ...restFeatures) {
-  const features = typeof featureOrInput === "function" ? [featureOrInput, ...restFeatures] : restFeatures;
+  const features = typeof featureOrInput === 'function' ? [featureOrInput, ...restFeatures] : restFeatures;
   return (inputStore) => features.reduce((store, feature) => feature(store), inputStore);
 }
 function type() {
   return void 0;
 }
 function assertUniqueStoreMembers(store, newMemberKeys) {
-  if (typeof ngDevMode === "undefined" || !ngDevMode) {
+  if (typeof ngDevMode === 'undefined' || !ngDevMode) {
     return;
   }
-  const storeMembers = __spreadValues(__spreadValues(__spreadValues({}, store.stateSignals), store.props), store.methods);
+  const storeMembers = __spreadValues(
+    __spreadValues(__spreadValues({}, store.stateSignals), store.props),
+    store.methods,
+  );
   const overriddenKeys = Reflect.ownKeys(storeMembers).filter((memberKey) => newMemberKeys.includes(memberKey));
   if (overriddenKeys.length > 0) {
-    console.warn("@ngrx/signals: SignalStore members cannot be overridden.", "Trying to override:", overriddenKeys.map((key) => String(key)).join(", "));
+    console.warn(
+      '@ngrx/signals: SignalStore members cannot be overridden.',
+      'Trying to override:',
+      overriddenKeys.map((key) => String(key)).join(', '),
+    );
   }
 }
 function withProps(propsFactory) {
   return (store) => {
-    const props = propsFactory(__spreadValues(__spreadValues(__spreadValues({
-      [STATE_SOURCE]: store[STATE_SOURCE]
-    }, store.stateSignals), store.props), store.methods));
+    const props = propsFactory(
+      __spreadValues(
+        __spreadValues(
+          __spreadValues(
+            {
+              [STATE_SOURCE]: store[STATE_SOURCE],
+            },
+            store.stateSignals,
+          ),
+          store.props,
+        ),
+        store.methods,
+      ),
+    );
     assertUniqueStoreMembers(store, Reflect.ownKeys(props));
     return __spreadProps(__spreadValues({}, store), {
-      props: __spreadValues(__spreadValues({}, store.props), props)
+      props: __spreadValues(__spreadValues({}, store.props), props),
     });
   };
 }
@@ -252,61 +293,92 @@ function withComputed(signalsFactory) {
 }
 function withFeature(featureFactory) {
   return (store) => {
-    const storeForFactory = __spreadValues(__spreadValues(__spreadValues({
-      [STATE_SOURCE]: store[STATE_SOURCE]
-    }, store["stateSignals"]), store["props"]), store["methods"]);
+    const storeForFactory = __spreadValues(
+      __spreadValues(
+        __spreadValues(
+          {
+            [STATE_SOURCE]: store[STATE_SOURCE],
+          },
+          store['stateSignals'],
+        ),
+        store['props'],
+      ),
+      store['methods'],
+    );
     return featureFactory(storeForFactory)(store);
   };
 }
 function withHooks(hooksOrFactory) {
   return (store) => {
-    const storeMembers = __spreadValues(__spreadValues(__spreadValues({
-      [STATE_SOURCE]: store[STATE_SOURCE]
-    }, store.stateSignals), store.props), store.methods);
-    const hooks = typeof hooksOrFactory === "function" ? hooksOrFactory(storeMembers) : hooksOrFactory;
+    const storeMembers = __spreadValues(
+      __spreadValues(
+        __spreadValues(
+          {
+            [STATE_SOURCE]: store[STATE_SOURCE],
+          },
+          store.stateSignals,
+        ),
+        store.props,
+      ),
+      store.methods,
+    );
+    const hooks = typeof hooksOrFactory === 'function' ? hooksOrFactory(storeMembers) : hooksOrFactory;
     const createHook = (name) => {
       const hook = hooks[name];
       const currentHook = store.hooks[name];
-      return hook ? () => {
-        if (currentHook) {
-          currentHook();
-        }
-        hook(storeMembers);
-      } : currentHook;
+      return hook
+        ? () => {
+            if (currentHook) {
+              currentHook();
+            }
+            hook(storeMembers);
+          }
+        : currentHook;
     };
     return __spreadProps(__spreadValues({}, store), {
       hooks: {
-        onInit: createHook("onInit"),
-        onDestroy: createHook("onDestroy")
-      }
+        onInit: createHook('onInit'),
+        onDestroy: createHook('onDestroy'),
+      },
     });
   };
 }
 function withMethods(methodsFactory) {
   return (store) => {
-    const methods = methodsFactory(__spreadValues(__spreadValues(__spreadValues({
-      [STATE_SOURCE]: store[STATE_SOURCE]
-    }, store.stateSignals), store.props), store.methods));
+    const methods = methodsFactory(
+      __spreadValues(
+        __spreadValues(
+          __spreadValues(
+            {
+              [STATE_SOURCE]: store[STATE_SOURCE],
+            },
+            store.stateSignals,
+          ),
+          store.props,
+        ),
+        store.methods,
+      ),
+    );
     assertUniqueStoreMembers(store, Reflect.ownKeys(methods));
     return __spreadProps(__spreadValues({}, store), {
-      methods: __spreadValues(__spreadValues({}, store.methods), methods)
+      methods: __spreadValues(__spreadValues({}, store.methods), methods),
     });
   };
 }
 function withState(stateOrFactory) {
   return (store) => {
-    const state = typeof stateOrFactory === "function" ? stateOrFactory() : stateOrFactory;
+    const state = typeof stateOrFactory === 'function' ? stateOrFactory() : stateOrFactory;
     const stateKeys = Reflect.ownKeys(state);
     assertUniqueStoreMembers(store, stateKeys);
     store[STATE_SOURCE].update((currentState) => __spreadValues(__spreadValues({}, currentState), state));
     const stateSignals = stateKeys.reduce((acc, key) => {
       const sliceSignal = computed(() => store[STATE_SOURCE]()[key]);
       return __spreadProps(__spreadValues({}, acc), {
-        [key]: toDeepSignal(sliceSignal)
+        [key]: toDeepSignal(sliceSignal),
       });
     }, {});
     return __spreadProps(__spreadValues({}, store), {
-      stateSignals: __spreadValues(__spreadValues({}, store.stateSignals), stateSignals)
+      stateSignals: __spreadValues(__spreadValues({}, store.stateSignals), stateSignals),
     });
   };
 }
@@ -326,6 +398,6 @@ export {
   withHooks,
   withMethods,
   withProps,
-  withState
+  withState,
 };
 //# sourceMappingURL=@ngrx_signals.js.map

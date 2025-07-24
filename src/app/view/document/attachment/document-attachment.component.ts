@@ -40,7 +40,7 @@ import { LoaderComponent } from '@app/@shared';
     MatSelectModule,
     MatTooltipModule,
     TranslateModule,
-    LoaderComponent
+    LoaderComponent,
   ],
   templateUrl: './document-attachment.component.html',
   styleUrls: ['./document-attachment.component.scss'],
@@ -77,7 +77,6 @@ export class DocumentAttachmentComponent implements OnInit, OnDestroy {
 
   // Computed properties
   readonly documentsGroupedByType = computed(() => {
-
     const docs = this.documents() as DocumentDTO[];
 
     console.log('Documents:', docs);

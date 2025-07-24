@@ -1,26 +1,14 @@
-import {
-  SelectionModel
-} from "./chunk-XY3YD4BN.js";
-import {
-  MatPseudoCheckbox
-} from "./chunk-YE2P3HHV.js";
-import {
-  MatRippleModule
-} from "./chunk-WNGU3QLI.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-WXKJKQEY.js";
-import {
-  MatRipple
-} from "./chunk-6K32XFRM.js";
-import {
-  _StructuralStylesLoader
-} from "./chunk-IBJRQVUD.js";
-import "./chunk-BS4LDW6B.js";
-import "./chunk-42FJBLFI.js";
-import "./chunk-JXBCBRYI.js";
-import "./chunk-HYIG2K5W.js";
-import "./chunk-2O4WY5GE.js";
+import { SelectionModel } from './chunk-XY3YD4BN.js';
+import { NG_VALUE_ACCESSOR } from './chunk-WXKJKQEY.js';
+import { MatPseudoCheckbox } from './chunk-YE2P3HHV.js';
+import { MatRippleModule } from './chunk-WNGU3QLI.js';
+import { MatRipple } from './chunk-6K32XFRM.js';
+import { _StructuralStylesLoader } from './chunk-IBJRQVUD.js';
+import './chunk-BS4LDW6B.js';
+import './chunk-42FJBLFI.js';
+import './chunk-JXBCBRYI.js';
+import './chunk-HYIG2K5W.js';
+import './chunk-2O4WY5GE.js';
 import {
   DOWN_ARROW,
   ENTER,
@@ -30,19 +18,15 @@ import {
   RIGHT_ARROW,
   SPACE,
   UP_ARROW,
-  _IdGenerator
-} from "./chunk-PQSRNTO7.js";
-import "./chunk-5RHDU2BP.js";
-import {
-  _CdkPrivateStyleLoader
-} from "./chunk-RG7RHNTG.js";
-import {
-  Directionality
-} from "./chunk-HNGPX6GY.js";
-import "./chunk-GWH5ZIVQ.js";
-import "./chunk-FSIK44TS.js";
-import "./chunk-LJRMVWU3.js";
-import "./chunk-SOO5Y25R.js";
+  _IdGenerator,
+} from './chunk-PQSRNTO7.js';
+import './chunk-5RHDU2BP.js';
+import { _CdkPrivateStyleLoader } from './chunk-RG7RHNTG.js';
+import { Directionality } from './chunk-HNGPX6GY.js';
+import './chunk-GWH5ZIVQ.js';
+import './chunk-FSIK44TS.js';
+import './chunk-LJRMVWU3.js';
+import './chunk-SOO5Y25R.js';
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionStrategy,
@@ -88,44 +72,44 @@ import {
   ɵɵresetView,
   ɵɵrestoreView,
   ɵɵtemplate,
-  ɵɵviewQuery
-} from "./chunk-LB7E77GG.js";
-import "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import "./chunk-4S3KYZTJ.js";
-import "./chunk-4MWRP73S.js";
+  ɵɵviewQuery,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import './chunk-WPM5VTLQ.js';
+import './chunk-4S3KYZTJ.js';
+import './chunk-4MWRP73S.js';
 
 // node_modules/@angular/material/fesm2022/button-toggle.mjs
-var _c0 = ["button"];
-var _c1 = ["*"];
+var _c0 = ['button'];
+var _c1 = ['*'];
 function MatButtonToggle_Conditional_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 2);
-    ɵɵelement(1, "mat-pseudo-checkbox", 6);
+    ɵɵelementStart(0, 'div', 2);
+    ɵɵelement(1, 'mat-pseudo-checkbox', 6);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵproperty("disabled", ctx_r1.disabled);
+    ɵɵproperty('disabled', ctx_r1.disabled);
   }
 }
-var MAT_BUTTON_TOGGLE_DEFAULT_OPTIONS = new InjectionToken("MAT_BUTTON_TOGGLE_DEFAULT_OPTIONS", {
-  providedIn: "root",
-  factory: MAT_BUTTON_TOGGLE_GROUP_DEFAULT_OPTIONS_FACTORY
+var MAT_BUTTON_TOGGLE_DEFAULT_OPTIONS = new InjectionToken('MAT_BUTTON_TOGGLE_DEFAULT_OPTIONS', {
+  providedIn: 'root',
+  factory: MAT_BUTTON_TOGGLE_GROUP_DEFAULT_OPTIONS_FACTORY,
 });
 function MAT_BUTTON_TOGGLE_GROUP_DEFAULT_OPTIONS_FACTORY() {
   return {
     hideSingleSelectionIndicator: false,
     hideMultipleSelectionIndicator: false,
-    disabledInteractive: false
+    disabledInteractive: false,
   };
 }
-var MAT_BUTTON_TOGGLE_GROUP = new InjectionToken("MatButtonToggleGroup");
+var MAT_BUTTON_TOGGLE_GROUP = new InjectionToken('MatButtonToggleGroup');
 var MAT_BUTTON_TOGGLE_GROUP_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
   useExisting: forwardRef(() => MatButtonToggleGroup),
-  multi: true
+  multi: true,
 };
 var MatButtonToggleChange = class {
   source;
@@ -138,7 +122,7 @@ var MatButtonToggleChange = class {
 var MatButtonToggleGroup = class _MatButtonToggleGroup {
   _changeDetector = inject(ChangeDetectorRef);
   _dir = inject(Directionality, {
-    optional: true
+    optional: true,
   });
   _multiple = false;
   _disabled = false;
@@ -155,11 +139,9 @@ var MatButtonToggleGroup = class _MatButtonToggleGroup {
    * The method to be called in order to update ngModel.
    * Now `ngModel` binding is not supported in multiple selection mode.
    */
-  _controlValueAccessorChangeFn = () => {
-  };
+  _controlValueAccessorChangeFn = () => {};
   /** onTouch function registered via registerOnTouch (ControlValueAccessor). */
-  _onTouched = () => {
-  };
+  _onTouched = () => {};
   /** Child button toggle buttons. */
   _buttonToggles;
   /** The appearance for all the buttons in the group. */
@@ -172,7 +154,7 @@ var MatButtonToggleGroup = class _MatButtonToggleGroup {
     this._name = value;
     this._markButtonsForCheck();
   }
-  _name = inject(_IdGenerator).getId("mat-button-toggle-group-");
+  _name = inject(_IdGenerator).getId('mat-button-toggle-group-');
   /** Whether the toggle group is vertical. */
   vertical;
   /** Value of the toggle group. */
@@ -224,7 +206,7 @@ var MatButtonToggleGroup = class _MatButtonToggleGroup {
   }
   /** The layout direction of the toggle button group. */
   get dir() {
-    return this._dir && this._dir.value === "rtl" ? "rtl" : "ltr";
+    return this._dir && this._dir.value === 'rtl' ? 'rtl' : 'ltr';
   }
   /** Event emitted when the group's value changes. */
   change = new EventEmitter();
@@ -248,9 +230,9 @@ var MatButtonToggleGroup = class _MatButtonToggleGroup {
   _hideMultipleSelectionIndicator;
   constructor() {
     const defaultOptions = inject(MAT_BUTTON_TOGGLE_DEFAULT_OPTIONS, {
-      optional: true
+      optional: true,
     });
-    this.appearance = defaultOptions && defaultOptions.appearance ? defaultOptions.appearance : "standard";
+    this.appearance = defaultOptions && defaultOptions.appearance ? defaultOptions.appearance : 'standard';
     this.hideSingleSelectionIndicator = defaultOptions?.hideSingleSelectionIndicator ?? false;
     this.hideMultipleSelectionIndicator = defaultOptions?.hideMultipleSelectionIndicator ?? false;
   }
@@ -303,13 +285,13 @@ var MatButtonToggleGroup = class _MatButtonToggleGroup {
         nextButton = this._getNextButton(index, -1);
         break;
       case LEFT_ARROW:
-        nextButton = this._getNextButton(index, this.dir === "ltr" ? -1 : 1);
+        nextButton = this._getNextButton(index, this.dir === 'ltr' ? -1 : 1);
         break;
       case DOWN_ARROW:
         nextButton = this._getNextButton(index, 1);
         break;
       case RIGHT_ARROW:
-        nextButton = this._getNextButton(index, this.dir === "ltr" ? 1 : -1);
+        nextButton = this._getNextButton(index, this.dir === 'ltr' ? 1 : -1);
         break;
       default:
         return;
@@ -359,7 +341,7 @@ var MatButtonToggleGroup = class _MatButtonToggleGroup {
   }
   /** Determines whether a button toggle should be checked on init. */
   _isPrechecked(toggle) {
-    if (typeof this._rawValue === "undefined") {
+    if (typeof this._rawValue === 'undefined') {
       return false;
     }
     if (this.multiple && Array.isArray(this._rawValue)) {
@@ -405,8 +387,8 @@ var MatButtonToggleGroup = class _MatButtonToggleGroup {
     }
     const toggles = this._buttonToggles.toArray();
     if (this.multiple && value) {
-      if (!Array.isArray(value) && (typeof ngDevMode === "undefined" || ngDevMode)) {
-        throw Error("Value must be an array in multiple-selection mode.");
+      if (!Array.isArray(value) && (typeof ngDevMode === 'undefined' || ngDevMode)) {
+        throw Error('Value must be an array in multiple-selection mode.');
       }
       this._clearSelection();
       value.forEach((currentValue) => this._selectValue(currentValue, toggles));
@@ -462,131 +444,201 @@ var MatButtonToggleGroup = class _MatButtonToggleGroup {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatButtonToggleGroup,
-    selectors: [["mat-button-toggle-group"]],
+    selectors: [['mat-button-toggle-group']],
     contentQueries: function MatButtonToggleGroup_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MatButtonToggle, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._buttonToggles = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._buttonToggles = _t);
       }
     },
-    hostAttrs: [1, "mat-button-toggle-group"],
+    hostAttrs: [1, 'mat-button-toggle-group'],
     hostVars: 6,
     hostBindings: function MatButtonToggleGroup_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("keydown", function MatButtonToggleGroup_keydown_HostBindingHandler($event) {
+        ɵɵlistener('keydown', function MatButtonToggleGroup_keydown_HostBindingHandler($event) {
           return ctx._keydown($event);
         });
       }
       if (rf & 2) {
-        ɵɵattribute("role", ctx.multiple ? "group" : "radiogroup")("aria-disabled", ctx.disabled);
-        ɵɵclassProp("mat-button-toggle-vertical", ctx.vertical)("mat-button-toggle-group-appearance-standard", ctx.appearance === "standard");
+        ɵɵattribute('role', ctx.multiple ? 'group' : 'radiogroup')('aria-disabled', ctx.disabled);
+        ɵɵclassProp('mat-button-toggle-vertical', ctx.vertical)(
+          'mat-button-toggle-group-appearance-standard',
+          ctx.appearance === 'standard',
+        );
       }
     },
     inputs: {
-      appearance: "appearance",
-      name: "name",
-      vertical: [2, "vertical", "vertical", booleanAttribute],
-      value: "value",
-      multiple: [2, "multiple", "multiple", booleanAttribute],
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      disabledInteractive: [2, "disabledInteractive", "disabledInteractive", booleanAttribute],
-      hideSingleSelectionIndicator: [2, "hideSingleSelectionIndicator", "hideSingleSelectionIndicator", booleanAttribute],
-      hideMultipleSelectionIndicator: [2, "hideMultipleSelectionIndicator", "hideMultipleSelectionIndicator", booleanAttribute]
+      appearance: 'appearance',
+      name: 'name',
+      vertical: [2, 'vertical', 'vertical', booleanAttribute],
+      value: 'value',
+      multiple: [2, 'multiple', 'multiple', booleanAttribute],
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
+      disabledInteractive: [2, 'disabledInteractive', 'disabledInteractive', booleanAttribute],
+      hideSingleSelectionIndicator: [
+        2,
+        'hideSingleSelectionIndicator',
+        'hideSingleSelectionIndicator',
+        booleanAttribute,
+      ],
+      hideMultipleSelectionIndicator: [
+        2,
+        'hideMultipleSelectionIndicator',
+        'hideMultipleSelectionIndicator',
+        booleanAttribute,
+      ],
     },
     outputs: {
-      valueChange: "valueChange",
-      change: "change"
+      valueChange: 'valueChange',
+      change: 'change',
     },
-    exportAs: ["matButtonToggleGroup"],
-    features: [ɵɵProvidersFeature([MAT_BUTTON_TOGGLE_GROUP_VALUE_ACCESSOR, {
-      provide: MAT_BUTTON_TOGGLE_GROUP,
-      useExisting: _MatButtonToggleGroup
-    }])]
+    exportAs: ['matButtonToggleGroup'],
+    features: [
+      ɵɵProvidersFeature([
+        MAT_BUTTON_TOGGLE_GROUP_VALUE_ACCESSOR,
+        {
+          provide: MAT_BUTTON_TOGGLE_GROUP,
+          useExisting: _MatButtonToggleGroup,
+        },
+      ]),
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatButtonToggleGroup, [{
-    type: Directive,
-    args: [{
-      selector: "mat-button-toggle-group",
-      providers: [MAT_BUTTON_TOGGLE_GROUP_VALUE_ACCESSOR, {
-        provide: MAT_BUTTON_TOGGLE_GROUP,
-        useExisting: MatButtonToggleGroup
-      }],
-      host: {
-        "class": "mat-button-toggle-group",
-        "(keydown)": "_keydown($event)",
-        "[attr.role]": "multiple ? 'group' : 'radiogroup'",
-        "[attr.aria-disabled]": "disabled",
-        "[class.mat-button-toggle-vertical]": "vertical",
-        "[class.mat-button-toggle-group-appearance-standard]": 'appearance === "standard"'
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatButtonToggleGroup,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'mat-button-toggle-group',
+              providers: [
+                MAT_BUTTON_TOGGLE_GROUP_VALUE_ACCESSOR,
+                {
+                  provide: MAT_BUTTON_TOGGLE_GROUP,
+                  useExisting: MatButtonToggleGroup,
+                },
+              ],
+              host: {
+                class: 'mat-button-toggle-group',
+                '(keydown)': '_keydown($event)',
+                '[attr.role]': "multiple ? 'group' : 'radiogroup'",
+                '[attr.aria-disabled]': 'disabled',
+                '[class.mat-button-toggle-vertical]': 'vertical',
+                '[class.mat-button-toggle-group-appearance-standard]': 'appearance === "standard"',
+              },
+              exportAs: 'matButtonToggleGroup',
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        _buttonToggles: [
+          {
+            type: ContentChildren,
+            args: [
+              forwardRef(() => MatButtonToggle),
+              {
+                // Note that this would technically pick up toggles
+                // from nested groups, but that's not a case that we support.
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        appearance: [
+          {
+            type: Input,
+          },
+        ],
+        name: [
+          {
+            type: Input,
+          },
+        ],
+        vertical: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        value: [
+          {
+            type: Input,
+          },
+        ],
+        valueChange: [
+          {
+            type: Output,
+          },
+        ],
+        multiple: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        disabledInteractive: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        change: [
+          {
+            type: Output,
+          },
+        ],
+        hideSingleSelectionIndicator: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        hideMultipleSelectionIndicator: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
       },
-      exportAs: "matButtonToggleGroup"
-    }]
-  }], () => [], {
-    _buttonToggles: [{
-      type: ContentChildren,
-      args: [forwardRef(() => MatButtonToggle), {
-        // Note that this would technically pick up toggles
-        // from nested groups, but that's not a case that we support.
-        descendants: true
-      }]
-    }],
-    appearance: [{
-      type: Input
-    }],
-    name: [{
-      type: Input
-    }],
-    vertical: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    value: [{
-      type: Input
-    }],
-    valueChange: [{
-      type: Output
-    }],
-    multiple: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    disabledInteractive: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    change: [{
-      type: Output
-    }],
-    hideSingleSelectionIndicator: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    hideMultipleSelectionIndicator: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }]
-  });
+    );
 })();
 var MatButtonToggle = class _MatButtonToggle {
   _changeDetectorRef = inject(ChangeDetectorRef);
@@ -594,7 +646,7 @@ var MatButtonToggle = class _MatButtonToggle {
   _focusMonitor = inject(FocusMonitor);
   _idGenerator = inject(_IdGenerator);
   _animationMode = inject(ANIMATION_MODULE_TYPE, {
-    optional: true
+    optional: true,
   });
   _checked = false;
   /**
@@ -656,7 +708,7 @@ var MatButtonToggle = class _MatButtonToggle {
   }
   /** Whether the button is disabled. */
   get disabled() {
-    return this._disabled || this.buttonToggleGroup && this.buttonToggleGroup.disabled;
+    return this._disabled || (this.buttonToggleGroup && this.buttonToggleGroup.disabled);
   }
   set disabled(value) {
     this._disabled = value;
@@ -664,7 +716,7 @@ var MatButtonToggle = class _MatButtonToggle {
   _disabled = false;
   /** Whether the button should remain interactive when it is disabled. */
   get disabledInteractive() {
-    return this._disabledInteractive || this.buttonToggleGroup !== null && this.buttonToggleGroup.disabledInteractive;
+    return this._disabledInteractive || (this.buttonToggleGroup !== null && this.buttonToggleGroup.disabledInteractive);
   }
   set disabledInteractive(value) {
     this._disabledInteractive = value;
@@ -675,22 +727,23 @@ var MatButtonToggle = class _MatButtonToggle {
   constructor() {
     inject(_CdkPrivateStyleLoader).load(_StructuralStylesLoader);
     const toggleGroup = inject(MAT_BUTTON_TOGGLE_GROUP, {
-      optional: true
+      optional: true,
     });
-    const defaultTabIndex = inject(new HostAttributeToken("tabindex"), {
-      optional: true
-    }) || "";
+    const defaultTabIndex =
+      inject(new HostAttributeToken('tabindex'), {
+        optional: true,
+      }) || '';
     const defaultOptions = inject(MAT_BUTTON_TOGGLE_DEFAULT_OPTIONS, {
-      optional: true
+      optional: true,
     });
     this._tabIndex = parseInt(defaultTabIndex) || 0;
     this.buttonToggleGroup = toggleGroup;
-    this.appearance = defaultOptions && defaultOptions.appearance ? defaultOptions.appearance : "standard";
+    this.appearance = defaultOptions && defaultOptions.appearance ? defaultOptions.appearance : 'standard';
     this.disabledInteractive = defaultOptions?.disabledInteractive ?? false;
   }
   ngOnInit() {
     const group = this.buttonToggleGroup;
-    this.id = this.id || this._idGenerator.getId("mat-button-toggle-");
+    this.id = this.id || this._idGenerator.getId('mat-button-toggle-');
     if (group) {
       if (group._isPrechecked(this)) {
         this.checked = true;
@@ -700,8 +753,8 @@ var MatButtonToggle = class _MatButtonToggle {
     }
   }
   ngAfterViewInit() {
-    if (this._animationMode !== "NoopAnimations") {
-      this._elementRef.nativeElement.classList.add("mat-button-toggle-animations-enabled");
+    if (this._animationMode !== 'NoopAnimations') {
+      this._elementRef.nativeElement.classList.add('mat-button-toggle-animations-enabled');
     }
     this._focusMonitor.monitor(this._elementRef, true);
   }
@@ -764,105 +817,141 @@ var MatButtonToggle = class _MatButtonToggle {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatButtonToggle,
-    selectors: [["mat-button-toggle"]],
+    selectors: [['mat-button-toggle']],
     viewQuery: function MatButtonToggle_Query(rf, ctx) {
       if (rf & 1) {
         ɵɵviewQuery(_c0, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._buttonElement = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._buttonElement = _t.first);
       }
     },
-    hostAttrs: ["role", "presentation", 1, "mat-button-toggle"],
+    hostAttrs: ['role', 'presentation', 1, 'mat-button-toggle'],
     hostVars: 14,
     hostBindings: function MatButtonToggle_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("focus", function MatButtonToggle_focus_HostBindingHandler() {
+        ɵɵlistener('focus', function MatButtonToggle_focus_HostBindingHandler() {
           return ctx.focus();
         });
       }
       if (rf & 2) {
-        ɵɵattribute("aria-label", null)("aria-labelledby", null)("id", ctx.id)("name", null);
-        ɵɵclassProp("mat-button-toggle-standalone", !ctx.buttonToggleGroup)("mat-button-toggle-checked", ctx.checked)("mat-button-toggle-disabled", ctx.disabled)("mat-button-toggle-disabled-interactive", ctx.disabledInteractive)("mat-button-toggle-appearance-standard", ctx.appearance === "standard");
+        ɵɵattribute('aria-label', null)('aria-labelledby', null)('id', ctx.id)('name', null);
+        ɵɵclassProp('mat-button-toggle-standalone', !ctx.buttonToggleGroup)('mat-button-toggle-checked', ctx.checked)(
+          'mat-button-toggle-disabled',
+          ctx.disabled,
+        )('mat-button-toggle-disabled-interactive', ctx.disabledInteractive)(
+          'mat-button-toggle-appearance-standard',
+          ctx.appearance === 'standard',
+        );
       }
     },
     inputs: {
-      ariaLabel: [0, "aria-label", "ariaLabel"],
-      ariaLabelledby: [0, "aria-labelledby", "ariaLabelledby"],
-      id: "id",
-      name: "name",
-      value: "value",
-      tabIndex: "tabIndex",
-      disableRipple: [2, "disableRipple", "disableRipple", booleanAttribute],
-      appearance: "appearance",
-      checked: [2, "checked", "checked", booleanAttribute],
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      disabledInteractive: [2, "disabledInteractive", "disabledInteractive", booleanAttribute]
+      ariaLabel: [0, 'aria-label', 'ariaLabel'],
+      ariaLabelledby: [0, 'aria-labelledby', 'ariaLabelledby'],
+      id: 'id',
+      name: 'name',
+      value: 'value',
+      tabIndex: 'tabIndex',
+      disableRipple: [2, 'disableRipple', 'disableRipple', booleanAttribute],
+      appearance: 'appearance',
+      checked: [2, 'checked', 'checked', booleanAttribute],
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
+      disabledInteractive: [2, 'disabledInteractive', 'disabledInteractive', booleanAttribute],
     },
     outputs: {
-      change: "change"
+      change: 'change',
     },
-    exportAs: ["matButtonToggle"],
+    exportAs: ['matButtonToggle'],
     ngContentSelectors: _c1,
     decls: 7,
     vars: 13,
-    consts: [["button", ""], ["type", "button", 1, "mat-button-toggle-button", "mat-focus-indicator", 3, "click", "id", "disabled"], [1, "mat-button-toggle-checkbox-wrapper"], [1, "mat-button-toggle-label-content"], [1, "mat-button-toggle-focus-overlay"], ["matRipple", "", 1, "mat-button-toggle-ripple", 3, "matRippleTrigger", "matRippleDisabled"], ["state", "checked", "aria-hidden", "true", "appearance", "minimal", 3, "disabled"]],
+    consts: [
+      ['button', ''],
+      ['type', 'button', 1, 'mat-button-toggle-button', 'mat-focus-indicator', 3, 'click', 'id', 'disabled'],
+      [1, 'mat-button-toggle-checkbox-wrapper'],
+      [1, 'mat-button-toggle-label-content'],
+      [1, 'mat-button-toggle-focus-overlay'],
+      ['matRipple', '', 1, 'mat-button-toggle-ripple', 3, 'matRippleTrigger', 'matRippleDisabled'],
+      ['state', 'checked', 'aria-hidden', 'true', 'appearance', 'minimal', 3, 'disabled'],
+    ],
     template: function MatButtonToggle_Template(rf, ctx) {
       if (rf & 1) {
         const _r1 = ɵɵgetCurrentView();
         ɵɵprojectionDef();
-        ɵɵelementStart(0, "button", 1, 0);
-        ɵɵlistener("click", function MatButtonToggle_Template_button_click_0_listener() {
+        ɵɵelementStart(0, 'button', 1, 0);
+        ɵɵlistener('click', function MatButtonToggle_Template_button_click_0_listener() {
           ɵɵrestoreView(_r1);
           return ɵɵresetView(ctx._onButtonClick());
         });
-        ɵɵtemplate(2, MatButtonToggle_Conditional_2_Template, 2, 1, "div", 2);
-        ɵɵelementStart(3, "span", 3);
+        ɵɵtemplate(2, MatButtonToggle_Conditional_2_Template, 2, 1, 'div', 2);
+        ɵɵelementStart(3, 'span', 3);
         ɵɵprojection(4);
         ɵɵelementEnd()();
-        ɵɵelement(5, "span", 4)(6, "span", 5);
+        ɵɵelement(5, 'span', 4)(6, 'span', 5);
       }
       if (rf & 2) {
         const button_r3 = ɵɵreference(1);
-        ɵɵproperty("id", ctx.buttonId)("disabled", ctx.disabled && !ctx.disabledInteractive || null);
-        ɵɵattribute("role", ctx.isSingleSelector() ? "radio" : "button")("tabindex", ctx.disabled && !ctx.disabledInteractive ? -1 : ctx.tabIndex)("aria-pressed", !ctx.isSingleSelector() ? ctx.checked : null)("aria-checked", ctx.isSingleSelector() ? ctx.checked : null)("name", ctx._getButtonName())("aria-label", ctx.ariaLabel)("aria-labelledby", ctx.ariaLabelledby)("aria-disabled", ctx.disabled && ctx.disabledInteractive ? "true" : null);
+        ɵɵproperty('id', ctx.buttonId)('disabled', (ctx.disabled && !ctx.disabledInteractive) || null);
+        ɵɵattribute('role', ctx.isSingleSelector() ? 'radio' : 'button')(
+          'tabindex',
+          ctx.disabled && !ctx.disabledInteractive ? -1 : ctx.tabIndex,
+        )('aria-pressed', !ctx.isSingleSelector() ? ctx.checked : null)(
+          'aria-checked',
+          ctx.isSingleSelector() ? ctx.checked : null,
+        )('name', ctx._getButtonName())('aria-label', ctx.ariaLabel)('aria-labelledby', ctx.ariaLabelledby)(
+          'aria-disabled',
+          ctx.disabled && ctx.disabledInteractive ? 'true' : null,
+        );
         ɵɵadvance(2);
-        ɵɵconditional(ctx.buttonToggleGroup && (!ctx.buttonToggleGroup.multiple && !ctx.buttonToggleGroup.hideSingleSelectionIndicator || ctx.buttonToggleGroup.multiple && !ctx.buttonToggleGroup.hideMultipleSelectionIndicator) ? 2 : -1);
+        ɵɵconditional(
+          ctx.buttonToggleGroup &&
+            ((!ctx.buttonToggleGroup.multiple && !ctx.buttonToggleGroup.hideSingleSelectionIndicator) ||
+              (ctx.buttonToggleGroup.multiple && !ctx.buttonToggleGroup.hideMultipleSelectionIndicator))
+            ? 2
+            : -1,
+        );
         ɵɵadvance(4);
-        ɵɵproperty("matRippleTrigger", button_r3)("matRippleDisabled", ctx.disableRipple || ctx.disabled);
+        ɵɵproperty('matRippleTrigger', button_r3)('matRippleDisabled', ctx.disableRipple || ctx.disabled);
       }
     },
     dependencies: [MatRipple, MatPseudoCheckbox],
-    styles: [".mat-button-toggle-standalone,.mat-button-toggle-group{position:relative;display:inline-flex;flex-direction:row;white-space:nowrap;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);transform:translateZ(0);border-radius:var(--mat-legacy-button-toggle-shape)}.mat-button-toggle-standalone:not([class*=mat-elevation-z]),.mat-button-toggle-group:not([class*=mat-elevation-z]){box-shadow:0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)}@media(forced-colors: active){.mat-button-toggle-standalone,.mat-button-toggle-group{outline:solid 1px}}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,.mat-button-toggle-group-appearance-standard{border-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard .mat-pseudo-checkbox,.mat-button-toggle-group-appearance-standard .mat-pseudo-checkbox{--mat-minimal-pseudo-checkbox-selected-checkmark-color: var(--mat-standard-button-toggle-selected-state-text-color, var(--mat-sys-on-secondary-container))}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard:not([class*=mat-elevation-z]),.mat-button-toggle-group-appearance-standard:not([class*=mat-elevation-z]){box-shadow:none}@media(forced-colors: active){.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,.mat-button-toggle-group-appearance-standard{outline:0}}.mat-button-toggle-vertical{flex-direction:column}.mat-button-toggle-vertical .mat-button-toggle-label-content{display:block}.mat-button-toggle{white-space:nowrap;position:relative;color:var(--mat-legacy-button-toggle-text-color);font-family:var(--mat-legacy-button-toggle-label-text-font);font-size:var(--mat-legacy-button-toggle-label-text-size);line-height:var(--mat-legacy-button-toggle-label-text-line-height);font-weight:var(--mat-legacy-button-toggle-label-text-weight);letter-spacing:var(--mat-legacy-button-toggle-label-text-tracking);--mat-minimal-pseudo-checkbox-selected-checkmark-color: var(--mat-legacy-button-toggle-selected-state-text-color)}.mat-button-toggle.cdk-keyboard-focused .mat-button-toggle-focus-overlay{opacity:var(--mat-legacy-button-toggle-focus-state-layer-opacity)}.mat-button-toggle .mat-icon svg{vertical-align:top}.mat-button-toggle-checkbox-wrapper{display:inline-block;justify-content:flex-start;align-items:center;width:0;height:18px;line-height:18px;overflow:hidden;box-sizing:border-box;position:absolute;top:50%;left:16px;transform:translate3d(0, -50%, 0)}[dir=rtl] .mat-button-toggle-checkbox-wrapper{left:auto;right:16px}.mat-button-toggle-appearance-standard .mat-button-toggle-checkbox-wrapper{left:12px}[dir=rtl] .mat-button-toggle-appearance-standard .mat-button-toggle-checkbox-wrapper{left:auto;right:12px}.mat-button-toggle-checked .mat-button-toggle-checkbox-wrapper{width:18px}.mat-button-toggle-animations-enabled .mat-button-toggle-checkbox-wrapper{transition:width 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mat-button-toggle-vertical .mat-button-toggle-checkbox-wrapper{transition:none}.mat-button-toggle-checked{color:var(--mat-legacy-button-toggle-selected-state-text-color);background-color:var(--mat-legacy-button-toggle-selected-state-background-color)}.mat-button-toggle-disabled{pointer-events:none;color:var(--mat-legacy-button-toggle-disabled-state-text-color);background-color:var(--mat-legacy-button-toggle-disabled-state-background-color);--mat-minimal-pseudo-checkbox-disabled-selected-checkmark-color: var(--mat-legacy-button-toggle-disabled-state-text-color)}.mat-button-toggle-disabled.mat-button-toggle-checked{background-color:var(--mat-legacy-button-toggle-disabled-selected-state-background-color)}.mat-button-toggle-disabled-interactive{pointer-events:auto}.mat-button-toggle-appearance-standard{color:var(--mat-standard-button-toggle-text-color, var(--mat-sys-on-surface));background-color:var(--mat-standard-button-toggle-background-color, transparent);font-family:var(--mat-standard-button-toggle-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-standard-button-toggle-label-text-size, var(--mat-sys-label-large-size));line-height:var(--mat-standard-button-toggle-label-text-line-height, var(--mat-sys-label-large-line-height));font-weight:var(--mat-standard-button-toggle-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mat-standard-button-toggle-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}[dir=rtl] .mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:none;border-right:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:none;border-right:none;border-top:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-appearance-standard.mat-button-toggle-checked{color:var(--mat-standard-button-toggle-selected-state-text-color, var(--mat-sys-on-secondary-container));background-color:var(--mat-standard-button-toggle-selected-state-background-color, var(--mat-sys-secondary-container))}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled{color:var(--mat-standard-button-toggle-disabled-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-standard-button-toggle-disabled-state-background-color, transparent)}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled .mat-pseudo-checkbox{--mat-minimal-pseudo-checkbox-disabled-selected-checkmark-color: var(--mat-standard-button-toggle-disabled-selected-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled.mat-button-toggle-checked{color:var(--mat-standard-button-toggle-disabled-selected-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-standard-button-toggle-disabled-selected-state-background-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay{background-color:var(--mat-standard-button-toggle-state-layer-color, var(--mat-sys-on-surface))}.mat-button-toggle-appearance-standard:hover .mat-button-toggle-focus-overlay{opacity:var(--mat-standard-button-toggle-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-button-toggle-appearance-standard.cdk-keyboard-focused .mat-button-toggle-focus-overlay{opacity:var(--mat-standard-button-toggle-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}@media(hover: none){.mat-button-toggle-appearance-standard:hover .mat-button-toggle-focus-overlay{display:none}}.mat-button-toggle-label-content{-webkit-user-select:none;user-select:none;display:inline-block;padding:0 16px;line-height:var(--mat-legacy-button-toggle-height);position:relative}.mat-button-toggle-appearance-standard .mat-button-toggle-label-content{padding:0 12px;line-height:var(--mat-standard-button-toggle-height, 40px)}.mat-button-toggle-label-content>*{vertical-align:middle}.mat-button-toggle-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;border-radius:inherit;pointer-events:none;opacity:0;background-color:var(--mat-legacy-button-toggle-state-layer-color)}@media(forced-colors: active){.mat-button-toggle-checked .mat-button-toggle-focus-overlay{border-bottom:solid 500px;opacity:.5;height:0}.mat-button-toggle-checked:hover .mat-button-toggle-focus-overlay{opacity:.6}.mat-button-toggle-checked.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay{border-bottom:solid 500px}}.mat-button-toggle .mat-button-toggle-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}.mat-button-toggle-button{border:0;background:none;color:inherit;padding:0;margin:0;font:inherit;outline:none;width:100%;cursor:pointer}.mat-button-toggle-animations-enabled .mat-button-toggle-button{transition:padding 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mat-button-toggle-vertical .mat-button-toggle-button{transition:none}.mat-button-toggle-disabled .mat-button-toggle-button{cursor:default}.mat-button-toggle-button::-moz-focus-inner{border:0}.mat-button-toggle-checked .mat-button-toggle-button:has(.mat-button-toggle-checkbox-wrapper){padding-left:30px}[dir=rtl] .mat-button-toggle-checked .mat-button-toggle-button:has(.mat-button-toggle-checkbox-wrapper){padding-left:0;padding-right:30px}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard{--mat-focus-indicator-border-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard:not(.mat-button-toggle-vertical) .mat-button-toggle:last-of-type .mat-button-toggle-button::before{border-top-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard:not(.mat-button-toggle-vertical) .mat-button-toggle:first-of-type .mat-button-toggle-button::before{border-top-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle:last-of-type .mat-button-toggle-button::before{border-bottom-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle:first-of-type .mat-button-toggle-button::before{border-top-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-top-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}\n"],
+    styles: [
+      '.mat-button-toggle-standalone,.mat-button-toggle-group{position:relative;display:inline-flex;flex-direction:row;white-space:nowrap;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);transform:translateZ(0);border-radius:var(--mat-legacy-button-toggle-shape)}.mat-button-toggle-standalone:not([class*=mat-elevation-z]),.mat-button-toggle-group:not([class*=mat-elevation-z]){box-shadow:0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)}@media(forced-colors: active){.mat-button-toggle-standalone,.mat-button-toggle-group{outline:solid 1px}}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,.mat-button-toggle-group-appearance-standard{border-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard .mat-pseudo-checkbox,.mat-button-toggle-group-appearance-standard .mat-pseudo-checkbox{--mat-minimal-pseudo-checkbox-selected-checkmark-color: var(--mat-standard-button-toggle-selected-state-text-color, var(--mat-sys-on-secondary-container))}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard:not([class*=mat-elevation-z]),.mat-button-toggle-group-appearance-standard:not([class*=mat-elevation-z]){box-shadow:none}@media(forced-colors: active){.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,.mat-button-toggle-group-appearance-standard{outline:0}}.mat-button-toggle-vertical{flex-direction:column}.mat-button-toggle-vertical .mat-button-toggle-label-content{display:block}.mat-button-toggle{white-space:nowrap;position:relative;color:var(--mat-legacy-button-toggle-text-color);font-family:var(--mat-legacy-button-toggle-label-text-font);font-size:var(--mat-legacy-button-toggle-label-text-size);line-height:var(--mat-legacy-button-toggle-label-text-line-height);font-weight:var(--mat-legacy-button-toggle-label-text-weight);letter-spacing:var(--mat-legacy-button-toggle-label-text-tracking);--mat-minimal-pseudo-checkbox-selected-checkmark-color: var(--mat-legacy-button-toggle-selected-state-text-color)}.mat-button-toggle.cdk-keyboard-focused .mat-button-toggle-focus-overlay{opacity:var(--mat-legacy-button-toggle-focus-state-layer-opacity)}.mat-button-toggle .mat-icon svg{vertical-align:top}.mat-button-toggle-checkbox-wrapper{display:inline-block;justify-content:flex-start;align-items:center;width:0;height:18px;line-height:18px;overflow:hidden;box-sizing:border-box;position:absolute;top:50%;left:16px;transform:translate3d(0, -50%, 0)}[dir=rtl] .mat-button-toggle-checkbox-wrapper{left:auto;right:16px}.mat-button-toggle-appearance-standard .mat-button-toggle-checkbox-wrapper{left:12px}[dir=rtl] .mat-button-toggle-appearance-standard .mat-button-toggle-checkbox-wrapper{left:auto;right:12px}.mat-button-toggle-checked .mat-button-toggle-checkbox-wrapper{width:18px}.mat-button-toggle-animations-enabled .mat-button-toggle-checkbox-wrapper{transition:width 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mat-button-toggle-vertical .mat-button-toggle-checkbox-wrapper{transition:none}.mat-button-toggle-checked{color:var(--mat-legacy-button-toggle-selected-state-text-color);background-color:var(--mat-legacy-button-toggle-selected-state-background-color)}.mat-button-toggle-disabled{pointer-events:none;color:var(--mat-legacy-button-toggle-disabled-state-text-color);background-color:var(--mat-legacy-button-toggle-disabled-state-background-color);--mat-minimal-pseudo-checkbox-disabled-selected-checkmark-color: var(--mat-legacy-button-toggle-disabled-state-text-color)}.mat-button-toggle-disabled.mat-button-toggle-checked{background-color:var(--mat-legacy-button-toggle-disabled-selected-state-background-color)}.mat-button-toggle-disabled-interactive{pointer-events:auto}.mat-button-toggle-appearance-standard{color:var(--mat-standard-button-toggle-text-color, var(--mat-sys-on-surface));background-color:var(--mat-standard-button-toggle-background-color, transparent);font-family:var(--mat-standard-button-toggle-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-standard-button-toggle-label-text-size, var(--mat-sys-label-large-size));line-height:var(--mat-standard-button-toggle-label-text-line-height, var(--mat-sys-label-large-line-height));font-weight:var(--mat-standard-button-toggle-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mat-standard-button-toggle-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}[dir=rtl] .mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:none;border-right:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:none;border-right:none;border-top:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-appearance-standard.mat-button-toggle-checked{color:var(--mat-standard-button-toggle-selected-state-text-color, var(--mat-sys-on-secondary-container));background-color:var(--mat-standard-button-toggle-selected-state-background-color, var(--mat-sys-secondary-container))}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled{color:var(--mat-standard-button-toggle-disabled-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-standard-button-toggle-disabled-state-background-color, transparent)}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled .mat-pseudo-checkbox{--mat-minimal-pseudo-checkbox-disabled-selected-checkmark-color: var(--mat-standard-button-toggle-disabled-selected-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled.mat-button-toggle-checked{color:var(--mat-standard-button-toggle-disabled-selected-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-standard-button-toggle-disabled-selected-state-background-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay{background-color:var(--mat-standard-button-toggle-state-layer-color, var(--mat-sys-on-surface))}.mat-button-toggle-appearance-standard:hover .mat-button-toggle-focus-overlay{opacity:var(--mat-standard-button-toggle-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-button-toggle-appearance-standard.cdk-keyboard-focused .mat-button-toggle-focus-overlay{opacity:var(--mat-standard-button-toggle-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}@media(hover: none){.mat-button-toggle-appearance-standard:hover .mat-button-toggle-focus-overlay{display:none}}.mat-button-toggle-label-content{-webkit-user-select:none;user-select:none;display:inline-block;padding:0 16px;line-height:var(--mat-legacy-button-toggle-height);position:relative}.mat-button-toggle-appearance-standard .mat-button-toggle-label-content{padding:0 12px;line-height:var(--mat-standard-button-toggle-height, 40px)}.mat-button-toggle-label-content>*{vertical-align:middle}.mat-button-toggle-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;border-radius:inherit;pointer-events:none;opacity:0;background-color:var(--mat-legacy-button-toggle-state-layer-color)}@media(forced-colors: active){.mat-button-toggle-checked .mat-button-toggle-focus-overlay{border-bottom:solid 500px;opacity:.5;height:0}.mat-button-toggle-checked:hover .mat-button-toggle-focus-overlay{opacity:.6}.mat-button-toggle-checked.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay{border-bottom:solid 500px}}.mat-button-toggle .mat-button-toggle-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}.mat-button-toggle-button{border:0;background:none;color:inherit;padding:0;margin:0;font:inherit;outline:none;width:100%;cursor:pointer}.mat-button-toggle-animations-enabled .mat-button-toggle-button{transition:padding 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mat-button-toggle-vertical .mat-button-toggle-button{transition:none}.mat-button-toggle-disabled .mat-button-toggle-button{cursor:default}.mat-button-toggle-button::-moz-focus-inner{border:0}.mat-button-toggle-checked .mat-button-toggle-button:has(.mat-button-toggle-checkbox-wrapper){padding-left:30px}[dir=rtl] .mat-button-toggle-checked .mat-button-toggle-button:has(.mat-button-toggle-checkbox-wrapper){padding-left:0;padding-right:30px}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard{--mat-focus-indicator-border-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard:not(.mat-button-toggle-vertical) .mat-button-toggle:last-of-type .mat-button-toggle-button::before{border-top-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard:not(.mat-button-toggle-vertical) .mat-button-toggle:first-of-type .mat-button-toggle-button::before{border-top-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle:last-of-type .mat-button-toggle-button::before{border-bottom-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle:first-of-type .mat-button-toggle-button::before{border-top-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-top-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}\n',
+    ],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatButtonToggle, [{
-    type: Component,
-    args: [{
-      selector: "mat-button-toggle",
-      encapsulation: ViewEncapsulation.None,
-      exportAs: "matButtonToggle",
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      host: {
-        "[class.mat-button-toggle-standalone]": "!buttonToggleGroup",
-        "[class.mat-button-toggle-checked]": "checked",
-        "[class.mat-button-toggle-disabled]": "disabled",
-        "[class.mat-button-toggle-disabled-interactive]": "disabledInteractive",
-        "[class.mat-button-toggle-appearance-standard]": 'appearance === "standard"',
-        "class": "mat-button-toggle",
-        "[attr.aria-label]": "null",
-        "[attr.aria-labelledby]": "null",
-        "[attr.id]": "id",
-        "[attr.name]": "null",
-        "(focus)": "focus()",
-        "role": "presentation"
-      },
-      imports: [MatRipple, MatPseudoCheckbox],
-      template: `<button #button class="mat-button-toggle-button mat-focus-indicator"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatButtonToggle,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-button-toggle',
+              encapsulation: ViewEncapsulation.None,
+              exportAs: 'matButtonToggle',
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              host: {
+                '[class.mat-button-toggle-standalone]': '!buttonToggleGroup',
+                '[class.mat-button-toggle-checked]': 'checked',
+                '[class.mat-button-toggle-disabled]': 'disabled',
+                '[class.mat-button-toggle-disabled-interactive]': 'disabledInteractive',
+                '[class.mat-button-toggle-appearance-standard]': 'appearance === "standard"',
+                class: 'mat-button-toggle',
+                '[attr.aria-label]': 'null',
+                '[attr.aria-labelledby]': 'null',
+                '[attr.id]': 'id',
+                '[attr.name]': 'null',
+                '(focus)': 'focus()',
+                role: 'presentation',
+              },
+              imports: [MatRipple, MatPseudoCheckbox],
+              template: `<button #button class="mat-button-toggle-button mat-focus-indicator"
         type="button"
         [id]="buttonId"
         [attr.role]="isSingleSelector() ? 'radio' : 'button'"
@@ -899,64 +988,105 @@ var MatButtonToggle = class _MatButtonToggle {
      [matRippleDisabled]="this.disableRipple || this.disabled">
 </span>
 `,
-      styles: [".mat-button-toggle-standalone,.mat-button-toggle-group{position:relative;display:inline-flex;flex-direction:row;white-space:nowrap;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);transform:translateZ(0);border-radius:var(--mat-legacy-button-toggle-shape)}.mat-button-toggle-standalone:not([class*=mat-elevation-z]),.mat-button-toggle-group:not([class*=mat-elevation-z]){box-shadow:0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)}@media(forced-colors: active){.mat-button-toggle-standalone,.mat-button-toggle-group{outline:solid 1px}}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,.mat-button-toggle-group-appearance-standard{border-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard .mat-pseudo-checkbox,.mat-button-toggle-group-appearance-standard .mat-pseudo-checkbox{--mat-minimal-pseudo-checkbox-selected-checkmark-color: var(--mat-standard-button-toggle-selected-state-text-color, var(--mat-sys-on-secondary-container))}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard:not([class*=mat-elevation-z]),.mat-button-toggle-group-appearance-standard:not([class*=mat-elevation-z]){box-shadow:none}@media(forced-colors: active){.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,.mat-button-toggle-group-appearance-standard{outline:0}}.mat-button-toggle-vertical{flex-direction:column}.mat-button-toggle-vertical .mat-button-toggle-label-content{display:block}.mat-button-toggle{white-space:nowrap;position:relative;color:var(--mat-legacy-button-toggle-text-color);font-family:var(--mat-legacy-button-toggle-label-text-font);font-size:var(--mat-legacy-button-toggle-label-text-size);line-height:var(--mat-legacy-button-toggle-label-text-line-height);font-weight:var(--mat-legacy-button-toggle-label-text-weight);letter-spacing:var(--mat-legacy-button-toggle-label-text-tracking);--mat-minimal-pseudo-checkbox-selected-checkmark-color: var(--mat-legacy-button-toggle-selected-state-text-color)}.mat-button-toggle.cdk-keyboard-focused .mat-button-toggle-focus-overlay{opacity:var(--mat-legacy-button-toggle-focus-state-layer-opacity)}.mat-button-toggle .mat-icon svg{vertical-align:top}.mat-button-toggle-checkbox-wrapper{display:inline-block;justify-content:flex-start;align-items:center;width:0;height:18px;line-height:18px;overflow:hidden;box-sizing:border-box;position:absolute;top:50%;left:16px;transform:translate3d(0, -50%, 0)}[dir=rtl] .mat-button-toggle-checkbox-wrapper{left:auto;right:16px}.mat-button-toggle-appearance-standard .mat-button-toggle-checkbox-wrapper{left:12px}[dir=rtl] .mat-button-toggle-appearance-standard .mat-button-toggle-checkbox-wrapper{left:auto;right:12px}.mat-button-toggle-checked .mat-button-toggle-checkbox-wrapper{width:18px}.mat-button-toggle-animations-enabled .mat-button-toggle-checkbox-wrapper{transition:width 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mat-button-toggle-vertical .mat-button-toggle-checkbox-wrapper{transition:none}.mat-button-toggle-checked{color:var(--mat-legacy-button-toggle-selected-state-text-color);background-color:var(--mat-legacy-button-toggle-selected-state-background-color)}.mat-button-toggle-disabled{pointer-events:none;color:var(--mat-legacy-button-toggle-disabled-state-text-color);background-color:var(--mat-legacy-button-toggle-disabled-state-background-color);--mat-minimal-pseudo-checkbox-disabled-selected-checkmark-color: var(--mat-legacy-button-toggle-disabled-state-text-color)}.mat-button-toggle-disabled.mat-button-toggle-checked{background-color:var(--mat-legacy-button-toggle-disabled-selected-state-background-color)}.mat-button-toggle-disabled-interactive{pointer-events:auto}.mat-button-toggle-appearance-standard{color:var(--mat-standard-button-toggle-text-color, var(--mat-sys-on-surface));background-color:var(--mat-standard-button-toggle-background-color, transparent);font-family:var(--mat-standard-button-toggle-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-standard-button-toggle-label-text-size, var(--mat-sys-label-large-size));line-height:var(--mat-standard-button-toggle-label-text-line-height, var(--mat-sys-label-large-line-height));font-weight:var(--mat-standard-button-toggle-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mat-standard-button-toggle-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}[dir=rtl] .mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:none;border-right:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:none;border-right:none;border-top:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-appearance-standard.mat-button-toggle-checked{color:var(--mat-standard-button-toggle-selected-state-text-color, var(--mat-sys-on-secondary-container));background-color:var(--mat-standard-button-toggle-selected-state-background-color, var(--mat-sys-secondary-container))}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled{color:var(--mat-standard-button-toggle-disabled-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-standard-button-toggle-disabled-state-background-color, transparent)}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled .mat-pseudo-checkbox{--mat-minimal-pseudo-checkbox-disabled-selected-checkmark-color: var(--mat-standard-button-toggle-disabled-selected-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled.mat-button-toggle-checked{color:var(--mat-standard-button-toggle-disabled-selected-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-standard-button-toggle-disabled-selected-state-background-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay{background-color:var(--mat-standard-button-toggle-state-layer-color, var(--mat-sys-on-surface))}.mat-button-toggle-appearance-standard:hover .mat-button-toggle-focus-overlay{opacity:var(--mat-standard-button-toggle-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-button-toggle-appearance-standard.cdk-keyboard-focused .mat-button-toggle-focus-overlay{opacity:var(--mat-standard-button-toggle-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}@media(hover: none){.mat-button-toggle-appearance-standard:hover .mat-button-toggle-focus-overlay{display:none}}.mat-button-toggle-label-content{-webkit-user-select:none;user-select:none;display:inline-block;padding:0 16px;line-height:var(--mat-legacy-button-toggle-height);position:relative}.mat-button-toggle-appearance-standard .mat-button-toggle-label-content{padding:0 12px;line-height:var(--mat-standard-button-toggle-height, 40px)}.mat-button-toggle-label-content>*{vertical-align:middle}.mat-button-toggle-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;border-radius:inherit;pointer-events:none;opacity:0;background-color:var(--mat-legacy-button-toggle-state-layer-color)}@media(forced-colors: active){.mat-button-toggle-checked .mat-button-toggle-focus-overlay{border-bottom:solid 500px;opacity:.5;height:0}.mat-button-toggle-checked:hover .mat-button-toggle-focus-overlay{opacity:.6}.mat-button-toggle-checked.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay{border-bottom:solid 500px}}.mat-button-toggle .mat-button-toggle-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}.mat-button-toggle-button{border:0;background:none;color:inherit;padding:0;margin:0;font:inherit;outline:none;width:100%;cursor:pointer}.mat-button-toggle-animations-enabled .mat-button-toggle-button{transition:padding 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mat-button-toggle-vertical .mat-button-toggle-button{transition:none}.mat-button-toggle-disabled .mat-button-toggle-button{cursor:default}.mat-button-toggle-button::-moz-focus-inner{border:0}.mat-button-toggle-checked .mat-button-toggle-button:has(.mat-button-toggle-checkbox-wrapper){padding-left:30px}[dir=rtl] .mat-button-toggle-checked .mat-button-toggle-button:has(.mat-button-toggle-checkbox-wrapper){padding-left:0;padding-right:30px}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard{--mat-focus-indicator-border-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard:not(.mat-button-toggle-vertical) .mat-button-toggle:last-of-type .mat-button-toggle-button::before{border-top-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard:not(.mat-button-toggle-vertical) .mat-button-toggle:first-of-type .mat-button-toggle-button::before{border-top-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle:last-of-type .mat-button-toggle-button::before{border-bottom-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle:first-of-type .mat-button-toggle-button::before{border-top-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-top-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}\n"]
-    }]
-  }], () => [], {
-    ariaLabel: [{
-      type: Input,
-      args: ["aria-label"]
-    }],
-    ariaLabelledby: [{
-      type: Input,
-      args: ["aria-labelledby"]
-    }],
-    _buttonElement: [{
-      type: ViewChild,
-      args: ["button"]
-    }],
-    id: [{
-      type: Input
-    }],
-    name: [{
-      type: Input
-    }],
-    value: [{
-      type: Input
-    }],
-    tabIndex: [{
-      type: Input
-    }],
-    disableRipple: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    appearance: [{
-      type: Input
-    }],
-    checked: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    disabledInteractive: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    change: [{
-      type: Output
-    }]
-  });
+              styles: [
+                '.mat-button-toggle-standalone,.mat-button-toggle-group{position:relative;display:inline-flex;flex-direction:row;white-space:nowrap;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);transform:translateZ(0);border-radius:var(--mat-legacy-button-toggle-shape)}.mat-button-toggle-standalone:not([class*=mat-elevation-z]),.mat-button-toggle-group:not([class*=mat-elevation-z]){box-shadow:0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)}@media(forced-colors: active){.mat-button-toggle-standalone,.mat-button-toggle-group{outline:solid 1px}}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,.mat-button-toggle-group-appearance-standard{border-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard .mat-pseudo-checkbox,.mat-button-toggle-group-appearance-standard .mat-pseudo-checkbox{--mat-minimal-pseudo-checkbox-selected-checkmark-color: var(--mat-standard-button-toggle-selected-state-text-color, var(--mat-sys-on-secondary-container))}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard:not([class*=mat-elevation-z]),.mat-button-toggle-group-appearance-standard:not([class*=mat-elevation-z]){box-shadow:none}@media(forced-colors: active){.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,.mat-button-toggle-group-appearance-standard{outline:0}}.mat-button-toggle-vertical{flex-direction:column}.mat-button-toggle-vertical .mat-button-toggle-label-content{display:block}.mat-button-toggle{white-space:nowrap;position:relative;color:var(--mat-legacy-button-toggle-text-color);font-family:var(--mat-legacy-button-toggle-label-text-font);font-size:var(--mat-legacy-button-toggle-label-text-size);line-height:var(--mat-legacy-button-toggle-label-text-line-height);font-weight:var(--mat-legacy-button-toggle-label-text-weight);letter-spacing:var(--mat-legacy-button-toggle-label-text-tracking);--mat-minimal-pseudo-checkbox-selected-checkmark-color: var(--mat-legacy-button-toggle-selected-state-text-color)}.mat-button-toggle.cdk-keyboard-focused .mat-button-toggle-focus-overlay{opacity:var(--mat-legacy-button-toggle-focus-state-layer-opacity)}.mat-button-toggle .mat-icon svg{vertical-align:top}.mat-button-toggle-checkbox-wrapper{display:inline-block;justify-content:flex-start;align-items:center;width:0;height:18px;line-height:18px;overflow:hidden;box-sizing:border-box;position:absolute;top:50%;left:16px;transform:translate3d(0, -50%, 0)}[dir=rtl] .mat-button-toggle-checkbox-wrapper{left:auto;right:16px}.mat-button-toggle-appearance-standard .mat-button-toggle-checkbox-wrapper{left:12px}[dir=rtl] .mat-button-toggle-appearance-standard .mat-button-toggle-checkbox-wrapper{left:auto;right:12px}.mat-button-toggle-checked .mat-button-toggle-checkbox-wrapper{width:18px}.mat-button-toggle-animations-enabled .mat-button-toggle-checkbox-wrapper{transition:width 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mat-button-toggle-vertical .mat-button-toggle-checkbox-wrapper{transition:none}.mat-button-toggle-checked{color:var(--mat-legacy-button-toggle-selected-state-text-color);background-color:var(--mat-legacy-button-toggle-selected-state-background-color)}.mat-button-toggle-disabled{pointer-events:none;color:var(--mat-legacy-button-toggle-disabled-state-text-color);background-color:var(--mat-legacy-button-toggle-disabled-state-background-color);--mat-minimal-pseudo-checkbox-disabled-selected-checkmark-color: var(--mat-legacy-button-toggle-disabled-state-text-color)}.mat-button-toggle-disabled.mat-button-toggle-checked{background-color:var(--mat-legacy-button-toggle-disabled-selected-state-background-color)}.mat-button-toggle-disabled-interactive{pointer-events:auto}.mat-button-toggle-appearance-standard{color:var(--mat-standard-button-toggle-text-color, var(--mat-sys-on-surface));background-color:var(--mat-standard-button-toggle-background-color, transparent);font-family:var(--mat-standard-button-toggle-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-standard-button-toggle-label-text-size, var(--mat-sys-label-large-size));line-height:var(--mat-standard-button-toggle-label-text-line-height, var(--mat-sys-label-large-line-height));font-weight:var(--mat-standard-button-toggle-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mat-standard-button-toggle-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}[dir=rtl] .mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:none;border-right:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{border-left:none;border-right:none;border-top:solid 1px var(--mat-standard-button-toggle-divider-color, var(--mat-sys-outline))}.mat-button-toggle-appearance-standard.mat-button-toggle-checked{color:var(--mat-standard-button-toggle-selected-state-text-color, var(--mat-sys-on-secondary-container));background-color:var(--mat-standard-button-toggle-selected-state-background-color, var(--mat-sys-secondary-container))}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled{color:var(--mat-standard-button-toggle-disabled-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-standard-button-toggle-disabled-state-background-color, transparent)}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled .mat-pseudo-checkbox{--mat-minimal-pseudo-checkbox-disabled-selected-checkmark-color: var(--mat-standard-button-toggle-disabled-selected-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-button-toggle-appearance-standard.mat-button-toggle-disabled.mat-button-toggle-checked{color:var(--mat-standard-button-toggle-disabled-selected-state-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-standard-button-toggle-disabled-selected-state-background-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay{background-color:var(--mat-standard-button-toggle-state-layer-color, var(--mat-sys-on-surface))}.mat-button-toggle-appearance-standard:hover .mat-button-toggle-focus-overlay{opacity:var(--mat-standard-button-toggle-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-button-toggle-appearance-standard.cdk-keyboard-focused .mat-button-toggle-focus-overlay{opacity:var(--mat-standard-button-toggle-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}@media(hover: none){.mat-button-toggle-appearance-standard:hover .mat-button-toggle-focus-overlay{display:none}}.mat-button-toggle-label-content{-webkit-user-select:none;user-select:none;display:inline-block;padding:0 16px;line-height:var(--mat-legacy-button-toggle-height);position:relative}.mat-button-toggle-appearance-standard .mat-button-toggle-label-content{padding:0 12px;line-height:var(--mat-standard-button-toggle-height, 40px)}.mat-button-toggle-label-content>*{vertical-align:middle}.mat-button-toggle-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;border-radius:inherit;pointer-events:none;opacity:0;background-color:var(--mat-legacy-button-toggle-state-layer-color)}@media(forced-colors: active){.mat-button-toggle-checked .mat-button-toggle-focus-overlay{border-bottom:solid 500px;opacity:.5;height:0}.mat-button-toggle-checked:hover .mat-button-toggle-focus-overlay{opacity:.6}.mat-button-toggle-checked.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay{border-bottom:solid 500px}}.mat-button-toggle .mat-button-toggle-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}.mat-button-toggle-button{border:0;background:none;color:inherit;padding:0;margin:0;font:inherit;outline:none;width:100%;cursor:pointer}.mat-button-toggle-animations-enabled .mat-button-toggle-button{transition:padding 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mat-button-toggle-vertical .mat-button-toggle-button{transition:none}.mat-button-toggle-disabled .mat-button-toggle-button{cursor:default}.mat-button-toggle-button::-moz-focus-inner{border:0}.mat-button-toggle-checked .mat-button-toggle-button:has(.mat-button-toggle-checkbox-wrapper){padding-left:30px}[dir=rtl] .mat-button-toggle-checked .mat-button-toggle-button:has(.mat-button-toggle-checkbox-wrapper){padding-left:0;padding-right:30px}.mat-button-toggle-standalone.mat-button-toggle-appearance-standard{--mat-focus-indicator-border-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard:not(.mat-button-toggle-vertical) .mat-button-toggle:last-of-type .mat-button-toggle-button::before{border-top-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard:not(.mat-button-toggle-vertical) .mat-button-toggle:first-of-type .mat-button-toggle-button::before{border-top-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle:last-of-type .mat-button-toggle-button::before{border-bottom-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-bottom-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle:first-of-type .mat-button-toggle-button::before{border-top-right-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large));border-top-left-radius:var(--mat-standard-button-toggle-shape, var(--mat-sys-corner-extra-large))}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        ariaLabel: [
+          {
+            type: Input,
+            args: ['aria-label'],
+          },
+        ],
+        ariaLabelledby: [
+          {
+            type: Input,
+            args: ['aria-labelledby'],
+          },
+        ],
+        _buttonElement: [
+          {
+            type: ViewChild,
+            args: ['button'],
+          },
+        ],
+        id: [
+          {
+            type: Input,
+          },
+        ],
+        name: [
+          {
+            type: Input,
+          },
+        ],
+        value: [
+          {
+            type: Input,
+          },
+        ],
+        tabIndex: [
+          {
+            type: Input,
+          },
+        ],
+        disableRipple: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        appearance: [
+          {
+            type: Input,
+          },
+        ],
+        checked: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        disabledInteractive: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        change: [
+          {
+            type: Output,
+          },
+        ],
+      },
+    );
 })();
 var MatButtonToggleModule = class _MatButtonToggleModule {
   static ɵfac = function MatButtonToggleModule_Factory(__ngFactoryType__) {
@@ -965,20 +1095,30 @@ var MatButtonToggleModule = class _MatButtonToggleModule {
   static ɵmod = ɵɵdefineNgModule({
     type: _MatButtonToggleModule,
     imports: [MatCommonModule, MatRippleModule, MatButtonToggleGroup, MatButtonToggle],
-    exports: [MatCommonModule, MatButtonToggleGroup, MatButtonToggle]
+    exports: [MatCommonModule, MatButtonToggleGroup, MatButtonToggle],
   });
   static ɵinj = ɵɵdefineInjector({
-    imports: [MatCommonModule, MatRippleModule, MatButtonToggle, MatCommonModule]
+    imports: [MatCommonModule, MatRippleModule, MatButtonToggle, MatCommonModule],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatButtonToggleModule, [{
-    type: NgModule,
-    args: [{
-      imports: [MatCommonModule, MatRippleModule, MatButtonToggleGroup, MatButtonToggle],
-      exports: [MatCommonModule, MatButtonToggleGroup, MatButtonToggle]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatButtonToggleModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [MatCommonModule, MatRippleModule, MatButtonToggleGroup, MatButtonToggle],
+              exports: [MatCommonModule, MatButtonToggleGroup, MatButtonToggle],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 export {
   MAT_BUTTON_TOGGLE_DEFAULT_OPTIONS,
@@ -988,6 +1128,6 @@ export {
   MatButtonToggle,
   MatButtonToggleChange,
   MatButtonToggleGroup,
-  MatButtonToggleModule
+  MatButtonToggleModule,
 };
 //# sourceMappingURL=@angular_material_button-toggle.js.map

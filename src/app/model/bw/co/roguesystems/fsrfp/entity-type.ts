@@ -7,14 +7,14 @@
  * MODEL CLASS:  AndroMDAModel::backend::bw.co.roguesystems.fsrfp::EntityType
  */
 export enum EntityType {
-    /** TODO: Model Documentation for Enumeration Literal REGULATOR value "REGULATOR" */
-    REGULATOR = "REGULATOR",
-    /** TODO: Model Documentation for Enumeration Literal PROCESS value "PROCESS" */
-    PROCESS = "PROCESS",
-    /** TODO: Model Documentation for Enumeration Literal SERVICE value "SERVICE" */
-    SERVICE = "SERVICE",
-    /** TODO: Model Documentation for Enumeration Literal REGULATED_OPERATION value "REGULATED_OPERATION" */
-    REGULATED_OPERATION = "REGULATED_OPERATION",
-    /** TODO: Model Documentation for Enumeration Literal REGULATED_OPERATION_PROCESS value "REGULATED_OPERATION_PROCESS" */
-    REGULATED_OPERATION_PROCESS = "REGULATED_OPERATION_PROCESS"
+  /** TODO: Model Documentation for Enumeration Literal REGULATOR value "REGULATOR" */
+  REGULATOR = 'REGULATOR',
+  /** TODO: Model Documentation for Enumeration Literal PROCESS value "PROCESS" */
+  PROCESS = 'PROCESS',
+  /** TODO: Model Documentation for Enumeration Literal SERVICE value "SERVICE" */
+  SERVICE = 'SERVICE',
+  /** TODO: Model Documentation for Enumeration Literal REGULATED_OPERATION value "REGULATED_OPERATION" */
+  REGULATED_OPERATION = 'REGULATED_OPERATION',
+  /** TODO: Model Documentation for Enumeration Literal REGULATED_OPERATION_PROCESS value "REGULATED_OPERATION_PROCESS" */
+  REGULATED_OPERATION_PROCESS = 'REGULATED_OPERATION_PROCESS',
 }

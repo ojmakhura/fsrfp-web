@@ -34,7 +34,7 @@ import { DocumentAttachmentComponent } from '@app/view/document';
     MatDividerModule,
     MatListModule,
     TranslateModule,
-    DocumentAttachmentComponent
+    DocumentAttachmentComponent,
   ],
   templateUrl: './regulated-operation-view.component.html',
   styleUrls: ['./regulated-operation-view.component.scss'],
@@ -92,7 +92,7 @@ export class RegulatedOperationViewComponent implements OnInit, OnDestroy {
     if (!allProcesses || allProcesses.length === 0) return [];
 
     // Find the initial process
-    const initialProcess = allProcesses.find(p => p.initialProcess);
+    const initialProcess = allProcesses.find((p) => p.initialProcess);
     if (!initialProcess) {
       // If no initial process is marked, return all processes as-is
       return allProcesses;
@@ -108,11 +108,11 @@ export class RegulatedOperationViewComponent implements OnInit, OnDestroy {
       processedIds.add(currentProcess.id!);
 
       // Find the next process
-      currentProcess = allProcesses.find(p => p.previousId === currentProcess!.id);
+      currentProcess = allProcesses.find((p) => p.previousId === currentProcess!.id);
     }
 
     // Add any remaining processes that aren't in the main sequence
-    const remainingProcesses = allProcesses.filter(p => !processedIds.has(p.id!));
+    const remainingProcesses = allProcesses.filter((p) => !processedIds.has(p.id!));
     sequence.push(...remainingProcesses);
 
     return sequence;
@@ -128,9 +128,9 @@ export class RegulatedOperationViewComponent implements OnInit, OnDestroy {
     // Count unique process IDs assigned to this operation
     const uniqueProcessIds = new Set(
       allProcesses
-        .filter(p => p.operationId === operation.id)
-        .map(p => p.processId)
-        .filter(Boolean)
+        .filter((p) => p.operationId === operation.id)
+        .map((p) => p.processId)
+        .filter(Boolean),
     );
 
     return uniqueProcessIds.size;
@@ -252,7 +252,13 @@ export class RegulatedOperationViewComponent implements OnInit, OnDestroy {
     }
 
     // Cycle through different colors for regular processes
-    const colors = ['process-card-blue', 'process-card-green', 'process-card-orange', 'process-card-purple', 'process-card-teal'];
+    const colors = [
+      'process-card-blue',
+      'process-card-green',
+      'process-card-orange',
+      'process-card-purple',
+      'process-card-teal',
+    ];
     return colors[index % colors.length];
   }
 

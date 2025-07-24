@@ -1,37 +1,19 @@
-import {
-  MatRippleModule
-} from "./chunk-WNGU3QLI.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-WXKJKQEY.js";
-import {
-  MAT_RIPPLE_GLOBAL_OPTIONS,
-  MatRipple,
-  RippleState
-} from "./chunk-6K32XFRM.js";
-import {
-  _StructuralStylesLoader
-} from "./chunk-IBJRQVUD.js";
-import "./chunk-BS4LDW6B.js";
-import "./chunk-42FJBLFI.js";
-import "./chunk-JXBCBRYI.js";
-import "./chunk-2O4WY5GE.js";
-import {
-  MatCommonModule
-} from "./chunk-PQSRNTO7.js";
-import "./chunk-5RHDU2BP.js";
-import {
-  _CdkPrivateStyleLoader
-} from "./chunk-RG7RHNTG.js";
-import {
-  Directionality
-} from "./chunk-HNGPX6GY.js";
-import "./chunk-GWH5ZIVQ.js";
-import {
-  Platform
-} from "./chunk-FSIK44TS.js";
-import "./chunk-LJRMVWU3.js";
-import "./chunk-SOO5Y25R.js";
+import { NG_VALUE_ACCESSOR } from './chunk-WXKJKQEY.js';
+import { MatRippleModule } from './chunk-WNGU3QLI.js';
+import { MAT_RIPPLE_GLOBAL_OPTIONS, MatRipple, RippleState } from './chunk-6K32XFRM.js';
+import { _StructuralStylesLoader } from './chunk-IBJRQVUD.js';
+import './chunk-BS4LDW6B.js';
+import './chunk-42FJBLFI.js';
+import './chunk-JXBCBRYI.js';
+import './chunk-2O4WY5GE.js';
+import { MatCommonModule } from './chunk-PQSRNTO7.js';
+import './chunk-5RHDU2BP.js';
+import { _CdkPrivateStyleLoader } from './chunk-RG7RHNTG.js';
+import { Directionality } from './chunk-HNGPX6GY.js';
+import './chunk-GWH5ZIVQ.js';
+import { Platform } from './chunk-FSIK44TS.js';
+import './chunk-LJRMVWU3.js';
+import './chunk-SOO5Y25R.js';
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionStrategy,
@@ -86,21 +68,19 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate,
-  ɵɵviewQuery
-} from "./chunk-LB7E77GG.js";
-import "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import {
-  Subject
-} from "./chunk-4S3KYZTJ.js";
-import "./chunk-4MWRP73S.js";
+  ɵɵviewQuery,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import './chunk-WPM5VTLQ.js';
+import { Subject } from './chunk-4S3KYZTJ.js';
+import './chunk-4MWRP73S.js';
 
 // node_modules/@angular/material/fesm2022/slider.mjs
-var _c0 = ["knob"];
-var _c1 = ["valueIndicatorContainer"];
+var _c0 = ['knob'];
+var _c1 = ['valueIndicatorContainer'];
 function MatSliderVisualThumb_Conditional_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 2, 1)(2, "div", 5)(3, "span", 6);
+    ɵɵelementStart(0, 'div', 2, 1)(2, 'div', 5)(3, 'span', 6);
     ɵɵtext(4);
     ɵɵelementEnd()()();
   }
@@ -110,23 +90,23 @@ function MatSliderVisualThumb_Conditional_0_Template(rf, ctx) {
     ɵɵtextInterpolate(ctx_r0.valueIndicatorText);
   }
 }
-var _c2 = ["trackActive"];
-var _c3 = ["*"];
+var _c2 = ['trackActive'];
+var _c3 = ['*'];
 function MatSlider_Conditional_6_Conditional_2_For_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "div");
+    ɵɵelement(0, 'div');
   }
   if (rf & 2) {
     const tickMark_r1 = ctx.$implicit;
     const ɵ$index_14_r2 = ctx.$index;
     const ctx_r2 = ɵɵnextContext(3);
-    ɵɵclassMap(tickMark_r1 === 0 ? "mdc-slider__tick-mark--active" : "mdc-slider__tick-mark--inactive");
-    ɵɵstyleProp("transform", ctx_r2._calcTickMarkTransform(ɵ$index_14_r2));
+    ɵɵclassMap(tickMark_r1 === 0 ? 'mdc-slider__tick-mark--active' : 'mdc-slider__tick-mark--inactive');
+    ɵɵstyleProp('transform', ctx_r2._calcTickMarkTransform(ɵ$index_14_r2));
   }
 }
 function MatSlider_Conditional_6_Conditional_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵrepeaterCreate(0, MatSlider_Conditional_6_Conditional_2_For_1_Template, 1, 4, "div", 8, ɵɵrepeaterTrackByIndex);
+    ɵɵrepeaterCreate(0, MatSlider_Conditional_6_Conditional_2_For_1_Template, 1, 4, 'div', 8, ɵɵrepeaterTrackByIndex);
   }
   if (rf & 2) {
     const ctx_r2 = ɵɵnextContext(2);
@@ -135,7 +115,7 @@ function MatSlider_Conditional_6_Conditional_2_Template(rf, ctx) {
 }
 function MatSlider_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 6, 1);
+    ɵɵelementStart(0, 'div', 6, 1);
     ɵɵtemplate(2, MatSlider_Conditional_6_Conditional_2_Template, 2, 0);
     ɵɵelementEnd();
   }
@@ -147,27 +127,27 @@ function MatSlider_Conditional_6_Template(rf, ctx) {
 }
 function MatSlider_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "mat-slider-visual-thumb", 7);
+    ɵɵelement(0, 'mat-slider-visual-thumb', 7);
   }
   if (rf & 2) {
     const ctx_r2 = ɵɵnextContext();
-    ɵɵproperty("discrete", ctx_r2.discrete)("thumbPosition", 1)("valueIndicatorText", ctx_r2.startValueIndicatorText);
+    ɵɵproperty('discrete', ctx_r2.discrete)('thumbPosition', 1)('valueIndicatorText', ctx_r2.startValueIndicatorText);
   }
 }
 var _MatThumb;
-(function(_MatThumb2) {
-  _MatThumb2[_MatThumb2["START"] = 1] = "START";
-  _MatThumb2[_MatThumb2["END"] = 2] = "END";
+(function (_MatThumb2) {
+  _MatThumb2[(_MatThumb2['START'] = 1)] = 'START';
+  _MatThumb2[(_MatThumb2['END'] = 2)] = 'END';
 })(_MatThumb || (_MatThumb = {}));
 var _MatTickMark;
-(function(_MatTickMark2) {
-  _MatTickMark2[_MatTickMark2["ACTIVE"] = 0] = "ACTIVE";
-  _MatTickMark2[_MatTickMark2["INACTIVE"] = 1] = "INACTIVE";
+(function (_MatTickMark2) {
+  _MatTickMark2[(_MatTickMark2['ACTIVE'] = 0)] = 'ACTIVE';
+  _MatTickMark2[(_MatTickMark2['INACTIVE'] = 1)] = 'INACTIVE';
 })(_MatTickMark || (_MatTickMark = {}));
-var MAT_SLIDER = new InjectionToken("_MatSlider");
-var MAT_SLIDER_THUMB = new InjectionToken("_MatSliderThumb");
-var MAT_SLIDER_RANGE_THUMB = new InjectionToken("_MatSliderRangeThumb");
-var MAT_SLIDER_VISUAL_THUMB = new InjectionToken("_MatSliderVisualThumb");
+var MAT_SLIDER = new InjectionToken('_MatSlider');
+var MAT_SLIDER_THUMB = new InjectionToken('_MatSliderThumb');
+var MAT_SLIDER_RANGE_THUMB = new InjectionToken('_MatSliderRangeThumb');
+var MAT_SLIDER_VISUAL_THUMB = new InjectionToken('_MatSliderVisualThumb');
 var MatSliderChange = class {
   /** The MatSliderThumb that was interacted with. */
   source;
@@ -213,8 +193,7 @@ var MatSliderVisualThumb = class _MatSliderVisualThumb {
   /** The host native HTML input element. */
   _hostElement = inject(ElementRef).nativeElement;
   _platform = inject(Platform);
-  constructor() {
-  }
+  constructor() {}
   ngAfterViewInit() {
     const sliderInput = this._slider._getInput(this.thumbPosition);
     if (!sliderInput) {
@@ -226,7 +205,14 @@ var MatSliderVisualThumb = class _MatSliderVisualThumb {
     this._ngZone.runOutsideAngular(() => {
       const input = this._sliderInputEl;
       const renderer = this._renderer;
-      this._listenerCleanups = [renderer.listen(input, "pointermove", this._onPointerMove), renderer.listen(input, "pointerdown", this._onDragStart), renderer.listen(input, "pointerup", this._onDragEnd), renderer.listen(input, "pointerleave", this._onMouseLeave), renderer.listen(input, "focus", this._onFocus), renderer.listen(input, "blur", this._onBlur)];
+      this._listenerCleanups = [
+        renderer.listen(input, 'pointermove', this._onPointerMove),
+        renderer.listen(input, 'pointerdown', this._onDragStart),
+        renderer.listen(input, 'pointerup', this._onDragEnd),
+        renderer.listen(input, 'pointerleave', this._onMouseLeave),
+        renderer.listen(input, 'focus', this._onFocus),
+        renderer.listen(input, 'blur', this._onBlur),
+      ];
     });
   }
   ngOnDestroy() {
@@ -252,7 +238,7 @@ var MatSliderVisualThumb = class _MatSliderVisualThumb {
   _onFocus = () => {
     this._hideRipple(this._hoverRippleRef);
     this._showFocusRipple();
-    this._hostElement.classList.add("mdc-slider__thumb--focused");
+    this._hostElement.classList.add('mdc-slider__thumb--focused');
   };
   _onBlur = () => {
     if (!this._isActive) {
@@ -261,7 +247,7 @@ var MatSliderVisualThumb = class _MatSliderVisualThumb {
     if (this._isHovered) {
       this._showHoverRipple();
     }
-    this._hostElement.classList.remove("mdc-slider__thumb--focused");
+    this._hostElement.classList.remove('mdc-slider__thumb--focused');
   };
   _onDragStart = (event) => {
     if (event.button !== 0) {
@@ -285,19 +271,22 @@ var MatSliderVisualThumb = class _MatSliderVisualThumb {
     if (!this._isShowingRipple(this._hoverRippleRef)) {
       this._hoverRippleRef = this._showRipple({
         enterDuration: 0,
-        exitDuration: 0
+        exitDuration: 0,
       });
-      this._hoverRippleRef?.element.classList.add("mat-mdc-slider-hover-ripple");
+      this._hoverRippleRef?.element.classList.add('mat-mdc-slider-hover-ripple');
     }
   }
   /** Handles displaying the focus ripple. */
   _showFocusRipple() {
     if (!this._isShowingRipple(this._focusRippleRef)) {
-      this._focusRippleRef = this._showRipple({
-        enterDuration: 0,
-        exitDuration: 0
-      }, true);
-      this._focusRippleRef?.element.classList.add("mat-mdc-slider-focus-ripple");
+      this._focusRippleRef = this._showRipple(
+        {
+          enterDuration: 0,
+          exitDuration: 0,
+        },
+        true,
+      );
+      this._focusRippleRef?.element.classList.add('mat-mdc-slider-focus-ripple');
     }
   }
   /** Handles displaying the active ripple. */
@@ -305,9 +294,9 @@ var MatSliderVisualThumb = class _MatSliderVisualThumb {
     if (!this._isShowingRipple(this._activeRippleRef)) {
       this._activeRippleRef = this._showRipple({
         enterDuration: 225,
-        exitDuration: 400
+        exitDuration: 400,
       });
-      this._activeRippleRef?.element.classList.add("mat-mdc-slider-active-ripple");
+      this._activeRippleRef?.element.classList.add('mat-mdc-slider-active-ripple');
     }
   }
   /** Whether the given rippleRef is currently fading in or visible. */
@@ -328,12 +317,14 @@ var MatSliderVisualThumb = class _MatSliderVisualThumb {
       return;
     }
     return this._ripple.launch({
-      animation: this._slider._noopAnimations ? {
-        enterDuration: 0,
-        exitDuration: 0
-      } : animation,
+      animation: this._slider._noopAnimations
+        ? {
+            enterDuration: 0,
+            exitDuration: 0,
+          }
+        : animation,
       centered: true,
-      persistent: true
+      persistent: true,
     });
   }
   /**
@@ -356,11 +347,11 @@ var MatSliderVisualThumb = class _MatSliderVisualThumb {
   }
   /** Shows the value indicator ui. */
   _showValueIndicator() {
-    this._hostElement.classList.add("mdc-slider__thumb--with-indicator");
+    this._hostElement.classList.add('mdc-slider__thumb--with-indicator');
   }
   /** Hides the value indicator ui. */
   _hideValueIndicator() {
-    this._hostElement.classList.remove("mdc-slider__thumb--with-indicator");
+    this._hostElement.classList.remove('mdc-slider__thumb--with-indicator');
   }
   _getSibling() {
     return this._slider._getThumb(this.thumbPosition === _MatThumb.START ? _MatThumb.END : _MatThumb.START);
@@ -374,14 +365,18 @@ var MatSliderVisualThumb = class _MatSliderVisualThumb {
     return this._knob.nativeElement;
   }
   _isShowingAnyRipple() {
-    return this._isShowingRipple(this._hoverRippleRef) || this._isShowingRipple(this._focusRippleRef) || this._isShowingRipple(this._activeRippleRef);
+    return (
+      this._isShowingRipple(this._hoverRippleRef) ||
+      this._isShowingRipple(this._focusRippleRef) ||
+      this._isShowingRipple(this._activeRippleRef)
+    );
   }
   static ɵfac = function MatSliderVisualThumb_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _MatSliderVisualThumb)();
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatSliderVisualThumb,
-    selectors: [["mat-slider-visual-thumb"]],
+    selectors: [['mat-slider-visual-thumb']],
     viewQuery: function MatSliderVisualThumb_Query(rf, ctx) {
       if (rf & 1) {
         ɵɵviewQuery(MatRipple, 5);
@@ -390,92 +385,133 @@ var MatSliderVisualThumb = class _MatSliderVisualThumb {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._ripple = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._knob = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._valueIndicatorContainer = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._ripple = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._knob = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._valueIndicatorContainer = _t.first);
       }
     },
-    hostAttrs: [1, "mdc-slider__thumb", "mat-mdc-slider-visual-thumb"],
+    hostAttrs: [1, 'mdc-slider__thumb', 'mat-mdc-slider-visual-thumb'],
     inputs: {
-      discrete: "discrete",
-      thumbPosition: "thumbPosition",
-      valueIndicatorText: "valueIndicatorText"
+      discrete: 'discrete',
+      thumbPosition: 'thumbPosition',
+      valueIndicatorText: 'valueIndicatorText',
     },
-    features: [ɵɵProvidersFeature([{
-      provide: MAT_SLIDER_VISUAL_THUMB,
-      useExisting: _MatSliderVisualThumb
-    }])],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MAT_SLIDER_VISUAL_THUMB,
+          useExisting: _MatSliderVisualThumb,
+        },
+      ]),
+    ],
     decls: 4,
     vars: 2,
-    consts: [["knob", ""], ["valueIndicatorContainer", ""], [1, "mdc-slider__value-indicator-container"], [1, "mdc-slider__thumb-knob"], ["matRipple", "", 1, "mat-focus-indicator", 3, "matRippleDisabled"], [1, "mdc-slider__value-indicator"], [1, "mdc-slider__value-indicator-text"]],
+    consts: [
+      ['knob', ''],
+      ['valueIndicatorContainer', ''],
+      [1, 'mdc-slider__value-indicator-container'],
+      [1, 'mdc-slider__thumb-knob'],
+      ['matRipple', '', 1, 'mat-focus-indicator', 3, 'matRippleDisabled'],
+      [1, 'mdc-slider__value-indicator'],
+      [1, 'mdc-slider__value-indicator-text'],
+    ],
     template: function MatSliderVisualThumb_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵtemplate(0, MatSliderVisualThumb_Conditional_0_Template, 5, 1, "div", 2);
-        ɵɵelement(1, "div", 3, 0)(3, "div", 4);
+        ɵɵtemplate(0, MatSliderVisualThumb_Conditional_0_Template, 5, 1, 'div', 2);
+        ɵɵelement(1, 'div', 3, 0)(3, 'div', 4);
       }
       if (rf & 2) {
         ɵɵconditional(ctx.discrete ? 0 : -1);
         ɵɵadvance(3);
-        ɵɵproperty("matRippleDisabled", true);
+        ɵɵproperty('matRippleDisabled', true);
       }
     },
     dependencies: [MatRipple],
-    styles: [".mat-mdc-slider-visual-thumb .mat-ripple{height:100%;width:100%}.mat-mdc-slider .mdc-slider__tick-marks{justify-content:start}.mat-mdc-slider .mdc-slider__tick-marks .mdc-slider__tick-mark--active,.mat-mdc-slider .mdc-slider__tick-marks .mdc-slider__tick-mark--inactive{position:absolute;left:2px}\n"],
+    styles: [
+      '.mat-mdc-slider-visual-thumb .mat-ripple{height:100%;width:100%}.mat-mdc-slider .mdc-slider__tick-marks{justify-content:start}.mat-mdc-slider .mdc-slider__tick-marks .mdc-slider__tick-mark--active,.mat-mdc-slider .mdc-slider__tick-marks .mdc-slider__tick-mark--inactive{position:absolute;left:2px}\n',
+    ],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSliderVisualThumb, [{
-    type: Component,
-    args: [{
-      selector: "mat-slider-visual-thumb",
-      host: {
-        "class": "mdc-slider__thumb mat-mdc-slider-visual-thumb"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSliderVisualThumb,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-slider-visual-thumb',
+              host: {
+                class: 'mdc-slider__thumb mat-mdc-slider-visual-thumb',
+              },
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation.None,
+              providers: [
+                {
+                  provide: MAT_SLIDER_VISUAL_THUMB,
+                  useExisting: MatSliderVisualThumb,
+                },
+              ],
+              imports: [MatRipple],
+              template:
+                '@if (discrete) {\n  <div class="mdc-slider__value-indicator-container" #valueIndicatorContainer>\n    <div class="mdc-slider__value-indicator">\n      <span class="mdc-slider__value-indicator-text">{{valueIndicatorText}}</span>\n    </div>\n  </div>\n}\n<div class="mdc-slider__thumb-knob" #knob></div>\n<div matRipple class="mat-focus-indicator" [matRippleDisabled]="true"></div>\n',
+              styles: [
+                '.mat-mdc-slider-visual-thumb .mat-ripple{height:100%;width:100%}.mat-mdc-slider .mdc-slider__tick-marks{justify-content:start}.mat-mdc-slider .mdc-slider__tick-marks .mdc-slider__tick-mark--active,.mat-mdc-slider .mdc-slider__tick-marks .mdc-slider__tick-mark--inactive{position:absolute;left:2px}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        discrete: [
+          {
+            type: Input,
+          },
+        ],
+        thumbPosition: [
+          {
+            type: Input,
+          },
+        ],
+        valueIndicatorText: [
+          {
+            type: Input,
+          },
+        ],
+        _ripple: [
+          {
+            type: ViewChild,
+            args: [MatRipple],
+          },
+        ],
+        _knob: [
+          {
+            type: ViewChild,
+            args: ['knob'],
+          },
+        ],
+        _valueIndicatorContainer: [
+          {
+            type: ViewChild,
+            args: ['valueIndicatorContainer'],
+          },
+        ],
       },
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation.None,
-      providers: [{
-        provide: MAT_SLIDER_VISUAL_THUMB,
-        useExisting: MatSliderVisualThumb
-      }],
-      imports: [MatRipple],
-      template: '@if (discrete) {\n  <div class="mdc-slider__value-indicator-container" #valueIndicatorContainer>\n    <div class="mdc-slider__value-indicator">\n      <span class="mdc-slider__value-indicator-text">{{valueIndicatorText}}</span>\n    </div>\n  </div>\n}\n<div class="mdc-slider__thumb-knob" #knob></div>\n<div matRipple class="mat-focus-indicator" [matRippleDisabled]="true"></div>\n',
-      styles: [".mat-mdc-slider-visual-thumb .mat-ripple{height:100%;width:100%}.mat-mdc-slider .mdc-slider__tick-marks{justify-content:start}.mat-mdc-slider .mdc-slider__tick-marks .mdc-slider__tick-mark--active,.mat-mdc-slider .mdc-slider__tick-marks .mdc-slider__tick-mark--inactive{position:absolute;left:2px}\n"]
-    }]
-  }], () => [], {
-    discrete: [{
-      type: Input
-    }],
-    thumbPosition: [{
-      type: Input
-    }],
-    valueIndicatorText: [{
-      type: Input
-    }],
-    _ripple: [{
-      type: ViewChild,
-      args: [MatRipple]
-    }],
-    _knob: [{
-      type: ViewChild,
-      args: ["knob"]
-    }],
-    _valueIndicatorContainer: [{
-      type: ViewChild,
-      args: ["valueIndicatorContainer"]
-    }]
-  });
+    );
 })();
 var MatSlider = class _MatSlider {
   _ngZone = inject(NgZone);
   _cdr = inject(ChangeDetectorRef);
   _elementRef = inject(ElementRef);
   _dir = inject(Directionality, {
-    optional: true
+    optional: true,
   });
   _globalRippleOptions = inject(MAT_RIPPLE_GLOBAL_OPTIONS, {
-    optional: true
+    optional: true,
   });
   /** The active portion of the slider track. */
   _trackActive;
@@ -536,10 +572,12 @@ var MatSlider = class _MatSlider {
   _updateMin(min) {
     const prevMin = this._min;
     this._min = min;
-    this._isRange ? this._updateMinRange({
-      old: prevMin,
-      new: min
-    }) : this._updateMinNonRange(min);
+    this._isRange
+      ? this._updateMinRange({
+          old: prevMin,
+          new: min,
+        })
+      : this._updateMinNonRange(min);
     this._onMinMaxOrStepChange();
   }
   _updateMinRange(min) {
@@ -552,7 +590,9 @@ var MatSlider = class _MatSlider {
     startInput.max = Math.min(endInput.max, endInput.value);
     startInput._updateWidthInactive();
     endInput._updateWidthInactive();
-    min.new < min.old ? this._onTranslateXChangeBySideEffect(endInput, startInput) : this._onTranslateXChangeBySideEffect(startInput, endInput);
+    min.new < min.old
+      ? this._onTranslateXChangeBySideEffect(endInput, startInput)
+      : this._onTranslateXChangeBySideEffect(startInput, endInput);
     if (oldEndValue !== endInput.value) {
       this._onValueChange(endInput);
     }
@@ -586,10 +626,12 @@ var MatSlider = class _MatSlider {
   _updateMax(max) {
     const prevMax = this._max;
     this._max = max;
-    this._isRange ? this._updateMaxRange({
-      old: prevMax,
-      new: max
-    }) : this._updateMaxNonRange(max);
+    this._isRange
+      ? this._updateMaxRange({
+          old: prevMax,
+          new: max,
+        })
+      : this._updateMaxNonRange(max);
     this._onMinMaxOrStepChange();
   }
   _updateMaxRange(max) {
@@ -602,7 +644,9 @@ var MatSlider = class _MatSlider {
     endInput.min = startInput.value;
     endInput._updateWidthInactive();
     startInput._updateWidthInactive();
-    max.new > max.old ? this._onTranslateXChangeBySideEffect(startInput, endInput) : this._onTranslateXChangeBySideEffect(endInput, startInput);
+    max.new > max.old
+      ? this._onTranslateXChangeBySideEffect(startInput, endInput)
+      : this._onTranslateXChangeBySideEffect(endInput, startInput);
     if (oldEndValue !== endInput.value) {
       this._onValueChange(endInput);
     }
@@ -656,7 +700,9 @@ var MatSlider = class _MatSlider {
     startInput.max = Math.min(this._max, endInput.value);
     startInput._updateWidthInactive();
     endInput._updateWidthInactive();
-    endInput.value < prevStartValue ? this._onTranslateXChangeBySideEffect(startInput, endInput) : this._onTranslateXChangeBySideEffect(endInput, startInput);
+    endInput.value < prevStartValue
+      ? this._onTranslateXChangeBySideEffect(startInput, endInput)
+      : this._onTranslateXChangeBySideEffect(endInput, startInput);
     if (oldEndValue !== endInput.value) {
       this._onValueChange(endInput);
     }
@@ -698,9 +744,9 @@ var MatSlider = class _MatSlider {
   _rippleRadius = 24;
   // The value indicator tooltip text for the visual slider thumb(s).
   /** @docs-private */
-  startValueIndicatorText = "";
+  startValueIndicatorText = '';
   /** @docs-private */
-  endValueIndicatorText = "";
+  endValueIndicatorText = '';
   // Used to control the translateX of the visual slider thumb(s).
   _endThumbTransform;
   _startThumbTransform;
@@ -719,12 +765,12 @@ var MatSlider = class _MatSlider {
   constructor() {
     inject(_CdkPrivateStyleLoader).load(_StructuralStylesLoader);
     const animationMode = inject(ANIMATION_MODULE_TYPE, {
-      optional: true
+      optional: true,
     });
-    this._noopAnimations = animationMode === "NoopAnimations";
+    this._noopAnimations = animationMode === 'NoopAnimations';
     if (this._dir) {
       this._dirChangeSubscription = this._dir.change.subscribe(() => this._onDirChange());
-      this._isRtl = this._dir.value === "rtl";
+      this._isRtl = this._dir.value === 'rtl';
     }
   }
   /** The radius of the native slider's knob. AFAIK there is no way to avoid hardcoding this. */
@@ -738,7 +784,7 @@ var MatSlider = class _MatSlider {
     const sInput = this._getInput(_MatThumb.START);
     this._isRange = !!eInput && !!sInput;
     this._cdr.detectChanges();
-    if (typeof ngDevMode === "undefined" || ngDevMode) {
+    if (typeof ngDevMode === 'undefined' || ngDevMode) {
       _validateInputs(this._isRange, this._getInput(_MatThumb.END), this._getInput(_MatThumb.START));
     }
     const thumb = this._getThumb(_MatThumb.END);
@@ -779,7 +825,7 @@ var MatSlider = class _MatSlider {
   }
   /** Handles updating the slider ui after a dir change. */
   _onDirChange() {
-    this._isRtl = this._dir?.value === "rtl";
+    this._isRtl = this._dir?.value === 'rtl';
     this._isRange ? this._onDirChangeRange() : this._onDirChangeNonRange();
     this._updateTickMarkUI();
   }
@@ -803,7 +849,7 @@ var MatSlider = class _MatSlider {
   }
   /** Starts observing and updating the slider if the host changes its size. */
   _observeHostResize() {
-    if (typeof ResizeObserver === "undefined" || !ResizeObserver) {
+    if (typeof ResizeObserver === 'undefined' || !ResizeObserver) {
       return;
     }
     this._ngZone.runOutsideAngular(() => {
@@ -929,8 +975,8 @@ var MatSlider = class _MatSlider {
     const sibling = source.getSibling();
     const sourceThumb = this._getThumb(source.thumbPosition);
     const siblingThumb = this._getThumb(sibling.thumbPosition);
-    siblingThumb._hostElement.classList.remove("mdc-slider__thumb--top");
-    sourceThumb._hostElement.classList.toggle("mdc-slider__thumb--top", this._thumbsOverlap);
+    siblingThumb._hostElement.classList.remove('mdc-slider__thumb--top');
+    sourceThumb._hostElement.classList.toggle('mdc-slider__thumb--top', this._thumbsOverlap);
   }
   /** Updates the UI of slider thumbs when they begin or stop overlapping. */
   _updateOverlappingThumbUI(source) {
@@ -968,11 +1014,17 @@ var MatSlider = class _MatSlider {
       return;
     }
     const valuetext = this.displayWith(source.value);
-    this._hasViewInitialized ? source._valuetext.set(valuetext) : source._hostElement.setAttribute("aria-valuetext", valuetext);
+    this._hasViewInitialized
+      ? source._valuetext.set(valuetext)
+      : source._hostElement.setAttribute('aria-valuetext', valuetext);
     if (this.discrete) {
-      source.thumbPosition === _MatThumb.START ? this.startValueIndicatorText = valuetext : this.endValueIndicatorText = valuetext;
+      source.thumbPosition === _MatThumb.START
+        ? (this.startValueIndicatorText = valuetext)
+        : (this.endValueIndicatorText = valuetext);
       const visualThumb = this._getThumb(source.thumbPosition);
-      valuetext.length < 3 ? visualThumb._hostElement.classList.add("mdc-slider__thumb--short-value") : visualThumb._hostElement.classList.remove("mdc-slider__thumb--short-value");
+      valuetext.length < 3
+        ? visualThumb._hostElement.classList.add('mdc-slider__thumb--short-value')
+        : visualThumb._hostElement.classList.remove('mdc-slider__thumb--short-value');
     }
   }
   /** Updates all value indicator UIs in the slider. */
@@ -1033,32 +1085,34 @@ var MatSlider = class _MatSlider {
     const activePercentage = Math.abs(sibling.translateX - source.translateX) / this._cachedWidth;
     if (source._isLeftThumb && this._cachedWidth) {
       this._setTrackActiveStyles({
-        left: "auto",
+        left: 'auto',
         right: `${this._cachedWidth - sibling.translateX}px`,
-        transformOrigin: "right",
-        transform: `scaleX(${activePercentage})`
+        transformOrigin: 'right',
+        transform: `scaleX(${activePercentage})`,
       });
     } else {
       this._setTrackActiveStyles({
         left: `${sibling.translateX}px`,
-        right: "auto",
-        transformOrigin: "left",
-        transform: `scaleX(${activePercentage})`
+        right: 'auto',
+        transformOrigin: 'left',
+        transform: `scaleX(${activePercentage})`,
       });
     }
   }
   _updateTrackUINonRange(source) {
-    this._isRtl ? this._setTrackActiveStyles({
-      left: "auto",
-      right: "0px",
-      transformOrigin: "right",
-      transform: `scaleX(${1 - source.fillPercentage})`
-    }) : this._setTrackActiveStyles({
-      left: "0px",
-      right: "auto",
-      transformOrigin: "left",
-      transform: `scaleX(${source.fillPercentage})`
-    });
+    this._isRtl
+      ? this._setTrackActiveStyles({
+          left: 'auto',
+          right: '0px',
+          transformOrigin: 'right',
+          transform: `scaleX(${1 - source.fillPercentage})`,
+        })
+      : this._setTrackActiveStyles({
+          left: '0px',
+          right: 'auto',
+          transformOrigin: 'left',
+          transform: `scaleX(${source.fillPercentage})`,
+        });
   }
   // Tick mark update conditions
   //
@@ -1088,7 +1142,9 @@ var MatSlider = class _MatSlider {
     const numInactiveBeforeStartThumb = Math.max(Math.round((startValue - this.min) / step), 0);
     const numActive = Math.max(Math.round((endValue - startValue) / step) + 1, 0);
     const numInactiveAfterEndThumb = Math.max(Math.round((this.max - endValue) / step), 0);
-    this._tickMarks = Array(numInactiveBeforeStartThumb).fill(_MatTickMark.INACTIVE).concat(Array(numActive).fill(_MatTickMark.ACTIVE), Array(numInactiveAfterEndThumb).fill(_MatTickMark.INACTIVE));
+    this._tickMarks = Array(numInactiveBeforeStartThumb)
+      .fill(_MatTickMark.INACTIVE)
+      .concat(Array(numActive).fill(_MatTickMark.ACTIVE), Array(numInactiveAfterEndThumb).fill(_MatTickMark.INACTIVE));
   }
   /** Gets the slider thumb input of the given thumb position. */
   _getInput(thumbPosition) {
@@ -1106,7 +1162,7 @@ var MatSlider = class _MatSlider {
   }
   _setTransition(withAnimation) {
     this._hasAnimation = !this._platform.IOS && withAnimation && !this._noopAnimations;
-    this._elementRef.nativeElement.classList.toggle("mat-mdc-slider-with-animation", this._hasAnimation);
+    this._elementRef.nativeElement.classList.toggle('mat-mdc-slider-with-animation', this._hasAnimation);
   }
   /** Whether the given pointer event occurred within the bounds of the slider pointer's DOM Rect. */
   _isCursorOnSliderThumb(event, rect) {
@@ -1122,7 +1178,7 @@ var MatSlider = class _MatSlider {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatSlider,
-    selectors: [["mat-slider"]],
+    selectors: [['mat-slider']],
     contentQueries: function MatSlider_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MAT_SLIDER_THUMB, 5);
@@ -1130,8 +1186,8 @@ var MatSlider = class _MatSlider {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._input = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._inputs = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._input = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._inputs = _t);
       }
     },
     viewQuery: function MatSlider_Query(rf, ctx) {
@@ -1141,51 +1197,68 @@ var MatSlider = class _MatSlider {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._trackActive = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._thumbs = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._trackActive = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._thumbs = _t);
       }
     },
-    hostAttrs: [1, "mat-mdc-slider", "mdc-slider"],
+    hostAttrs: [1, 'mat-mdc-slider', 'mdc-slider'],
     hostVars: 12,
     hostBindings: function MatSlider_HostBindings(rf, ctx) {
       if (rf & 2) {
-        ɵɵclassMap("mat-" + (ctx.color || "primary"));
-        ɵɵclassProp("mdc-slider--range", ctx._isRange)("mdc-slider--disabled", ctx.disabled)("mdc-slider--discrete", ctx.discrete)("mdc-slider--tick-marks", ctx.showTickMarks)("_mat-animation-noopable", ctx._noopAnimations);
+        ɵɵclassMap('mat-' + (ctx.color || 'primary'));
+        ɵɵclassProp('mdc-slider--range', ctx._isRange)('mdc-slider--disabled', ctx.disabled)(
+          'mdc-slider--discrete',
+          ctx.discrete,
+        )('mdc-slider--tick-marks', ctx.showTickMarks)('_mat-animation-noopable', ctx._noopAnimations);
       }
     },
     inputs: {
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      discrete: [2, "discrete", "discrete", booleanAttribute],
-      showTickMarks: [2, "showTickMarks", "showTickMarks", booleanAttribute],
-      min: [2, "min", "min", numberAttribute],
-      color: "color",
-      disableRipple: [2, "disableRipple", "disableRipple", booleanAttribute],
-      max: [2, "max", "max", numberAttribute],
-      step: [2, "step", "step", numberAttribute],
-      displayWith: "displayWith"
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
+      discrete: [2, 'discrete', 'discrete', booleanAttribute],
+      showTickMarks: [2, 'showTickMarks', 'showTickMarks', booleanAttribute],
+      min: [2, 'min', 'min', numberAttribute],
+      color: 'color',
+      disableRipple: [2, 'disableRipple', 'disableRipple', booleanAttribute],
+      max: [2, 'max', 'max', numberAttribute],
+      step: [2, 'step', 'step', numberAttribute],
+      displayWith: 'displayWith',
     },
-    exportAs: ["matSlider"],
-    features: [ɵɵProvidersFeature([{
-      provide: MAT_SLIDER,
-      useExisting: _MatSlider
-    }])],
+    exportAs: ['matSlider'],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MAT_SLIDER,
+          useExisting: _MatSlider,
+        },
+      ]),
+    ],
     ngContentSelectors: _c3,
     decls: 9,
     vars: 5,
-    consts: [["trackActive", ""], ["tickMarkContainer", ""], [1, "mdc-slider__track"], [1, "mdc-slider__track--inactive"], [1, "mdc-slider__track--active"], [1, "mdc-slider__track--active_fill"], [1, "mdc-slider__tick-marks"], [3, "discrete", "thumbPosition", "valueIndicatorText"], [3, "class", "transform"]],
+    consts: [
+      ['trackActive', ''],
+      ['tickMarkContainer', ''],
+      [1, 'mdc-slider__track'],
+      [1, 'mdc-slider__track--inactive'],
+      [1, 'mdc-slider__track--active'],
+      [1, 'mdc-slider__track--active_fill'],
+      [1, 'mdc-slider__tick-marks'],
+      [3, 'discrete', 'thumbPosition', 'valueIndicatorText'],
+      [3, 'class', 'transform'],
+    ],
     template: function MatSlider_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵprojection(0);
-        ɵɵelementStart(1, "div", 2);
-        ɵɵelement(2, "div", 3);
-        ɵɵelementStart(3, "div", 4);
-        ɵɵelement(4, "div", 5, 0);
+        ɵɵelementStart(1, 'div', 2);
+        ɵɵelement(2, 'div', 3);
+        ɵɵelementStart(3, 'div', 4);
+        ɵɵelement(4, 'div', 5, 0);
         ɵɵelementEnd();
-        ɵɵtemplate(6, MatSlider_Conditional_6_Template, 3, 1, "div", 6);
+        ɵɵtemplate(6, MatSlider_Conditional_6_Template, 3, 1, 'div', 6);
         ɵɵelementEnd();
-        ɵɵtemplate(7, MatSlider_Conditional_7_Template, 1, 3, "mat-slider-visual-thumb", 7);
-        ɵɵelement(8, "mat-slider-visual-thumb", 7);
+        ɵɵtemplate(7, MatSlider_Conditional_7_Template, 1, 3, 'mat-slider-visual-thumb', 7);
+        ɵɵelement(8, 'mat-slider-visual-thumb', 7);
       }
       if (rf & 2) {
         ɵɵadvance(6);
@@ -1193,38 +1266,47 @@ var MatSlider = class _MatSlider {
         ɵɵadvance();
         ɵɵconditional(ctx._isRange ? 7 : -1);
         ɵɵadvance();
-        ɵɵproperty("discrete", ctx.discrete)("thumbPosition", 2)("valueIndicatorText", ctx.endValueIndicatorText);
+        ɵɵproperty('discrete', ctx.discrete)('thumbPosition', 2)('valueIndicatorText', ctx.endValueIndicatorText);
       }
     },
     dependencies: [MatSliderVisualThumb],
-    styles: ['.mdc-slider__track{position:absolute;top:50%;transform:translateY(-50%);width:100%;pointer-events:none;height:var(--mdc-slider-inactive-track-height, 4px)}.mdc-slider__track--active,.mdc-slider__track--inactive{display:flex;height:100%;position:absolute;width:100%}.mdc-slider__track--active{overflow:hidden;border-radius:var(--mdc-slider-active-track-shape, var(--mat-sys-corner-full));height:var(--mdc-slider-active-track-height, 4px);top:calc((var(--mdc-slider-inactive-track-height, 4px) - var(--mdc-slider-active-track-height, 4px))/2)}.mdc-slider__track--active_fill{border-top-style:solid;box-sizing:border-box;height:100%;width:100%;position:relative;transform-origin:left;transition:transform 80ms ease;border-color:var(--mdc-slider-active-track-color, var(--mat-sys-primary));border-top-width:var(--mdc-slider-active-track-height, 4px)}.mdc-slider--disabled .mdc-slider__track--active_fill{border-color:var(--mdc-slider-disabled-active-track-color, var(--mat-sys-on-surface))}[dir=rtl] .mdc-slider__track--active_fill{-webkit-transform-origin:right;transform-origin:right}.mdc-slider__track--inactive{left:0;top:0;opacity:.24;background-color:var(--mdc-slider-inactive-track-color, var(--mat-sys-surface-variant));height:var(--mdc-slider-inactive-track-height, 4px);border-radius:var(--mdc-slider-inactive-track-shape, var(--mat-sys-corner-full))}.mdc-slider--disabled .mdc-slider__track--inactive{background-color:var(--mdc-slider-disabled-inactive-track-color, var(--mat-sys-on-surface));opacity:.24}.mdc-slider__track--inactive::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}@media(forced-colors: active){.mdc-slider__track--inactive::before{border-color:CanvasText}}.mdc-slider__value-indicator-container{bottom:44px;left:50%;pointer-events:none;position:absolute;transform:translateX(-50%);transform:var(--mat-slider-value-indicator-container-transform, translateX(-50%) rotate(-45deg))}.mdc-slider__thumb--with-indicator .mdc-slider__value-indicator-container{pointer-events:auto}.mdc-slider__value-indicator{display:flex;align-items:center;border-radius:4px;height:32px;padding:0 12px;transform:scale(0);transform-origin:bottom;opacity:1;transition:transform 100ms cubic-bezier(0.4, 0, 1, 1);word-break:normal;background-color:var(--mdc-slider-label-container-color, var(--mat-sys-primary));color:var(--mdc-slider-label-label-text-color, var(--mat-sys-on-primary));width:var(--mat-slider-value-indicator-width, 28px);height:var(--mat-slider-value-indicator-height, 28px);padding:var(--mat-slider-value-indicator-padding, 0);opacity:var(--mat-slider-value-indicator-opacity, 1);border-radius:var(--mat-slider-value-indicator-border-radius, 50% 50% 50% 0)}.mdc-slider__thumb--with-indicator .mdc-slider__value-indicator{transition:transform 100ms cubic-bezier(0, 0, 0.2, 1);transform:scale(1)}.mdc-slider__value-indicator::before{border-left:6px solid rgba(0,0,0,0);border-right:6px solid rgba(0,0,0,0);border-top:6px solid;bottom:-5px;content:"";height:0;left:50%;position:absolute;transform:translateX(-50%);width:0;display:var(--mat-slider-value-indicator-caret-display, none);border-top-color:var(--mdc-slider-label-container-color, var(--mat-sys-primary))}.mdc-slider__value-indicator::after{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}@media(forced-colors: active){.mdc-slider__value-indicator::after{border-color:CanvasText}}.mdc-slider__value-indicator-text{text-align:center;width:var(--mat-slider-value-indicator-width, 28px);transform:var(--mat-slider-value-indicator-text-transform, rotate(45deg));font-family:var(--mdc-slider-label-label-text-font, var(--mat-sys-label-medium-font));font-size:var(--mdc-slider-label-label-text-size, var(--mat-sys-label-medium-size));font-weight:var(--mdc-slider-label-label-text-weight, var(--mat-sys-label-medium-weight));line-height:var(--mdc-slider-label-label-text-line-height, var(--mat-sys-label-medium-line-height));letter-spacing:var(--mdc-slider-label-label-text-tracking, var(--mat-sys-label-medium-tracking))}.mdc-slider__thumb{-webkit-user-select:none;user-select:none;display:flex;left:-24px;outline:none;position:absolute;height:48px;width:48px;pointer-events:none}.mdc-slider--discrete .mdc-slider__thumb{transition:transform 80ms ease}.mdc-slider--disabled .mdc-slider__thumb{pointer-events:none}.mdc-slider__thumb--top{z-index:1}.mdc-slider__thumb-knob{position:absolute;box-sizing:border-box;left:50%;top:50%;transform:translate(-50%, -50%);border-style:solid;width:var(--mdc-slider-handle-width, 20px);height:var(--mdc-slider-handle-height, 20px);border-width:calc(var(--mdc-slider-handle-height, 20px)/2) calc(var(--mdc-slider-handle-width, 20px)/2);box-shadow:var(--mdc-slider-handle-elevation, var(--mat-sys-level1));background-color:var(--mdc-slider-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-handle-color, var(--mat-sys-primary));border-radius:var(--mdc-slider-handle-shape, var(--mat-sys-corner-full))}.mdc-slider__thumb:hover .mdc-slider__thumb-knob{background-color:var(--mdc-slider-hover-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-hover-handle-color, var(--mat-sys-primary))}.mdc-slider__thumb--focused .mdc-slider__thumb-knob{background-color:var(--mdc-slider-focus-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-focus-handle-color, var(--mat-sys-primary))}.mdc-slider--disabled .mdc-slider__thumb-knob{background-color:var(--mdc-slider-disabled-handle-color, var(--mat-sys-on-surface));border-color:var(--mdc-slider-disabled-handle-color, var(--mat-sys-on-surface))}.mdc-slider__thumb--top .mdc-slider__thumb-knob,.mdc-slider__thumb--top.mdc-slider__thumb:hover .mdc-slider__thumb-knob,.mdc-slider__thumb--top.mdc-slider__thumb--focused .mdc-slider__thumb-knob{border:solid 1px #fff;box-sizing:content-box;border-color:var(--mdc-slider-with-overlap-handle-outline-color, var(--mat-sys-on-primary));border-width:var(--mdc-slider-with-overlap-handle-outline-width, 1px)}.mdc-slider__tick-marks{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:space-between;padding:0 1px;position:absolute;width:100%}.mdc-slider__tick-mark--active,.mdc-slider__tick-mark--inactive{width:var(--mdc-slider-with-tick-marks-container-size, 2px);height:var(--mdc-slider-with-tick-marks-container-size, 2px);border-radius:var(--mdc-slider-with-tick-marks-container-shape, var(--mat-sys-corner-full))}.mdc-slider__tick-mark--inactive{opacity:var(--mdc-slider-with-tick-marks-inactive-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-inactive-container-color, var(--mat-sys-on-surface-variant))}.mdc-slider--disabled .mdc-slider__tick-mark--inactive{opacity:var(--mdc-slider-with-tick-marks-inactive-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-disabled-container-color, var(--mat-sys-on-surface))}.mdc-slider__tick-mark--active{opacity:var(--mdc-slider-with-tick-marks-active-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-active-container-color, var(--mat-sys-on-primary))}.mdc-slider__input{cursor:pointer;left:2px;margin:0;height:44px;opacity:0;position:absolute;top:2px;width:44px;box-sizing:content-box}.mdc-slider__input.mat-mdc-slider-input-no-pointer-events{pointer-events:none}.mdc-slider__input.mat-slider__right-input{left:auto;right:0}.mat-mdc-slider{display:inline-block;box-sizing:border-box;outline:none;vertical-align:middle;cursor:pointer;height:48px;margin:0 8px;position:relative;touch-action:pan-y;width:auto;min-width:112px;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-slider.mdc-slider--disabled{cursor:auto;opacity:.38}.mat-mdc-slider .mdc-slider__thumb,.mat-mdc-slider .mdc-slider__track--active_fill{transition-duration:0ms}.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__thumb,.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__track--active_fill{transition-duration:80ms}.mat-mdc-slider.mdc-slider--discrete .mdc-slider__thumb,.mat-mdc-slider.mdc-slider--discrete .mdc-slider__track--active_fill{transition-duration:0ms}.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__thumb,.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__track--active_fill{transition-duration:80ms}.mat-mdc-slider .mat-ripple .mat-ripple-element{background-color:var(--mat-slider-ripple-color, var(--mat-sys-primary))}.mat-mdc-slider .mat-ripple .mat-mdc-slider-hover-ripple{background-color:var(--mat-slider-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-primary) 5%, transparent))}.mat-mdc-slider .mat-ripple .mat-mdc-slider-focus-ripple,.mat-mdc-slider .mat-ripple .mat-mdc-slider-active-ripple{background-color:var(--mat-slider-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-primary) 20%, transparent))}.mat-mdc-slider._mat-animation-noopable.mdc-slider--discrete .mdc-slider__thumb,.mat-mdc-slider._mat-animation-noopable.mdc-slider--discrete .mdc-slider__track--active_fill,.mat-mdc-slider._mat-animation-noopable .mdc-slider__value-indicator{transition:none}.mat-mdc-slider .mat-focus-indicator::before{border-radius:50%}.mdc-slider__thumb--focused .mat-focus-indicator::before{content:""}\n'],
+    styles: [
+      '.mdc-slider__track{position:absolute;top:50%;transform:translateY(-50%);width:100%;pointer-events:none;height:var(--mdc-slider-inactive-track-height, 4px)}.mdc-slider__track--active,.mdc-slider__track--inactive{display:flex;height:100%;position:absolute;width:100%}.mdc-slider__track--active{overflow:hidden;border-radius:var(--mdc-slider-active-track-shape, var(--mat-sys-corner-full));height:var(--mdc-slider-active-track-height, 4px);top:calc((var(--mdc-slider-inactive-track-height, 4px) - var(--mdc-slider-active-track-height, 4px))/2)}.mdc-slider__track--active_fill{border-top-style:solid;box-sizing:border-box;height:100%;width:100%;position:relative;transform-origin:left;transition:transform 80ms ease;border-color:var(--mdc-slider-active-track-color, var(--mat-sys-primary));border-top-width:var(--mdc-slider-active-track-height, 4px)}.mdc-slider--disabled .mdc-slider__track--active_fill{border-color:var(--mdc-slider-disabled-active-track-color, var(--mat-sys-on-surface))}[dir=rtl] .mdc-slider__track--active_fill{-webkit-transform-origin:right;transform-origin:right}.mdc-slider__track--inactive{left:0;top:0;opacity:.24;background-color:var(--mdc-slider-inactive-track-color, var(--mat-sys-surface-variant));height:var(--mdc-slider-inactive-track-height, 4px);border-radius:var(--mdc-slider-inactive-track-shape, var(--mat-sys-corner-full))}.mdc-slider--disabled .mdc-slider__track--inactive{background-color:var(--mdc-slider-disabled-inactive-track-color, var(--mat-sys-on-surface));opacity:.24}.mdc-slider__track--inactive::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}@media(forced-colors: active){.mdc-slider__track--inactive::before{border-color:CanvasText}}.mdc-slider__value-indicator-container{bottom:44px;left:50%;pointer-events:none;position:absolute;transform:translateX(-50%);transform:var(--mat-slider-value-indicator-container-transform, translateX(-50%) rotate(-45deg))}.mdc-slider__thumb--with-indicator .mdc-slider__value-indicator-container{pointer-events:auto}.mdc-slider__value-indicator{display:flex;align-items:center;border-radius:4px;height:32px;padding:0 12px;transform:scale(0);transform-origin:bottom;opacity:1;transition:transform 100ms cubic-bezier(0.4, 0, 1, 1);word-break:normal;background-color:var(--mdc-slider-label-container-color, var(--mat-sys-primary));color:var(--mdc-slider-label-label-text-color, var(--mat-sys-on-primary));width:var(--mat-slider-value-indicator-width, 28px);height:var(--mat-slider-value-indicator-height, 28px);padding:var(--mat-slider-value-indicator-padding, 0);opacity:var(--mat-slider-value-indicator-opacity, 1);border-radius:var(--mat-slider-value-indicator-border-radius, 50% 50% 50% 0)}.mdc-slider__thumb--with-indicator .mdc-slider__value-indicator{transition:transform 100ms cubic-bezier(0, 0, 0.2, 1);transform:scale(1)}.mdc-slider__value-indicator::before{border-left:6px solid rgba(0,0,0,0);border-right:6px solid rgba(0,0,0,0);border-top:6px solid;bottom:-5px;content:"";height:0;left:50%;position:absolute;transform:translateX(-50%);width:0;display:var(--mat-slider-value-indicator-caret-display, none);border-top-color:var(--mdc-slider-label-container-color, var(--mat-sys-primary))}.mdc-slider__value-indicator::after{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}@media(forced-colors: active){.mdc-slider__value-indicator::after{border-color:CanvasText}}.mdc-slider__value-indicator-text{text-align:center;width:var(--mat-slider-value-indicator-width, 28px);transform:var(--mat-slider-value-indicator-text-transform, rotate(45deg));font-family:var(--mdc-slider-label-label-text-font, var(--mat-sys-label-medium-font));font-size:var(--mdc-slider-label-label-text-size, var(--mat-sys-label-medium-size));font-weight:var(--mdc-slider-label-label-text-weight, var(--mat-sys-label-medium-weight));line-height:var(--mdc-slider-label-label-text-line-height, var(--mat-sys-label-medium-line-height));letter-spacing:var(--mdc-slider-label-label-text-tracking, var(--mat-sys-label-medium-tracking))}.mdc-slider__thumb{-webkit-user-select:none;user-select:none;display:flex;left:-24px;outline:none;position:absolute;height:48px;width:48px;pointer-events:none}.mdc-slider--discrete .mdc-slider__thumb{transition:transform 80ms ease}.mdc-slider--disabled .mdc-slider__thumb{pointer-events:none}.mdc-slider__thumb--top{z-index:1}.mdc-slider__thumb-knob{position:absolute;box-sizing:border-box;left:50%;top:50%;transform:translate(-50%, -50%);border-style:solid;width:var(--mdc-slider-handle-width, 20px);height:var(--mdc-slider-handle-height, 20px);border-width:calc(var(--mdc-slider-handle-height, 20px)/2) calc(var(--mdc-slider-handle-width, 20px)/2);box-shadow:var(--mdc-slider-handle-elevation, var(--mat-sys-level1));background-color:var(--mdc-slider-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-handle-color, var(--mat-sys-primary));border-radius:var(--mdc-slider-handle-shape, var(--mat-sys-corner-full))}.mdc-slider__thumb:hover .mdc-slider__thumb-knob{background-color:var(--mdc-slider-hover-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-hover-handle-color, var(--mat-sys-primary))}.mdc-slider__thumb--focused .mdc-slider__thumb-knob{background-color:var(--mdc-slider-focus-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-focus-handle-color, var(--mat-sys-primary))}.mdc-slider--disabled .mdc-slider__thumb-knob{background-color:var(--mdc-slider-disabled-handle-color, var(--mat-sys-on-surface));border-color:var(--mdc-slider-disabled-handle-color, var(--mat-sys-on-surface))}.mdc-slider__thumb--top .mdc-slider__thumb-knob,.mdc-slider__thumb--top.mdc-slider__thumb:hover .mdc-slider__thumb-knob,.mdc-slider__thumb--top.mdc-slider__thumb--focused .mdc-slider__thumb-knob{border:solid 1px #fff;box-sizing:content-box;border-color:var(--mdc-slider-with-overlap-handle-outline-color, var(--mat-sys-on-primary));border-width:var(--mdc-slider-with-overlap-handle-outline-width, 1px)}.mdc-slider__tick-marks{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:space-between;padding:0 1px;position:absolute;width:100%}.mdc-slider__tick-mark--active,.mdc-slider__tick-mark--inactive{width:var(--mdc-slider-with-tick-marks-container-size, 2px);height:var(--mdc-slider-with-tick-marks-container-size, 2px);border-radius:var(--mdc-slider-with-tick-marks-container-shape, var(--mat-sys-corner-full))}.mdc-slider__tick-mark--inactive{opacity:var(--mdc-slider-with-tick-marks-inactive-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-inactive-container-color, var(--mat-sys-on-surface-variant))}.mdc-slider--disabled .mdc-slider__tick-mark--inactive{opacity:var(--mdc-slider-with-tick-marks-inactive-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-disabled-container-color, var(--mat-sys-on-surface))}.mdc-slider__tick-mark--active{opacity:var(--mdc-slider-with-tick-marks-active-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-active-container-color, var(--mat-sys-on-primary))}.mdc-slider__input{cursor:pointer;left:2px;margin:0;height:44px;opacity:0;position:absolute;top:2px;width:44px;box-sizing:content-box}.mdc-slider__input.mat-mdc-slider-input-no-pointer-events{pointer-events:none}.mdc-slider__input.mat-slider__right-input{left:auto;right:0}.mat-mdc-slider{display:inline-block;box-sizing:border-box;outline:none;vertical-align:middle;cursor:pointer;height:48px;margin:0 8px;position:relative;touch-action:pan-y;width:auto;min-width:112px;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-slider.mdc-slider--disabled{cursor:auto;opacity:.38}.mat-mdc-slider .mdc-slider__thumb,.mat-mdc-slider .mdc-slider__track--active_fill{transition-duration:0ms}.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__thumb,.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__track--active_fill{transition-duration:80ms}.mat-mdc-slider.mdc-slider--discrete .mdc-slider__thumb,.mat-mdc-slider.mdc-slider--discrete .mdc-slider__track--active_fill{transition-duration:0ms}.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__thumb,.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__track--active_fill{transition-duration:80ms}.mat-mdc-slider .mat-ripple .mat-ripple-element{background-color:var(--mat-slider-ripple-color, var(--mat-sys-primary))}.mat-mdc-slider .mat-ripple .mat-mdc-slider-hover-ripple{background-color:var(--mat-slider-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-primary) 5%, transparent))}.mat-mdc-slider .mat-ripple .mat-mdc-slider-focus-ripple,.mat-mdc-slider .mat-ripple .mat-mdc-slider-active-ripple{background-color:var(--mat-slider-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-primary) 20%, transparent))}.mat-mdc-slider._mat-animation-noopable.mdc-slider--discrete .mdc-slider__thumb,.mat-mdc-slider._mat-animation-noopable.mdc-slider--discrete .mdc-slider__track--active_fill,.mat-mdc-slider._mat-animation-noopable .mdc-slider__value-indicator{transition:none}.mat-mdc-slider .mat-focus-indicator::before{border-radius:50%}.mdc-slider__thumb--focused .mat-focus-indicator::before{content:""}\n',
+    ],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSlider, [{
-    type: Component,
-    args: [{
-      selector: "mat-slider",
-      host: {
-        "class": "mat-mdc-slider mdc-slider",
-        "[class]": '"mat-" + (color || "primary")',
-        "[class.mdc-slider--range]": "_isRange",
-        "[class.mdc-slider--disabled]": "disabled",
-        "[class.mdc-slider--discrete]": "discrete",
-        "[class.mdc-slider--tick-marks]": "showTickMarks",
-        "[class._mat-animation-noopable]": "_noopAnimations"
-      },
-      exportAs: "matSlider",
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation.None,
-      providers: [{
-        provide: MAT_SLIDER,
-        useExisting: MatSlider
-      }],
-      imports: [MatSliderVisualThumb],
-      template: `<!-- Inputs -->
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSlider,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-slider',
+              host: {
+                class: 'mat-mdc-slider mdc-slider',
+                '[class]': '"mat-" + (color || "primary")',
+                '[class.mdc-slider--range]': '_isRange',
+                '[class.mdc-slider--disabled]': 'disabled',
+                '[class.mdc-slider--discrete]': 'discrete',
+                '[class.mdc-slider--tick-marks]': 'showTickMarks',
+                '[class._mat-animation-noopable]': '_noopAnimations',
+              },
+              exportAs: 'matSlider',
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation.None,
+              providers: [
+                {
+                  provide: MAT_SLIDER,
+                  useExisting: MatSlider,
+                },
+              ],
+              imports: [MatSliderVisualThumb],
+              template: `<!-- Inputs -->
 <ng-content></ng-content>
 
 <!-- Track -->
@@ -1261,80 +1343,130 @@ var MatSlider = class _MatSlider {
   [valueIndicatorText]="endValueIndicatorText">
 </mat-slider-visual-thumb>
 `,
-      styles: ['.mdc-slider__track{position:absolute;top:50%;transform:translateY(-50%);width:100%;pointer-events:none;height:var(--mdc-slider-inactive-track-height, 4px)}.mdc-slider__track--active,.mdc-slider__track--inactive{display:flex;height:100%;position:absolute;width:100%}.mdc-slider__track--active{overflow:hidden;border-radius:var(--mdc-slider-active-track-shape, var(--mat-sys-corner-full));height:var(--mdc-slider-active-track-height, 4px);top:calc((var(--mdc-slider-inactive-track-height, 4px) - var(--mdc-slider-active-track-height, 4px))/2)}.mdc-slider__track--active_fill{border-top-style:solid;box-sizing:border-box;height:100%;width:100%;position:relative;transform-origin:left;transition:transform 80ms ease;border-color:var(--mdc-slider-active-track-color, var(--mat-sys-primary));border-top-width:var(--mdc-slider-active-track-height, 4px)}.mdc-slider--disabled .mdc-slider__track--active_fill{border-color:var(--mdc-slider-disabled-active-track-color, var(--mat-sys-on-surface))}[dir=rtl] .mdc-slider__track--active_fill{-webkit-transform-origin:right;transform-origin:right}.mdc-slider__track--inactive{left:0;top:0;opacity:.24;background-color:var(--mdc-slider-inactive-track-color, var(--mat-sys-surface-variant));height:var(--mdc-slider-inactive-track-height, 4px);border-radius:var(--mdc-slider-inactive-track-shape, var(--mat-sys-corner-full))}.mdc-slider--disabled .mdc-slider__track--inactive{background-color:var(--mdc-slider-disabled-inactive-track-color, var(--mat-sys-on-surface));opacity:.24}.mdc-slider__track--inactive::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}@media(forced-colors: active){.mdc-slider__track--inactive::before{border-color:CanvasText}}.mdc-slider__value-indicator-container{bottom:44px;left:50%;pointer-events:none;position:absolute;transform:translateX(-50%);transform:var(--mat-slider-value-indicator-container-transform, translateX(-50%) rotate(-45deg))}.mdc-slider__thumb--with-indicator .mdc-slider__value-indicator-container{pointer-events:auto}.mdc-slider__value-indicator{display:flex;align-items:center;border-radius:4px;height:32px;padding:0 12px;transform:scale(0);transform-origin:bottom;opacity:1;transition:transform 100ms cubic-bezier(0.4, 0, 1, 1);word-break:normal;background-color:var(--mdc-slider-label-container-color, var(--mat-sys-primary));color:var(--mdc-slider-label-label-text-color, var(--mat-sys-on-primary));width:var(--mat-slider-value-indicator-width, 28px);height:var(--mat-slider-value-indicator-height, 28px);padding:var(--mat-slider-value-indicator-padding, 0);opacity:var(--mat-slider-value-indicator-opacity, 1);border-radius:var(--mat-slider-value-indicator-border-radius, 50% 50% 50% 0)}.mdc-slider__thumb--with-indicator .mdc-slider__value-indicator{transition:transform 100ms cubic-bezier(0, 0, 0.2, 1);transform:scale(1)}.mdc-slider__value-indicator::before{border-left:6px solid rgba(0,0,0,0);border-right:6px solid rgba(0,0,0,0);border-top:6px solid;bottom:-5px;content:"";height:0;left:50%;position:absolute;transform:translateX(-50%);width:0;display:var(--mat-slider-value-indicator-caret-display, none);border-top-color:var(--mdc-slider-label-container-color, var(--mat-sys-primary))}.mdc-slider__value-indicator::after{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}@media(forced-colors: active){.mdc-slider__value-indicator::after{border-color:CanvasText}}.mdc-slider__value-indicator-text{text-align:center;width:var(--mat-slider-value-indicator-width, 28px);transform:var(--mat-slider-value-indicator-text-transform, rotate(45deg));font-family:var(--mdc-slider-label-label-text-font, var(--mat-sys-label-medium-font));font-size:var(--mdc-slider-label-label-text-size, var(--mat-sys-label-medium-size));font-weight:var(--mdc-slider-label-label-text-weight, var(--mat-sys-label-medium-weight));line-height:var(--mdc-slider-label-label-text-line-height, var(--mat-sys-label-medium-line-height));letter-spacing:var(--mdc-slider-label-label-text-tracking, var(--mat-sys-label-medium-tracking))}.mdc-slider__thumb{-webkit-user-select:none;user-select:none;display:flex;left:-24px;outline:none;position:absolute;height:48px;width:48px;pointer-events:none}.mdc-slider--discrete .mdc-slider__thumb{transition:transform 80ms ease}.mdc-slider--disabled .mdc-slider__thumb{pointer-events:none}.mdc-slider__thumb--top{z-index:1}.mdc-slider__thumb-knob{position:absolute;box-sizing:border-box;left:50%;top:50%;transform:translate(-50%, -50%);border-style:solid;width:var(--mdc-slider-handle-width, 20px);height:var(--mdc-slider-handle-height, 20px);border-width:calc(var(--mdc-slider-handle-height, 20px)/2) calc(var(--mdc-slider-handle-width, 20px)/2);box-shadow:var(--mdc-slider-handle-elevation, var(--mat-sys-level1));background-color:var(--mdc-slider-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-handle-color, var(--mat-sys-primary));border-radius:var(--mdc-slider-handle-shape, var(--mat-sys-corner-full))}.mdc-slider__thumb:hover .mdc-slider__thumb-knob{background-color:var(--mdc-slider-hover-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-hover-handle-color, var(--mat-sys-primary))}.mdc-slider__thumb--focused .mdc-slider__thumb-knob{background-color:var(--mdc-slider-focus-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-focus-handle-color, var(--mat-sys-primary))}.mdc-slider--disabled .mdc-slider__thumb-knob{background-color:var(--mdc-slider-disabled-handle-color, var(--mat-sys-on-surface));border-color:var(--mdc-slider-disabled-handle-color, var(--mat-sys-on-surface))}.mdc-slider__thumb--top .mdc-slider__thumb-knob,.mdc-slider__thumb--top.mdc-slider__thumb:hover .mdc-slider__thumb-knob,.mdc-slider__thumb--top.mdc-slider__thumb--focused .mdc-slider__thumb-knob{border:solid 1px #fff;box-sizing:content-box;border-color:var(--mdc-slider-with-overlap-handle-outline-color, var(--mat-sys-on-primary));border-width:var(--mdc-slider-with-overlap-handle-outline-width, 1px)}.mdc-slider__tick-marks{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:space-between;padding:0 1px;position:absolute;width:100%}.mdc-slider__tick-mark--active,.mdc-slider__tick-mark--inactive{width:var(--mdc-slider-with-tick-marks-container-size, 2px);height:var(--mdc-slider-with-tick-marks-container-size, 2px);border-radius:var(--mdc-slider-with-tick-marks-container-shape, var(--mat-sys-corner-full))}.mdc-slider__tick-mark--inactive{opacity:var(--mdc-slider-with-tick-marks-inactive-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-inactive-container-color, var(--mat-sys-on-surface-variant))}.mdc-slider--disabled .mdc-slider__tick-mark--inactive{opacity:var(--mdc-slider-with-tick-marks-inactive-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-disabled-container-color, var(--mat-sys-on-surface))}.mdc-slider__tick-mark--active{opacity:var(--mdc-slider-with-tick-marks-active-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-active-container-color, var(--mat-sys-on-primary))}.mdc-slider__input{cursor:pointer;left:2px;margin:0;height:44px;opacity:0;position:absolute;top:2px;width:44px;box-sizing:content-box}.mdc-slider__input.mat-mdc-slider-input-no-pointer-events{pointer-events:none}.mdc-slider__input.mat-slider__right-input{left:auto;right:0}.mat-mdc-slider{display:inline-block;box-sizing:border-box;outline:none;vertical-align:middle;cursor:pointer;height:48px;margin:0 8px;position:relative;touch-action:pan-y;width:auto;min-width:112px;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-slider.mdc-slider--disabled{cursor:auto;opacity:.38}.mat-mdc-slider .mdc-slider__thumb,.mat-mdc-slider .mdc-slider__track--active_fill{transition-duration:0ms}.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__thumb,.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__track--active_fill{transition-duration:80ms}.mat-mdc-slider.mdc-slider--discrete .mdc-slider__thumb,.mat-mdc-slider.mdc-slider--discrete .mdc-slider__track--active_fill{transition-duration:0ms}.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__thumb,.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__track--active_fill{transition-duration:80ms}.mat-mdc-slider .mat-ripple .mat-ripple-element{background-color:var(--mat-slider-ripple-color, var(--mat-sys-primary))}.mat-mdc-slider .mat-ripple .mat-mdc-slider-hover-ripple{background-color:var(--mat-slider-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-primary) 5%, transparent))}.mat-mdc-slider .mat-ripple .mat-mdc-slider-focus-ripple,.mat-mdc-slider .mat-ripple .mat-mdc-slider-active-ripple{background-color:var(--mat-slider-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-primary) 20%, transparent))}.mat-mdc-slider._mat-animation-noopable.mdc-slider--discrete .mdc-slider__thumb,.mat-mdc-slider._mat-animation-noopable.mdc-slider--discrete .mdc-slider__track--active_fill,.mat-mdc-slider._mat-animation-noopable .mdc-slider__value-indicator{transition:none}.mat-mdc-slider .mat-focus-indicator::before{border-radius:50%}.mdc-slider__thumb--focused .mat-focus-indicator::before{content:""}\n']
-    }]
-  }], () => [], {
-    _trackActive: [{
-      type: ViewChild,
-      args: ["trackActive"]
-    }],
-    _thumbs: [{
-      type: ViewChildren,
-      args: [MAT_SLIDER_VISUAL_THUMB]
-    }],
-    _input: [{
-      type: ContentChild,
-      args: [MAT_SLIDER_THUMB]
-    }],
-    _inputs: [{
-      type: ContentChildren,
-      args: [MAT_SLIDER_RANGE_THUMB, {
-        descendants: false
-      }]
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    discrete: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    showTickMarks: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    min: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    color: [{
-      type: Input
-    }],
-    disableRipple: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    max: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    step: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    displayWith: [{
-      type: Input
-    }]
-  });
+              styles: [
+                '.mdc-slider__track{position:absolute;top:50%;transform:translateY(-50%);width:100%;pointer-events:none;height:var(--mdc-slider-inactive-track-height, 4px)}.mdc-slider__track--active,.mdc-slider__track--inactive{display:flex;height:100%;position:absolute;width:100%}.mdc-slider__track--active{overflow:hidden;border-radius:var(--mdc-slider-active-track-shape, var(--mat-sys-corner-full));height:var(--mdc-slider-active-track-height, 4px);top:calc((var(--mdc-slider-inactive-track-height, 4px) - var(--mdc-slider-active-track-height, 4px))/2)}.mdc-slider__track--active_fill{border-top-style:solid;box-sizing:border-box;height:100%;width:100%;position:relative;transform-origin:left;transition:transform 80ms ease;border-color:var(--mdc-slider-active-track-color, var(--mat-sys-primary));border-top-width:var(--mdc-slider-active-track-height, 4px)}.mdc-slider--disabled .mdc-slider__track--active_fill{border-color:var(--mdc-slider-disabled-active-track-color, var(--mat-sys-on-surface))}[dir=rtl] .mdc-slider__track--active_fill{-webkit-transform-origin:right;transform-origin:right}.mdc-slider__track--inactive{left:0;top:0;opacity:.24;background-color:var(--mdc-slider-inactive-track-color, var(--mat-sys-surface-variant));height:var(--mdc-slider-inactive-track-height, 4px);border-radius:var(--mdc-slider-inactive-track-shape, var(--mat-sys-corner-full))}.mdc-slider--disabled .mdc-slider__track--inactive{background-color:var(--mdc-slider-disabled-inactive-track-color, var(--mat-sys-on-surface));opacity:.24}.mdc-slider__track--inactive::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}@media(forced-colors: active){.mdc-slider__track--inactive::before{border-color:CanvasText}}.mdc-slider__value-indicator-container{bottom:44px;left:50%;pointer-events:none;position:absolute;transform:translateX(-50%);transform:var(--mat-slider-value-indicator-container-transform, translateX(-50%) rotate(-45deg))}.mdc-slider__thumb--with-indicator .mdc-slider__value-indicator-container{pointer-events:auto}.mdc-slider__value-indicator{display:flex;align-items:center;border-radius:4px;height:32px;padding:0 12px;transform:scale(0);transform-origin:bottom;opacity:1;transition:transform 100ms cubic-bezier(0.4, 0, 1, 1);word-break:normal;background-color:var(--mdc-slider-label-container-color, var(--mat-sys-primary));color:var(--mdc-slider-label-label-text-color, var(--mat-sys-on-primary));width:var(--mat-slider-value-indicator-width, 28px);height:var(--mat-slider-value-indicator-height, 28px);padding:var(--mat-slider-value-indicator-padding, 0);opacity:var(--mat-slider-value-indicator-opacity, 1);border-radius:var(--mat-slider-value-indicator-border-radius, 50% 50% 50% 0)}.mdc-slider__thumb--with-indicator .mdc-slider__value-indicator{transition:transform 100ms cubic-bezier(0, 0, 0.2, 1);transform:scale(1)}.mdc-slider__value-indicator::before{border-left:6px solid rgba(0,0,0,0);border-right:6px solid rgba(0,0,0,0);border-top:6px solid;bottom:-5px;content:"";height:0;left:50%;position:absolute;transform:translateX(-50%);width:0;display:var(--mat-slider-value-indicator-caret-display, none);border-top-color:var(--mdc-slider-label-container-color, var(--mat-sys-primary))}.mdc-slider__value-indicator::after{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}@media(forced-colors: active){.mdc-slider__value-indicator::after{border-color:CanvasText}}.mdc-slider__value-indicator-text{text-align:center;width:var(--mat-slider-value-indicator-width, 28px);transform:var(--mat-slider-value-indicator-text-transform, rotate(45deg));font-family:var(--mdc-slider-label-label-text-font, var(--mat-sys-label-medium-font));font-size:var(--mdc-slider-label-label-text-size, var(--mat-sys-label-medium-size));font-weight:var(--mdc-slider-label-label-text-weight, var(--mat-sys-label-medium-weight));line-height:var(--mdc-slider-label-label-text-line-height, var(--mat-sys-label-medium-line-height));letter-spacing:var(--mdc-slider-label-label-text-tracking, var(--mat-sys-label-medium-tracking))}.mdc-slider__thumb{-webkit-user-select:none;user-select:none;display:flex;left:-24px;outline:none;position:absolute;height:48px;width:48px;pointer-events:none}.mdc-slider--discrete .mdc-slider__thumb{transition:transform 80ms ease}.mdc-slider--disabled .mdc-slider__thumb{pointer-events:none}.mdc-slider__thumb--top{z-index:1}.mdc-slider__thumb-knob{position:absolute;box-sizing:border-box;left:50%;top:50%;transform:translate(-50%, -50%);border-style:solid;width:var(--mdc-slider-handle-width, 20px);height:var(--mdc-slider-handle-height, 20px);border-width:calc(var(--mdc-slider-handle-height, 20px)/2) calc(var(--mdc-slider-handle-width, 20px)/2);box-shadow:var(--mdc-slider-handle-elevation, var(--mat-sys-level1));background-color:var(--mdc-slider-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-handle-color, var(--mat-sys-primary));border-radius:var(--mdc-slider-handle-shape, var(--mat-sys-corner-full))}.mdc-slider__thumb:hover .mdc-slider__thumb-knob{background-color:var(--mdc-slider-hover-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-hover-handle-color, var(--mat-sys-primary))}.mdc-slider__thumb--focused .mdc-slider__thumb-knob{background-color:var(--mdc-slider-focus-handle-color, var(--mat-sys-primary));border-color:var(--mdc-slider-focus-handle-color, var(--mat-sys-primary))}.mdc-slider--disabled .mdc-slider__thumb-knob{background-color:var(--mdc-slider-disabled-handle-color, var(--mat-sys-on-surface));border-color:var(--mdc-slider-disabled-handle-color, var(--mat-sys-on-surface))}.mdc-slider__thumb--top .mdc-slider__thumb-knob,.mdc-slider__thumb--top.mdc-slider__thumb:hover .mdc-slider__thumb-knob,.mdc-slider__thumb--top.mdc-slider__thumb--focused .mdc-slider__thumb-knob{border:solid 1px #fff;box-sizing:content-box;border-color:var(--mdc-slider-with-overlap-handle-outline-color, var(--mat-sys-on-primary));border-width:var(--mdc-slider-with-overlap-handle-outline-width, 1px)}.mdc-slider__tick-marks{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:space-between;padding:0 1px;position:absolute;width:100%}.mdc-slider__tick-mark--active,.mdc-slider__tick-mark--inactive{width:var(--mdc-slider-with-tick-marks-container-size, 2px);height:var(--mdc-slider-with-tick-marks-container-size, 2px);border-radius:var(--mdc-slider-with-tick-marks-container-shape, var(--mat-sys-corner-full))}.mdc-slider__tick-mark--inactive{opacity:var(--mdc-slider-with-tick-marks-inactive-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-inactive-container-color, var(--mat-sys-on-surface-variant))}.mdc-slider--disabled .mdc-slider__tick-mark--inactive{opacity:var(--mdc-slider-with-tick-marks-inactive-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-disabled-container-color, var(--mat-sys-on-surface))}.mdc-slider__tick-mark--active{opacity:var(--mdc-slider-with-tick-marks-active-container-opacity, 0.38);background-color:var(--mdc-slider-with-tick-marks-active-container-color, var(--mat-sys-on-primary))}.mdc-slider__input{cursor:pointer;left:2px;margin:0;height:44px;opacity:0;position:absolute;top:2px;width:44px;box-sizing:content-box}.mdc-slider__input.mat-mdc-slider-input-no-pointer-events{pointer-events:none}.mdc-slider__input.mat-slider__right-input{left:auto;right:0}.mat-mdc-slider{display:inline-block;box-sizing:border-box;outline:none;vertical-align:middle;cursor:pointer;height:48px;margin:0 8px;position:relative;touch-action:pan-y;width:auto;min-width:112px;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-slider.mdc-slider--disabled{cursor:auto;opacity:.38}.mat-mdc-slider .mdc-slider__thumb,.mat-mdc-slider .mdc-slider__track--active_fill{transition-duration:0ms}.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__thumb,.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__track--active_fill{transition-duration:80ms}.mat-mdc-slider.mdc-slider--discrete .mdc-slider__thumb,.mat-mdc-slider.mdc-slider--discrete .mdc-slider__track--active_fill{transition-duration:0ms}.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__thumb,.mat-mdc-slider.mat-mdc-slider-with-animation .mdc-slider__track--active_fill{transition-duration:80ms}.mat-mdc-slider .mat-ripple .mat-ripple-element{background-color:var(--mat-slider-ripple-color, var(--mat-sys-primary))}.mat-mdc-slider .mat-ripple .mat-mdc-slider-hover-ripple{background-color:var(--mat-slider-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-primary) 5%, transparent))}.mat-mdc-slider .mat-ripple .mat-mdc-slider-focus-ripple,.mat-mdc-slider .mat-ripple .mat-mdc-slider-active-ripple{background-color:var(--mat-slider-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-primary) 20%, transparent))}.mat-mdc-slider._mat-animation-noopable.mdc-slider--discrete .mdc-slider__thumb,.mat-mdc-slider._mat-animation-noopable.mdc-slider--discrete .mdc-slider__track--active_fill,.mat-mdc-slider._mat-animation-noopable .mdc-slider__value-indicator{transition:none}.mat-mdc-slider .mat-focus-indicator::before{border-radius:50%}.mdc-slider__thumb--focused .mat-focus-indicator::before{content:""}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        _trackActive: [
+          {
+            type: ViewChild,
+            args: ['trackActive'],
+          },
+        ],
+        _thumbs: [
+          {
+            type: ViewChildren,
+            args: [MAT_SLIDER_VISUAL_THUMB],
+          },
+        ],
+        _input: [
+          {
+            type: ContentChild,
+            args: [MAT_SLIDER_THUMB],
+          },
+        ],
+        _inputs: [
+          {
+            type: ContentChildren,
+            args: [
+              MAT_SLIDER_RANGE_THUMB,
+              {
+                descendants: false,
+              },
+            ],
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        discrete: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        showTickMarks: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        min: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        color: [
+          {
+            type: Input,
+          },
+        ],
+        disableRipple: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        max: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        step: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        displayWith: [
+          {
+            type: Input,
+          },
+        ],
+      },
+    );
 })();
 function _validateInputs(isRange, endInputElement, startInputElement) {
-  const startValid = !isRange || startInputElement?._hostElement.hasAttribute("matSliderStartThumb");
-  const endValid = endInputElement?._hostElement.hasAttribute(isRange ? "matSliderEndThumb" : "matSliderThumb");
+  const startValid = !isRange || startInputElement?._hostElement.hasAttribute('matSliderStartThumb');
+  const endValid = endInputElement?._hostElement.hasAttribute(isRange ? 'matSliderEndThumb' : 'matSliderThumb');
   if (!startValid || !endValid) {
     _throwInvalidInputConfigurationError();
   }
@@ -1359,12 +1491,12 @@ function _throwInvalidInputConfigurationError() {
 var MAT_SLIDER_THUMB_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
   useExisting: forwardRef(() => MatSliderThumb),
-  multi: true
+  multi: true,
 };
 var MAT_SLIDER_RANGE_THUMB_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
   useExisting: forwardRef(() => MatSliderRangeThumb),
-  multi: true
+  multi: true,
 };
 var MatSliderThumb = class _MatSliderThumb {
   _ngZone = inject(NgZone);
@@ -1378,7 +1510,7 @@ var MatSliderThumb = class _MatSliderThumb {
   }
   set value(value) {
     value = isNaN(value) ? 0 : value;
-    const stringValue = value + "";
+    const stringValue = value + '';
     if (!this._hasSetInitialValue) {
       this._initialValue = stringValue;
       return;
@@ -1433,7 +1565,7 @@ var MatSliderThumb = class _MatSliderThumb {
     return numberAttribute(this._hostElement.min, 0);
   }
   set min(v) {
-    this._hostElement.min = v + "";
+    this._hostElement.min = v + '';
     this._cdr.detectChanges();
   }
   /** @docs-private */
@@ -1441,14 +1573,14 @@ var MatSliderThumb = class _MatSliderThumb {
     return numberAttribute(this._hostElement.max, 0);
   }
   set max(v) {
-    this._hostElement.max = v + "";
+    this._hostElement.max = v + '';
     this._cdr.detectChanges();
   }
   get step() {
     return numberAttribute(this._hostElement.step, 0);
   }
   set step(v) {
-    this._hostElement.step = v + "";
+    this._hostElement.step = v + '';
     this._cdr.detectChanges();
   }
   /** @docs-private */
@@ -1482,7 +1614,7 @@ var MatSliderThumb = class _MatSliderThumb {
   /** The host native HTML input element. */
   _hostElement = this._elementRef.nativeElement;
   /** The aria-valuetext string representation of the input's value. */
-  _valuetext = signal("");
+  _valuetext = signal('');
   /** The radius of a native html slider's knob. */
   _knobRadius = 8;
   /** The distance in px from the start of the slider track to the first tick mark. */
@@ -1518,8 +1650,7 @@ var MatSliderThumb = class _MatSliderThumb {
   /** Callback called when the slider input value changes. */
   _onChangeFn;
   /** Callback called when the slider input has been touched. */
-  _onTouchedFn = () => {
-  };
+  _onTouchedFn = () => {};
   /**
    * Whether the NgModel has been initialized.
    *
@@ -1532,7 +1663,11 @@ var MatSliderThumb = class _MatSliderThumb {
   constructor() {
     const renderer = inject(Renderer2);
     this._ngZone.runOutsideAngular(() => {
-      this._listenerCleanups = [renderer.listen(this._hostElement, "pointerdown", this._onPointerDown.bind(this)), renderer.listen(this._hostElement, "pointermove", this._onPointerMove.bind(this)), renderer.listen(this._hostElement, "pointerup", this._onPointerUp.bind(this))];
+      this._listenerCleanups = [
+        renderer.listen(this._hostElement, 'pointerdown', this._onPointerDown.bind(this)),
+        renderer.listen(this._hostElement, 'pointermove', this._onPointerMove.bind(this)),
+        renderer.listen(this._hostElement, 'pointerup', this._onPointerUp.bind(this)),
+      ];
     });
   }
   ngOnDestroy() {
@@ -1584,7 +1719,7 @@ var MatSliderThumb = class _MatSliderThumb {
     this.valueChange.emit(this.value);
     if (this._isActive) {
       this._updateThumbUIByValue({
-        withAnimation: true
+        withAnimation: true,
       });
     }
   }
@@ -1592,7 +1727,7 @@ var MatSliderThumb = class _MatSliderThumb {
     this._onChangeFn?.(this.value);
     if (this._slider.step || !this._isActive) {
       this._updateThumbUIByValue({
-        withAnimation: true
+        withAnimation: true,
       });
     }
     this._slider._onValueChange(this);
@@ -1609,7 +1744,10 @@ var MatSliderThumb = class _MatSliderThumb {
       return;
     }
     if (this._platform.IOS) {
-      const isCursorOnSliderThumb = this._slider._isCursorOnSliderThumb(event, this._slider._getThumb(this.thumbPosition)._hostElement.getBoundingClientRect());
+      const isCursorOnSliderThumb = this._slider._isCursorOnSliderThumb(
+        event,
+        this._slider._getThumb(this.thumbPosition)._hostElement.getBoundingClientRect(),
+      );
       this._isActive = isCursorOnSliderThumb;
       this._updateWidthActive();
       this._slider._updateDimensions();
@@ -1621,7 +1759,7 @@ var MatSliderThumb = class _MatSliderThumb {
     this._slider._updateDimensions();
     if (!this._slider.step) {
       this._updateThumbUIByPointerEvent(event, {
-        withAnimation: true
+        withAnimation: true,
       });
     }
     if (!this.disabled) {
@@ -1629,7 +1767,7 @@ var MatSliderThumb = class _MatSliderThumb {
       this.dragStart.emit({
         source: this,
         parent: this._slider,
-        value: this.value
+        value: this.value,
       });
     }
   }
@@ -1659,18 +1797,22 @@ var MatSliderThumb = class _MatSliderThumb {
     const prevValue = this.value;
     if (value === prevValue) {
       this._slider._onValueChange(this);
-      this._slider.step > 0 ? this._updateThumbUIByValue() : this._updateThumbUIByPointerEvent(event, {
-        withAnimation: this._slider._hasAnimation
-      });
+      this._slider.step > 0
+        ? this._updateThumbUIByValue()
+        : this._updateThumbUIByPointerEvent(event, {
+            withAnimation: this._slider._hasAnimation,
+          });
       return;
     }
     this.value = value;
     this.valueChange.emit(this.value);
     this._onChangeFn?.(this.value);
     this._slider._onValueChange(this);
-    this._slider.step > 0 ? this._updateThumbUIByValue() : this._updateThumbUIByPointerEvent(event, {
-      withAnimation: this._slider._hasAnimation
-    });
+    this._slider.step > 0
+      ? this._updateThumbUIByValue()
+      : this._updateThumbUIByPointerEvent(event, {
+          withAnimation: this._slider._hasAnimation,
+        });
   }
   _onPointerMove(event) {
     if (!this._slider.step && this._isActive) {
@@ -1686,7 +1828,7 @@ var MatSliderThumb = class _MatSliderThumb {
       this.dragEnd.emit({
         source: this,
         parent: this._slider,
-        value: this.value
+        value: this.value,
       });
       setTimeout(() => this._updateWidthInactive(), this._platform.IOS ? 10 : 0);
     }
@@ -1709,8 +1851,7 @@ var MatSliderThumb = class _MatSliderThumb {
    * Used to set the slider width to the correct
    * dimensions while the user is dragging.
    */
-  _updateWidthActive() {
-  }
+  _updateWidthActive() {}
   /**
    * Sets the slider input to disproportionate dimensions to allow for touch
    * events to be captured on touch devices.
@@ -1778,79 +1919,107 @@ var MatSliderThumb = class _MatSliderThumb {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatSliderThumb,
-    selectors: [["input", "matSliderThumb", ""]],
-    hostAttrs: ["type", "range", 1, "mdc-slider__input"],
+    selectors: [['input', 'matSliderThumb', '']],
+    hostAttrs: ['type', 'range', 1, 'mdc-slider__input'],
     hostVars: 1,
     hostBindings: function MatSliderThumb_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("change", function MatSliderThumb_change_HostBindingHandler() {
+        ɵɵlistener('change', function MatSliderThumb_change_HostBindingHandler() {
           return ctx._onChange();
-        })("input", function MatSliderThumb_input_HostBindingHandler() {
+        })('input', function MatSliderThumb_input_HostBindingHandler() {
           return ctx._onInput();
-        })("blur", function MatSliderThumb_blur_HostBindingHandler() {
+        })('blur', function MatSliderThumb_blur_HostBindingHandler() {
           return ctx._onBlur();
-        })("focus", function MatSliderThumb_focus_HostBindingHandler() {
+        })('focus', function MatSliderThumb_focus_HostBindingHandler() {
           return ctx._onFocus();
         });
       }
       if (rf & 2) {
-        ɵɵattribute("aria-valuetext", ctx._valuetext());
+        ɵɵattribute('aria-valuetext', ctx._valuetext());
       }
     },
     inputs: {
-      value: [2, "value", "value", numberAttribute]
+      value: [2, 'value', 'value', numberAttribute],
     },
     outputs: {
-      valueChange: "valueChange",
-      dragStart: "dragStart",
-      dragEnd: "dragEnd"
+      valueChange: 'valueChange',
+      dragStart: 'dragStart',
+      dragEnd: 'dragEnd',
     },
-    exportAs: ["matSliderThumb"],
-    features: [ɵɵProvidersFeature([MAT_SLIDER_THUMB_VALUE_ACCESSOR, {
-      provide: MAT_SLIDER_THUMB,
-      useExisting: _MatSliderThumb
-    }])]
+    exportAs: ['matSliderThumb'],
+    features: [
+      ɵɵProvidersFeature([
+        MAT_SLIDER_THUMB_VALUE_ACCESSOR,
+        {
+          provide: MAT_SLIDER_THUMB,
+          useExisting: _MatSliderThumb,
+        },
+      ]),
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSliderThumb, [{
-    type: Directive,
-    args: [{
-      selector: "input[matSliderThumb]",
-      exportAs: "matSliderThumb",
-      host: {
-        "class": "mdc-slider__input",
-        "type": "range",
-        "[attr.aria-valuetext]": "_valuetext()",
-        "(change)": "_onChange()",
-        "(input)": "_onInput()",
-        // TODO(wagnermaciel): Consider using a global event listener instead.
-        // Reason: I have found a semi-consistent way to mouse up without triggering this event.
-        "(blur)": "_onBlur()",
-        "(focus)": "_onFocus()"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSliderThumb,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'input[matSliderThumb]',
+              exportAs: 'matSliderThumb',
+              host: {
+                class: 'mdc-slider__input',
+                type: 'range',
+                '[attr.aria-valuetext]': '_valuetext()',
+                '(change)': '_onChange()',
+                '(input)': '_onInput()',
+                // TODO(wagnermaciel): Consider using a global event listener instead.
+                // Reason: I have found a semi-consistent way to mouse up without triggering this event.
+                '(blur)': '_onBlur()',
+                '(focus)': '_onFocus()',
+              },
+              providers: [
+                MAT_SLIDER_THUMB_VALUE_ACCESSOR,
+                {
+                  provide: MAT_SLIDER_THUMB,
+                  useExisting: MatSliderThumb,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        value: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        valueChange: [
+          {
+            type: Output,
+          },
+        ],
+        dragStart: [
+          {
+            type: Output,
+          },
+        ],
+        dragEnd: [
+          {
+            type: Output,
+          },
+        ],
       },
-      providers: [MAT_SLIDER_THUMB_VALUE_ACCESSOR, {
-        provide: MAT_SLIDER_THUMB,
-        useExisting: MatSliderThumb
-      }]
-    }]
-  }], () => [], {
-    value: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    valueChange: [{
-      type: Output
-    }],
-    dragStart: [{
-      type: Output
-    }],
-    dragEnd: [{
-      type: Output
-    }]
-  });
+    );
 })();
 var MatSliderRangeThumb = class _MatSliderRangeThumb extends MatSliderThumb {
   _cdr = inject(ChangeDetectorRef);
@@ -1885,7 +2054,7 @@ var MatSliderRangeThumb = class _MatSliderRangeThumb extends MatSliderThumb {
     return this._slider._cachedWidth - this._tickMarkOffset;
   }
   _setIsLeftThumb() {
-    this._isLeftThumb = this._isEndThumb && this._slider._isRtl || !this._isEndThumb && !this._slider._isRtl;
+    this._isLeftThumb = (this._isEndThumb && this._slider._isRtl) || (!this._isEndThumb && !this._slider._isRtl);
   }
   /** Whether this slider corresponds to the input on the left hand side. */
   _isLeftThumb;
@@ -1893,7 +2062,7 @@ var MatSliderRangeThumb = class _MatSliderRangeThumb extends MatSliderThumb {
   _isEndThumb;
   constructor() {
     super();
-    this._isEndThumb = this._hostElement.hasAttribute("matSliderEndThumb");
+    this._isEndThumb = this._hostElement.hasAttribute('matSliderEndThumb');
     this._setIsLeftThumb();
     this.thumbPosition = this._isEndThumb ? _MatThumb.END : _MatThumb.START;
   }
@@ -1917,7 +2086,7 @@ var MatSliderRangeThumb = class _MatSliderRangeThumb extends MatSliderThumb {
     }
     if (this._sibling) {
       this._sibling._updateWidthActive();
-      this._sibling._hostElement.classList.add("mat-mdc-slider-input-no-pointer-events");
+      this._sibling._hostElement.classList.add('mat-mdc-slider-input-no-pointer-events');
     }
     super._onPointerDown(event);
   }
@@ -1926,7 +2095,7 @@ var MatSliderRangeThumb = class _MatSliderRangeThumb extends MatSliderThumb {
     if (this._sibling) {
       setTimeout(() => {
         this._sibling._updateWidthInactive();
-        this._sibling._hostElement.classList.remove("mat-mdc-slider-input-no-pointer-events");
+        this._sibling._hostElement.classList.remove('mat-mdc-slider-input-no-pointer-events');
       });
     }
   }
@@ -1959,7 +2128,8 @@ var MatSliderRangeThumb = class _MatSliderRangeThumb extends MatSliderThumb {
   _updateWidthActive() {
     const minWidth = this._slider._rippleRadius * 2 - this._slider._inputPadding * 2;
     const maxWidth = this._slider._cachedWidth + this._slider._inputPadding - minWidth - this._tickMarkOffset * 2;
-    const percentage = this._slider.min < this._slider.max ? (this.max - this.min) / (this._slider.max - this._slider.min) : 1;
+    const percentage =
+      this._slider.min < this._slider.max ? (this.max - this.min) / (this._slider.max - this._slider.min) : 1;
     const width = maxWidth * percentage + minWidth;
     this._hostElement.style.width = `${width}px`;
     this._hostElement.style.padding = `0 ${this._slider._inputPadding}px`;
@@ -1970,8 +2140,12 @@ var MatSliderRangeThumb = class _MatSliderRangeThumb extends MatSliderThumb {
       return;
     }
     const maxWidth = this._slider._cachedWidth - this._tickMarkOffset * 2;
-    const midValue = this._isEndThumb ? this.value - (this.value - sibling.value) / 2 : this.value + (sibling.value - this.value) / 2;
-    const _percentage = this._isEndThumb ? (this.max - midValue) / (this._slider.max - this._slider.min) : (midValue - this.min) / (this._slider.max - this._slider.min);
+    const midValue = this._isEndThumb
+      ? this.value - (this.value - sibling.value) / 2
+      : this.value + (sibling.value - this.value) / 2;
+    const _percentage = this._isEndThumb
+      ? (this.max - midValue) / (this._slider.max - this._slider.min)
+      : (midValue - this.min) / (this._slider.max - this._slider.min);
     const percentage = this._slider.min < this._slider.max ? _percentage : 1;
     let ripplePadding = this._slider._rippleRadius;
     if (percentage === 1) {
@@ -1981,17 +2155,17 @@ var MatSliderRangeThumb = class _MatSliderRangeThumb extends MatSliderThumb {
     }
     const width = maxWidth * percentage + ripplePadding;
     this._hostElement.style.width = `${width}px`;
-    this._hostElement.style.padding = "0px";
+    this._hostElement.style.padding = '0px';
     if (this._isLeftThumb) {
       this._hostElement.style.left = `-${this._slider._rippleRadius - this._tickMarkOffset}px`;
-      this._hostElement.style.right = "auto";
+      this._hostElement.style.right = 'auto';
     } else {
-      this._hostElement.style.left = "auto";
+      this._hostElement.style.left = 'auto';
       this._hostElement.style.right = `-${this._slider._rippleRadius - this._tickMarkOffset}px`;
     }
   }
   _updateStaticStyles() {
-    this._hostElement.classList.toggle("mat-slider__right-input", !this._isLeftThumb);
+    this._hostElement.classList.toggle('mat-slider__right-input', !this._isLeftThumb);
   }
   _updateSibling() {
     const sibling = this.getSibling();
@@ -2027,26 +2201,48 @@ var MatSliderRangeThumb = class _MatSliderRangeThumb extends MatSliderThumb {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatSliderRangeThumb,
-    selectors: [["input", "matSliderStartThumb", ""], ["input", "matSliderEndThumb", ""]],
-    exportAs: ["matSliderRangeThumb"],
-    features: [ɵɵProvidersFeature([MAT_SLIDER_RANGE_THUMB_VALUE_ACCESSOR, {
-      provide: MAT_SLIDER_RANGE_THUMB,
-      useExisting: _MatSliderRangeThumb
-    }]), ɵɵInheritDefinitionFeature]
+    selectors: [
+      ['input', 'matSliderStartThumb', ''],
+      ['input', 'matSliderEndThumb', ''],
+    ],
+    exportAs: ['matSliderRangeThumb'],
+    features: [
+      ɵɵProvidersFeature([
+        MAT_SLIDER_RANGE_THUMB_VALUE_ACCESSOR,
+        {
+          provide: MAT_SLIDER_RANGE_THUMB,
+          useExisting: _MatSliderRangeThumb,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSliderRangeThumb, [{
-    type: Directive,
-    args: [{
-      selector: "input[matSliderStartThumb], input[matSliderEndThumb]",
-      exportAs: "matSliderRangeThumb",
-      providers: [MAT_SLIDER_RANGE_THUMB_VALUE_ACCESSOR, {
-        provide: MAT_SLIDER_RANGE_THUMB,
-        useExisting: MatSliderRangeThumb
-      }]
-    }]
-  }], () => [], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSliderRangeThumb,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'input[matSliderStartThumb], input[matSliderEndThumb]',
+              exportAs: 'matSliderRangeThumb',
+              providers: [
+                MAT_SLIDER_RANGE_THUMB_VALUE_ACCESSOR,
+                {
+                  provide: MAT_SLIDER_RANGE_THUMB,
+                  useExisting: MatSliderRangeThumb,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      null,
+    );
 })();
 var MatSliderModule = class _MatSliderModule {
   static ɵfac = function MatSliderModule_Factory(__ngFactoryType__) {
@@ -2055,27 +2251,37 @@ var MatSliderModule = class _MatSliderModule {
   static ɵmod = ɵɵdefineNgModule({
     type: _MatSliderModule,
     imports: [MatCommonModule, MatRippleModule, MatSlider, MatSliderThumb, MatSliderRangeThumb, MatSliderVisualThumb],
-    exports: [MatSlider, MatSliderThumb, MatSliderRangeThumb]
+    exports: [MatSlider, MatSliderThumb, MatSliderRangeThumb],
   });
   static ɵinj = ɵɵdefineInjector({
-    imports: [MatCommonModule, MatRippleModule]
+    imports: [MatCommonModule, MatRippleModule],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSliderModule, [{
-    type: NgModule,
-    args: [{
-      imports: [MatCommonModule, MatRippleModule, MatSlider, MatSliderThumb, MatSliderRangeThumb, MatSliderVisualThumb],
-      exports: [MatSlider, MatSliderThumb, MatSliderRangeThumb]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSliderModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [
+                MatCommonModule,
+                MatRippleModule,
+                MatSlider,
+                MatSliderThumb,
+                MatSliderRangeThumb,
+                MatSliderVisualThumb,
+              ],
+              exports: [MatSlider, MatSliderThumb, MatSliderRangeThumb],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-export {
-  MatSlider,
-  MatSliderChange,
-  MatSliderModule,
-  MatSliderRangeThumb,
-  MatSliderThumb,
-  MatSliderVisualThumb
-};
+export { MatSlider, MatSliderChange, MatSliderModule, MatSliderRangeThumb, MatSliderThumb, MatSliderVisualThumb };
 //# sourceMappingURL=@angular_material_slider.js.map

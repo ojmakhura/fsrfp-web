@@ -1,30 +1,15 @@
-import {
-  MatRippleModule
-} from "./chunk-WNGU3QLI.js";
-import {
-  MatRipple
-} from "./chunk-6K32XFRM.js";
-import {
-  _StructuralStylesLoader
-} from "./chunk-IBJRQVUD.js";
-import "./chunk-BS4LDW6B.js";
-import {
-  Overlay,
-  OverlayConfig,
-  OverlayModule
-} from "./chunk-WZRATIYN.js";
-import "./chunk-OIBNGD5S.js";
-import {
-  DomPortalOutlet,
-  TemplatePortal
-} from "./chunk-3HDMKNHX.js";
-import "./chunk-42FJBLFI.js";
-import "./chunk-JXBCBRYI.js";
-import {
-  CdkScrollableModule
-} from "./chunk-2N4M46HE.js";
-import "./chunk-HYIG2K5W.js";
-import "./chunk-2O4WY5GE.js";
+import { Overlay, OverlayConfig, OverlayModule } from './chunk-WZRATIYN.js';
+import './chunk-OIBNGD5S.js';
+import { DomPortalOutlet, TemplatePortal } from './chunk-3HDMKNHX.js';
+import { MatRippleModule } from './chunk-WNGU3QLI.js';
+import { MatRipple } from './chunk-6K32XFRM.js';
+import { _StructuralStylesLoader } from './chunk-IBJRQVUD.js';
+import './chunk-BS4LDW6B.js';
+import './chunk-42FJBLFI.js';
+import './chunk-JXBCBRYI.js';
+import { CdkScrollableModule } from './chunk-2N4M46HE.js';
+import './chunk-HYIG2K5W.js';
+import './chunk-2O4WY5GE.js';
 import {
   DOWN_ARROW,
   ENTER,
@@ -39,22 +24,15 @@ import {
   _IdGenerator,
   hasModifierKey,
   isFakeMousedownFromScreenReader,
-  isFakeTouchstartFromScreenReader
-} from "./chunk-PQSRNTO7.js";
-import "./chunk-5RHDU2BP.js";
-import {
-  _CdkPrivateStyleLoader,
-  _bindEventWithOptions
-} from "./chunk-RG7RHNTG.js";
-import {
-  Directionality
-} from "./chunk-HNGPX6GY.js";
-import "./chunk-GWH5ZIVQ.js";
-import "./chunk-FSIK44TS.js";
-import "./chunk-LJRMVWU3.js";
-import {
-  DOCUMENT
-} from "./chunk-SOO5Y25R.js";
+  isFakeTouchstartFromScreenReader,
+} from './chunk-PQSRNTO7.js';
+import './chunk-5RHDU2BP.js';
+import { _CdkPrivateStyleLoader, _bindEventWithOptions } from './chunk-RG7RHNTG.js';
+import { Directionality } from './chunk-HNGPX6GY.js';
+import './chunk-GWH5ZIVQ.js';
+import './chunk-FSIK44TS.js';
+import './chunk-LJRMVWU3.js';
+import { DOCUMENT } from './chunk-SOO5Y25R.js';
 import {
   ANIMATION_MODULE_TYPE,
   ApplicationRef,
@@ -108,84 +86,76 @@ import {
   ɵɵresetView,
   ɵɵrestoreView,
   ɵɵtemplate,
-  ɵɵviewQuery
-} from "./chunk-LB7E77GG.js";
-import {
-  merge
-} from "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import {
-  Subject,
-  Subscription,
-  filter,
-  of,
-  startWith,
-  switchMap,
-  take,
-  takeUntil
-} from "./chunk-4S3KYZTJ.js";
-import {
-  __spreadProps,
-  __spreadValues
-} from "./chunk-4MWRP73S.js";
+  ɵɵviewQuery,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import { merge } from './chunk-WPM5VTLQ.js';
+import { Subject, Subscription, filter, of, startWith, switchMap, take, takeUntil } from './chunk-4S3KYZTJ.js';
+import { __spreadProps, __spreadValues } from './chunk-4MWRP73S.js';
 
 // node_modules/@angular/material/fesm2022/menu.mjs
-var _c0 = ["mat-menu-item", ""];
-var _c1 = [[["mat-icon"], ["", "matMenuItemIcon", ""]], "*"];
-var _c2 = ["mat-icon, [matMenuItemIcon]", "*"];
+var _c0 = ['mat-menu-item', ''];
+var _c1 = [[['mat-icon'], ['', 'matMenuItemIcon', '']], '*'];
+var _c2 = ['mat-icon, [matMenuItemIcon]', '*'];
 function MatMenuItem_Conditional_4_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵnamespaceSVG();
-    ɵɵelementStart(0, "svg", 2);
-    ɵɵelement(1, "polygon", 3);
+    ɵɵelementStart(0, 'svg', 2);
+    ɵɵelement(1, 'polygon', 3);
     ɵɵelementEnd();
   }
 }
-var _c3 = ["*"];
+var _c3 = ['*'];
 function MatMenu_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 0);
-    ɵɵlistener("click", function MatMenu_ng_template_0_Template_div_click_0_listener() {
+    ɵɵelementStart(0, 'div', 0);
+    ɵɵlistener('click', function MatMenu_ng_template_0_Template_div_click_0_listener() {
       ɵɵrestoreView(_r1);
       const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.closed.emit("click"));
-    })("animationstart", function MatMenu_ng_template_0_Template_div_animationstart_0_listener($event) {
+      return ɵɵresetView(ctx_r1.closed.emit('click'));
+    })('animationstart', function MatMenu_ng_template_0_Template_div_animationstart_0_listener($event) {
       ɵɵrestoreView(_r1);
       const ctx_r1 = ɵɵnextContext();
       return ɵɵresetView(ctx_r1._onAnimationStart($event.animationName));
-    })("animationend", function MatMenu_ng_template_0_Template_div_animationend_0_listener($event) {
+    })('animationend', function MatMenu_ng_template_0_Template_div_animationend_0_listener($event) {
       ɵɵrestoreView(_r1);
       const ctx_r1 = ɵɵnextContext();
       return ɵɵresetView(ctx_r1._onAnimationDone($event.animationName));
-    })("animationcancel", function MatMenu_ng_template_0_Template_div_animationcancel_0_listener($event) {
+    })('animationcancel', function MatMenu_ng_template_0_Template_div_animationcancel_0_listener($event) {
       ɵɵrestoreView(_r1);
       const ctx_r1 = ɵɵnextContext();
       return ɵɵresetView(ctx_r1._onAnimationDone($event.animationName));
     });
-    ɵɵelementStart(1, "div", 1);
+    ɵɵelementStart(1, 'div', 1);
     ɵɵprojection(2);
     ɵɵelementEnd()();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵclassMap(ctx_r1._classList);
-    ɵɵclassProp("mat-menu-panel-animations-disabled", ctx_r1._animationsDisabled)("mat-menu-panel-exit-animation", ctx_r1._panelAnimationState === "void")("mat-menu-panel-animating", ctx_r1._isAnimating);
-    ɵɵproperty("id", ctx_r1.panelId);
-    ɵɵattribute("aria-label", ctx_r1.ariaLabel || null)("aria-labelledby", ctx_r1.ariaLabelledby || null)("aria-describedby", ctx_r1.ariaDescribedby || null);
+    ɵɵclassProp('mat-menu-panel-animations-disabled', ctx_r1._animationsDisabled)(
+      'mat-menu-panel-exit-animation',
+      ctx_r1._panelAnimationState === 'void',
+    )('mat-menu-panel-animating', ctx_r1._isAnimating);
+    ɵɵproperty('id', ctx_r1.panelId);
+    ɵɵattribute('aria-label', ctx_r1.ariaLabel || null)('aria-labelledby', ctx_r1.ariaLabelledby || null)(
+      'aria-describedby',
+      ctx_r1.ariaDescribedby || null,
+    );
   }
 }
-var MAT_MENU_PANEL = new InjectionToken("MAT_MENU_PANEL");
+var MAT_MENU_PANEL = new InjectionToken('MAT_MENU_PANEL');
 var MatMenuItem = class _MatMenuItem {
   _elementRef = inject(ElementRef);
   _document = inject(DOCUMENT);
   _focusMonitor = inject(FocusMonitor);
   _parentMenu = inject(MAT_MENU_PANEL, {
-    optional: true
+    optional: true,
   });
   _changeDetectorRef = inject(ChangeDetectorRef);
   /** ARIA role for the menu item. */
-  role = "menuitem";
+  role = 'menuitem';
   /** Whether the menu item is disabled. */
   disabled = false;
   /** Whether ripples are disabled on the menu item. */
@@ -228,7 +198,7 @@ var MatMenuItem = class _MatMenuItem {
   }
   /** Used to set the `tabindex`. */
   _getTabIndex() {
-    return this.disabled ? "-1" : "0";
+    return this.disabled ? '-1' : '0';
   }
   /** Returns the host DOM element. */
   _getHostElement() {
@@ -248,11 +218,11 @@ var MatMenuItem = class _MatMenuItem {
   /** Gets the label to be used when determining whether the option should be focused. */
   getLabel() {
     const clone = this._elementRef.nativeElement.cloneNode(true);
-    const icons = clone.querySelectorAll("mat-icon, .material-icons");
+    const icons = clone.querySelectorAll('mat-icon, .material-icons');
     for (let i = 0; i < icons.length; i++) {
       icons[i].remove();
     }
-    return clone.textContent?.trim() || "";
+    return clone.textContent?.trim() || '';
   }
   _setHighlighted(isHighlighted) {
     this._highlighted = isHighlighted;
@@ -270,94 +240,126 @@ var MatMenuItem = class _MatMenuItem {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatMenuItem,
-    selectors: [["", "mat-menu-item", ""]],
-    hostAttrs: [1, "mat-mdc-menu-item", "mat-focus-indicator"],
+    selectors: [['', 'mat-menu-item', '']],
+    hostAttrs: [1, 'mat-mdc-menu-item', 'mat-focus-indicator'],
     hostVars: 8,
     hostBindings: function MatMenuItem_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("click", function MatMenuItem_click_HostBindingHandler($event) {
+        ɵɵlistener('click', function MatMenuItem_click_HostBindingHandler($event) {
           return ctx._checkDisabled($event);
-        })("mouseenter", function MatMenuItem_mouseenter_HostBindingHandler() {
+        })('mouseenter', function MatMenuItem_mouseenter_HostBindingHandler() {
           return ctx._handleMouseEnter();
         });
       }
       if (rf & 2) {
-        ɵɵattribute("role", ctx.role)("tabindex", ctx._getTabIndex())("aria-disabled", ctx.disabled)("disabled", ctx.disabled || null);
-        ɵɵclassProp("mat-mdc-menu-item-highlighted", ctx._highlighted)("mat-mdc-menu-item-submenu-trigger", ctx._triggersSubmenu);
+        ɵɵattribute('role', ctx.role)('tabindex', ctx._getTabIndex())('aria-disabled', ctx.disabled)(
+          'disabled',
+          ctx.disabled || null,
+        );
+        ɵɵclassProp('mat-mdc-menu-item-highlighted', ctx._highlighted)(
+          'mat-mdc-menu-item-submenu-trigger',
+          ctx._triggersSubmenu,
+        );
       }
     },
     inputs: {
-      role: "role",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      disableRipple: [2, "disableRipple", "disableRipple", booleanAttribute]
+      role: 'role',
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
+      disableRipple: [2, 'disableRipple', 'disableRipple', booleanAttribute],
     },
-    exportAs: ["matMenuItem"],
+    exportAs: ['matMenuItem'],
     attrs: _c0,
     ngContentSelectors: _c2,
     decls: 5,
     vars: 3,
-    consts: [[1, "mat-mdc-menu-item-text"], ["matRipple", "", 1, "mat-mdc-menu-ripple", 3, "matRippleDisabled", "matRippleTrigger"], ["viewBox", "0 0 5 10", "focusable", "false", "aria-hidden", "true", 1, "mat-mdc-menu-submenu-icon"], ["points", "0,0 5,5 0,10"]],
+    consts: [
+      [1, 'mat-mdc-menu-item-text'],
+      ['matRipple', '', 1, 'mat-mdc-menu-ripple', 3, 'matRippleDisabled', 'matRippleTrigger'],
+      ['viewBox', '0 0 5 10', 'focusable', 'false', 'aria-hidden', 'true', 1, 'mat-mdc-menu-submenu-icon'],
+      ['points', '0,0 5,5 0,10'],
+    ],
     template: function MatMenuItem_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef(_c1);
         ɵɵprojection(0);
-        ɵɵelementStart(1, "span", 0);
+        ɵɵelementStart(1, 'span', 0);
         ɵɵprojection(2, 1);
         ɵɵelementEnd();
-        ɵɵelement(3, "div", 1);
-        ɵɵtemplate(4, MatMenuItem_Conditional_4_Template, 2, 0, ":svg:svg", 2);
+        ɵɵelement(3, 'div', 1);
+        ɵɵtemplate(4, MatMenuItem_Conditional_4_Template, 2, 0, ':svg:svg', 2);
       }
       if (rf & 2) {
         ɵɵadvance(3);
-        ɵɵproperty("matRippleDisabled", ctx.disableRipple || ctx.disabled)("matRippleTrigger", ctx._getHostElement());
+        ɵɵproperty('matRippleDisabled', ctx.disableRipple || ctx.disabled)('matRippleTrigger', ctx._getHostElement());
         ɵɵadvance();
         ɵɵconditional(ctx._triggersSubmenu ? 4 : -1);
       }
     },
     dependencies: [MatRipple],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatMenuItem, [{
-    type: Component,
-    args: [{
-      selector: "[mat-menu-item]",
-      exportAs: "matMenuItem",
-      host: {
-        "[attr.role]": "role",
-        "class": "mat-mdc-menu-item mat-focus-indicator",
-        "[class.mat-mdc-menu-item-highlighted]": "_highlighted",
-        "[class.mat-mdc-menu-item-submenu-trigger]": "_triggersSubmenu",
-        "[attr.tabindex]": "_getTabIndex()",
-        "[attr.aria-disabled]": "disabled",
-        "[attr.disabled]": "disabled || null",
-        "(click)": "_checkDisabled($event)",
-        "(mouseenter)": "_handleMouseEnter()"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatMenuItem,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: '[mat-menu-item]',
+              exportAs: 'matMenuItem',
+              host: {
+                '[attr.role]': 'role',
+                class: 'mat-mdc-menu-item mat-focus-indicator',
+                '[class.mat-mdc-menu-item-highlighted]': '_highlighted',
+                '[class.mat-mdc-menu-item-submenu-trigger]': '_triggersSubmenu',
+                '[attr.tabindex]': '_getTabIndex()',
+                '[attr.aria-disabled]': 'disabled',
+                '[attr.disabled]': 'disabled || null',
+                '(click)': '_checkDisabled($event)',
+                '(mouseenter)': '_handleMouseEnter()',
+              },
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation.None,
+              imports: [MatRipple],
+              template:
+                '<ng-content select="mat-icon, [matMenuItemIcon]"></ng-content>\n<span class="mat-mdc-menu-item-text"><ng-content></ng-content></span>\n<div class="mat-mdc-menu-ripple" matRipple\n     [matRippleDisabled]="disableRipple || disabled"\n     [matRippleTrigger]="_getHostElement()">\n</div>\n\n@if (_triggersSubmenu) {\n     <svg\n       class="mat-mdc-menu-submenu-icon"\n       viewBox="0 0 5 10"\n       focusable="false"\n       aria-hidden="true"><polygon points="0,0 5,5 0,10"/></svg>\n}\n',
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        role: [
+          {
+            type: Input,
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        disableRipple: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
       },
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation.None,
-      imports: [MatRipple],
-      template: '<ng-content select="mat-icon, [matMenuItemIcon]"></ng-content>\n<span class="mat-mdc-menu-item-text"><ng-content></ng-content></span>\n<div class="mat-mdc-menu-ripple" matRipple\n     [matRippleDisabled]="disableRipple || disabled"\n     [matRippleTrigger]="_getHostElement()">\n</div>\n\n@if (_triggersSubmenu) {\n     <svg\n       class="mat-mdc-menu-submenu-icon"\n       viewBox="0 0 5 10"\n       focusable="false"\n       aria-hidden="true"><polygon points="0,0 5,5 0,10"/></svg>\n}\n'
-    }]
-  }], () => [], {
-    role: [{
-      type: Input
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    disableRipple: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }]
-  });
+    );
 })();
 function throwMatMenuInvalidPositionX() {
   throw Error(`xPosition value must be either 'before' or after'.
@@ -368,9 +370,11 @@ function throwMatMenuInvalidPositionY() {
       Example: <mat-menu yPosition="above" #menu="matMenu"></mat-menu>`);
 }
 function throwMatMenuRecursiveError() {
-  throw Error(`matMenuTriggerFor: menu cannot contain its own trigger. Assign a menu that is not a parent of the trigger or move the trigger outside of the menu.`);
+  throw Error(
+    `matMenuTriggerFor: menu cannot contain its own trigger. Assign a menu that is not a parent of the trigger or move the trigger outside of the menu.`,
+  );
 }
-var MAT_MENU_CONTENT = new InjectionToken("MatMenuContent");
+var MAT_MENU_CONTENT = new InjectionToken('MatMenuContent');
 var MatMenuContent = class _MatMenuContent {
   _template = inject(TemplateRef);
   _appRef = inject(ApplicationRef);
@@ -382,8 +386,7 @@ var MatMenuContent = class _MatMenuContent {
   _outlet;
   /** Emits when the menu content has been attached. */
   _attached = new Subject();
-  constructor() {
-  }
+  constructor() {}
   /**
    * Attaches the content with a particular context.
    * @docs-private
@@ -394,7 +397,7 @@ var MatMenuContent = class _MatMenuContent {
     }
     this.detach();
     if (!this._outlet) {
-      this._outlet = new DomPortalOutlet(this._document.createElement("div"), null, this._appRef, this._injector);
+      this._outlet = new DomPortalOutlet(this._document.createElement('div'), null, this._appRef, this._injector);
     }
     const element = this._template.elementRef.nativeElement;
     element.parentNode.insertBefore(this._outlet.outletElement, element);
@@ -420,39 +423,55 @@ var MatMenuContent = class _MatMenuContent {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatMenuContent,
-    selectors: [["ng-template", "matMenuContent", ""]],
-    features: [ɵɵProvidersFeature([{
-      provide: MAT_MENU_CONTENT,
-      useExisting: _MatMenuContent
-    }])]
+    selectors: [['ng-template', 'matMenuContent', '']],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MAT_MENU_CONTENT,
+          useExisting: _MatMenuContent,
+        },
+      ]),
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatMenuContent, [{
-    type: Directive,
-    args: [{
-      selector: "ng-template[matMenuContent]",
-      providers: [{
-        provide: MAT_MENU_CONTENT,
-        useExisting: MatMenuContent
-      }]
-    }]
-  }], () => [], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatMenuContent,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'ng-template[matMenuContent]',
+              providers: [
+                {
+                  provide: MAT_MENU_CONTENT,
+                  useExisting: MatMenuContent,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      null,
+    );
 })();
-var MAT_MENU_DEFAULT_OPTIONS = new InjectionToken("mat-menu-default-options", {
-  providedIn: "root",
-  factory: MAT_MENU_DEFAULT_OPTIONS_FACTORY
+var MAT_MENU_DEFAULT_OPTIONS = new InjectionToken('mat-menu-default-options', {
+  providedIn: 'root',
+  factory: MAT_MENU_DEFAULT_OPTIONS_FACTORY,
 });
 function MAT_MENU_DEFAULT_OPTIONS_FACTORY() {
   return {
     overlapTrigger: false,
-    xPosition: "after",
-    yPosition: "below",
-    backdropClass: "cdk-overlay-transparent-backdrop"
+    xPosition: 'after',
+    yPosition: 'below',
+    backdropClass: 'cdk-overlay-transparent-backdrop',
   };
 }
-var ENTER_ANIMATION = "_mat-menu-enter";
-var EXIT_ANIMATION = "_mat-menu-exit";
+var ENTER_ANIMATION = '_mat-menu-enter';
+var EXIT_ANIMATION = '_mat-menu-exit';
 var MatMenu = class _MatMenu {
   _elementRef = inject(ElementRef);
   _changeDetectorRef = inject(ChangeDetectorRef);
@@ -471,7 +490,7 @@ var MatMenu = class _MatMenu {
   /** Classes to be applied to the menu panel. */
   _classList = {};
   /** Current state of the panel animation. */
-  _panelAnimationState = "void";
+  _panelAnimationState = 'void';
   /** Emits whenever an animation on the menu completes. */
   _animationDone = new Subject();
   /** Whether the menu is animating. */
@@ -495,7 +514,7 @@ var MatMenu = class _MatMenu {
     return this._xPosition;
   }
   set xPosition(value) {
-    if (value !== "before" && value !== "after" && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (value !== 'before' && value !== 'after' && (typeof ngDevMode === 'undefined' || ngDevMode)) {
       throwMatMenuInvalidPositionX();
     }
     this._xPosition = value;
@@ -506,7 +525,7 @@ var MatMenu = class _MatMenu {
     return this._yPosition;
   }
   set yPosition(value) {
-    if (value !== "above" && value !== "below" && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (value !== 'above' && value !== 'below' && (typeof ngDevMode === 'undefined' || ngDevMode)) {
       throwMatMenuInvalidPositionY();
     }
     this._yPosition = value;
@@ -539,16 +558,16 @@ var MatMenu = class _MatMenu {
     const previousPanelClass = this._previousPanelClass;
     const newClassList = __spreadValues({}, this._classList);
     if (previousPanelClass && previousPanelClass.length) {
-      previousPanelClass.split(" ").forEach((className) => {
+      previousPanelClass.split(' ').forEach((className) => {
         newClassList[className] = false;
       });
     }
     this._previousPanelClass = classes;
     if (classes && classes.length) {
-      classes.split(" ").forEach((className) => {
+      classes.split(' ').forEach((className) => {
         newClassList[className] = true;
       });
-      this._elementRef.nativeElement.className = "";
+      this._elementRef.nativeElement.className = '';
     }
     this._classList = newClassList;
   }
@@ -574,18 +593,19 @@ var MatMenu = class _MatMenu {
    * @breaking-change 8.0.0
    */
   close = this.closed;
-  panelId = inject(_IdGenerator).getId("mat-menu-panel-");
+  panelId = inject(_IdGenerator).getId('mat-menu-panel-');
   constructor() {
     const defaultOptions = inject(MAT_MENU_DEFAULT_OPTIONS);
-    this.overlayPanelClass = defaultOptions.overlayPanelClass || "";
+    this.overlayPanelClass = defaultOptions.overlayPanelClass || '';
     this._xPosition = defaultOptions.xPosition;
     this._yPosition = defaultOptions.yPosition;
     this.backdropClass = defaultOptions.backdropClass;
     this.overlapTrigger = defaultOptions.overlapTrigger;
     this.hasBackdrop = defaultOptions.hasBackdrop;
-    this._animationsDisabled = inject(ANIMATION_MODULE_TYPE, {
-      optional: true
-    }) === "NoopAnimations";
+    this._animationsDisabled =
+      inject(ANIMATION_MODULE_TYPE, {
+        optional: true,
+      }) === 'NoopAnimations';
   }
   ngOnInit() {
     this.setPositionClasses();
@@ -593,11 +613,16 @@ var MatMenu = class _MatMenu {
   ngAfterContentInit() {
     this._updateDirectDescendants();
     this._keyManager = new FocusKeyManager(this._directDescendantItems).withWrap().withTypeAhead().withHomeAndEnd();
-    this._keyManager.tabOut.subscribe(() => this.closed.emit("tab"));
-    this._directDescendantItems.changes.pipe(startWith(this._directDescendantItems), switchMap((items) => merge(...items.map((item) => item._focused)))).subscribe((focusedItem) => this._keyManager.updateActiveItem(focusedItem));
+    this._keyManager.tabOut.subscribe(() => this.closed.emit('tab'));
+    this._directDescendantItems.changes
+      .pipe(
+        startWith(this._directDescendantItems),
+        switchMap((items) => merge(...items.map((item) => item._focused))),
+      )
+      .subscribe((focusedItem) => this._keyManager.updateActiveItem(focusedItem));
     this._directDescendantItems.changes.subscribe((itemsList) => {
       const manager = this._keyManager;
-      if (this._panelAnimationState === "enter" && manager.activeItem?._hasFocus()) {
+      if (this._panelAnimationState === 'enter' && manager.activeItem?._hasFocus()) {
         const items = itemsList.toArray();
         const index = Math.max(0, Math.min(items.length - 1, manager.activeItemIndex || 0));
         if (items[index] && !items[index].disabled) {
@@ -618,7 +643,10 @@ var MatMenu = class _MatMenu {
   /** Stream that emits whenever the hovered menu item changes. */
   _hovered() {
     const itemChanges = this._directDescendantItems.changes;
-    return itemChanges.pipe(startWith(this._directDescendantItems), switchMap((items) => merge(...items.map((item) => item._hovered))));
+    return itemChanges.pipe(
+      startWith(this._directDescendantItems),
+      switchMap((items) => merge(...items.map((item) => item._hovered))),
+    );
   }
   /*
    * Registers a menu item with the menu.
@@ -626,16 +654,14 @@ var MatMenu = class _MatMenu {
    * @deprecated No longer being used. To be removed.
    * @breaking-change 9.0.0
    */
-  addItem(_item) {
-  }
+  addItem(_item) {}
   /**
    * Removes an item from the menu.
    * @docs-private
    * @deprecated No longer being used. To be removed.
    * @breaking-change 9.0.0
    */
-  removeItem(_item) {
-  }
+  removeItem(_item) {}
   /** Handle a keyboard event from the menu, delegating to the appropriate action. */
   _handleKeydown(event) {
     const keyCode = event.keyCode;
@@ -644,22 +670,22 @@ var MatMenu = class _MatMenu {
       case ESCAPE:
         if (!hasModifierKey(event)) {
           event.preventDefault();
-          this.closed.emit("keydown");
+          this.closed.emit('keydown');
         }
         break;
       case LEFT_ARROW:
-        if (this.parentMenu && this.direction === "ltr") {
-          this.closed.emit("keydown");
+        if (this.parentMenu && this.direction === 'ltr') {
+          this.closed.emit('keydown');
         }
         break;
       case RIGHT_ARROW:
-        if (this.parentMenu && this.direction === "rtl") {
-          this.closed.emit("keydown");
+        if (this.parentMenu && this.direction === 'rtl') {
+          this.closed.emit('keydown');
         }
         break;
       default:
         if (keyCode === UP_ARROW || keyCode === DOWN_ARROW) {
-          manager.setFocusOrigin("keyboard");
+          manager.setFocusOrigin('keyboard');
         }
         manager.onKeydown(event);
         return;
@@ -669,20 +695,23 @@ var MatMenu = class _MatMenu {
    * Focus the first item in the menu.
    * @param origin Action from which the focus originated. Used to set the correct styling.
    */
-  focusFirstItem(origin = "program") {
+  focusFirstItem(origin = 'program') {
     this._firstItemFocusRef?.destroy();
-    this._firstItemFocusRef = afterNextRender(() => {
-      const menuPanel = this._resolvePanel();
-      if (!menuPanel || !menuPanel.contains(document.activeElement)) {
-        const manager = this._keyManager;
-        manager.setFocusOrigin(origin).setFirstItemActive();
-        if (!manager.activeItem && menuPanel) {
-          menuPanel.focus();
+    this._firstItemFocusRef = afterNextRender(
+      () => {
+        const menuPanel = this._resolvePanel();
+        if (!menuPanel || !menuPanel.contains(document.activeElement)) {
+          const manager = this._keyManager;
+          manager.setFocusOrigin(origin).setFirstItemActive();
+          if (!manager.activeItem && menuPanel) {
+            menuPanel.focus();
+          }
         }
-      }
-    }, {
-      injector: this._injector
-    });
+      },
+      {
+        injector: this._injector,
+      },
+    );
   }
   /**
    * Resets the active item in the menu. This is used when the menu is opened, allowing
@@ -695,8 +724,7 @@ var MatMenu = class _MatMenu {
    * @deprecated No longer used and will be removed.
    * @breaking-change 21.0.0
    */
-  setElevation(_depth) {
-  }
+  setElevation(_depth) {}
   /**
    * Adds classes to the menu panel based on its position. Can be used by
    * consumers to add specific styling based on the position.
@@ -706,10 +734,10 @@ var MatMenu = class _MatMenu {
    */
   setPositionClasses(posX = this.xPosition, posY = this.yPosition) {
     this._classList = __spreadProps(__spreadValues({}, this._classList), {
-      ["mat-menu-before"]: posX === "before",
-      ["mat-menu-after"]: posX === "after",
-      ["mat-menu-above"]: posY === "above",
-      ["mat-menu-below"]: posY === "below"
+      ['mat-menu-before']: posX === 'before',
+      ['mat-menu-after']: posX === 'after',
+      ['mat-menu-above']: posY === 'above',
+      ['mat-menu-below']: posY === 'below',
     });
     this._changeDetectorRef.markForCheck();
   }
@@ -721,7 +749,7 @@ var MatMenu = class _MatMenu {
         clearTimeout(this._exitFallbackTimeout);
         this._exitFallbackTimeout = void 0;
       }
-      this._animationDone.next(isExit ? "void" : "enter");
+      this._animationDone.next(isExit ? 'void' : 'enter');
       this._isAnimating = false;
     }
   }
@@ -731,7 +759,7 @@ var MatMenu = class _MatMenu {
     }
   }
   _setIsOpen(isOpen) {
-    this._panelAnimationState = isOpen ? "enter" : "void";
+    this._panelAnimationState = isOpen ? 'enter' : 'void';
     if (isOpen) {
       if (this._keyManager.activeItemIndex === 0) {
         const menuPanel = this._resolvePanel();
@@ -774,7 +802,7 @@ var MatMenu = class _MatMenu {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatMenu,
-    selectors: [["mat-menu"]],
+    selectors: [['mat-menu']],
     contentQueries: function MatMenu_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MAT_MENU_CONTENT, 5);
@@ -783,9 +811,9 @@ var MatMenu = class _MatMenu {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.lazyContent = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._allItems = _t);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.items = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.lazyContent = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._allItems = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.items = _t);
       }
     },
     viewQuery: function MatMenu_Query(rf, ctx) {
@@ -794,69 +822,98 @@ var MatMenu = class _MatMenu {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templateRef = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.templateRef = _t.first);
       }
     },
     hostVars: 3,
     hostBindings: function MatMenu_HostBindings(rf, ctx) {
       if (rf & 2) {
-        ɵɵattribute("aria-label", null)("aria-labelledby", null)("aria-describedby", null);
+        ɵɵattribute('aria-label', null)('aria-labelledby', null)('aria-describedby', null);
       }
     },
     inputs: {
-      backdropClass: "backdropClass",
-      ariaLabel: [0, "aria-label", "ariaLabel"],
-      ariaLabelledby: [0, "aria-labelledby", "ariaLabelledby"],
-      ariaDescribedby: [0, "aria-describedby", "ariaDescribedby"],
-      xPosition: "xPosition",
-      yPosition: "yPosition",
-      overlapTrigger: [2, "overlapTrigger", "overlapTrigger", booleanAttribute],
-      hasBackdrop: [2, "hasBackdrop", "hasBackdrop", (value) => value == null ? null : booleanAttribute(value)],
-      panelClass: [0, "class", "panelClass"],
-      classList: "classList"
+      backdropClass: 'backdropClass',
+      ariaLabel: [0, 'aria-label', 'ariaLabel'],
+      ariaLabelledby: [0, 'aria-labelledby', 'ariaLabelledby'],
+      ariaDescribedby: [0, 'aria-describedby', 'ariaDescribedby'],
+      xPosition: 'xPosition',
+      yPosition: 'yPosition',
+      overlapTrigger: [2, 'overlapTrigger', 'overlapTrigger', booleanAttribute],
+      hasBackdrop: [2, 'hasBackdrop', 'hasBackdrop', (value) => (value == null ? null : booleanAttribute(value))],
+      panelClass: [0, 'class', 'panelClass'],
+      classList: 'classList',
     },
     outputs: {
-      closed: "closed",
-      close: "close"
+      closed: 'closed',
+      close: 'close',
     },
-    exportAs: ["matMenu"],
-    features: [ɵɵProvidersFeature([{
-      provide: MAT_MENU_PANEL,
-      useExisting: _MatMenu
-    }])],
+    exportAs: ['matMenu'],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MAT_MENU_PANEL,
+          useExisting: _MatMenu,
+        },
+      ]),
+    ],
     ngContentSelectors: _c3,
     decls: 1,
     vars: 0,
-    consts: [["tabindex", "-1", "role", "menu", 1, "mat-mdc-menu-panel", 3, "click", "animationstart", "animationend", "animationcancel", "id"], [1, "mat-mdc-menu-content"]],
+    consts: [
+      [
+        'tabindex',
+        '-1',
+        'role',
+        'menu',
+        1,
+        'mat-mdc-menu-panel',
+        3,
+        'click',
+        'animationstart',
+        'animationend',
+        'animationcancel',
+        'id',
+      ],
+      [1, 'mat-mdc-menu-content'],
+    ],
     template: function MatMenu_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef();
-        ɵɵtemplate(0, MatMenu_ng_template_0_Template, 3, 12, "ng-template");
+        ɵɵtemplate(0, MatMenu_ng_template_0_Template, 3, 12, 'ng-template');
       }
     },
-    styles: ['mat-menu{display:none}.mat-mdc-menu-content{margin:0;padding:8px 0;outline:0}.mat-mdc-menu-content,.mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;flex:1;white-space:normal;font-family:var(--mat-menu-item-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mat-menu-item-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mat-menu-item-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-menu-item-label-text-tracking, var(--mat-sys-label-large-tracking));font-weight:var(--mat-menu-item-label-text-weight, var(--mat-sys-label-large-weight))}@keyframes _mat-menu-enter{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:none}}@keyframes _mat-menu-exit{from{opacity:1}to{opacity:0}}.mat-mdc-menu-panel{min-width:112px;max-width:280px;overflow:auto;box-sizing:border-box;outline:0;animation:_mat-menu-enter 120ms cubic-bezier(0, 0, 0.2, 1);border-radius:var(--mat-menu-container-shape, var(--mat-sys-corner-extra-small));background-color:var(--mat-menu-container-color, var(--mat-sys-surface-container));box-shadow:var(--mat-menu-container-elevation-shadow, 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12));will-change:transform,opacity}.mat-mdc-menu-panel.mat-menu-panel-exit-animation{animation:_mat-menu-exit 100ms 25ms linear forwards}.mat-mdc-menu-panel.mat-menu-panel-animations-disabled{animation:none}.mat-mdc-menu-panel.mat-menu-panel-animating{pointer-events:none}.mat-mdc-menu-panel.mat-menu-panel-animating:has(.mat-mdc-menu-content:empty){display:none}@media(forced-colors: active){.mat-mdc-menu-panel{outline:solid 1px}}.mat-mdc-menu-panel .mat-divider{color:var(--mat-menu-divider-color, var(--mat-sys-surface-variant));margin-bottom:var(--mat-menu-divider-bottom-spacing, 8px);margin-top:var(--mat-menu-divider-top-spacing, 8px)}.mat-mdc-menu-item{display:flex;position:relative;align-items:center;justify-content:flex-start;overflow:hidden;padding:0;cursor:pointer;width:100%;text-align:left;box-sizing:border-box;color:inherit;font-size:inherit;background:none;text-decoration:none;margin:0;min-height:48px;padding-left:var(--mat-menu-item-leading-spacing, 12px);padding-right:var(--mat-menu-item-trailing-spacing, 12px);-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-menu-item::-moz-focus-inner{border:0}[dir=rtl] .mat-mdc-menu-item{padding-left:var(--mat-menu-item-trailing-spacing, 12px);padding-right:var(--mat-menu-item-leading-spacing, 12px)}.mat-mdc-menu-item:has(.material-icons,mat-icon,[matButtonIcon]){padding-left:var(--mat-menu-item-with-icon-leading-spacing, 12px);padding-right:var(--mat-menu-item-with-icon-trailing-spacing, 12px)}[dir=rtl] .mat-mdc-menu-item:has(.material-icons,mat-icon,[matButtonIcon]){padding-left:var(--mat-menu-item-with-icon-trailing-spacing, 12px);padding-right:var(--mat-menu-item-with-icon-leading-spacing, 12px)}.mat-mdc-menu-item,.mat-mdc-menu-item:visited,.mat-mdc-menu-item:link{color:var(--mat-menu-item-label-text-color, var(--mat-sys-on-surface))}.mat-mdc-menu-item .mat-icon-no-color,.mat-mdc-menu-item .mat-mdc-menu-submenu-icon{color:var(--mat-menu-item-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-menu-item[disabled]{cursor:default;opacity:.38}.mat-mdc-menu-item[disabled]::after{display:block;position:absolute;content:"";top:0;left:0;bottom:0;right:0}.mat-mdc-menu-item:focus{outline:0}.mat-mdc-menu-item .mat-icon{flex-shrink:0;margin-right:var(--mat-menu-item-spacing, 12px);height:var(--mat-menu-item-icon-size, 24px);width:var(--mat-menu-item-icon-size, 24px)}[dir=rtl] .mat-mdc-menu-item{text-align:right}[dir=rtl] .mat-mdc-menu-item .mat-icon{margin-right:0;margin-left:var(--mat-menu-item-spacing, 12px)}.mat-mdc-menu-item:not([disabled]):hover{background-color:var(--mat-menu-item-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-hover-state-layer-opacity) * 100%), transparent))}.mat-mdc-menu-item:not([disabled]).cdk-program-focused,.mat-mdc-menu-item:not([disabled]).cdk-keyboard-focused,.mat-mdc-menu-item:not([disabled]).mat-mdc-menu-item-highlighted{background-color:var(--mat-menu-item-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-focus-state-layer-opacity) * 100%), transparent))}@media(forced-colors: active){.mat-mdc-menu-item{margin-top:1px}}.mat-mdc-menu-submenu-icon{width:var(--mat-menu-item-icon-size, 24px);height:10px;fill:currentColor;padding-left:var(--mat-menu-item-spacing, 12px)}[dir=rtl] .mat-mdc-menu-submenu-icon{padding-right:var(--mat-menu-item-spacing, 12px);padding-left:0}[dir=rtl] .mat-mdc-menu-submenu-icon polygon{transform:scaleX(-1);transform-origin:center}@media(forced-colors: active){.mat-mdc-menu-submenu-icon{fill:CanvasText}}.mat-mdc-menu-item .mat-mdc-menu-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}\n'],
+    styles: [
+      'mat-menu{display:none}.mat-mdc-menu-content{margin:0;padding:8px 0;outline:0}.mat-mdc-menu-content,.mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;flex:1;white-space:normal;font-family:var(--mat-menu-item-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mat-menu-item-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mat-menu-item-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-menu-item-label-text-tracking, var(--mat-sys-label-large-tracking));font-weight:var(--mat-menu-item-label-text-weight, var(--mat-sys-label-large-weight))}@keyframes _mat-menu-enter{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:none}}@keyframes _mat-menu-exit{from{opacity:1}to{opacity:0}}.mat-mdc-menu-panel{min-width:112px;max-width:280px;overflow:auto;box-sizing:border-box;outline:0;animation:_mat-menu-enter 120ms cubic-bezier(0, 0, 0.2, 1);border-radius:var(--mat-menu-container-shape, var(--mat-sys-corner-extra-small));background-color:var(--mat-menu-container-color, var(--mat-sys-surface-container));box-shadow:var(--mat-menu-container-elevation-shadow, 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12));will-change:transform,opacity}.mat-mdc-menu-panel.mat-menu-panel-exit-animation{animation:_mat-menu-exit 100ms 25ms linear forwards}.mat-mdc-menu-panel.mat-menu-panel-animations-disabled{animation:none}.mat-mdc-menu-panel.mat-menu-panel-animating{pointer-events:none}.mat-mdc-menu-panel.mat-menu-panel-animating:has(.mat-mdc-menu-content:empty){display:none}@media(forced-colors: active){.mat-mdc-menu-panel{outline:solid 1px}}.mat-mdc-menu-panel .mat-divider{color:var(--mat-menu-divider-color, var(--mat-sys-surface-variant));margin-bottom:var(--mat-menu-divider-bottom-spacing, 8px);margin-top:var(--mat-menu-divider-top-spacing, 8px)}.mat-mdc-menu-item{display:flex;position:relative;align-items:center;justify-content:flex-start;overflow:hidden;padding:0;cursor:pointer;width:100%;text-align:left;box-sizing:border-box;color:inherit;font-size:inherit;background:none;text-decoration:none;margin:0;min-height:48px;padding-left:var(--mat-menu-item-leading-spacing, 12px);padding-right:var(--mat-menu-item-trailing-spacing, 12px);-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-menu-item::-moz-focus-inner{border:0}[dir=rtl] .mat-mdc-menu-item{padding-left:var(--mat-menu-item-trailing-spacing, 12px);padding-right:var(--mat-menu-item-leading-spacing, 12px)}.mat-mdc-menu-item:has(.material-icons,mat-icon,[matButtonIcon]){padding-left:var(--mat-menu-item-with-icon-leading-spacing, 12px);padding-right:var(--mat-menu-item-with-icon-trailing-spacing, 12px)}[dir=rtl] .mat-mdc-menu-item:has(.material-icons,mat-icon,[matButtonIcon]){padding-left:var(--mat-menu-item-with-icon-trailing-spacing, 12px);padding-right:var(--mat-menu-item-with-icon-leading-spacing, 12px)}.mat-mdc-menu-item,.mat-mdc-menu-item:visited,.mat-mdc-menu-item:link{color:var(--mat-menu-item-label-text-color, var(--mat-sys-on-surface))}.mat-mdc-menu-item .mat-icon-no-color,.mat-mdc-menu-item .mat-mdc-menu-submenu-icon{color:var(--mat-menu-item-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-menu-item[disabled]{cursor:default;opacity:.38}.mat-mdc-menu-item[disabled]::after{display:block;position:absolute;content:"";top:0;left:0;bottom:0;right:0}.mat-mdc-menu-item:focus{outline:0}.mat-mdc-menu-item .mat-icon{flex-shrink:0;margin-right:var(--mat-menu-item-spacing, 12px);height:var(--mat-menu-item-icon-size, 24px);width:var(--mat-menu-item-icon-size, 24px)}[dir=rtl] .mat-mdc-menu-item{text-align:right}[dir=rtl] .mat-mdc-menu-item .mat-icon{margin-right:0;margin-left:var(--mat-menu-item-spacing, 12px)}.mat-mdc-menu-item:not([disabled]):hover{background-color:var(--mat-menu-item-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-hover-state-layer-opacity) * 100%), transparent))}.mat-mdc-menu-item:not([disabled]).cdk-program-focused,.mat-mdc-menu-item:not([disabled]).cdk-keyboard-focused,.mat-mdc-menu-item:not([disabled]).mat-mdc-menu-item-highlighted{background-color:var(--mat-menu-item-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-focus-state-layer-opacity) * 100%), transparent))}@media(forced-colors: active){.mat-mdc-menu-item{margin-top:1px}}.mat-mdc-menu-submenu-icon{width:var(--mat-menu-item-icon-size, 24px);height:10px;fill:currentColor;padding-left:var(--mat-menu-item-spacing, 12px)}[dir=rtl] .mat-mdc-menu-submenu-icon{padding-right:var(--mat-menu-item-spacing, 12px);padding-left:0}[dir=rtl] .mat-mdc-menu-submenu-icon polygon{transform:scaleX(-1);transform-origin:center}@media(forced-colors: active){.mat-mdc-menu-submenu-icon{fill:CanvasText}}.mat-mdc-menu-item .mat-mdc-menu-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}\n',
+    ],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatMenu, [{
-    type: Component,
-    args: [{
-      selector: "mat-menu",
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation.None,
-      exportAs: "matMenu",
-      host: {
-        "[attr.aria-label]": "null",
-        "[attr.aria-labelledby]": "null",
-        "[attr.aria-describedby]": "null"
-      },
-      providers: [{
-        provide: MAT_MENU_PANEL,
-        useExisting: MatMenu
-      }],
-      template: `<ng-template>
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatMenu,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-menu',
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation.None,
+              exportAs: 'matMenu',
+              host: {
+                '[attr.aria-label]': 'null',
+                '[attr.aria-labelledby]': 'null',
+                '[attr.aria-describedby]': 'null',
+              },
+              providers: [
+                {
+                  provide: MAT_MENU_PANEL,
+                  useExisting: MatMenu,
+                },
+              ],
+              template: `<ng-template>
   <div
     class="mat-mdc-menu-panel"
     [id]="panelId"
@@ -879,83 +936,132 @@ var MatMenu = class _MatMenu {
   </div>
 </ng-template>
 `,
-      styles: ['mat-menu{display:none}.mat-mdc-menu-content{margin:0;padding:8px 0;outline:0}.mat-mdc-menu-content,.mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;flex:1;white-space:normal;font-family:var(--mat-menu-item-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mat-menu-item-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mat-menu-item-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-menu-item-label-text-tracking, var(--mat-sys-label-large-tracking));font-weight:var(--mat-menu-item-label-text-weight, var(--mat-sys-label-large-weight))}@keyframes _mat-menu-enter{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:none}}@keyframes _mat-menu-exit{from{opacity:1}to{opacity:0}}.mat-mdc-menu-panel{min-width:112px;max-width:280px;overflow:auto;box-sizing:border-box;outline:0;animation:_mat-menu-enter 120ms cubic-bezier(0, 0, 0.2, 1);border-radius:var(--mat-menu-container-shape, var(--mat-sys-corner-extra-small));background-color:var(--mat-menu-container-color, var(--mat-sys-surface-container));box-shadow:var(--mat-menu-container-elevation-shadow, 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12));will-change:transform,opacity}.mat-mdc-menu-panel.mat-menu-panel-exit-animation{animation:_mat-menu-exit 100ms 25ms linear forwards}.mat-mdc-menu-panel.mat-menu-panel-animations-disabled{animation:none}.mat-mdc-menu-panel.mat-menu-panel-animating{pointer-events:none}.mat-mdc-menu-panel.mat-menu-panel-animating:has(.mat-mdc-menu-content:empty){display:none}@media(forced-colors: active){.mat-mdc-menu-panel{outline:solid 1px}}.mat-mdc-menu-panel .mat-divider{color:var(--mat-menu-divider-color, var(--mat-sys-surface-variant));margin-bottom:var(--mat-menu-divider-bottom-spacing, 8px);margin-top:var(--mat-menu-divider-top-spacing, 8px)}.mat-mdc-menu-item{display:flex;position:relative;align-items:center;justify-content:flex-start;overflow:hidden;padding:0;cursor:pointer;width:100%;text-align:left;box-sizing:border-box;color:inherit;font-size:inherit;background:none;text-decoration:none;margin:0;min-height:48px;padding-left:var(--mat-menu-item-leading-spacing, 12px);padding-right:var(--mat-menu-item-trailing-spacing, 12px);-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-menu-item::-moz-focus-inner{border:0}[dir=rtl] .mat-mdc-menu-item{padding-left:var(--mat-menu-item-trailing-spacing, 12px);padding-right:var(--mat-menu-item-leading-spacing, 12px)}.mat-mdc-menu-item:has(.material-icons,mat-icon,[matButtonIcon]){padding-left:var(--mat-menu-item-with-icon-leading-spacing, 12px);padding-right:var(--mat-menu-item-with-icon-trailing-spacing, 12px)}[dir=rtl] .mat-mdc-menu-item:has(.material-icons,mat-icon,[matButtonIcon]){padding-left:var(--mat-menu-item-with-icon-trailing-spacing, 12px);padding-right:var(--mat-menu-item-with-icon-leading-spacing, 12px)}.mat-mdc-menu-item,.mat-mdc-menu-item:visited,.mat-mdc-menu-item:link{color:var(--mat-menu-item-label-text-color, var(--mat-sys-on-surface))}.mat-mdc-menu-item .mat-icon-no-color,.mat-mdc-menu-item .mat-mdc-menu-submenu-icon{color:var(--mat-menu-item-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-menu-item[disabled]{cursor:default;opacity:.38}.mat-mdc-menu-item[disabled]::after{display:block;position:absolute;content:"";top:0;left:0;bottom:0;right:0}.mat-mdc-menu-item:focus{outline:0}.mat-mdc-menu-item .mat-icon{flex-shrink:0;margin-right:var(--mat-menu-item-spacing, 12px);height:var(--mat-menu-item-icon-size, 24px);width:var(--mat-menu-item-icon-size, 24px)}[dir=rtl] .mat-mdc-menu-item{text-align:right}[dir=rtl] .mat-mdc-menu-item .mat-icon{margin-right:0;margin-left:var(--mat-menu-item-spacing, 12px)}.mat-mdc-menu-item:not([disabled]):hover{background-color:var(--mat-menu-item-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-hover-state-layer-opacity) * 100%), transparent))}.mat-mdc-menu-item:not([disabled]).cdk-program-focused,.mat-mdc-menu-item:not([disabled]).cdk-keyboard-focused,.mat-mdc-menu-item:not([disabled]).mat-mdc-menu-item-highlighted{background-color:var(--mat-menu-item-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-focus-state-layer-opacity) * 100%), transparent))}@media(forced-colors: active){.mat-mdc-menu-item{margin-top:1px}}.mat-mdc-menu-submenu-icon{width:var(--mat-menu-item-icon-size, 24px);height:10px;fill:currentColor;padding-left:var(--mat-menu-item-spacing, 12px)}[dir=rtl] .mat-mdc-menu-submenu-icon{padding-right:var(--mat-menu-item-spacing, 12px);padding-left:0}[dir=rtl] .mat-mdc-menu-submenu-icon polygon{transform:scaleX(-1);transform-origin:center}@media(forced-colors: active){.mat-mdc-menu-submenu-icon{fill:CanvasText}}.mat-mdc-menu-item .mat-mdc-menu-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}\n']
-    }]
-  }], () => [], {
-    _allItems: [{
-      type: ContentChildren,
-      args: [MatMenuItem, {
-        descendants: true
-      }]
-    }],
-    backdropClass: [{
-      type: Input
-    }],
-    ariaLabel: [{
-      type: Input,
-      args: ["aria-label"]
-    }],
-    ariaLabelledby: [{
-      type: Input,
-      args: ["aria-labelledby"]
-    }],
-    ariaDescribedby: [{
-      type: Input,
-      args: ["aria-describedby"]
-    }],
-    xPosition: [{
-      type: Input
-    }],
-    yPosition: [{
-      type: Input
-    }],
-    templateRef: [{
-      type: ViewChild,
-      args: [TemplateRef]
-    }],
-    items: [{
-      type: ContentChildren,
-      args: [MatMenuItem, {
-        descendants: false
-      }]
-    }],
-    lazyContent: [{
-      type: ContentChild,
-      args: [MAT_MENU_CONTENT]
-    }],
-    overlapTrigger: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    hasBackdrop: [{
-      type: Input,
-      args: [{
-        transform: (value) => value == null ? null : booleanAttribute(value)
-      }]
-    }],
-    panelClass: [{
-      type: Input,
-      args: ["class"]
-    }],
-    classList: [{
-      type: Input
-    }],
-    closed: [{
-      type: Output
-    }],
-    close: [{
-      type: Output
-    }]
-  });
+              styles: [
+                'mat-menu{display:none}.mat-mdc-menu-content{margin:0;padding:8px 0;outline:0}.mat-mdc-menu-content,.mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;flex:1;white-space:normal;font-family:var(--mat-menu-item-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mat-menu-item-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mat-menu-item-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-menu-item-label-text-tracking, var(--mat-sys-label-large-tracking));font-weight:var(--mat-menu-item-label-text-weight, var(--mat-sys-label-large-weight))}@keyframes _mat-menu-enter{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:none}}@keyframes _mat-menu-exit{from{opacity:1}to{opacity:0}}.mat-mdc-menu-panel{min-width:112px;max-width:280px;overflow:auto;box-sizing:border-box;outline:0;animation:_mat-menu-enter 120ms cubic-bezier(0, 0, 0.2, 1);border-radius:var(--mat-menu-container-shape, var(--mat-sys-corner-extra-small));background-color:var(--mat-menu-container-color, var(--mat-sys-surface-container));box-shadow:var(--mat-menu-container-elevation-shadow, 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12));will-change:transform,opacity}.mat-mdc-menu-panel.mat-menu-panel-exit-animation{animation:_mat-menu-exit 100ms 25ms linear forwards}.mat-mdc-menu-panel.mat-menu-panel-animations-disabled{animation:none}.mat-mdc-menu-panel.mat-menu-panel-animating{pointer-events:none}.mat-mdc-menu-panel.mat-menu-panel-animating:has(.mat-mdc-menu-content:empty){display:none}@media(forced-colors: active){.mat-mdc-menu-panel{outline:solid 1px}}.mat-mdc-menu-panel .mat-divider{color:var(--mat-menu-divider-color, var(--mat-sys-surface-variant));margin-bottom:var(--mat-menu-divider-bottom-spacing, 8px);margin-top:var(--mat-menu-divider-top-spacing, 8px)}.mat-mdc-menu-item{display:flex;position:relative;align-items:center;justify-content:flex-start;overflow:hidden;padding:0;cursor:pointer;width:100%;text-align:left;box-sizing:border-box;color:inherit;font-size:inherit;background:none;text-decoration:none;margin:0;min-height:48px;padding-left:var(--mat-menu-item-leading-spacing, 12px);padding-right:var(--mat-menu-item-trailing-spacing, 12px);-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-menu-item::-moz-focus-inner{border:0}[dir=rtl] .mat-mdc-menu-item{padding-left:var(--mat-menu-item-trailing-spacing, 12px);padding-right:var(--mat-menu-item-leading-spacing, 12px)}.mat-mdc-menu-item:has(.material-icons,mat-icon,[matButtonIcon]){padding-left:var(--mat-menu-item-with-icon-leading-spacing, 12px);padding-right:var(--mat-menu-item-with-icon-trailing-spacing, 12px)}[dir=rtl] .mat-mdc-menu-item:has(.material-icons,mat-icon,[matButtonIcon]){padding-left:var(--mat-menu-item-with-icon-trailing-spacing, 12px);padding-right:var(--mat-menu-item-with-icon-leading-spacing, 12px)}.mat-mdc-menu-item,.mat-mdc-menu-item:visited,.mat-mdc-menu-item:link{color:var(--mat-menu-item-label-text-color, var(--mat-sys-on-surface))}.mat-mdc-menu-item .mat-icon-no-color,.mat-mdc-menu-item .mat-mdc-menu-submenu-icon{color:var(--mat-menu-item-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-menu-item[disabled]{cursor:default;opacity:.38}.mat-mdc-menu-item[disabled]::after{display:block;position:absolute;content:"";top:0;left:0;bottom:0;right:0}.mat-mdc-menu-item:focus{outline:0}.mat-mdc-menu-item .mat-icon{flex-shrink:0;margin-right:var(--mat-menu-item-spacing, 12px);height:var(--mat-menu-item-icon-size, 24px);width:var(--mat-menu-item-icon-size, 24px)}[dir=rtl] .mat-mdc-menu-item{text-align:right}[dir=rtl] .mat-mdc-menu-item .mat-icon{margin-right:0;margin-left:var(--mat-menu-item-spacing, 12px)}.mat-mdc-menu-item:not([disabled]):hover{background-color:var(--mat-menu-item-hover-state-layer-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-hover-state-layer-opacity) * 100%), transparent))}.mat-mdc-menu-item:not([disabled]).cdk-program-focused,.mat-mdc-menu-item:not([disabled]).cdk-keyboard-focused,.mat-mdc-menu-item:not([disabled]).mat-mdc-menu-item-highlighted{background-color:var(--mat-menu-item-focus-state-layer-color, color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-focus-state-layer-opacity) * 100%), transparent))}@media(forced-colors: active){.mat-mdc-menu-item{margin-top:1px}}.mat-mdc-menu-submenu-icon{width:var(--mat-menu-item-icon-size, 24px);height:10px;fill:currentColor;padding-left:var(--mat-menu-item-spacing, 12px)}[dir=rtl] .mat-mdc-menu-submenu-icon{padding-right:var(--mat-menu-item-spacing, 12px);padding-left:0}[dir=rtl] .mat-mdc-menu-submenu-icon polygon{transform:scaleX(-1);transform-origin:center}@media(forced-colors: active){.mat-mdc-menu-submenu-icon{fill:CanvasText}}.mat-mdc-menu-item .mat-mdc-menu-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        _allItems: [
+          {
+            type: ContentChildren,
+            args: [
+              MatMenuItem,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        backdropClass: [
+          {
+            type: Input,
+          },
+        ],
+        ariaLabel: [
+          {
+            type: Input,
+            args: ['aria-label'],
+          },
+        ],
+        ariaLabelledby: [
+          {
+            type: Input,
+            args: ['aria-labelledby'],
+          },
+        ],
+        ariaDescribedby: [
+          {
+            type: Input,
+            args: ['aria-describedby'],
+          },
+        ],
+        xPosition: [
+          {
+            type: Input,
+          },
+        ],
+        yPosition: [
+          {
+            type: Input,
+          },
+        ],
+        templateRef: [
+          {
+            type: ViewChild,
+            args: [TemplateRef],
+          },
+        ],
+        items: [
+          {
+            type: ContentChildren,
+            args: [
+              MatMenuItem,
+              {
+                descendants: false,
+              },
+            ],
+          },
+        ],
+        lazyContent: [
+          {
+            type: ContentChild,
+            args: [MAT_MENU_CONTENT],
+          },
+        ],
+        overlapTrigger: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        hasBackdrop: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: (value) => (value == null ? null : booleanAttribute(value)),
+              },
+            ],
+          },
+        ],
+        panelClass: [
+          {
+            type: Input,
+            args: ['class'],
+          },
+        ],
+        classList: [
+          {
+            type: Input,
+          },
+        ],
+        closed: [
+          {
+            type: Output,
+          },
+        ],
+        close: [
+          {
+            type: Output,
+          },
+        ],
+      },
+    );
 })();
-var MAT_MENU_SCROLL_STRATEGY = new InjectionToken("mat-menu-scroll-strategy", {
-  providedIn: "root",
+var MAT_MENU_SCROLL_STRATEGY = new InjectionToken('mat-menu-scroll-strategy', {
+  providedIn: 'root',
   factory: () => {
     const overlay = inject(Overlay);
     return () => overlay.scrollStrategies.reposition();
-  }
+  },
 });
 function MAT_MENU_SCROLL_STRATEGY_FACTORY(overlay) {
   return () => overlay.scrollStrategies.reposition();
@@ -963,10 +1069,10 @@ function MAT_MENU_SCROLL_STRATEGY_FACTORY(overlay) {
 var MAT_MENU_SCROLL_STRATEGY_FACTORY_PROVIDER = {
   provide: MAT_MENU_SCROLL_STRATEGY,
   deps: [Overlay],
-  useFactory: MAT_MENU_SCROLL_STRATEGY_FACTORY
+  useFactory: MAT_MENU_SCROLL_STRATEGY_FACTORY,
 };
 var passiveEventListenerOptions = {
-  passive: true
+  passive: true,
 };
 var MENU_PANEL_TOP_PADDING = 8;
 var PANELS_TO_TRIGGERS = /* @__PURE__ */ new WeakMap();
@@ -976,10 +1082,10 @@ var MatMenuTrigger = class _MatMenuTrigger {
   _viewContainerRef = inject(ViewContainerRef);
   _menuItemInstance = inject(MatMenuItem, {
     optional: true,
-    self: true
+    self: true,
   });
   _dir = inject(Directionality, {
-    optional: true
+    optional: true,
   });
   _focusMonitor = inject(FocusMonitor);
   _ngZone = inject(NgZone);
@@ -1027,12 +1133,12 @@ var MatMenuTrigger = class _MatMenuTrigger {
     this._menu = menu;
     this._menuCloseSubscription.unsubscribe();
     if (menu) {
-      if (menu === this._parentMaterialMenu && (typeof ngDevMode === "undefined" || ngDevMode)) {
+      if (menu === this._parentMaterialMenu && (typeof ngDevMode === 'undefined' || ngDevMode)) {
         throwMatMenuRecursiveError();
       }
       this._menuCloseSubscription = menu.close.subscribe((reason) => {
         this._destroyMenu(reason);
-        if ((reason === "click" || reason === "tab") && this._parentMaterialMenu) {
+        if ((reason === 'click' || reason === 'tab') && this._parentMaterialMenu) {
           this._parentMaterialMenu.closed.emit(reason);
         }
       });
@@ -1068,15 +1174,21 @@ var MatMenuTrigger = class _MatMenuTrigger {
   onMenuClose = this.menuClosed;
   constructor() {
     const parentMenu = inject(MAT_MENU_PANEL, {
-      optional: true
+      optional: true,
     });
     const renderer = inject(Renderer2);
     this._parentMaterialMenu = parentMenu instanceof MatMenu ? parentMenu : void 0;
-    this._cleanupTouchstart = _bindEventWithOptions(renderer, this._element.nativeElement, "touchstart", (event) => {
-      if (!isFakeTouchstartFromScreenReader(event)) {
-        this._openedBy = "touch";
-      }
-    }, passiveEventListenerOptions);
+    this._cleanupTouchstart = _bindEventWithOptions(
+      renderer,
+      this._element.nativeElement,
+      'touchstart',
+      (event) => {
+        if (!isFakeTouchstartFromScreenReader(event)) {
+          this._openedBy = 'touch';
+        }
+      },
+      passiveEventListenerOptions,
+    );
   }
   ngAfterContentInit() {
     this._handleHover();
@@ -1101,7 +1213,7 @@ var MatMenuTrigger = class _MatMenuTrigger {
   }
   /** The text direction of the containing app. */
   get dir() {
-    return this._dir && this._dir.value === "rtl" ? "rtl" : "ltr";
+    return this._dir && this._dir.value === 'rtl' ? 'rtl' : 'ltr';
   }
   /** Whether the menu triggers a sub-menu or a top-level one. */
   triggersSubmenu() {
@@ -1135,7 +1247,7 @@ var MatMenuTrigger = class _MatMenuTrigger {
     this._closingActionsSubscription = this._menuClosingActions().subscribe(() => this.closeMenu());
     menu.parentMenu = this.triggersSubmenu() ? this._parentMaterialMenu : void 0;
     menu.direction = this.dir;
-    menu.focusFirstItem(this._openedBy || "program");
+    menu.focusFirstItem(this._openedBy || 'program');
     this._setIsMenuOpen(true);
     if (menu instanceof MatMenu) {
       menu._setIsOpen(true);
@@ -1188,7 +1300,7 @@ var MatMenuTrigger = class _MatMenuTrigger {
     if (menu && this._ownsMenu(menu)) {
       PANELS_TO_TRIGGERS.delete(menu);
     }
-    if (this.restoreFocus && (reason === "keydown" || !this._openedBy || !this.triggersSubmenu())) {
+    if (this.restoreFocus && (reason === 'keydown' || !this._openedBy || !this.triggersSubmenu())) {
       this.focus(this._openedBy);
     }
     this._openedBy = void 0;
@@ -1228,11 +1340,16 @@ var MatMenuTrigger = class _MatMenuTrigger {
    */
   _getOverlayConfig(menu) {
     return new OverlayConfig({
-      positionStrategy: this._overlay.position().flexibleConnectedTo(this._element).withLockedPosition().withGrowAfterOpen().withTransformOriginOn(".mat-menu-panel, .mat-mdc-menu-panel"),
-      backdropClass: menu.backdropClass || "cdk-overlay-transparent-backdrop",
+      positionStrategy: this._overlay
+        .position()
+        .flexibleConnectedTo(this._element)
+        .withLockedPosition()
+        .withGrowAfterOpen()
+        .withTransformOriginOn('.mat-menu-panel, .mat-mdc-menu-panel'),
+      backdropClass: menu.backdropClass || 'cdk-overlay-transparent-backdrop',
       panelClass: menu.overlayPanelClass,
       scrollStrategy: this._scrollStrategy(),
-      direction: this._dir || "ltr"
+      direction: this._dir || 'ltr',
     });
   }
   /**
@@ -1244,8 +1361,8 @@ var MatMenuTrigger = class _MatMenuTrigger {
     if (menu.setPositionClasses) {
       position.positionChanges.subscribe((change) => {
         this._ngZone.run(() => {
-          const posX = change.connectionPair.overlayX === "start" ? "after" : "before";
-          const posY = change.connectionPair.overlayY === "top" ? "below" : "above";
+          const posX = change.connectionPair.overlayX === 'start' ? 'after' : 'before';
+          const posY = change.connectionPair.overlayY === 'top' ? 'below' : 'above';
           menu.setPositionClasses(posX, posY);
         });
       });
@@ -1257,63 +1374,72 @@ var MatMenuTrigger = class _MatMenuTrigger {
    * @param positionStrategy Strategy whose position to update.
    */
   _setPosition(menu, positionStrategy) {
-    let [originX, originFallbackX] = menu.xPosition === "before" ? ["end", "start"] : ["start", "end"];
-    let [overlayY, overlayFallbackY] = menu.yPosition === "above" ? ["bottom", "top"] : ["top", "bottom"];
+    let [originX, originFallbackX] = menu.xPosition === 'before' ? ['end', 'start'] : ['start', 'end'];
+    let [overlayY, overlayFallbackY] = menu.yPosition === 'above' ? ['bottom', 'top'] : ['top', 'bottom'];
     let [originY, originFallbackY] = [overlayY, overlayFallbackY];
     let [overlayX, overlayFallbackX] = [originX, originFallbackX];
     let offsetY = 0;
     if (this.triggersSubmenu()) {
-      overlayFallbackX = originX = menu.xPosition === "before" ? "start" : "end";
-      originFallbackX = overlayX = originX === "end" ? "start" : "end";
+      overlayFallbackX = originX = menu.xPosition === 'before' ? 'start' : 'end';
+      originFallbackX = overlayX = originX === 'end' ? 'start' : 'end';
       if (this._parentMaterialMenu) {
         if (this._parentInnerPadding == null) {
           const firstItem = this._parentMaterialMenu.items.first;
           this._parentInnerPadding = firstItem ? firstItem._getHostElement().offsetTop : 0;
         }
-        offsetY = overlayY === "bottom" ? this._parentInnerPadding : -this._parentInnerPadding;
+        offsetY = overlayY === 'bottom' ? this._parentInnerPadding : -this._parentInnerPadding;
       }
     } else if (!menu.overlapTrigger) {
-      originY = overlayY === "top" ? "bottom" : "top";
-      originFallbackY = overlayFallbackY === "top" ? "bottom" : "top";
+      originY = overlayY === 'top' ? 'bottom' : 'top';
+      originFallbackY = overlayFallbackY === 'top' ? 'bottom' : 'top';
     }
-    positionStrategy.withPositions([{
-      originX,
-      originY,
-      overlayX,
-      overlayY,
-      offsetY
-    }, {
-      originX: originFallbackX,
-      originY,
-      overlayX: overlayFallbackX,
-      overlayY,
-      offsetY
-    }, {
-      originX,
-      originY: originFallbackY,
-      overlayX,
-      overlayY: overlayFallbackY,
-      offsetY: -offsetY
-    }, {
-      originX: originFallbackX,
-      originY: originFallbackY,
-      overlayX: overlayFallbackX,
-      overlayY: overlayFallbackY,
-      offsetY: -offsetY
-    }]);
+    positionStrategy.withPositions([
+      {
+        originX,
+        originY,
+        overlayX,
+        overlayY,
+        offsetY,
+      },
+      {
+        originX: originFallbackX,
+        originY,
+        overlayX: overlayFallbackX,
+        overlayY,
+        offsetY,
+      },
+      {
+        originX,
+        originY: originFallbackY,
+        overlayX,
+        overlayY: overlayFallbackY,
+        offsetY: -offsetY,
+      },
+      {
+        originX: originFallbackX,
+        originY: originFallbackY,
+        overlayX: overlayFallbackX,
+        overlayY: overlayFallbackY,
+        offsetY: -offsetY,
+      },
+    ]);
   }
   /** Returns a stream that emits whenever an action that should close the menu occurs. */
   _menuClosingActions() {
     const backdrop = this._overlayRef.backdropClick();
     const detachments = this._overlayRef.detachments();
     const parentClose = this._parentMaterialMenu ? this._parentMaterialMenu.closed : of();
-    const hover = this._parentMaterialMenu ? this._parentMaterialMenu._hovered().pipe(filter((active) => this._menuOpen && active !== this._menuItemInstance)) : of();
+    const hover = this._parentMaterialMenu
+      ? this._parentMaterialMenu
+          ._hovered()
+          .pipe(filter((active) => this._menuOpen && active !== this._menuItemInstance))
+      : of();
     return merge(backdrop, parentClose, hover, detachments);
   }
   /** Handles mouse presses on the trigger. */
   _handleMousedown(event) {
     if (!isFakeMousedownFromScreenReader(event)) {
-      this._openedBy = event.button === 0 ? "mouse" : void 0;
+      this._openedBy = event.button === 0 ? 'mouse' : void 0;
       if (this.triggersSubmenu()) {
         event.preventDefault();
       }
@@ -1323,10 +1449,13 @@ var MatMenuTrigger = class _MatMenuTrigger {
   _handleKeydown(event) {
     const keyCode = event.keyCode;
     if (keyCode === ENTER || keyCode === SPACE) {
-      this._openedBy = "keyboard";
+      this._openedBy = 'keyboard';
     }
-    if (this.triggersSubmenu() && (keyCode === RIGHT_ARROW && this.dir === "ltr" || keyCode === LEFT_ARROW && this.dir === "rtl")) {
-      this._openedBy = "keyboard";
+    if (
+      this.triggersSubmenu() &&
+      ((keyCode === RIGHT_ARROW && this.dir === 'ltr') || (keyCode === LEFT_ARROW && this.dir === 'rtl'))
+    ) {
+      this._openedBy = 'keyboard';
       this.openMenu();
     }
   }
@@ -1344,7 +1473,7 @@ var MatMenuTrigger = class _MatMenuTrigger {
     if (this.triggersSubmenu() && this._parentMaterialMenu) {
       this._hoverSubscription = this._parentMaterialMenu._hovered().subscribe((active) => {
         if (active === this._menuItemInstance && !active.disabled) {
-          this._openedBy = "mouse";
+          this._openedBy = 'mouse';
           this.openMenu();
         }
       });
@@ -1370,84 +1499,116 @@ var MatMenuTrigger = class _MatMenuTrigger {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatMenuTrigger,
-    selectors: [["", "mat-menu-trigger-for", ""], ["", "matMenuTriggerFor", ""]],
-    hostAttrs: [1, "mat-mdc-menu-trigger"],
+    selectors: [
+      ['', 'mat-menu-trigger-for', ''],
+      ['', 'matMenuTriggerFor', ''],
+    ],
+    hostAttrs: [1, 'mat-mdc-menu-trigger'],
     hostVars: 3,
     hostBindings: function MatMenuTrigger_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("click", function MatMenuTrigger_click_HostBindingHandler($event) {
+        ɵɵlistener('click', function MatMenuTrigger_click_HostBindingHandler($event) {
           return ctx._handleClick($event);
-        })("mousedown", function MatMenuTrigger_mousedown_HostBindingHandler($event) {
+        })('mousedown', function MatMenuTrigger_mousedown_HostBindingHandler($event) {
           return ctx._handleMousedown($event);
-        })("keydown", function MatMenuTrigger_keydown_HostBindingHandler($event) {
+        })('keydown', function MatMenuTrigger_keydown_HostBindingHandler($event) {
           return ctx._handleKeydown($event);
         });
       }
       if (rf & 2) {
-        ɵɵattribute("aria-haspopup", ctx.menu ? "menu" : null)("aria-expanded", ctx.menuOpen)("aria-controls", ctx.menuOpen ? ctx.menu.panelId : null);
+        ɵɵattribute('aria-haspopup', ctx.menu ? 'menu' : null)('aria-expanded', ctx.menuOpen)(
+          'aria-controls',
+          ctx.menuOpen ? ctx.menu.panelId : null,
+        );
       }
     },
     inputs: {
-      _deprecatedMatMenuTriggerFor: [0, "mat-menu-trigger-for", "_deprecatedMatMenuTriggerFor"],
-      menu: [0, "matMenuTriggerFor", "menu"],
-      menuData: [0, "matMenuTriggerData", "menuData"],
-      restoreFocus: [0, "matMenuTriggerRestoreFocus", "restoreFocus"]
+      _deprecatedMatMenuTriggerFor: [0, 'mat-menu-trigger-for', '_deprecatedMatMenuTriggerFor'],
+      menu: [0, 'matMenuTriggerFor', 'menu'],
+      menuData: [0, 'matMenuTriggerData', 'menuData'],
+      restoreFocus: [0, 'matMenuTriggerRestoreFocus', 'restoreFocus'],
     },
     outputs: {
-      menuOpened: "menuOpened",
-      onMenuOpen: "onMenuOpen",
-      menuClosed: "menuClosed",
-      onMenuClose: "onMenuClose"
+      menuOpened: 'menuOpened',
+      onMenuOpen: 'onMenuOpen',
+      menuClosed: 'menuClosed',
+      onMenuClose: 'onMenuClose',
     },
-    exportAs: ["matMenuTrigger"]
+    exportAs: ['matMenuTrigger'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatMenuTrigger, [{
-    type: Directive,
-    args: [{
-      selector: `[mat-menu-trigger-for], [matMenuTriggerFor]`,
-      host: {
-        "class": "mat-mdc-menu-trigger",
-        "[attr.aria-haspopup]": 'menu ? "menu" : null',
-        "[attr.aria-expanded]": "menuOpen",
-        "[attr.aria-controls]": "menuOpen ? menu.panelId : null",
-        "(click)": "_handleClick($event)",
-        "(mousedown)": "_handleMousedown($event)",
-        "(keydown)": "_handleKeydown($event)"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatMenuTrigger,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: `[mat-menu-trigger-for], [matMenuTriggerFor]`,
+              host: {
+                class: 'mat-mdc-menu-trigger',
+                '[attr.aria-haspopup]': 'menu ? "menu" : null',
+                '[attr.aria-expanded]': 'menuOpen',
+                '[attr.aria-controls]': 'menuOpen ? menu.panelId : null',
+                '(click)': '_handleClick($event)',
+                '(mousedown)': '_handleMousedown($event)',
+                '(keydown)': '_handleKeydown($event)',
+              },
+              exportAs: 'matMenuTrigger',
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        _deprecatedMatMenuTriggerFor: [
+          {
+            type: Input,
+            args: ['mat-menu-trigger-for'],
+          },
+        ],
+        menu: [
+          {
+            type: Input,
+            args: ['matMenuTriggerFor'],
+          },
+        ],
+        menuData: [
+          {
+            type: Input,
+            args: ['matMenuTriggerData'],
+          },
+        ],
+        restoreFocus: [
+          {
+            type: Input,
+            args: ['matMenuTriggerRestoreFocus'],
+          },
+        ],
+        menuOpened: [
+          {
+            type: Output,
+          },
+        ],
+        onMenuOpen: [
+          {
+            type: Output,
+          },
+        ],
+        menuClosed: [
+          {
+            type: Output,
+          },
+        ],
+        onMenuClose: [
+          {
+            type: Output,
+          },
+        ],
       },
-      exportAs: "matMenuTrigger"
-    }]
-  }], () => [], {
-    _deprecatedMatMenuTriggerFor: [{
-      type: Input,
-      args: ["mat-menu-trigger-for"]
-    }],
-    menu: [{
-      type: Input,
-      args: ["matMenuTriggerFor"]
-    }],
-    menuData: [{
-      type: Input,
-      args: ["matMenuTriggerData"]
-    }],
-    restoreFocus: [{
-      type: Input,
-      args: ["matMenuTriggerRestoreFocus"]
-    }],
-    menuOpened: [{
-      type: Output
-    }],
-    onMenuOpen: [{
-      type: Output
-    }],
-    menuClosed: [{
-      type: Output
-    }],
-    onMenuClose: [{
-      type: Output
-    }]
-  });
+    );
 })();
 var MatMenuModule = class _MatMenuModule {
   static ɵfac = function MatMenuModule_Factory(__ngFactoryType__) {
@@ -1456,22 +1617,40 @@ var MatMenuModule = class _MatMenuModule {
   static ɵmod = ɵɵdefineNgModule({
     type: _MatMenuModule,
     imports: [MatRippleModule, MatCommonModule, OverlayModule, MatMenu, MatMenuItem, MatMenuContent, MatMenuTrigger],
-    exports: [CdkScrollableModule, MatMenu, MatCommonModule, MatMenuItem, MatMenuContent, MatMenuTrigger]
+    exports: [CdkScrollableModule, MatMenu, MatCommonModule, MatMenuItem, MatMenuContent, MatMenuTrigger],
   });
   static ɵinj = ɵɵdefineInjector({
     providers: [MAT_MENU_SCROLL_STRATEGY_FACTORY_PROVIDER],
-    imports: [MatRippleModule, MatCommonModule, OverlayModule, CdkScrollableModule, MatCommonModule]
+    imports: [MatRippleModule, MatCommonModule, OverlayModule, CdkScrollableModule, MatCommonModule],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatMenuModule, [{
-    type: NgModule,
-    args: [{
-      imports: [MatRippleModule, MatCommonModule, OverlayModule, MatMenu, MatMenuItem, MatMenuContent, MatMenuTrigger],
-      exports: [CdkScrollableModule, MatMenu, MatCommonModule, MatMenuItem, MatMenuContent, MatMenuTrigger],
-      providers: [MAT_MENU_SCROLL_STRATEGY_FACTORY_PROVIDER]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatMenuModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [
+                MatRippleModule,
+                MatCommonModule,
+                OverlayModule,
+                MatMenu,
+                MatMenuItem,
+                MatMenuContent,
+                MatMenuTrigger,
+              ],
+              exports: [CdkScrollableModule, MatMenu, MatCommonModule, MatMenuItem, MatMenuContent, MatMenuTrigger],
+              providers: [MAT_MENU_SCROLL_STRATEGY_FACTORY_PROVIDER],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var matMenuAnimations = {
   // Represents:
@@ -1505,51 +1684,55 @@ var matMenuAnimations = {
    */
   transformMenu: {
     type: 7,
-    name: "transformMenu",
-    definitions: [{
-      type: 0,
-      name: "void",
-      styles: {
-        type: 6,
-        styles: {
-          opacity: 0,
-          transform: "scale(0.8)"
-        },
-        offset: null
-      }
-    }, {
-      type: 1,
-      expr: "void => enter",
-      animation: {
-        type: 4,
+    name: 'transformMenu',
+    definitions: [
+      {
+        type: 0,
+        name: 'void',
         styles: {
           type: 6,
           styles: {
-            opacity: 1,
-            transform: "scale(1)"
+            opacity: 0,
+            transform: 'scale(0.8)',
           },
-          offset: null
+          offset: null,
         },
-        timings: "120ms cubic-bezier(0, 0, 0.2, 1)"
       },
-      options: null
-    }, {
-      type: 1,
-      expr: "* => void",
-      animation: {
-        type: 4,
-        styles: {
-          type: 6,
+      {
+        type: 1,
+        expr: 'void => enter',
+        animation: {
+          type: 4,
           styles: {
-            opacity: 0
+            type: 6,
+            styles: {
+              opacity: 1,
+              transform: 'scale(1)',
+            },
+            offset: null,
           },
-          offset: null
+          timings: '120ms cubic-bezier(0, 0, 0.2, 1)',
         },
-        timings: "100ms 25ms linear"
+        options: null,
       },
-      options: null
-    }],
-    options: {}
+      {
+        type: 1,
+        expr: '* => void',
+        animation: {
+          type: 4,
+          styles: {
+            type: 6,
+            styles: {
+              opacity: 0,
+            },
+            offset: null,
+          },
+          timings: '100ms 25ms linear',
+        },
+        options: null,
+      },
+    ],
+    options: {},
   },
   // Represents:
   // trigger('fadeInItems', [
@@ -1567,35 +1750,41 @@ var matMenuAnimations = {
    */
   fadeInItems: {
     type: 7,
-    name: "fadeInItems",
-    definitions: [{
-      type: 0,
-      name: "showing",
-      styles: {
-        type: 6,
+    name: 'fadeInItems',
+    definitions: [
+      {
+        type: 0,
+        name: 'showing',
         styles: {
-          opacity: 1
+          type: 6,
+          styles: {
+            opacity: 1,
+          },
+          offset: null,
         },
-        offset: null
-      }
-    }, {
-      type: 1,
-      expr: "void => *",
-      animation: [{
-        type: 6,
-        styles: {
-          opacity: 0
-        },
-        offset: null
-      }, {
-        type: 4,
-        styles: null,
-        timings: "400ms 100ms cubic-bezier(0.55, 0, 0.55, 0.2)"
-      }],
-      options: null
-    }],
-    options: {}
-  }
+      },
+      {
+        type: 1,
+        expr: 'void => *',
+        animation: [
+          {
+            type: 6,
+            styles: {
+              opacity: 0,
+            },
+            offset: null,
+          },
+          {
+            type: 4,
+            styles: null,
+            timings: '400ms 100ms cubic-bezier(0.55, 0, 0.55, 0.2)',
+          },
+        ],
+        options: null,
+      },
+    ],
+    options: {},
+  },
 };
 var fadeInItems = matMenuAnimations.fadeInItems;
 var transformMenu = matMenuAnimations.transformMenu;
@@ -1613,6 +1802,6 @@ export {
   MatMenuTrigger,
   fadeInItems,
   matMenuAnimations,
-  transformMenu
+  transformMenu,
 };
 //# sourceMappingURL=@angular_material_menu.js.map

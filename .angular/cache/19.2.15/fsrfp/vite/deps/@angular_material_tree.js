@@ -1,24 +1,13 @@
-import {
-  SelectionModel
-} from "./chunk-XY3YD4BN.js";
-import {
-  DataSource,
-  isDataSource
-} from "./chunk-HYIG2K5W.js";
-import {
-  MatCommonModule,
-  TREE_KEY_MANAGER,
-  coerceObservable
-} from "./chunk-PQSRNTO7.js";
-import "./chunk-5RHDU2BP.js";
-import "./chunk-RG7RHNTG.js";
-import {
-  Directionality
-} from "./chunk-HNGPX6GY.js";
-import "./chunk-GWH5ZIVQ.js";
-import "./chunk-FSIK44TS.js";
-import "./chunk-LJRMVWU3.js";
-import "./chunk-SOO5Y25R.js";
+import { SelectionModel } from './chunk-XY3YD4BN.js';
+import { DataSource, isDataSource } from './chunk-HYIG2K5W.js';
+import { MatCommonModule, TREE_KEY_MANAGER, coerceObservable } from './chunk-PQSRNTO7.js';
+import './chunk-5RHDU2BP.js';
+import './chunk-RG7RHNTG.js';
+import { Directionality } from './chunk-HNGPX6GY.js';
+import './chunk-GWH5ZIVQ.js';
+import './chunk-FSIK44TS.js';
+import './chunk-LJRMVWU3.js';
+import './chunk-SOO5Y25R.js';
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -55,13 +44,10 @@ import {
   ɵɵlistener,
   ɵɵloadQuery,
   ɵɵqueryRefresh,
-  ɵɵviewQuery
-} from "./chunk-LB7E77GG.js";
-import {
-  isObservable,
-  merge
-} from "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
+  ɵɵviewQuery,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import { isObservable, merge } from './chunk-WPM5VTLQ.js';
 import {
   BehaviorSubject,
   EMPTY,
@@ -77,37 +63,43 @@ import {
   switchMap,
   take,
   takeUntil,
-  tap
-} from "./chunk-4S3KYZTJ.js";
-import {
-  __spreadProps,
-  __spreadValues
-} from "./chunk-4MWRP73S.js";
+  tap,
+} from './chunk-4S3KYZTJ.js';
+import { __spreadProps, __spreadValues } from './chunk-4MWRP73S.js';
 
 // node_modules/@angular/cdk/fesm2022/tree.mjs
-var CDK_TREE_NODE_OUTLET_NODE = new InjectionToken("CDK_TREE_NODE_OUTLET_NODE");
+var CDK_TREE_NODE_OUTLET_NODE = new InjectionToken('CDK_TREE_NODE_OUTLET_NODE');
 var CdkTreeNodeOutlet = class _CdkTreeNodeOutlet {
   viewContainer = inject(ViewContainerRef);
   _node = inject(CDK_TREE_NODE_OUTLET_NODE, {
-    optional: true
+    optional: true,
   });
-  constructor() {
-  }
+  constructor() {}
   static ɵfac = function CdkTreeNodeOutlet_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _CdkTreeNodeOutlet)();
   };
   static ɵdir = ɵɵdefineDirective({
     type: _CdkTreeNodeOutlet,
-    selectors: [["", "cdkTreeNodeOutlet", ""]]
+    selectors: [['', 'cdkTreeNodeOutlet', '']],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkTreeNodeOutlet, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkTreeNodeOutlet]"
-    }]
-  }], () => [], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkTreeNodeOutlet,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[cdkTreeNodeOutlet]',
+            },
+          ],
+        },
+      ],
+      () => [],
+      null,
+    );
 })();
 var CdkTreeNodeOutletContext = class {
   /** Data for the node. */
@@ -133,30 +125,41 @@ var CdkTreeNodeDef = class _CdkTreeNodeDef {
    * default.
    */
   when;
-  constructor() {
-  }
+  constructor() {}
   static ɵfac = function CdkTreeNodeDef_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _CdkTreeNodeDef)();
   };
   static ɵdir = ɵɵdefineDirective({
     type: _CdkTreeNodeDef,
-    selectors: [["", "cdkTreeNodeDef", ""]],
+    selectors: [['', 'cdkTreeNodeDef', '']],
     inputs: {
-      when: [0, "cdkTreeNodeDefWhen", "when"]
-    }
+      when: [0, 'cdkTreeNodeDefWhen', 'when'],
+    },
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkTreeNodeDef, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkTreeNodeDef]",
-      inputs: [{
-        name: "when",
-        alias: "cdkTreeNodeDefWhen"
-      }]
-    }]
-  }], () => [], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkTreeNodeDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[cdkTreeNodeDef]',
+              inputs: [
+                {
+                  name: 'when',
+                  alias: 'cdkTreeNodeDefWhen',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      null,
+    );
 })();
 function getTreeNoValidDataSourceError() {
   return Error(`A valid data source must be provided.`);
@@ -258,7 +261,7 @@ var CdkTree = class _CdkTree {
    */
   viewChange = new BehaviorSubject({
     start: 0,
-    end: Number.MAX_VALUE
+    end: Number.MAX_VALUE,
   });
   /** Keep track of which nodes are expanded. */
   _expansionModel;
@@ -282,8 +285,7 @@ var CdkTree = class _CdkTree {
   /** The key manager for this tree. Handles focus and activation based on user keyboard input. */
   _keyManager;
   _viewInit = false;
-  constructor() {
-  }
+  constructor() {}
   ngAfterContentInit() {
     this._initializeKeyManager();
   }
@@ -296,7 +298,7 @@ var CdkTree = class _CdkTree {
     this.viewChange.complete();
     this._onDestroy.next();
     this._onDestroy.complete();
-    if (this._dataSource && typeof this._dataSource.disconnect === "function") {
+    if (this._dataSource && typeof this._dataSource.disconnect === 'function') {
       this.dataSource.disconnect(this);
     }
     if (this._dataSubscription) {
@@ -314,7 +316,7 @@ var CdkTree = class _CdkTree {
   }
   _updateDefaultNodeDefinition() {
     const defaultNodeDefs = this._nodeDefs.filter((def) => !def.when);
-    if (defaultNodeDefs.length > 1 && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (defaultNodeDefs.length > 1 && (typeof ngDevMode === 'undefined' || ngDevMode)) {
       throw getTreeMultipleDefaultNodeDefsError();
     }
     this._defaultNodeDef = defaultNodeDefs[0];
@@ -329,8 +331,10 @@ var CdkTree = class _CdkTree {
     const currentType = this._nodeType.value;
     if (currentType === null) {
       this._nodeType.next(newType);
-    } else if ((typeof ngDevMode === "undefined" || ngDevMode) && currentType !== newType) {
-      console.warn(`Tree is using conflicting node types which can cause unexpected behavior. Please use tree nodes of the same type (e.g. only flat or only nested). Current node type: "${currentType}", new node type "${newType}".`);
+    } else if ((typeof ngDevMode === 'undefined' || ngDevMode) && currentType !== newType) {
+      console.warn(
+        `Tree is using conflicting node types which can cause unexpected behavior. Please use tree nodes of the same type (e.g. only flat or only nested). Current node type: "${currentType}", new node type "${newType}".`,
+      );
     }
   }
   /**
@@ -339,7 +343,7 @@ var CdkTree = class _CdkTree {
    * clearing the node outlet. Otherwise start listening for new data.
    */
   _switchDataSource(dataSource) {
-    if (this._dataSource && typeof this._dataSource.disconnect === "function") {
+    if (this._dataSource && typeof this._dataSource.disconnect === 'function') {
       this.dataSource.disconnect(this);
     }
     if (this._dataSubscription) {
@@ -375,14 +379,16 @@ var CdkTree = class _CdkTree {
       dataStream = of(this._dataSource);
     }
     if (!dataStream) {
-      if (typeof ngDevMode === "undefined" || ngDevMode) {
+      if (typeof ngDevMode === 'undefined' || ngDevMode) {
         throw getTreeNoValidDataSourceError();
       }
       return;
     }
-    this._dataSubscription = this._getRenderData(dataStream).pipe(takeUntil(this._onDestroy)).subscribe((renderingData) => {
-      this._renderDataChanges(renderingData);
-    });
+    this._dataSubscription = this._getRenderData(dataStream)
+      .pipe(takeUntil(this._onDestroy))
+      .subscribe((renderingData) => {
+        this._renderDataChanges(renderingData);
+      });
   }
   /** Given an Observable containing a stream of the raw data, returns an Observable containing the RenderingData */
   _getRenderData(dataStream) {
@@ -392,21 +398,30 @@ var CdkTree = class _CdkTree {
       this._nodeType,
       // We don't use the expansion data directly, however we add it here to essentially
       // trigger data rendering when expansion changes occur.
-      expansionModel.changed.pipe(startWith(null), tap((expansionChanges) => {
-        this._emitExpansionChanges(expansionChanges);
-      }))
-    ]).pipe(switchMap(([data, nodeType]) => {
-      if (nodeType === null) {
-        return of({
-          renderNodes: data,
-          flattenedNodes: null,
-          nodeType
-        });
-      }
-      return this._computeRenderingData(data, nodeType).pipe(map((convertedData) => __spreadProps(__spreadValues({}, convertedData), {
-        nodeType
-      })));
-    }));
+      expansionModel.changed.pipe(
+        startWith(null),
+        tap((expansionChanges) => {
+          this._emitExpansionChanges(expansionChanges);
+        }),
+      ),
+    ]).pipe(
+      switchMap(([data, nodeType]) => {
+        if (nodeType === null) {
+          return of({
+            renderNodes: data,
+            flattenedNodes: null,
+            nodeType,
+          });
+        }
+        return this._computeRenderingData(data, nodeType).pipe(
+          map((convertedData) =>
+            __spreadProps(__spreadValues({}, convertedData), {
+              nodeType,
+            }),
+          ),
+        );
+      }),
+    );
   }
   _renderDataChanges(data) {
     if (data.nodeType === null) {
@@ -432,18 +447,22 @@ var CdkTree = class _CdkTree {
     }
   }
   _initializeKeyManager() {
-    const items = combineLatest([this._keyManagerNodes, this._nodes]).pipe(map(([keyManagerNodes, renderNodes]) => keyManagerNodes.reduce((items2, data) => {
-      const node = renderNodes.get(this._getExpansionKey(data));
-      if (node) {
-        items2.push(node);
-      }
-      return items2;
-    }, [])));
+    const items = combineLatest([this._keyManagerNodes, this._nodes]).pipe(
+      map(([keyManagerNodes, renderNodes]) =>
+        keyManagerNodes.reduce((items2, data) => {
+          const node = renderNodes.get(this._getExpansionKey(data));
+          if (node) {
+            items2.push(node);
+          }
+          return items2;
+        }, []),
+      ),
+    );
     const keyManagerOptions = {
       trackBy: (node) => this._getExpansionKey(node.data),
       skipPredicate: (node) => !!node.isDisabled,
       typeAheadDebounceInterval: true,
-      horizontalOrientation: this._dir.value
+      horizontalOrientation: this._dir.value,
     };
     this._keyManager = this._keyManagerFactory(items, keyManagerOptions);
   }
@@ -452,7 +471,7 @@ var CdkTree = class _CdkTree {
     this._dataDiffer = this._differs.find([]).create(trackBy);
   }
   _checkTreeControlUsage() {
-    if (typeof ngDevMode === "undefined" || ngDevMode) {
+    if (typeof ngDevMode === 'undefined' || ngDevMode) {
       let numTreeControls = 0;
       if (this.treeControl) {
         numTreeControls++;
@@ -510,7 +529,7 @@ var CdkTree = class _CdkTree {
       return this._nodeDefs.first;
     }
     const nodeDef = this._nodeDefs.find((def) => def.when && def.when(i, data)) || this._defaultNodeDef;
-    if (!nodeDef && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (!nodeDef && (typeof ngDevMode === 'undefined' || ngDevMode)) {
       throw getTreeMissingMatchingNodeDefError();
     }
     return nodeDef;
@@ -541,7 +560,9 @@ var CdkTree = class _CdkTree {
   }
   /** Whether the data node is expanded or collapsed. Returns true if it's expanded. */
   isExpanded(dataNode) {
-    return !!(this.treeControl?.isExpanded(dataNode) || this._expansionModel?.isSelected(this._getExpansionKey(dataNode)));
+    return !!(
+      this.treeControl?.isExpanded(dataNode) || this._expansionModel?.isSelected(this._getExpansionKey(dataNode))
+    );
   }
   /** If the data node is currently expanded, collapse it. Otherwise, expand it. */
   toggle(dataNode) {
@@ -591,9 +612,11 @@ var CdkTree = class _CdkTree {
     } else if (this._expansionModel) {
       const expansionModel = this._expansionModel;
       expansionModel.select(this._getExpansionKey(dataNode));
-      this._getDescendants(dataNode).pipe(take(1), takeUntil(this._onDestroy)).subscribe((children) => {
-        expansionModel.select(...children.map((child) => this._getExpansionKey(child)));
-      });
+      this._getDescendants(dataNode)
+        .pipe(take(1), takeUntil(this._onDestroy))
+        .subscribe((children) => {
+          expansionModel.select(...children.map((child) => this._getExpansionKey(child)));
+        });
     }
   }
   /** Collapse the data node and all its descendants. If it is already collapsed, does nothing. */
@@ -603,9 +626,11 @@ var CdkTree = class _CdkTree {
     } else if (this._expansionModel) {
       const expansionModel = this._expansionModel;
       expansionModel.deselect(this._getExpansionKey(dataNode));
-      this._getDescendants(dataNode).pipe(take(1), takeUntil(this._onDestroy)).subscribe((children) => {
-        expansionModel.deselect(...children.map((child) => this._getExpansionKey(child)));
-      });
+      this._getDescendants(dataNode)
+        .pipe(take(1), takeUntil(this._onDestroy))
+        .subscribe((children) => {
+          expansionModel.deselect(...children.map((child) => this._getExpansionKey(child)));
+        });
     }
   }
   /** Expands all data nodes in the tree. */
@@ -643,21 +668,26 @@ var CdkTree = class _CdkTree {
       return of([]);
     }
     const key = this._getExpansionKey(dataNode);
-    const isExpanded = expansionModel.changed.pipe(switchMap((changes) => {
-      if (changes.added.includes(key)) {
-        return of(true);
-      } else if (changes.removed.includes(key)) {
-        return of(false);
-      }
-      return EMPTY;
-    }), startWith(this.isExpanded(dataNode)));
-    if (levelAccessor) {
-      return combineLatest([isExpanded, this._flattenedNodes]).pipe(map(([expanded, flattenedNodes]) => {
-        if (!expanded) {
-          return [];
+    const isExpanded = expansionModel.changed.pipe(
+      switchMap((changes) => {
+        if (changes.added.includes(key)) {
+          return of(true);
+        } else if (changes.removed.includes(key)) {
+          return of(false);
         }
-        return this._findChildrenByLevel(levelAccessor, flattenedNodes, dataNode, 1);
-      }));
+        return EMPTY;
+      }),
+      startWith(this.isExpanded(dataNode)),
+    );
+    if (levelAccessor) {
+      return combineLatest([isExpanded, this._flattenedNodes]).pipe(
+        map(([expanded, flattenedNodes]) => {
+          if (!expanded) {
+            return [];
+          }
+          return this._findChildrenByLevel(levelAccessor, flattenedNodes, dataNode, 1);
+        }),
+      );
     }
     const childrenAccessor = this._getChildrenAccessor();
     if (childrenAccessor) {
@@ -737,13 +767,17 @@ var CdkTree = class _CdkTree {
   }
   /** Given a CdkTreeNode, gets the nodes that renders that node's child data. */
   _getNodeChildren(node) {
-    return this._getDirectChildren(node.data).pipe(map((children) => children.reduce((nodes, child) => {
-      const value = this._nodes.value.get(this._getExpansionKey(child));
-      if (value) {
-        nodes.push(value);
-      }
-      return nodes;
-    }, [])));
+    return this._getDirectChildren(node.data).pipe(
+      map((children) =>
+        children.reduce((nodes, child) => {
+          const value = this._nodes.value.get(this._getExpansionKey(child));
+          if (value) {
+            nodes.push(value);
+          }
+          return nodes;
+        }, []),
+      ),
+    );
   }
   /** `keydown` event handler; this just passes the event to the `TreeKeyManager`. */
   _sendKeydownToKeyManager(event) {
@@ -769,10 +803,12 @@ var CdkTree = class _CdkTree {
       return of(results);
     }
     if (this.childrenAccessor) {
-      return this._getAllChildrenRecursively(dataNode).pipe(reduce((allChildren, nextChildren) => {
-        allChildren.push(...nextChildren);
-        return allChildren;
-      }, []));
+      return this._getAllChildrenRecursively(dataNode).pipe(
+        reduce((allChildren, nextChildren) => {
+          allChildren.push(...nextChildren);
+          return allChildren;
+        }, []),
+      );
     }
     throw getTreeControlMissingError();
   }
@@ -786,12 +822,15 @@ var CdkTree = class _CdkTree {
     if (!this.childrenAccessor) {
       return of([]);
     }
-    return coerceObservable(this.childrenAccessor(dataNode)).pipe(take(1), switchMap((children) => {
-      for (const child of children) {
-        this._parents.set(this._getExpansionKey(child), dataNode);
-      }
-      return of(...children).pipe(concatMap((child) => concat(of([child]), this._getAllChildrenRecursively(child))));
-    }));
+    return coerceObservable(this.childrenAccessor(dataNode)).pipe(
+      take(1),
+      switchMap((children) => {
+        for (const child of children) {
+          this._parents.set(this._getExpansionKey(child), dataNode);
+        }
+        return of(...children).pipe(concatMap((child) => concat(of([child]), this._getAllChildrenRecursively(child))));
+      }),
+    );
   }
   _getExpansionKey(dataNode) {
     return this.expansionKey?.(dataNode) ?? dataNode;
@@ -835,30 +874,42 @@ var CdkTree = class _CdkTree {
     if (!childrenAccessor) {
       return of([...nodes]);
     }
-    return of(...nodes).pipe(concatMap((node) => {
-      const parentKey = this._getExpansionKey(node);
-      if (!this._parents.has(parentKey)) {
-        this._parents.set(parentKey, null);
-      }
-      this._levels.set(parentKey, level);
-      const children = coerceObservable(childrenAccessor(node));
-      return concat(of([node]), children.pipe(take(1), tap((childNodes) => {
-        this._ariaSets.set(parentKey, [...childNodes ?? []]);
-        for (const child of childNodes ?? []) {
-          const childKey = this._getExpansionKey(child);
-          this._parents.set(childKey, node);
-          this._levels.set(childKey, level + 1);
+    return of(...nodes).pipe(
+      concatMap((node) => {
+        const parentKey = this._getExpansionKey(node);
+        if (!this._parents.has(parentKey)) {
+          this._parents.set(parentKey, null);
         }
-      }), switchMap((childNodes) => {
-        if (!childNodes) {
-          return of([]);
-        }
-        return this._flattenNestedNodesWithExpansion(childNodes, level + 1).pipe(map((nestedNodes) => this.isExpanded(node) ? nestedNodes : []));
-      })));
-    }), reduce((results, children) => {
-      results.push(...children);
-      return results;
-    }, []));
+        this._levels.set(parentKey, level);
+        const children = coerceObservable(childrenAccessor(node));
+        return concat(
+          of([node]),
+          children.pipe(
+            take(1),
+            tap((childNodes) => {
+              this._ariaSets.set(parentKey, [...(childNodes ?? [])]);
+              for (const child of childNodes ?? []) {
+                const childKey = this._getExpansionKey(child);
+                this._parents.set(childKey, node);
+                this._levels.set(childKey, level + 1);
+              }
+            }),
+            switchMap((childNodes) => {
+              if (!childNodes) {
+                return of([]);
+              }
+              return this._flattenNestedNodesWithExpansion(childNodes, level + 1).pipe(
+                map((nestedNodes) => (this.isExpanded(node) ? nestedNodes : [])),
+              );
+            }),
+          ),
+        );
+      }),
+      reduce((results, children) => {
+        results.push(...children);
+        return results;
+      }, []),
+    );
   }
   /**
    * Converts children for certain tree configurations.
@@ -866,39 +917,44 @@ var CdkTree = class _CdkTree {
    * This also computes parent, level, and group data.
    */
   _computeRenderingData(nodes, nodeType) {
-    if (this.childrenAccessor && nodeType === "flat") {
+    if (this.childrenAccessor && nodeType === 'flat') {
       this._clearPreviousCache();
       this._ariaSets.set(null, [...nodes]);
-      return this._flattenNestedNodesWithExpansion(nodes).pipe(map((flattenedNodes) => ({
-        renderNodes: flattenedNodes,
-        flattenedNodes
-      })));
-    } else if (this.levelAccessor && nodeType === "nested") {
+      return this._flattenNestedNodesWithExpansion(nodes).pipe(
+        map((flattenedNodes) => ({
+          renderNodes: flattenedNodes,
+          flattenedNodes,
+        })),
+      );
+    } else if (this.levelAccessor && nodeType === 'nested') {
       const levelAccessor = this.levelAccessor;
-      return of(nodes.filter((node) => levelAccessor(node) === 0)).pipe(map((rootNodes) => ({
-        renderNodes: rootNodes,
-        flattenedNodes: nodes
-      })), tap(({
-        flattenedNodes
-      }) => {
-        this._calculateParents(flattenedNodes);
-      }));
-    } else if (nodeType === "flat") {
+      return of(nodes.filter((node) => levelAccessor(node) === 0)).pipe(
+        map((rootNodes) => ({
+          renderNodes: rootNodes,
+          flattenedNodes: nodes,
+        })),
+        tap(({ flattenedNodes }) => {
+          this._calculateParents(flattenedNodes);
+        }),
+      );
+    } else if (nodeType === 'flat') {
       return of({
         renderNodes: nodes,
-        flattenedNodes: nodes
-      }).pipe(tap(({
-        flattenedNodes
-      }) => {
-        this._calculateParents(flattenedNodes);
-      }));
+        flattenedNodes: nodes,
+      }).pipe(
+        tap(({ flattenedNodes }) => {
+          this._calculateParents(flattenedNodes);
+        }),
+      );
     } else {
       this._clearPreviousCache();
       this._ariaSets.set(null, [...nodes]);
-      return this._flattenNestedNodesWithExpansion(nodes).pipe(map((flattenedNodes) => ({
-        renderNodes: nodes,
-        flattenedNodes
-      })));
+      return this._flattenNestedNodesWithExpansion(nodes).pipe(
+        map((flattenedNodes) => ({
+          renderNodes: nodes,
+          flattenedNodes,
+        })),
+      );
     }
   }
   _updateCachedData(flattenedNodes) {
@@ -935,10 +991,12 @@ var CdkTree = class _CdkTree {
       observables.push(this._getDescendants(node.data));
     });
     if (observables.length > 0) {
-      combineLatest(observables).pipe(take(1), takeUntil(this._onDestroy)).subscribe((results) => {
-        results.forEach((inner) => inner.forEach((r) => toToggle.push(this._getExpansionKey(r))));
-        callback(toToggle);
-      });
+      combineLatest(observables)
+        .pipe(take(1), takeUntil(this._onDestroy))
+        .subscribe((results) => {
+          results.forEach((inner) => inner.forEach((r) => toToggle.push(this._getExpansionKey(r))));
+          callback(toToggle);
+        });
     } else {
       callback(toToggle);
     }
@@ -954,14 +1012,14 @@ var CdkTree = class _CdkTree {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _CdkTree,
-    selectors: [["cdk-tree"]],
+    selectors: [['cdk-tree']],
     contentQueries: function CdkTree_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, CdkTreeNodeDef, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._nodeDefs = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._nodeDefs = _t);
       }
     },
     viewQuery: function CdkTree_Query(rf, ctx) {
@@ -970,98 +1028,130 @@ var CdkTree = class _CdkTree {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._nodeOutlet = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._nodeOutlet = _t.first);
       }
     },
-    hostAttrs: ["role", "tree", 1, "cdk-tree"],
+    hostAttrs: ['role', 'tree', 1, 'cdk-tree'],
     hostBindings: function CdkTree_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("keydown", function CdkTree_keydown_HostBindingHandler($event) {
+        ɵɵlistener('keydown', function CdkTree_keydown_HostBindingHandler($event) {
           return ctx._sendKeydownToKeyManager($event);
         });
       }
     },
     inputs: {
-      dataSource: "dataSource",
-      treeControl: "treeControl",
-      levelAccessor: "levelAccessor",
-      childrenAccessor: "childrenAccessor",
-      trackBy: "trackBy",
-      expansionKey: "expansionKey"
+      dataSource: 'dataSource',
+      treeControl: 'treeControl',
+      levelAccessor: 'levelAccessor',
+      childrenAccessor: 'childrenAccessor',
+      trackBy: 'trackBy',
+      expansionKey: 'expansionKey',
     },
-    exportAs: ["cdkTree"],
+    exportAs: ['cdkTree'],
     decls: 1,
     vars: 0,
-    consts: [["cdkTreeNodeOutlet", ""]],
+    consts: [['cdkTreeNodeOutlet', '']],
     template: function CdkTree_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵelementContainer(0, 0);
       }
     },
     dependencies: [CdkTreeNodeOutlet],
-    encapsulation: 2
+    encapsulation: 2,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkTree, [{
-    type: Component,
-    args: [{
-      selector: "cdk-tree",
-      exportAs: "cdkTree",
-      template: `<ng-container cdkTreeNodeOutlet></ng-container>`,
-      host: {
-        "class": "cdk-tree",
-        "role": "tree",
-        "(keydown)": "_sendKeydownToKeyManager($event)"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkTree,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'cdk-tree',
+              exportAs: 'cdkTree',
+              template: `<ng-container cdkTreeNodeOutlet></ng-container>`,
+              host: {
+                class: 'cdk-tree',
+                role: 'tree',
+                '(keydown)': '_sendKeydownToKeyManager($event)',
+              },
+              encapsulation: ViewEncapsulation.None,
+              // The "OnPush" status for the `CdkTree` component is effectively a noop, so we are removing it.
+              // The view for `CdkTree` consists entirely of templates declared in other views. As they are
+              // declared elsewhere, they are checked when their declaration points are checked.
+              // tslint:disable-next-line:validate-decorators
+              changeDetection: ChangeDetectionStrategy.Default,
+              imports: [CdkTreeNodeOutlet],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        dataSource: [
+          {
+            type: Input,
+          },
+        ],
+        treeControl: [
+          {
+            type: Input,
+          },
+        ],
+        levelAccessor: [
+          {
+            type: Input,
+          },
+        ],
+        childrenAccessor: [
+          {
+            type: Input,
+          },
+        ],
+        trackBy: [
+          {
+            type: Input,
+          },
+        ],
+        expansionKey: [
+          {
+            type: Input,
+          },
+        ],
+        _nodeOutlet: [
+          {
+            type: ViewChild,
+            args: [
+              CdkTreeNodeOutlet,
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        _nodeDefs: [
+          {
+            type: ContentChildren,
+            args: [
+              CdkTreeNodeDef,
+              {
+                // We need to use `descendants: true`, because Ivy will no longer match
+                // indirect descendants if it's left as false.
+                descendants: true,
+              },
+            ],
+          },
+        ],
       },
-      encapsulation: ViewEncapsulation.None,
-      // The "OnPush" status for the `CdkTree` component is effectively a noop, so we are removing it.
-      // The view for `CdkTree` consists entirely of templates declared in other views. As they are
-      // declared elsewhere, they are checked when their declaration points are checked.
-      // tslint:disable-next-line:validate-decorators
-      changeDetection: ChangeDetectionStrategy.Default,
-      imports: [CdkTreeNodeOutlet]
-    }]
-  }], () => [], {
-    dataSource: [{
-      type: Input
-    }],
-    treeControl: [{
-      type: Input
-    }],
-    levelAccessor: [{
-      type: Input
-    }],
-    childrenAccessor: [{
-      type: Input
-    }],
-    trackBy: [{
-      type: Input
-    }],
-    expansionKey: [{
-      type: Input
-    }],
-    _nodeOutlet: [{
-      type: ViewChild,
-      args: [CdkTreeNodeOutlet, {
-        static: true
-      }]
-    }],
-    _nodeDefs: [{
-      type: ContentChildren,
-      args: [CdkTreeNodeDef, {
-        // We need to use `descendants: true`, because Ivy will no longer match
-        // indirect descendants if it's left as false.
-        descendants: true
-      }]
-    }]
-  });
+    );
 })();
 var CdkTreeNode = class _CdkTreeNode {
   _elementRef = inject(ElementRef);
   _tree = inject(CdkTree);
   _tabindex = -1;
-  _type = "flat";
+  _type = 'flat';
   /**
    * The role of the tree node.
    *
@@ -1070,10 +1160,9 @@ var CdkTreeNode = class _CdkTreeNode {
    * @breaking-change 21.0.0
    */
   get role() {
-    return "treeitem";
+    return 'treeitem';
   }
-  set role(_role) {
-  }
+  set role(_role) {}
   /**
    * Whether or not this node is expandable.
    *
@@ -1085,7 +1174,7 @@ var CdkTreeNode = class _CdkTreeNode {
   }
   set isExpandable(isExpandable) {
     this._inputIsExpandable = isExpandable;
-    if (this.data && !this._isExpandable || !this._inputIsExpandable) {
+    if ((this.data && !this._isExpandable) || !this._inputIsExpandable) {
       return;
     }
     if (this._inputIsExpanded) {
@@ -1116,7 +1205,7 @@ var CdkTreeNode = class _CdkTreeNode {
    */
   typeaheadLabel;
   getLabel() {
-    return this.typeaheadLabel || this._elementRef.nativeElement.textContent?.trim() || "";
+    return this.typeaheadLabel || this._elementRef.nativeElement.textContent?.trim() || '';
   }
   /** This emits when the node has been programatically activated or activated by keyboard. */
   activation = new EventEmitter();
@@ -1156,7 +1245,10 @@ var CdkTreeNode = class _CdkTreeNode {
   get isLeafNode() {
     if (this._tree.treeControl?.isExpandable !== void 0 && !this._tree.treeControl.isExpandable(this._data)) {
       return true;
-    } else if (this._tree.treeControl?.isExpandable === void 0 && this._tree.treeControl?.getDescendants(this._data).length === 0) {
+    } else if (
+      this._tree.treeControl?.isExpandable === void 0 &&
+      this._tree.treeControl?.getDescendants(this._data).length === 0
+    ) {
       return true;
     }
     return false;
@@ -1207,7 +1299,13 @@ var CdkTreeNode = class _CdkTreeNode {
   }
   ngOnInit() {
     this._parentNodeAriaLevel = getParentNodeAriaLevel(this._elementRef.nativeElement);
-    this._tree._getExpansionModel().changed.pipe(map(() => this.isExpanded), distinctUntilChanged()).subscribe(() => this._changeDetectorRef.markForCheck());
+    this._tree
+      ._getExpansionModel()
+      .changed.pipe(
+        map(() => this.isExpanded),
+        distinctUntilChanged(),
+      )
+      .subscribe(() => this._changeDetectorRef.markForCheck());
     this._tree._setNodeTypeIfUnset(this._type);
     this._tree._registerNode(this);
   }
@@ -1284,84 +1382,115 @@ var CdkTreeNode = class _CdkTreeNode {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _CdkTreeNode,
-    selectors: [["cdk-tree-node"]],
-    hostAttrs: ["role", "treeitem", 1, "cdk-tree-node"],
+    selectors: [['cdk-tree-node']],
+    hostAttrs: ['role', 'treeitem', 1, 'cdk-tree-node'],
     hostVars: 5,
     hostBindings: function CdkTreeNode_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("click", function CdkTreeNode_click_HostBindingHandler() {
+        ɵɵlistener('click', function CdkTreeNode_click_HostBindingHandler() {
           return ctx._setActiveItem();
-        })("focus", function CdkTreeNode_focus_HostBindingHandler() {
+        })('focus', function CdkTreeNode_focus_HostBindingHandler() {
           return ctx._focusItem();
         });
       }
       if (rf & 2) {
-        ɵɵhostProperty("tabindex", ctx._tabindex);
-        ɵɵattribute("aria-expanded", ctx._getAriaExpanded())("aria-level", ctx.level + 1)("aria-posinset", ctx._getPositionInSet())("aria-setsize", ctx._getSetSize());
+        ɵɵhostProperty('tabindex', ctx._tabindex);
+        ɵɵattribute('aria-expanded', ctx._getAriaExpanded())('aria-level', ctx.level + 1)(
+          'aria-posinset',
+          ctx._getPositionInSet(),
+        )('aria-setsize', ctx._getSetSize());
       }
     },
     inputs: {
-      role: "role",
-      isExpandable: [2, "isExpandable", "isExpandable", booleanAttribute],
-      isExpanded: "isExpanded",
-      isDisabled: [2, "isDisabled", "isDisabled", booleanAttribute],
-      typeaheadLabel: [0, "cdkTreeNodeTypeaheadLabel", "typeaheadLabel"]
+      role: 'role',
+      isExpandable: [2, 'isExpandable', 'isExpandable', booleanAttribute],
+      isExpanded: 'isExpanded',
+      isDisabled: [2, 'isDisabled', 'isDisabled', booleanAttribute],
+      typeaheadLabel: [0, 'cdkTreeNodeTypeaheadLabel', 'typeaheadLabel'],
     },
     outputs: {
-      activation: "activation",
-      expandedChange: "expandedChange"
+      activation: 'activation',
+      expandedChange: 'expandedChange',
     },
-    exportAs: ["cdkTreeNode"]
+    exportAs: ['cdkTreeNode'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkTreeNode, [{
-    type: Directive,
-    args: [{
-      selector: "cdk-tree-node",
-      exportAs: "cdkTreeNode",
-      host: {
-        "class": "cdk-tree-node",
-        "[attr.aria-expanded]": "_getAriaExpanded()",
-        "[attr.aria-level]": "level + 1",
-        "[attr.aria-posinset]": "_getPositionInSet()",
-        "[attr.aria-setsize]": "_getSetSize()",
-        "[tabindex]": "_tabindex",
-        "role": "treeitem",
-        "(click)": "_setActiveItem()",
-        "(focus)": "_focusItem()"
-      }
-    }]
-  }], () => [], {
-    role: [{
-      type: Input
-    }],
-    isExpandable: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    isExpanded: [{
-      type: Input
-    }],
-    isDisabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    typeaheadLabel: [{
-      type: Input,
-      args: ["cdkTreeNodeTypeaheadLabel"]
-    }],
-    activation: [{
-      type: Output
-    }],
-    expandedChange: [{
-      type: Output
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkTreeNode,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'cdk-tree-node',
+              exportAs: 'cdkTreeNode',
+              host: {
+                class: 'cdk-tree-node',
+                '[attr.aria-expanded]': '_getAriaExpanded()',
+                '[attr.aria-level]': 'level + 1',
+                '[attr.aria-posinset]': '_getPositionInSet()',
+                '[attr.aria-setsize]': '_getSetSize()',
+                '[tabindex]': '_tabindex',
+                role: 'treeitem',
+                '(click)': '_setActiveItem()',
+                '(focus)': '_focusItem()',
+              },
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        role: [
+          {
+            type: Input,
+          },
+        ],
+        isExpandable: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        isExpanded: [
+          {
+            type: Input,
+          },
+        ],
+        isDisabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        typeaheadLabel: [
+          {
+            type: Input,
+            args: ['cdkTreeNodeTypeaheadLabel'],
+          },
+        ],
+        activation: [
+          {
+            type: Output,
+          },
+        ],
+        expandedChange: [
+          {
+            type: Output,
+          },
+        ],
+      },
+    );
 })();
 function getParentNodeAriaLevel(nodeElement) {
   let parent = nodeElement.parentElement;
@@ -1369,23 +1498,23 @@ function getParentNodeAriaLevel(nodeElement) {
     parent = parent.parentElement;
   }
   if (!parent) {
-    if (typeof ngDevMode === "undefined" || ngDevMode) {
-      throw Error("Incorrect tree structure containing detached node.");
+    if (typeof ngDevMode === 'undefined' || ngDevMode) {
+      throw Error('Incorrect tree structure containing detached node.');
     } else {
       return -1;
     }
-  } else if (parent.classList.contains("cdk-nested-tree-node")) {
-    return numberAttribute(parent.getAttribute("aria-level"));
+  } else if (parent.classList.contains('cdk-nested-tree-node')) {
+    return numberAttribute(parent.getAttribute('aria-level'));
   } else {
     return 0;
   }
 }
 function isNodeElement(element) {
   const classList = element.classList;
-  return !!(classList?.contains("cdk-nested-tree-node") || classList?.contains("cdk-tree"));
+  return !!(classList?.contains('cdk-nested-tree-node') || classList?.contains('cdk-tree'));
 }
 var CdkNestedTreeNode = class _CdkNestedTreeNode extends CdkTreeNode {
-  _type = "nested";
+  _type = 'nested';
   _differs = inject(IterableDiffers);
   /** Differ used to find the changes in the data provided by the data source. */
   _dataDiffer;
@@ -1398,7 +1527,10 @@ var CdkNestedTreeNode = class _CdkNestedTreeNode extends CdkTreeNode {
   }
   ngAfterContentInit() {
     this._dataDiffer = this._differs.find([]).create(this._tree.trackBy);
-    this._tree._getDirectChildren(this.data).pipe(takeUntil(this._destroyed)).subscribe((result) => this.updateChildrenNodes(result));
+    this._tree
+      ._getDirectChildren(this.data)
+      .pipe(takeUntil(this._destroyed))
+      .subscribe((result) => this.updateChildrenNodes(result));
     this.nodeOutlet.changes.pipe(takeUntil(this._destroyed)).subscribe(() => this.updateChildrenNodes());
   }
   ngOnDestroy() {
@@ -1436,54 +1568,78 @@ var CdkNestedTreeNode = class _CdkNestedTreeNode extends CdkTreeNode {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _CdkNestedTreeNode,
-    selectors: [["cdk-nested-tree-node"]],
+    selectors: [['cdk-nested-tree-node']],
     contentQueries: function CdkNestedTreeNode_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, CdkTreeNodeOutlet, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.nodeOutlet = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.nodeOutlet = _t);
       }
     },
-    hostAttrs: [1, "cdk-nested-tree-node"],
-    exportAs: ["cdkNestedTreeNode"],
-    features: [ɵɵProvidersFeature([{
-      provide: CdkTreeNode,
-      useExisting: _CdkNestedTreeNode
-    }, {
-      provide: CDK_TREE_NODE_OUTLET_NODE,
-      useExisting: _CdkNestedTreeNode
-    }]), ɵɵInheritDefinitionFeature]
+    hostAttrs: [1, 'cdk-nested-tree-node'],
+    exportAs: ['cdkNestedTreeNode'],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: CdkTreeNode,
+          useExisting: _CdkNestedTreeNode,
+        },
+        {
+          provide: CDK_TREE_NODE_OUTLET_NODE,
+          useExisting: _CdkNestedTreeNode,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkNestedTreeNode, [{
-    type: Directive,
-    args: [{
-      selector: "cdk-nested-tree-node",
-      exportAs: "cdkNestedTreeNode",
-      providers: [{
-        provide: CdkTreeNode,
-        useExisting: CdkNestedTreeNode
-      }, {
-        provide: CDK_TREE_NODE_OUTLET_NODE,
-        useExisting: CdkNestedTreeNode
-      }],
-      host: {
-        "class": "cdk-nested-tree-node"
-      }
-    }]
-  }], () => [], {
-    nodeOutlet: [{
-      type: ContentChildren,
-      args: [CdkTreeNodeOutlet, {
-        // We need to use `descendants: true`, because Ivy will no longer match
-        // indirect descendants if it's left as false.
-        descendants: true
-      }]
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkNestedTreeNode,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'cdk-nested-tree-node',
+              exportAs: 'cdkNestedTreeNode',
+              providers: [
+                {
+                  provide: CdkTreeNode,
+                  useExisting: CdkNestedTreeNode,
+                },
+                {
+                  provide: CDK_TREE_NODE_OUTLET_NODE,
+                  useExisting: CdkNestedTreeNode,
+                },
+              ],
+              host: {
+                class: 'cdk-nested-tree-node',
+              },
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        nodeOutlet: [
+          {
+            type: ContentChildren,
+            args: [
+              CdkTreeNodeOutlet,
+              {
+                // We need to use `descendants: true`, because Ivy will no longer match
+                // indirect descendants if it's left as false.
+                descendants: true,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
 var cssUnitPattern = /([A-Za-z%]+)$/;
 var CdkTreeNodePadding = class _CdkTreeNodePadding {
@@ -1491,14 +1647,14 @@ var CdkTreeNodePadding = class _CdkTreeNodePadding {
   _tree = inject(CdkTree);
   _element = inject(ElementRef);
   _dir = inject(Directionality, {
-    optional: true
+    optional: true,
   });
   /** Current padding value applied to the element. Used to avoid unnecessarily hitting the DOM. */
   _currentPadding;
   /** Subject that emits when the component has been destroyed. */
   _destroyed = new Subject();
   /** CSS units used for the indentation value. */
-  indentUnits = "px";
+  indentUnits = 'px';
   /** The level of depth of the tree node. The padding will be `level * indent` pixels. */
   get level() {
     return this._level;
@@ -1531,16 +1687,16 @@ var CdkTreeNodePadding = class _CdkTreeNodePadding {
   _paddingIndent() {
     const nodeLevel = (this._treeNode.data && this._tree._getLevel(this._treeNode.data)) ?? null;
     const level = this._level == null ? nodeLevel : this._level;
-    return typeof level === "number" ? `${level * this._indent}${this.indentUnits}` : null;
+    return typeof level === 'number' ? `${level * this._indent}${this.indentUnits}` : null;
   }
   _setPadding(forceChange = false) {
     const padding = this._paddingIndent();
     if (padding !== this._currentPadding || forceChange) {
       const element = this._element.nativeElement;
-      const paddingProp = this._dir && this._dir.value === "rtl" ? "paddingRight" : "paddingLeft";
-      const resetProp = paddingProp === "paddingLeft" ? "paddingRight" : "paddingLeft";
-      element.style[paddingProp] = padding || "";
-      element.style[resetProp] = "";
+      const paddingProp = this._dir && this._dir.value === 'rtl' ? 'paddingRight' : 'paddingLeft';
+      const resetProp = paddingProp === 'paddingLeft' ? 'paddingRight' : 'paddingLeft';
+      element.style[paddingProp] = padding || '';
+      element.style[resetProp] = '';
       this._currentPadding = padding;
     }
   }
@@ -1562,8 +1718,8 @@ var CdkTreeNodePadding = class _CdkTreeNodePadding {
    */
   _setIndentInput(indent) {
     let value = indent;
-    let units = "px";
-    if (typeof indent === "string") {
+    let units = 'px';
+    if (typeof indent === 'string') {
       const parts = indent.split(cssUnitPattern);
       value = parts[0];
       units = parts[1] || units;
@@ -1577,40 +1733,55 @@ var CdkTreeNodePadding = class _CdkTreeNodePadding {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _CdkTreeNodePadding,
-    selectors: [["", "cdkTreeNodePadding", ""]],
+    selectors: [['', 'cdkTreeNodePadding', '']],
     inputs: {
-      level: [2, "cdkTreeNodePadding", "level", numberAttribute],
-      indent: [0, "cdkTreeNodePaddingIndent", "indent"]
-    }
+      level: [2, 'cdkTreeNodePadding', 'level', numberAttribute],
+      indent: [0, 'cdkTreeNodePaddingIndent', 'indent'],
+    },
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkTreeNodePadding, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkTreeNodePadding]"
-    }]
-  }], () => [], {
-    level: [{
-      type: Input,
-      args: [{
-        alias: "cdkTreeNodePadding",
-        transform: numberAttribute
-      }]
-    }],
-    indent: [{
-      type: Input,
-      args: ["cdkTreeNodePaddingIndent"]
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkTreeNodePadding,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[cdkTreeNodePadding]',
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        level: [
+          {
+            type: Input,
+            args: [
+              {
+                alias: 'cdkTreeNodePadding',
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        indent: [
+          {
+            type: Input,
+            args: ['cdkTreeNodePaddingIndent'],
+          },
+        ],
+      },
+    );
 })();
 var CdkTreeNodeToggle = class _CdkTreeNodeToggle {
   _tree = inject(CdkTree);
   _treeNode = inject(CdkTreeNode);
   /** Whether expand/collapse the node recursively. */
   recursive = false;
-  constructor() {
-  }
+  constructor() {}
   // Toggle the expanded or collapsed state of this node.
   //
   // Focus this node with expanding or collapsing it. This ensures that the active node will always
@@ -1624,69 +1795,117 @@ var CdkTreeNodeToggle = class _CdkTreeNodeToggle {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _CdkTreeNodeToggle,
-    selectors: [["", "cdkTreeNodeToggle", ""]],
-    hostAttrs: ["tabindex", "-1"],
+    selectors: [['', 'cdkTreeNodeToggle', '']],
+    hostAttrs: ['tabindex', '-1'],
     hostBindings: function CdkTreeNodeToggle_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("click", function CdkTreeNodeToggle_click_HostBindingHandler($event) {
+        ɵɵlistener('click', function CdkTreeNodeToggle_click_HostBindingHandler($event) {
           ctx._toggle();
           return $event.stopPropagation();
-        })("keydown.Enter", function CdkTreeNodeToggle_keydown_Enter_HostBindingHandler($event) {
+        })('keydown.Enter', function CdkTreeNodeToggle_keydown_Enter_HostBindingHandler($event) {
           ctx._toggle();
           return $event.preventDefault();
-        })("keydown.Space", function CdkTreeNodeToggle_keydown_Space_HostBindingHandler($event) {
+        })('keydown.Space', function CdkTreeNodeToggle_keydown_Space_HostBindingHandler($event) {
           ctx._toggle();
           return $event.preventDefault();
         });
       }
     },
     inputs: {
-      recursive: [2, "cdkTreeNodeToggleRecursive", "recursive", booleanAttribute]
-    }
+      recursive: [2, 'cdkTreeNodeToggleRecursive', 'recursive', booleanAttribute],
+    },
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkTreeNodeToggle, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkTreeNodeToggle]",
-      host: {
-        "(click)": "_toggle(); $event.stopPropagation();",
-        "(keydown.Enter)": "_toggle(); $event.preventDefault();",
-        "(keydown.Space)": "_toggle(); $event.preventDefault();",
-        "tabindex": "-1"
-      }
-    }]
-  }], () => [], {
-    recursive: [{
-      type: Input,
-      args: [{
-        alias: "cdkTreeNodeToggleRecursive",
-        transform: booleanAttribute
-      }]
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkTreeNodeToggle,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[cdkTreeNodeToggle]',
+              host: {
+                '(click)': '_toggle(); $event.stopPropagation();',
+                '(keydown.Enter)': '_toggle(); $event.preventDefault();',
+                '(keydown.Space)': '_toggle(); $event.preventDefault();',
+                tabindex: '-1',
+              },
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        recursive: [
+          {
+            type: Input,
+            args: [
+              {
+                alias: 'cdkTreeNodeToggleRecursive',
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
-var EXPORTED_DECLARATIONS = [CdkNestedTreeNode, CdkTreeNodeDef, CdkTreeNodePadding, CdkTreeNodeToggle, CdkTree, CdkTreeNode, CdkTreeNodeOutlet];
+var EXPORTED_DECLARATIONS = [
+  CdkNestedTreeNode,
+  CdkTreeNodeDef,
+  CdkTreeNodePadding,
+  CdkTreeNodeToggle,
+  CdkTree,
+  CdkTreeNode,
+  CdkTreeNodeOutlet,
+];
 var CdkTreeModule = class _CdkTreeModule {
   static ɵfac = function CdkTreeModule_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _CdkTreeModule)();
   };
   static ɵmod = ɵɵdefineNgModule({
     type: _CdkTreeModule,
-    imports: [CdkNestedTreeNode, CdkTreeNodeDef, CdkTreeNodePadding, CdkTreeNodeToggle, CdkTree, CdkTreeNode, CdkTreeNodeOutlet],
-    exports: [CdkNestedTreeNode, CdkTreeNodeDef, CdkTreeNodePadding, CdkTreeNodeToggle, CdkTree, CdkTreeNode, CdkTreeNodeOutlet]
+    imports: [
+      CdkNestedTreeNode,
+      CdkTreeNodeDef,
+      CdkTreeNodePadding,
+      CdkTreeNodeToggle,
+      CdkTree,
+      CdkTreeNode,
+      CdkTreeNodeOutlet,
+    ],
+    exports: [
+      CdkNestedTreeNode,
+      CdkTreeNodeDef,
+      CdkTreeNodePadding,
+      CdkTreeNodeToggle,
+      CdkTree,
+      CdkTreeNode,
+      CdkTreeNodeOutlet,
+    ],
   });
   static ɵinj = ɵɵdefineInjector({});
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkTreeModule, [{
-    type: NgModule,
-    args: [{
-      imports: EXPORTED_DECLARATIONS,
-      exports: EXPORTED_DECLARATIONS
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      CdkTreeModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: EXPORTED_DECLARATIONS,
+              exports: EXPORTED_DECLARATIONS,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 
 // node_modules/@angular/material/fesm2022/tree.mjs
@@ -1738,8 +1957,8 @@ var MatTreeNode = class _MatTreeNode extends CdkTreeNode {
   }
   constructor() {
     super();
-    const tabIndex = inject(new HostAttributeToken("tabindex"), {
-      optional: true
+    const tabIndex = inject(new HostAttributeToken('tabindex'), {
+      optional: true,
     });
     this.tabIndexInputBinding = Number(tabIndex) || this.defaultTabIndex;
   }
@@ -1756,113 +1975,169 @@ var MatTreeNode = class _MatTreeNode extends CdkTreeNode {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatTreeNode,
-    selectors: [["mat-tree-node"]],
-    hostAttrs: [1, "mat-tree-node"],
+    selectors: [['mat-tree-node']],
+    hostAttrs: [1, 'mat-tree-node'],
     hostVars: 5,
     hostBindings: function MatTreeNode_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("click", function MatTreeNode_click_HostBindingHandler() {
+        ɵɵlistener('click', function MatTreeNode_click_HostBindingHandler() {
           return ctx._focusItem();
         });
       }
       if (rf & 2) {
-        ɵɵhostProperty("tabindex", ctx._getTabindexAttribute());
-        ɵɵattribute("aria-expanded", ctx._getAriaExpanded())("aria-level", ctx.level + 1)("aria-posinset", ctx._getPositionInSet())("aria-setsize", ctx._getSetSize());
+        ɵɵhostProperty('tabindex', ctx._getTabindexAttribute());
+        ɵɵattribute('aria-expanded', ctx._getAriaExpanded())('aria-level', ctx.level + 1)(
+          'aria-posinset',
+          ctx._getPositionInSet(),
+        )('aria-setsize', ctx._getSetSize());
       }
     },
     inputs: {
-      tabIndexInputBinding: [2, "tabIndex", "tabIndexInputBinding", (value) => value == null ? 0 : numberAttribute(value)],
-      disabled: [2, "disabled", "disabled", booleanAttribute]
+      tabIndexInputBinding: [
+        2,
+        'tabIndex',
+        'tabIndexInputBinding',
+        (value) => (value == null ? 0 : numberAttribute(value)),
+      ],
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
     },
     outputs: {
-      activation: "activation",
-      expandedChange: "expandedChange"
+      activation: 'activation',
+      expandedChange: 'expandedChange',
     },
-    exportAs: ["matTreeNode"],
-    features: [ɵɵProvidersFeature([{
-      provide: CdkTreeNode,
-      useExisting: _MatTreeNode
-    }]), ɵɵInheritDefinitionFeature]
+    exportAs: ['matTreeNode'],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: CdkTreeNode,
+          useExisting: _MatTreeNode,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTreeNode, [{
-    type: Directive,
-    args: [{
-      selector: "mat-tree-node",
-      exportAs: "matTreeNode",
-      outputs: ["activation", "expandedChange"],
-      providers: [{
-        provide: CdkTreeNode,
-        useExisting: MatTreeNode
-      }],
-      host: {
-        "class": "mat-tree-node",
-        "[attr.aria-expanded]": "_getAriaExpanded()",
-        "[attr.aria-level]": "level + 1",
-        "[attr.aria-posinset]": "_getPositionInSet()",
-        "[attr.aria-setsize]": "_getSetSize()",
-        "(click)": "_focusItem()",
-        "[tabindex]": "_getTabindexAttribute()"
-      }
-    }]
-  }], () => [], {
-    tabIndexInputBinding: [{
-      type: Input,
-      args: [{
-        transform: (value) => value == null ? 0 : numberAttribute(value),
-        alias: "tabIndex"
-      }]
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatTreeNode,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'mat-tree-node',
+              exportAs: 'matTreeNode',
+              outputs: ['activation', 'expandedChange'],
+              providers: [
+                {
+                  provide: CdkTreeNode,
+                  useExisting: MatTreeNode,
+                },
+              ],
+              host: {
+                class: 'mat-tree-node',
+                '[attr.aria-expanded]': '_getAriaExpanded()',
+                '[attr.aria-level]': 'level + 1',
+                '[attr.aria-posinset]': '_getPositionInSet()',
+                '[attr.aria-setsize]': '_getSetSize()',
+                '(click)': '_focusItem()',
+                '[tabindex]': '_getTabindexAttribute()',
+              },
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        tabIndexInputBinding: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: (value) => (value == null ? 0 : numberAttribute(value)),
+                alias: 'tabIndex',
+              },
+            ],
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
 var MatTreeNodeDef = class _MatTreeNodeDef extends CdkTreeNodeDef {
   data;
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatTreeNodeDef_BaseFactory;
     return function MatTreeNodeDef_Factory(__ngFactoryType__) {
-      return (ɵMatTreeNodeDef_BaseFactory || (ɵMatTreeNodeDef_BaseFactory = ɵɵgetInheritedFactory(_MatTreeNodeDef)))(__ngFactoryType__ || _MatTreeNodeDef);
+      return (ɵMatTreeNodeDef_BaseFactory || (ɵMatTreeNodeDef_BaseFactory = ɵɵgetInheritedFactory(_MatTreeNodeDef)))(
+        __ngFactoryType__ || _MatTreeNodeDef,
+      );
     };
   })();
   static ɵdir = ɵɵdefineDirective({
     type: _MatTreeNodeDef,
-    selectors: [["", "matTreeNodeDef", ""]],
+    selectors: [['', 'matTreeNodeDef', '']],
     inputs: {
-      when: [0, "matTreeNodeDefWhen", "when"],
-      data: [0, "matTreeNode", "data"]
+      when: [0, 'matTreeNodeDefWhen', 'when'],
+      data: [0, 'matTreeNode', 'data'],
     },
-    features: [ɵɵProvidersFeature([{
-      provide: CdkTreeNodeDef,
-      useExisting: _MatTreeNodeDef
-    }]), ɵɵInheritDefinitionFeature]
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: CdkTreeNodeDef,
+          useExisting: _MatTreeNodeDef,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTreeNodeDef, [{
-    type: Directive,
-    args: [{
-      selector: "[matTreeNodeDef]",
-      inputs: [{
-        name: "when",
-        alias: "matTreeNodeDefWhen"
-      }],
-      providers: [{
-        provide: CdkTreeNodeDef,
-        useExisting: MatTreeNodeDef
-      }]
-    }]
-  }], null, {
-    data: [{
-      type: Input,
-      args: ["matTreeNode"]
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatTreeNodeDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[matTreeNodeDef]',
+              inputs: [
+                {
+                  name: 'when',
+                  alias: 'matTreeNodeDefWhen',
+                },
+              ],
+              providers: [
+                {
+                  provide: CdkTreeNodeDef,
+                  useExisting: MatTreeNodeDef,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      {
+        data: [
+          {
+            type: Input,
+            args: ['matTreeNode'],
+          },
+        ],
+      },
+    );
 })();
 var MatNestedTreeNode = class _MatNestedTreeNode extends CdkNestedTreeNode {
   node;
@@ -1901,74 +2176,107 @@ var MatNestedTreeNode = class _MatNestedTreeNode extends CdkNestedTreeNode {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatNestedTreeNode_BaseFactory;
     return function MatNestedTreeNode_Factory(__ngFactoryType__) {
-      return (ɵMatNestedTreeNode_BaseFactory || (ɵMatNestedTreeNode_BaseFactory = ɵɵgetInheritedFactory(_MatNestedTreeNode)))(__ngFactoryType__ || _MatNestedTreeNode);
+      return (
+        ɵMatNestedTreeNode_BaseFactory || (ɵMatNestedTreeNode_BaseFactory = ɵɵgetInheritedFactory(_MatNestedTreeNode))
+      )(__ngFactoryType__ || _MatNestedTreeNode);
     };
   })();
   static ɵdir = ɵɵdefineDirective({
     type: _MatNestedTreeNode,
-    selectors: [["mat-nested-tree-node"]],
-    hostAttrs: [1, "mat-nested-tree-node"],
+    selectors: [['mat-nested-tree-node']],
+    hostAttrs: [1, 'mat-nested-tree-node'],
     inputs: {
-      node: [0, "matNestedTreeNode", "node"],
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      tabIndex: [2, "tabIndex", "tabIndex", (value) => value == null ? 0 : numberAttribute(value)]
+      node: [0, 'matNestedTreeNode', 'node'],
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
+      tabIndex: [2, 'tabIndex', 'tabIndex', (value) => (value == null ? 0 : numberAttribute(value))],
     },
     outputs: {
-      activation: "activation",
-      expandedChange: "expandedChange"
+      activation: 'activation',
+      expandedChange: 'expandedChange',
     },
-    exportAs: ["matNestedTreeNode"],
-    features: [ɵɵProvidersFeature([{
-      provide: CdkNestedTreeNode,
-      useExisting: _MatNestedTreeNode
-    }, {
-      provide: CdkTreeNode,
-      useExisting: _MatNestedTreeNode
-    }, {
-      provide: CDK_TREE_NODE_OUTLET_NODE,
-      useExisting: _MatNestedTreeNode
-    }]), ɵɵInheritDefinitionFeature]
+    exportAs: ['matNestedTreeNode'],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: CdkNestedTreeNode,
+          useExisting: _MatNestedTreeNode,
+        },
+        {
+          provide: CdkTreeNode,
+          useExisting: _MatNestedTreeNode,
+        },
+        {
+          provide: CDK_TREE_NODE_OUTLET_NODE,
+          useExisting: _MatNestedTreeNode,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatNestedTreeNode, [{
-    type: Directive,
-    args: [{
-      selector: "mat-nested-tree-node",
-      exportAs: "matNestedTreeNode",
-      outputs: ["activation", "expandedChange"],
-      providers: [{
-        provide: CdkNestedTreeNode,
-        useExisting: MatNestedTreeNode
-      }, {
-        provide: CdkTreeNode,
-        useExisting: MatNestedTreeNode
-      }, {
-        provide: CDK_TREE_NODE_OUTLET_NODE,
-        useExisting: MatNestedTreeNode
-      }],
-      host: {
-        "class": "mat-nested-tree-node"
-      }
-    }]
-  }], null, {
-    node: [{
-      type: Input,
-      args: ["matNestedTreeNode"]
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    tabIndex: [{
-      type: Input,
-      args: [{
-        transform: (value) => value == null ? 0 : numberAttribute(value)
-      }]
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatNestedTreeNode,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'mat-nested-tree-node',
+              exportAs: 'matNestedTreeNode',
+              outputs: ['activation', 'expandedChange'],
+              providers: [
+                {
+                  provide: CdkNestedTreeNode,
+                  useExisting: MatNestedTreeNode,
+                },
+                {
+                  provide: CdkTreeNode,
+                  useExisting: MatNestedTreeNode,
+                },
+                {
+                  provide: CDK_TREE_NODE_OUTLET_NODE,
+                  useExisting: MatNestedTreeNode,
+                },
+              ],
+              host: {
+                class: 'mat-nested-tree-node',
+              },
+            },
+          ],
+        },
+      ],
+      null,
+      {
+        node: [
+          {
+            type: Input,
+            args: ['matNestedTreeNode'],
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        tabIndex: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: (value) => (value == null ? 0 : numberAttribute(value)),
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
 var MatTreeNodePadding = class _MatTreeNodePadding extends CdkTreeNodePadding {
   /** The level of depth of the tree node. The padding will be `level * indent` pixels. */
@@ -1988,74 +2296,116 @@ var MatTreeNodePadding = class _MatTreeNodePadding extends CdkTreeNodePadding {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatTreeNodePadding_BaseFactory;
     return function MatTreeNodePadding_Factory(__ngFactoryType__) {
-      return (ɵMatTreeNodePadding_BaseFactory || (ɵMatTreeNodePadding_BaseFactory = ɵɵgetInheritedFactory(_MatTreeNodePadding)))(__ngFactoryType__ || _MatTreeNodePadding);
+      return (
+        ɵMatTreeNodePadding_BaseFactory ||
+        (ɵMatTreeNodePadding_BaseFactory = ɵɵgetInheritedFactory(_MatTreeNodePadding))
+      )(__ngFactoryType__ || _MatTreeNodePadding);
     };
   })();
   static ɵdir = ɵɵdefineDirective({
     type: _MatTreeNodePadding,
-    selectors: [["", "matTreeNodePadding", ""]],
+    selectors: [['', 'matTreeNodePadding', '']],
     inputs: {
-      level: [2, "matTreeNodePadding", "level", numberAttribute],
-      indent: [0, "matTreeNodePaddingIndent", "indent"]
+      level: [2, 'matTreeNodePadding', 'level', numberAttribute],
+      indent: [0, 'matTreeNodePaddingIndent', 'indent'],
     },
-    features: [ɵɵProvidersFeature([{
-      provide: CdkTreeNodePadding,
-      useExisting: _MatTreeNodePadding
-    }]), ɵɵInheritDefinitionFeature]
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: CdkTreeNodePadding,
+          useExisting: _MatTreeNodePadding,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTreeNodePadding, [{
-    type: Directive,
-    args: [{
-      selector: "[matTreeNodePadding]",
-      providers: [{
-        provide: CdkTreeNodePadding,
-        useExisting: MatTreeNodePadding
-      }]
-    }]
-  }], null, {
-    level: [{
-      type: Input,
-      args: [{
-        alias: "matTreeNodePadding",
-        transform: numberAttribute
-      }]
-    }],
-    indent: [{
-      type: Input,
-      args: ["matTreeNodePaddingIndent"]
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatTreeNodePadding,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[matTreeNodePadding]',
+              providers: [
+                {
+                  provide: CdkTreeNodePadding,
+                  useExisting: MatTreeNodePadding,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      {
+        level: [
+          {
+            type: Input,
+            args: [
+              {
+                alias: 'matTreeNodePadding',
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        indent: [
+          {
+            type: Input,
+            args: ['matTreeNodePaddingIndent'],
+          },
+        ],
+      },
+    );
 })();
 var MatTreeNodeOutlet = class _MatTreeNodeOutlet {
   viewContainer = inject(ViewContainerRef);
   _node = inject(CDK_TREE_NODE_OUTLET_NODE, {
-    optional: true
+    optional: true,
   });
   static ɵfac = function MatTreeNodeOutlet_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _MatTreeNodeOutlet)();
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatTreeNodeOutlet,
-    selectors: [["", "matTreeNodeOutlet", ""]],
-    features: [ɵɵProvidersFeature([{
-      provide: CdkTreeNodeOutlet,
-      useExisting: _MatTreeNodeOutlet
-    }])]
+    selectors: [['', 'matTreeNodeOutlet', '']],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: CdkTreeNodeOutlet,
+          useExisting: _MatTreeNodeOutlet,
+        },
+      ]),
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTreeNodeOutlet, [{
-    type: Directive,
-    args: [{
-      selector: "[matTreeNodeOutlet]",
-      providers: [{
-        provide: CdkTreeNodeOutlet,
-        useExisting: MatTreeNodeOutlet
-      }]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatTreeNodeOutlet,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[matTreeNodeOutlet]',
+              providers: [
+                {
+                  provide: CdkTreeNodeOutlet,
+                  useExisting: MatTreeNodeOutlet,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatTree = class _MatTree extends CdkTree {
   // Outlets within the tree's template where the dataNodes will be inserted.
@@ -2064,125 +2414,211 @@ var MatTree = class _MatTree extends CdkTree {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatTree_BaseFactory;
     return function MatTree_Factory(__ngFactoryType__) {
-      return (ɵMatTree_BaseFactory || (ɵMatTree_BaseFactory = ɵɵgetInheritedFactory(_MatTree)))(__ngFactoryType__ || _MatTree);
+      return (ɵMatTree_BaseFactory || (ɵMatTree_BaseFactory = ɵɵgetInheritedFactory(_MatTree)))(
+        __ngFactoryType__ || _MatTree,
+      );
     };
   })();
   static ɵcmp = ɵɵdefineComponent({
     type: _MatTree,
-    selectors: [["mat-tree"]],
+    selectors: [['mat-tree']],
     viewQuery: function MatTree_Query(rf, ctx) {
       if (rf & 1) {
         ɵɵviewQuery(MatTreeNodeOutlet, 7);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._nodeOutlet = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._nodeOutlet = _t.first);
       }
     },
-    hostAttrs: [1, "mat-tree"],
-    exportAs: ["matTree"],
-    features: [ɵɵProvidersFeature([{
-      provide: CdkTree,
-      useExisting: _MatTree
-    }]), ɵɵInheritDefinitionFeature],
+    hostAttrs: [1, 'mat-tree'],
+    exportAs: ['matTree'],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: CdkTree,
+          useExisting: _MatTree,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
     decls: 1,
     vars: 0,
-    consts: [["matTreeNodeOutlet", ""]],
+    consts: [['matTreeNodeOutlet', '']],
     template: function MatTree_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵelementContainer(0, 0);
       }
     },
     dependencies: [MatTreeNodeOutlet],
-    styles: [".mat-tree{display:block;background-color:var(--mat-tree-container-background-color, var(--mat-sys-surface))}.mat-tree-node,.mat-nested-tree-node{color:var(--mat-tree-node-text-color, var(--mat-sys-on-surface));font-family:var(--mat-tree-node-text-font, var(--mat-sys-body-large-font));font-size:var(--mat-tree-node-text-size, var(--mat-sys-body-large-size));font-weight:var(--mat-tree-node-text-weight, var(--mat-sys-body-large-weight))}.mat-tree-node{display:flex;align-items:center;flex:1;word-wrap:break-word;min-height:var(--mat-tree-node-min-height, 48px)}.mat-nested-tree-node{border-bottom-width:0}\n"],
-    encapsulation: 2
+    styles: [
+      '.mat-tree{display:block;background-color:var(--mat-tree-container-background-color, var(--mat-sys-surface))}.mat-tree-node,.mat-nested-tree-node{color:var(--mat-tree-node-text-color, var(--mat-sys-on-surface));font-family:var(--mat-tree-node-text-font, var(--mat-sys-body-large-font));font-size:var(--mat-tree-node-text-size, var(--mat-sys-body-large-size));font-weight:var(--mat-tree-node-text-weight, var(--mat-sys-body-large-weight))}.mat-tree-node{display:flex;align-items:center;flex:1;word-wrap:break-word;min-height:var(--mat-tree-node-min-height, 48px)}.mat-nested-tree-node{border-bottom-width:0}\n',
+    ],
+    encapsulation: 2,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTree, [{
-    type: Component,
-    args: [{
-      selector: "mat-tree",
-      exportAs: "matTree",
-      template: `<ng-container matTreeNodeOutlet></ng-container>`,
-      host: {
-        "class": "mat-tree"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatTree,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-tree',
+              exportAs: 'matTree',
+              template: `<ng-container matTreeNodeOutlet></ng-container>`,
+              host: {
+                class: 'mat-tree',
+              },
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.Default,
+              providers: [
+                {
+                  provide: CdkTree,
+                  useExisting: MatTree,
+                },
+              ],
+              imports: [MatTreeNodeOutlet],
+              styles: [
+                '.mat-tree{display:block;background-color:var(--mat-tree-container-background-color, var(--mat-sys-surface))}.mat-tree-node,.mat-nested-tree-node{color:var(--mat-tree-node-text-color, var(--mat-sys-on-surface));font-family:var(--mat-tree-node-text-font, var(--mat-sys-body-large-font));font-size:var(--mat-tree-node-text-size, var(--mat-sys-body-large-size));font-weight:var(--mat-tree-node-text-weight, var(--mat-sys-body-large-weight))}.mat-tree-node{display:flex;align-items:center;flex:1;word-wrap:break-word;min-height:var(--mat-tree-node-min-height, 48px)}.mat-nested-tree-node{border-bottom-width:0}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      {
+        _nodeOutlet: [
+          {
+            type: ViewChild,
+            args: [
+              MatTreeNodeOutlet,
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
       },
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.Default,
-      providers: [{
-        provide: CdkTree,
-        useExisting: MatTree
-      }],
-      imports: [MatTreeNodeOutlet],
-      styles: [".mat-tree{display:block;background-color:var(--mat-tree-container-background-color, var(--mat-sys-surface))}.mat-tree-node,.mat-nested-tree-node{color:var(--mat-tree-node-text-color, var(--mat-sys-on-surface));font-family:var(--mat-tree-node-text-font, var(--mat-sys-body-large-font));font-size:var(--mat-tree-node-text-size, var(--mat-sys-body-large-size));font-weight:var(--mat-tree-node-text-weight, var(--mat-sys-body-large-weight))}.mat-tree-node{display:flex;align-items:center;flex:1;word-wrap:break-word;min-height:var(--mat-tree-node-min-height, 48px)}.mat-nested-tree-node{border-bottom-width:0}\n"]
-    }]
-  }], null, {
-    _nodeOutlet: [{
-      type: ViewChild,
-      args: [MatTreeNodeOutlet, {
-        static: true
-      }]
-    }]
-  });
+    );
 })();
 var MatTreeNodeToggle = class _MatTreeNodeToggle extends CdkTreeNodeToggle {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatTreeNodeToggle_BaseFactory;
     return function MatTreeNodeToggle_Factory(__ngFactoryType__) {
-      return (ɵMatTreeNodeToggle_BaseFactory || (ɵMatTreeNodeToggle_BaseFactory = ɵɵgetInheritedFactory(_MatTreeNodeToggle)))(__ngFactoryType__ || _MatTreeNodeToggle);
+      return (
+        ɵMatTreeNodeToggle_BaseFactory || (ɵMatTreeNodeToggle_BaseFactory = ɵɵgetInheritedFactory(_MatTreeNodeToggle))
+      )(__ngFactoryType__ || _MatTreeNodeToggle);
     };
   })();
   static ɵdir = ɵɵdefineDirective({
     type: _MatTreeNodeToggle,
-    selectors: [["", "matTreeNodeToggle", ""]],
+    selectors: [['', 'matTreeNodeToggle', '']],
     inputs: {
-      recursive: [0, "matTreeNodeToggleRecursive", "recursive"]
+      recursive: [0, 'matTreeNodeToggleRecursive', 'recursive'],
     },
-    features: [ɵɵProvidersFeature([{
-      provide: CdkTreeNodeToggle,
-      useExisting: _MatTreeNodeToggle
-    }]), ɵɵInheritDefinitionFeature]
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: CdkTreeNodeToggle,
+          useExisting: _MatTreeNodeToggle,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTreeNodeToggle, [{
-    type: Directive,
-    args: [{
-      selector: "[matTreeNodeToggle]",
-      providers: [{
-        provide: CdkTreeNodeToggle,
-        useExisting: MatTreeNodeToggle
-      }],
-      inputs: [{
-        name: "recursive",
-        alias: "matTreeNodeToggleRecursive"
-      }]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatTreeNodeToggle,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[matTreeNodeToggle]',
+              providers: [
+                {
+                  provide: CdkTreeNodeToggle,
+                  useExisting: MatTreeNodeToggle,
+                },
+              ],
+              inputs: [
+                {
+                  name: 'recursive',
+                  alias: 'matTreeNodeToggleRecursive',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var MAT_TREE_DIRECTIVES = [MatNestedTreeNode, MatTreeNodeDef, MatTreeNodePadding, MatTreeNodeToggle, MatTree, MatTreeNode, MatTreeNodeOutlet];
+var MAT_TREE_DIRECTIVES = [
+  MatNestedTreeNode,
+  MatTreeNodeDef,
+  MatTreeNodePadding,
+  MatTreeNodeToggle,
+  MatTree,
+  MatTreeNode,
+  MatTreeNodeOutlet,
+];
 var MatTreeModule = class _MatTreeModule {
   static ɵfac = function MatTreeModule_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _MatTreeModule)();
   };
   static ɵmod = ɵɵdefineNgModule({
     type: _MatTreeModule,
-    imports: [CdkTreeModule, MatCommonModule, MatNestedTreeNode, MatTreeNodeDef, MatTreeNodePadding, MatTreeNodeToggle, MatTree, MatTreeNode, MatTreeNodeOutlet],
-    exports: [MatCommonModule, MatNestedTreeNode, MatTreeNodeDef, MatTreeNodePadding, MatTreeNodeToggle, MatTree, MatTreeNode, MatTreeNodeOutlet]
+    imports: [
+      CdkTreeModule,
+      MatCommonModule,
+      MatNestedTreeNode,
+      MatTreeNodeDef,
+      MatTreeNodePadding,
+      MatTreeNodeToggle,
+      MatTree,
+      MatTreeNode,
+      MatTreeNodeOutlet,
+    ],
+    exports: [
+      MatCommonModule,
+      MatNestedTreeNode,
+      MatTreeNodeDef,
+      MatTreeNodePadding,
+      MatTreeNodeToggle,
+      MatTree,
+      MatTreeNode,
+      MatTreeNodeOutlet,
+    ],
   });
   static ɵinj = ɵɵdefineInjector({
-    imports: [CdkTreeModule, MatCommonModule, MatCommonModule]
+    imports: [CdkTreeModule, MatCommonModule, MatCommonModule],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTreeModule, [{
-    type: NgModule,
-    args: [{
-      imports: [CdkTreeModule, MatCommonModule, ...MAT_TREE_DIRECTIVES],
-      exports: [MatCommonModule, MAT_TREE_DIRECTIVES]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatTreeModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [CdkTreeModule, MatCommonModule, ...MAT_TREE_DIRECTIVES],
+              exports: [MatCommonModule, MAT_TREE_DIRECTIVES],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatTreeFlattener = class {
   transformFunction;
@@ -2275,13 +2711,14 @@ var MatTreeFlatDataSource = class extends DataSource {
     }
   }
   connect(collectionViewer) {
-    return merge(collectionViewer.viewChange, this._treeControl.expansionModel.changed, this._flattenedData).pipe(map(() => {
-      this._expandedData.next(this._treeFlattener.expandFlattenedNodes(this._flattenedData.value, this._treeControl));
-      return this._expandedData.value;
-    }));
+    return merge(collectionViewer.viewChange, this._treeControl.expansionModel.changed, this._flattenedData).pipe(
+      map(() => {
+        this._expandedData.next(this._treeFlattener.expandFlattenedNodes(this._flattenedData.value, this._treeControl));
+        return this._expandedData.value;
+      }),
+    );
   }
-  disconnect() {
-  }
+  disconnect() {}
 };
 var MatTreeNestedDataSource = class extends DataSource {
   /**
@@ -2297,8 +2734,7 @@ var MatTreeNestedDataSource = class extends DataSource {
   connect(collectionViewer) {
     return merge(...[collectionViewer.viewChange, this._data]).pipe(map(() => this.data));
   }
-  disconnect() {
-  }
+  disconnect() {}
 };
 export {
   MatNestedTreeNode,
@@ -2311,6 +2747,6 @@ export {
   MatTreeNodeDef,
   MatTreeNodeOutlet,
   MatTreeNodePadding,
-  MatTreeNodeToggle
+  MatTreeNodeToggle,
 };
 //# sourceMappingURL=@angular_material_tree.js.map

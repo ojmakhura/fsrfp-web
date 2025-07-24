@@ -1,37 +1,16 @@
-import {
-  _ErrorStateTracker
-} from "./chunk-R4QB32YE.js";
-import {
-  ErrorStateMatcher
-} from "./chunk-CQCKY7W7.js";
-import {
-  MatRippleLoader
-} from "./chunk-PFE4DTPH.js";
-import {
-  MAT_FORM_FIELD,
-  MatFormFieldControl
-} from "./chunk-7DFONVNF.js";
-import "./chunk-IXEVHMJP.js";
-import {
-  MatRippleModule
-} from "./chunk-WNGU3QLI.js";
-import {
-  FormGroupDirective,
-  NG_VALUE_ACCESSOR,
-  NgControl,
-  NgForm,
-  Validators
-} from "./chunk-WXKJKQEY.js";
-import {
-  MAT_RIPPLE_GLOBAL_OPTIONS
-} from "./chunk-6K32XFRM.js";
-import {
-  _StructuralStylesLoader
-} from "./chunk-IBJRQVUD.js";
-import "./chunk-BS4LDW6B.js";
-import "./chunk-42FJBLFI.js";
-import "./chunk-JXBCBRYI.js";
-import "./chunk-2O4WY5GE.js";
+import { _ErrorStateTracker } from './chunk-R4QB32YE.js';
+import { ErrorStateMatcher } from './chunk-CQCKY7W7.js';
+import { MatRippleLoader } from './chunk-PFE4DTPH.js';
+import { MAT_FORM_FIELD, MatFormFieldControl } from './chunk-7DFONVNF.js';
+import './chunk-IXEVHMJP.js';
+import { FormGroupDirective, NG_VALUE_ACCESSOR, NgControl, NgForm, Validators } from './chunk-WXKJKQEY.js';
+import { MatRippleModule } from './chunk-WNGU3QLI.js';
+import { MAT_RIPPLE_GLOBAL_OPTIONS } from './chunk-6K32XFRM.js';
+import { _StructuralStylesLoader } from './chunk-IBJRQVUD.js';
+import './chunk-BS4LDW6B.js';
+import './chunk-42FJBLFI.js';
+import './chunk-JXBCBRYI.js';
+import './chunk-2O4WY5GE.js';
 import {
   BACKSPACE,
   DELETE,
@@ -45,21 +24,15 @@ import {
   UP_ARROW,
   _IdGenerator,
   _VisuallyHiddenLoader,
-  hasModifierKey
-} from "./chunk-PQSRNTO7.js";
-import "./chunk-5RHDU2BP.js";
-import {
-  _CdkPrivateStyleLoader
-} from "./chunk-RG7RHNTG.js";
-import {
-  Directionality
-} from "./chunk-HNGPX6GY.js";
-import "./chunk-GWH5ZIVQ.js";
-import "./chunk-FSIK44TS.js";
-import "./chunk-LJRMVWU3.js";
-import {
-  DOCUMENT
-} from "./chunk-SOO5Y25R.js";
+  hasModifierKey,
+} from './chunk-PQSRNTO7.js';
+import './chunk-5RHDU2BP.js';
+import { _CdkPrivateStyleLoader } from './chunk-RG7RHNTG.js';
+import { Directionality } from './chunk-HNGPX6GY.js';
+import './chunk-GWH5ZIVQ.js';
+import './chunk-FSIK44TS.js';
+import './chunk-LJRMVWU3.js';
+import { DOCUMENT } from './chunk-SOO5Y25R.js';
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionStrategy,
@@ -114,66 +87,74 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate,
-  ɵɵviewQuery
-} from "./chunk-LB7E77GG.js";
-import {
-  merge
-} from "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import {
-  Subject,
-  startWith,
-  switchMap,
-  takeUntil
-} from "./chunk-4S3KYZTJ.js";
-import "./chunk-4MWRP73S.js";
+  ɵɵviewQuery,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import { merge } from './chunk-WPM5VTLQ.js';
+import { Subject, startWith, switchMap, takeUntil } from './chunk-4S3KYZTJ.js';
+import './chunk-4MWRP73S.js';
 
 // node_modules/@angular/material/fesm2022/chips.mjs
-var _c0 = ["*", [["mat-chip-avatar"], ["", "matChipAvatar", ""]], [["mat-chip-trailing-icon"], ["", "matChipRemove", ""], ["", "matChipTrailingIcon", ""]]];
-var _c1 = ["*", "mat-chip-avatar, [matChipAvatar]", "mat-chip-trailing-icon,[matChipRemove],[matChipTrailingIcon]"];
+var _c0 = [
+  '*',
+  [['mat-chip-avatar'], ['', 'matChipAvatar', '']],
+  [['mat-chip-trailing-icon'], ['', 'matChipRemove', ''], ['', 'matChipTrailingIcon', '']],
+];
+var _c1 = ['*', 'mat-chip-avatar, [matChipAvatar]', 'mat-chip-trailing-icon,[matChipRemove],[matChipTrailingIcon]'];
 function MatChip_Conditional_3_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 3);
+    ɵɵelementStart(0, 'span', 3);
     ɵɵprojection(1, 1);
     ɵɵelementEnd();
   }
 }
 function MatChip_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 6);
+    ɵɵelementStart(0, 'span', 6);
     ɵɵprojection(1, 2);
     ɵɵelementEnd();
   }
 }
 function MatChipOption_Conditional_3_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 3);
+    ɵɵelementStart(0, 'span', 3);
     ɵɵprojection(1, 1);
-    ɵɵelementStart(2, "span", 8);
+    ɵɵelementStart(2, 'span', 8);
     ɵɵnamespaceSVG();
-    ɵɵelementStart(3, "svg", 9);
-    ɵɵelement(4, "path", 10);
+    ɵɵelementStart(3, 'svg', 9);
+    ɵɵelement(4, 'path', 10);
     ɵɵelementEnd()()();
   }
 }
 function MatChipOption_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 6);
+    ɵɵelementStart(0, 'span', 6);
     ɵɵprojection(1, 2);
     ɵɵelementEnd();
   }
 }
-var _c2 = '.mdc-evolution-chip,.mdc-evolution-chip__cell,.mdc-evolution-chip__action{display:inline-flex;align-items:center}.mdc-evolution-chip{position:relative;max-width:100%}.mdc-evolution-chip__cell,.mdc-evolution-chip__action{height:100%}.mdc-evolution-chip__cell--primary{flex-basis:100%;overflow-x:hidden}.mdc-evolution-chip__cell--trailing{flex:1 0 auto}.mdc-evolution-chip__action{align-items:center;background:none;border:none;box-sizing:content-box;cursor:pointer;display:inline-flex;justify-content:center;outline:none;padding:0;text-decoration:none;color:inherit}.mdc-evolution-chip__action--presentational{cursor:auto}.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{pointer-events:none}@media(forced-colors: active){.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{forced-color-adjust:none}}.mdc-evolution-chip__action--primary{font:inherit;letter-spacing:inherit;white-space:inherit;overflow-x:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-outline-width, 1px);border-radius:var(--mdc-chip-container-shape-radius, 8px);box-sizing:border-box;content:"";height:100%;left:0;position:absolute;pointer-events:none;top:0;width:100%;z-index:1;border-style:solid}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-outline-color, var(--mat-sys-outline))}.mdc-evolution-chip__action--primary:not(.mdc-evolution-chip__action--presentational):not(.mdc-ripple-upgraded):focus::before{border-color:var(--mdc-chip-focus-outline-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-basic-chip .mdc-evolution-chip__action--primary{font:inherit}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip__action--trailing{position:relative;overflow:visible}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-trailing-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip__text-label{-webkit-user-select:none;user-select:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__text-label{font-family:var(--mdc-chip-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mdc-chip-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mdc-chip-label-text-size, var(--mat-sys-label-large-size));font-weight:var(--mdc-chip-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mdc-chip-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-label-text-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label,.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label{color:var(--mdc-chip-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mdc-evolution-chip__graphic{align-items:center;display:inline-flex;justify-content:center;overflow:hidden;pointer-events:none;position:relative;flex:1 0 auto}.mat-mdc-standard-chip .mdc-evolution-chip__graphic{width:var(--mdc-chip-with-avatar-avatar-size, 24px);height:var(--mdc-chip-with-avatar-avatar-size, 24px);font-size:var(--mdc-chip-with-avatar-avatar-size, 24px)}.mdc-evolution-chip--selecting .mdc-evolution-chip__graphic{transition:width 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selectable:not(.mdc-evolution-chip--selected):not(.mdc-evolution-chip--with-primary-icon) .mdc-evolution-chip__graphic{width:0}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mdc-evolution-chip__checkmark{position:absolute;opacity:0;top:50%;left:50%;height:20px;width:20px}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark{transition:transform 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1);transform:translate(-75%, -50%)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{transform:translate(-50%, -50%);opacity:1}.mdc-evolution-chip__checkmark-svg{display:block}.mdc-evolution-chip__checkmark-path{stroke-width:2px;stroke-dasharray:29.7833385;stroke-dashoffset:29.7833385;stroke:currentColor}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark-path{transition:stroke-dashoffset 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark-path{stroke-dashoffset:0}@media(forced-colors: active){.mdc-evolution-chip__checkmark-path{stroke:CanvasText !important}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--trailing{height:18px;width:18px;font-size:18px}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove{opacity:calc(var(--mat-chip-trailing-action-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove:focus{opacity:calc(var(--mat-chip-trailing-action-focus-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mat-mdc-standard-chip{border-radius:var(--mdc-chip-container-shape-radius, 8px);height:var(--mdc-chip-container-height, 32px)}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-container-color, transparent)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-elevated-disabled-container-color)}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-flat-disabled-selected-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}@media(forced-colors: active){.mat-mdc-standard-chip{outline:solid 1px}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--primary{border-radius:var(--mdc-chip-with-avatar-avatar-shape-radius, 24px);width:var(--mdc-chip-with-icon-icon-size, 18px);height:var(--mdc-chip-with-icon-icon-size, 18px);font-size:var(--mdc-chip-with-icon-icon-size, 18px)}.mdc-evolution-chip--selected .mdc-evolution-chip__icon--primary{opacity:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-highlighted{--mdc-chip-with-icon-icon-color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container));--mdc-chip-elevated-container-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container));--mdc-chip-label-text-color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container));--mdc-chip-outline-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-selected .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-chip:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-hover-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-focus-overlay .mat-mdc-chip-selected:hover,.mat-mdc-chip-highlighted:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-hover-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected.cdk-focused .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-evolution-chip--disabled:not(.mdc-evolution-chip--selected) .mat-mdc-chip-avatar{opacity:var(--mdc-chip-with-avatar-disabled-avatar-opacity, 0.38)}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{opacity:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38)}.mdc-evolution-chip--disabled.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{opacity:var(--mdc-chip-with-icon-disabled-icon-opacity, 0.38)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{opacity:var(--mat-chip-disabled-container-opacity, 1)}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-trailing-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-remove{opacity:var(--mat-chip-trailing-action-opacity, 1)}.mat-mdc-chip-remove:focus{opacity:var(--mat-chip-trailing-action-focus-opacity, 1)}.mat-mdc-chip-remove::after{background-color:var(--mat-chip-trailing-action-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-remove:hover::after{opacity:var(--mat-chip-trailing-action-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-remove:focus::after{opacity:var(--mat-chip-trailing-action-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected .mat-mdc-chip-remove::after,.mat-mdc-chip-highlighted .mat-mdc-chip-remove::after{background-color:var(--mat-chip-selected-trailing-action-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-standard-chip .mdc-evolution-chip__cell--primary,.mat-mdc-standard-chip .mdc-evolution-chip__action--primary,.mat-mdc-standard-chip .mat-mdc-chip-action-label{overflow:visible}.mat-mdc-standard-chip .mat-mdc-chip-graphic,.mat-mdc-standard-chip .mat-mdc-chip-trailing-icon{box-sizing:content-box}.mat-mdc-standard-chip._mat-animation-noopable,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__graphic,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark-path{transition-duration:1ms;animation-duration:1ms}.mat-mdc-chip-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;opacity:0;border-radius:inherit;transition:opacity 150ms linear}._mat-animation-noopable .mat-mdc-chip-focus-overlay{transition:none}.mat-mdc-basic-chip .mat-mdc-chip-focus-overlay{display:none}.mat-mdc-chip .mat-ripple.mat-mdc-chip-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-chip-avatar{text-align:center;line-height:1;color:var(--mdc-chip-with-icon-icon-color, currentColor)}.mat-mdc-chip{position:relative;z-index:0}.mat-mdc-chip-action-label{text-align:left;z-index:1}[dir=rtl] .mat-mdc-chip-action-label{text-align:right}.mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label{position:relative}.mat-mdc-chip-action-label .mat-mdc-chip-primary-focus-indicator{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.mat-mdc-chip-action-label .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-chip-remove::before{margin:calc(var(--mat-focus-indicator-border-width, 3px)*-1);left:8px;right:8px}.mat-mdc-chip-remove::after{content:"";display:block;opacity:0;position:absolute;top:-3px;bottom:-3px;left:5px;right:5px;border-radius:50%;box-sizing:border-box;padding:12px;margin:-12px;background-clip:content-box}.mat-mdc-chip-remove .mat-icon{width:18px;height:18px;font-size:18px;box-sizing:content-box}.mat-chip-edit-input{cursor:text;display:inline-block;color:inherit;outline:0}@media(forced-colors: active){.mat-mdc-chip-selected:not(.mat-mdc-chip-multiple){outline-width:3px}}.mat-mdc-chip-action:focus .mat-focus-indicator::before{content:""}.mdc-evolution-chip__icon,.mat-mdc-chip-remove .mat-icon{min-height:fit-content}\n';
-var _c3 = [[["mat-chip-avatar"], ["", "matChipAvatar", ""]], [["", "matChipEditInput", ""]], "*", [["mat-chip-trailing-icon"], ["", "matChipRemove", ""], ["", "matChipTrailingIcon", ""]]];
-var _c4 = ["mat-chip-avatar, [matChipAvatar]", "[matChipEditInput]", "*", "mat-chip-trailing-icon,[matChipRemove],[matChipTrailingIcon]"];
+var _c2 =
+  '.mdc-evolution-chip,.mdc-evolution-chip__cell,.mdc-evolution-chip__action{display:inline-flex;align-items:center}.mdc-evolution-chip{position:relative;max-width:100%}.mdc-evolution-chip__cell,.mdc-evolution-chip__action{height:100%}.mdc-evolution-chip__cell--primary{flex-basis:100%;overflow-x:hidden}.mdc-evolution-chip__cell--trailing{flex:1 0 auto}.mdc-evolution-chip__action{align-items:center;background:none;border:none;box-sizing:content-box;cursor:pointer;display:inline-flex;justify-content:center;outline:none;padding:0;text-decoration:none;color:inherit}.mdc-evolution-chip__action--presentational{cursor:auto}.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{pointer-events:none}@media(forced-colors: active){.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{forced-color-adjust:none}}.mdc-evolution-chip__action--primary{font:inherit;letter-spacing:inherit;white-space:inherit;overflow-x:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-outline-width, 1px);border-radius:var(--mdc-chip-container-shape-radius, 8px);box-sizing:border-box;content:"";height:100%;left:0;position:absolute;pointer-events:none;top:0;width:100%;z-index:1;border-style:solid}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-outline-color, var(--mat-sys-outline))}.mdc-evolution-chip__action--primary:not(.mdc-evolution-chip__action--presentational):not(.mdc-ripple-upgraded):focus::before{border-color:var(--mdc-chip-focus-outline-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-basic-chip .mdc-evolution-chip__action--primary{font:inherit}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip__action--trailing{position:relative;overflow:visible}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-trailing-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip__text-label{-webkit-user-select:none;user-select:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__text-label{font-family:var(--mdc-chip-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mdc-chip-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mdc-chip-label-text-size, var(--mat-sys-label-large-size));font-weight:var(--mdc-chip-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mdc-chip-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-label-text-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label,.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label{color:var(--mdc-chip-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mdc-evolution-chip__graphic{align-items:center;display:inline-flex;justify-content:center;overflow:hidden;pointer-events:none;position:relative;flex:1 0 auto}.mat-mdc-standard-chip .mdc-evolution-chip__graphic{width:var(--mdc-chip-with-avatar-avatar-size, 24px);height:var(--mdc-chip-with-avatar-avatar-size, 24px);font-size:var(--mdc-chip-with-avatar-avatar-size, 24px)}.mdc-evolution-chip--selecting .mdc-evolution-chip__graphic{transition:width 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selectable:not(.mdc-evolution-chip--selected):not(.mdc-evolution-chip--with-primary-icon) .mdc-evolution-chip__graphic{width:0}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mdc-evolution-chip__checkmark{position:absolute;opacity:0;top:50%;left:50%;height:20px;width:20px}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark{transition:transform 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1);transform:translate(-75%, -50%)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{transform:translate(-50%, -50%);opacity:1}.mdc-evolution-chip__checkmark-svg{display:block}.mdc-evolution-chip__checkmark-path{stroke-width:2px;stroke-dasharray:29.7833385;stroke-dashoffset:29.7833385;stroke:currentColor}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark-path{transition:stroke-dashoffset 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark-path{stroke-dashoffset:0}@media(forced-colors: active){.mdc-evolution-chip__checkmark-path{stroke:CanvasText !important}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--trailing{height:18px;width:18px;font-size:18px}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove{opacity:calc(var(--mat-chip-trailing-action-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove:focus{opacity:calc(var(--mat-chip-trailing-action-focus-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mat-mdc-standard-chip{border-radius:var(--mdc-chip-container-shape-radius, 8px);height:var(--mdc-chip-container-height, 32px)}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-container-color, transparent)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-elevated-disabled-container-color)}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-flat-disabled-selected-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}@media(forced-colors: active){.mat-mdc-standard-chip{outline:solid 1px}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--primary{border-radius:var(--mdc-chip-with-avatar-avatar-shape-radius, 24px);width:var(--mdc-chip-with-icon-icon-size, 18px);height:var(--mdc-chip-with-icon-icon-size, 18px);font-size:var(--mdc-chip-with-icon-icon-size, 18px)}.mdc-evolution-chip--selected .mdc-evolution-chip__icon--primary{opacity:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-highlighted{--mdc-chip-with-icon-icon-color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container));--mdc-chip-elevated-container-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container));--mdc-chip-label-text-color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container));--mdc-chip-outline-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-selected .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-chip:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-hover-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-focus-overlay .mat-mdc-chip-selected:hover,.mat-mdc-chip-highlighted:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-hover-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected.cdk-focused .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-evolution-chip--disabled:not(.mdc-evolution-chip--selected) .mat-mdc-chip-avatar{opacity:var(--mdc-chip-with-avatar-disabled-avatar-opacity, 0.38)}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{opacity:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38)}.mdc-evolution-chip--disabled.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{opacity:var(--mdc-chip-with-icon-disabled-icon-opacity, 0.38)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{opacity:var(--mat-chip-disabled-container-opacity, 1)}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-trailing-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-remove{opacity:var(--mat-chip-trailing-action-opacity, 1)}.mat-mdc-chip-remove:focus{opacity:var(--mat-chip-trailing-action-focus-opacity, 1)}.mat-mdc-chip-remove::after{background-color:var(--mat-chip-trailing-action-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-remove:hover::after{opacity:var(--mat-chip-trailing-action-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-remove:focus::after{opacity:var(--mat-chip-trailing-action-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected .mat-mdc-chip-remove::after,.mat-mdc-chip-highlighted .mat-mdc-chip-remove::after{background-color:var(--mat-chip-selected-trailing-action-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-standard-chip .mdc-evolution-chip__cell--primary,.mat-mdc-standard-chip .mdc-evolution-chip__action--primary,.mat-mdc-standard-chip .mat-mdc-chip-action-label{overflow:visible}.mat-mdc-standard-chip .mat-mdc-chip-graphic,.mat-mdc-standard-chip .mat-mdc-chip-trailing-icon{box-sizing:content-box}.mat-mdc-standard-chip._mat-animation-noopable,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__graphic,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark-path{transition-duration:1ms;animation-duration:1ms}.mat-mdc-chip-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;opacity:0;border-radius:inherit;transition:opacity 150ms linear}._mat-animation-noopable .mat-mdc-chip-focus-overlay{transition:none}.mat-mdc-basic-chip .mat-mdc-chip-focus-overlay{display:none}.mat-mdc-chip .mat-ripple.mat-mdc-chip-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-chip-avatar{text-align:center;line-height:1;color:var(--mdc-chip-with-icon-icon-color, currentColor)}.mat-mdc-chip{position:relative;z-index:0}.mat-mdc-chip-action-label{text-align:left;z-index:1}[dir=rtl] .mat-mdc-chip-action-label{text-align:right}.mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label{position:relative}.mat-mdc-chip-action-label .mat-mdc-chip-primary-focus-indicator{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.mat-mdc-chip-action-label .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-chip-remove::before{margin:calc(var(--mat-focus-indicator-border-width, 3px)*-1);left:8px;right:8px}.mat-mdc-chip-remove::after{content:"";display:block;opacity:0;position:absolute;top:-3px;bottom:-3px;left:5px;right:5px;border-radius:50%;box-sizing:border-box;padding:12px;margin:-12px;background-clip:content-box}.mat-mdc-chip-remove .mat-icon{width:18px;height:18px;font-size:18px;box-sizing:content-box}.mat-chip-edit-input{cursor:text;display:inline-block;color:inherit;outline:0}@media(forced-colors: active){.mat-mdc-chip-selected:not(.mat-mdc-chip-multiple){outline-width:3px}}.mat-mdc-chip-action:focus .mat-focus-indicator::before{content:""}.mdc-evolution-chip__icon,.mat-mdc-chip-remove .mat-icon{min-height:fit-content}\n';
+var _c3 = [
+  [['mat-chip-avatar'], ['', 'matChipAvatar', '']],
+  [['', 'matChipEditInput', '']],
+  '*',
+  [['mat-chip-trailing-icon'], ['', 'matChipRemove', ''], ['', 'matChipTrailingIcon', '']],
+];
+var _c4 = [
+  'mat-chip-avatar, [matChipAvatar]',
+  '[matChipEditInput]',
+  '*',
+  'mat-chip-trailing-icon,[matChipRemove],[matChipTrailingIcon]',
+];
 function MatChipRow_Conditional_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "span", 0);
+    ɵɵelement(0, 'span', 0);
   }
 }
 function MatChipRow_Conditional_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 2);
+    ɵɵelementStart(0, 'span', 2);
     ɵɵprojection(1);
     ɵɵelementEnd();
   }
@@ -185,12 +166,19 @@ function MatChipRow_Conditional_4_Conditional_0_Template(rf, ctx) {
 }
 function MatChipRow_Conditional_4_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "span", 7);
+    ɵɵelement(0, 'span', 7);
   }
 }
 function MatChipRow_Conditional_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, MatChipRow_Conditional_4_Conditional_0_Template, 1, 0)(1, MatChipRow_Conditional_4_Conditional_1_Template, 1, 0, "span", 7);
+    ɵɵtemplate(0, MatChipRow_Conditional_4_Conditional_0_Template, 1, 0)(
+      1,
+      MatChipRow_Conditional_4_Conditional_1_Template,
+      1,
+      0,
+      'span',
+      7,
+    );
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
@@ -204,23 +192,24 @@ function MatChipRow_Conditional_5_Template(rf, ctx) {
 }
 function MatChipRow_Conditional_7_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 5);
+    ɵɵelementStart(0, 'span', 5);
     ɵɵprojection(1, 3);
     ɵɵelementEnd();
   }
 }
-var _c5 = ["*"];
-var _c6 = ".mat-mdc-chip-set{display:flex}.mat-mdc-chip-set:focus{outline:none}.mat-mdc-chip-set .mdc-evolution-chip-set__chips{min-width:100%;margin-left:-8px;margin-right:0}.mat-mdc-chip-set .mdc-evolution-chip{margin:4px 0 4px 8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip-set__chips{margin-left:0;margin-right:-8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip{margin-left:0;margin-right:8px}.mdc-evolution-chip-set__chips{display:flex;flex-flow:wrap;min-width:0}.mat-mdc-chip-set-stacked{flex-direction:column;align-items:flex-start}.mat-mdc-chip-set-stacked .mat-mdc-chip{width:100%}.mat-mdc-chip-set-stacked .mdc-evolution-chip__graphic{flex-grow:0}.mat-mdc-chip-set-stacked .mdc-evolution-chip__action--primary{flex-basis:100%;justify-content:start}input.mat-mdc-chip-input{flex:1 0 150px;margin-left:8px}[dir=rtl] input.mat-mdc-chip-input{margin-left:0;margin-right:8px}\n";
-var MAT_CHIPS_DEFAULT_OPTIONS = new InjectionToken("mat-chips-default-options", {
-  providedIn: "root",
+var _c5 = ['*'];
+var _c6 =
+  '.mat-mdc-chip-set{display:flex}.mat-mdc-chip-set:focus{outline:none}.mat-mdc-chip-set .mdc-evolution-chip-set__chips{min-width:100%;margin-left:-8px;margin-right:0}.mat-mdc-chip-set .mdc-evolution-chip{margin:4px 0 4px 8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip-set__chips{margin-left:0;margin-right:-8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip{margin-left:0;margin-right:8px}.mdc-evolution-chip-set__chips{display:flex;flex-flow:wrap;min-width:0}.mat-mdc-chip-set-stacked{flex-direction:column;align-items:flex-start}.mat-mdc-chip-set-stacked .mat-mdc-chip{width:100%}.mat-mdc-chip-set-stacked .mdc-evolution-chip__graphic{flex-grow:0}.mat-mdc-chip-set-stacked .mdc-evolution-chip__action--primary{flex-basis:100%;justify-content:start}input.mat-mdc-chip-input{flex:1 0 150px;margin-left:8px}[dir=rtl] input.mat-mdc-chip-input{margin-left:0;margin-right:8px}\n';
+var MAT_CHIPS_DEFAULT_OPTIONS = new InjectionToken('mat-chips-default-options', {
+  providedIn: 'root',
   factory: () => ({
-    separatorKeyCodes: [ENTER]
-  })
+    separatorKeyCodes: [ENTER],
+  }),
 });
-var MAT_CHIP_AVATAR = new InjectionToken("MatChipAvatar");
-var MAT_CHIP_TRAILING_ICON = new InjectionToken("MatChipTrailingIcon");
-var MAT_CHIP_REMOVE = new InjectionToken("MatChipRemove");
-var MAT_CHIP = new InjectionToken("MatChip");
+var MAT_CHIP_AVATAR = new InjectionToken('MatChipAvatar');
+var MAT_CHIP_TRAILING_ICON = new InjectionToken('MatChipTrailingIcon');
+var MAT_CHIP_REMOVE = new InjectionToken('MatChipRemove');
+var MAT_CHIP = new InjectionToken('MatChip');
 var MatChipAction = class _MatChipAction {
   _elementRef = inject(ElementRef);
   _parentChip = inject(MAT_CHIP);
@@ -246,18 +235,18 @@ var MatChipAction = class _MatChipAction {
    * Determine the value of the disabled attribute for this chip action.
    */
   _getDisabledAttribute() {
-    return this.disabled && !this._allowFocusWhenDisabled ? "" : null;
+    return this.disabled && !this._allowFocusWhenDisabled ? '' : null;
   }
   /**
    * Determine the value of the tabindex attribute for this chip action.
    */
   _getTabindex() {
-    return this.disabled && !this._allowFocusWhenDisabled || !this.isInteractive ? null : this.tabIndex.toString();
+    return (this.disabled && !this._allowFocusWhenDisabled) || !this.isInteractive ? null : this.tabIndex.toString();
   }
   constructor() {
     inject(_CdkPrivateStyleLoader).load(_StructuralStylesLoader);
-    if (this._elementRef.nativeElement.nodeName === "BUTTON") {
-      this._elementRef.nativeElement.setAttribute("type", "button");
+    if (this._elementRef.nativeElement.nodeName === 'BUTTON') {
+      this._elementRef.nativeElement.setAttribute('type', 'button');
     }
   }
   focus() {
@@ -270,7 +259,13 @@ var MatChipAction = class _MatChipAction {
     }
   }
   _handleKeydown(event) {
-    if ((event.keyCode === ENTER || event.keyCode === SPACE) && !this.disabled && this.isInteractive && this._isPrimary && !this._parentChip._isEditing) {
+    if (
+      (event.keyCode === ENTER || event.keyCode === SPACE) &&
+      !this.disabled &&
+      this.isInteractive &&
+      this._isPrimary &&
+      !this._parentChip._isEditing
+    ) {
       event.preventDefault();
       this._parentChip._handlePrimaryActionInteraction();
     }
@@ -280,67 +275,95 @@ var MatChipAction = class _MatChipAction {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatChipAction,
-    selectors: [["", "matChipAction", ""]],
-    hostAttrs: [1, "mdc-evolution-chip__action", "mat-mdc-chip-action"],
+    selectors: [['', 'matChipAction', '']],
+    hostAttrs: [1, 'mdc-evolution-chip__action', 'mat-mdc-chip-action'],
     hostVars: 9,
     hostBindings: function MatChipAction_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("click", function MatChipAction_click_HostBindingHandler($event) {
+        ɵɵlistener('click', function MatChipAction_click_HostBindingHandler($event) {
           return ctx._handleClick($event);
-        })("keydown", function MatChipAction_keydown_HostBindingHandler($event) {
+        })('keydown', function MatChipAction_keydown_HostBindingHandler($event) {
           return ctx._handleKeydown($event);
         });
       }
       if (rf & 2) {
-        ɵɵattribute("tabindex", ctx._getTabindex())("disabled", ctx._getDisabledAttribute())("aria-disabled", ctx.disabled);
-        ɵɵclassProp("mdc-evolution-chip__action--primary", ctx._isPrimary)("mdc-evolution-chip__action--presentational", !ctx.isInteractive)("mdc-evolution-chip__action--trailing", !ctx._isPrimary);
+        ɵɵattribute('tabindex', ctx._getTabindex())('disabled', ctx._getDisabledAttribute())(
+          'aria-disabled',
+          ctx.disabled,
+        );
+        ɵɵclassProp('mdc-evolution-chip__action--primary', ctx._isPrimary)(
+          'mdc-evolution-chip__action--presentational',
+          !ctx.isInteractive,
+        )('mdc-evolution-chip__action--trailing', !ctx._isPrimary);
       }
     },
     inputs: {
-      isInteractive: "isInteractive",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      tabIndex: [2, "tabIndex", "tabIndex", (value) => value == null ? -1 : numberAttribute(value)],
-      _allowFocusWhenDisabled: "_allowFocusWhenDisabled"
-    }
+      isInteractive: 'isInteractive',
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
+      tabIndex: [2, 'tabIndex', 'tabIndex', (value) => (value == null ? -1 : numberAttribute(value))],
+      _allowFocusWhenDisabled: '_allowFocusWhenDisabled',
+    },
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipAction, [{
-    type: Directive,
-    args: [{
-      selector: "[matChipAction]",
-      host: {
-        "class": "mdc-evolution-chip__action mat-mdc-chip-action",
-        "[class.mdc-evolution-chip__action--primary]": "_isPrimary",
-        "[class.mdc-evolution-chip__action--presentational]": "!isInteractive",
-        "[class.mdc-evolution-chip__action--trailing]": "!_isPrimary",
-        "[attr.tabindex]": "_getTabindex()",
-        "[attr.disabled]": "_getDisabledAttribute()",
-        "[attr.aria-disabled]": "disabled",
-        "(click)": "_handleClick($event)",
-        "(keydown)": "_handleKeydown($event)"
-      }
-    }]
-  }], () => [], {
-    isInteractive: [{
-      type: Input
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    tabIndex: [{
-      type: Input,
-      args: [{
-        transform: (value) => value == null ? -1 : numberAttribute(value)
-      }]
-    }],
-    _allowFocusWhenDisabled: [{
-      type: Input
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipAction,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[matChipAction]',
+              host: {
+                class: 'mdc-evolution-chip__action mat-mdc-chip-action',
+                '[class.mdc-evolution-chip__action--primary]': '_isPrimary',
+                '[class.mdc-evolution-chip__action--presentational]': '!isInteractive',
+                '[class.mdc-evolution-chip__action--trailing]': '!_isPrimary',
+                '[attr.tabindex]': '_getTabindex()',
+                '[attr.disabled]': '_getDisabledAttribute()',
+                '[attr.aria-disabled]': 'disabled',
+                '(click)': '_handleClick($event)',
+                '(keydown)': '_handleKeydown($event)',
+              },
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        isInteractive: [
+          {
+            type: Input,
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        tabIndex: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: (value) => (value == null ? -1 : numberAttribute(value)),
+              },
+            ],
+          },
+        ],
+        _allowFocusWhenDisabled: [
+          {
+            type: Input,
+          },
+        ],
+      },
+    );
 })();
 var MatChipAvatar = class _MatChipAvatar {
   static ɵfac = function MatChipAvatar_Factory(__ngFactoryType__) {
@@ -348,29 +371,52 @@ var MatChipAvatar = class _MatChipAvatar {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatChipAvatar,
-    selectors: [["mat-chip-avatar"], ["", "matChipAvatar", ""]],
-    hostAttrs: ["role", "img", 1, "mat-mdc-chip-avatar", "mdc-evolution-chip__icon", "mdc-evolution-chip__icon--primary"],
-    features: [ɵɵProvidersFeature([{
-      provide: MAT_CHIP_AVATAR,
-      useExisting: _MatChipAvatar
-    }])]
+    selectors: [['mat-chip-avatar'], ['', 'matChipAvatar', '']],
+    hostAttrs: [
+      'role',
+      'img',
+      1,
+      'mat-mdc-chip-avatar',
+      'mdc-evolution-chip__icon',
+      'mdc-evolution-chip__icon--primary',
+    ],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MAT_CHIP_AVATAR,
+          useExisting: _MatChipAvatar,
+        },
+      ]),
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipAvatar, [{
-    type: Directive,
-    args: [{
-      selector: "mat-chip-avatar, [matChipAvatar]",
-      host: {
-        "class": "mat-mdc-chip-avatar mdc-evolution-chip__icon mdc-evolution-chip__icon--primary",
-        "role": "img"
-      },
-      providers: [{
-        provide: MAT_CHIP_AVATAR,
-        useExisting: MatChipAvatar
-      }]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipAvatar,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'mat-chip-avatar, [matChipAvatar]',
+              host: {
+                class: 'mat-mdc-chip-avatar mdc-evolution-chip__icon mdc-evolution-chip__icon--primary',
+                role: 'img',
+              },
+              providers: [
+                {
+                  provide: MAT_CHIP_AVATAR,
+                  useExisting: MatChipAvatar,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatChipTrailingIcon = class _MatChipTrailingIcon extends MatChipAction {
   /**
@@ -382,34 +428,61 @@ var MatChipTrailingIcon = class _MatChipTrailingIcon extends MatChipAction {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatChipTrailingIcon_BaseFactory;
     return function MatChipTrailingIcon_Factory(__ngFactoryType__) {
-      return (ɵMatChipTrailingIcon_BaseFactory || (ɵMatChipTrailingIcon_BaseFactory = ɵɵgetInheritedFactory(_MatChipTrailingIcon)))(__ngFactoryType__ || _MatChipTrailingIcon);
+      return (
+        ɵMatChipTrailingIcon_BaseFactory ||
+        (ɵMatChipTrailingIcon_BaseFactory = ɵɵgetInheritedFactory(_MatChipTrailingIcon))
+      )(__ngFactoryType__ || _MatChipTrailingIcon);
     };
   })();
   static ɵdir = ɵɵdefineDirective({
     type: _MatChipTrailingIcon,
-    selectors: [["mat-chip-trailing-icon"], ["", "matChipTrailingIcon", ""]],
-    hostAttrs: ["aria-hidden", "true", 1, "mat-mdc-chip-trailing-icon", "mdc-evolution-chip__icon", "mdc-evolution-chip__icon--trailing"],
-    features: [ɵɵProvidersFeature([{
-      provide: MAT_CHIP_TRAILING_ICON,
-      useExisting: _MatChipTrailingIcon
-    }]), ɵɵInheritDefinitionFeature]
+    selectors: [['mat-chip-trailing-icon'], ['', 'matChipTrailingIcon', '']],
+    hostAttrs: [
+      'aria-hidden',
+      'true',
+      1,
+      'mat-mdc-chip-trailing-icon',
+      'mdc-evolution-chip__icon',
+      'mdc-evolution-chip__icon--trailing',
+    ],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MAT_CHIP_TRAILING_ICON,
+          useExisting: _MatChipTrailingIcon,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipTrailingIcon, [{
-    type: Directive,
-    args: [{
-      selector: "mat-chip-trailing-icon, [matChipTrailingIcon]",
-      host: {
-        "class": "mat-mdc-chip-trailing-icon mdc-evolution-chip__icon mdc-evolution-chip__icon--trailing",
-        "aria-hidden": "true"
-      },
-      providers: [{
-        provide: MAT_CHIP_TRAILING_ICON,
-        useExisting: MatChipTrailingIcon
-      }]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipTrailingIcon,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'mat-chip-trailing-icon, [matChipTrailingIcon]',
+              host: {
+                class: 'mat-mdc-chip-trailing-icon mdc-evolution-chip__icon mdc-evolution-chip__icon--trailing',
+                'aria-hidden': 'true',
+              },
+              providers: [
+                {
+                  provide: MAT_CHIP_TRAILING_ICON,
+                  useExisting: MatChipTrailingIcon,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatChipRemove = class _MatChipRemove extends MatChipAction {
   _isPrimary = false;
@@ -430,41 +503,70 @@ var MatChipRemove = class _MatChipRemove extends MatChipAction {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatChipRemove_BaseFactory;
     return function MatChipRemove_Factory(__ngFactoryType__) {
-      return (ɵMatChipRemove_BaseFactory || (ɵMatChipRemove_BaseFactory = ɵɵgetInheritedFactory(_MatChipRemove)))(__ngFactoryType__ || _MatChipRemove);
+      return (ɵMatChipRemove_BaseFactory || (ɵMatChipRemove_BaseFactory = ɵɵgetInheritedFactory(_MatChipRemove)))(
+        __ngFactoryType__ || _MatChipRemove,
+      );
     };
   })();
   static ɵdir = ɵɵdefineDirective({
     type: _MatChipRemove,
-    selectors: [["", "matChipRemove", ""]],
-    hostAttrs: ["role", "button", 1, "mat-mdc-chip-remove", "mat-mdc-chip-trailing-icon", "mat-focus-indicator", "mdc-evolution-chip__icon", "mdc-evolution-chip__icon--trailing"],
+    selectors: [['', 'matChipRemove', '']],
+    hostAttrs: [
+      'role',
+      'button',
+      1,
+      'mat-mdc-chip-remove',
+      'mat-mdc-chip-trailing-icon',
+      'mat-focus-indicator',
+      'mdc-evolution-chip__icon',
+      'mdc-evolution-chip__icon--trailing',
+    ],
     hostVars: 1,
     hostBindings: function MatChipRemove_HostBindings(rf, ctx) {
       if (rf & 2) {
-        ɵɵattribute("aria-hidden", null);
+        ɵɵattribute('aria-hidden', null);
       }
     },
-    features: [ɵɵProvidersFeature([{
-      provide: MAT_CHIP_REMOVE,
-      useExisting: _MatChipRemove
-    }]), ɵɵInheritDefinitionFeature]
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MAT_CHIP_REMOVE,
+          useExisting: _MatChipRemove,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipRemove, [{
-    type: Directive,
-    args: [{
-      selector: "[matChipRemove]",
-      host: {
-        "class": "mat-mdc-chip-remove mat-mdc-chip-trailing-icon mat-focus-indicator mdc-evolution-chip__icon mdc-evolution-chip__icon--trailing",
-        "role": "button",
-        "[attr.aria-hidden]": "null"
-      },
-      providers: [{
-        provide: MAT_CHIP_REMOVE,
-        useExisting: MatChipRemove
-      }]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipRemove,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[matChipRemove]',
+              host: {
+                class:
+                  'mat-mdc-chip-remove mat-mdc-chip-trailing-icon mat-focus-indicator mdc-evolution-chip__icon mdc-evolution-chip__icon--trailing',
+                role: 'button',
+                '[attr.aria-hidden]': 'null',
+              },
+              providers: [
+                {
+                  provide: MAT_CHIP_REMOVE,
+                  useExisting: MatChipRemove,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MatChip = class _MatChip {
   _changeDetectorRef = inject(ChangeDetectorRef);
@@ -472,7 +574,7 @@ var MatChip = class _MatChip {
   _ngZone = inject(NgZone);
   _focusMonitor = inject(FocusMonitor);
   _globalRippleOptions = inject(MAT_RIPPLE_GLOBAL_OPTIONS, {
-    optional: true
+    optional: true,
   });
   _document = inject(DOCUMENT);
   /** Emits when the chip is focused. */
@@ -501,7 +603,7 @@ var MatChip = class _MatChip {
     return this._hasFocusInternal;
   }
   /** A unique id for the chip. If none is supplied, it will be auto-generated. */
-  id = inject(_IdGenerator).getId("mat-mdc-chip-");
+  id = inject(_IdGenerator).getId('mat-mdc-chip-');
   // TODO(#26104): Consider deprecating and using `_computeAriaAccessibleName` instead.
   // `ariaLabel` may be unnecessary, and `_computeAriaAccessibleName` only supports
   // datepicker's use case.
@@ -560,7 +662,7 @@ var MatChip = class _MatChip {
   /** Emitted when the chip is destroyed. */
   destroyed = new EventEmitter();
   /** The unstyled chip selector for this component. */
-  basicChipAttrName = "mat-basic-chip";
+  basicChipAttrName = 'mat-basic-chip';
   /** The chip's leading icon. */
   leadingIcon;
   /** The chip's trailing icon. */
@@ -580,28 +682,33 @@ var MatChip = class _MatChip {
     styleLoader.load(_StructuralStylesLoader);
     styleLoader.load(_VisuallyHiddenLoader);
     const animationMode = inject(ANIMATION_MODULE_TYPE, {
-      optional: true
+      optional: true,
     });
-    this._animationsDisabled = animationMode === "NoopAnimations";
+    this._animationsDisabled = animationMode === 'NoopAnimations';
     this._monitorFocus();
     this._rippleLoader?.configureRipple(this._elementRef.nativeElement, {
-      className: "mat-mdc-chip-ripple",
-      disabled: this._isRippleDisabled()
+      className: 'mat-mdc-chip-ripple',
+      disabled: this._isRippleDisabled(),
     });
   }
   ngOnInit() {
     const element = this._elementRef.nativeElement;
-    this._isBasicChip = element.hasAttribute(this.basicChipAttrName) || element.tagName.toLowerCase() === this.basicChipAttrName;
+    this._isBasicChip =
+      element.hasAttribute(this.basicChipAttrName) || element.tagName.toLowerCase() === this.basicChipAttrName;
   }
   ngAfterViewInit() {
-    this._textElement = this._elementRef.nativeElement.querySelector(".mat-mdc-chip-action-label");
+    this._textElement = this._elementRef.nativeElement.querySelector('.mat-mdc-chip-action-label');
     if (this._pendingFocus) {
       this._pendingFocus = false;
       this.focus();
     }
   }
   ngAfterContentInit() {
-    this._actionChanges = merge(this._allLeadingIcons.changes, this._allTrailingIcons.changes, this._allRemoveIcons.changes).subscribe(() => this._changeDetectorRef.markForCheck());
+    this._actionChanges = merge(
+      this._allLeadingIcons.changes,
+      this._allTrailingIcons.changes,
+      this._allRemoveIcons.changes,
+    ).subscribe(() => this._changeDetectorRef.markForCheck());
   }
   ngDoCheck() {
     this._rippleLoader.setDisabled(this._elementRef.nativeElement, this._isRippleDisabled());
@@ -611,7 +718,7 @@ var MatChip = class _MatChip {
     this._rippleLoader?.destroyRipple(this._elementRef.nativeElement);
     this._actionChanges?.unsubscribe();
     this.destroyed.emit({
-      chip: this
+      chip: this,
     });
     this.destroyed.complete();
   }
@@ -623,13 +730,19 @@ var MatChip = class _MatChip {
   remove() {
     if (this.removable) {
       this.removed.emit({
-        chip: this
+        chip: this,
       });
     }
   }
   /** Whether or not the ripple should be disabled. */
   _isRippleDisabled() {
-    return this.disabled || this.disableRipple || this._animationsDisabled || this._isBasicChip || !!this._globalRippleOptions?.disabled;
+    return (
+      this.disabled ||
+      this.disableRipple ||
+      this._animationsDisabled ||
+      this._isBasicChip ||
+      !!this._globalRippleOptions?.disabled
+    );
   }
   /** Returns whether the chip has a trailing icon. */
   _hasTrailingIcon() {
@@ -637,7 +750,7 @@ var MatChip = class _MatChip {
   }
   /** Handles keyboard events on the chip. */
   _handleKeydown(event) {
-    if (event.keyCode === BACKSPACE && !event.repeat || event.keyCode === DELETE) {
+    if ((event.keyCode === BACKSPACE && !event.repeat) || event.keyCode === DELETE) {
       event.preventDefault();
       this.remove();
     }
@@ -674,8 +787,7 @@ var MatChip = class _MatChip {
     return result;
   }
   /** Handles interactions with the primary action of the chip. */
-  _handlePrimaryActionInteraction() {
-  }
+  _handlePrimaryActionInteraction() {}
   /** Starts the focus monitoring process on the chip. */
   _monitorFocus() {
     this._focusMonitor.monitor(this._elementRef, true).subscribe((origin) => {
@@ -684,13 +796,17 @@ var MatChip = class _MatChip {
         this._hasFocusInternal = hasFocus;
         if (hasFocus) {
           this._onFocus.next({
-            chip: this
+            chip: this,
           });
         } else {
           this._changeDetectorRef.markForCheck();
-          setTimeout(() => this._ngZone.run(() => this._onBlur.next({
-            chip: this
-          })));
+          setTimeout(() =>
+            this._ngZone.run(() =>
+              this._onBlur.next({
+                chip: this,
+              }),
+            ),
+          );
         }
       }
     });
@@ -700,7 +816,7 @@ var MatChip = class _MatChip {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatChip,
-    selectors: [["mat-basic-chip"], ["", "mat-basic-chip", ""], ["mat-chip"], ["", "mat-chip", ""]],
+    selectors: [['mat-basic-chip'], ['', 'mat-basic-chip', ''], ['mat-chip'], ['', 'mat-chip', '']],
     contentQueries: function MatChip_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MAT_CHIP_AVATAR, 5);
@@ -712,12 +828,12 @@ var MatChip = class _MatChip {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.leadingIcon = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.trailingIcon = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.removeIcon = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._allLeadingIcons = _t);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._allTrailingIcons = _t);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._allRemoveIcons = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.leadingIcon = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.trailingIcon = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.removeIcon = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._allLeadingIcons = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._allTrailingIcons = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._allRemoveIcons = _t);
       }
     },
     viewQuery: function MatChip_Query(rf, ctx) {
@@ -726,64 +842,91 @@ var MatChip = class _MatChip {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.primaryAction = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.primaryAction = _t.first);
       }
     },
-    hostAttrs: [1, "mat-mdc-chip"],
+    hostAttrs: [1, 'mat-mdc-chip'],
     hostVars: 31,
     hostBindings: function MatChip_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("keydown", function MatChip_keydown_HostBindingHandler($event) {
+        ɵɵlistener('keydown', function MatChip_keydown_HostBindingHandler($event) {
           return ctx._handleKeydown($event);
         });
       }
       if (rf & 2) {
-        ɵɵhostProperty("id", ctx.id);
-        ɵɵattribute("role", ctx.role)("aria-label", ctx.ariaLabel);
-        ɵɵclassMap("mat-" + (ctx.color || "primary"));
-        ɵɵclassProp("mdc-evolution-chip", !ctx._isBasicChip)("mdc-evolution-chip--disabled", ctx.disabled)("mdc-evolution-chip--with-trailing-action", ctx._hasTrailingIcon())("mdc-evolution-chip--with-primary-graphic", ctx.leadingIcon)("mdc-evolution-chip--with-primary-icon", ctx.leadingIcon)("mdc-evolution-chip--with-avatar", ctx.leadingIcon)("mat-mdc-chip-with-avatar", ctx.leadingIcon)("mat-mdc-chip-highlighted", ctx.highlighted)("mat-mdc-chip-disabled", ctx.disabled)("mat-mdc-basic-chip", ctx._isBasicChip)("mat-mdc-standard-chip", !ctx._isBasicChip)("mat-mdc-chip-with-trailing-icon", ctx._hasTrailingIcon())("_mat-animation-noopable", ctx._animationsDisabled);
+        ɵɵhostProperty('id', ctx.id);
+        ɵɵattribute('role', ctx.role)('aria-label', ctx.ariaLabel);
+        ɵɵclassMap('mat-' + (ctx.color || 'primary'));
+        ɵɵclassProp('mdc-evolution-chip', !ctx._isBasicChip)('mdc-evolution-chip--disabled', ctx.disabled)(
+          'mdc-evolution-chip--with-trailing-action',
+          ctx._hasTrailingIcon(),
+        )('mdc-evolution-chip--with-primary-graphic', ctx.leadingIcon)(
+          'mdc-evolution-chip--with-primary-icon',
+          ctx.leadingIcon,
+        )('mdc-evolution-chip--with-avatar', ctx.leadingIcon)('mat-mdc-chip-with-avatar', ctx.leadingIcon)(
+          'mat-mdc-chip-highlighted',
+          ctx.highlighted,
+        )('mat-mdc-chip-disabled', ctx.disabled)('mat-mdc-basic-chip', ctx._isBasicChip)(
+          'mat-mdc-standard-chip',
+          !ctx._isBasicChip,
+        )('mat-mdc-chip-with-trailing-icon', ctx._hasTrailingIcon())(
+          '_mat-animation-noopable',
+          ctx._animationsDisabled,
+        );
       }
     },
     inputs: {
-      role: "role",
-      id: "id",
-      ariaLabel: [0, "aria-label", "ariaLabel"],
-      ariaDescription: [0, "aria-description", "ariaDescription"],
-      value: "value",
-      color: "color",
-      removable: [2, "removable", "removable", booleanAttribute],
-      highlighted: [2, "highlighted", "highlighted", booleanAttribute],
-      disableRipple: [2, "disableRipple", "disableRipple", booleanAttribute],
-      disabled: [2, "disabled", "disabled", booleanAttribute]
+      role: 'role',
+      id: 'id',
+      ariaLabel: [0, 'aria-label', 'ariaLabel'],
+      ariaDescription: [0, 'aria-description', 'ariaDescription'],
+      value: 'value',
+      color: 'color',
+      removable: [2, 'removable', 'removable', booleanAttribute],
+      highlighted: [2, 'highlighted', 'highlighted', booleanAttribute],
+      disableRipple: [2, 'disableRipple', 'disableRipple', booleanAttribute],
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
     },
     outputs: {
-      removed: "removed",
-      destroyed: "destroyed"
+      removed: 'removed',
+      destroyed: 'destroyed',
     },
-    exportAs: ["matChip"],
-    features: [ɵɵProvidersFeature([{
-      provide: MAT_CHIP,
-      useExisting: _MatChip
-    }])],
+    exportAs: ['matChip'],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MAT_CHIP,
+          useExisting: _MatChip,
+        },
+      ]),
+    ],
     ngContentSelectors: _c1,
     decls: 8,
     vars: 3,
-    consts: [[1, "mat-mdc-chip-focus-overlay"], [1, "mdc-evolution-chip__cell", "mdc-evolution-chip__cell--primary"], ["matChipAction", "", 3, "isInteractive"], [1, "mdc-evolution-chip__graphic", "mat-mdc-chip-graphic"], [1, "mdc-evolution-chip__text-label", "mat-mdc-chip-action-label"], [1, "mat-mdc-chip-primary-focus-indicator", "mat-focus-indicator"], [1, "mdc-evolution-chip__cell", "mdc-evolution-chip__cell--trailing"]],
+    consts: [
+      [1, 'mat-mdc-chip-focus-overlay'],
+      [1, 'mdc-evolution-chip__cell', 'mdc-evolution-chip__cell--primary'],
+      ['matChipAction', '', 3, 'isInteractive'],
+      [1, 'mdc-evolution-chip__graphic', 'mat-mdc-chip-graphic'],
+      [1, 'mdc-evolution-chip__text-label', 'mat-mdc-chip-action-label'],
+      [1, 'mat-mdc-chip-primary-focus-indicator', 'mat-focus-indicator'],
+      [1, 'mdc-evolution-chip__cell', 'mdc-evolution-chip__cell--trailing'],
+    ],
     template: function MatChip_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef(_c0);
-        ɵɵelement(0, "span", 0);
-        ɵɵelementStart(1, "span", 1)(2, "span", 2);
-        ɵɵtemplate(3, MatChip_Conditional_3_Template, 2, 0, "span", 3);
-        ɵɵelementStart(4, "span", 4);
+        ɵɵelement(0, 'span', 0);
+        ɵɵelementStart(1, 'span', 1)(2, 'span', 2);
+        ɵɵtemplate(3, MatChip_Conditional_3_Template, 2, 0, 'span', 3);
+        ɵɵelementStart(4, 'span', 4);
         ɵɵprojection(5);
-        ɵɵelement(6, "span", 5);
+        ɵɵelement(6, 'span', 5);
         ɵɵelementEnd()()();
-        ɵɵtemplate(7, MatChip_Conditional_7_Template, 2, 0, "span", 6);
+        ɵɵtemplate(7, MatChip_Conditional_7_Template, 2, 0, 'span', 6);
       }
       if (rf & 2) {
         ɵɵadvance(2);
-        ɵɵproperty("isInteractive", false);
+        ɵɵproperty('isInteractive', false);
         ɵɵadvance();
         ɵɵconditional(ctx.leadingIcon ? 3 : -1);
         ɵɵadvance(4);
@@ -791,134 +934,206 @@ var MatChip = class _MatChip {
       }
     },
     dependencies: [MatChipAction],
-    styles: ['.mdc-evolution-chip,.mdc-evolution-chip__cell,.mdc-evolution-chip__action{display:inline-flex;align-items:center}.mdc-evolution-chip{position:relative;max-width:100%}.mdc-evolution-chip__cell,.mdc-evolution-chip__action{height:100%}.mdc-evolution-chip__cell--primary{flex-basis:100%;overflow-x:hidden}.mdc-evolution-chip__cell--trailing{flex:1 0 auto}.mdc-evolution-chip__action{align-items:center;background:none;border:none;box-sizing:content-box;cursor:pointer;display:inline-flex;justify-content:center;outline:none;padding:0;text-decoration:none;color:inherit}.mdc-evolution-chip__action--presentational{cursor:auto}.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{pointer-events:none}@media(forced-colors: active){.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{forced-color-adjust:none}}.mdc-evolution-chip__action--primary{font:inherit;letter-spacing:inherit;white-space:inherit;overflow-x:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-outline-width, 1px);border-radius:var(--mdc-chip-container-shape-radius, 8px);box-sizing:border-box;content:"";height:100%;left:0;position:absolute;pointer-events:none;top:0;width:100%;z-index:1;border-style:solid}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-outline-color, var(--mat-sys-outline))}.mdc-evolution-chip__action--primary:not(.mdc-evolution-chip__action--presentational):not(.mdc-ripple-upgraded):focus::before{border-color:var(--mdc-chip-focus-outline-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-basic-chip .mdc-evolution-chip__action--primary{font:inherit}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip__action--trailing{position:relative;overflow:visible}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-trailing-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip__text-label{-webkit-user-select:none;user-select:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__text-label{font-family:var(--mdc-chip-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mdc-chip-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mdc-chip-label-text-size, var(--mat-sys-label-large-size));font-weight:var(--mdc-chip-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mdc-chip-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-label-text-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label,.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label{color:var(--mdc-chip-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mdc-evolution-chip__graphic{align-items:center;display:inline-flex;justify-content:center;overflow:hidden;pointer-events:none;position:relative;flex:1 0 auto}.mat-mdc-standard-chip .mdc-evolution-chip__graphic{width:var(--mdc-chip-with-avatar-avatar-size, 24px);height:var(--mdc-chip-with-avatar-avatar-size, 24px);font-size:var(--mdc-chip-with-avatar-avatar-size, 24px)}.mdc-evolution-chip--selecting .mdc-evolution-chip__graphic{transition:width 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selectable:not(.mdc-evolution-chip--selected):not(.mdc-evolution-chip--with-primary-icon) .mdc-evolution-chip__graphic{width:0}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mdc-evolution-chip__checkmark{position:absolute;opacity:0;top:50%;left:50%;height:20px;width:20px}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark{transition:transform 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1);transform:translate(-75%, -50%)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{transform:translate(-50%, -50%);opacity:1}.mdc-evolution-chip__checkmark-svg{display:block}.mdc-evolution-chip__checkmark-path{stroke-width:2px;stroke-dasharray:29.7833385;stroke-dashoffset:29.7833385;stroke:currentColor}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark-path{transition:stroke-dashoffset 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark-path{stroke-dashoffset:0}@media(forced-colors: active){.mdc-evolution-chip__checkmark-path{stroke:CanvasText !important}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--trailing{height:18px;width:18px;font-size:18px}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove{opacity:calc(var(--mat-chip-trailing-action-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove:focus{opacity:calc(var(--mat-chip-trailing-action-focus-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mat-mdc-standard-chip{border-radius:var(--mdc-chip-container-shape-radius, 8px);height:var(--mdc-chip-container-height, 32px)}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-container-color, transparent)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-elevated-disabled-container-color)}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-flat-disabled-selected-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}@media(forced-colors: active){.mat-mdc-standard-chip{outline:solid 1px}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--primary{border-radius:var(--mdc-chip-with-avatar-avatar-shape-radius, 24px);width:var(--mdc-chip-with-icon-icon-size, 18px);height:var(--mdc-chip-with-icon-icon-size, 18px);font-size:var(--mdc-chip-with-icon-icon-size, 18px)}.mdc-evolution-chip--selected .mdc-evolution-chip__icon--primary{opacity:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-highlighted{--mdc-chip-with-icon-icon-color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container));--mdc-chip-elevated-container-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container));--mdc-chip-label-text-color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container));--mdc-chip-outline-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-selected .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-chip:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-hover-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-focus-overlay .mat-mdc-chip-selected:hover,.mat-mdc-chip-highlighted:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-hover-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected.cdk-focused .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-evolution-chip--disabled:not(.mdc-evolution-chip--selected) .mat-mdc-chip-avatar{opacity:var(--mdc-chip-with-avatar-disabled-avatar-opacity, 0.38)}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{opacity:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38)}.mdc-evolution-chip--disabled.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{opacity:var(--mdc-chip-with-icon-disabled-icon-opacity, 0.38)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{opacity:var(--mat-chip-disabled-container-opacity, 1)}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-trailing-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-remove{opacity:var(--mat-chip-trailing-action-opacity, 1)}.mat-mdc-chip-remove:focus{opacity:var(--mat-chip-trailing-action-focus-opacity, 1)}.mat-mdc-chip-remove::after{background-color:var(--mat-chip-trailing-action-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-remove:hover::after{opacity:var(--mat-chip-trailing-action-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-remove:focus::after{opacity:var(--mat-chip-trailing-action-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected .mat-mdc-chip-remove::after,.mat-mdc-chip-highlighted .mat-mdc-chip-remove::after{background-color:var(--mat-chip-selected-trailing-action-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-standard-chip .mdc-evolution-chip__cell--primary,.mat-mdc-standard-chip .mdc-evolution-chip__action--primary,.mat-mdc-standard-chip .mat-mdc-chip-action-label{overflow:visible}.mat-mdc-standard-chip .mat-mdc-chip-graphic,.mat-mdc-standard-chip .mat-mdc-chip-trailing-icon{box-sizing:content-box}.mat-mdc-standard-chip._mat-animation-noopable,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__graphic,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark-path{transition-duration:1ms;animation-duration:1ms}.mat-mdc-chip-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;opacity:0;border-radius:inherit;transition:opacity 150ms linear}._mat-animation-noopable .mat-mdc-chip-focus-overlay{transition:none}.mat-mdc-basic-chip .mat-mdc-chip-focus-overlay{display:none}.mat-mdc-chip .mat-ripple.mat-mdc-chip-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-chip-avatar{text-align:center;line-height:1;color:var(--mdc-chip-with-icon-icon-color, currentColor)}.mat-mdc-chip{position:relative;z-index:0}.mat-mdc-chip-action-label{text-align:left;z-index:1}[dir=rtl] .mat-mdc-chip-action-label{text-align:right}.mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label{position:relative}.mat-mdc-chip-action-label .mat-mdc-chip-primary-focus-indicator{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.mat-mdc-chip-action-label .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-chip-remove::before{margin:calc(var(--mat-focus-indicator-border-width, 3px)*-1);left:8px;right:8px}.mat-mdc-chip-remove::after{content:"";display:block;opacity:0;position:absolute;top:-3px;bottom:-3px;left:5px;right:5px;border-radius:50%;box-sizing:border-box;padding:12px;margin:-12px;background-clip:content-box}.mat-mdc-chip-remove .mat-icon{width:18px;height:18px;font-size:18px;box-sizing:content-box}.mat-chip-edit-input{cursor:text;display:inline-block;color:inherit;outline:0}@media(forced-colors: active){.mat-mdc-chip-selected:not(.mat-mdc-chip-multiple){outline-width:3px}}.mat-mdc-chip-action:focus .mat-focus-indicator::before{content:""}.mdc-evolution-chip__icon,.mat-mdc-chip-remove .mat-icon{min-height:fit-content}\n'],
+    styles: [
+      '.mdc-evolution-chip,.mdc-evolution-chip__cell,.mdc-evolution-chip__action{display:inline-flex;align-items:center}.mdc-evolution-chip{position:relative;max-width:100%}.mdc-evolution-chip__cell,.mdc-evolution-chip__action{height:100%}.mdc-evolution-chip__cell--primary{flex-basis:100%;overflow-x:hidden}.mdc-evolution-chip__cell--trailing{flex:1 0 auto}.mdc-evolution-chip__action{align-items:center;background:none;border:none;box-sizing:content-box;cursor:pointer;display:inline-flex;justify-content:center;outline:none;padding:0;text-decoration:none;color:inherit}.mdc-evolution-chip__action--presentational{cursor:auto}.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{pointer-events:none}@media(forced-colors: active){.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{forced-color-adjust:none}}.mdc-evolution-chip__action--primary{font:inherit;letter-spacing:inherit;white-space:inherit;overflow-x:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-outline-width, 1px);border-radius:var(--mdc-chip-container-shape-radius, 8px);box-sizing:border-box;content:"";height:100%;left:0;position:absolute;pointer-events:none;top:0;width:100%;z-index:1;border-style:solid}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-outline-color, var(--mat-sys-outline))}.mdc-evolution-chip__action--primary:not(.mdc-evolution-chip__action--presentational):not(.mdc-ripple-upgraded):focus::before{border-color:var(--mdc-chip-focus-outline-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-basic-chip .mdc-evolution-chip__action--primary{font:inherit}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip__action--trailing{position:relative;overflow:visible}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-trailing-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip__text-label{-webkit-user-select:none;user-select:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__text-label{font-family:var(--mdc-chip-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mdc-chip-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mdc-chip-label-text-size, var(--mat-sys-label-large-size));font-weight:var(--mdc-chip-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mdc-chip-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-label-text-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label,.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label{color:var(--mdc-chip-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mdc-evolution-chip__graphic{align-items:center;display:inline-flex;justify-content:center;overflow:hidden;pointer-events:none;position:relative;flex:1 0 auto}.mat-mdc-standard-chip .mdc-evolution-chip__graphic{width:var(--mdc-chip-with-avatar-avatar-size, 24px);height:var(--mdc-chip-with-avatar-avatar-size, 24px);font-size:var(--mdc-chip-with-avatar-avatar-size, 24px)}.mdc-evolution-chip--selecting .mdc-evolution-chip__graphic{transition:width 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selectable:not(.mdc-evolution-chip--selected):not(.mdc-evolution-chip--with-primary-icon) .mdc-evolution-chip__graphic{width:0}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mdc-evolution-chip__checkmark{position:absolute;opacity:0;top:50%;left:50%;height:20px;width:20px}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark{transition:transform 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1);transform:translate(-75%, -50%)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{transform:translate(-50%, -50%);opacity:1}.mdc-evolution-chip__checkmark-svg{display:block}.mdc-evolution-chip__checkmark-path{stroke-width:2px;stroke-dasharray:29.7833385;stroke-dashoffset:29.7833385;stroke:currentColor}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark-path{transition:stroke-dashoffset 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark-path{stroke-dashoffset:0}@media(forced-colors: active){.mdc-evolution-chip__checkmark-path{stroke:CanvasText !important}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--trailing{height:18px;width:18px;font-size:18px}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove{opacity:calc(var(--mat-chip-trailing-action-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove:focus{opacity:calc(var(--mat-chip-trailing-action-focus-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mat-mdc-standard-chip{border-radius:var(--mdc-chip-container-shape-radius, 8px);height:var(--mdc-chip-container-height, 32px)}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-container-color, transparent)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-elevated-disabled-container-color)}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-flat-disabled-selected-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}@media(forced-colors: active){.mat-mdc-standard-chip{outline:solid 1px}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--primary{border-radius:var(--mdc-chip-with-avatar-avatar-shape-radius, 24px);width:var(--mdc-chip-with-icon-icon-size, 18px);height:var(--mdc-chip-with-icon-icon-size, 18px);font-size:var(--mdc-chip-with-icon-icon-size, 18px)}.mdc-evolution-chip--selected .mdc-evolution-chip__icon--primary{opacity:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-highlighted{--mdc-chip-with-icon-icon-color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container));--mdc-chip-elevated-container-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container));--mdc-chip-label-text-color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container));--mdc-chip-outline-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-selected .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-chip:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-hover-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-focus-overlay .mat-mdc-chip-selected:hover,.mat-mdc-chip-highlighted:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-hover-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected.cdk-focused .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-evolution-chip--disabled:not(.mdc-evolution-chip--selected) .mat-mdc-chip-avatar{opacity:var(--mdc-chip-with-avatar-disabled-avatar-opacity, 0.38)}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{opacity:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38)}.mdc-evolution-chip--disabled.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{opacity:var(--mdc-chip-with-icon-disabled-icon-opacity, 0.38)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{opacity:var(--mat-chip-disabled-container-opacity, 1)}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-trailing-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-remove{opacity:var(--mat-chip-trailing-action-opacity, 1)}.mat-mdc-chip-remove:focus{opacity:var(--mat-chip-trailing-action-focus-opacity, 1)}.mat-mdc-chip-remove::after{background-color:var(--mat-chip-trailing-action-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-remove:hover::after{opacity:var(--mat-chip-trailing-action-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-remove:focus::after{opacity:var(--mat-chip-trailing-action-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected .mat-mdc-chip-remove::after,.mat-mdc-chip-highlighted .mat-mdc-chip-remove::after{background-color:var(--mat-chip-selected-trailing-action-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-standard-chip .mdc-evolution-chip__cell--primary,.mat-mdc-standard-chip .mdc-evolution-chip__action--primary,.mat-mdc-standard-chip .mat-mdc-chip-action-label{overflow:visible}.mat-mdc-standard-chip .mat-mdc-chip-graphic,.mat-mdc-standard-chip .mat-mdc-chip-trailing-icon{box-sizing:content-box}.mat-mdc-standard-chip._mat-animation-noopable,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__graphic,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark-path{transition-duration:1ms;animation-duration:1ms}.mat-mdc-chip-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;opacity:0;border-radius:inherit;transition:opacity 150ms linear}._mat-animation-noopable .mat-mdc-chip-focus-overlay{transition:none}.mat-mdc-basic-chip .mat-mdc-chip-focus-overlay{display:none}.mat-mdc-chip .mat-ripple.mat-mdc-chip-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-chip-avatar{text-align:center;line-height:1;color:var(--mdc-chip-with-icon-icon-color, currentColor)}.mat-mdc-chip{position:relative;z-index:0}.mat-mdc-chip-action-label{text-align:left;z-index:1}[dir=rtl] .mat-mdc-chip-action-label{text-align:right}.mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label{position:relative}.mat-mdc-chip-action-label .mat-mdc-chip-primary-focus-indicator{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.mat-mdc-chip-action-label .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-chip-remove::before{margin:calc(var(--mat-focus-indicator-border-width, 3px)*-1);left:8px;right:8px}.mat-mdc-chip-remove::after{content:"";display:block;opacity:0;position:absolute;top:-3px;bottom:-3px;left:5px;right:5px;border-radius:50%;box-sizing:border-box;padding:12px;margin:-12px;background-clip:content-box}.mat-mdc-chip-remove .mat-icon{width:18px;height:18px;font-size:18px;box-sizing:content-box}.mat-chip-edit-input{cursor:text;display:inline-block;color:inherit;outline:0}@media(forced-colors: active){.mat-mdc-chip-selected:not(.mat-mdc-chip-multiple){outline-width:3px}}.mat-mdc-chip-action:focus .mat-focus-indicator::before{content:""}.mdc-evolution-chip__icon,.mat-mdc-chip-remove .mat-icon{min-height:fit-content}\n',
+    ],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChip, [{
-    type: Component,
-    args: [{
-      selector: "mat-basic-chip, [mat-basic-chip], mat-chip, [mat-chip]",
-      exportAs: "matChip",
-      host: {
-        "class": "mat-mdc-chip",
-        "[class]": '"mat-" + (color || "primary")',
-        "[class.mdc-evolution-chip]": "!_isBasicChip",
-        "[class.mdc-evolution-chip--disabled]": "disabled",
-        "[class.mdc-evolution-chip--with-trailing-action]": "_hasTrailingIcon()",
-        "[class.mdc-evolution-chip--with-primary-graphic]": "leadingIcon",
-        "[class.mdc-evolution-chip--with-primary-icon]": "leadingIcon",
-        "[class.mdc-evolution-chip--with-avatar]": "leadingIcon",
-        "[class.mat-mdc-chip-with-avatar]": "leadingIcon",
-        "[class.mat-mdc-chip-highlighted]": "highlighted",
-        "[class.mat-mdc-chip-disabled]": "disabled",
-        "[class.mat-mdc-basic-chip]": "_isBasicChip",
-        "[class.mat-mdc-standard-chip]": "!_isBasicChip",
-        "[class.mat-mdc-chip-with-trailing-icon]": "_hasTrailingIcon()",
-        "[class._mat-animation-noopable]": "_animationsDisabled",
-        "[id]": "id",
-        "[attr.role]": "role",
-        "[attr.aria-label]": "ariaLabel",
-        "(keydown)": "_handleKeydown($event)"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChip,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-basic-chip, [mat-basic-chip], mat-chip, [mat-chip]',
+              exportAs: 'matChip',
+              host: {
+                class: 'mat-mdc-chip',
+                '[class]': '"mat-" + (color || "primary")',
+                '[class.mdc-evolution-chip]': '!_isBasicChip',
+                '[class.mdc-evolution-chip--disabled]': 'disabled',
+                '[class.mdc-evolution-chip--with-trailing-action]': '_hasTrailingIcon()',
+                '[class.mdc-evolution-chip--with-primary-graphic]': 'leadingIcon',
+                '[class.mdc-evolution-chip--with-primary-icon]': 'leadingIcon',
+                '[class.mdc-evolution-chip--with-avatar]': 'leadingIcon',
+                '[class.mat-mdc-chip-with-avatar]': 'leadingIcon',
+                '[class.mat-mdc-chip-highlighted]': 'highlighted',
+                '[class.mat-mdc-chip-disabled]': 'disabled',
+                '[class.mat-mdc-basic-chip]': '_isBasicChip',
+                '[class.mat-mdc-standard-chip]': '!_isBasicChip',
+                '[class.mat-mdc-chip-with-trailing-icon]': '_hasTrailingIcon()',
+                '[class._mat-animation-noopable]': '_animationsDisabled',
+                '[id]': 'id',
+                '[attr.role]': 'role',
+                '[attr.aria-label]': 'ariaLabel',
+                '(keydown)': '_handleKeydown($event)',
+              },
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              providers: [
+                {
+                  provide: MAT_CHIP,
+                  useExisting: MatChip,
+                },
+              ],
+              imports: [MatChipAction],
+              template:
+                '<span class="mat-mdc-chip-focus-overlay"></span>\n\n<span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary">\n  <span matChipAction [isInteractive]="false">\n    @if (leadingIcon) {\n      <span class="mdc-evolution-chip__graphic mat-mdc-chip-graphic">\n        <ng-content select="mat-chip-avatar, [matChipAvatar]"></ng-content>\n      </span>\n    }\n    <span class="mdc-evolution-chip__text-label mat-mdc-chip-action-label">\n      <ng-content></ng-content>\n      <span class="mat-mdc-chip-primary-focus-indicator mat-focus-indicator"></span>\n    </span>\n  </span>\n</span>\n\n@if (_hasTrailingIcon()) {\n  <span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--trailing">\n    <ng-content select="mat-chip-trailing-icon,[matChipRemove],[matChipTrailingIcon]"></ng-content>\n  </span>\n}\n',
+              styles: [
+                '.mdc-evolution-chip,.mdc-evolution-chip__cell,.mdc-evolution-chip__action{display:inline-flex;align-items:center}.mdc-evolution-chip{position:relative;max-width:100%}.mdc-evolution-chip__cell,.mdc-evolution-chip__action{height:100%}.mdc-evolution-chip__cell--primary{flex-basis:100%;overflow-x:hidden}.mdc-evolution-chip__cell--trailing{flex:1 0 auto}.mdc-evolution-chip__action{align-items:center;background:none;border:none;box-sizing:content-box;cursor:pointer;display:inline-flex;justify-content:center;outline:none;padding:0;text-decoration:none;color:inherit}.mdc-evolution-chip__action--presentational{cursor:auto}.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{pointer-events:none}@media(forced-colors: active){.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{forced-color-adjust:none}}.mdc-evolution-chip__action--primary{font:inherit;letter-spacing:inherit;white-space:inherit;overflow-x:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-outline-width, 1px);border-radius:var(--mdc-chip-container-shape-radius, 8px);box-sizing:border-box;content:"";height:100%;left:0;position:absolute;pointer-events:none;top:0;width:100%;z-index:1;border-style:solid}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-outline-color, var(--mat-sys-outline))}.mdc-evolution-chip__action--primary:not(.mdc-evolution-chip__action--presentational):not(.mdc-ripple-upgraded):focus::before{border-color:var(--mdc-chip-focus-outline-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-basic-chip .mdc-evolution-chip__action--primary{font:inherit}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip__action--trailing{position:relative;overflow:visible}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-trailing-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip__text-label{-webkit-user-select:none;user-select:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__text-label{font-family:var(--mdc-chip-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mdc-chip-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mdc-chip-label-text-size, var(--mat-sys-label-large-size));font-weight:var(--mdc-chip-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mdc-chip-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-label-text-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label,.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label{color:var(--mdc-chip-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mdc-evolution-chip__graphic{align-items:center;display:inline-flex;justify-content:center;overflow:hidden;pointer-events:none;position:relative;flex:1 0 auto}.mat-mdc-standard-chip .mdc-evolution-chip__graphic{width:var(--mdc-chip-with-avatar-avatar-size, 24px);height:var(--mdc-chip-with-avatar-avatar-size, 24px);font-size:var(--mdc-chip-with-avatar-avatar-size, 24px)}.mdc-evolution-chip--selecting .mdc-evolution-chip__graphic{transition:width 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selectable:not(.mdc-evolution-chip--selected):not(.mdc-evolution-chip--with-primary-icon) .mdc-evolution-chip__graphic{width:0}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mdc-evolution-chip__checkmark{position:absolute;opacity:0;top:50%;left:50%;height:20px;width:20px}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark{transition:transform 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1);transform:translate(-75%, -50%)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{transform:translate(-50%, -50%);opacity:1}.mdc-evolution-chip__checkmark-svg{display:block}.mdc-evolution-chip__checkmark-path{stroke-width:2px;stroke-dasharray:29.7833385;stroke-dashoffset:29.7833385;stroke:currentColor}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark-path{transition:stroke-dashoffset 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark-path{stroke-dashoffset:0}@media(forced-colors: active){.mdc-evolution-chip__checkmark-path{stroke:CanvasText !important}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--trailing{height:18px;width:18px;font-size:18px}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove{opacity:calc(var(--mat-chip-trailing-action-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove:focus{opacity:calc(var(--mat-chip-trailing-action-focus-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mat-mdc-standard-chip{border-radius:var(--mdc-chip-container-shape-radius, 8px);height:var(--mdc-chip-container-height, 32px)}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-container-color, transparent)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-elevated-disabled-container-color)}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-flat-disabled-selected-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}@media(forced-colors: active){.mat-mdc-standard-chip{outline:solid 1px}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--primary{border-radius:var(--mdc-chip-with-avatar-avatar-shape-radius, 24px);width:var(--mdc-chip-with-icon-icon-size, 18px);height:var(--mdc-chip-with-icon-icon-size, 18px);font-size:var(--mdc-chip-with-icon-icon-size, 18px)}.mdc-evolution-chip--selected .mdc-evolution-chip__icon--primary{opacity:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-highlighted{--mdc-chip-with-icon-icon-color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container));--mdc-chip-elevated-container-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container));--mdc-chip-label-text-color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container));--mdc-chip-outline-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-selected .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-chip:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-hover-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-focus-overlay .mat-mdc-chip-selected:hover,.mat-mdc-chip-highlighted:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-hover-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected.cdk-focused .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-evolution-chip--disabled:not(.mdc-evolution-chip--selected) .mat-mdc-chip-avatar{opacity:var(--mdc-chip-with-avatar-disabled-avatar-opacity, 0.38)}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{opacity:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38)}.mdc-evolution-chip--disabled.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{opacity:var(--mdc-chip-with-icon-disabled-icon-opacity, 0.38)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{opacity:var(--mat-chip-disabled-container-opacity, 1)}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-trailing-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-remove{opacity:var(--mat-chip-trailing-action-opacity, 1)}.mat-mdc-chip-remove:focus{opacity:var(--mat-chip-trailing-action-focus-opacity, 1)}.mat-mdc-chip-remove::after{background-color:var(--mat-chip-trailing-action-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-remove:hover::after{opacity:var(--mat-chip-trailing-action-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-remove:focus::after{opacity:var(--mat-chip-trailing-action-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected .mat-mdc-chip-remove::after,.mat-mdc-chip-highlighted .mat-mdc-chip-remove::after{background-color:var(--mat-chip-selected-trailing-action-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-standard-chip .mdc-evolution-chip__cell--primary,.mat-mdc-standard-chip .mdc-evolution-chip__action--primary,.mat-mdc-standard-chip .mat-mdc-chip-action-label{overflow:visible}.mat-mdc-standard-chip .mat-mdc-chip-graphic,.mat-mdc-standard-chip .mat-mdc-chip-trailing-icon{box-sizing:content-box}.mat-mdc-standard-chip._mat-animation-noopable,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__graphic,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark-path{transition-duration:1ms;animation-duration:1ms}.mat-mdc-chip-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;opacity:0;border-radius:inherit;transition:opacity 150ms linear}._mat-animation-noopable .mat-mdc-chip-focus-overlay{transition:none}.mat-mdc-basic-chip .mat-mdc-chip-focus-overlay{display:none}.mat-mdc-chip .mat-ripple.mat-mdc-chip-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-chip-avatar{text-align:center;line-height:1;color:var(--mdc-chip-with-icon-icon-color, currentColor)}.mat-mdc-chip{position:relative;z-index:0}.mat-mdc-chip-action-label{text-align:left;z-index:1}[dir=rtl] .mat-mdc-chip-action-label{text-align:right}.mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label{position:relative}.mat-mdc-chip-action-label .mat-mdc-chip-primary-focus-indicator{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.mat-mdc-chip-action-label .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-chip-remove::before{margin:calc(var(--mat-focus-indicator-border-width, 3px)*-1);left:8px;right:8px}.mat-mdc-chip-remove::after{content:"";display:block;opacity:0;position:absolute;top:-3px;bottom:-3px;left:5px;right:5px;border-radius:50%;box-sizing:border-box;padding:12px;margin:-12px;background-clip:content-box}.mat-mdc-chip-remove .mat-icon{width:18px;height:18px;font-size:18px;box-sizing:content-box}.mat-chip-edit-input{cursor:text;display:inline-block;color:inherit;outline:0}@media(forced-colors: active){.mat-mdc-chip-selected:not(.mat-mdc-chip-multiple){outline-width:3px}}.mat-mdc-chip-action:focus .mat-focus-indicator::before{content:""}.mdc-evolution-chip__icon,.mat-mdc-chip-remove .mat-icon{min-height:fit-content}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        role: [
+          {
+            type: Input,
+          },
+        ],
+        _allLeadingIcons: [
+          {
+            type: ContentChildren,
+            args: [
+              MAT_CHIP_AVATAR,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        _allTrailingIcons: [
+          {
+            type: ContentChildren,
+            args: [
+              MAT_CHIP_TRAILING_ICON,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        _allRemoveIcons: [
+          {
+            type: ContentChildren,
+            args: [
+              MAT_CHIP_REMOVE,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        id: [
+          {
+            type: Input,
+          },
+        ],
+        ariaLabel: [
+          {
+            type: Input,
+            args: ['aria-label'],
+          },
+        ],
+        ariaDescription: [
+          {
+            type: Input,
+            args: ['aria-description'],
+          },
+        ],
+        value: [
+          {
+            type: Input,
+          },
+        ],
+        color: [
+          {
+            type: Input,
+          },
+        ],
+        removable: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        highlighted: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        disableRipple: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        removed: [
+          {
+            type: Output,
+          },
+        ],
+        destroyed: [
+          {
+            type: Output,
+          },
+        ],
+        leadingIcon: [
+          {
+            type: ContentChild,
+            args: [MAT_CHIP_AVATAR],
+          },
+        ],
+        trailingIcon: [
+          {
+            type: ContentChild,
+            args: [MAT_CHIP_TRAILING_ICON],
+          },
+        ],
+        removeIcon: [
+          {
+            type: ContentChild,
+            args: [MAT_CHIP_REMOVE],
+          },
+        ],
+        primaryAction: [
+          {
+            type: ViewChild,
+            args: [MatChipAction],
+          },
+        ],
       },
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      providers: [{
-        provide: MAT_CHIP,
-        useExisting: MatChip
-      }],
-      imports: [MatChipAction],
-      template: '<span class="mat-mdc-chip-focus-overlay"></span>\n\n<span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary">\n  <span matChipAction [isInteractive]="false">\n    @if (leadingIcon) {\n      <span class="mdc-evolution-chip__graphic mat-mdc-chip-graphic">\n        <ng-content select="mat-chip-avatar, [matChipAvatar]"></ng-content>\n      </span>\n    }\n    <span class="mdc-evolution-chip__text-label mat-mdc-chip-action-label">\n      <ng-content></ng-content>\n      <span class="mat-mdc-chip-primary-focus-indicator mat-focus-indicator"></span>\n    </span>\n  </span>\n</span>\n\n@if (_hasTrailingIcon()) {\n  <span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--trailing">\n    <ng-content select="mat-chip-trailing-icon,[matChipRemove],[matChipTrailingIcon]"></ng-content>\n  </span>\n}\n',
-      styles: ['.mdc-evolution-chip,.mdc-evolution-chip__cell,.mdc-evolution-chip__action{display:inline-flex;align-items:center}.mdc-evolution-chip{position:relative;max-width:100%}.mdc-evolution-chip__cell,.mdc-evolution-chip__action{height:100%}.mdc-evolution-chip__cell--primary{flex-basis:100%;overflow-x:hidden}.mdc-evolution-chip__cell--trailing{flex:1 0 auto}.mdc-evolution-chip__action{align-items:center;background:none;border:none;box-sizing:content-box;cursor:pointer;display:inline-flex;justify-content:center;outline:none;padding:0;text-decoration:none;color:inherit}.mdc-evolution-chip__action--presentational{cursor:auto}.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{pointer-events:none}@media(forced-colors: active){.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{forced-color-adjust:none}}.mdc-evolution-chip__action--primary{font:inherit;letter-spacing:inherit;white-space:inherit;overflow-x:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-outline-width, 1px);border-radius:var(--mdc-chip-container-shape-radius, 8px);box-sizing:border-box;content:"";height:100%;left:0;position:absolute;pointer-events:none;top:0;width:100%;z-index:1;border-style:solid}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-outline-color, var(--mat-sys-outline))}.mdc-evolution-chip__action--primary:not(.mdc-evolution-chip__action--presentational):not(.mdc-ripple-upgraded):focus::before{border-color:var(--mdc-chip-focus-outline-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-basic-chip .mdc-evolution-chip__action--primary{font:inherit}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip__action--trailing{position:relative;overflow:visible}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-trailing-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip__text-label{-webkit-user-select:none;user-select:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__text-label{font-family:var(--mdc-chip-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mdc-chip-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mdc-chip-label-text-size, var(--mat-sys-label-large-size));font-weight:var(--mdc-chip-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mdc-chip-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-label-text-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label,.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label{color:var(--mdc-chip-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mdc-evolution-chip__graphic{align-items:center;display:inline-flex;justify-content:center;overflow:hidden;pointer-events:none;position:relative;flex:1 0 auto}.mat-mdc-standard-chip .mdc-evolution-chip__graphic{width:var(--mdc-chip-with-avatar-avatar-size, 24px);height:var(--mdc-chip-with-avatar-avatar-size, 24px);font-size:var(--mdc-chip-with-avatar-avatar-size, 24px)}.mdc-evolution-chip--selecting .mdc-evolution-chip__graphic{transition:width 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selectable:not(.mdc-evolution-chip--selected):not(.mdc-evolution-chip--with-primary-icon) .mdc-evolution-chip__graphic{width:0}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mdc-evolution-chip__checkmark{position:absolute;opacity:0;top:50%;left:50%;height:20px;width:20px}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark{transition:transform 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1);transform:translate(-75%, -50%)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{transform:translate(-50%, -50%);opacity:1}.mdc-evolution-chip__checkmark-svg{display:block}.mdc-evolution-chip__checkmark-path{stroke-width:2px;stroke-dasharray:29.7833385;stroke-dashoffset:29.7833385;stroke:currentColor}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark-path{transition:stroke-dashoffset 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark-path{stroke-dashoffset:0}@media(forced-colors: active){.mdc-evolution-chip__checkmark-path{stroke:CanvasText !important}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--trailing{height:18px;width:18px;font-size:18px}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove{opacity:calc(var(--mat-chip-trailing-action-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove:focus{opacity:calc(var(--mat-chip-trailing-action-focus-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mat-mdc-standard-chip{border-radius:var(--mdc-chip-container-shape-radius, 8px);height:var(--mdc-chip-container-height, 32px)}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-container-color, transparent)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-elevated-disabled-container-color)}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-flat-disabled-selected-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}@media(forced-colors: active){.mat-mdc-standard-chip{outline:solid 1px}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--primary{border-radius:var(--mdc-chip-with-avatar-avatar-shape-radius, 24px);width:var(--mdc-chip-with-icon-icon-size, 18px);height:var(--mdc-chip-with-icon-icon-size, 18px);font-size:var(--mdc-chip-with-icon-icon-size, 18px)}.mdc-evolution-chip--selected .mdc-evolution-chip__icon--primary{opacity:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-highlighted{--mdc-chip-with-icon-icon-color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container));--mdc-chip-elevated-container-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container));--mdc-chip-label-text-color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container));--mdc-chip-outline-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-selected .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-chip:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-hover-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-focus-overlay .mat-mdc-chip-selected:hover,.mat-mdc-chip-highlighted:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-hover-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected.cdk-focused .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-evolution-chip--disabled:not(.mdc-evolution-chip--selected) .mat-mdc-chip-avatar{opacity:var(--mdc-chip-with-avatar-disabled-avatar-opacity, 0.38)}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{opacity:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38)}.mdc-evolution-chip--disabled.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{opacity:var(--mdc-chip-with-icon-disabled-icon-opacity, 0.38)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{opacity:var(--mat-chip-disabled-container-opacity, 1)}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-trailing-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-remove{opacity:var(--mat-chip-trailing-action-opacity, 1)}.mat-mdc-chip-remove:focus{opacity:var(--mat-chip-trailing-action-focus-opacity, 1)}.mat-mdc-chip-remove::after{background-color:var(--mat-chip-trailing-action-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-remove:hover::after{opacity:var(--mat-chip-trailing-action-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-remove:focus::after{opacity:var(--mat-chip-trailing-action-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected .mat-mdc-chip-remove::after,.mat-mdc-chip-highlighted .mat-mdc-chip-remove::after{background-color:var(--mat-chip-selected-trailing-action-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-standard-chip .mdc-evolution-chip__cell--primary,.mat-mdc-standard-chip .mdc-evolution-chip__action--primary,.mat-mdc-standard-chip .mat-mdc-chip-action-label{overflow:visible}.mat-mdc-standard-chip .mat-mdc-chip-graphic,.mat-mdc-standard-chip .mat-mdc-chip-trailing-icon{box-sizing:content-box}.mat-mdc-standard-chip._mat-animation-noopable,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__graphic,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark-path{transition-duration:1ms;animation-duration:1ms}.mat-mdc-chip-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;opacity:0;border-radius:inherit;transition:opacity 150ms linear}._mat-animation-noopable .mat-mdc-chip-focus-overlay{transition:none}.mat-mdc-basic-chip .mat-mdc-chip-focus-overlay{display:none}.mat-mdc-chip .mat-ripple.mat-mdc-chip-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-chip-avatar{text-align:center;line-height:1;color:var(--mdc-chip-with-icon-icon-color, currentColor)}.mat-mdc-chip{position:relative;z-index:0}.mat-mdc-chip-action-label{text-align:left;z-index:1}[dir=rtl] .mat-mdc-chip-action-label{text-align:right}.mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label{position:relative}.mat-mdc-chip-action-label .mat-mdc-chip-primary-focus-indicator{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.mat-mdc-chip-action-label .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-chip-remove::before{margin:calc(var(--mat-focus-indicator-border-width, 3px)*-1);left:8px;right:8px}.mat-mdc-chip-remove::after{content:"";display:block;opacity:0;position:absolute;top:-3px;bottom:-3px;left:5px;right:5px;border-radius:50%;box-sizing:border-box;padding:12px;margin:-12px;background-clip:content-box}.mat-mdc-chip-remove .mat-icon{width:18px;height:18px;font-size:18px;box-sizing:content-box}.mat-chip-edit-input{cursor:text;display:inline-block;color:inherit;outline:0}@media(forced-colors: active){.mat-mdc-chip-selected:not(.mat-mdc-chip-multiple){outline-width:3px}}.mat-mdc-chip-action:focus .mat-focus-indicator::before{content:""}.mdc-evolution-chip__icon,.mat-mdc-chip-remove .mat-icon{min-height:fit-content}\n']
-    }]
-  }], () => [], {
-    role: [{
-      type: Input
-    }],
-    _allLeadingIcons: [{
-      type: ContentChildren,
-      args: [MAT_CHIP_AVATAR, {
-        descendants: true
-      }]
-    }],
-    _allTrailingIcons: [{
-      type: ContentChildren,
-      args: [MAT_CHIP_TRAILING_ICON, {
-        descendants: true
-      }]
-    }],
-    _allRemoveIcons: [{
-      type: ContentChildren,
-      args: [MAT_CHIP_REMOVE, {
-        descendants: true
-      }]
-    }],
-    id: [{
-      type: Input
-    }],
-    ariaLabel: [{
-      type: Input,
-      args: ["aria-label"]
-    }],
-    ariaDescription: [{
-      type: Input,
-      args: ["aria-description"]
-    }],
-    value: [{
-      type: Input
-    }],
-    color: [{
-      type: Input
-    }],
-    removable: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    highlighted: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    disableRipple: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    removed: [{
-      type: Output
-    }],
-    destroyed: [{
-      type: Output
-    }],
-    leadingIcon: [{
-      type: ContentChild,
-      args: [MAT_CHIP_AVATAR]
-    }],
-    trailingIcon: [{
-      type: ContentChild,
-      args: [MAT_CHIP_TRAILING_ICON]
-    }],
-    removeIcon: [{
-      type: ContentChild,
-      args: [MAT_CHIP_REMOVE]
-    }],
-    primaryAction: [{
-      type: ViewChild,
-      args: [MatChipAction]
-    }]
-  });
+    );
 })();
 var MatChipSelectionChange = class {
   source;
@@ -933,7 +1148,7 @@ var MatChipSelectionChange = class {
 var MatChipOption = class _MatChipOption extends MatChip {
   /** Default chip options. */
   _defaultOptions = inject(MAT_CHIPS_DEFAULT_OPTIONS, {
-    optional: true
+    optional: true,
   });
   /** Whether the chip list is selectable. */
   chipListSelectable = true;
@@ -981,12 +1196,12 @@ var MatChipOption = class _MatChipOption extends MatChip {
     return this.selectable ? this.selected.toString() : null;
   }
   /** The unstyled chip selector for this component. */
-  basicChipAttrName = "mat-basic-chip-option";
+  basicChipAttrName = 'mat-basic-chip-option';
   /** Emitted when the chip is selected or deselected. */
   selectionChange = new EventEmitter();
   ngOnInit() {
     super.ngOnInit();
-    this.role = "presentation";
+    this.role = 'presentation';
   }
   /** Selects the chip. */
   select() {
@@ -1026,7 +1241,7 @@ var MatChipOption = class _MatChipOption extends MatChip {
         this.selectionChange.emit({
           source: this,
           isUserInput,
-          selected: this.selected
+          selected: this.selected,
         });
       }
       this._changeDetectorRef.markForCheck();
@@ -1035,64 +1250,119 @@ var MatChipOption = class _MatChipOption extends MatChip {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatChipOption_BaseFactory;
     return function MatChipOption_Factory(__ngFactoryType__) {
-      return (ɵMatChipOption_BaseFactory || (ɵMatChipOption_BaseFactory = ɵɵgetInheritedFactory(_MatChipOption)))(__ngFactoryType__ || _MatChipOption);
+      return (ɵMatChipOption_BaseFactory || (ɵMatChipOption_BaseFactory = ɵɵgetInheritedFactory(_MatChipOption)))(
+        __ngFactoryType__ || _MatChipOption,
+      );
     };
   })();
   static ɵcmp = ɵɵdefineComponent({
     type: _MatChipOption,
-    selectors: [["mat-basic-chip-option"], ["", "mat-basic-chip-option", ""], ["mat-chip-option"], ["", "mat-chip-option", ""]],
-    hostAttrs: [1, "mat-mdc-chip", "mat-mdc-chip-option"],
+    selectors: [
+      ['mat-basic-chip-option'],
+      ['', 'mat-basic-chip-option', ''],
+      ['mat-chip-option'],
+      ['', 'mat-chip-option', ''],
+    ],
+    hostAttrs: [1, 'mat-mdc-chip', 'mat-mdc-chip-option'],
     hostVars: 37,
     hostBindings: function MatChipOption_HostBindings(rf, ctx) {
       if (rf & 2) {
-        ɵɵhostProperty("id", ctx.id);
-        ɵɵattribute("tabindex", null)("aria-label", null)("aria-description", null)("role", ctx.role);
-        ɵɵclassProp("mdc-evolution-chip", !ctx._isBasicChip)("mdc-evolution-chip--filter", !ctx._isBasicChip)("mdc-evolution-chip--selectable", !ctx._isBasicChip)("mat-mdc-chip-selected", ctx.selected)("mat-mdc-chip-multiple", ctx._chipListMultiple)("mat-mdc-chip-disabled", ctx.disabled)("mat-mdc-chip-with-avatar", ctx.leadingIcon)("mdc-evolution-chip--disabled", ctx.disabled)("mdc-evolution-chip--selected", ctx.selected)("mdc-evolution-chip--selecting", !ctx._animationsDisabled)("mdc-evolution-chip--with-trailing-action", ctx._hasTrailingIcon())("mdc-evolution-chip--with-primary-icon", ctx.leadingIcon)("mdc-evolution-chip--with-primary-graphic", ctx._hasLeadingGraphic())("mdc-evolution-chip--with-avatar", ctx.leadingIcon)("mat-mdc-chip-highlighted", ctx.highlighted)("mat-mdc-chip-with-trailing-icon", ctx._hasTrailingIcon());
+        ɵɵhostProperty('id', ctx.id);
+        ɵɵattribute('tabindex', null)('aria-label', null)('aria-description', null)('role', ctx.role);
+        ɵɵclassProp('mdc-evolution-chip', !ctx._isBasicChip)('mdc-evolution-chip--filter', !ctx._isBasicChip)(
+          'mdc-evolution-chip--selectable',
+          !ctx._isBasicChip,
+        )('mat-mdc-chip-selected', ctx.selected)('mat-mdc-chip-multiple', ctx._chipListMultiple)(
+          'mat-mdc-chip-disabled',
+          ctx.disabled,
+        )('mat-mdc-chip-with-avatar', ctx.leadingIcon)('mdc-evolution-chip--disabled', ctx.disabled)(
+          'mdc-evolution-chip--selected',
+          ctx.selected,
+        )('mdc-evolution-chip--selecting', !ctx._animationsDisabled)(
+          'mdc-evolution-chip--with-trailing-action',
+          ctx._hasTrailingIcon(),
+        )('mdc-evolution-chip--with-primary-icon', ctx.leadingIcon)(
+          'mdc-evolution-chip--with-primary-graphic',
+          ctx._hasLeadingGraphic(),
+        )('mdc-evolution-chip--with-avatar', ctx.leadingIcon)('mat-mdc-chip-highlighted', ctx.highlighted)(
+          'mat-mdc-chip-with-trailing-icon',
+          ctx._hasTrailingIcon(),
+        );
       }
     },
     inputs: {
-      selectable: [2, "selectable", "selectable", booleanAttribute],
-      selected: [2, "selected", "selected", booleanAttribute]
+      selectable: [2, 'selectable', 'selectable', booleanAttribute],
+      selected: [2, 'selected', 'selected', booleanAttribute],
     },
     outputs: {
-      selectionChange: "selectionChange"
+      selectionChange: 'selectionChange',
     },
-    features: [ɵɵProvidersFeature([{
-      provide: MatChip,
-      useExisting: _MatChipOption
-    }, {
-      provide: MAT_CHIP,
-      useExisting: _MatChipOption
-    }]), ɵɵInheritDefinitionFeature],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MatChip,
+          useExisting: _MatChipOption,
+        },
+        {
+          provide: MAT_CHIP,
+          useExisting: _MatChipOption,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
     ngContentSelectors: _c1,
     decls: 10,
     vars: 8,
-    consts: [[1, "mat-mdc-chip-focus-overlay"], [1, "mdc-evolution-chip__cell", "mdc-evolution-chip__cell--primary"], ["matChipAction", "", "role", "option", 3, "_allowFocusWhenDisabled"], [1, "mdc-evolution-chip__graphic", "mat-mdc-chip-graphic"], [1, "mdc-evolution-chip__text-label", "mat-mdc-chip-action-label"], [1, "mat-mdc-chip-primary-focus-indicator", "mat-focus-indicator"], [1, "mdc-evolution-chip__cell", "mdc-evolution-chip__cell--trailing"], [1, "cdk-visually-hidden", 3, "id"], [1, "mdc-evolution-chip__checkmark"], ["viewBox", "-2 -3 30 30", "focusable", "false", "aria-hidden", "true", 1, "mdc-evolution-chip__checkmark-svg"], ["fill", "none", "stroke", "currentColor", "d", "M1.73,12.91 8.1,19.28 22.79,4.59", 1, "mdc-evolution-chip__checkmark-path"]],
+    consts: [
+      [1, 'mat-mdc-chip-focus-overlay'],
+      [1, 'mdc-evolution-chip__cell', 'mdc-evolution-chip__cell--primary'],
+      ['matChipAction', '', 'role', 'option', 3, '_allowFocusWhenDisabled'],
+      [1, 'mdc-evolution-chip__graphic', 'mat-mdc-chip-graphic'],
+      [1, 'mdc-evolution-chip__text-label', 'mat-mdc-chip-action-label'],
+      [1, 'mat-mdc-chip-primary-focus-indicator', 'mat-focus-indicator'],
+      [1, 'mdc-evolution-chip__cell', 'mdc-evolution-chip__cell--trailing'],
+      [1, 'cdk-visually-hidden', 3, 'id'],
+      [1, 'mdc-evolution-chip__checkmark'],
+      ['viewBox', '-2 -3 30 30', 'focusable', 'false', 'aria-hidden', 'true', 1, 'mdc-evolution-chip__checkmark-svg'],
+      [
+        'fill',
+        'none',
+        'stroke',
+        'currentColor',
+        'd',
+        'M1.73,12.91 8.1,19.28 22.79,4.59',
+        1,
+        'mdc-evolution-chip__checkmark-path',
+      ],
+    ],
     template: function MatChipOption_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef(_c0);
-        ɵɵelement(0, "span", 0);
-        ɵɵelementStart(1, "span", 1)(2, "button", 2);
-        ɵɵtemplate(3, MatChipOption_Conditional_3_Template, 5, 0, "span", 3);
-        ɵɵelementStart(4, "span", 4);
+        ɵɵelement(0, 'span', 0);
+        ɵɵelementStart(1, 'span', 1)(2, 'button', 2);
+        ɵɵtemplate(3, MatChipOption_Conditional_3_Template, 5, 0, 'span', 3);
+        ɵɵelementStart(4, 'span', 4);
         ɵɵprojection(5);
-        ɵɵelement(6, "span", 5);
+        ɵɵelement(6, 'span', 5);
         ɵɵelementEnd()()();
-        ɵɵtemplate(7, MatChipOption_Conditional_7_Template, 2, 0, "span", 6);
-        ɵɵelementStart(8, "span", 7);
+        ɵɵtemplate(7, MatChipOption_Conditional_7_Template, 2, 0, 'span', 6);
+        ɵɵelementStart(8, 'span', 7);
         ɵɵtext(9);
         ɵɵelementEnd();
       }
       if (rf & 2) {
         ɵɵadvance(2);
-        ɵɵproperty("_allowFocusWhenDisabled", true);
-        ɵɵattribute("aria-selected", ctx.ariaSelected)("aria-label", ctx.ariaLabel)("aria-describedby", ctx._ariaDescriptionId);
+        ɵɵproperty('_allowFocusWhenDisabled', true);
+        ɵɵattribute('aria-selected', ctx.ariaSelected)('aria-label', ctx.ariaLabel)(
+          'aria-describedby',
+          ctx._ariaDescriptionId,
+        );
         ɵɵadvance();
         ɵɵconditional(ctx._hasLeadingGraphic() ? 3 : -1);
         ɵɵadvance(4);
         ɵɵconditional(ctx._hasTrailingIcon() ? 7 : -1);
         ɵɵadvance();
-        ɵɵproperty("id", ctx._ariaDescriptionId);
+        ɵɵproperty('id', ctx._ariaDescriptionId);
         ɵɵadvance();
         ɵɵtextInterpolate(ctx.ariaDescription);
       }
@@ -1100,78 +1370,103 @@ var MatChipOption = class _MatChipOption extends MatChip {
     dependencies: [MatChipAction],
     styles: [_c2],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipOption, [{
-    type: Component,
-    args: [{
-      selector: "mat-basic-chip-option, [mat-basic-chip-option], mat-chip-option, [mat-chip-option]",
-      host: {
-        "class": "mat-mdc-chip mat-mdc-chip-option",
-        "[class.mdc-evolution-chip]": "!_isBasicChip",
-        "[class.mdc-evolution-chip--filter]": "!_isBasicChip",
-        "[class.mdc-evolution-chip--selectable]": "!_isBasicChip",
-        "[class.mat-mdc-chip-selected]": "selected",
-        "[class.mat-mdc-chip-multiple]": "_chipListMultiple",
-        "[class.mat-mdc-chip-disabled]": "disabled",
-        "[class.mat-mdc-chip-with-avatar]": "leadingIcon",
-        "[class.mdc-evolution-chip--disabled]": "disabled",
-        "[class.mdc-evolution-chip--selected]": "selected",
-        // This class enables the transition on the checkmark. Usually MDC adds it when selection
-        // starts and removes it once the animation is finished. We don't need to go through all
-        // the trouble, because we only care about the selection animation. MDC needs to do it,
-        // because they also have an exit animation that we don't care about.
-        "[class.mdc-evolution-chip--selecting]": "!_animationsDisabled",
-        "[class.mdc-evolution-chip--with-trailing-action]": "_hasTrailingIcon()",
-        "[class.mdc-evolution-chip--with-primary-icon]": "leadingIcon",
-        "[class.mdc-evolution-chip--with-primary-graphic]": "_hasLeadingGraphic()",
-        "[class.mdc-evolution-chip--with-avatar]": "leadingIcon",
-        "[class.mat-mdc-chip-highlighted]": "highlighted",
-        "[class.mat-mdc-chip-with-trailing-icon]": "_hasTrailingIcon()",
-        "[attr.tabindex]": "null",
-        "[attr.aria-label]": "null",
-        "[attr.aria-description]": "null",
-        "[attr.role]": "role",
-        "[id]": "id"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipOption,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-basic-chip-option, [mat-basic-chip-option], mat-chip-option, [mat-chip-option]',
+              host: {
+                class: 'mat-mdc-chip mat-mdc-chip-option',
+                '[class.mdc-evolution-chip]': '!_isBasicChip',
+                '[class.mdc-evolution-chip--filter]': '!_isBasicChip',
+                '[class.mdc-evolution-chip--selectable]': '!_isBasicChip',
+                '[class.mat-mdc-chip-selected]': 'selected',
+                '[class.mat-mdc-chip-multiple]': '_chipListMultiple',
+                '[class.mat-mdc-chip-disabled]': 'disabled',
+                '[class.mat-mdc-chip-with-avatar]': 'leadingIcon',
+                '[class.mdc-evolution-chip--disabled]': 'disabled',
+                '[class.mdc-evolution-chip--selected]': 'selected',
+                // This class enables the transition on the checkmark. Usually MDC adds it when selection
+                // starts and removes it once the animation is finished. We don't need to go through all
+                // the trouble, because we only care about the selection animation. MDC needs to do it,
+                // because they also have an exit animation that we don't care about.
+                '[class.mdc-evolution-chip--selecting]': '!_animationsDisabled',
+                '[class.mdc-evolution-chip--with-trailing-action]': '_hasTrailingIcon()',
+                '[class.mdc-evolution-chip--with-primary-icon]': 'leadingIcon',
+                '[class.mdc-evolution-chip--with-primary-graphic]': '_hasLeadingGraphic()',
+                '[class.mdc-evolution-chip--with-avatar]': 'leadingIcon',
+                '[class.mat-mdc-chip-highlighted]': 'highlighted',
+                '[class.mat-mdc-chip-with-trailing-icon]': '_hasTrailingIcon()',
+                '[attr.tabindex]': 'null',
+                '[attr.aria-label]': 'null',
+                '[attr.aria-description]': 'null',
+                '[attr.role]': 'role',
+                '[id]': 'id',
+              },
+              providers: [
+                {
+                  provide: MatChip,
+                  useExisting: MatChipOption,
+                },
+                {
+                  provide: MAT_CHIP,
+                  useExisting: MatChipOption,
+                },
+              ],
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              imports: [MatChipAction],
+              template:
+                '<span class="mat-mdc-chip-focus-overlay"></span>\n\n<span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary">\n  <button\n    matChipAction\n    [_allowFocusWhenDisabled]="true"\n    [attr.aria-selected]="ariaSelected"\n    [attr.aria-label]="ariaLabel"\n    [attr.aria-describedby]="_ariaDescriptionId"\n    role="option">\n    @if (_hasLeadingGraphic()) {\n      <span class="mdc-evolution-chip__graphic mat-mdc-chip-graphic">\n        <ng-content select="mat-chip-avatar, [matChipAvatar]"></ng-content>\n        <span class="mdc-evolution-chip__checkmark">\n          <svg\n            class="mdc-evolution-chip__checkmark-svg"\n            viewBox="-2 -3 30 30"\n            focusable="false"\n            aria-hidden="true">\n            <path class="mdc-evolution-chip__checkmark-path"\n                  fill="none" stroke="currentColor" d="M1.73,12.91 8.1,19.28 22.79,4.59" />\n          </svg>\n        </span>\n      </span>\n    }\n    <span class="mdc-evolution-chip__text-label mat-mdc-chip-action-label">\n      <ng-content></ng-content>\n      <span class="mat-mdc-chip-primary-focus-indicator mat-focus-indicator"></span>\n    </span>\n  </button>\n</span>\n\n@if (_hasTrailingIcon()) {\n  <span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--trailing">\n    <ng-content select="mat-chip-trailing-icon,[matChipRemove],[matChipTrailingIcon]"></ng-content>\n  </span>\n}\n\n<span class="cdk-visually-hidden" [id]="_ariaDescriptionId">{{ariaDescription}}</span>\n',
+              styles: [
+                '.mdc-evolution-chip,.mdc-evolution-chip__cell,.mdc-evolution-chip__action{display:inline-flex;align-items:center}.mdc-evolution-chip{position:relative;max-width:100%}.mdc-evolution-chip__cell,.mdc-evolution-chip__action{height:100%}.mdc-evolution-chip__cell--primary{flex-basis:100%;overflow-x:hidden}.mdc-evolution-chip__cell--trailing{flex:1 0 auto}.mdc-evolution-chip__action{align-items:center;background:none;border:none;box-sizing:content-box;cursor:pointer;display:inline-flex;justify-content:center;outline:none;padding:0;text-decoration:none;color:inherit}.mdc-evolution-chip__action--presentational{cursor:auto}.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{pointer-events:none}@media(forced-colors: active){.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{forced-color-adjust:none}}.mdc-evolution-chip__action--primary{font:inherit;letter-spacing:inherit;white-space:inherit;overflow-x:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-outline-width, 1px);border-radius:var(--mdc-chip-container-shape-radius, 8px);box-sizing:border-box;content:"";height:100%;left:0;position:absolute;pointer-events:none;top:0;width:100%;z-index:1;border-style:solid}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-outline-color, var(--mat-sys-outline))}.mdc-evolution-chip__action--primary:not(.mdc-evolution-chip__action--presentational):not(.mdc-ripple-upgraded):focus::before{border-color:var(--mdc-chip-focus-outline-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-basic-chip .mdc-evolution-chip__action--primary{font:inherit}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip__action--trailing{position:relative;overflow:visible}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-trailing-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip__text-label{-webkit-user-select:none;user-select:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__text-label{font-family:var(--mdc-chip-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mdc-chip-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mdc-chip-label-text-size, var(--mat-sys-label-large-size));font-weight:var(--mdc-chip-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mdc-chip-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-label-text-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label,.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label{color:var(--mdc-chip-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mdc-evolution-chip__graphic{align-items:center;display:inline-flex;justify-content:center;overflow:hidden;pointer-events:none;position:relative;flex:1 0 auto}.mat-mdc-standard-chip .mdc-evolution-chip__graphic{width:var(--mdc-chip-with-avatar-avatar-size, 24px);height:var(--mdc-chip-with-avatar-avatar-size, 24px);font-size:var(--mdc-chip-with-avatar-avatar-size, 24px)}.mdc-evolution-chip--selecting .mdc-evolution-chip__graphic{transition:width 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selectable:not(.mdc-evolution-chip--selected):not(.mdc-evolution-chip--with-primary-icon) .mdc-evolution-chip__graphic{width:0}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mdc-evolution-chip__checkmark{position:absolute;opacity:0;top:50%;left:50%;height:20px;width:20px}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark{transition:transform 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1);transform:translate(-75%, -50%)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{transform:translate(-50%, -50%);opacity:1}.mdc-evolution-chip__checkmark-svg{display:block}.mdc-evolution-chip__checkmark-path{stroke-width:2px;stroke-dasharray:29.7833385;stroke-dashoffset:29.7833385;stroke:currentColor}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark-path{transition:stroke-dashoffset 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark-path{stroke-dashoffset:0}@media(forced-colors: active){.mdc-evolution-chip__checkmark-path{stroke:CanvasText !important}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--trailing{height:18px;width:18px;font-size:18px}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove{opacity:calc(var(--mat-chip-trailing-action-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove:focus{opacity:calc(var(--mat-chip-trailing-action-focus-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mat-mdc-standard-chip{border-radius:var(--mdc-chip-container-shape-radius, 8px);height:var(--mdc-chip-container-height, 32px)}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-container-color, transparent)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-elevated-disabled-container-color)}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-flat-disabled-selected-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}@media(forced-colors: active){.mat-mdc-standard-chip{outline:solid 1px}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--primary{border-radius:var(--mdc-chip-with-avatar-avatar-shape-radius, 24px);width:var(--mdc-chip-with-icon-icon-size, 18px);height:var(--mdc-chip-with-icon-icon-size, 18px);font-size:var(--mdc-chip-with-icon-icon-size, 18px)}.mdc-evolution-chip--selected .mdc-evolution-chip__icon--primary{opacity:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-highlighted{--mdc-chip-with-icon-icon-color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container));--mdc-chip-elevated-container-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container));--mdc-chip-label-text-color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container));--mdc-chip-outline-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-selected .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-chip:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-hover-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-focus-overlay .mat-mdc-chip-selected:hover,.mat-mdc-chip-highlighted:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-hover-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected.cdk-focused .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-evolution-chip--disabled:not(.mdc-evolution-chip--selected) .mat-mdc-chip-avatar{opacity:var(--mdc-chip-with-avatar-disabled-avatar-opacity, 0.38)}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{opacity:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38)}.mdc-evolution-chip--disabled.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{opacity:var(--mdc-chip-with-icon-disabled-icon-opacity, 0.38)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{opacity:var(--mat-chip-disabled-container-opacity, 1)}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-trailing-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-remove{opacity:var(--mat-chip-trailing-action-opacity, 1)}.mat-mdc-chip-remove:focus{opacity:var(--mat-chip-trailing-action-focus-opacity, 1)}.mat-mdc-chip-remove::after{background-color:var(--mat-chip-trailing-action-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-remove:hover::after{opacity:var(--mat-chip-trailing-action-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-remove:focus::after{opacity:var(--mat-chip-trailing-action-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected .mat-mdc-chip-remove::after,.mat-mdc-chip-highlighted .mat-mdc-chip-remove::after{background-color:var(--mat-chip-selected-trailing-action-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-standard-chip .mdc-evolution-chip__cell--primary,.mat-mdc-standard-chip .mdc-evolution-chip__action--primary,.mat-mdc-standard-chip .mat-mdc-chip-action-label{overflow:visible}.mat-mdc-standard-chip .mat-mdc-chip-graphic,.mat-mdc-standard-chip .mat-mdc-chip-trailing-icon{box-sizing:content-box}.mat-mdc-standard-chip._mat-animation-noopable,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__graphic,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark-path{transition-duration:1ms;animation-duration:1ms}.mat-mdc-chip-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;opacity:0;border-radius:inherit;transition:opacity 150ms linear}._mat-animation-noopable .mat-mdc-chip-focus-overlay{transition:none}.mat-mdc-basic-chip .mat-mdc-chip-focus-overlay{display:none}.mat-mdc-chip .mat-ripple.mat-mdc-chip-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-chip-avatar{text-align:center;line-height:1;color:var(--mdc-chip-with-icon-icon-color, currentColor)}.mat-mdc-chip{position:relative;z-index:0}.mat-mdc-chip-action-label{text-align:left;z-index:1}[dir=rtl] .mat-mdc-chip-action-label{text-align:right}.mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label{position:relative}.mat-mdc-chip-action-label .mat-mdc-chip-primary-focus-indicator{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.mat-mdc-chip-action-label .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-chip-remove::before{margin:calc(var(--mat-focus-indicator-border-width, 3px)*-1);left:8px;right:8px}.mat-mdc-chip-remove::after{content:"";display:block;opacity:0;position:absolute;top:-3px;bottom:-3px;left:5px;right:5px;border-radius:50%;box-sizing:border-box;padding:12px;margin:-12px;background-clip:content-box}.mat-mdc-chip-remove .mat-icon{width:18px;height:18px;font-size:18px;box-sizing:content-box}.mat-chip-edit-input{cursor:text;display:inline-block;color:inherit;outline:0}@media(forced-colors: active){.mat-mdc-chip-selected:not(.mat-mdc-chip-multiple){outline-width:3px}}.mat-mdc-chip-action:focus .mat-focus-indicator::before{content:""}.mdc-evolution-chip__icon,.mat-mdc-chip-remove .mat-icon{min-height:fit-content}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      {
+        selectable: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        selected: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        selectionChange: [
+          {
+            type: Output,
+          },
+        ],
       },
-      providers: [{
-        provide: MatChip,
-        useExisting: MatChipOption
-      }, {
-        provide: MAT_CHIP,
-        useExisting: MatChipOption
-      }],
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      imports: [MatChipAction],
-      template: '<span class="mat-mdc-chip-focus-overlay"></span>\n\n<span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary">\n  <button\n    matChipAction\n    [_allowFocusWhenDisabled]="true"\n    [attr.aria-selected]="ariaSelected"\n    [attr.aria-label]="ariaLabel"\n    [attr.aria-describedby]="_ariaDescriptionId"\n    role="option">\n    @if (_hasLeadingGraphic()) {\n      <span class="mdc-evolution-chip__graphic mat-mdc-chip-graphic">\n        <ng-content select="mat-chip-avatar, [matChipAvatar]"></ng-content>\n        <span class="mdc-evolution-chip__checkmark">\n          <svg\n            class="mdc-evolution-chip__checkmark-svg"\n            viewBox="-2 -3 30 30"\n            focusable="false"\n            aria-hidden="true">\n            <path class="mdc-evolution-chip__checkmark-path"\n                  fill="none" stroke="currentColor" d="M1.73,12.91 8.1,19.28 22.79,4.59" />\n          </svg>\n        </span>\n      </span>\n    }\n    <span class="mdc-evolution-chip__text-label mat-mdc-chip-action-label">\n      <ng-content></ng-content>\n      <span class="mat-mdc-chip-primary-focus-indicator mat-focus-indicator"></span>\n    </span>\n  </button>\n</span>\n\n@if (_hasTrailingIcon()) {\n  <span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--trailing">\n    <ng-content select="mat-chip-trailing-icon,[matChipRemove],[matChipTrailingIcon]"></ng-content>\n  </span>\n}\n\n<span class="cdk-visually-hidden" [id]="_ariaDescriptionId">{{ariaDescription}}</span>\n',
-      styles: ['.mdc-evolution-chip,.mdc-evolution-chip__cell,.mdc-evolution-chip__action{display:inline-flex;align-items:center}.mdc-evolution-chip{position:relative;max-width:100%}.mdc-evolution-chip__cell,.mdc-evolution-chip__action{height:100%}.mdc-evolution-chip__cell--primary{flex-basis:100%;overflow-x:hidden}.mdc-evolution-chip__cell--trailing{flex:1 0 auto}.mdc-evolution-chip__action{align-items:center;background:none;border:none;box-sizing:content-box;cursor:pointer;display:inline-flex;justify-content:center;outline:none;padding:0;text-decoration:none;color:inherit}.mdc-evolution-chip__action--presentational{cursor:auto}.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{pointer-events:none}@media(forced-colors: active){.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{forced-color-adjust:none}}.mdc-evolution-chip__action--primary{font:inherit;letter-spacing:inherit;white-space:inherit;overflow-x:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-outline-width, 1px);border-radius:var(--mdc-chip-container-shape-radius, 8px);box-sizing:border-box;content:"";height:100%;left:0;position:absolute;pointer-events:none;top:0;width:100%;z-index:1;border-style:solid}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-outline-color, var(--mat-sys-outline))}.mdc-evolution-chip__action--primary:not(.mdc-evolution-chip__action--presentational):not(.mdc-ripple-upgraded):focus::before{border-color:var(--mdc-chip-focus-outline-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-basic-chip .mdc-evolution-chip__action--primary{font:inherit}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip__action--trailing{position:relative;overflow:visible}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-trailing-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip__text-label{-webkit-user-select:none;user-select:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__text-label{font-family:var(--mdc-chip-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mdc-chip-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mdc-chip-label-text-size, var(--mat-sys-label-large-size));font-weight:var(--mdc-chip-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mdc-chip-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-label-text-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label,.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label{color:var(--mdc-chip-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mdc-evolution-chip__graphic{align-items:center;display:inline-flex;justify-content:center;overflow:hidden;pointer-events:none;position:relative;flex:1 0 auto}.mat-mdc-standard-chip .mdc-evolution-chip__graphic{width:var(--mdc-chip-with-avatar-avatar-size, 24px);height:var(--mdc-chip-with-avatar-avatar-size, 24px);font-size:var(--mdc-chip-with-avatar-avatar-size, 24px)}.mdc-evolution-chip--selecting .mdc-evolution-chip__graphic{transition:width 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selectable:not(.mdc-evolution-chip--selected):not(.mdc-evolution-chip--with-primary-icon) .mdc-evolution-chip__graphic{width:0}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mdc-evolution-chip__checkmark{position:absolute;opacity:0;top:50%;left:50%;height:20px;width:20px}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark{transition:transform 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1);transform:translate(-75%, -50%)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{transform:translate(-50%, -50%);opacity:1}.mdc-evolution-chip__checkmark-svg{display:block}.mdc-evolution-chip__checkmark-path{stroke-width:2px;stroke-dasharray:29.7833385;stroke-dashoffset:29.7833385;stroke:currentColor}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark-path{transition:stroke-dashoffset 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark-path{stroke-dashoffset:0}@media(forced-colors: active){.mdc-evolution-chip__checkmark-path{stroke:CanvasText !important}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--trailing{height:18px;width:18px;font-size:18px}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove{opacity:calc(var(--mat-chip-trailing-action-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove:focus{opacity:calc(var(--mat-chip-trailing-action-focus-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mat-mdc-standard-chip{border-radius:var(--mdc-chip-container-shape-radius, 8px);height:var(--mdc-chip-container-height, 32px)}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-container-color, transparent)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-elevated-disabled-container-color)}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-flat-disabled-selected-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}@media(forced-colors: active){.mat-mdc-standard-chip{outline:solid 1px}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--primary{border-radius:var(--mdc-chip-with-avatar-avatar-shape-radius, 24px);width:var(--mdc-chip-with-icon-icon-size, 18px);height:var(--mdc-chip-with-icon-icon-size, 18px);font-size:var(--mdc-chip-with-icon-icon-size, 18px)}.mdc-evolution-chip--selected .mdc-evolution-chip__icon--primary{opacity:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-highlighted{--mdc-chip-with-icon-icon-color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container));--mdc-chip-elevated-container-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container));--mdc-chip-label-text-color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container));--mdc-chip-outline-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-selected .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-chip:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-hover-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-focus-overlay .mat-mdc-chip-selected:hover,.mat-mdc-chip-highlighted:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-hover-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected.cdk-focused .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-evolution-chip--disabled:not(.mdc-evolution-chip--selected) .mat-mdc-chip-avatar{opacity:var(--mdc-chip-with-avatar-disabled-avatar-opacity, 0.38)}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{opacity:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38)}.mdc-evolution-chip--disabled.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{opacity:var(--mdc-chip-with-icon-disabled-icon-opacity, 0.38)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{opacity:var(--mat-chip-disabled-container-opacity, 1)}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-trailing-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-remove{opacity:var(--mat-chip-trailing-action-opacity, 1)}.mat-mdc-chip-remove:focus{opacity:var(--mat-chip-trailing-action-focus-opacity, 1)}.mat-mdc-chip-remove::after{background-color:var(--mat-chip-trailing-action-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-remove:hover::after{opacity:var(--mat-chip-trailing-action-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-remove:focus::after{opacity:var(--mat-chip-trailing-action-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected .mat-mdc-chip-remove::after,.mat-mdc-chip-highlighted .mat-mdc-chip-remove::after{background-color:var(--mat-chip-selected-trailing-action-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-standard-chip .mdc-evolution-chip__cell--primary,.mat-mdc-standard-chip .mdc-evolution-chip__action--primary,.mat-mdc-standard-chip .mat-mdc-chip-action-label{overflow:visible}.mat-mdc-standard-chip .mat-mdc-chip-graphic,.mat-mdc-standard-chip .mat-mdc-chip-trailing-icon{box-sizing:content-box}.mat-mdc-standard-chip._mat-animation-noopable,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__graphic,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark-path{transition-duration:1ms;animation-duration:1ms}.mat-mdc-chip-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;opacity:0;border-radius:inherit;transition:opacity 150ms linear}._mat-animation-noopable .mat-mdc-chip-focus-overlay{transition:none}.mat-mdc-basic-chip .mat-mdc-chip-focus-overlay{display:none}.mat-mdc-chip .mat-ripple.mat-mdc-chip-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-chip-avatar{text-align:center;line-height:1;color:var(--mdc-chip-with-icon-icon-color, currentColor)}.mat-mdc-chip{position:relative;z-index:0}.mat-mdc-chip-action-label{text-align:left;z-index:1}[dir=rtl] .mat-mdc-chip-action-label{text-align:right}.mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label{position:relative}.mat-mdc-chip-action-label .mat-mdc-chip-primary-focus-indicator{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.mat-mdc-chip-action-label .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-chip-remove::before{margin:calc(var(--mat-focus-indicator-border-width, 3px)*-1);left:8px;right:8px}.mat-mdc-chip-remove::after{content:"";display:block;opacity:0;position:absolute;top:-3px;bottom:-3px;left:5px;right:5px;border-radius:50%;box-sizing:border-box;padding:12px;margin:-12px;background-clip:content-box}.mat-mdc-chip-remove .mat-icon{width:18px;height:18px;font-size:18px;box-sizing:content-box}.mat-chip-edit-input{cursor:text;display:inline-block;color:inherit;outline:0}@media(forced-colors: active){.mat-mdc-chip-selected:not(.mat-mdc-chip-multiple){outline-width:3px}}.mat-mdc-chip-action:focus .mat-focus-indicator::before{content:""}.mdc-evolution-chip__icon,.mat-mdc-chip-remove .mat-icon{min-height:fit-content}\n']
-    }]
-  }], null, {
-    selectable: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    selected: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    selectionChange: [{
-      type: Output
-    }]
-  });
+    );
 })();
 var MatChipEditInput = class _MatChipEditInput {
   _elementRef = inject(ElementRef);
   _document = inject(DOCUMENT);
-  constructor() {
-  }
+  constructor() {}
   initialize(initialValue) {
     this.getNativeElement().focus();
     this.setValue(initialValue);
@@ -1184,7 +1479,7 @@ var MatChipEditInput = class _MatChipEditInput {
     this._moveCursorToEndOfInput();
   }
   getValue() {
-    return this.getNativeElement().textContent || "";
+    return this.getNativeElement().textContent || '';
   }
   _moveCursorToEndOfInput() {
     const range = this._document.createRange();
@@ -1199,26 +1494,36 @@ var MatChipEditInput = class _MatChipEditInput {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatChipEditInput,
-    selectors: [["span", "matChipEditInput", ""]],
-    hostAttrs: ["role", "textbox", "tabindex", "-1", "contenteditable", "true", 1, "mat-chip-edit-input"]
+    selectors: [['span', 'matChipEditInput', '']],
+    hostAttrs: ['role', 'textbox', 'tabindex', '-1', 'contenteditable', 'true', 1, 'mat-chip-edit-input'],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipEditInput, [{
-    type: Directive,
-    args: [{
-      selector: "span[matChipEditInput]",
-      host: {
-        "class": "mat-chip-edit-input",
-        "role": "textbox",
-        "tabindex": "-1",
-        "contenteditable": "true"
-      }
-    }]
-  }], () => [], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipEditInput,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'span[matChipEditInput]',
+              host: {
+                class: 'mat-chip-edit-input',
+                role: 'textbox',
+                tabindex: '-1',
+                contenteditable: 'true',
+              },
+            },
+          ],
+        },
+      ],
+      () => [],
+      null,
+    );
 })();
 var MatChipRow = class _MatChipRow extends MatChip {
-  basicChipAttrName = "mat-basic-chip-row";
+  basicChipAttrName = 'mat-basic-chip-row';
   /**
    * The editing action has to be triggered in a timeout. While we're waiting on it, a blur
    * event might occur which will interrupt the editing. This flag is used to avoid interruptions
@@ -1235,7 +1540,7 @@ var MatChipRow = class _MatChipRow extends MatChip {
   _isEditing = false;
   constructor() {
     super();
-    this.role = "row";
+    this.role = 'row';
     this._onBlur.pipe(takeUntil(this.destroyed)).subscribe(() => {
       if (this._isEditing && !this._editStartPending) {
         this._onEditFinish();
@@ -1271,25 +1576,31 @@ var MatChipRow = class _MatChipRow extends MatChip {
     }
   }
   _startEditing(event) {
-    if (!this.primaryAction || this.removeIcon && this._getSourceAction(event.target) === this.removeIcon) {
+    if (!this.primaryAction || (this.removeIcon && this._getSourceAction(event.target) === this.removeIcon)) {
       return;
     }
     const value = this.value;
     this._isEditing = this._editStartPending = true;
-    afterNextRender(() => {
-      this._getEditInput().initialize(value);
-      this._editStartPending = false;
-    }, {
-      injector: this._injector
-    });
+    afterNextRender(
+      () => {
+        this._getEditInput().initialize(value);
+        this._editStartPending = false;
+      },
+      {
+        injector: this._injector,
+      },
+    );
   }
   _onEditFinish() {
     this._isEditing = this._editStartPending = false;
     this.edited.emit({
       chip: this,
-      value: this._getEditInput().getValue()
+      value: this._getEditInput().getValue(),
     });
-    if (this._document.activeElement === this._getEditInput().getNativeElement() || this._document.activeElement === this._document.body) {
+    if (
+      this._document.activeElement === this._getEditInput().getNativeElement() ||
+      this._document.activeElement === this._document.body
+    ) {
       this.primaryAction.focus();
     }
   }
@@ -1308,14 +1619,14 @@ var MatChipRow = class _MatChipRow extends MatChip {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatChipRow,
-    selectors: [["mat-chip-row"], ["", "mat-chip-row", ""], ["mat-basic-chip-row"], ["", "mat-basic-chip-row", ""]],
+    selectors: [['mat-chip-row'], ['', 'mat-chip-row', ''], ['mat-basic-chip-row'], ['', 'mat-basic-chip-row', '']],
     contentQueries: function MatChipRow_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MatChipEditInput, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.contentEditInput = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.contentEditInput = _t.first);
       }
     },
     viewQuery: function MatChipRow_Query(rf, ctx) {
@@ -1324,62 +1635,102 @@ var MatChipRow = class _MatChipRow extends MatChip {
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.defaultEditInput = _t.first);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.defaultEditInput = _t.first);
       }
     },
-    hostAttrs: [1, "mat-mdc-chip", "mat-mdc-chip-row", "mdc-evolution-chip"],
+    hostAttrs: [1, 'mat-mdc-chip', 'mat-mdc-chip-row', 'mdc-evolution-chip'],
     hostVars: 27,
     hostBindings: function MatChipRow_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("focus", function MatChipRow_focus_HostBindingHandler() {
+        ɵɵlistener('focus', function MatChipRow_focus_HostBindingHandler() {
           return ctx._handleFocus();
-        })("dblclick", function MatChipRow_dblclick_HostBindingHandler($event) {
+        })('dblclick', function MatChipRow_dblclick_HostBindingHandler($event) {
           return ctx._handleDoubleclick($event);
         });
       }
       if (rf & 2) {
-        ɵɵhostProperty("id", ctx.id);
-        ɵɵattribute("tabindex", ctx.disabled ? null : -1)("aria-label", null)("aria-description", null)("role", ctx.role);
-        ɵɵclassProp("mat-mdc-chip-with-avatar", ctx.leadingIcon)("mat-mdc-chip-disabled", ctx.disabled)("mat-mdc-chip-editing", ctx._isEditing)("mat-mdc-chip-editable", ctx.editable)("mdc-evolution-chip--disabled", ctx.disabled)("mdc-evolution-chip--with-trailing-action", ctx._hasTrailingIcon())("mdc-evolution-chip--with-primary-graphic", ctx.leadingIcon)("mdc-evolution-chip--with-primary-icon", ctx.leadingIcon)("mdc-evolution-chip--with-avatar", ctx.leadingIcon)("mat-mdc-chip-highlighted", ctx.highlighted)("mat-mdc-chip-with-trailing-icon", ctx._hasTrailingIcon());
+        ɵɵhostProperty('id', ctx.id);
+        ɵɵattribute('tabindex', ctx.disabled ? null : -1)('aria-label', null)('aria-description', null)(
+          'role',
+          ctx.role,
+        );
+        ɵɵclassProp('mat-mdc-chip-with-avatar', ctx.leadingIcon)('mat-mdc-chip-disabled', ctx.disabled)(
+          'mat-mdc-chip-editing',
+          ctx._isEditing,
+        )('mat-mdc-chip-editable', ctx.editable)('mdc-evolution-chip--disabled', ctx.disabled)(
+          'mdc-evolution-chip--with-trailing-action',
+          ctx._hasTrailingIcon(),
+        )('mdc-evolution-chip--with-primary-graphic', ctx.leadingIcon)(
+          'mdc-evolution-chip--with-primary-icon',
+          ctx.leadingIcon,
+        )('mdc-evolution-chip--with-avatar', ctx.leadingIcon)('mat-mdc-chip-highlighted', ctx.highlighted)(
+          'mat-mdc-chip-with-trailing-icon',
+          ctx._hasTrailingIcon(),
+        );
       }
     },
     inputs: {
-      editable: "editable"
+      editable: 'editable',
     },
     outputs: {
-      edited: "edited"
+      edited: 'edited',
     },
-    features: [ɵɵProvidersFeature([{
-      provide: MatChip,
-      useExisting: _MatChipRow
-    }, {
-      provide: MAT_CHIP,
-      useExisting: _MatChipRow
-    }]), ɵɵInheritDefinitionFeature],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MatChip,
+          useExisting: _MatChipRow,
+        },
+        {
+          provide: MAT_CHIP,
+          useExisting: _MatChipRow,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
     ngContentSelectors: _c4,
     decls: 10,
     vars: 9,
-    consts: [[1, "mat-mdc-chip-focus-overlay"], ["role", "gridcell", "matChipAction", "", 1, "mdc-evolution-chip__cell", "mdc-evolution-chip__cell--primary", 3, "disabled"], [1, "mdc-evolution-chip__graphic", "mat-mdc-chip-graphic"], [1, "mdc-evolution-chip__text-label", "mat-mdc-chip-action-label"], ["aria-hidden", "true", 1, "mat-mdc-chip-primary-focus-indicator", "mat-focus-indicator"], ["role", "gridcell", 1, "mdc-evolution-chip__cell", "mdc-evolution-chip__cell--trailing"], [1, "cdk-visually-hidden", 3, "id"], ["matChipEditInput", ""]],
+    consts: [
+      [1, 'mat-mdc-chip-focus-overlay'],
+      [
+        'role',
+        'gridcell',
+        'matChipAction',
+        '',
+        1,
+        'mdc-evolution-chip__cell',
+        'mdc-evolution-chip__cell--primary',
+        3,
+        'disabled',
+      ],
+      [1, 'mdc-evolution-chip__graphic', 'mat-mdc-chip-graphic'],
+      [1, 'mdc-evolution-chip__text-label', 'mat-mdc-chip-action-label'],
+      ['aria-hidden', 'true', 1, 'mat-mdc-chip-primary-focus-indicator', 'mat-focus-indicator'],
+      ['role', 'gridcell', 1, 'mdc-evolution-chip__cell', 'mdc-evolution-chip__cell--trailing'],
+      [1, 'cdk-visually-hidden', 3, 'id'],
+      ['matChipEditInput', ''],
+    ],
     template: function MatChipRow_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef(_c3);
-        ɵɵtemplate(0, MatChipRow_Conditional_0_Template, 1, 0, "span", 0);
-        ɵɵelementStart(1, "span", 1);
-        ɵɵtemplate(2, MatChipRow_Conditional_2_Template, 2, 0, "span", 2);
-        ɵɵelementStart(3, "span", 3);
+        ɵɵtemplate(0, MatChipRow_Conditional_0_Template, 1, 0, 'span', 0);
+        ɵɵelementStart(1, 'span', 1);
+        ɵɵtemplate(2, MatChipRow_Conditional_2_Template, 2, 0, 'span', 2);
+        ɵɵelementStart(3, 'span', 3);
         ɵɵtemplate(4, MatChipRow_Conditional_4_Template, 2, 1)(5, MatChipRow_Conditional_5_Template, 1, 0);
-        ɵɵelement(6, "span", 4);
+        ɵɵelement(6, 'span', 4);
         ɵɵelementEnd()();
-        ɵɵtemplate(7, MatChipRow_Conditional_7_Template, 2, 0, "span", 5);
-        ɵɵelementStart(8, "span", 6);
+        ɵɵtemplate(7, MatChipRow_Conditional_7_Template, 2, 0, 'span', 5);
+        ɵɵelementStart(8, 'span', 6);
         ɵɵtext(9);
         ɵɵelementEnd();
       }
       if (rf & 2) {
         ɵɵconditional(!ctx._isEditing ? 0 : -1);
         ɵɵadvance();
-        ɵɵproperty("disabled", ctx.disabled);
-        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-describedby", ctx._ariaDescriptionId);
+        ɵɵproperty('disabled', ctx.disabled);
+        ɵɵattribute('aria-label', ctx.ariaLabel)('aria-describedby', ctx._ariaDescriptionId);
         ɵɵadvance();
         ɵɵconditional(ctx.leadingIcon ? 2 : -1);
         ɵɵadvance(2);
@@ -1387,7 +1738,7 @@ var MatChipRow = class _MatChipRow extends MatChip {
         ɵɵadvance(3);
         ɵɵconditional(ctx._hasTrailingIcon() ? 7 : -1);
         ɵɵadvance();
-        ɵɵproperty("id", ctx._ariaDescriptionId);
+        ɵɵproperty('id', ctx._ariaDescriptionId);
         ɵɵadvance();
         ɵɵtextInterpolate(ctx.ariaDescription);
       }
@@ -1395,72 +1746,96 @@ var MatChipRow = class _MatChipRow extends MatChip {
     dependencies: [MatChipAction, MatChipEditInput],
     styles: [_c2],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipRow, [{
-    type: Component,
-    args: [{
-      selector: "mat-chip-row, [mat-chip-row], mat-basic-chip-row, [mat-basic-chip-row]",
-      host: {
-        "class": "mat-mdc-chip mat-mdc-chip-row mdc-evolution-chip",
-        "[class.mat-mdc-chip-with-avatar]": "leadingIcon",
-        "[class.mat-mdc-chip-disabled]": "disabled",
-        "[class.mat-mdc-chip-editing]": "_isEditing",
-        "[class.mat-mdc-chip-editable]": "editable",
-        "[class.mdc-evolution-chip--disabled]": "disabled",
-        "[class.mdc-evolution-chip--with-trailing-action]": "_hasTrailingIcon()",
-        "[class.mdc-evolution-chip--with-primary-graphic]": "leadingIcon",
-        "[class.mdc-evolution-chip--with-primary-icon]": "leadingIcon",
-        "[class.mdc-evolution-chip--with-avatar]": "leadingIcon",
-        "[class.mat-mdc-chip-highlighted]": "highlighted",
-        "[class.mat-mdc-chip-with-trailing-icon]": "_hasTrailingIcon()",
-        "[id]": "id",
-        // Has to have a negative tabindex in order to capture
-        // focus and redirect it to the primary action.
-        "[attr.tabindex]": "disabled ? null : -1",
-        "[attr.aria-label]": "null",
-        "[attr.aria-description]": "null",
-        "[attr.role]": "role",
-        "(focus)": "_handleFocus()",
-        "(dblclick)": "_handleDoubleclick($event)"
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipRow,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-chip-row, [mat-chip-row], mat-basic-chip-row, [mat-basic-chip-row]',
+              host: {
+                class: 'mat-mdc-chip mat-mdc-chip-row mdc-evolution-chip',
+                '[class.mat-mdc-chip-with-avatar]': 'leadingIcon',
+                '[class.mat-mdc-chip-disabled]': 'disabled',
+                '[class.mat-mdc-chip-editing]': '_isEditing',
+                '[class.mat-mdc-chip-editable]': 'editable',
+                '[class.mdc-evolution-chip--disabled]': 'disabled',
+                '[class.mdc-evolution-chip--with-trailing-action]': '_hasTrailingIcon()',
+                '[class.mdc-evolution-chip--with-primary-graphic]': 'leadingIcon',
+                '[class.mdc-evolution-chip--with-primary-icon]': 'leadingIcon',
+                '[class.mdc-evolution-chip--with-avatar]': 'leadingIcon',
+                '[class.mat-mdc-chip-highlighted]': 'highlighted',
+                '[class.mat-mdc-chip-with-trailing-icon]': '_hasTrailingIcon()',
+                '[id]': 'id',
+                // Has to have a negative tabindex in order to capture
+                // focus and redirect it to the primary action.
+                '[attr.tabindex]': 'disabled ? null : -1',
+                '[attr.aria-label]': 'null',
+                '[attr.aria-description]': 'null',
+                '[attr.role]': 'role',
+                '(focus)': '_handleFocus()',
+                '(dblclick)': '_handleDoubleclick($event)',
+              },
+              providers: [
+                {
+                  provide: MatChip,
+                  useExisting: MatChipRow,
+                },
+                {
+                  provide: MAT_CHIP,
+                  useExisting: MatChipRow,
+                },
+              ],
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              imports: [MatChipAction, MatChipEditInput],
+              template:
+                '@if (!_isEditing) {\n  <span class="mat-mdc-chip-focus-overlay"></span>\n}\n\n<span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary" role="gridcell"\n    matChipAction\n    [disabled]="disabled"\n    [attr.aria-label]="ariaLabel"\n    [attr.aria-describedby]="_ariaDescriptionId">\n  @if (leadingIcon) {\n    <span class="mdc-evolution-chip__graphic mat-mdc-chip-graphic">\n      <ng-content select="mat-chip-avatar, [matChipAvatar]"></ng-content>\n    </span>\n  }\n\n  <span class="mdc-evolution-chip__text-label mat-mdc-chip-action-label">\n    @if (_isEditing) {\n      @if (contentEditInput) {\n        <ng-content select="[matChipEditInput]"></ng-content>\n      } @else {\n        <span matChipEditInput></span>\n      }\n    } @else {\n      <ng-content></ng-content>\n    }\n\n    <span class="mat-mdc-chip-primary-focus-indicator mat-focus-indicator" aria-hidden="true"></span>\n  </span>\n</span>\n\n@if (_hasTrailingIcon()) {\n  <span\n    class="mdc-evolution-chip__cell mdc-evolution-chip__cell--trailing"\n    role="gridcell">\n    <ng-content select="mat-chip-trailing-icon,[matChipRemove],[matChipTrailingIcon]"></ng-content>\n  </span>\n}\n\n<span class="cdk-visually-hidden" [id]="_ariaDescriptionId">{{ariaDescription}}</span>\n',
+              styles: [
+                '.mdc-evolution-chip,.mdc-evolution-chip__cell,.mdc-evolution-chip__action{display:inline-flex;align-items:center}.mdc-evolution-chip{position:relative;max-width:100%}.mdc-evolution-chip__cell,.mdc-evolution-chip__action{height:100%}.mdc-evolution-chip__cell--primary{flex-basis:100%;overflow-x:hidden}.mdc-evolution-chip__cell--trailing{flex:1 0 auto}.mdc-evolution-chip__action{align-items:center;background:none;border:none;box-sizing:content-box;cursor:pointer;display:inline-flex;justify-content:center;outline:none;padding:0;text-decoration:none;color:inherit}.mdc-evolution-chip__action--presentational{cursor:auto}.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{pointer-events:none}@media(forced-colors: active){.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{forced-color-adjust:none}}.mdc-evolution-chip__action--primary{font:inherit;letter-spacing:inherit;white-space:inherit;overflow-x:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-outline-width, 1px);border-radius:var(--mdc-chip-container-shape-radius, 8px);box-sizing:border-box;content:"";height:100%;left:0;position:absolute;pointer-events:none;top:0;width:100%;z-index:1;border-style:solid}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-outline-color, var(--mat-sys-outline))}.mdc-evolution-chip__action--primary:not(.mdc-evolution-chip__action--presentational):not(.mdc-ripple-upgraded):focus::before{border-color:var(--mdc-chip-focus-outline-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-basic-chip .mdc-evolution-chip__action--primary{font:inherit}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip__action--trailing{position:relative;overflow:visible}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-trailing-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip__text-label{-webkit-user-select:none;user-select:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__text-label{font-family:var(--mdc-chip-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mdc-chip-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mdc-chip-label-text-size, var(--mat-sys-label-large-size));font-weight:var(--mdc-chip-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mdc-chip-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-label-text-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label,.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label{color:var(--mdc-chip-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mdc-evolution-chip__graphic{align-items:center;display:inline-flex;justify-content:center;overflow:hidden;pointer-events:none;position:relative;flex:1 0 auto}.mat-mdc-standard-chip .mdc-evolution-chip__graphic{width:var(--mdc-chip-with-avatar-avatar-size, 24px);height:var(--mdc-chip-with-avatar-avatar-size, 24px);font-size:var(--mdc-chip-with-avatar-avatar-size, 24px)}.mdc-evolution-chip--selecting .mdc-evolution-chip__graphic{transition:width 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selectable:not(.mdc-evolution-chip--selected):not(.mdc-evolution-chip--with-primary-icon) .mdc-evolution-chip__graphic{width:0}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mdc-evolution-chip__checkmark{position:absolute;opacity:0;top:50%;left:50%;height:20px;width:20px}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark{transition:transform 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1);transform:translate(-75%, -50%)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{transform:translate(-50%, -50%);opacity:1}.mdc-evolution-chip__checkmark-svg{display:block}.mdc-evolution-chip__checkmark-path{stroke-width:2px;stroke-dasharray:29.7833385;stroke-dashoffset:29.7833385;stroke:currentColor}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark-path{transition:stroke-dashoffset 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark-path{stroke-dashoffset:0}@media(forced-colors: active){.mdc-evolution-chip__checkmark-path{stroke:CanvasText !important}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--trailing{height:18px;width:18px;font-size:18px}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove{opacity:calc(var(--mat-chip-trailing-action-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove:focus{opacity:calc(var(--mat-chip-trailing-action-focus-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mat-mdc-standard-chip{border-radius:var(--mdc-chip-container-shape-radius, 8px);height:var(--mdc-chip-container-height, 32px)}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-container-color, transparent)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-elevated-disabled-container-color)}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-flat-disabled-selected-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}@media(forced-colors: active){.mat-mdc-standard-chip{outline:solid 1px}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--primary{border-radius:var(--mdc-chip-with-avatar-avatar-shape-radius, 24px);width:var(--mdc-chip-with-icon-icon-size, 18px);height:var(--mdc-chip-with-icon-icon-size, 18px);font-size:var(--mdc-chip-with-icon-icon-size, 18px)}.mdc-evolution-chip--selected .mdc-evolution-chip__icon--primary{opacity:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-highlighted{--mdc-chip-with-icon-icon-color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container));--mdc-chip-elevated-container-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container));--mdc-chip-label-text-color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container));--mdc-chip-outline-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-selected .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-chip:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-hover-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-focus-overlay .mat-mdc-chip-selected:hover,.mat-mdc-chip-highlighted:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-hover-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected.cdk-focused .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-evolution-chip--disabled:not(.mdc-evolution-chip--selected) .mat-mdc-chip-avatar{opacity:var(--mdc-chip-with-avatar-disabled-avatar-opacity, 0.38)}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{opacity:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38)}.mdc-evolution-chip--disabled.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{opacity:var(--mdc-chip-with-icon-disabled-icon-opacity, 0.38)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{opacity:var(--mat-chip-disabled-container-opacity, 1)}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-trailing-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-remove{opacity:var(--mat-chip-trailing-action-opacity, 1)}.mat-mdc-chip-remove:focus{opacity:var(--mat-chip-trailing-action-focus-opacity, 1)}.mat-mdc-chip-remove::after{background-color:var(--mat-chip-trailing-action-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-remove:hover::after{opacity:var(--mat-chip-trailing-action-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-remove:focus::after{opacity:var(--mat-chip-trailing-action-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected .mat-mdc-chip-remove::after,.mat-mdc-chip-highlighted .mat-mdc-chip-remove::after{background-color:var(--mat-chip-selected-trailing-action-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-standard-chip .mdc-evolution-chip__cell--primary,.mat-mdc-standard-chip .mdc-evolution-chip__action--primary,.mat-mdc-standard-chip .mat-mdc-chip-action-label{overflow:visible}.mat-mdc-standard-chip .mat-mdc-chip-graphic,.mat-mdc-standard-chip .mat-mdc-chip-trailing-icon{box-sizing:content-box}.mat-mdc-standard-chip._mat-animation-noopable,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__graphic,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark-path{transition-duration:1ms;animation-duration:1ms}.mat-mdc-chip-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;opacity:0;border-radius:inherit;transition:opacity 150ms linear}._mat-animation-noopable .mat-mdc-chip-focus-overlay{transition:none}.mat-mdc-basic-chip .mat-mdc-chip-focus-overlay{display:none}.mat-mdc-chip .mat-ripple.mat-mdc-chip-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-chip-avatar{text-align:center;line-height:1;color:var(--mdc-chip-with-icon-icon-color, currentColor)}.mat-mdc-chip{position:relative;z-index:0}.mat-mdc-chip-action-label{text-align:left;z-index:1}[dir=rtl] .mat-mdc-chip-action-label{text-align:right}.mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label{position:relative}.mat-mdc-chip-action-label .mat-mdc-chip-primary-focus-indicator{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.mat-mdc-chip-action-label .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-chip-remove::before{margin:calc(var(--mat-focus-indicator-border-width, 3px)*-1);left:8px;right:8px}.mat-mdc-chip-remove::after{content:"";display:block;opacity:0;position:absolute;top:-3px;bottom:-3px;left:5px;right:5px;border-radius:50%;box-sizing:border-box;padding:12px;margin:-12px;background-clip:content-box}.mat-mdc-chip-remove .mat-icon{width:18px;height:18px;font-size:18px;box-sizing:content-box}.mat-chip-edit-input{cursor:text;display:inline-block;color:inherit;outline:0}@media(forced-colors: active){.mat-mdc-chip-selected:not(.mat-mdc-chip-multiple){outline-width:3px}}.mat-mdc-chip-action:focus .mat-focus-indicator::before{content:""}.mdc-evolution-chip__icon,.mat-mdc-chip-remove .mat-icon{min-height:fit-content}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        editable: [
+          {
+            type: Input,
+          },
+        ],
+        edited: [
+          {
+            type: Output,
+          },
+        ],
+        defaultEditInput: [
+          {
+            type: ViewChild,
+            args: [MatChipEditInput],
+          },
+        ],
+        contentEditInput: [
+          {
+            type: ContentChild,
+            args: [MatChipEditInput],
+          },
+        ],
       },
-      providers: [{
-        provide: MatChip,
-        useExisting: MatChipRow
-      }, {
-        provide: MAT_CHIP,
-        useExisting: MatChipRow
-      }],
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      imports: [MatChipAction, MatChipEditInput],
-      template: '@if (!_isEditing) {\n  <span class="mat-mdc-chip-focus-overlay"></span>\n}\n\n<span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary" role="gridcell"\n    matChipAction\n    [disabled]="disabled"\n    [attr.aria-label]="ariaLabel"\n    [attr.aria-describedby]="_ariaDescriptionId">\n  @if (leadingIcon) {\n    <span class="mdc-evolution-chip__graphic mat-mdc-chip-graphic">\n      <ng-content select="mat-chip-avatar, [matChipAvatar]"></ng-content>\n    </span>\n  }\n\n  <span class="mdc-evolution-chip__text-label mat-mdc-chip-action-label">\n    @if (_isEditing) {\n      @if (contentEditInput) {\n        <ng-content select="[matChipEditInput]"></ng-content>\n      } @else {\n        <span matChipEditInput></span>\n      }\n    } @else {\n      <ng-content></ng-content>\n    }\n\n    <span class="mat-mdc-chip-primary-focus-indicator mat-focus-indicator" aria-hidden="true"></span>\n  </span>\n</span>\n\n@if (_hasTrailingIcon()) {\n  <span\n    class="mdc-evolution-chip__cell mdc-evolution-chip__cell--trailing"\n    role="gridcell">\n    <ng-content select="mat-chip-trailing-icon,[matChipRemove],[matChipTrailingIcon]"></ng-content>\n  </span>\n}\n\n<span class="cdk-visually-hidden" [id]="_ariaDescriptionId">{{ariaDescription}}</span>\n',
-      styles: ['.mdc-evolution-chip,.mdc-evolution-chip__cell,.mdc-evolution-chip__action{display:inline-flex;align-items:center}.mdc-evolution-chip{position:relative;max-width:100%}.mdc-evolution-chip__cell,.mdc-evolution-chip__action{height:100%}.mdc-evolution-chip__cell--primary{flex-basis:100%;overflow-x:hidden}.mdc-evolution-chip__cell--trailing{flex:1 0 auto}.mdc-evolution-chip__action{align-items:center;background:none;border:none;box-sizing:content-box;cursor:pointer;display:inline-flex;justify-content:center;outline:none;padding:0;text-decoration:none;color:inherit}.mdc-evolution-chip__action--presentational{cursor:auto}.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{pointer-events:none}@media(forced-colors: active){.mdc-evolution-chip--disabled,.mdc-evolution-chip__action:disabled{forced-color-adjust:none}}.mdc-evolution-chip__action--primary{font:inherit;letter-spacing:inherit;white-space:inherit;overflow-x:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-outline-width, 1px);border-radius:var(--mdc-chip-container-shape-radius, 8px);box-sizing:border-box;content:"";height:100%;left:0;position:absolute;pointer-events:none;top:0;width:100%;z-index:1;border-style:solid}.mat-mdc-standard-chip .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-outline-color, var(--mat-sys-outline))}.mdc-evolution-chip__action--primary:not(.mdc-evolution-chip__action--presentational):not(.mdc-ripple-upgraded):focus::before{border-color:var(--mdc-chip-focus-outline-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--primary::before{border-color:var(--mdc-chip-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__action--primary::before{border-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-basic-chip .mdc-evolution-chip__action--primary{font:inherit}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:0;padding-right:12px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__action--primary{padding-left:12px;padding-right:0}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--primary{padding-left:0;padding-right:0}.mdc-evolution-chip__action--trailing{position:relative;overflow:visible}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-trailing-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__action--trailing{color:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing{padding-left:8px;padding-right:8px}.mdc-evolution-chip__text-label{-webkit-user-select:none;user-select:none;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.mat-mdc-standard-chip .mdc-evolution-chip__text-label{font-family:var(--mdc-chip-label-text-font, var(--mat-sys-label-large-font));line-height:var(--mdc-chip-label-text-line-height, var(--mat-sys-label-large-line-height));font-size:var(--mdc-chip-label-text-size, var(--mat-sys-label-large-size));font-weight:var(--mdc-chip-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mdc-chip-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-label-text-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__text-label{color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label,.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__text-label{color:var(--mdc-chip-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mdc-evolution-chip__graphic{align-items:center;display:inline-flex;justify-content:center;overflow:hidden;pointer-events:none;position:relative;flex:1 0 auto}.mat-mdc-standard-chip .mdc-evolution-chip__graphic{width:var(--mdc-chip-with-avatar-avatar-size, 24px);height:var(--mdc-chip-with-avatar-avatar-size, 24px);font-size:var(--mdc-chip-with-avatar-avatar-size, 24px)}.mdc-evolution-chip--selecting .mdc-evolution-chip__graphic{transition:width 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selectable:not(.mdc-evolution-chip--selected):not(.mdc-evolution-chip--with-primary-icon) .mdc-evolution-chip__graphic{width:0}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mat-mdc-standard-chip.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:6px;padding-right:6px}.mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:4px;padding-right:8px}[dir=rtl] .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__graphic{padding-left:8px;padding-right:4px}.mdc-evolution-chip__checkmark{position:absolute;opacity:0;top:50%;left:50%;height:20px;width:20px}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__checkmark{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark{transition:transform 150ms 0ms cubic-bezier(0.4, 0, 0.2, 1);transform:translate(-75%, -50%)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{transform:translate(-50%, -50%);opacity:1}.mdc-evolution-chip__checkmark-svg{display:block}.mdc-evolution-chip__checkmark-path{stroke-width:2px;stroke-dasharray:29.7833385;stroke-dashoffset:29.7833385;stroke:currentColor}.mdc-evolution-chip--selecting .mdc-evolution-chip__checkmark-path{transition:stroke-dashoffset 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1)}.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark-path{stroke-dashoffset:0}@media(forced-colors: active){.mdc-evolution-chip__checkmark-path{stroke:CanvasText !important}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--trailing{height:18px;width:18px;font-size:18px}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove{opacity:calc(var(--mat-chip-trailing-action-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing.mat-mdc-chip-remove:focus{opacity:calc(var(--mat-chip-trailing-action-focus-opacity, 1)*var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38))}.mat-mdc-standard-chip{border-radius:var(--mdc-chip-container-shape-radius, 8px);height:var(--mdc-chip-container-height, 32px)}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-container-color, transparent)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-elevated-disabled-container-color)}.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){background-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled{background-color:var(--mdc-chip-flat-disabled-selected-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}@media(forced-colors: active){.mat-mdc-standard-chip{outline:solid 1px}}.mat-mdc-standard-chip .mdc-evolution-chip__icon--primary{border-radius:var(--mdc-chip-with-avatar-avatar-shape-radius, 24px);width:var(--mdc-chip-with-icon-icon-size, 18px);height:var(--mdc-chip-with-icon-icon-size, 18px);font-size:var(--mdc-chip-with-icon-icon-size, 18px)}.mdc-evolution-chip--selected .mdc-evolution-chip__icon--primary{opacity:0}.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-icon-color, var(--mat-sys-on-surface-variant))}.mat-mdc-standard-chip.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--primary{color:var(--mdc-chip-with-icon-disabled-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-highlighted{--mdc-chip-with-icon-icon-color:var(--mdc-chip-with-icon-selected-icon-color, var(--mat-sys-on-secondary-container));--mdc-chip-elevated-container-color:var(--mdc-chip-elevated-selected-container-color, var(--mat-sys-secondary-container));--mdc-chip-label-text-color:var(--mdc-chip-selected-label-text-color, var(--mat-sys-on-secondary-container));--mdc-chip-outline-width:var(--mdc-chip-flat-selected-outline-width, 0)}.mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-selected .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-chip:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-hover-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-focus-overlay .mat-mdc-chip-selected:hover,.mat-mdc-chip-highlighted:hover .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-hover-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-focus-state-layer-color, var(--mat-sys-on-surface-variant));opacity:var(--mdc-chip-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected.cdk-focused .mat-mdc-chip-focus-overlay,.mat-mdc-chip-highlighted.cdk-focused .mat-mdc-chip-focus-overlay{background:var(--mdc-chip-selected-focus-state-layer-color, var(--mat-sys-on-secondary-container));opacity:var(--mdc-chip-selected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-evolution-chip--disabled:not(.mdc-evolution-chip--selected) .mat-mdc-chip-avatar{opacity:var(--mdc-chip-with-avatar-disabled-avatar-opacity, 0.38)}.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{opacity:var(--mdc-chip-with-trailing-icon-disabled-trailing-icon-opacity, 0.38)}.mdc-evolution-chip--disabled.mdc-evolution-chip--selected .mdc-evolution-chip__checkmark{opacity:var(--mdc-chip-with-icon-disabled-icon-opacity, 0.38)}.mat-mdc-standard-chip.mdc-evolution-chip--disabled{opacity:var(--mat-chip-disabled-container-opacity, 1)}.mat-mdc-standard-chip.mdc-evolution-chip--selected .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-trailing-icon-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip.mdc-evolution-chip--selected.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing,.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mdc-evolution-chip--disabled .mdc-evolution-chip__icon--trailing{color:var(--mat-chip-selected-disabled-trailing-icon-color, var(--mat-sys-on-surface))}.mat-mdc-chip-remove{opacity:var(--mat-chip-trailing-action-opacity, 1)}.mat-mdc-chip-remove:focus{opacity:var(--mat-chip-trailing-action-focus-opacity, 1)}.mat-mdc-chip-remove::after{background-color:var(--mat-chip-trailing-action-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-chip-remove:hover::after{opacity:var(--mat-chip-trailing-action-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-chip-remove:focus::after{opacity:var(--mat-chip-trailing-action-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-chip-selected .mat-mdc-chip-remove::after,.mat-mdc-chip-highlighted .mat-mdc-chip-remove::after{background-color:var(--mat-chip-selected-trailing-action-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-mdc-standard-chip{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-standard-chip .mdc-evolution-chip__cell--primary,.mat-mdc-standard-chip .mdc-evolution-chip__action--primary,.mat-mdc-standard-chip .mat-mdc-chip-action-label{overflow:visible}.mat-mdc-standard-chip .mat-mdc-chip-graphic,.mat-mdc-standard-chip .mat-mdc-chip-trailing-icon{box-sizing:content-box}.mat-mdc-standard-chip._mat-animation-noopable,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__graphic,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark,.mat-mdc-standard-chip._mat-animation-noopable .mdc-evolution-chip__checkmark-path{transition-duration:1ms;animation-duration:1ms}.mat-mdc-chip-focus-overlay{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;opacity:0;border-radius:inherit;transition:opacity 150ms linear}._mat-animation-noopable .mat-mdc-chip-focus-overlay{transition:none}.mat-mdc-basic-chip .mat-mdc-chip-focus-overlay{display:none}.mat-mdc-chip .mat-ripple.mat-mdc-chip-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-chip-avatar{text-align:center;line-height:1;color:var(--mdc-chip-with-icon-icon-color, currentColor)}.mat-mdc-chip{position:relative;z-index:0}.mat-mdc-chip-action-label{text-align:left;z-index:1}[dir=rtl] .mat-mdc-chip-action-label{text-align:right}.mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label{position:relative}.mat-mdc-chip-action-label .mat-mdc-chip-primary-focus-indicator{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}.mat-mdc-chip-action-label .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-chip-remove::before{margin:calc(var(--mat-focus-indicator-border-width, 3px)*-1);left:8px;right:8px}.mat-mdc-chip-remove::after{content:"";display:block;opacity:0;position:absolute;top:-3px;bottom:-3px;left:5px;right:5px;border-radius:50%;box-sizing:border-box;padding:12px;margin:-12px;background-clip:content-box}.mat-mdc-chip-remove .mat-icon{width:18px;height:18px;font-size:18px;box-sizing:content-box}.mat-chip-edit-input{cursor:text;display:inline-block;color:inherit;outline:0}@media(forced-colors: active){.mat-mdc-chip-selected:not(.mat-mdc-chip-multiple){outline-width:3px}}.mat-mdc-chip-action:focus .mat-focus-indicator::before{content:""}.mdc-evolution-chip__icon,.mat-mdc-chip-remove .mat-icon{min-height:fit-content}\n']
-    }]
-  }], () => [], {
-    editable: [{
-      type: Input
-    }],
-    edited: [{
-      type: Output
-    }],
-    defaultEditInput: [{
-      type: ViewChild,
-      args: [MatChipEditInput]
-    }],
-    contentEditInput: [{
-      type: ContentChild,
-      args: [MatChipEditInput]
-    }]
-  });
+    );
 })();
 var MatChipSet = class _MatChipSet {
   _elementRef = inject(ElementRef);
   _changeDetectorRef = inject(ChangeDetectorRef);
   _dir = inject(Directionality, {
-    optional: true
+    optional: true,
   });
   /** Index of the last destroyed chip that had focus. */
   _lastDestroyedFocusedChipIndex = null;
@@ -1469,7 +1844,7 @@ var MatChipSet = class _MatChipSet {
   /** Subject that emits when the component has been destroyed. */
   _destroyed = new Subject();
   /** Role to use if it hasn't been overwritten by the user. */
-  _defaultRole = "presentation";
+  _defaultRole = 'presentation';
   /** Combined stream of all of the child chips' focus events. */
   get chipFocusChanges() {
     return this._getChipStream((chip) => chip._onFocus);
@@ -1516,8 +1891,7 @@ var MatChipSet = class _MatChipSet {
   _chips;
   /** Flat list of all the actions contained within the chips. */
   _chipActions = new QueryList();
-  constructor() {
-  }
+  constructor() {}
   ngAfterViewInit() {
     this._setUpFocusManagement();
     this._trackChipSetChanges();
@@ -1541,8 +1915,7 @@ var MatChipSet = class _MatChipSet {
     });
   }
   /** Dummy method for subclasses to override. Base chip set cannot be focused. */
-  focus() {
-  }
+  focus() {}
   /** Handles keyboard events on the chip set. */
   _handleKeydown(event) {
     if (this._originatesFromChip(event)) {
@@ -1567,7 +1940,7 @@ var MatChipSet = class _MatChipSet {
     const previous = this._elementRef.nativeElement.tabIndex;
     if (previous !== -1) {
       this._elementRef.nativeElement.tabIndex = -1;
-      setTimeout(() => this._elementRef.nativeElement.tabIndex = previous);
+      setTimeout(() => (this._elementRef.nativeElement.tabIndex = previous));
     }
   }
   /**
@@ -1575,13 +1948,16 @@ var MatChipSet = class _MatChipSet {
    * The stream will automatically incorporate any newly-added chips.
    */
   _getChipStream(mappingFunction) {
-    return this._chips.changes.pipe(startWith(null), switchMap(() => merge(...this._chips.map(mappingFunction))));
+    return this._chips.changes.pipe(
+      startWith(null),
+      switchMap(() => merge(...this._chips.map(mappingFunction))),
+    );
   }
   /** Checks whether an event comes from inside a chip element. */
   _originatesFromChip(event) {
     let currentElement = event.target;
     while (currentElement && currentElement !== this._elementRef.nativeElement) {
-      if (currentElement.classList.contains("mat-mdc-chip")) {
+      if (currentElement.classList.contains('mat-mdc-chip')) {
         return true;
       }
       currentElement = currentElement.parentElement;
@@ -1596,16 +1972,20 @@ var MatChipSet = class _MatChipSet {
       this._chipActions.reset(actions);
       this._chipActions.notifyOnChanges();
     });
-    this._keyManager = new FocusKeyManager(this._chipActions).withVerticalOrientation().withHorizontalOrientation(this._dir ? this._dir.value : "ltr").withHomeAndEnd().skipPredicate((action) => this._skipPredicate(action));
-    this.chipFocusChanges.pipe(takeUntil(this._destroyed)).subscribe(({
-      chip
-    }) => {
+    this._keyManager = new FocusKeyManager(this._chipActions)
+      .withVerticalOrientation()
+      .withHorizontalOrientation(this._dir ? this._dir.value : 'ltr')
+      .withHomeAndEnd()
+      .skipPredicate((action) => this._skipPredicate(action));
+    this.chipFocusChanges.pipe(takeUntil(this._destroyed)).subscribe(({ chip }) => {
       const action = chip._getSourceAction(document.activeElement);
       if (action) {
         this._keyManager.updateActiveItem(action);
       }
     });
-    this._dir?.change.pipe(takeUntil(this._destroyed)).subscribe((direction) => this._keyManager.withHorizontalOrientation(direction));
+    this._dir?.change
+      .pipe(takeUntil(this._destroyed))
+      .subscribe((direction) => this._keyManager.withHorizontalOrientation(direction));
   }
   /**
    * Determines if key manager should avoid putting a given chip action in the tab index. Skip
@@ -1663,94 +2043,123 @@ var MatChipSet = class _MatChipSet {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatChipSet,
-    selectors: [["mat-chip-set"]],
+    selectors: [['mat-chip-set']],
     contentQueries: function MatChipSet_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MatChip, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._chips = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._chips = _t);
       }
     },
-    hostAttrs: [1, "mat-mdc-chip-set", "mdc-evolution-chip-set"],
+    hostAttrs: [1, 'mat-mdc-chip-set', 'mdc-evolution-chip-set'],
     hostVars: 1,
     hostBindings: function MatChipSet_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("keydown", function MatChipSet_keydown_HostBindingHandler($event) {
+        ɵɵlistener('keydown', function MatChipSet_keydown_HostBindingHandler($event) {
           return ctx._handleKeydown($event);
         });
       }
       if (rf & 2) {
-        ɵɵattribute("role", ctx.role);
+        ɵɵattribute('role', ctx.role);
       }
     },
     inputs: {
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      role: "role",
-      tabIndex: [2, "tabIndex", "tabIndex", (value) => value == null ? 0 : numberAttribute(value)]
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
+      role: 'role',
+      tabIndex: [2, 'tabIndex', 'tabIndex', (value) => (value == null ? 0 : numberAttribute(value))],
     },
     ngContentSelectors: _c5,
     decls: 2,
     vars: 0,
-    consts: [["role", "presentation", 1, "mdc-evolution-chip-set__chips"]],
+    consts: [['role', 'presentation', 1, 'mdc-evolution-chip-set__chips']],
     template: function MatChipSet_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 0);
+        ɵɵelementStart(0, 'div', 0);
         ɵɵprojection(1);
         ɵɵelementEnd();
       }
     },
-    styles: [".mat-mdc-chip-set{display:flex}.mat-mdc-chip-set:focus{outline:none}.mat-mdc-chip-set .mdc-evolution-chip-set__chips{min-width:100%;margin-left:-8px;margin-right:0}.mat-mdc-chip-set .mdc-evolution-chip{margin:4px 0 4px 8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip-set__chips{margin-left:0;margin-right:-8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip{margin-left:0;margin-right:8px}.mdc-evolution-chip-set__chips{display:flex;flex-flow:wrap;min-width:0}.mat-mdc-chip-set-stacked{flex-direction:column;align-items:flex-start}.mat-mdc-chip-set-stacked .mat-mdc-chip{width:100%}.mat-mdc-chip-set-stacked .mdc-evolution-chip__graphic{flex-grow:0}.mat-mdc-chip-set-stacked .mdc-evolution-chip__action--primary{flex-basis:100%;justify-content:start}input.mat-mdc-chip-input{flex:1 0 150px;margin-left:8px}[dir=rtl] input.mat-mdc-chip-input{margin-left:0;margin-right:8px}\n"],
+    styles: [
+      '.mat-mdc-chip-set{display:flex}.mat-mdc-chip-set:focus{outline:none}.mat-mdc-chip-set .mdc-evolution-chip-set__chips{min-width:100%;margin-left:-8px;margin-right:0}.mat-mdc-chip-set .mdc-evolution-chip{margin:4px 0 4px 8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip-set__chips{margin-left:0;margin-right:-8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip{margin-left:0;margin-right:8px}.mdc-evolution-chip-set__chips{display:flex;flex-flow:wrap;min-width:0}.mat-mdc-chip-set-stacked{flex-direction:column;align-items:flex-start}.mat-mdc-chip-set-stacked .mat-mdc-chip{width:100%}.mat-mdc-chip-set-stacked .mdc-evolution-chip__graphic{flex-grow:0}.mat-mdc-chip-set-stacked .mdc-evolution-chip__action--primary{flex-basis:100%;justify-content:start}input.mat-mdc-chip-input{flex:1 0 150px;margin-left:8px}[dir=rtl] input.mat-mdc-chip-input{margin-left:0;margin-right:8px}\n',
+    ],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipSet, [{
-    type: Component,
-    args: [{
-      selector: "mat-chip-set",
-      template: `
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipSet,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-chip-set',
+              template: `
     <div class="mdc-evolution-chip-set__chips" role="presentation">
       <ng-content></ng-content>
     </div>
   `,
-      host: {
-        "class": "mat-mdc-chip-set mdc-evolution-chip-set",
-        "(keydown)": "_handleKeydown($event)",
-        "[attr.role]": "role"
+              host: {
+                class: 'mat-mdc-chip-set mdc-evolution-chip-set',
+                '(keydown)': '_handleKeydown($event)',
+                '[attr.role]': 'role',
+              },
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              styles: [
+                '.mat-mdc-chip-set{display:flex}.mat-mdc-chip-set:focus{outline:none}.mat-mdc-chip-set .mdc-evolution-chip-set__chips{min-width:100%;margin-left:-8px;margin-right:0}.mat-mdc-chip-set .mdc-evolution-chip{margin:4px 0 4px 8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip-set__chips{margin-left:0;margin-right:-8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip{margin-left:0;margin-right:8px}.mdc-evolution-chip-set__chips{display:flex;flex-flow:wrap;min-width:0}.mat-mdc-chip-set-stacked{flex-direction:column;align-items:flex-start}.mat-mdc-chip-set-stacked .mat-mdc-chip{width:100%}.mat-mdc-chip-set-stacked .mdc-evolution-chip__graphic{flex-grow:0}.mat-mdc-chip-set-stacked .mdc-evolution-chip__action--primary{flex-basis:100%;justify-content:start}input.mat-mdc-chip-input{flex:1 0 150px;margin-left:8px}[dir=rtl] input.mat-mdc-chip-input{margin-left:0;margin-right:8px}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        role: [
+          {
+            type: Input,
+          },
+        ],
+        tabIndex: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: (value) => (value == null ? 0 : numberAttribute(value)),
+              },
+            ],
+          },
+        ],
+        _chips: [
+          {
+            type: ContentChildren,
+            args: [
+              MatChip,
+              {
+                // We need to use `descendants: true`, because Ivy will no longer match
+                // indirect descendants if it's left as false.
+                descendants: true,
+              },
+            ],
+          },
+        ],
       },
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      styles: [".mat-mdc-chip-set{display:flex}.mat-mdc-chip-set:focus{outline:none}.mat-mdc-chip-set .mdc-evolution-chip-set__chips{min-width:100%;margin-left:-8px;margin-right:0}.mat-mdc-chip-set .mdc-evolution-chip{margin:4px 0 4px 8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip-set__chips{margin-left:0;margin-right:-8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip{margin-left:0;margin-right:8px}.mdc-evolution-chip-set__chips{display:flex;flex-flow:wrap;min-width:0}.mat-mdc-chip-set-stacked{flex-direction:column;align-items:flex-start}.mat-mdc-chip-set-stacked .mat-mdc-chip{width:100%}.mat-mdc-chip-set-stacked .mdc-evolution-chip__graphic{flex-grow:0}.mat-mdc-chip-set-stacked .mdc-evolution-chip__action--primary{flex-basis:100%;justify-content:start}input.mat-mdc-chip-input{flex:1 0 150px;margin-left:8px}[dir=rtl] input.mat-mdc-chip-input{margin-left:0;margin-right:8px}\n"]
-    }]
-  }], () => [], {
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    role: [{
-      type: Input
-    }],
-    tabIndex: [{
-      type: Input,
-      args: [{
-        transform: (value) => value == null ? 0 : numberAttribute(value)
-      }]
-    }],
-    _chips: [{
-      type: ContentChildren,
-      args: [MatChip, {
-        // We need to use `descendants: true`, because Ivy will no longer match
-        // indirect descendants if it's left as false.
-        descendants: true
-      }]
-    }]
-  });
+    );
 })();
 var MatChipListboxChange = class {
   source;
@@ -1763,26 +2172,24 @@ var MatChipListboxChange = class {
 var MAT_CHIP_LISTBOX_CONTROL_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
   useExisting: forwardRef(() => MatChipListbox),
-  multi: true
+  multi: true,
 };
 var MatChipListbox = class _MatChipListbox extends MatChipSet {
   /**
    * Function when touched. Set as part of ControlValueAccessor implementation.
    * @docs-private
    */
-  _onTouched = () => {
-  };
+  _onTouched = () => {};
   /**
    * Function when changed. Set as part of ControlValueAccessor implementation.
    * @docs-private
    */
-  _onChange = () => {
-  };
+  _onChange = () => {};
   // TODO: MDC uses `grid` here
-  _defaultRole = "listbox";
+  _defaultRole = 'listbox';
   /** Default chip options. */
   _defaultOptions = inject(MAT_CHIPS_DEFAULT_OPTIONS, {
-    optional: true
+    optional: true,
   });
   /** Whether the user should be allowed to select multiple chips. */
   get multiple() {
@@ -1799,7 +2206,7 @@ var MatChipListbox = class _MatChipListbox extends MatChipSet {
     return this.multiple ? selectedChips : selectedChips[0];
   }
   /** Orientation of the chip list. */
-  ariaOrientation = "horizontal";
+  ariaOrientation = 'horizontal';
   /**
    * Whether or not this chip listbox is selectable.
    *
@@ -2022,145 +2429,196 @@ var MatChipListbox = class _MatChipListbox extends MatChipSet {
   static ɵfac = /* @__PURE__ */ (() => {
     let ɵMatChipListbox_BaseFactory;
     return function MatChipListbox_Factory(__ngFactoryType__) {
-      return (ɵMatChipListbox_BaseFactory || (ɵMatChipListbox_BaseFactory = ɵɵgetInheritedFactory(_MatChipListbox)))(__ngFactoryType__ || _MatChipListbox);
+      return (ɵMatChipListbox_BaseFactory || (ɵMatChipListbox_BaseFactory = ɵɵgetInheritedFactory(_MatChipListbox)))(
+        __ngFactoryType__ || _MatChipListbox,
+      );
     };
   })();
   static ɵcmp = ɵɵdefineComponent({
     type: _MatChipListbox,
-    selectors: [["mat-chip-listbox"]],
+    selectors: [['mat-chip-listbox']],
     contentQueries: function MatChipListbox_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MatChipOption, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._chips = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._chips = _t);
       }
     },
-    hostAttrs: [1, "mdc-evolution-chip-set", "mat-mdc-chip-listbox"],
+    hostAttrs: [1, 'mdc-evolution-chip-set', 'mat-mdc-chip-listbox'],
     hostVars: 10,
     hostBindings: function MatChipListbox_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("focus", function MatChipListbox_focus_HostBindingHandler() {
+        ɵɵlistener('focus', function MatChipListbox_focus_HostBindingHandler() {
           return ctx.focus();
-        })("blur", function MatChipListbox_blur_HostBindingHandler() {
+        })('blur', function MatChipListbox_blur_HostBindingHandler() {
           return ctx._blur();
-        })("keydown", function MatChipListbox_keydown_HostBindingHandler($event) {
+        })('keydown', function MatChipListbox_keydown_HostBindingHandler($event) {
           return ctx._keydown($event);
         });
       }
       if (rf & 2) {
-        ɵɵhostProperty("tabIndex", ctx.disabled || ctx.empty ? -1 : ctx.tabIndex);
-        ɵɵattribute("role", ctx.role)("aria-required", ctx.role ? ctx.required : null)("aria-disabled", ctx.disabled.toString())("aria-multiselectable", ctx.multiple)("aria-orientation", ctx.ariaOrientation);
-        ɵɵclassProp("mat-mdc-chip-list-disabled", ctx.disabled)("mat-mdc-chip-list-required", ctx.required);
+        ɵɵhostProperty('tabIndex', ctx.disabled || ctx.empty ? -1 : ctx.tabIndex);
+        ɵɵattribute('role', ctx.role)('aria-required', ctx.role ? ctx.required : null)(
+          'aria-disabled',
+          ctx.disabled.toString(),
+        )('aria-multiselectable', ctx.multiple)('aria-orientation', ctx.ariaOrientation);
+        ɵɵclassProp('mat-mdc-chip-list-disabled', ctx.disabled)('mat-mdc-chip-list-required', ctx.required);
       }
     },
     inputs: {
-      multiple: [2, "multiple", "multiple", booleanAttribute],
-      ariaOrientation: [0, "aria-orientation", "ariaOrientation"],
-      selectable: [2, "selectable", "selectable", booleanAttribute],
-      compareWith: "compareWith",
-      required: [2, "required", "required", booleanAttribute],
-      hideSingleSelectionIndicator: [2, "hideSingleSelectionIndicator", "hideSingleSelectionIndicator", booleanAttribute],
-      value: "value"
+      multiple: [2, 'multiple', 'multiple', booleanAttribute],
+      ariaOrientation: [0, 'aria-orientation', 'ariaOrientation'],
+      selectable: [2, 'selectable', 'selectable', booleanAttribute],
+      compareWith: 'compareWith',
+      required: [2, 'required', 'required', booleanAttribute],
+      hideSingleSelectionIndicator: [
+        2,
+        'hideSingleSelectionIndicator',
+        'hideSingleSelectionIndicator',
+        booleanAttribute,
+      ],
+      value: 'value',
     },
     outputs: {
-      change: "change"
+      change: 'change',
     },
     features: [ɵɵProvidersFeature([MAT_CHIP_LISTBOX_CONTROL_VALUE_ACCESSOR]), ɵɵInheritDefinitionFeature],
     ngContentSelectors: _c5,
     decls: 2,
     vars: 0,
-    consts: [["role", "presentation", 1, "mdc-evolution-chip-set__chips"]],
+    consts: [['role', 'presentation', 1, 'mdc-evolution-chip-set__chips']],
     template: function MatChipListbox_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 0);
+        ɵɵelementStart(0, 'div', 0);
         ɵɵprojection(1);
         ɵɵelementEnd();
       }
     },
     styles: [_c6],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipListbox, [{
-    type: Component,
-    args: [{
-      selector: "mat-chip-listbox",
-      template: `
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipListbox,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-chip-listbox',
+              template: `
     <div class="mdc-evolution-chip-set__chips" role="presentation">
       <ng-content></ng-content>
     </div>
   `,
-      host: {
-        "class": "mdc-evolution-chip-set mat-mdc-chip-listbox",
-        "[attr.role]": "role",
-        "[tabIndex]": "(disabled || empty) ? -1 : tabIndex",
-        "[attr.aria-required]": "role ? required : null",
-        "[attr.aria-disabled]": "disabled.toString()",
-        "[attr.aria-multiselectable]": "multiple",
-        "[attr.aria-orientation]": "ariaOrientation",
-        "[class.mat-mdc-chip-list-disabled]": "disabled",
-        "[class.mat-mdc-chip-list-required]": "required",
-        "(focus)": "focus()",
-        "(blur)": "_blur()",
-        "(keydown)": "_keydown($event)"
+              host: {
+                class: 'mdc-evolution-chip-set mat-mdc-chip-listbox',
+                '[attr.role]': 'role',
+                '[tabIndex]': '(disabled || empty) ? -1 : tabIndex',
+                '[attr.aria-required]': 'role ? required : null',
+                '[attr.aria-disabled]': 'disabled.toString()',
+                '[attr.aria-multiselectable]': 'multiple',
+                '[attr.aria-orientation]': 'ariaOrientation',
+                '[class.mat-mdc-chip-list-disabled]': 'disabled',
+                '[class.mat-mdc-chip-list-required]': 'required',
+                '(focus)': 'focus()',
+                '(blur)': '_blur()',
+                '(keydown)': '_keydown($event)',
+              },
+              providers: [MAT_CHIP_LISTBOX_CONTROL_VALUE_ACCESSOR],
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              styles: [
+                '.mat-mdc-chip-set{display:flex}.mat-mdc-chip-set:focus{outline:none}.mat-mdc-chip-set .mdc-evolution-chip-set__chips{min-width:100%;margin-left:-8px;margin-right:0}.mat-mdc-chip-set .mdc-evolution-chip{margin:4px 0 4px 8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip-set__chips{margin-left:0;margin-right:-8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip{margin-left:0;margin-right:8px}.mdc-evolution-chip-set__chips{display:flex;flex-flow:wrap;min-width:0}.mat-mdc-chip-set-stacked{flex-direction:column;align-items:flex-start}.mat-mdc-chip-set-stacked .mat-mdc-chip{width:100%}.mat-mdc-chip-set-stacked .mdc-evolution-chip__graphic{flex-grow:0}.mat-mdc-chip-set-stacked .mdc-evolution-chip__action--primary{flex-basis:100%;justify-content:start}input.mat-mdc-chip-input{flex:1 0 150px;margin-left:8px}[dir=rtl] input.mat-mdc-chip-input{margin-left:0;margin-right:8px}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      {
+        multiple: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        ariaOrientation: [
+          {
+            type: Input,
+            args: ['aria-orientation'],
+          },
+        ],
+        selectable: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        compareWith: [
+          {
+            type: Input,
+          },
+        ],
+        required: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        hideSingleSelectionIndicator: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        value: [
+          {
+            type: Input,
+          },
+        ],
+        change: [
+          {
+            type: Output,
+          },
+        ],
+        _chips: [
+          {
+            type: ContentChildren,
+            args: [
+              MatChipOption,
+              {
+                // We need to use `descendants: true`, because Ivy will no longer match
+                // indirect descendants if it's left as false.
+                descendants: true,
+              },
+            ],
+          },
+        ],
       },
-      providers: [MAT_CHIP_LISTBOX_CONTROL_VALUE_ACCESSOR],
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      styles: [".mat-mdc-chip-set{display:flex}.mat-mdc-chip-set:focus{outline:none}.mat-mdc-chip-set .mdc-evolution-chip-set__chips{min-width:100%;margin-left:-8px;margin-right:0}.mat-mdc-chip-set .mdc-evolution-chip{margin:4px 0 4px 8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip-set__chips{margin-left:0;margin-right:-8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip{margin-left:0;margin-right:8px}.mdc-evolution-chip-set__chips{display:flex;flex-flow:wrap;min-width:0}.mat-mdc-chip-set-stacked{flex-direction:column;align-items:flex-start}.mat-mdc-chip-set-stacked .mat-mdc-chip{width:100%}.mat-mdc-chip-set-stacked .mdc-evolution-chip__graphic{flex-grow:0}.mat-mdc-chip-set-stacked .mdc-evolution-chip__action--primary{flex-basis:100%;justify-content:start}input.mat-mdc-chip-input{flex:1 0 150px;margin-left:8px}[dir=rtl] input.mat-mdc-chip-input{margin-left:0;margin-right:8px}\n"]
-    }]
-  }], null, {
-    multiple: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    ariaOrientation: [{
-      type: Input,
-      args: ["aria-orientation"]
-    }],
-    selectable: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    compareWith: [{
-      type: Input
-    }],
-    required: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    hideSingleSelectionIndicator: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    value: [{
-      type: Input
-    }],
-    change: [{
-      type: Output
-    }],
-    _chips: [{
-      type: ContentChildren,
-      args: [MatChipOption, {
-        // We need to use `descendants: true`, because Ivy will no longer match
-        // indirect descendants if it's left as false.
-        descendants: true
-      }]
-    }]
-  });
+    );
 })();
 var MatChipGridChange = class {
   source;
@@ -2173,16 +2631,16 @@ var MatChipGridChange = class {
 var MatChipGrid = class _MatChipGrid extends MatChipSet {
   ngControl = inject(NgControl, {
     optional: true,
-    self: true
+    self: true,
   });
   /**
    * Implemented as part of MatFormFieldControl.
    * @docs-private
    */
-  controlType = "mat-chip-grid";
+  controlType = 'mat-chip-grid';
   /** The chip input to add more chips */
   _chipInput;
-  _defaultRole = "grid";
+  _defaultRole = 'grid';
   _errorStateTracker;
   /**
    * List of element ids to propagate to the chipInput's aria-describedby attribute.
@@ -2192,14 +2650,12 @@ var MatChipGrid = class _MatChipGrid extends MatChipSet {
    * Function when touched. Set as part of ControlValueAccessor implementation.
    * @docs-private
    */
-  _onTouched = () => {
-  };
+  _onTouched = () => {};
   /**
    * Function when changed. Set as part of ControlValueAccessor implementation.
    * @docs-private
    */
-  _onChange = () => {
-  };
+  _onChange = () => {};
   /**
    * Implemented as part of MatFormFieldControl.
    * @docs-private
@@ -2308,28 +2764,36 @@ var MatChipGrid = class _MatChipGrid extends MatChipSet {
   constructor() {
     super();
     const parentForm = inject(NgForm, {
-      optional: true
+      optional: true,
     });
     const parentFormGroup = inject(FormGroupDirective, {
-      optional: true
+      optional: true,
     });
     const defaultErrorStateMatcher = inject(ErrorStateMatcher);
     if (this.ngControl) {
       this.ngControl.valueAccessor = this;
     }
-    this._errorStateTracker = new _ErrorStateTracker(defaultErrorStateMatcher, this.ngControl, parentFormGroup, parentForm, this.stateChanges);
+    this._errorStateTracker = new _ErrorStateTracker(
+      defaultErrorStateMatcher,
+      this.ngControl,
+      parentFormGroup,
+      parentForm,
+      this.stateChanges,
+    );
   }
   ngAfterContentInit() {
     this.chipBlurChanges.pipe(takeUntil(this._destroyed)).subscribe(() => {
       this._blur();
       this.stateChanges.next();
     });
-    merge(this.chipFocusChanges, this._chips.changes).pipe(takeUntil(this._destroyed)).subscribe(() => this.stateChanges.next());
+    merge(this.chipFocusChanges, this._chips.changes)
+      .pipe(takeUntil(this._destroyed))
+      .subscribe(() => this.stateChanges.next());
   }
   ngAfterViewInit() {
     super.ngAfterViewInit();
-    if (!this._chipInput && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      throw Error("mat-chip-grid must be used in combination with matChipInputFor.");
+    if (!this._chipInput && (typeof ngDevMode === 'undefined' || ngDevMode)) {
+      throw Error('mat-chip-grid must be used in combination with matChipInputFor.');
     }
   }
   ngDoCheck() {
@@ -2442,7 +2906,12 @@ var MatChipGrid = class _MatChipGrid extends MatChipSet {
     const keyCode = event.keyCode;
     const activeItem = this._keyManager.activeItem;
     if (keyCode === TAB) {
-      if (this._chipInput.focused && hasModifierKey(event, "shiftKey") && this._chips.length && !this._chips.last.disabled) {
+      if (
+        this._chipInput.focused &&
+        hasModifierKey(event, 'shiftKey') &&
+        this._chips.length &&
+        !this._chips.last.disabled
+      ) {
         event.preventDefault();
         if (activeItem) {
           this._keyManager.setActiveItem(activeItem);
@@ -2454,7 +2923,9 @@ var MatChipGrid = class _MatChipGrid extends MatChipSet {
       }
     } else if (!this._chipInput.focused) {
       if ((keyCode === UP_ARROW || keyCode === DOWN_ARROW) && activeItem) {
-        const eligibleActions = this._chipActions.filter((action) => action._isPrimary === activeItem._isPrimary && !this._skipPredicate(action));
+        const eligibleActions = this._chipActions.filter(
+          (action) => action._isPrimary === activeItem._isPrimary && !this._skipPredicate(action),
+        );
         const currentIndex = eligibleActions.indexOf(activeItem);
         const delta = event.keyCode === UP_ARROW ? -1 : 1;
         event.preventDefault();
@@ -2492,130 +2963,178 @@ var MatChipGrid = class _MatChipGrid extends MatChipSet {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatChipGrid,
-    selectors: [["mat-chip-grid"]],
+    selectors: [['mat-chip-grid']],
     contentQueries: function MatChipGrid_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
         ɵɵcontentQuery(dirIndex, MatChipRow, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._chips = _t);
+        ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._chips = _t);
       }
     },
-    hostAttrs: [1, "mat-mdc-chip-set", "mat-mdc-chip-grid", "mdc-evolution-chip-set"],
+    hostAttrs: [1, 'mat-mdc-chip-set', 'mat-mdc-chip-grid', 'mdc-evolution-chip-set'],
     hostVars: 10,
     hostBindings: function MatChipGrid_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("focus", function MatChipGrid_focus_HostBindingHandler() {
+        ɵɵlistener('focus', function MatChipGrid_focus_HostBindingHandler() {
           return ctx.focus();
-        })("blur", function MatChipGrid_blur_HostBindingHandler() {
+        })('blur', function MatChipGrid_blur_HostBindingHandler() {
           return ctx._blur();
         });
       }
       if (rf & 2) {
-        ɵɵattribute("role", ctx.role)("tabindex", ctx.disabled || ctx._chips && ctx._chips.length === 0 ? -1 : ctx.tabIndex)("aria-disabled", ctx.disabled.toString())("aria-invalid", ctx.errorState);
-        ɵɵclassProp("mat-mdc-chip-list-disabled", ctx.disabled)("mat-mdc-chip-list-invalid", ctx.errorState)("mat-mdc-chip-list-required", ctx.required);
+        ɵɵattribute('role', ctx.role)(
+          'tabindex',
+          ctx.disabled || (ctx._chips && ctx._chips.length === 0) ? -1 : ctx.tabIndex,
+        )('aria-disabled', ctx.disabled.toString())('aria-invalid', ctx.errorState);
+        ɵɵclassProp('mat-mdc-chip-list-disabled', ctx.disabled)('mat-mdc-chip-list-invalid', ctx.errorState)(
+          'mat-mdc-chip-list-required',
+          ctx.required,
+        );
       }
     },
     inputs: {
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      placeholder: "placeholder",
-      required: [2, "required", "required", booleanAttribute],
-      value: "value",
-      errorStateMatcher: "errorStateMatcher"
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
+      placeholder: 'placeholder',
+      required: [2, 'required', 'required', booleanAttribute],
+      value: 'value',
+      errorStateMatcher: 'errorStateMatcher',
     },
     outputs: {
-      change: "change",
-      valueChange: "valueChange"
+      change: 'change',
+      valueChange: 'valueChange',
     },
-    features: [ɵɵProvidersFeature([{
-      provide: MatFormFieldControl,
-      useExisting: _MatChipGrid
-    }]), ɵɵInheritDefinitionFeature],
+    features: [
+      ɵɵProvidersFeature([
+        {
+          provide: MatFormFieldControl,
+          useExisting: _MatChipGrid,
+        },
+      ]),
+      ɵɵInheritDefinitionFeature,
+    ],
     ngContentSelectors: _c5,
     decls: 2,
     vars: 0,
-    consts: [["role", "presentation", 1, "mdc-evolution-chip-set__chips"]],
+    consts: [['role', 'presentation', 1, 'mdc-evolution-chip-set__chips']],
     template: function MatChipGrid_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 0);
+        ɵɵelementStart(0, 'div', 0);
         ɵɵprojection(1);
         ɵɵelementEnd();
       }
     },
     styles: [_c6],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipGrid, [{
-    type: Component,
-    args: [{
-      selector: "mat-chip-grid",
-      template: `
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipGrid,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: 'mat-chip-grid',
+              template: `
     <div class="mdc-evolution-chip-set__chips" role="presentation">
       <ng-content></ng-content>
     </div>
   `,
-      host: {
-        "class": "mat-mdc-chip-set mat-mdc-chip-grid mdc-evolution-chip-set",
-        "[attr.role]": "role",
-        "[attr.tabindex]": "(disabled || (_chips && _chips.length === 0)) ? -1 : tabIndex",
-        "[attr.aria-disabled]": "disabled.toString()",
-        "[attr.aria-invalid]": "errorState",
-        "[class.mat-mdc-chip-list-disabled]": "disabled",
-        "[class.mat-mdc-chip-list-invalid]": "errorState",
-        "[class.mat-mdc-chip-list-required]": "required",
-        "(focus)": "focus()",
-        "(blur)": "_blur()"
+              host: {
+                class: 'mat-mdc-chip-set mat-mdc-chip-grid mdc-evolution-chip-set',
+                '[attr.role]': 'role',
+                '[attr.tabindex]': '(disabled || (_chips && _chips.length === 0)) ? -1 : tabIndex',
+                '[attr.aria-disabled]': 'disabled.toString()',
+                '[attr.aria-invalid]': 'errorState',
+                '[class.mat-mdc-chip-list-disabled]': 'disabled',
+                '[class.mat-mdc-chip-list-invalid]': 'errorState',
+                '[class.mat-mdc-chip-list-required]': 'required',
+                '(focus)': 'focus()',
+                '(blur)': '_blur()',
+              },
+              providers: [
+                {
+                  provide: MatFormFieldControl,
+                  useExisting: MatChipGrid,
+                },
+              ],
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              styles: [
+                '.mat-mdc-chip-set{display:flex}.mat-mdc-chip-set:focus{outline:none}.mat-mdc-chip-set .mdc-evolution-chip-set__chips{min-width:100%;margin-left:-8px;margin-right:0}.mat-mdc-chip-set .mdc-evolution-chip{margin:4px 0 4px 8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip-set__chips{margin-left:0;margin-right:-8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip{margin-left:0;margin-right:8px}.mdc-evolution-chip-set__chips{display:flex;flex-flow:wrap;min-width:0}.mat-mdc-chip-set-stacked{flex-direction:column;align-items:flex-start}.mat-mdc-chip-set-stacked .mat-mdc-chip{width:100%}.mat-mdc-chip-set-stacked .mdc-evolution-chip__graphic{flex-grow:0}.mat-mdc-chip-set-stacked .mdc-evolution-chip__action--primary{flex-basis:100%;justify-content:start}input.mat-mdc-chip-input{flex:1 0 150px;margin-left:8px}[dir=rtl] input.mat-mdc-chip-input{margin-left:0;margin-right:8px}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        placeholder: [
+          {
+            type: Input,
+          },
+        ],
+        required: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        value: [
+          {
+            type: Input,
+          },
+        ],
+        errorStateMatcher: [
+          {
+            type: Input,
+          },
+        ],
+        change: [
+          {
+            type: Output,
+          },
+        ],
+        valueChange: [
+          {
+            type: Output,
+          },
+        ],
+        _chips: [
+          {
+            type: ContentChildren,
+            args: [
+              MatChipRow,
+              {
+                // We need to use `descendants: true`, because Ivy will no longer match
+                // indirect descendants if it's left as false.
+                descendants: true,
+              },
+            ],
+          },
+        ],
       },
-      providers: [{
-        provide: MatFormFieldControl,
-        useExisting: MatChipGrid
-      }],
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      styles: [".mat-mdc-chip-set{display:flex}.mat-mdc-chip-set:focus{outline:none}.mat-mdc-chip-set .mdc-evolution-chip-set__chips{min-width:100%;margin-left:-8px;margin-right:0}.mat-mdc-chip-set .mdc-evolution-chip{margin:4px 0 4px 8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip-set__chips{margin-left:0;margin-right:-8px}[dir=rtl] .mat-mdc-chip-set .mdc-evolution-chip{margin-left:0;margin-right:8px}.mdc-evolution-chip-set__chips{display:flex;flex-flow:wrap;min-width:0}.mat-mdc-chip-set-stacked{flex-direction:column;align-items:flex-start}.mat-mdc-chip-set-stacked .mat-mdc-chip{width:100%}.mat-mdc-chip-set-stacked .mdc-evolution-chip__graphic{flex-grow:0}.mat-mdc-chip-set-stacked .mdc-evolution-chip__action--primary{flex-basis:100%;justify-content:start}input.mat-mdc-chip-input{flex:1 0 150px;margin-left:8px}[dir=rtl] input.mat-mdc-chip-input{margin-left:0;margin-right:8px}\n"]
-    }]
-  }], () => [], {
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    placeholder: [{
-      type: Input
-    }],
-    required: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    value: [{
-      type: Input
-    }],
-    errorStateMatcher: [{
-      type: Input
-    }],
-    change: [{
-      type: Output
-    }],
-    valueChange: [{
-      type: Output
-    }],
-    _chips: [{
-      type: ContentChildren,
-      args: [MatChipRow, {
-        // We need to use `descendants: true`, because Ivy will no longer match
-        // indirect descendants if it's left as false.
-        descendants: true
-      }]
-    }]
-  });
+    );
 })();
 var MatChipInput = class _MatChipInput {
   _elementRef = inject(ElementRef);
@@ -2645,12 +3164,12 @@ var MatChipInput = class _MatChipInput {
   /** Emitted when a chip is to be added. */
   chipEnd = new EventEmitter();
   /** The input's placeholder text. */
-  placeholder = "";
+  placeholder = '';
   /** Unique id for the input. */
-  id = inject(_IdGenerator).getId("mat-mdc-chip-list-input-");
+  id = inject(_IdGenerator).getId('mat-mdc-chip-list-input-');
   /** Whether the input is disabled. */
   get disabled() {
-    return this._disabled || this._chipGrid && this._chipGrid.disabled;
+    return this._disabled || (this._chipGrid && this._chipGrid.disabled);
   }
   set disabled(value) {
     this._disabled = value;
@@ -2665,12 +3184,12 @@ var MatChipInput = class _MatChipInput {
   constructor() {
     const defaultOptions = inject(MAT_CHIPS_DEFAULT_OPTIONS);
     const formField = inject(MAT_FORM_FIELD, {
-      optional: true
+      optional: true,
     });
     this.inputElement = this._elementRef.nativeElement;
     this.separatorKeyCodes = defaultOptions.separatorKeyCodes;
     if (formField) {
-      this.inputElement.classList.add("mat-mdc-form-field-input-control");
+      this.inputElement.classList.add('mat-mdc-form-field-input-control');
     }
   }
   ngOnChanges() {
@@ -2707,11 +3226,11 @@ var MatChipInput = class _MatChipInput {
   }
   /** Checks to see if the (chipEnd) event needs to be emitted. */
   _emitChipEnd(event) {
-    if (!event || this._isSeparatorKey(event) && !event.repeat) {
+    if (!event || (this._isSeparatorKey(event) && !event.repeat)) {
       this.chipEnd.emit({
         input: this.inputElement,
         value: this.inputElement.value,
-        chipInput: this
+        chipInput: this,
       });
       event?.preventDefault();
     }
@@ -2725,14 +3244,14 @@ var MatChipInput = class _MatChipInput {
   }
   /** Clears the input */
   clear() {
-    this.inputElement.value = "";
+    this.inputElement.value = '';
   }
   setDescribedByIds(ids) {
     const element = this._elementRef.nativeElement;
     if (ids.length) {
-      element.setAttribute("aria-describedby", ids.join(" "));
+      element.setAttribute('aria-describedby', ids.join(' '));
     } else {
-      element.removeAttribute("aria-describedby");
+      element.removeAttribute('aria-describedby');
     }
   }
   /** Checks whether a keycode is one of the configured separators. */
@@ -2744,132 +3263,222 @@ var MatChipInput = class _MatChipInput {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatChipInput,
-    selectors: [["input", "matChipInputFor", ""]],
-    hostAttrs: [1, "mat-mdc-chip-input", "mat-mdc-input-element", "mdc-text-field__input", "mat-input-element"],
+    selectors: [['input', 'matChipInputFor', '']],
+    hostAttrs: [1, 'mat-mdc-chip-input', 'mat-mdc-input-element', 'mdc-text-field__input', 'mat-input-element'],
     hostVars: 6,
     hostBindings: function MatChipInput_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("keydown", function MatChipInput_keydown_HostBindingHandler($event) {
+        ɵɵlistener('keydown', function MatChipInput_keydown_HostBindingHandler($event) {
           return ctx._keydown($event);
-        })("blur", function MatChipInput_blur_HostBindingHandler() {
+        })('blur', function MatChipInput_blur_HostBindingHandler() {
           return ctx._blur();
-        })("focus", function MatChipInput_focus_HostBindingHandler() {
+        })('focus', function MatChipInput_focus_HostBindingHandler() {
           return ctx._focus();
-        })("input", function MatChipInput_input_HostBindingHandler() {
+        })('input', function MatChipInput_input_HostBindingHandler() {
           return ctx._onInput();
         });
       }
       if (rf & 2) {
-        ɵɵhostProperty("id", ctx.id);
-        ɵɵattribute("disabled", ctx.disabled || null)("placeholder", ctx.placeholder || null)("aria-invalid", ctx._chipGrid && ctx._chipGrid.ngControl ? ctx._chipGrid.ngControl.invalid : null)("aria-required", ctx._chipGrid && ctx._chipGrid.required || null)("required", ctx._chipGrid && ctx._chipGrid.required || null);
+        ɵɵhostProperty('id', ctx.id);
+        ɵɵattribute('disabled', ctx.disabled || null)('placeholder', ctx.placeholder || null)(
+          'aria-invalid',
+          ctx._chipGrid && ctx._chipGrid.ngControl ? ctx._chipGrid.ngControl.invalid : null,
+        )('aria-required', (ctx._chipGrid && ctx._chipGrid.required) || null)(
+          'required',
+          (ctx._chipGrid && ctx._chipGrid.required) || null,
+        );
       }
     },
     inputs: {
-      chipGrid: [0, "matChipInputFor", "chipGrid"],
-      addOnBlur: [2, "matChipInputAddOnBlur", "addOnBlur", booleanAttribute],
-      separatorKeyCodes: [0, "matChipInputSeparatorKeyCodes", "separatorKeyCodes"],
-      placeholder: "placeholder",
-      id: "id",
-      disabled: [2, "disabled", "disabled", booleanAttribute]
+      chipGrid: [0, 'matChipInputFor', 'chipGrid'],
+      addOnBlur: [2, 'matChipInputAddOnBlur', 'addOnBlur', booleanAttribute],
+      separatorKeyCodes: [0, 'matChipInputSeparatorKeyCodes', 'separatorKeyCodes'],
+      placeholder: 'placeholder',
+      id: 'id',
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
     },
     outputs: {
-      chipEnd: "matChipInputTokenEnd"
+      chipEnd: 'matChipInputTokenEnd',
     },
-    exportAs: ["matChipInput", "matChipInputFor"],
-    features: [ɵɵNgOnChangesFeature]
+    exportAs: ['matChipInput', 'matChipInputFor'],
+    features: [ɵɵNgOnChangesFeature],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipInput, [{
-    type: Directive,
-    args: [{
-      selector: "input[matChipInputFor]",
-      exportAs: "matChipInput, matChipInputFor",
-      host: {
-        // TODO: eventually we should remove `mat-input-element` from here since it comes from the
-        // non-MDC version of the input. It's currently being kept for backwards compatibility, because
-        // the MDC chips were landed initially with it.
-        "class": "mat-mdc-chip-input mat-mdc-input-element mdc-text-field__input mat-input-element",
-        "(keydown)": "_keydown($event)",
-        "(blur)": "_blur()",
-        "(focus)": "_focus()",
-        "(input)": "_onInput()",
-        "[id]": "id",
-        "[attr.disabled]": "disabled || null",
-        "[attr.placeholder]": "placeholder || null",
-        "[attr.aria-invalid]": "_chipGrid && _chipGrid.ngControl ? _chipGrid.ngControl.invalid : null",
-        "[attr.aria-required]": "_chipGrid && _chipGrid.required || null",
-        "[attr.required]": "_chipGrid && _chipGrid.required || null"
-      }
-    }]
-  }], () => [], {
-    chipGrid: [{
-      type: Input,
-      args: ["matChipInputFor"]
-    }],
-    addOnBlur: [{
-      type: Input,
-      args: [{
-        alias: "matChipInputAddOnBlur",
-        transform: booleanAttribute
-      }]
-    }],
-    separatorKeyCodes: [{
-      type: Input,
-      args: ["matChipInputSeparatorKeyCodes"]
-    }],
-    chipEnd: [{
-      type: Output,
-      args: ["matChipInputTokenEnd"]
-    }],
-    placeholder: [{
-      type: Input
-    }],
-    id: [{
-      type: Input
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipInput,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: 'input[matChipInputFor]',
+              exportAs: 'matChipInput, matChipInputFor',
+              host: {
+                // TODO: eventually we should remove `mat-input-element` from here since it comes from the
+                // non-MDC version of the input. It's currently being kept for backwards compatibility, because
+                // the MDC chips were landed initially with it.
+                class: 'mat-mdc-chip-input mat-mdc-input-element mdc-text-field__input mat-input-element',
+                '(keydown)': '_keydown($event)',
+                '(blur)': '_blur()',
+                '(focus)': '_focus()',
+                '(input)': '_onInput()',
+                '[id]': 'id',
+                '[attr.disabled]': 'disabled || null',
+                '[attr.placeholder]': 'placeholder || null',
+                '[attr.aria-invalid]': '_chipGrid && _chipGrid.ngControl ? _chipGrid.ngControl.invalid : null',
+                '[attr.aria-required]': '_chipGrid && _chipGrid.required || null',
+                '[attr.required]': '_chipGrid && _chipGrid.required || null',
+              },
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        chipGrid: [
+          {
+            type: Input,
+            args: ['matChipInputFor'],
+          },
+        ],
+        addOnBlur: [
+          {
+            type: Input,
+            args: [
+              {
+                alias: 'matChipInputAddOnBlur',
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        separatorKeyCodes: [
+          {
+            type: Input,
+            args: ['matChipInputSeparatorKeyCodes'],
+          },
+        ],
+        chipEnd: [
+          {
+            type: Output,
+            args: ['matChipInputTokenEnd'],
+          },
+        ],
+        placeholder: [
+          {
+            type: Input,
+          },
+        ],
+        id: [
+          {
+            type: Input,
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
-var CHIP_DECLARATIONS = [MatChip, MatChipAvatar, MatChipEditInput, MatChipGrid, MatChipInput, MatChipListbox, MatChipOption, MatChipRemove, MatChipRow, MatChipSet, MatChipTrailingIcon];
+var CHIP_DECLARATIONS = [
+  MatChip,
+  MatChipAvatar,
+  MatChipEditInput,
+  MatChipGrid,
+  MatChipInput,
+  MatChipListbox,
+  MatChipOption,
+  MatChipRemove,
+  MatChipRow,
+  MatChipSet,
+  MatChipTrailingIcon,
+];
 var MatChipsModule = class _MatChipsModule {
   static ɵfac = function MatChipsModule_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _MatChipsModule)();
   };
   static ɵmod = ɵɵdefineNgModule({
     type: _MatChipsModule,
-    imports: [MatCommonModule, MatRippleModule, MatChipAction, MatChip, MatChipAvatar, MatChipEditInput, MatChipGrid, MatChipInput, MatChipListbox, MatChipOption, MatChipRemove, MatChipRow, MatChipSet, MatChipTrailingIcon],
-    exports: [MatCommonModule, MatChip, MatChipAvatar, MatChipEditInput, MatChipGrid, MatChipInput, MatChipListbox, MatChipOption, MatChipRemove, MatChipRow, MatChipSet, MatChipTrailingIcon]
+    imports: [
+      MatCommonModule,
+      MatRippleModule,
+      MatChipAction,
+      MatChip,
+      MatChipAvatar,
+      MatChipEditInput,
+      MatChipGrid,
+      MatChipInput,
+      MatChipListbox,
+      MatChipOption,
+      MatChipRemove,
+      MatChipRow,
+      MatChipSet,
+      MatChipTrailingIcon,
+    ],
+    exports: [
+      MatCommonModule,
+      MatChip,
+      MatChipAvatar,
+      MatChipEditInput,
+      MatChipGrid,
+      MatChipInput,
+      MatChipListbox,
+      MatChipOption,
+      MatChipRemove,
+      MatChipRow,
+      MatChipSet,
+      MatChipTrailingIcon,
+    ],
   });
   static ɵinj = ɵɵdefineInjector({
-    providers: [ErrorStateMatcher, {
-      provide: MAT_CHIPS_DEFAULT_OPTIONS,
-      useValue: {
-        separatorKeyCodes: [ENTER]
-      }
-    }],
-    imports: [MatCommonModule, MatRippleModule, MatCommonModule]
+    providers: [
+      ErrorStateMatcher,
+      {
+        provide: MAT_CHIPS_DEFAULT_OPTIONS,
+        useValue: {
+          separatorKeyCodes: [ENTER],
+        },
+      },
+    ],
+    imports: [MatCommonModule, MatRippleModule, MatCommonModule],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatChipsModule, [{
-    type: NgModule,
-    args: [{
-      imports: [MatCommonModule, MatRippleModule, MatChipAction, CHIP_DECLARATIONS],
-      exports: [MatCommonModule, CHIP_DECLARATIONS],
-      providers: [ErrorStateMatcher, {
-        provide: MAT_CHIPS_DEFAULT_OPTIONS,
-        useValue: {
-          separatorKeyCodes: [ENTER]
-        }
-      }]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatChipsModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [MatCommonModule, MatRippleModule, MatChipAction, CHIP_DECLARATIONS],
+              exports: [MatCommonModule, CHIP_DECLARATIONS],
+              providers: [
+                ErrorStateMatcher,
+                {
+                  provide: MAT_CHIPS_DEFAULT_OPTIONS,
+                  useValue: {
+                    separatorKeyCodes: [ENTER],
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 export {
   MAT_CHIP,
@@ -2892,6 +3501,6 @@ export {
   MatChipSelectionChange,
   MatChipSet,
   MatChipTrailingIcon,
-  MatChipsModule
+  MatChipsModule,
 };
 //# sourceMappingURL=@angular_material_chips.js.map

@@ -56,11 +56,7 @@ import { EntityType } from '@app/model/bw/co/roguesystems/fsrfp/entity-type';
 
           <!-- Upload Button or Selected File Display -->
           <div *ngIf="!selectedFile(); else fileSelected" class="upload-prompt">
-            <button
-              type="button"
-              mat-raised-button
-              color="primary"
-            >
+            <button type="button" mat-raised-button color="primary">
               <mat-icon>upload_file</mat-icon>
               <span translate>document.selectFile</span>
             </button>

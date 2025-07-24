@@ -98,9 +98,11 @@
                   <div class="process-flow" [class.vertical-flow]="shouldStackVertically()">
                     <ng-container *ngFor="let process of sequencedProcesses(); let i = index; let last = last">
                       <!-- Process Card -->
-                      <div class="process-card"
-                           [class.initial-process]="process.initialProcess"
-                           [ngClass]="getProcessCardColor(i, process)">
+                      <div
+                        class="process-card"
+                        [class.initial-process]="process.initialProcess"
+                        [ngClass]="getProcessCardColor(i, process)"
+                      >
                         <mat-card class="process-item-card">
                           <mat-card-header>
                             <div mat-card-avatar>
@@ -137,8 +139,14 @@
                       </div>
 
                       <!-- Arrow connector (not shown for last item) -->
-                      <div *ngIf="!last" class="process-arrow" [class.arrow-down]="getArrowIconForIndex(i, sequencedProcesses().length) === 'arrow_downward'">
-                        <mat-icon class="arrow-icon">{{ getArrowIconForIndex(i, sequencedProcesses().length) }}</mat-icon>
+                      <div
+                        *ngIf="!last"
+                        class="process-arrow"
+                        [class.arrow-down]="getArrowIconForIndex(i, sequencedProcesses().length) === 'arrow_downward'"
+                      >
+                        <mat-icon class="arrow-icon">{{
+                          getArrowIconForIndex(i, sequencedProcesses().length)
+                        }}</mat-icon>
                       </div>
                     </ng-container>
                   </div>
@@ -169,7 +177,8 @@
         [allowUpload]="true"
         [allowDownload]="true"
         [allowDelete]="true"
-        [collapsible]="true">
+        [collapsible]="true"
+      >
       </app-document-attachment>
     </div>
   </div>

@@ -1,22 +1,12 @@
-import {
-  _StructuralStylesLoader
-} from "./chunk-IBJRQVUD.js";
-import {
-  AriaDescriber,
-  ENTER,
-  FocusMonitor,
-  MatCommonModule,
-  SPACE
-} from "./chunk-PQSRNTO7.js";
-import "./chunk-5RHDU2BP.js";
-import {
-  _CdkPrivateStyleLoader
-} from "./chunk-RG7RHNTG.js";
-import "./chunk-HNGPX6GY.js";
-import "./chunk-GWH5ZIVQ.js";
-import "./chunk-FSIK44TS.js";
-import "./chunk-LJRMVWU3.js";
-import "./chunk-SOO5Y25R.js";
+import { _StructuralStylesLoader } from './chunk-IBJRQVUD.js';
+import { AriaDescriber, ENTER, FocusMonitor, MatCommonModule, SPACE } from './chunk-PQSRNTO7.js';
+import './chunk-5RHDU2BP.js';
+import { _CdkPrivateStyleLoader } from './chunk-RG7RHNTG.js';
+import './chunk-HNGPX6GY.js';
+import './chunk-GWH5ZIVQ.js';
+import './chunk-FSIK44TS.js';
+import './chunk-LJRMVWU3.js';
+import './chunk-SOO5Y25R.js';
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionStrategy,
@@ -56,27 +46,22 @@ import {
   ɵɵnamespaceSVG,
   ɵɵprojection,
   ɵɵprojectionDef,
-  ɵɵtemplate
-} from "./chunk-LB7E77GG.js";
-import {
-  merge
-} from "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import {
-  ReplaySubject,
-  Subject
-} from "./chunk-4S3KYZTJ.js";
-import "./chunk-4MWRP73S.js";
+  ɵɵtemplate,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import { merge } from './chunk-WPM5VTLQ.js';
+import { ReplaySubject, Subject } from './chunk-4S3KYZTJ.js';
+import './chunk-4MWRP73S.js';
 
 // node_modules/@angular/material/fesm2022/sort.mjs
-var _c0 = ["mat-sort-header", ""];
-var _c1 = ["*"];
+var _c0 = ['mat-sort-header', ''];
+var _c1 = ['*'];
 function MatSortHeader_Conditional_3_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 2);
+    ɵɵelementStart(0, 'div', 2);
     ɵɵnamespaceSVG();
-    ɵɵelementStart(1, "svg", 3);
-    ɵɵelement(2, "path", 4);
+    ɵɵelementStart(1, 'svg', 3);
+    ɵɵelement(2, 'path', 4);
     ɵɵelementEnd()();
   }
 }
@@ -92,7 +77,7 @@ function getSortHeaderMissingIdError() {
 function getSortInvalidDirectionError(direction) {
   return Error(`${direction} is not a valid sort direction ('asc' or 'desc').`);
 }
-var MAT_SORT_DEFAULT_OPTIONS = new InjectionToken("MAT_SORT_DEFAULT_OPTIONS");
+var MAT_SORT_DEFAULT_OPTIONS = new InjectionToken('MAT_SORT_DEFAULT_OPTIONS');
 var MatSort = class _MatSort {
   _defaultOptions;
   _initializedStream = new ReplaySubject(1);
@@ -106,18 +91,18 @@ var MatSort = class _MatSort {
    * The direction to set when an MatSortable is initially sorted.
    * May be overridden by the MatSortable's sort start.
    */
-  start = "asc";
+  start = 'asc';
   /** The sort direction of the currently active MatSortable. */
   get direction() {
     return this._direction;
   }
   set direction(direction) {
-    if (direction && direction !== "asc" && direction !== "desc" && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (direction && direction !== 'asc' && direction !== 'desc' && (typeof ngDevMode === 'undefined' || ngDevMode)) {
       throw getSortInvalidDirectionError(direction);
     }
     this._direction = direction;
   }
-  _direction = "";
+  _direction = '';
   /**
    * Whether to disable the user from clearing the sort by finishing the sort direction cycle.
    * May be overridden by the MatSortable's disable clear input.
@@ -137,7 +122,7 @@ var MatSort = class _MatSort {
    * collection of MatSortables.
    */
   register(sortable) {
-    if (typeof ngDevMode === "undefined" || ngDevMode) {
+    if (typeof ngDevMode === 'undefined' || ngDevMode) {
       if (!sortable.id) {
         throw getSortHeaderMissingIdError();
       }
@@ -164,13 +149,13 @@ var MatSort = class _MatSort {
     }
     this.sortChange.emit({
       active: this.active,
-      direction: this.direction
+      direction: this.direction,
     });
   }
   /** Returns the next sort direction of the active sortable, checking for potential overrides. */
   getNextSortDirection(sortable) {
     if (!sortable) {
-      return "";
+      return '';
     }
     const disableClear = sortable?.disableClear ?? this.disableClear ?? !!this._defaultOptions?.disableClear;
     let sortDirectionCycle = getSortDirectionCycle(sortable.start || this.start, disableClear);
@@ -195,80 +180,111 @@ var MatSort = class _MatSort {
   };
   static ɵdir = ɵɵdefineDirective({
     type: _MatSort,
-    selectors: [["", "matSort", ""]],
-    hostAttrs: [1, "mat-sort"],
+    selectors: [['', 'matSort', '']],
+    hostAttrs: [1, 'mat-sort'],
     inputs: {
-      active: [0, "matSortActive", "active"],
-      start: [0, "matSortStart", "start"],
-      direction: [0, "matSortDirection", "direction"],
-      disableClear: [2, "matSortDisableClear", "disableClear", booleanAttribute],
-      disabled: [2, "matSortDisabled", "disabled", booleanAttribute]
+      active: [0, 'matSortActive', 'active'],
+      start: [0, 'matSortStart', 'start'],
+      direction: [0, 'matSortDirection', 'direction'],
+      disableClear: [2, 'matSortDisableClear', 'disableClear', booleanAttribute],
+      disabled: [2, 'matSortDisabled', 'disabled', booleanAttribute],
     },
     outputs: {
-      sortChange: "matSortChange"
+      sortChange: 'matSortChange',
     },
-    exportAs: ["matSort"],
-    features: [ɵɵNgOnChangesFeature]
+    exportAs: ['matSort'],
+    features: [ɵɵNgOnChangesFeature],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSort, [{
-    type: Directive,
-    args: [{
-      selector: "[matSort]",
-      exportAs: "matSort",
-      host: {
-        "class": "mat-sort"
-      }
-    }]
-  }], () => [{
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [MAT_SORT_DEFAULT_OPTIONS]
-    }]
-  }], {
-    active: [{
-      type: Input,
-      args: ["matSortActive"]
-    }],
-    start: [{
-      type: Input,
-      args: ["matSortStart"]
-    }],
-    direction: [{
-      type: Input,
-      args: ["matSortDirection"]
-    }],
-    disableClear: [{
-      type: Input,
-      args: [{
-        alias: "matSortDisableClear",
-        transform: booleanAttribute
-      }]
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        alias: "matSortDisabled",
-        transform: booleanAttribute
-      }]
-    }],
-    sortChange: [{
-      type: Output,
-      args: ["matSortChange"]
-    }]
-  });
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSort,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: '[matSort]',
+              exportAs: 'matSort',
+              host: {
+                class: 'mat-sort',
+              },
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: Inject,
+              args: [MAT_SORT_DEFAULT_OPTIONS],
+            },
+          ],
+        },
+      ],
+      {
+        active: [
+          {
+            type: Input,
+            args: ['matSortActive'],
+          },
+        ],
+        start: [
+          {
+            type: Input,
+            args: ['matSortStart'],
+          },
+        ],
+        direction: [
+          {
+            type: Input,
+            args: ['matSortDirection'],
+          },
+        ],
+        disableClear: [
+          {
+            type: Input,
+            args: [
+              {
+                alias: 'matSortDisableClear',
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                alias: 'matSortDisabled',
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        sortChange: [
+          {
+            type: Output,
+            args: ['matSortChange'],
+          },
+        ],
+      },
+    );
 })();
 function getSortDirectionCycle(start, disableClear) {
-  let sortOrder = ["asc", "desc"];
-  if (start == "desc") {
+  let sortOrder = ['asc', 'desc'];
+  if (start == 'desc') {
     sortOrder.reverse();
   }
   if (!disableClear) {
-    sortOrder.push("");
+    sortOrder.push('');
   }
   return sortOrder;
 }
@@ -284,16 +300,26 @@ var MatSortHeaderIntl = class _MatSortHeaderIntl {
   static ɵprov = ɵɵdefineInjectable({
     token: _MatSortHeaderIntl,
     factory: _MatSortHeaderIntl.ɵfac,
-    providedIn: "root"
+    providedIn: 'root',
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSortHeaderIntl, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSortHeaderIntl,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: 'root',
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 function MAT_SORT_HEADER_INTL_PROVIDER_FACTORY(parentIntl) {
   return parentIntl || new MatSortHeaderIntl();
@@ -302,25 +328,25 @@ var MAT_SORT_HEADER_INTL_PROVIDER = {
   // If there is already an MatSortHeaderIntl available, use that. Otherwise, provide a new one.
   provide: MatSortHeaderIntl,
   deps: [[new Optional(), new SkipSelf(), MatSortHeaderIntl]],
-  useFactory: MAT_SORT_HEADER_INTL_PROVIDER_FACTORY
+  useFactory: MAT_SORT_HEADER_INTL_PROVIDER_FACTORY,
 };
 var MatSortHeader = class _MatSortHeader {
   _intl = inject(MatSortHeaderIntl);
   _sort = inject(MatSort, {
-    optional: true
+    optional: true,
   });
-  _columnDef = inject("MAT_SORT_HEADER_COLUMN_DEF", {
-    optional: true
+  _columnDef = inject('MAT_SORT_HEADER_COLUMN_DEF', {
+    optional: true,
   });
   _changeDetectorRef = inject(ChangeDetectorRef);
   _focusMonitor = inject(FocusMonitor);
   _elementRef = inject(ElementRef);
   _ariaDescriber = inject(AriaDescriber, {
-    optional: true
+    optional: true,
   });
   _renderChanges;
   _animationModule = inject(ANIMATION_MODULE_TYPE, {
-    optional: true
+    optional: true,
   });
   /**
    * Indicates which state was just cleared from the sort header.
@@ -338,7 +364,7 @@ var MatSortHeader = class _MatSortHeader {
    */
   id;
   /** Sets the position of the arrow that displays when sorted. */
-  arrowPosition = "after";
+  arrowPosition = 'after';
   /** Overrides the sort start value of the containing MatSort for this MatSortable. */
   start;
   /** whether the sort header is disabled. */
@@ -356,15 +382,15 @@ var MatSortHeader = class _MatSortHeader {
   // Default the action description to "Sort" because it's better than nothing.
   // Without a description, the button's label comes from the sort header text content,
   // which doesn't give any indication that it performs a sorting operation.
-  _sortActionDescription = "Sort";
+  _sortActionDescription = 'Sort';
   /** Overrides the disable clear value of the containing MatSort for this MatSortable. */
   disableClear;
   constructor() {
     inject(_CdkPrivateStyleLoader).load(_StructuralStylesLoader);
     const defaultOptions = inject(MAT_SORT_DEFAULT_OPTIONS, {
-      optional: true
+      optional: true,
     });
-    if (!this._sort && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (!this._sort && (typeof ngDevMode === 'undefined' || ngDevMode)) {
       throw getSortHeaderNotContainedWithinSortError();
     }
     if (defaultOptions?.arrowPosition) {
@@ -376,8 +402,10 @@ var MatSortHeader = class _MatSortHeader {
       this.id = this._columnDef.name;
     }
     this._sort.register(this);
-    this._renderChanges = merge(this._sort._stateChanges, this._sort.sortChange).subscribe(() => this._changeDetectorRef.markForCheck());
-    this._sortButton = this._elementRef.nativeElement.querySelector(".mat-sort-header-container");
+    this._renderChanges = merge(this._sort._stateChanges, this._sort.sortChange).subscribe(() =>
+      this._changeDetectorRef.markForCheck(),
+    );
+    this._sortButton = this._elementRef.nativeElement.querySelector('.mat-sort-header-container');
     this._updateSortActionDescription(this._sortActionDescription);
   }
   ngAfterViewInit() {
@@ -408,7 +436,7 @@ var MatSortHeader = class _MatSortHeader {
   }
   /** Whether this MatSortHeader is currently sorted in either ascending or descending order. */
   _isSorted() {
-    return this._sort.active == this.id && (this._sort.direction === "asc" || this._sort.direction === "desc");
+    return this._sort.active == this.id && (this._sort.direction === 'asc' || this._sort.direction === 'desc');
   }
   _isDisabled() {
     return this._sort.disabled || this.disabled;
@@ -421,9 +449,9 @@ var MatSortHeader = class _MatSortHeader {
    */
   _getAriaSortAttribute() {
     if (!this._isSorted()) {
-      return "none";
+      return 'none';
     }
-    return this._sort.direction == "asc" ? "ascending" : "descending";
+    return this._sort.direction == 'asc' ? 'ascending' : 'descending';
   }
   /** Whether the arrow inside the sort header should be rendered. */
   _renderArrow() {
@@ -441,76 +469,98 @@ var MatSortHeader = class _MatSortHeader {
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _MatSortHeader,
-    selectors: [["", "mat-sort-header", ""]],
-    hostAttrs: [1, "mat-sort-header"],
+    selectors: [['', 'mat-sort-header', '']],
+    hostAttrs: [1, 'mat-sort-header'],
     hostVars: 3,
     hostBindings: function MatSortHeader_HostBindings(rf, ctx) {
       if (rf & 1) {
-        ɵɵlistener("click", function MatSortHeader_click_HostBindingHandler() {
+        ɵɵlistener('click', function MatSortHeader_click_HostBindingHandler() {
           return ctx._toggleOnInteraction();
-        })("keydown", function MatSortHeader_keydown_HostBindingHandler($event) {
+        })('keydown', function MatSortHeader_keydown_HostBindingHandler($event) {
           return ctx._handleKeydown($event);
-        })("mouseleave", function MatSortHeader_mouseleave_HostBindingHandler() {
+        })('mouseleave', function MatSortHeader_mouseleave_HostBindingHandler() {
           return ctx._recentlyCleared.set(null);
         });
       }
       if (rf & 2) {
-        ɵɵattribute("aria-sort", ctx._getAriaSortAttribute());
-        ɵɵclassProp("mat-sort-header-disabled", ctx._isDisabled());
+        ɵɵattribute('aria-sort', ctx._getAriaSortAttribute());
+        ɵɵclassProp('mat-sort-header-disabled', ctx._isDisabled());
       }
     },
     inputs: {
-      id: [0, "mat-sort-header", "id"],
-      arrowPosition: "arrowPosition",
-      start: "start",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      sortActionDescription: "sortActionDescription",
-      disableClear: [2, "disableClear", "disableClear", booleanAttribute]
+      id: [0, 'mat-sort-header', 'id'],
+      arrowPosition: 'arrowPosition',
+      start: 'start',
+      disabled: [2, 'disabled', 'disabled', booleanAttribute],
+      sortActionDescription: 'sortActionDescription',
+      disableClear: [2, 'disableClear', 'disableClear', booleanAttribute],
     },
-    exportAs: ["matSortHeader"],
+    exportAs: ['matSortHeader'],
     attrs: _c0,
     ngContentSelectors: _c1,
     decls: 4,
     vars: 17,
-    consts: [[1, "mat-sort-header-container", "mat-focus-indicator"], [1, "mat-sort-header-content"], [1, "mat-sort-header-arrow"], ["viewBox", "0 -960 960 960", "focusable", "false", "aria-hidden", "true"], ["d", "M440-240v-368L296-464l-56-56 240-240 240 240-56 56-144-144v368h-80Z"]],
+    consts: [
+      [1, 'mat-sort-header-container', 'mat-focus-indicator'],
+      [1, 'mat-sort-header-content'],
+      [1, 'mat-sort-header-arrow'],
+      ['viewBox', '0 -960 960 960', 'focusable', 'false', 'aria-hidden', 'true'],
+      ['d', 'M440-240v-368L296-464l-56-56 240-240 240 240-56 56-144-144v368h-80Z'],
+    ],
     template: function MatSortHeader_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 0)(1, "div", 1);
+        ɵɵelementStart(0, 'div', 0)(1, 'div', 1);
         ɵɵprojection(2);
         ɵɵelementEnd();
-        ɵɵtemplate(3, MatSortHeader_Conditional_3_Template, 3, 0, "div", 2);
+        ɵɵtemplate(3, MatSortHeader_Conditional_3_Template, 3, 0, 'div', 2);
         ɵɵelementEnd();
       }
       if (rf & 2) {
-        ɵɵclassProp("mat-sort-header-sorted", ctx._isSorted())("mat-sort-header-position-before", ctx.arrowPosition === "before")("mat-sort-header-descending", ctx._sort.direction === "desc")("mat-sort-header-ascending", ctx._sort.direction === "asc")("mat-sort-header-recently-cleared-ascending", ctx._recentlyCleared() === "asc")("mat-sort-header-recently-cleared-descending", ctx._recentlyCleared() === "desc")("mat-sort-header-animations-disabled", ctx._animationModule === "NoopAnimations");
-        ɵɵattribute("tabindex", ctx._isDisabled() ? null : 0)("role", ctx._isDisabled() ? null : "button");
+        ɵɵclassProp('mat-sort-header-sorted', ctx._isSorted())(
+          'mat-sort-header-position-before',
+          ctx.arrowPosition === 'before',
+        )('mat-sort-header-descending', ctx._sort.direction === 'desc')(
+          'mat-sort-header-ascending',
+          ctx._sort.direction === 'asc',
+        )('mat-sort-header-recently-cleared-ascending', ctx._recentlyCleared() === 'asc')(
+          'mat-sort-header-recently-cleared-descending',
+          ctx._recentlyCleared() === 'desc',
+        )('mat-sort-header-animations-disabled', ctx._animationModule === 'NoopAnimations');
+        ɵɵattribute('tabindex', ctx._isDisabled() ? null : 0)('role', ctx._isDisabled() ? null : 'button');
         ɵɵadvance(3);
         ɵɵconditional(ctx._renderArrow() ? 3 : -1);
       }
     },
-    styles: [".mat-sort-header{cursor:pointer}.mat-sort-header-disabled{cursor:default}.mat-sort-header-container{display:flex;align-items:center;letter-spacing:normal;outline:0}[mat-sort-header].cdk-keyboard-focused .mat-sort-header-container,[mat-sort-header].cdk-program-focused .mat-sort-header-container{border-bottom:solid 1px currentColor}.mat-sort-header-container::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-sort-header-content{display:flex;align-items:center}.mat-sort-header-position-before{flex-direction:row-reverse}@keyframes _mat-sort-header-recently-cleared-ascending{from{transform:translateY(0);opacity:1}to{transform:translateY(-25%);opacity:0}}@keyframes _mat-sort-header-recently-cleared-descending{from{transform:translateY(0) rotate(180deg);opacity:1}to{transform:translateY(25%) rotate(180deg);opacity:0}}.mat-sort-header-arrow{height:12px;width:12px;position:relative;transition:transform 225ms cubic-bezier(0.4, 0, 0.2, 1),opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);opacity:0;overflow:visible;color:var(--mat-sort-arrow-color, var(--mat-sys-on-surface))}.mat-sort-header.cdk-keyboard-focused .mat-sort-header-arrow,.mat-sort-header.cdk-program-focused .mat-sort-header-arrow,.mat-sort-header:hover .mat-sort-header-arrow{opacity:.54}.mat-sort-header .mat-sort-header-sorted .mat-sort-header-arrow{opacity:1}.mat-sort-header-descending .mat-sort-header-arrow{transform:rotate(180deg)}.mat-sort-header-recently-cleared-ascending .mat-sort-header-arrow{transform:translateY(-25%)}.mat-sort-header-recently-cleared-ascending .mat-sort-header-arrow{transition:none;animation:_mat-sort-header-recently-cleared-ascending 225ms cubic-bezier(0.4, 0, 0.2, 1) forwards}.mat-sort-header-recently-cleared-descending .mat-sort-header-arrow{transition:none;animation:_mat-sort-header-recently-cleared-descending 225ms cubic-bezier(0.4, 0, 0.2, 1) forwards}.mat-sort-header-animations-disabled .mat-sort-header-arrow{transition-duration:0ms;animation-duration:0ms}.mat-sort-header-arrow svg{width:24px;height:24px;fill:currentColor;position:absolute;top:50%;left:50%;margin:-12px 0 0 -12px;transform:translateZ(0)}.mat-sort-header-arrow,[dir=rtl] .mat-sort-header-position-before .mat-sort-header-arrow{margin:0 0 0 6px}.mat-sort-header-position-before .mat-sort-header-arrow,[dir=rtl] .mat-sort-header-arrow{margin:0 6px 0 0}\n"],
+    styles: [
+      '.mat-sort-header{cursor:pointer}.mat-sort-header-disabled{cursor:default}.mat-sort-header-container{display:flex;align-items:center;letter-spacing:normal;outline:0}[mat-sort-header].cdk-keyboard-focused .mat-sort-header-container,[mat-sort-header].cdk-program-focused .mat-sort-header-container{border-bottom:solid 1px currentColor}.mat-sort-header-container::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-sort-header-content{display:flex;align-items:center}.mat-sort-header-position-before{flex-direction:row-reverse}@keyframes _mat-sort-header-recently-cleared-ascending{from{transform:translateY(0);opacity:1}to{transform:translateY(-25%);opacity:0}}@keyframes _mat-sort-header-recently-cleared-descending{from{transform:translateY(0) rotate(180deg);opacity:1}to{transform:translateY(25%) rotate(180deg);opacity:0}}.mat-sort-header-arrow{height:12px;width:12px;position:relative;transition:transform 225ms cubic-bezier(0.4, 0, 0.2, 1),opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);opacity:0;overflow:visible;color:var(--mat-sort-arrow-color, var(--mat-sys-on-surface))}.mat-sort-header.cdk-keyboard-focused .mat-sort-header-arrow,.mat-sort-header.cdk-program-focused .mat-sort-header-arrow,.mat-sort-header:hover .mat-sort-header-arrow{opacity:.54}.mat-sort-header .mat-sort-header-sorted .mat-sort-header-arrow{opacity:1}.mat-sort-header-descending .mat-sort-header-arrow{transform:rotate(180deg)}.mat-sort-header-recently-cleared-ascending .mat-sort-header-arrow{transform:translateY(-25%)}.mat-sort-header-recently-cleared-ascending .mat-sort-header-arrow{transition:none;animation:_mat-sort-header-recently-cleared-ascending 225ms cubic-bezier(0.4, 0, 0.2, 1) forwards}.mat-sort-header-recently-cleared-descending .mat-sort-header-arrow{transition:none;animation:_mat-sort-header-recently-cleared-descending 225ms cubic-bezier(0.4, 0, 0.2, 1) forwards}.mat-sort-header-animations-disabled .mat-sort-header-arrow{transition-duration:0ms;animation-duration:0ms}.mat-sort-header-arrow svg{width:24px;height:24px;fill:currentColor;position:absolute;top:50%;left:50%;margin:-12px 0 0 -12px;transform:translateZ(0)}.mat-sort-header-arrow,[dir=rtl] .mat-sort-header-position-before .mat-sort-header-arrow{margin:0 0 0 6px}.mat-sort-header-position-before .mat-sort-header-arrow,[dir=rtl] .mat-sort-header-arrow{margin:0 6px 0 0}\n',
+    ],
     encapsulation: 2,
-    changeDetection: 0
+    changeDetection: 0,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSortHeader, [{
-    type: Component,
-    args: [{
-      selector: "[mat-sort-header]",
-      exportAs: "matSortHeader",
-      host: {
-        "class": "mat-sort-header",
-        "(click)": "_toggleOnInteraction()",
-        "(keydown)": "_handleKeydown($event)",
-        "(mouseleave)": "_recentlyCleared.set(null)",
-        "[attr.aria-sort]": "_getAriaSortAttribute()",
-        "[class.mat-sort-header-disabled]": "_isDisabled()"
-      },
-      encapsulation: ViewEncapsulation.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      template: `<!--
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSortHeader,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: '[mat-sort-header]',
+              exportAs: 'matSortHeader',
+              host: {
+                class: 'mat-sort-header',
+                '(click)': '_toggleOnInteraction()',
+                '(keydown)': '_handleKeydown($event)',
+                '(mouseleave)': '_recentlyCleared.set(null)',
+                '[attr.aria-sort]': '_getAriaSortAttribute()',
+                '[class.mat-sort-header-disabled]': '_isDisabled()',
+              },
+              encapsulation: ViewEncapsulation.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              template: `<!--
   We set the \`tabindex\` on an element inside the table header, rather than the header itself,
   because of a bug in NVDA where having a \`tabindex\` on a \`th\` breaks keyboard navigation in the
   table (see https://github.com/nvaccess/nvda/issues/7718). This allows for the header to both
@@ -551,35 +601,58 @@ var MatSortHeader = class _MatSortHeader {
   }
 </div>
 `,
-      styles: [".mat-sort-header{cursor:pointer}.mat-sort-header-disabled{cursor:default}.mat-sort-header-container{display:flex;align-items:center;letter-spacing:normal;outline:0}[mat-sort-header].cdk-keyboard-focused .mat-sort-header-container,[mat-sort-header].cdk-program-focused .mat-sort-header-container{border-bottom:solid 1px currentColor}.mat-sort-header-container::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-sort-header-content{display:flex;align-items:center}.mat-sort-header-position-before{flex-direction:row-reverse}@keyframes _mat-sort-header-recently-cleared-ascending{from{transform:translateY(0);opacity:1}to{transform:translateY(-25%);opacity:0}}@keyframes _mat-sort-header-recently-cleared-descending{from{transform:translateY(0) rotate(180deg);opacity:1}to{transform:translateY(25%) rotate(180deg);opacity:0}}.mat-sort-header-arrow{height:12px;width:12px;position:relative;transition:transform 225ms cubic-bezier(0.4, 0, 0.2, 1),opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);opacity:0;overflow:visible;color:var(--mat-sort-arrow-color, var(--mat-sys-on-surface))}.mat-sort-header.cdk-keyboard-focused .mat-sort-header-arrow,.mat-sort-header.cdk-program-focused .mat-sort-header-arrow,.mat-sort-header:hover .mat-sort-header-arrow{opacity:.54}.mat-sort-header .mat-sort-header-sorted .mat-sort-header-arrow{opacity:1}.mat-sort-header-descending .mat-sort-header-arrow{transform:rotate(180deg)}.mat-sort-header-recently-cleared-ascending .mat-sort-header-arrow{transform:translateY(-25%)}.mat-sort-header-recently-cleared-ascending .mat-sort-header-arrow{transition:none;animation:_mat-sort-header-recently-cleared-ascending 225ms cubic-bezier(0.4, 0, 0.2, 1) forwards}.mat-sort-header-recently-cleared-descending .mat-sort-header-arrow{transition:none;animation:_mat-sort-header-recently-cleared-descending 225ms cubic-bezier(0.4, 0, 0.2, 1) forwards}.mat-sort-header-animations-disabled .mat-sort-header-arrow{transition-duration:0ms;animation-duration:0ms}.mat-sort-header-arrow svg{width:24px;height:24px;fill:currentColor;position:absolute;top:50%;left:50%;margin:-12px 0 0 -12px;transform:translateZ(0)}.mat-sort-header-arrow,[dir=rtl] .mat-sort-header-position-before .mat-sort-header-arrow{margin:0 0 0 6px}.mat-sort-header-position-before .mat-sort-header-arrow,[dir=rtl] .mat-sort-header-arrow{margin:0 6px 0 0}\n"]
-    }]
-  }], () => [], {
-    id: [{
-      type: Input,
-      args: ["mat-sort-header"]
-    }],
-    arrowPosition: [{
-      type: Input
-    }],
-    start: [{
-      type: Input
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    sortActionDescription: [{
-      type: Input
-    }],
-    disableClear: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }]
-  });
+              styles: [
+                '.mat-sort-header{cursor:pointer}.mat-sort-header-disabled{cursor:default}.mat-sort-header-container{display:flex;align-items:center;letter-spacing:normal;outline:0}[mat-sort-header].cdk-keyboard-focused .mat-sort-header-container,[mat-sort-header].cdk-program-focused .mat-sort-header-container{border-bottom:solid 1px currentColor}.mat-sort-header-container::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-sort-header-content{display:flex;align-items:center}.mat-sort-header-position-before{flex-direction:row-reverse}@keyframes _mat-sort-header-recently-cleared-ascending{from{transform:translateY(0);opacity:1}to{transform:translateY(-25%);opacity:0}}@keyframes _mat-sort-header-recently-cleared-descending{from{transform:translateY(0) rotate(180deg);opacity:1}to{transform:translateY(25%) rotate(180deg);opacity:0}}.mat-sort-header-arrow{height:12px;width:12px;position:relative;transition:transform 225ms cubic-bezier(0.4, 0, 0.2, 1),opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);opacity:0;overflow:visible;color:var(--mat-sort-arrow-color, var(--mat-sys-on-surface))}.mat-sort-header.cdk-keyboard-focused .mat-sort-header-arrow,.mat-sort-header.cdk-program-focused .mat-sort-header-arrow,.mat-sort-header:hover .mat-sort-header-arrow{opacity:.54}.mat-sort-header .mat-sort-header-sorted .mat-sort-header-arrow{opacity:1}.mat-sort-header-descending .mat-sort-header-arrow{transform:rotate(180deg)}.mat-sort-header-recently-cleared-ascending .mat-sort-header-arrow{transform:translateY(-25%)}.mat-sort-header-recently-cleared-ascending .mat-sort-header-arrow{transition:none;animation:_mat-sort-header-recently-cleared-ascending 225ms cubic-bezier(0.4, 0, 0.2, 1) forwards}.mat-sort-header-recently-cleared-descending .mat-sort-header-arrow{transition:none;animation:_mat-sort-header-recently-cleared-descending 225ms cubic-bezier(0.4, 0, 0.2, 1) forwards}.mat-sort-header-animations-disabled .mat-sort-header-arrow{transition-duration:0ms;animation-duration:0ms}.mat-sort-header-arrow svg{width:24px;height:24px;fill:currentColor;position:absolute;top:50%;left:50%;margin:-12px 0 0 -12px;transform:translateZ(0)}.mat-sort-header-arrow,[dir=rtl] .mat-sort-header-position-before .mat-sort-header-arrow{margin:0 0 0 6px}.mat-sort-header-position-before .mat-sort-header-arrow,[dir=rtl] .mat-sort-header-arrow{margin:0 6px 0 0}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [],
+      {
+        id: [
+          {
+            type: Input,
+            args: ['mat-sort-header'],
+          },
+        ],
+        arrowPosition: [
+          {
+            type: Input,
+          },
+        ],
+        start: [
+          {
+            type: Input,
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        sortActionDescription: [
+          {
+            type: Input,
+          },
+        ],
+        disableClear: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
 var MatSortModule = class _MatSortModule {
   static ɵfac = function MatSortModule_Factory(__ngFactoryType__) {
@@ -588,22 +661,32 @@ var MatSortModule = class _MatSortModule {
   static ɵmod = ɵɵdefineNgModule({
     type: _MatSortModule,
     imports: [MatCommonModule, MatSort, MatSortHeader],
-    exports: [MatSort, MatSortHeader]
+    exports: [MatSort, MatSortHeader],
   });
   static ɵinj = ɵɵdefineInjector({
     providers: [MAT_SORT_HEADER_INTL_PROVIDER],
-    imports: [MatCommonModule]
+    imports: [MatCommonModule],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatSortModule, [{
-    type: NgModule,
-    args: [{
-      imports: [MatCommonModule, MatSort, MatSortHeader],
-      exports: [MatSort, MatSortHeader],
-      providers: [MAT_SORT_HEADER_INTL_PROVIDER]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      MatSortModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [MatCommonModule, MatSort, MatSortHeader],
+              exports: [MatSort, MatSortHeader],
+              providers: [MAT_SORT_HEADER_INTL_PROVIDER],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var matSortAnimations = {
   // Represents:
@@ -616,38 +699,42 @@ var matSortAnimations = {
   /** Animation that moves the sort indicator. */
   indicator: {
     type: 7,
-    name: "indicator",
-    definitions: [{
-      type: 0,
-      name: "active-asc, asc",
-      styles: {
-        type: 6,
+    name: 'indicator',
+    definitions: [
+      {
+        type: 0,
+        name: 'active-asc, asc',
         styles: {
-          transform: "translateY(0px)"
+          type: 6,
+          styles: {
+            transform: 'translateY(0px)',
+          },
+          offset: null,
         },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "active-desc, desc",
-      styles: {
-        type: 6,
-        styles: {
-          transform: "translateY(10px)"
-        },
-        offset: null
-      }
-    }, {
-      type: 1,
-      expr: "active-asc <=> active-desc",
-      animation: {
-        type: 4,
-        styles: null,
-        timings: "225ms cubic-bezier(0.4,0.0,0.2,1)"
       },
-      options: null
-    }],
-    options: {}
+      {
+        type: 0,
+        name: 'active-desc, desc',
+        styles: {
+          type: 6,
+          styles: {
+            transform: 'translateY(10px)',
+          },
+          offset: null,
+        },
+      },
+      {
+        type: 1,
+        expr: 'active-asc <=> active-desc',
+        animation: {
+          type: 4,
+          styles: null,
+          timings: '225ms cubic-bezier(0.4,0.0,0.2,1)',
+        },
+        options: null,
+      },
+    ],
+    options: {},
   },
   // Represents:
   // trigger('leftPointer', [
@@ -658,38 +745,42 @@ var matSortAnimations = {
   /** Animation that rotates the left pointer of the indicator based on the sorting direction. */
   leftPointer: {
     type: 7,
-    name: "leftPointer",
-    definitions: [{
-      type: 0,
-      name: "active-asc, asc",
-      styles: {
-        type: 6,
+    name: 'leftPointer',
+    definitions: [
+      {
+        type: 0,
+        name: 'active-asc, asc',
         styles: {
-          transform: "rotate(-45deg)"
+          type: 6,
+          styles: {
+            transform: 'rotate(-45deg)',
+          },
+          offset: null,
         },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "active-desc, desc",
-      styles: {
-        type: 6,
-        styles: {
-          transform: "rotate(45deg)"
-        },
-        offset: null
-      }
-    }, {
-      type: 1,
-      expr: "active-asc <=> active-desc",
-      animation: {
-        type: 4,
-        styles: null,
-        timings: "225ms cubic-bezier(0.4,0.0,0.2,1)"
       },
-      options: null
-    }],
-    options: {}
+      {
+        type: 0,
+        name: 'active-desc, desc',
+        styles: {
+          type: 6,
+          styles: {
+            transform: 'rotate(45deg)',
+          },
+          offset: null,
+        },
+      },
+      {
+        type: 1,
+        expr: 'active-asc <=> active-desc',
+        animation: {
+          type: 4,
+          styles: null,
+          timings: '225ms cubic-bezier(0.4,0.0,0.2,1)',
+        },
+        options: null,
+      },
+    ],
+    options: {},
   },
   // Represents:
   // trigger('rightPointer', [
@@ -700,38 +791,42 @@ var matSortAnimations = {
   /** Animation that rotates the right pointer of the indicator based on the sorting direction. */
   rightPointer: {
     type: 7,
-    name: "rightPointer",
-    definitions: [{
-      type: 0,
-      name: "active-asc, asc",
-      styles: {
-        type: 6,
+    name: 'rightPointer',
+    definitions: [
+      {
+        type: 0,
+        name: 'active-asc, asc',
         styles: {
-          transform: "rotate(45deg)"
+          type: 6,
+          styles: {
+            transform: 'rotate(45deg)',
+          },
+          offset: null,
         },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "active-desc, desc",
-      styles: {
-        type: 6,
-        styles: {
-          transform: "rotate(-45deg)"
-        },
-        offset: null
-      }
-    }, {
-      type: 1,
-      expr: "active-asc <=> active-desc",
-      animation: {
-        type: 4,
-        styles: null,
-        timings: "225ms cubic-bezier(0.4,0.0,0.2,1)"
       },
-      options: null
-    }],
-    options: {}
+      {
+        type: 0,
+        name: 'active-desc, desc',
+        styles: {
+          type: 6,
+          styles: {
+            transform: 'rotate(-45deg)',
+          },
+          offset: null,
+        },
+      },
+      {
+        type: 1,
+        expr: 'active-asc <=> active-desc',
+        animation: {
+          type: 4,
+          styles: null,
+          timings: '225ms cubic-bezier(0.4,0.0,0.2,1)',
+        },
+        options: null,
+      },
+    ],
+    options: {},
   },
   // Represents:
   // trigger('arrowOpacity', [
@@ -748,57 +843,63 @@ var matSortAnimations = {
   /** Animation that controls the arrow opacity. */
   arrowOpacity: {
     type: 7,
-    name: "arrowOpacity",
-    definitions: [{
-      type: 0,
-      name: "desc-to-active, asc-to-active, active",
-      styles: {
-        type: 6,
+    name: 'arrowOpacity',
+    definitions: [
+      {
+        type: 0,
+        name: 'desc-to-active, asc-to-active, active',
         styles: {
-          "opacity": 1
+          type: 6,
+          styles: {
+            opacity: 1,
+          },
+          offset: null,
         },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "desc-to-hint, asc-to-hint, hint",
-      styles: {
-        type: 6,
-        styles: {
-          "opacity": 0.54
-        },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "hint-to-desc, active-to-desc, desc, hint-to-asc, active-to-asc, asc, void",
-      styles: {
-        type: 6,
-        styles: {
-          "opacity": 0
-        },
-        offset: null
-      }
-    }, {
-      type: 1,
-      expr: "* => asc, * => desc, * => active, * => hint, * => void",
-      animation: {
-        type: 4,
-        styles: null,
-        timings: "0ms"
       },
-      options: null
-    }, {
-      type: 1,
-      expr: "* <=> *",
-      animation: {
-        type: 4,
-        styles: null,
-        timings: "225ms cubic-bezier(0.4,0.0,0.2,1)"
+      {
+        type: 0,
+        name: 'desc-to-hint, asc-to-hint, hint',
+        styles: {
+          type: 6,
+          styles: {
+            opacity: 0.54,
+          },
+          offset: null,
+        },
       },
-      options: null
-    }],
-    options: {}
+      {
+        type: 0,
+        name: 'hint-to-desc, active-to-desc, desc, hint-to-asc, active-to-asc, asc, void',
+        styles: {
+          type: 6,
+          styles: {
+            opacity: 0,
+          },
+          offset: null,
+        },
+      },
+      {
+        type: 1,
+        expr: '* => asc, * => desc, * => active, * => hint, * => void',
+        animation: {
+          type: 4,
+          styles: null,
+          timings: '0ms',
+        },
+        options: null,
+      },
+      {
+        type: 1,
+        expr: '* <=> *',
+        animation: {
+          type: 4,
+          styles: null,
+          timings: '225ms cubic-bezier(0.4,0.0,0.2,1)',
+        },
+        options: null,
+      },
+    ],
+    options: {},
   },
   // Represents:
   // trigger('arrowPosition', [
@@ -850,135 +951,155 @@ var matSortAnimations = {
    */
   arrowPosition: {
     type: 7,
-    name: "arrowPosition",
-    definitions: [{
-      type: 1,
-      expr: "* => desc-to-hint, * => desc-to-active",
-      animation: {
-        type: 4,
-        styles: {
-          type: 5,
-          "steps": [{
-            type: 6,
-            styles: {
-              transform: "translateY(-25%)"
-            },
-            offset: null
-          }, {
-            type: 6,
-            styles: {
-              transform: "translateY(0)"
-            },
-            offset: null
-          }]
+    name: 'arrowPosition',
+    definitions: [
+      {
+        type: 1,
+        expr: '* => desc-to-hint, * => desc-to-active',
+        animation: {
+          type: 4,
+          styles: {
+            type: 5,
+            steps: [
+              {
+                type: 6,
+                styles: {
+                  transform: 'translateY(-25%)',
+                },
+                offset: null,
+              },
+              {
+                type: 6,
+                styles: {
+                  transform: 'translateY(0)',
+                },
+                offset: null,
+              },
+            ],
+          },
+          timings: '225ms cubic-bezier(0.4,0.0,0.2,1)',
         },
-        timings: "225ms cubic-bezier(0.4,0.0,0.2,1)"
+        options: null,
       },
-      options: null
-    }, {
-      type: 1,
-      expr: "* => hint-to-desc, * => active-to-desc",
-      animation: {
-        type: 4,
-        styles: {
-          type: 5,
-          "steps": [{
-            type: 6,
-            styles: {
-              transform: "translateY(0)"
-            },
-            offset: null
-          }, {
-            type: 6,
-            styles: {
-              transform: "translateY(25%)"
-            },
-            offset: null
-          }]
+      {
+        type: 1,
+        expr: '* => hint-to-desc, * => active-to-desc',
+        animation: {
+          type: 4,
+          styles: {
+            type: 5,
+            steps: [
+              {
+                type: 6,
+                styles: {
+                  transform: 'translateY(0)',
+                },
+                offset: null,
+              },
+              {
+                type: 6,
+                styles: {
+                  transform: 'translateY(25%)',
+                },
+                offset: null,
+              },
+            ],
+          },
+          timings: '225ms cubic-bezier(0.4,0.0,0.2,1)',
         },
-        timings: "225ms cubic-bezier(0.4,0.0,0.2,1)"
+        options: null,
       },
-      options: null
-    }, {
-      type: 1,
-      expr: "* => asc-to-hint, * => asc-to-active",
-      animation: {
-        type: 4,
-        styles: {
-          type: 5,
-          "steps": [{
-            type: 6,
-            styles: {
-              transform: "translateY(25%)"
-            },
-            offset: null
-          }, {
-            type: 6,
-            styles: {
-              transform: "translateY(0)"
-            },
-            offset: null
-          }]
+      {
+        type: 1,
+        expr: '* => asc-to-hint, * => asc-to-active',
+        animation: {
+          type: 4,
+          styles: {
+            type: 5,
+            steps: [
+              {
+                type: 6,
+                styles: {
+                  transform: 'translateY(25%)',
+                },
+                offset: null,
+              },
+              {
+                type: 6,
+                styles: {
+                  transform: 'translateY(0)',
+                },
+                offset: null,
+              },
+            ],
+          },
+          timings: '225ms cubic-bezier(0.4,0.0,0.2,1)',
         },
-        timings: "225ms cubic-bezier(0.4,0.0,0.2,1)"
+        options: null,
       },
-      options: null
-    }, {
-      type: 1,
-      expr: "* => hint-to-asc, * => active-to-asc",
-      animation: {
-        type: 4,
-        styles: {
-          type: 5,
-          "steps": [{
-            type: 6,
-            styles: {
-              transform: "translateY(0)"
-            },
-            offset: null
-          }, {
-            type: 6,
-            styles: {
-              transform: "translateY(-25%)"
-            },
-            offset: null
-          }]
+      {
+        type: 1,
+        expr: '* => hint-to-asc, * => active-to-asc',
+        animation: {
+          type: 4,
+          styles: {
+            type: 5,
+            steps: [
+              {
+                type: 6,
+                styles: {
+                  transform: 'translateY(0)',
+                },
+                offset: null,
+              },
+              {
+                type: 6,
+                styles: {
+                  transform: 'translateY(-25%)',
+                },
+                offset: null,
+              },
+            ],
+          },
+          timings: '225ms cubic-bezier(0.4,0.0,0.2,1)',
         },
-        timings: "225ms cubic-bezier(0.4,0.0,0.2,1)"
+        options: null,
       },
-      options: null
-    }, {
-      type: 0,
-      name: "desc-to-hint, asc-to-hint, hint, desc-to-active, asc-to-active, active",
-      styles: {
-        type: 6,
+      {
+        type: 0,
+        name: 'desc-to-hint, asc-to-hint, hint, desc-to-active, asc-to-active, active',
         styles: {
-          transform: "translateY(0)"
+          type: 6,
+          styles: {
+            transform: 'translateY(0)',
+          },
+          offset: null,
         },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "hint-to-desc, active-to-desc, desc",
-      styles: {
-        type: 6,
+      },
+      {
+        type: 0,
+        name: 'hint-to-desc, active-to-desc, desc',
         styles: {
-          transform: "translateY(-25%)"
+          type: 6,
+          styles: {
+            transform: 'translateY(-25%)',
+          },
+          offset: null,
         },
-        offset: null
-      }
-    }, {
-      type: 0,
-      name: "hint-to-asc, active-to-asc, asc",
-      styles: {
-        type: 6,
+      },
+      {
+        type: 0,
+        name: 'hint-to-asc, active-to-asc, asc',
         styles: {
-          transform: "translateY(25%)"
+          type: 6,
+          styles: {
+            transform: 'translateY(25%)',
+          },
+          offset: null,
         },
-        offset: null
-      }
-    }],
-    options: {}
+      },
+    ],
+    options: {},
   },
   // Represents:
   // trigger('allowChildren', [
@@ -987,25 +1108,29 @@ var matSortAnimations = {
   /** Necessary trigger that calls animate on children animations. */
   allowChildren: {
     type: 7,
-    name: "allowChildren",
-    definitions: [{
-      type: 1,
-      expr: "* <=> *",
-      animation: [{
-        type: 11,
-        selector: "@*",
-        animation: {
-          type: 9,
-          options: null
-        },
-        options: {
-          optional: true
-        }
-      }],
-      options: null
-    }],
-    options: {}
-  }
+    name: 'allowChildren',
+    definitions: [
+      {
+        type: 1,
+        expr: '* <=> *',
+        animation: [
+          {
+            type: 11,
+            selector: '@*',
+            animation: {
+              type: 9,
+              options: null,
+            },
+            options: {
+              optional: true,
+            },
+          },
+        ],
+        options: null,
+      },
+    ],
+    options: {},
+  },
 };
 export {
   MAT_SORT_DEFAULT_OPTIONS,
@@ -1015,6 +1140,6 @@ export {
   MatSortHeader,
   MatSortHeaderIntl,
   MatSortModule,
-  matSortAnimations
+  matSortAnimations,
 };
 //# sourceMappingURL=@angular_material_sort.js.map

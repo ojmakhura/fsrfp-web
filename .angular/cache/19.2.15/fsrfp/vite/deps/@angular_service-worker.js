@@ -14,26 +14,15 @@ import {
   ɵɵdefineInjectable,
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
-  ɵɵinject
-} from "./chunk-LB7E77GG.js";
-import {
-  NEVER
-} from "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import {
-  Observable,
-  Subject,
-  filter,
-  map,
-  switchMap,
-  take
-} from "./chunk-4S3KYZTJ.js";
-import {
-  __spreadValues
-} from "./chunk-4MWRP73S.js";
+  ɵɵinject,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import { NEVER } from './chunk-WPM5VTLQ.js';
+import { Observable, Subject, filter, map, switchMap, take } from './chunk-4S3KYZTJ.js';
+import { __spreadValues } from './chunk-4MWRP73S.js';
 
 // node_modules/@angular/service-worker/fesm2022/service-worker.mjs
-var ERR_SW_NOT_SUPPORTED = "Service workers are disabled or not supported by this browser";
+var ERR_SW_NOT_SUPPORTED = 'Service workers are disabled or not supported by this browser';
 var NgswCommChannel = class {
   serviceWorker;
   worker;
@@ -42,7 +31,14 @@ var NgswCommChannel = class {
   constructor(serviceWorker, injector) {
     this.serviceWorker = serviceWorker;
     if (!serviceWorker) {
-      this.worker = this.events = this.registration = new Observable((subscriber) => subscriber.error(new RuntimeError(5601, (typeof ngDevMode === "undefined" || ngDevMode) && ERR_SW_NOT_SUPPORTED)));
+      this.worker =
+        this.events =
+        this.registration =
+          new Observable((subscriber) =>
+            subscriber.error(
+              new RuntimeError(5601, (typeof ngDevMode === 'undefined' || ngDevMode) && ERR_SW_NOT_SUPPORTED),
+            ),
+          );
     } else {
       let currentWorker = null;
       const workerSubject = new Subject();
@@ -53,44 +49,45 @@ var NgswCommChannel = class {
         return workerSubject.subscribe((v) => subscriber.next(v));
       });
       const updateController = () => {
-        const {
-          controller
-        } = serviceWorker;
+        const { controller } = serviceWorker;
         if (controller === null) {
           return;
         }
         currentWorker = controller;
         workerSubject.next(currentWorker);
       };
-      serviceWorker.addEventListener("controllerchange", updateController);
+      serviceWorker.addEventListener('controllerchange', updateController);
       updateController();
       this.registration = this.worker.pipe(switchMap(() => serviceWorker.getRegistration()));
       const _events = new Subject();
       this.events = _events.asObservable();
       const messageListener = (event) => {
-        const {
-          data
-        } = event;
+        const { data } = event;
         if (data?.type) {
           _events.next(data);
         }
       };
-      serviceWorker.addEventListener("message", messageListener);
+      serviceWorker.addEventListener('message', messageListener);
       const appRef = injector?.get(ApplicationRef, null, {
-        optional: true
+        optional: true,
       });
       appRef?.onDestroy(() => {
-        serviceWorker.removeEventListener("controllerchange", updateController);
-        serviceWorker.removeEventListener("message", messageListener);
+        serviceWorker.removeEventListener('controllerchange', updateController);
+        serviceWorker.removeEventListener('message', messageListener);
       });
     }
   }
   postMessage(action, payload) {
     return new Promise((resolve) => {
       this.worker.pipe(take(1)).subscribe((sw) => {
-        sw.postMessage(__spreadValues({
-          action
-        }, payload));
+        sw.postMessage(
+          __spreadValues(
+            {
+              action,
+            },
+            payload,
+          ),
+        );
         resolve();
       });
     });
@@ -105,7 +102,7 @@ var NgswCommChannel = class {
   }
   eventsOfType(type) {
     let filterFn;
-    if (typeof type === "string") {
+    if (typeof type === 'string') {
       filterFn = (event) => event.type === type;
     } else {
       filterFn = (event) => type.includes(event.type);
@@ -117,15 +114,21 @@ var NgswCommChannel = class {
   }
   waitForOperationCompleted(nonce) {
     return new Promise((resolve, reject) => {
-      this.eventsOfType("OPERATION_COMPLETED").pipe(filter((event) => event.nonce === nonce), take(1), map((event) => {
-        if (event.result !== void 0) {
-          return event.result;
-        }
-        throw new Error(event.error);
-      })).subscribe({
-        next: resolve,
-        error: reject
-      });
+      this.eventsOfType('OPERATION_COMPLETED')
+        .pipe(
+          filter((event) => event.nonce === nonce),
+          take(1),
+          map((event) => {
+            if (event.result !== void 0) {
+              return event.result;
+            }
+            throw new Error(event.error);
+          }),
+        )
+        .subscribe({
+          next: resolve,
+          error: reject,
+        });
     });
   }
   get isEnabled() {
@@ -173,8 +176,8 @@ var SwPush = class _SwPush {
       this.subscription = NEVER;
       return;
     }
-    this.messages = this.sw.eventsOfType("PUSH").pipe(map((message) => message.data));
-    this.notificationClicks = this.sw.eventsOfType("NOTIFICATION_CLICK").pipe(map((message) => message.data));
+    this.messages = this.sw.eventsOfType('PUSH').pipe(map((message) => message.data));
+    this.notificationClicks = this.sw.eventsOfType('NOTIFICATION_CLICK').pipe(map((message) => message.data));
     this.pushManager = this.sw.registration.pipe(map((registration) => registration.pushManager));
     const workerDrivenSubscriptions = this.pushManager.pipe(switchMap((pm) => pm.getSubscription()));
     this.subscription = new Observable((subscriber) => {
@@ -198,22 +201,27 @@ var SwPush = class _SwPush {
       return Promise.reject(new Error(ERR_SW_NOT_SUPPORTED));
     }
     const pushOptions = {
-      userVisibleOnly: true
+      userVisibleOnly: true,
     };
-    let key = this.decodeBase64(options.serverPublicKey.replace(/_/g, "/").replace(/-/g, "+"));
+    let key = this.decodeBase64(options.serverPublicKey.replace(/_/g, '/').replace(/-/g, '+'));
     let applicationServerKey = new Uint8Array(new ArrayBuffer(key.length));
     for (let i = 0; i < key.length; i++) {
       applicationServerKey[i] = key.charCodeAt(i);
     }
     pushOptions.applicationServerKey = applicationServerKey;
     return new Promise((resolve, reject) => {
-      this.pushManager.pipe(switchMap((pm) => pm.subscribe(pushOptions)), take(1)).subscribe({
-        next: (sub) => {
-          this.subscriptionChanges.next(sub);
-          resolve(sub);
-        },
-        error: reject
-      });
+      this.pushManager
+        .pipe(
+          switchMap((pm) => pm.subscribe(pushOptions)),
+          take(1),
+        )
+        .subscribe({
+          next: (sub) => {
+            this.subscriptionChanges.next(sub);
+            resolve(sub);
+          },
+          error: reject,
+        });
     });
   }
   /**
@@ -228,11 +236,14 @@ var SwPush = class _SwPush {
     }
     const doUnsubscribe = (sub) => {
       if (sub === null) {
-        throw new RuntimeError(5602, (typeof ngDevMode === "undefined" || ngDevMode) && "Not subscribed to push notifications.");
+        throw new RuntimeError(
+          5602,
+          (typeof ngDevMode === 'undefined' || ngDevMode) && 'Not subscribed to push notifications.',
+        );
       }
       return sub.unsubscribe().then((success) => {
         if (!success) {
-          throw new RuntimeError(5603, (typeof ngDevMode === "undefined" || ngDevMode) && "Unsubscribe failed!");
+          throw new RuntimeError(5603, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Unsubscribe failed!');
         }
         this.subscriptionChanges.next(null);
       });
@@ -240,7 +251,7 @@ var SwPush = class _SwPush {
     return new Promise((resolve, reject) => {
       this.subscription.pipe(take(1), switchMap(doUnsubscribe)).subscribe({
         next: resolve,
-        error: reject
+        error: reject,
       });
     });
   }
@@ -252,15 +263,25 @@ var SwPush = class _SwPush {
   };
   static ɵprov = ɵɵdefineInjectable({
     token: _SwPush,
-    factory: _SwPush.ɵfac
+    factory: _SwPush.ɵfac,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SwPush, [{
-    type: Injectable
-  }], () => [{
-    type: NgswCommChannel
-  }], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      SwPush,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      () => [
+        {
+          type: NgswCommChannel,
+        },
+      ],
+      null,
+    );
 })();
 var SwUpdate = class _SwUpdate {
   sw;
@@ -294,8 +315,13 @@ var SwUpdate = class _SwUpdate {
       this.unrecoverable = NEVER;
       return;
     }
-    this.versionUpdates = this.sw.eventsOfType(["VERSION_DETECTED", "VERSION_INSTALLATION_FAILED", "VERSION_READY", "NO_NEW_VERSION_DETECTED"]);
-    this.unrecoverable = this.sw.eventsOfType("UNRECOVERABLE_STATE");
+    this.versionUpdates = this.sw.eventsOfType([
+      'VERSION_DETECTED',
+      'VERSION_INSTALLATION_FAILED',
+      'VERSION_READY',
+      'NO_NEW_VERSION_DETECTED',
+    ]);
+    this.unrecoverable = this.sw.eventsOfType('UNRECOVERABLE_STATE');
   }
   /**
    * Checks for an update and waits until the new version is downloaded from the server and ready
@@ -311,9 +337,13 @@ var SwUpdate = class _SwUpdate {
       return Promise.reject(new Error(ERR_SW_NOT_SUPPORTED));
     }
     const nonce = this.sw.generateNonce();
-    return this.sw.postMessageWithOperation("CHECK_FOR_UPDATES", {
-      nonce
-    }, nonce);
+    return this.sw.postMessageWithOperation(
+      'CHECK_FOR_UPDATES',
+      {
+        nonce,
+      },
+      nonce,
+    );
   }
   /**
    * Updates the current client (i.e. browser tab) to the latest version that is ready for
@@ -341,35 +371,51 @@ var SwUpdate = class _SwUpdate {
    */
   activateUpdate() {
     if (!this.sw.isEnabled) {
-      return Promise.reject(new RuntimeError(5601, (typeof ngDevMode === "undefined" || ngDevMode) && ERR_SW_NOT_SUPPORTED));
+      return Promise.reject(
+        new RuntimeError(5601, (typeof ngDevMode === 'undefined' || ngDevMode) && ERR_SW_NOT_SUPPORTED),
+      );
     }
     const nonce = this.sw.generateNonce();
-    return this.sw.postMessageWithOperation("ACTIVATE_UPDATE", {
-      nonce
-    }, nonce);
+    return this.sw.postMessageWithOperation(
+      'ACTIVATE_UPDATE',
+      {
+        nonce,
+      },
+      nonce,
+    );
   }
   static ɵfac = function SwUpdate_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _SwUpdate)(ɵɵinject(NgswCommChannel));
   };
   static ɵprov = ɵɵdefineInjectable({
     token: _SwUpdate,
-    factory: _SwUpdate.ɵfac
+    factory: _SwUpdate.ɵfac,
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SwUpdate, [{
-    type: Injectable
-  }], () => [{
-    type: NgswCommChannel
-  }], null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      SwUpdate,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      () => [
+        {
+          type: NgswCommChannel,
+        },
+      ],
+      null,
+    );
 })();
-var SCRIPT = new InjectionToken(ngDevMode ? "NGSW_REGISTER_SCRIPT" : "");
+var SCRIPT = new InjectionToken(ngDevMode ? 'NGSW_REGISTER_SCRIPT' : '');
 function ngswAppInitializer() {
   if (false) {
     return;
   }
   const options = inject(SwRegistrationOptions);
-  if (!("serviceWorker" in navigator && options.enabled !== false)) {
+  if (!('serviceWorker' in navigator && options.enabled !== false)) {
     return;
   }
   const script = inject(SCRIPT);
@@ -377,44 +423,56 @@ function ngswAppInitializer() {
   const appRef = inject(ApplicationRef);
   ngZone.runOutsideAngular(() => {
     const sw = navigator.serviceWorker;
-    const onControllerChange = () => sw.controller?.postMessage({
-      action: "INITIALIZE"
-    });
-    sw.addEventListener("controllerchange", onControllerChange);
+    const onControllerChange = () =>
+      sw.controller?.postMessage({
+        action: 'INITIALIZE',
+      });
+    sw.addEventListener('controllerchange', onControllerChange);
     appRef.onDestroy(() => {
-      sw.removeEventListener("controllerchange", onControllerChange);
+      sw.removeEventListener('controllerchange', onControllerChange);
     });
   });
   ngZone.runOutsideAngular(() => {
     let readyToRegister;
-    const {
-      registrationStrategy
-    } = options;
-    if (typeof registrationStrategy === "function") {
+    const { registrationStrategy } = options;
+    if (typeof registrationStrategy === 'function') {
       readyToRegister = new Promise((resolve) => registrationStrategy().subscribe(() => resolve()));
     } else {
-      const [strategy, ...args] = (registrationStrategy || "registerWhenStable:30000").split(":");
+      const [strategy, ...args] = (registrationStrategy || 'registerWhenStable:30000').split(':');
       switch (strategy) {
-        case "registerImmediately":
+        case 'registerImmediately':
           readyToRegister = Promise.resolve();
           break;
-        case "registerWithDelay":
+        case 'registerWithDelay':
           readyToRegister = delayWithTimeout(+args[0] || 0);
           break;
-        case "registerWhenStable":
+        case 'registerWhenStable':
           readyToRegister = Promise.race([appRef.whenStable(), delayWithTimeout(+args[0])]);
           break;
         default:
-          throw new RuntimeError(5600, (typeof ngDevMode === "undefined" || ngDevMode) && `Unknown ServiceWorker registration strategy: ${options.registrationStrategy}`);
+          throw new RuntimeError(
+            5600,
+            (typeof ngDevMode === 'undefined' || ngDevMode) &&
+              `Unknown ServiceWorker registration strategy: ${options.registrationStrategy}`,
+          );
       }
     }
     readyToRegister.then(() => {
       if (appRef.destroyed) {
         return;
       }
-      navigator.serviceWorker.register(script, {
-        scope: options.scope
-      }).catch((err) => console.error(formatRuntimeError(5604, (typeof ngDevMode === "undefined" || ngDevMode) && "Service worker registration failed with: " + err)));
+      navigator.serviceWorker
+        .register(script, {
+          scope: options.scope,
+        })
+        .catch((err) =>
+          console.error(
+            formatRuntimeError(
+              5604,
+              (typeof ngDevMode === 'undefined' || ngDevMode) && 'Service worker registration failed with: ' + err,
+            ),
+          ),
+        );
     });
   });
 }
@@ -471,17 +529,24 @@ var SwRegistrationOptions = class {
   registrationStrategy;
 };
 function provideServiceWorker(script, options = {}) {
-  return makeEnvironmentProviders([SwPush, SwUpdate, {
-    provide: SCRIPT,
-    useValue: script
-  }, {
-    provide: SwRegistrationOptions,
-    useValue: options
-  }, {
-    provide: NgswCommChannel,
-    useFactory: ngswCommChannelFactory,
-    deps: [SwRegistrationOptions, Injector]
-  }, provideAppInitializer(ngswAppInitializer)]);
+  return makeEnvironmentProviders([
+    SwPush,
+    SwUpdate,
+    {
+      provide: SCRIPT,
+      useValue: script,
+    },
+    {
+      provide: SwRegistrationOptions,
+      useValue: options,
+    },
+    {
+      provide: NgswCommChannel,
+      useFactory: ngswCommChannelFactory,
+      deps: [SwRegistrationOptions, Injector],
+    },
+    provideAppInitializer(ngswAppInitializer),
+  ]);
 }
 var ServiceWorkerModule = class _ServiceWorkerModule {
   /**
@@ -493,34 +558,38 @@ var ServiceWorkerModule = class _ServiceWorkerModule {
   static register(script, options = {}) {
     return {
       ngModule: _ServiceWorkerModule,
-      providers: [provideServiceWorker(script, options)]
+      providers: [provideServiceWorker(script, options)],
     };
   }
   static ɵfac = function ServiceWorkerModule_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ServiceWorkerModule)();
   };
   static ɵmod = ɵɵdefineNgModule({
-    type: _ServiceWorkerModule
+    type: _ServiceWorkerModule,
   });
   static ɵinj = ɵɵdefineInjector({
-    providers: [SwPush, SwUpdate]
+    providers: [SwPush, SwUpdate],
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ServiceWorkerModule, [{
-    type: NgModule,
-    args: [{
-      providers: [SwPush, SwUpdate]
-    }]
-  }], null, null);
+  (typeof ngDevMode === 'undefined' || ngDevMode) &&
+    setClassMetadata(
+      ServiceWorkerModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              providers: [SwPush, SwUpdate],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-export {
-  ServiceWorkerModule,
-  SwPush,
-  SwRegistrationOptions,
-  SwUpdate,
-  provideServiceWorker
-};
+export { ServiceWorkerModule, SwPush, SwRegistrationOptions, SwUpdate, provideServiceWorker };
 /*! Bundled license information:
 
 @angular/service-worker/fesm2022/service-worker.mjs:

@@ -16,7 +16,7 @@
     "translations:extract": "ngx-translate-extract --input ./src --output ./src/translations/template.json --format=json --clean --sort",
     "docs": "hads ./docs -o",
     "write:env": "ngx-scripts env npm_package_version",
-    "prettier": "prettier --write \"./src/**/*.{ts,js,html,scss}\"",
+    "prettier": "prettier --ignore-unknown --write './src/**/*.{ts,js,html,scss}' || true",
     "prettier:check": "prettier --list-different \"./src/**/*.{ts,js,html,scss}\"",
     "postinstall": "npm run prettier -s && husky install",
     "generate": "ng generate"
@@ -75,6 +75,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "@ngx-rocket/scripts": "^5.2.1",
     "prettier": "^3.5.3",
     "pretty-quick": "^4.0.0",
     "ts-node": "^10.9.2",

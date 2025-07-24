@@ -5,17 +5,12 @@ import {
   effect,
   inject,
   isSignal,
-  untracked
-} from "./chunk-LB7E77GG.js";
-import {
-  isObservable
-} from "./chunk-WPM5VTLQ.js";
-import "./chunk-PEBH6BBU.js";
-import {
-  Subject,
-  noop
-} from "./chunk-4S3KYZTJ.js";
-import "./chunk-4MWRP73S.js";
+  untracked,
+} from './chunk-LB7E77GG.js';
+import './chunk-PEBH6BBU.js';
+import { isObservable } from './chunk-WPM5VTLQ.js';
+import { Subject, noop } from './chunk-4S3KYZTJ.js';
+import './chunk-4MWRP73S.js';
 
 // node_modules/@ngrx/signals/fesm2022/ngrx-signals-rxjs-interop.mjs
 function rxMethod(generator, config) {
@@ -30,23 +25,33 @@ function rxMethod(generator, config) {
     if (isStatic(input)) {
       source$.next(input);
       return {
-        destroy: noop
+        destroy: noop,
       };
     }
     const callerInjector = getCallerInjector();
-    if (typeof ngDevMode !== "undefined" && ngDevMode && config2?.injector === void 0 && callerInjector === void 0) {
-      console.warn("@ngrx/signals/rxjs-interop: The reactive method was called outside", "the injection context with a signal or observable. This may lead to", "a memory leak. Make sure to call it within the injection context", "(e.g. in a constructor or field initializer) or pass an injector", "explicitly via the config parameter.\n\nFor more information, see:", "https://ngrx.io/guide/signals/rxjs-integration#reactive-methods-and-injector-hierarchies");
+    if (typeof ngDevMode !== 'undefined' && ngDevMode && config2?.injector === void 0 && callerInjector === void 0) {
+      console.warn(
+        '@ngrx/signals/rxjs-interop: The reactive method was called outside',
+        'the injection context with a signal or observable. This may lead to',
+        'a memory leak. Make sure to call it within the injection context',
+        '(e.g. in a constructor or field initializer) or pass an injector',
+        'explicitly via the config parameter.\n\nFor more information, see:',
+        'https://ngrx.io/guide/signals/rxjs-integration#reactive-methods-and-injector-hierarchies',
+      );
     }
     const instanceInjector = config2?.injector ?? callerInjector ?? sourceInjector;
     if (isSignal(input)) {
-      const watcher = effect(() => {
-        const value = input();
-        untracked(() => source$.next(value));
-      }, {
-        injector: instanceInjector
-      });
+      const watcher = effect(
+        () => {
+          const value = input();
+          untracked(() => source$.next(value));
+        },
+        {
+          injector: instanceInjector,
+        },
+      );
       sourceSub.add({
-        unsubscribe: () => watcher.destroy()
+        unsubscribe: () => watcher.destroy(),
       });
       return watcher;
     }
@@ -56,7 +61,7 @@ function rxMethod(generator, config) {
       instanceInjector.get(DestroyRef).onDestroy(() => instanceSub.unsubscribe());
     }
     return {
-      destroy: () => instanceSub.unsubscribe()
+      destroy: () => instanceSub.unsubscribe(),
     };
   };
   rxMethodFn.destroy = sourceSub.unsubscribe.bind(sourceSub);
@@ -72,7 +77,5 @@ function getCallerInjector() {
     return void 0;
   }
 }
-export {
-  rxMethod
-};
+export { rxMethod };
 //# sourceMappingURL=@ngrx_signals_rxjs-interop.js.map

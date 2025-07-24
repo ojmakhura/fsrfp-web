@@ -5,6 +5,263 @@
     <p class="page-subtitle">{{ 'home.subtitle' | translate }}</p>
   </div>
 
+  <!-- Search Section -->
+  <div class="search-section">
+    <mat-form-field class="search-field" appearance="outline">
+      <mat-label>{{ 'home.searchPlaceholder' | translate }}</mat-label>
+      <input
+        matInput
+        [value]="searchTerm()"
+        (input)="onSearchChange($event)"
+        [placeholder]="'home.searchPlaceholder' | translate"
+      />
+      <mat-icon matPrefix>search</mat-icon>
+      @if (searchTerm()) {
+        <button matSuffix mat-icon-button (click)="clearSearch()" aria-label="Clear search">
+          <mat-icon>clear</mat-icon>
+        </button>
+      }
+    </mat-form-field>
+  </div>
+
+  <!-- Search Results Section -->
+  @if (searchTerm()) {
+    <div class="search-results-section">
+      <h2 class="section-title">{{ 'home.searchResults' | translate }} "{{ searchTerm() }}"</h2>
+
+      <!-- Search Results Tabs -->
+      <mat-tab-group class="search-results-tabs" animationDuration="300ms">
+        <!-- Operations Tab -->
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">business</mat-icon>
+            {{ 'home.operations' | translate }} ({{ filteredOperations().length }})
+          </ng-template>
+          <div class="tab-content">
+            @if (filteredOperations().length > 0) {
+              <div class="table-container">
+                <table mat-table [dataSource]="filteredOperations()" class="search-results-table mat-elevation-1">
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef>{{ 'common.name' | translate }}</th>
+                    <td mat-cell *matCellDef="let operation">{{ operation.name }}</td>
+                  </ng-container>
+
+                  <!-- Regulator Column -->
+                  <ng-container matColumnDef="regulator">
+                    <th mat-header-cell *matHeaderCellDef>{{ 'common.regulator' | translate }}</th>
+                    <td mat-cell *matCellDef="let operation">{{ operation.regulator?.name }}</td>
+                  </ng-container>
+
+                  <!-- Actions Column -->
+                  <ng-container matColumnDef="actions">
+                    <th mat-header-cell *matHeaderCellDef class="actions-column">{{ 'common.actions' | translate }}</th>
+                    <td mat-cell *matCellDef="let operation" class="actions-column">
+                      <button
+                        mat-icon-button
+                        (click)="viewOperation(operation)"
+                        [attr.aria-label]="'home.viewDetails' | translate"
+                        matTooltip="{{ 'home.viewDetails' | translate }}"
+                      >
+                        <mat-icon>visibility</mat-icon>
+                      </button>
+                    </td>
+                  </ng-container>
+
+                  <tr mat-header-row *matHeaderRowDef="operationsDisplayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: operationsDisplayedColumns"></tr>
+                </table>
+              </div>
+            } @else {
+              <div class="no-results">
+                <mat-icon>business</mat-icon>
+                <h3>{{ 'home.noOperationsFound' | translate }}</h3>
+                <p>{{ 'home.noOperationsMessage' | translate }}</p>
+              </div>
+            }
+          </div>
+        </mat-tab>
+
+        <!-- Processes Tab -->
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">account_tree</mat-icon>
+            {{ 'home.processes' | translate }} ({{ filteredProcesses().length }})
+          </ng-template>
+          <div class="tab-content">
+            @if (filteredProcesses().length > 0) {
+              <div class="table-container">
+                <table mat-table [dataSource]="filteredProcesses()" class="search-results-table mat-elevation-1">
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef>{{ 'common.name' | translate }}</th>
+                    <td mat-cell *matCellDef="let process">{{ process.name }}</td>
+                  </ng-container>
+
+                  <!-- Description Column -->
+                  <ng-container matColumnDef="description">
+                    <th mat-header-cell *matHeaderCellDef>{{ 'common.description' | translate }}</th>
+                    <td mat-cell *matCellDef="let process">{{ process.description }}</td>
+                  </ng-container>
+
+                  <!-- Regulator Column -->
+                  <ng-container matColumnDef="regulator">
+                    <th mat-header-cell *matHeaderCellDef>{{ 'common.regulator' | translate }}</th>
+                    <td mat-cell *matCellDef="let process">{{ process.regulator?.name }}</td>
+                  </ng-container>
+
+                  <!-- Actions Column -->
+                  <ng-container matColumnDef="actions">
+                    <th mat-header-cell *matHeaderCellDef class="actions-column">{{ 'common.actions' | translate }}</th>
+                    <td mat-cell *matCellDef="let process" class="actions-column">
+                      <button
+                        mat-icon-button
+                        (click)="viewProcess(process)"
+                        [attr.aria-label]="'home.viewDetails' | translate"
+                        matTooltip="{{ 'home.viewDetails' | translate }}"
+                      >
+                        <mat-icon>visibility</mat-icon>
+                      </button>
+                    </td>
+                  </ng-container>
+
+                  <tr mat-header-row *matHeaderRowDef="processesDisplayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: processesDisplayedColumns"></tr>
+                </table>
+              </div>
+            } @else {
+              <div class="no-results">
+                <mat-icon>account_tree</mat-icon>
+                <h3>{{ 'home.noProcessesFound' | translate }}</h3>
+                <p>{{ 'home.noProcessesMessage' | translate }}</p>
+              </div>
+            }
+          </div>
+        </mat-tab>
+
+        <!-- Documents Tab -->
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">description</mat-icon>
+            {{ 'home.documents' | translate }} ({{ filteredDocuments().length }})
+          </ng-template>
+          <div class="tab-content">
+            @if (filteredDocuments().length > 0) {
+              <div class="table-container">
+                <table mat-table [dataSource]="filteredDocuments()" class="search-results-table mat-elevation-1">
+                  <!-- Filename Column -->
+                  <ng-container matColumnDef="filename">
+                    <th mat-header-cell *matHeaderCellDef>{{ 'common.filename' | translate }}</th>
+                    <td mat-cell *matCellDef="let document">{{ document.filename || document.summary }}</td>
+                  </ng-container>
+
+                  <!-- Document Type Column -->
+                  <ng-container matColumnDef="documentType">
+                    <th mat-header-cell *matHeaderCellDef>{{ 'common.type' | translate }}</th>
+                    <td mat-cell *matCellDef="let document">{{ document.documentType }}</td>
+                  </ng-container>
+
+                  <!-- Owner Column -->
+                  <ng-container matColumnDef="owner">
+                    <th mat-header-cell *matHeaderCellDef>{{ 'common.owner' | translate }}</th>
+                    <td mat-cell *matCellDef="let document">{{ document.owner }}</td>
+                  </ng-container>
+
+                  <!-- Actions Column -->
+                  <ng-container matColumnDef="actions">
+                    <th mat-header-cell *matHeaderCellDef class="actions-column">{{ 'common.actions' | translate }}</th>
+                    <td mat-cell *matCellDef="let document" class="actions-column">
+                      <button
+                        mat-icon-button
+                        (click)="viewDocument(document)"
+                        [attr.aria-label]="'home.viewDetails' | translate"
+                        matTooltip="{{ 'home.viewDetails' | translate }}"
+                      >
+                        <mat-icon>visibility</mat-icon>
+                      </button>
+                    </td>
+                  </ng-container>
+
+                  <tr mat-header-row *matHeaderRowDef="documentsDisplayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: documentsDisplayedColumns"></tr>
+                </table>
+              </div>
+            } @else {
+              <div class="no-results">
+                <mat-icon>description</mat-icon>
+                <h3>{{ 'home.noDocumentsFound' | translate }}</h3>
+                <p>{{ 'home.noDocumentsMessage' | translate }}</p>
+              </div>
+            }
+          </div>
+        </mat-tab>
+
+        <!-- Regulators Tab -->
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">gavel</mat-icon>
+            {{ 'home.regulators' | translate }} ({{ filteredRegulators().length }})
+          </ng-template>
+          <div class="tab-content">
+            @if (filteredRegulators().length > 0) {
+              <div class="table-container">
+                <table mat-table [dataSource]="filteredRegulators()" class="search-results-table mat-elevation-1">
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef>{{ 'common.name' | translate }}</th>
+                    <td mat-cell *matCellDef="let regulator">{{ regulator.name }}</td>
+                  </ng-container>
+
+                  <!-- Abbreviation Column -->
+                  <ng-container matColumnDef="abbreviation">
+                    <th mat-header-cell *matHeaderCellDef>{{ 'common.abbreviation' | translate }}</th>
+                    <td mat-cell *matCellDef="let regulator">{{ regulator.abbreviation }}</td>
+                  </ng-container>
+
+                  <!-- Website Column -->
+                  <ng-container matColumnDef="website">
+                    <th mat-header-cell *matHeaderCellDef>{{ 'common.website' | translate }}</th>
+                    <td mat-cell *matCellDef="let regulator">
+                      @if (regulator.website) {
+                        <a [href]="regulator.website" target="_blank" rel="noopener noreferrer">
+                          {{ regulator.website }}
+                        </a>
+                      }
+                    </td>
+                  </ng-container>
+
+                  <!-- Actions Column -->
+                  <ng-container matColumnDef="actions">
+                    <th mat-header-cell *matHeaderCellDef class="actions-column">{{ 'common.actions' | translate }}</th>
+                    <td mat-cell *matCellDef="let regulator" class="actions-column">
+                      <button
+                        mat-icon-button
+                        (click)="viewRegulator(regulator)"
+                        [attr.aria-label]="'home.viewDetails' | translate"
+                        matTooltip="{{ 'home.viewDetails' | translate }}"
+                      >
+                        <mat-icon>visibility</mat-icon>
+                      </button>
+                    </td>
+                  </ng-container>
+
+                  <tr mat-header-row *matHeaderRowDef="regulatorsDisplayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: regulatorsDisplayedColumns"></tr>
+                </table>
+              </div>
+            } @else {
+              <div class="no-results">
+                <mat-icon>gavel</mat-icon>
+                <h3>{{ 'home.noRegulatorsFound' | translate }}</h3>
+                <p>{{ 'home.noRegulatorsMessage' | translate }}</p>
+              </div>
+            }
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  }
+
   <!-- Statistics Cards -->
   <div class="stats-section">
     <h2 class="section-title">{{ 'home.overview' | translate }}</h2>
@@ -26,10 +283,10 @@
           <button mat-button (click)="viewAllRegulators()" color="primary">
             {{ 'home.viewAll' | translate }}
           </button>
-          @if(keycloak.authenticated) {
-          <button mat-button (click)="createRegulator()" color="accent">
-            {{ 'home.create' | translate }}
-          </button>
+          @if (keycloak.authenticated) {
+            <button mat-button (click)="createRegulator()" color="accent">
+              {{ 'home.create' | translate }}
+            </button>
           }
         </mat-card-actions>
       </mat-card>
@@ -51,10 +308,10 @@
           <button mat-button (click)="viewAllOperations()" color="primary">
             {{ 'home.viewAll' | translate }}
           </button>
-          @if(keycloak.authenticated) {
-          <button mat-button (click)="createOperation()" color="accent">
-            {{ 'home.create' | translate }}
-          </button>
+          @if (keycloak.authenticated) {
+            <button mat-button (click)="createOperation()" color="accent">
+              {{ 'home.create' | translate }}
+            </button>
           }
         </mat-card-actions>
       </mat-card>
@@ -76,10 +333,10 @@
           <button mat-button (click)="viewAllProcesses()" color="primary">
             {{ 'home.viewAll' | translate }}
           </button>
-          @if(keycloak.authenticated) {
-          <button mat-button (click)="createProcess()" color="accent">
-            {{ 'home.create' | translate }}
-          </button>
+          @if (keycloak.authenticated) {
+            <button mat-button (click)="createProcess()" color="accent">
+              {{ 'home.create' | translate }}
+            </button>
           }
         </mat-card-actions>
       </mat-card>
@@ -107,24 +364,24 @@
   </div>
 
   <!-- Quick Actions -->
-  @if(keycloak.authenticated) {
-  <div class="actions-section">
-    <h2 class="section-title">{{ 'home.quickActions' | translate }}</h2>
-    <div class="action-buttons">
-      <button mat-raised-button color="primary" (click)="createOperation()">
-        <mat-icon>add</mat-icon>
-        {{ 'home.newOperation' | translate }}
-      </button>
-      <button mat-raised-button color="accent" (click)="createProcess()">
-        <mat-icon>add</mat-icon>
-        {{ 'home.newProcess' | translate }}
-      </button>
-      <button mat-raised-button color="warn" (click)="createRegulator()">
-        <mat-icon>add</mat-icon>
-        {{ 'home.newRegulator' | translate }}
-      </button>
+  @if (keycloak.authenticated) {
+    <div class="actions-section">
+      <h2 class="section-title">{{ 'home.quickActions' | translate }}</h2>
+      <div class="action-buttons">
+        <button mat-raised-button color="primary" (click)="createOperation()">
+          <mat-icon>add</mat-icon>
+          {{ 'home.newOperation' | translate }}
+        </button>
+        <button mat-raised-button color="accent" (click)="createProcess()">
+          <mat-icon>add</mat-icon>
+          {{ 'home.newProcess' | translate }}
+        </button>
+        <button mat-raised-button color="warn" (click)="createRegulator()">
+          <mat-icon>add</mat-icon>
+          {{ 'home.newRegulator' | translate }}
+        </button>
+      </div>
     </div>
-  </div>
   }
 </div>
 

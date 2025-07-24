@@ -157,7 +157,9 @@
     flex-basis: 280px;
     max-width: 280px;
     min-width: 260px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
 
     &:hover {
       transform: translateY(-2px);
@@ -178,7 +180,8 @@
         border: 2px solid #1976d2;
         box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
 
-        mat-card-title, mat-card-subtitle {
+        mat-card-title,
+        mat-card-subtitle {
           color: white;
         }
 
@@ -202,7 +205,8 @@
         border: 2px solid #2196f3;
         box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
 
-        mat-card-title, mat-card-subtitle {
+        mat-card-title,
+        mat-card-subtitle {
           color: white;
         }
 
@@ -226,7 +230,8 @@
         border: 2px solid #4caf50;
         box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
 
-        mat-card-title, mat-card-subtitle {
+        mat-card-title,
+        mat-card-subtitle {
           color: white;
         }
 
@@ -250,7 +255,8 @@
         border: 2px solid #ff9800;
         box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
 
-        mat-card-title, mat-card-subtitle {
+        mat-card-title,
+        mat-card-subtitle {
           color: white;
         }
 
@@ -274,7 +280,8 @@
         border: 2px solid #9c27b0;
         box-shadow: 0 4px 12px rgba(156, 39, 176, 0.3);
 
-        mat-card-title, mat-card-subtitle {
+        mat-card-title,
+        mat-card-subtitle {
           color: white;
         }
 
@@ -298,7 +305,8 @@
         border: 2px solid #009688;
         box-shadow: 0 4px 12px rgba(0, 150, 136, 0.3);
 
-        mat-card-title, mat-card-subtitle {
+        mat-card-title,
+        mat-card-subtitle {
           color: white;
         }
 
@@ -449,7 +457,8 @@
 
 // Animations
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
@@ -460,7 +469,8 @@
 }
 
 @keyframes pulse-arrow {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.6;
     transform: translateX(0);
   }
