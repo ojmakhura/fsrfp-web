@@ -32,6 +32,7 @@ export class AppComponent implements OnInit, OnDestroy {
   readonly appStore = inject(AppEnvStore);
 
   constructor() {
+    this.appStore.getEnv();
     const keycloakSignal = inject(KEYCLOAK_EVENT_SIGNAL);
 
     effect(() => {
