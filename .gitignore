@@ -18,6 +18,6 @@
 **/.vscode/
 **/.env
 **/.idea
-./.angular
+**/.angular
 /test-results-native
 **/env.json
